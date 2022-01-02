@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(33, 37, 46);
+}
+.container {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.text-head {
+  font-family: "roboto", sans-serif;
+  font-size: 23px;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  position: relative;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 15px;
+}
+.text-head:hover:after {
+  left: 100%;
+}
+.text-head::after {
+  position: absolute;
+  content: "";
+  bottom: -4px;
+  left: 0px;
+  height: 10px;
+  width: 20px;
+  background-color: #fff;
+  transition: 0.4s;
+}
+.text-desc {
+  font-family: "roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 200;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 25px;
+  color: #fff;
+}
+a {
+  display: block;
+  position: relative;
+  width: 400px;
+  font-family: "roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  padding: 15px 30px;
+  transition: 0.4s;
+  border: 2px solid #fff;
+  border-radius: 0px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+a:hover {
+  font-size: 0;
+  padding: 24px 30px;
+  transform: scale(1.2);
+  border-radius: 15px;
+  box-shadow: 0px 5px 37px 2px rgba(79, 173, 245, 0.877);
+}
+a::after {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  height: 100%;
+  width: 0;
+  background-color: rgb(124, 122, 243);
+  font-size: 18px;
+  content: "link";
+  transition: 0.4s;
+  z-index: -1;
+  opacity: 0;
+  padding-top: 15px;
+}
+a:hover::after {
+  z-index: 2;
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  background-color: rgb(25, 198, 204);
+}
