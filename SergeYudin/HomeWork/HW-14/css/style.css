@@ -1,0 +1,86 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+html {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.background {
+  background-color: rgba(27, 27, 27, 0.425);
+  padding-bottom: 100vh;
+  position: relative;
+}
+
+.form,
+.forms {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.form {
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -175px;
+  margin-top: -132.5px;
+  background-color: rgb(230, 230, 230);
+  padding: 40px 25px 35px 25px;
+  border-radius: 14px;
+}
+
+.form :nth-child(5){
+  margin-bottom: 20px;
+}
+
+.cross{
+  width: 6%;
+  max-width: 6%;
+  height: auto;
+  position: absolute;
+  left: 300px;
+  top: 15px;
+  cursor: pointer;
+}
+
+.form-container {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 10px;
+}
+
+.data {
+  border: none;
+  outline: none;
+  border-radius: 30px;
+  padding: 5px 12px;
+  margin-bottom: 7px;
+  width: 100%;
+}
+
+.question{
+  text-align: center;
+  margin-bottom: 26px;
+  font-size: 20px;
+}
+.submit {
+  border-radius: 30px;
+  font-size: 16px;
+  background-color: #63b9e7;
+  color: black;
+  outline: none;
+  border: none;
+  padding: 5px 5px;
+  width: 300px;
+  align-self: center;
+  cursor: pointer;
+}
+
+.submit:hover {
+  background-color: rgb(214, 137, 37);
+}
