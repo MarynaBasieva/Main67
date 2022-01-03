@@ -131,7 +131,7 @@ body {
   margin: 0 auto;
   height: 136px;
   overflow: hidden;
-  background: url(./img/sprite.jpg) no-repeat;
+  background: url(../img/sprite.jpg) no-repeat;
   -webkit-animation-name: wold;
           animation-name: wold;
   -webkit-animation-duration: 2s;
@@ -140,15 +140,6 @@ body {
           animation-iteration-count: infinite;
   -webkit-animation-timing-function: steps(12);
           animation-timing-function: steps(12);
-  -webkit-transition: all 1s ease;
-  transition: all 1s ease;
-}
-
-.container .container_img .world:hover {
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-transition: all 1s ease;
-  transition: all 1s ease;
 }
 
 @-webkit-keyframes wold {

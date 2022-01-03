@@ -106,17 +106,11 @@ body {
             margin: 0 auto;
             height: 136px;
             overflow: hidden;
-            background: url(./img/sprite.jpg) no-repeat;
+            background: url(../img/sprite.jpg) no-repeat;
             animation-name: wold;
             animation-duration: 2s;
             animation-iteration-count: infinite;
             animation-timing-function: steps(12);
-            transition: all 1s ease;
-
-            &:hover {
-                animation-duration: 1s;
-                transition: all 1s ease;
-            }
         }
 
         @keyframes wold {
