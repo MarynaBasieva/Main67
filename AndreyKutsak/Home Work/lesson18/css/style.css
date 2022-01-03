@@ -1,0 +1,143 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+.main-squere {
+  position: relative;
+  height: 400px;
+  width: 400px;
+  background-color: #bda5a5;
+  margin-top: 200px;
+  left: 50%;
+}
+
+.second-squere {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100px;
+  width: 100px;
+  background-color: #3fc014;
+  -webkit-animation-name: moveSquere;
+          animation-name: moveSquere;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes moveSquere {
+  0% {
+    left: 0;
+    top: 0;
+    background-color: white;
+  }
+  25% {
+    top: 0;
+    left: 75%;
+    background-color: green;
+  }
+  50% {
+    top: 75%;
+    left: 75%;
+    background-color: red;
+  }
+  75% {
+    left: 0%;
+    top: 75%;
+    background-color: yellow;
+  }
+  100% {
+    top: 0%;
+    left: 0%;
+    background-color: powderblue;
+  }
+}
+
+@keyframes moveSquere {
+  0% {
+    left: 0;
+    top: 0;
+    background-color: white;
+  }
+  25% {
+    top: 0;
+    left: 75%;
+    background-color: green;
+  }
+  50% {
+    top: 75%;
+    left: 75%;
+    background-color: red;
+  }
+  75% {
+    left: 0%;
+    top: 75%;
+    background-color: yellow;
+  }
+  100% {
+    top: 0%;
+    left: 0%;
+    background-color: powderblue;
+  }
+}
+
+.image-wraper img {
+  display: block;
+  margin: 100px auto;
+  height: 700px;
+  width: 400px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  aspect-ratio: 1/2;
+  -webkit-filter: opacity(50%) sepia(60%);
+          filter: opacity(50%) sepia(60%);
+  cursor: pointer;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.image-wraper img:hover {
+  -webkit-filter: opacity(100%) sepia(100%);
+          filter: opacity(100%) sepia(100%);
+  border-radius: 0;
+}
+
+.btn {
+  display: block;
+  width: 200px;
+  margin: 100px auto;
+  text-align: center;
+  padding: 20px 30px;
+  background-color: #36aeaeae;
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.btn:hover {
+  width: 300px;
+  border-radius: 50%;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  background-color: #5f5db3;
+}
+/*# sourceMappingURL=style.css.map */
