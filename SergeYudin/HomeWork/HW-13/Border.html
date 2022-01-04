@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Border</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+   
+
+    .bg {
+      background: #1193e5;
+    }
+    .container {
+      width: 600px;
+      margin: 0 auto;
+      padding: 20px 0px;
+      position: relative;
+    }
+
+    .container::before {
+      position: absolute;
+      border-radius: 3px;
+      left: 0px;
+      top: 62px;
+      content: "";
+      width: 75px;
+      padding-bottom: 12px;
+      background-color: black;
+    }
+    .bg h2 {
+      text-align: center;
+      border-bottom: solid 1px #000;
+      margin-bottom: 20px;
+      padding-bottom: 20px;
+    }
+
+    .bg p {
+      text-align: justify;
+    }
+  </style>
+  <body>
+    <div class="Parent_border">
+      <div class="border border1"></div>
+      <div class="border border2"></div>
+      <div class="border border3"></div>
+      <div class="border border4"></div>
+      <div class="bg">
+        <div class="container">
+          <h2>Heading lorem ipsum</h2>
+          <p>
+            lorem ipsum dolar lorem ipsum dolar lorem ipsum dolar lorem ipsum
+            dolar lorem ipsum dolar lorem ipsum dolar lorem ipsum dolar lorem
+            ipsum dolar lorem ipsum dolar lorem ipsum dolar lorem ipsum dolar
+            lorem ipsum dolar lorem ipsum dolar lorem ipsum dolar lorem ipsum
+            dolar lorem ipsum dolar
+          </p>
+          <p>
+            lorem ipsum dolar lorem ipsum dolar lorem ipsum dolar lorem ipsum
+            dolar lorem ipsum dolar lorem ipsum dolar lorem ipsum dolar lorem
+            ipsum dolar lorem ipsum dolar lorem ipsum dolar lorem ipsum dolar
+            lorem ipsum dolar lorem ipsum dolar lorem ipsum dolar lorem ipsum
+            dolar lorem ipsum dolar
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

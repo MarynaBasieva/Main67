@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .img{
+            background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQg6tTtP5oMPHZVPV14Zaa5MkABk-RwIE5UPA&usqp=CAU) no-repeat;
+            overflow: hidden;
+            display: inline-block;
+            background-position: -0px -0px;
+            width: 70px;
+            height: 120px;
+            margin: 0 auto;
+            animation: run 1s steps(6) infinite;
+        }
+        @keyframes run{
+            from{
+                background-position: 0px;
+            }
+            to{
+                background-position: -420px;
+            }
+        }
+    </style>
+    <div class="for_page">
+        <div class="page">
+            <div class="img"></div>
+        </div>
+    </div>
+</body>
+</html>
