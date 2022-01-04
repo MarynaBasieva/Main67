@@ -1,0 +1,112 @@
+*{margin: 0;
+padding: 0;
+}
+
+.page{
+    width: 1170px;
+    margin: 0 auto;
+    height: 1500px;
+}
+.square{
+    margin: 20px;
+    width: 30px;
+    height: 30px;
+    background: red;
+    position: relative;
+    left: 0;
+    animation: square 5s ease-in-out;
+    transition: 2s;
+    animation-iteration-count: infinite;
+    
+}
+@keyframes square{
+    0%{
+        left: 0px;
+        background: red;
+    }
+    25%{
+        left: 100px;
+        background: blue;
+        top: 0;
+    }
+    50%{
+        background: red;
+        top: 100px;
+        left: 100px;
+        border-radius: 50%;
+    }
+    75%{
+        left: 0px;
+        top: 100px;
+        background: black;
+    }
+    100%{
+        top: 0;
+    }
+}
+
+.pic{
+    margin-top: 100px;
+    padding: 50px;
+    width: max-content;
+    filter: brightness(0.5);
+}
+
+.pic img:hover{
+    filter: grayscale(100%);
+    transition: 1s;
+}
+
+.pic2 img{
+    width: 400px;
+    height: 700px;
+    object-fit: cover;
+    object-position: center;
+    margin-bottom: 20px;
+}
+
+
+.link{
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  .btn{
+    position: relative;
+    padding: 20px 40px;
+    border: none;
+    font-size: 22px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    background-color:#3F4A83;
+    color: #D6D6D6;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  .btn:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 3px;
+    width: 0;
+    background-color: #000;
+    transition: all 0.5s ease-in-out;
+  }
+  .btn:after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 0;
+    background-color: #000;
+    transition: all 0.5s ease-in-out;
+  }
+  .btn:hover{
+    color: #fff;
+  }
+  .btn:hover::before, .btn:hover::after{
+    width: 100%;
+  }
