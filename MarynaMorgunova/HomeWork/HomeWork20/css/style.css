@@ -6,6 +6,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+html {
+    scroll-behavior: smooth;
+}
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
@@ -83,6 +86,7 @@ p {
     background: #34547A;
     border: none;
     padding: 20px 40px;
+    transition: 0.2s;
 }
 .btn {
     margin-left: -10px;
@@ -103,6 +107,10 @@ p {
 }
 .projects img {
     margin-bottom: 10px;
+    transition: 0.3s;
+}
+.projects img:hover {
+    transform: scale(1.2);
 }
 .skills {
     padding: 100px 0;
