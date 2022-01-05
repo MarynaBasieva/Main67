@@ -65,3 +65,17 @@ p {
 .conteiner > :nth-child(1) {
   order: 1;
 }
+.anim {
+  width: 329px;
+  height: 444px;
+  background: url(https://i.stack.imgur.com/TZkUE.png);
+  animation: animet 1s steps(10) infinite;
+}
+@keyframes animet {
+  0% {
+    background-position: 0px;
+  }
+  100% {
+    background-position: -3270px;
+  }
+}
