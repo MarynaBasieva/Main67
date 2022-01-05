@@ -24,6 +24,10 @@ img {
 }
 .header .logo img{
     margin-bottom: 30px;
+    transition: 0.3s;
+}
+.header .logo img:hover {
+    transform: scale(1.2);
 }
 .banner {
     background: #eeeff1;
