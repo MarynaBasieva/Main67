@@ -1,0 +1,39 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+h1 {
+  color: #36aeae;
+}
+.main-text {
+  line-height: 200px;
+}
+.main-text {
+  font-family: sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #36aeae;
+  font-size: 16px;
+  line-height: 22px;
+  color: red;
+}
+.main-text:after {
+  content: "";
+  height: 100px;
+  width: 100px;
+  background-color: #36aeae;
+  margin-top: 100px;
+}
+.main-text .main-text {
+  font-size: 16px;
+  line-height: 22px;
+  color: red;
+}
+.main-text .main-text:after {
+  content: "";
+  height: 100px;
+  width: 100px;
+  background-color: #36aeae;
+  margin-top: 100px;
+}
