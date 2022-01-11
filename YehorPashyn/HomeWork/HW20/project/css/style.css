@@ -1,0 +1,452 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body{
+    height: 100%;
+    position: relative;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+.for_page{
+    min-height: 100%;
+    position: relative;
+}
+
+.page{
+    padding-bottom: 167px;
+}
+
+img{
+    max-width: 100%;
+    width: auto;
+    height: auto;
+}
+
+/*---header---*/
+.header{
+    background: #EEEFF1;
+    padding-top: 57px;
+    /*-padding-bottom: 161px;-*/
+}
+/*------menu------*/
+.nav-menu ul.sub-menu{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+.nav-menu ul.sub-menu li a{
+    margin-right: 42px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    color: #000;
+    transition: .3s;
+}
+.nav-menu ul.sub-menu li a:hover{
+    color: #34547A;
+    text-decoration: none;
+    justify-content: center;
+}
+
+.nav-menu ul.sub-menu li:nth-child(5) a{
+    margin-right: 0;
+}
+/*------menu------*/
+/*------banner------*/
+
+.banner{
+    background: #EEEFF1;
+}
+
+.banner img{
+    padding-top: 180px;
+    padding-bottom: 188.3px;
+}
+.banner .parentTextBanner{
+    padding-top: 140px;
+}
+
+.banner .parentTextBanner h2{
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 79px;
+    color: #000000;
+    padding-bottom: 60px;
+    margin-bottom: 0;
+}
+
+.banner .parentTextBanner p{
+    font-size: 16px;
+    line-height: 26px;
+    color: #727272;
+    padding-bottom: 60px;
+    width: 540px;
+    margin-bottom: 0;
+}
+
+.banner .parentTextBanner a{
+    background: #34547A;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+    padding: 25px 41px;
+}
+
+.banner .parentTextBanner a:hover{
+    text-decoration: none;
+}
+/*-----------------banner--------------*/
+
+/*-----------------about---------------*/
+.about{
+    padding: 119px;
+}
+
+
+
+.about .title{
+    width: 540px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.about .title h2{
+    padding-bottom: 50px;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 37px;
+    color: #000000;
+    margin-bottom: 0;
+}
+
+.about .title p{
+    font-size: 16px;
+    line-height: 26px;
+    color: #727272;
+    padding-bottom: 100px;
+    margin-bottom: 0;
+}
+
+
+.bg_blue{
+    background: #34547A;
+}
+
+.bg_blue img{
+    padding-top: 100px;
+    display: inline-block;
+    margin-right: 20px;
+    padding-bottom: 100px;
+    position: relative;
+}
+
+.bg_blue span{
+    position: absolute;
+    top: 100px;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 25px;
+    color: #FFFFFF;
+}
+.bg_blue .span1{
+    position: absolute;
+    top: 124px;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    color: #FFFFFF;
+}
+
+/*-------------------about---------------------*/
+
+/*------------------skills----------------------*/
+
+.skills{
+    padding-top: 102px;
+}
+
+.skills .title{
+    padding-top: 102px;
+}
+
+
+.skills .title h2{
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 37px;
+    color: #000000;
+    padding-bottom: 50px;
+}
+
+.skills .title p{
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    color: #727272;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.skills .title p:before{
+    content: "";
+    width: 350px;
+    height: 4px;
+    background: #34547A;
+    position: absolute;
+    top: 40px;
+    left: 0;
+}
+
+.skills .title p:after{
+    content: "";
+    width: 95px;
+    height: 4px;
+    background: #C4C4C4;
+    position: absolute;
+    top: 40px;
+    left: 350px;
+}
+
+.skills .title p:last-child{
+    padding-bottom: 216px;
+    margin-bottom: 0;
+}
+
+/*------------work-------------*/
+
+.work{
+    background: #EEEFF1;
+}
+
+.work .title{
+    width: 540px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.work .title h2{
+    padding-top: 100px;
+    padding-bottom: 50px;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 37px;
+    color: #000000;
+    margin-bottom: 0;
+}
+
+.work .title p{
+    font-size: 16px;
+    line-height: 26px;
+    color: #727272;
+    padding-bottom: 57px;
+    margin-bottom: 0;
+}
+
+.work .picture .img1{
+    position: relative;
+    padding-bottom: 100px;
+}
+
+.work .picture .img2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+}
+
+.work .picture .img2:hover{
+    cursor: pointer;
+}
+
+/*--------------------work------------------*/
+
+/*-----------------album-----------------*/
+.album{
+    padding-top: 28px;
+}
+.album .picture1{
+    position: relative;
+    width: 25%;
+}
+
+.album .picture1:before{
+    display: none;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #34547A;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    opacity: 0.8;
+    transition: .3s;
+}
+
+.album .picture1:hover:before{
+    display: block;
+}
+
+.album .picture1:after{
+    content: url(/img/view.png);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    transition: all 0.5s;
+}
+
+.album .picture1:hover:after{
+    display: block;
+    cursor: pointer;
+}
+
+.album .microsoft{
+    padding-top: 72px;
+    padding-bottom: 100px;
+}
+
+.album .photos{
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 72px;
+}
+
+.about .photos .picture1 img{
+    max-width: 100%;
+    height: auto;
+    width: auto;
+}
+
+.album .microsoft{
+    padding-top: 0;
+}
+
+
+/*-------------album--------------*/
+
+
+
+/*---------------final-------------*/
+.final{
+    background: #EEEFF1;
+}
+
+.final .title{
+    width: 540px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.final .title h2{
+    padding-top: 100px;
+    padding-bottom: 50px;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 37px;
+    color: #000000;
+    margin-bottom: 0;
+}
+
+.final .title p{
+    font-size: 16px;
+    line-height: 26px;
+    color: #727272;
+    padding-bottom: 57px;
+    margin-bottom: 0;
+}
+
+.final .inputs{
+    width: 540px;
+    margin: 0 auto;
+    padding-bottom: 100px;
+    text-align: center;
+}
+
+.final .inputs input:focus{
+    outline: 0;
+}
+.final .inputs textarea:focus{
+    outline: 0;
+}
+
+.final .inputs input:first-child{
+    width: 250px;
+    padding: 17px;
+    border: none;
+    margin-right: 30px;
+    margin-bottom: 20px;
+}
+
+.final .inputs input{
+    width: 250px;
+    padding: 17px;
+    border: none;
+    margin-bottom: 20px;
+}
+
+.final .inputs textarea{
+    border: none;
+    resize: none;
+    width: 99%;
+    padding: 17px;
+    height: 175px;
+    margin-bottom: 50px;
+}
+
+.final .inputs a{
+    text-decoration: none;
+    padding: 15px 55px;
+    margin: 0 auto;
+    background: #34547A;
+    color: #FFFFFF;
+}
+
+/*----------------------final--------------------------*/
+
+/*-------------------footer-----------------------------*/
+
+.footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #34547A;
+}
+.footer .text p{
+    padding-top: 50px;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 25px;
+    color: #FFFFFF;
+    padding-bottom: 20px;
+    margin-bottom: 0;
+}
+
+.footer .text .copy{
+    font-size: 13px;
+    line-height: 21px;
+    color: #FFFFFF;
+    padding-top: 0;
+    padding-bottom: 50px;
+}
+
+.footer .picture{
+    padding-top: 56px;
+    text-align: end;
+}
+
+.footer .picture a{
+    margin-right: 22px;
+}
