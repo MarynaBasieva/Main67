@@ -1,0 +1,111 @@
+@charset "UTF-8";
+/* CSS Document */
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-size: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+img{
+    max-width: 100%;
+    width: auto;
+    height: auto;
+}
+.header{
+    background: #EEEFF1;
+    padding-top: 57px  ;   
+}
+
+.nav-menu ul.sub-menu{
+    display: flex;
+    list-style: none;
+    font-size: 16px;
+    margin-bottom: 162px; 
+    justify-content: end;
+}
+
+.nav-menu ul.sub-menu li a{
+    margin-right: 42px;
+    line-height: 26px;
+    color: #000; 
+    font-weight: 500;
+    transition: 0.3s;
+    letter-spacing: 1px;
+   
+}
+.nav-menu ul.sub-menu li a:hover{
+    color: #34547A;
+    text-decoration: none;
+}
+.nav-menu ul.sub-menu li:nth-child(5) a{
+    margin-right: 0;
+}
+
+.banner{
+    background: #EEEFF1;
+    padding-bottom: 146px;
+    
+}
+.banner img {
+    display: block;
+    margin: 0 auto;
+
+}
+.parentTextBanner{
+    margin-left: 130px;
+}
+.parentTextBanner h2{
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 79px;
+    color: #000000;
+}
+.parentTextBanner p{
+    font-size: 16px;
+    line-height: 26px;
+    color: #727272;
+    padding:40px 0 60px;
+}
+.parentTextBanner .btnBanner{
+    background:#34547A ;
+    color: #ffffff;
+    padding: 25px 41px;
+    text-decoration: none; 
+    margin-bottom: 146px;
+}
+.parentTextBanner a.btnBanner{
+    letter-spacing: 0.1em;
+}
+   
+.parentTextBanner a.btnBanner:hover{
+    background: rgba(48, 82, 121, 0.8);
+    transition: 2s;
+}
+
+.block2{
+    text-align: center;
+    margin-top: 119px;
+    margin-bottom: 100px;
+  
+}
+.block2 h3{
+    color: #000000;
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 37px;
+    margin-bottom: 50px;
+   
+}
+.block2 p{
+    text-indent: 15px;
+    font-family: Roboto;
+    font-size: 16px;
+    line-height: 26px;
+    color: #727272;
+    
+}
+
+
