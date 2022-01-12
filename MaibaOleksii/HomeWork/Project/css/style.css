@@ -100,6 +100,11 @@ p {
   line-height: 26px;
   text-align: center;
   background: #34547a;
+  transition: 0.3s;
+}
+
+.btn-banner:hover {
+  background: rgb(3, 135, 212);
 }
 
 /* BANNER */
@@ -301,6 +306,11 @@ p {
   text-align: center;
   background: #34547a;
   margin-left: 460px;
+  transition: 0.3s;
+}
+
+.form-btn:hover {
+  background: rgb(3, 135, 212);
 }
 
 .form-name input,
@@ -359,7 +369,16 @@ footer {
 .footer-social {
   font-size: 40px;
   color: #fff;
-  padding-top: 56px;
+  margin-top: 56px;
+  cursor: pointer;
+}
+
+.footer-social i {
+  transition: 0.3s;
+}
+
+.footer-social i:hover {
+  color: #0ac0f7;
 }
 
 /* FOOTER */
