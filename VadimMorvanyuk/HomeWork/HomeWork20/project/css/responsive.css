@@ -1,0 +1,129 @@
+@media (min-width: 1200px){
+    .for_page .container{
+        max-width: 1110px;
+    }
+}
+@media (max-width: 1000px){
+    .nav-menu ul.sub-menu li a{
+        margin-right: 18px;
+    }
+    .banner img{
+        display: none;
+    }
+    .banner .parentTextBaner{
+        padding-top: 100px;
+        padding-bottom: 50px;
+        text-align: center;
+    }
+    .photo{
+        width: 50%;
+    }
+    .my_skills{
+        padding-bottom: 30px;
+    }
+    .projects img{
+        margin-bottom: 50px;
+    }
+    .footer_logos{
+        display: flex;
+        justify-content: center;
+    }
+    .footer_text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media (max-width:768px){
+    .banner-img{
+        display: flex;
+        justify-content: center;
+    }
+    .banner img{
+        display: block;
+        padding-bottom: 0;
+        padding-top: 32px;
+    }
+    .projects{
+        padding-left: 30px;
+        padding: 70px 0;
+    }
+    .nav-menu ul.sub-menu{
+        justify-content: space-between;
+    }
+    .logo{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 30px;
+    }
+    
+    .photos .photo{
+        width: 50%;
+    }
+    .photo:nth-child(3){
+        order: 5;
+    }
+    .photo:nth-child(4){
+        order: 6;
+    }
+    .photo:nth-child(5){
+        order: 7;
+    }
+    .photo:nth-child(6){
+        order: 8;
+    }
+    .microsoft img{
+        padding-bottom: 30px;
+    }
+}
+@media (max-width:576px){
+    .projects{
+        padding: 70px 0;
+    }
+    .projects img{
+        padding-left: 30px;
+    }
+    .skills{
+        padding: 30px 0;
+    }
+    .my_skills{
+        text-align: center;
+    }
+    .my_skills p{
+        padding-right: 275px;
+    }
+    .form textarea{
+        width: 95%;
+    }
+}
+@media (max-width:520px){
+    
+    .nav-menu ul.sub-menu li a {
+        margin-right: 7px;
+    }
+}
+@media (max-width:440px){
+    .my_skills p:before{
+        width: 279px;
+        top: 57px;
+    }
+    .my_skills p:after{
+        left: 280px;
+        top: 57px;
+    }
+    .nav-menu ul.sub-menu{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+@media (max-width:368px){
+    .projects img{
+        padding-left: 5px;
+    }
+    .my_skills p:before{
+        width: 200px;
+    }
+    .my_skills p:after{
+        left: 197px;
+    }
+}
