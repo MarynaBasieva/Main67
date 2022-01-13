@@ -8,10 +8,15 @@
     <link type="text/css" href="css/responsive.css" rel="stylesheet">
     <link type="text/css" href="vendor/bootstrap-4.0.0/css/bootstrap.min.css" rel="stylesheet">
     <link type="text/css" href="vendor/bootstrap-4.0.0/css/bootstrap-grid.min.css" rel="stylesheet">
+    <link type="text/css" href="vendor/fontawesome/css/all.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="vendor/OwlCarousel/dist/assets/owl.carousel.min.css" rel="stylesheet">
+    <link type="text/css" href="vendor/fancybox/dist/jquery.fancybox.min.css" rel="stylesheet">
     <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="vendor/fancybox/dist/jquery.fancybox.min.js"></script>
+    <script type="text/javascript" src="vendor/OwlCarousel/dist/owl.carousel.min.js"></script>
     <script type="text/javascript" src="js/custom.js"></script>
     <script type="text/javascript" src="vendor/bootstrap-4.0.0/js/bootstrap.min.js"></script>
 </head>
@@ -20,13 +25,18 @@
             <header class="header">
                 <div class="container">
                     <div class="row">
-                        <div class="col-xl-5 col-lg-2 col-md-12 col-sm-12">
-                            <a href="/" class="logo">
-                                <img src="img/logo.png" alt="logo">
-                            </a>
+                        <div class="col-xl-2 col-lg-2 col-md-12 col-sm-12">
+                            <div class="parent_responsive_menu">
+                                <a href="/" class="logo">
+                                    <img src="img/logo.png" alt="logo">
+                                </a>
+                                <div class="responsive_menu">
+                                    <i class="fas fa-bars"></i>
+                                </div>
+                            </div>
                         </div>
 
-                        <div class="col-xl-7 col-lg-10 col-md-12 col-sm-12">
+                        <div class="col-xl-10 col-lg-10 col-md-12 col-sm-12">
                             <nav class="nav-menu">
                                 <ul class="sub-menu">
                                     <li class="item-menu">
@@ -142,64 +152,44 @@
                                 <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
                             </div>
                         </div>
-                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                            <div class="work_picture">
-                                <img class="work_img1" src="img/video.png" alt="video">
-                                <img class="work_img2" src="img/play-button.png">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="work_video">
+                                        <div class="youtube" id="YDKFWhBkC8c"></div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
             <section class="photos">
-                <div class="photo">
-                    <img src="img/image1.png">
-                    <div class="photo_eye">
-                        <img src="img/eye.png">
-                    </div>
-                </div>
-                <div class="photo">
-                    <img src="img/image2.png">
-                    <div class="photo_eye">
-                        <img src="img/eye.png">
-                    </div>
-                </div>
-                <div class="photo">
-                    <img src="img/image1.png">
-                    <div class="photo_eye">
-                        <img src="img/eye.png">
-                    </div>
-                </div>
-                <div class="photo">
-                    <img src="img/image2.png">
-                    <div class="photo_eye">
-                        <img src="img/eye.png">
-                    </div>
-                </div>
-                <div class="photo">
-                    <img src="img/image2.png">
-                    <div class="photo_eye">
-                        <img src="img/eye.png">
-                    </div>
-                </div>
-                <div class="photo">
-                    <img src="img/image1.png">
-                    <div class="photo_eye">
-                        <img src="img/eye.png">
-                    </div>
-                </div>
-                <div class="photo">
-                    <img src="img/image2.png">
-                    <div class="photo_eye">
-                        <img src="img/eye.png">
-                    </div>
-                </div>
-                <div class="photo">
-                    <img src="img/image1.png">
-                    <div class="photo_eye">
-                        <img src="img/eye.png">
-                    </div>
-                </div>
+                <a href="img/image1.png" data-fancybox="gallery" class="fancy-Child">
+                    <img src="img/image1.png" alt="">
+                </a>
+                <a href="img/image2.png" data-fancybox="gallery" class="fancy-Child">
+                    <img src="img/image2.png" alt="">
+                </a>
+                <a href="img/image1.png" data-fancybox="gallery" class="fancy-Child">
+                    <img src="img/image1.png" alt="">
+                </a>
+                <a href="img/image2.png" data-fancybox="gallery" class="fancy-Child">
+                    <img src="img/image2.png" alt="">
+                </a>
+                <a href="img/image2.png" data-fancybox="gallery" class="fancy-Child">
+                    <img src="img/image2.png" alt="">
+                </a>
+                <a href="img/image1.png" data-fancybox="gallery" class="fancy-Child">
+                    <img src="img/image1.png" alt="">
+                </a>
+                <a href="img/image2.png" data-fancybox="gallery" class="fancy-Child">
+                    <img src="img/image2.png" alt="">
+                </a>
+                <a href="img/image1.png" data-fancybox="gallery" class="fancy-Child">
+                    <img src="img/image1.png" alt="">
+                </a>
+
             </section>
             <section class="microsoft">
                 <div class="container">
