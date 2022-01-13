@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+img {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+}
+
+/* header */
+.header {
+    background: #EEEFF1;
+    padding: 57px 0 146px;
+}
+
+.header .logo img {
+    margin-bottom: 30px;
+}
+
+/* header */
+.banner {
+    background: #EEEFF1;
+}
+
+
+
+.nav-menu ul.sub-menu {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    margin-bottom: 162px;
+    padding: 0 21px;
+    font-size: 16px;
+    line-height: 26px;
+    text-transform: uppercase;
+}
+
+.nav-menu ul.sub-menu li a {
+    font-family: 'Roboto', sans-serif;
+    margin-right: 42px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    transition: 0.3s;
+    color: #000;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.nav-menu ul.sub-menu li a:hover {
+    color: #3b7ecf;
+    text-decoration: none;
+}
+
+.nav-menu ul.sub-menu li a:nth-child(5) a {
+    margin-right: 0;
+}
+
+.nav-menu ul.sub-menu li:hover a {
+    color: #34547A;
+    font-weight: 500;
+}
+
+
+.parentTextBanner h2 {
+    font-size: 48px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+.parentTextBanner p {
+    padding: 60px 0;
+    margin-bottom: 75px;
+    line-height: 26px;
+}
+
+.btnBanner {
+    display: block;
+    color: #fff;
+    max-width: 225px;
+    margin-bottom: 60px;
+    background-color: #34547A;
+    text-align: center;
+    padding: 25px 40px;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 0.1em;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.btnBanner:hover {
+    text-decoration: none;
+    color: #fff;
+    opacity: 0.8;
+}
+
+/* about me */
+.about {
+    max-width: 540px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about h2 {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 37px;
+    color: #000000;
+    margin-top: 120px;
+    margin-bottom: 50px;
+}

@@ -1,0 +1,170 @@
+@charset "UTF-8";
+/* CSS Document */
+ .responsive_menu 
+  {
+    display: none;
+  }
+
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+}
+img {
+
+margin: 0 auto;
+display: block;
+
+}
+/*header*/
+.header {
+  background: #eeeff1;
+  padding-top: 57px;
+}
+/*header*/
+/*Banner Block*/
+/*Menu*/
+.nav-menu ul.sub-menu {
+  display: flex;
+  list-style: none;
+}
+.nav-menu ul.sub-menu li a {
+  margin-right: 42px;
+
+  font-size: 16px;
+  line-height: 26px;
+  color: 000;
+  font-weight: 500;
+  transition: 0.3 s;
+}
+.nav-menu ul.sub-menu li a:hover {
+  color: #34547a;
+
+  text-decoration: none;
+}
+.nav-menu ul.sub-menu li a:last child {
+  margin-right: 0;
+}
+/*Menu*/
+.banner {
+  padding-top: 162px;
+
+  background: #eeeff1;
+  padding-bottom: 146px;
+}
+/*Banner Block*/
+
+.parentTextBaner h2 {
+  margin-top: 79px;
+  font-size: 48px;
+}
+.for_page {
+  min-height: 100%;
+  position: relative;
+}
+
+
+.page {
+
+  padding-bottom: 167px;
+}
+
+.banner .parentTextBanner a {
+  background: #34547a;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+  padding: 25px 41px;
+  margin-top: 85px;
+  display: inline-block;
+ 
+  }
+  .banner .parentTextBanner a:hover {
+  background: #000000;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+  padding: 25px 41px;
+}
+ 
+  }
+   .banner .parentTextBanner p{
+    margin-top: 60px;
+   	    margin-bottom: 85px;
+} 
+.banner .parentTextBanner h2{
+
+	 font-weight: 500;
+    font-size: 48px;
+    line-height: normal;
+    color: #000000;
+    margin-bottom: 10px;
+  }
+.about h2
+{
+  font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 32px;
+line-height: 37px;
+text-align: center;
+
+}
+.new
+{
+background: #34547A;
+display: flex;
+justify-content: center;
+}
+.item
+{
+  padding: 20px;
+  display: flex;
+}
+.form
+{
+  display: flex;
+  justify-content: center;
+
+}
+.form-image img
+{
+width: 555px;
+
+}
+.line {
+		
+  position: relative;
+  width: 445px;
+  height: 4px;
+  background-color: #c4c4c4;
+  margin-bottom:33px;
+ 
+}
+.line:before{
+
+content: "";
+
+position: absolute;
+top: 0px;
+left: 0px;
+ width: 349.36px;
+height: 4px;
+background-color: #34547a;	
+}
+.form-block
+{
+  padding: 150px;
+  padding-top: 204px;
+}
+.photoshop
+{
+  padding-top: 50px;
+}

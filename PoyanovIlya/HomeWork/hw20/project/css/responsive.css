@@ -1,5 +1,83 @@
-@media (min-width: 1200px) {
-  .for-page .conteiner {
-    max-width: 1100px;
-  }
-}
+    @media (max-width: 1200px) {
+        .for-page .conteiner {
+            max-width: 1110px;
+        }
+    }
+    
+    @media (max-width: 1199px) {}
+    
+    @media (max-width: 991px) {
+        .responsive-menu {
+            display: block;
+        }
+        .responsive-menu i {
+            font-size: 33px;
+            color: #34547A;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+        .responsive-menu i:hover {
+            color: #03d5e4;
+        }
+        .nav-menu {
+            display: none;
+        }
+        .parent-responsive-menu {
+            display: flex;
+            justify-content: space-between;
+        }
+        .banner {
+            padding: 25px 0;
+        }
+        .parent-text-baner {
+            margin-top: 20px;
+        }
+        .parent-text-baner h2 {
+            line-height: normal;
+            padding-bottom: 14px;
+        }
+        .button {
+            padding-top: 22px;
+        }
+        .header {
+            padding-bottom: 18px;
+        }
+        .btn-baner {
+            padding: 15px 30px;
+        }
+        .projects img {
+            margin-bottom: 12px;
+        }
+    }
+    
+    @media (max-width: 767px) {
+        .btn-baner {
+            padding: 13px 27px;
+        }
+        .projects img {
+            display: block;
+            margin: 9px auto;
+        }
+        .how-work {
+            padding: 30px 0;
+        }
+        .skills {
+            padding-top: 0px;
+        }
+        .projects {
+            padding: 44px 0;
+        }
+    }
+    
+    @media (max-width: 500px) {
+        .parent-text-baner h2 {
+            font-size: 32px;
+        }
+        .btn-baner {
+            padding: 12px 24px;
+            letter-spacing: 1px;
+            font-size: 14px;
+        }
+    }
+    
+    @media (max-width: 470px) {}
