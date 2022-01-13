@@ -70,16 +70,19 @@ img {
 /* ===Banner Block=== */
 .banner {
     background: #EEEFF1;
+    padding: 21px 0 188px 0;
 }
 
 .container_img_banner {
     width: 100%;
     height: auto;
     display: flex;
+    padding-top: 30px;
 }
 
 .img_banner {
-    padding: 21px 0 188px 0;
+    display: block;
+    margin: 0 auto;
 }
 
 .parent_text_banner {
@@ -91,7 +94,6 @@ img {
         line-height: 79px;
         color: #000000;
         padding-bottom: 20px;
-        margin-top: -15px;
     }
 
     p{
