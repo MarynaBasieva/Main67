@@ -87,3 +87,24 @@ transition: 1.5s
     color: #3369d4;
     transform: scale(1.1);
 }
+
+.my_skills {
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 26px;
+color: #727272;
+}
+.line {
+width: 445px;
+height: 4px;
+background: #C4C4C4;
+position: relative;
+}
+.line:before {
+content: '';
+position: absolute;
+width: 349.36px;
+height: 4px;
+background: #34547A;
+}
