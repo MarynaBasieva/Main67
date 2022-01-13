@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>transform</title>
+</head>
+<style>
+	.box{
+		width: 200px;
+		height: 100px;
+		opacity: 0.8;
+		transition: 0.7s;
+		background: #ccc;
+		margin-bottom: 20px;
+	}
+	.box1:hover{
+		transform: translateX(20px);
+	}
+	.box2:hover{
+		transform: translateY(20px);
+	}
+	.box3:hover{
+		transform: translate(-20px, -20px);
+	}
+	.box4:hover{
+		transform: scale(0.2, 0.4)
+	}
+	.box5:hover{
+		transform: rotate(20deg);
+	}
+	.box6:hover{
+		transform: skew(20deg, 30deg);
+	}
+	.box7:hover{
+		transform: matrix(0.866, 0.5, -0.5, 0.866, 0,0);
+	}
+</style>
+<body>
+	<div class="container">
+		<div class="box box1">
+			TranslateX(20px)
+		</div>
+		<div class="box box2">
+			TranslateY(20px)
+		</div>
+		<div class="box box3">
+			Translate(20px, 20px)
+		</div>
+		<div class="box box4">
+			Scale
+		</div>
+		<div class="box box5">
+			Rotate(20deg)
+		</div>
+		<div class="box box6">
+			skew(20deg,30deg)
+		</div>
+		<div class="box box7">
+			matrix(scaleX(), skewY(), scaleY(), translateX(), translateY());
+		</div>
+	</div>
+</body>
+</html>
