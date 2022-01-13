@@ -26,7 +26,7 @@ r(function () {
   var nb_videos = videos.length;
   for (var i = 0; i < nb_videos; i++) {
     // Находим постер для видео, зная ID нашего видео
-    videos[i].style.backgroundImage = "url(../img/video-baner.jpg)";
+    videos[i].style.backgroundImage = "url(img/video-baner.jpg)";
     // Размещаем над постером кнопку Play, чтобы создать эффект плеера
     var play = document.createElement("div");
     play.setAttribute("class", "play");
