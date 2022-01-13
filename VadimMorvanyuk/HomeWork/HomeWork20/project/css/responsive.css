@@ -1,0 +1,133 @@
+@media (min-width: 1200px){
+    .for_page .container{
+        max-width: 1110px;
+    }
+}
+@media (max-width: 991px){
+    .responsive_menu{
+        display: block;
+    }
+    .nav-menu{
+        display: none;
+    }
+    
+    .parent_responsive_menu{
+        display: flex;
+        justify-content: space-between;
+    }
+    .responsive_menu i{
+        font-size: 33px;
+        color: #34547a;
+        transition: 0.3s;
+        cursor: pointer;
+    }
+    .responsive_menu i:hover{
+        color: #03d5e4;
+    }
+    .banner{
+        padding: 50px 0;
+    }
+    .banner-img{
+        display: flex;
+        justify-content: center;
+    }
+    .banner .parentTextBaner{
+        padding-top: 25px;
+        padding-bottom: 18px;
+        text-align: center;
+    }
+    .parentTextBaner p{
+        margin: 45px 0;
+    }
+    .parentTextBaner h2{
+        font-size: 39px;
+    }
+    .photos .fancy-Child{
+        width: 50%;
+    }
+    .my_skills{
+        padding-bottom: 30px;
+    }
+    .projects img{
+        margin-bottom: 50px;
+    }
+    .footer_logos{
+        display: flex;
+        justify-content: center;
+    }
+    .footer_text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media (max-width:768px){
+    .banner-img{
+        display: flex;
+        justify-content: center;
+    }
+    .banner img{
+        display: block;
+        padding-bottom: 0;
+        padding-top: 32px;
+    }
+    .projects{
+        padding-left: 30px;
+        padding: 70px 0;
+    }
+    
+    .logo{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 30px;
+    }
+    .microsoft img{
+        padding-bottom: 30px;
+    }
+}
+@media (max-width:576px){
+    .projects{
+        padding: 70px 0;
+    }
+    .projects img{
+        padding-left: 30px;
+    }
+    .skills{
+        padding: 30px 0;
+    }
+    .my_skills{
+        text-align: center;
+    }
+    .my_skills p{
+        padding-right: 275px;
+    }
+    .form textarea{
+        width: 95%;
+    }
+}
+@media (max-width:520px){
+    
+    
+}
+@media (max-width:440px){
+    .my_skills p:before{
+        width: 279px;
+        top: 57px;
+    }
+    .my_skills p:after{
+        left: 280px;
+        top: 57px;
+    }
+    
+}
+@media (max-width:368px){
+    .projects img{
+        padding-left: 5px;
+    }
+    .my_skills p:before{
+        width: 200px;
+    }
+    .my_skills p:after{
+        left: 197px;
+    }
+}
