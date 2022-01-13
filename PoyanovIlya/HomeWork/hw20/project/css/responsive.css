@@ -67,6 +67,9 @@
         .projects {
             padding: 44px 0;
         }
+        .parent-gallery .fancy-child {
+            width: 50%;
+        }
     }
     
     @media (max-width: 500px) {
