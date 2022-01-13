@@ -128,6 +128,9 @@ a:hover {
   width: 50px;
   height: 50px;
 }
+.projects .skill-item .wraper {
+  padding-left: 20px;
+}
 .projects .skill-item .project-title {
   font-family: "Roboto", sans-serif;
   font-size: 21px;
@@ -147,7 +150,10 @@ a:hover {
   background-color: #e5e5e5;
 }
 .skills .skill-wraper {
-  padding-top: 80px;
+  padding-top: 50px;
+}
+.skills .skill-wraper .image-wraper img {
+  width: 100%;
 }
 .skills .skill-wraper .main-title {
   font-family: "Roboto", sans-serif;
@@ -269,6 +275,12 @@ a:hover {
   .head-part .head-btn {
     display: block;
     margin: 0 auto;
+  }
+  .gallery {
+    margin: 0;
+  }
+  .gallery .gallery-item {
+    width: 50%;
   }
 }
 @media screen and (max-width: 580px) {
