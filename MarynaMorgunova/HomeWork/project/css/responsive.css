@@ -1,0 +1,113 @@
+@media (min-width: 1200px) {
+    .for_page .container {
+        max-width: 1110px;
+    }
+}
+@media (max-width: 1199px) {
+    .video {
+        height: 520px;
+    }
+}
+@media (max-width: 991px) {
+    .header {
+        padding-top: 50px;
+    }
+    .responsiveMenuWrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    .header .responsiveMenu {
+        display: block;
+    }
+    .responsiveMenu i {
+        font-size: 35px;
+        color: #34547A;
+        transition: 0.3s;
+    }
+    .responsiveMenu i:hover {
+        color: #00D5E4;
+    }
+    .nav-menu{
+        display: none;
+    }
+    .banner {
+        padding-bottom: 70px;
+    }
+    .banner img {
+        margin: 10px auto 40px;
+    }
+    .parentTextBanner h2, .button{
+        text-align: center;
+    }
+    .parentTextBanner p {
+        padding: 30px 0 50px;
+        text-align: justify;
+    }
+    .about, .projects, .work, .skills, .orderForm, .slider {
+        padding: 50px 0;
+    }
+    .skills .skillsWrapper {
+        padding-right: 0;
+    }
+    .skills .skillsWrapper h3 {
+        text-align: center;
+    }
+    .skills img {
+        margin-bottom: 50px;
+    }
+    .video {
+        height: 380px;
+    }
+}
+@media (max-width: 767px) {
+    .video {
+        height: 285px;
+    }
+    .gallery .galleryImg {
+        width: 50%;
+    }
+}
+@media (max-width: 576px) {
+    .parentTextBanner h2{
+        font-size: 35px;
+    }
+    .about, .projects, .work, .skills, .orderForm, .slider {
+        padding: 30px 0;
+    }
+    .projects img {
+        display: block;
+        margin: 10px auto;
+    }
+    .video {
+        height: 260px;
+    }
+    .skills img {
+        margin-bottom: 30px;
+    }
+    .workContent h3, .about_me h3, .skillsWrapper h3, .orderFormContent h3 {
+        font-size: 28px;
+        font-weight: 500;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    footer {
+        padding: 30px 0;
+    }
+    footer .contacts, footer .social {
+        text-align: center;
+        padding: 10px 0;
+    }
+}
+@media (max-width: 500px) {
+    .video {
+        height: 250px;
+    }
+}
+@media (max-width: 470px) {
+    .video {
+        height: 200px;
+    }
+    .gallery .galleryImg {
+        width: 100%;
+    }
+}
