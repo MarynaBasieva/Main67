@@ -103,3 +103,9 @@ r(function(){
         }
     }
 });
+
+function showMenu() {
+	document.getElementById("menu").classList.toggle("show");
+	document.getElementById("navIcon").classList.toggle("active");
+	document.getElementById("banner").classList.toggle("dropBelow");
+  }
