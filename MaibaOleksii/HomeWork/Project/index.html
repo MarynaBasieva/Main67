@@ -13,6 +13,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
   <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
   <link rel="stylesheet" href="vendor/OwlCarousel/dist/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="vendor/OwlCarousel/dist/assets/owl.theme.default.css">
   <link type="text/css" rel="stylesheet" href="vendor/fancybox/dist/jquery.fancybox.min.css">
 
   <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
@@ -24,7 +25,7 @@
 <body>
   <main class="for-page">
     <div class="page">
-      <header class="header">
+      <header class="header fixedbar">
         <div class="container">
           <div class="row">
             <div class="col-xl-2 col-lg-2 col-md-12 col-sm-12">
@@ -63,7 +64,7 @@
                 <h1>Дизайн и верстка</h1>
                 <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для
                 текстов на латинице с начала XVI века.</p>
-                <a href="#" class="btn-banner">НАПИСАТЬ МНЕ</a>
+                <a href="#" class="btn-banner" data-toggle="modal" data-target="#exampleModal">НАПИСАТЬ МНЕ</a>
               </div>
             </div>
           </div>
@@ -71,11 +72,15 @@
       </section>
 
       <section class="about" id="about">
-        <div class="contaiiner">
-        <h2>Обо мне</h2>
-        <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для
-        текстов на латинице с начала XVI века.</p>
-      </div>
+        <div class="row">
+          <div class="col-12">
+            <div class="contaiiner">
+              <h2>Обо мне</h2>
+              <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для
+              текстов на латинице с начала XVI века.</p>
+            </div>
+          </div>
+        </div>
       </section>
 
       <section class="projects">
@@ -157,10 +162,14 @@
 
       <section class="work" id="work">
         <div class="about">
-          <h2>Как я работаю</h2>
-          <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой"
-            для
-            текстов на латинице с начала XVI века.</p>
+          <div class="row">
+            <div class="col-12">
+              <h2>Как я работаю</h2>
+              <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой"
+              для
+                текстов на латинице с начала XVI века.</p>
+            </div>
+          </div>
         </div>
         <div class="work-video">
           <div class="container">
@@ -200,32 +209,37 @@
         <a href="img/gallery1.png" data-fancybox="gallery-img" class="fancy-child">
           <img src="img/gallery1.png" alt="gal">
         </a>
-        
       </section>
 
       <section class="clients">
         <div class="container">
-          <div class="row">
-            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
-              <div class="clients-img">
-                <img src="img/microsoft.png" alt="microsoft">
+          <div class="owl-carousel" id="carousel-clients">
+            <div class="row">
+              <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                <div class="clients-img">
+                  <img src="img/microsoft.png" alt="microsoft">
+                </div>
+              </div>
+              <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                <div class="clients-img">
+                  <img src="img/microsoft.png" alt="microsoft">
+                </div>
+              </div>
+              <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                <div class="clients-img">
+                  <img src="img/microsoft.png" alt="microsoft">
+                </div>
+              </div>
+              <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                <div class="clients-img">
+                  <img src="img/microsoft.png" alt="microsoft">
+                </div>
               </div>
             </div>
-            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
-              <div class="clients-img">
-                <img src="img/microsoft.png" alt="microsoft">
-              </div>
-            </div>
-            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
-              <div class="clients-img">
-                <img src="img/microsoft.png" alt="microsoft">
-              </div>
-            </div>
-            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
-              <div class="clients-img">
-                <img src="img/microsoft.png" alt="microsoft">
-              </div>
-            </div>
+          </div>
+          <div class="owl-navigation">
+            <span class="owl-nav-prev" role="presentation"><i class='bx bx-chevron-left'></i></span>
+            <span class="owl-nav-next" role="presentation"><i class='bx bx-chevron-right'></i></span>
           </div>
         </div>
       </section>
@@ -233,10 +247,13 @@
       <section class="form">
         <div class="container">
           <div class="about">
-            <h2>Как я работаю</h2>
-            <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой"
-              для
-              текстов на латинице с начала XVI века.</p>
+            <div class="row">
+              <div class="col-12">
+                <h2>Хотите веб-сайт?</h2>
+                <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной
+                  "рыбой"для текстов на латинице с начала XVI века.</p>
+              </div>
+            </div>
           </div>
           <div class="form-content">
             <div class="form-name">
@@ -249,7 +266,9 @@
             <div class="form-message">
               <textarea name="message"  placeholder="Сообщение"></textarea>
             </div>
-              <a href="#" class="form-btn">НАПИСАТЬ МНЕ</a>
+              <a href="#" class="form-btn" data-toggle="modal" data-target="#exampleModal">НАПИСАТЬ МНЕ</a>
+              
+              
           </div>
       </section>
       
@@ -274,5 +293,24 @@
       </footer>
     </div>
   </main>
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        </div>
+        <div class="modal-body">
+          <input type="text" placeholder="Ваше имя" name="name" required>
+          <input type="text" placeholder="Ваш e-mail" name="email" required>
+          <textarea name="message" placeholder="Сообщение"></textarea>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>

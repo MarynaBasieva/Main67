@@ -4,8 +4,66 @@ jQuery(document).ready(function () {
 
   jQuery(".fancybox").fancybox();
 
+
+
+  let carousel = jQuery('#carousel-clients');
+		
+	carousel.owlCarousel({
+		items: 4,
+		autoplay: false,
+		autoplayTimeout: 6000,
+		autoplayHoverPause: false,
+		smartSpeed: 1000,
+		dotsSpeed: 1000,
+		loop: true,
+    nav: true,
+    dots: true,
+		navText: [".owl-nav-prev", ".owl-nav-next"],
+		mouseDrag: true,
+		margin: 30,
+		stagePadding: 0,
+		autoWidth: false,
+		responsiveClass: true,
+		responsive:{
+			0:{
+				items: 1,
+				
+			},
+			479:{
+				items: 1,
+			
+			},
+			767:{
+				items: 2,
+				
+			},
+			991:{
+				items: 3,
+				
+			},
+			1110:{
+				items: 1,
+        
+			}
+		}
+  });
+  
   
 
+});
+
+jQuery("document").ready(function($){
+ 
+	var nav = $('.header');
+ 
+	$(window).scroll(function () {
+		if ($(this).scrollTop() > 136) {
+			nav.addClass("fixedbar");
+		} else {
+			nav.removeClass("fixedbar");
+		}
+	});
+ 
 });
 
 
@@ -49,3 +107,4 @@ r(function(){
         }
     }
 });
+
