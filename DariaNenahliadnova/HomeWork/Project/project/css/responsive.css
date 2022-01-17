@@ -1,0 +1,153 @@
+@media (min-width: 1200px){
+    
+.for_page .container {
+    max-width: 1110px;
+}
+}
+
+@media (max-width: 1199px){
+
+}
+@media (max-width: 991px){
+    .responsive_menu{
+        display: block;
+    }
+    .responsive_menu i{
+        font-size: 33px;
+        color: #34547A;
+        transition: 0.3px;
+        cursor: pointer;
+
+    }
+    .responsive_menu i:hover{
+        color: #03d5e4;
+    }
+    .nav-menu{
+        display: none;
+    }
+    .parent_responsive_menu{
+        display: flex;
+        justify-content: space-between;
+    }
+    .banner{
+        padding-top: 70px;
+        padding-bottom: 111px;
+    }
+    .parentTextBanner h2{
+        padding-top: 20px;
+        font-size: 42px ; 
+    }
+    .parentTextBanner p{
+        padding: 0px 30px 40px;
+    }
+    .parentTextBanner .btnBanner{
+        padding: 20px 30px;
+    }
+    .block2{
+        margin-top: 55px;
+        margin-bottom: 65px;
+    }
+    .icon {
+        margin-top: 25px;
+        margin-bottom: 20px;
+    }
+    .my-skills {
+        padding-top: 50px;
+    }
+    .my-photo img {
+        padding-top: 60px;  
+    }
+    .block3 {
+        margin-top: 50px;
+    }
+    .parent-galery .fancyChild {
+        height: 243px;
+    }
+    .microsoft .container {
+        padding-top: 40px;
+        padding-bottom: 65px;
+    }
+    .block4 {
+        padding-top: 50px;
+    }
+    .block4 p {
+        padding-top: 30px;
+    }
+
+
+}
+@media (max-width: 767px ){
+    .parentTextBanner h2 {
+        padding-top: 20px;
+        font-size: 38px;
+        text-align:center;
+    }
+    .parentTextBanner p{
+        text-align: center;
+    }
+    .parentTextBanner .btnBanner{
+        margin-left: 140px;
+    }
+    .icon {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .parent-galery .fancyChild {
+        height: 187px;
+    }
+
+    .parent-galery {
+        padding-top: 0px;
+    }
+
+    .video{
+        padding-bottom: 10px;
+    }
+    .microsoft .container {
+        padding-top: 5px;
+        padding-bottom: 10px;
+    }
+
+    .input {
+        padding-bottom: 70px;
+    }
+
+}
+@media (max-width: 500px ){
+    
+    .parentTextBanner .btnBanner {
+        padding: 18px 20px;
+    }
+    .banner {
+        padding-bottom: 80px;
+    }
+
+    .parent-galery .fancyChild {
+        height: 120px;
+    }
+    .form-email input {
+        padding: 17px 50px 18px 20px;
+    }
+
+    .form-name input {
+        padding: 17px 50px 18px 20px;
+    }
+    .form-name input {
+        margin-right: 10px;
+    }
+    .form-textarea input {
+    padding: 17px 268px 143px 20px;
+    }
+    .btnSend {
+        padding: 15px 19px;
+    }
+
+
+}
+@media (max-width: 470px){
+    
+}
+@media (max-width: 400px){
+    
+}
