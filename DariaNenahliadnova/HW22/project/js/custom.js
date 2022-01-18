@@ -4,10 +4,65 @@ jQuery(document).ready(function () {
     'use strict';
 	
 	
+	jQuery(".fancybox").fancybox();
 	
+	let carousel = jQuery('#carousel_partners');
+		
+	carousel.owlCarousel({
+		items: 4,
+		autoplay: false,
+		autoplayTimeout: 6000,
+		autoplayHoverPause: false,
+		smartSpeed: 1000,
+		dotsSpeed: 1000,
+		loop: true,
+		nav: false,
+		navText: [''],
+		dots: true,
+		mouseDrag: true,
+		margin: 30,
+		stagePadding: 0,
+		autoWidth: false,
+		responsiveClass: true,
+		responsive:{
+			0:{
+				items: 1,
+				dots: true,
+				nav: false,
+				mouseDrag: true,
+				autoplay: true,
+				smartSpeed: 1000
+			},
+			479:{
+				items: 1,
+				dots: true,
+				mouseDrag: true,
+				autoplay: true,
+				smartSpeed: 1000
+			},
+			767:{
+				items: 2,
+				dots: true,
+				mouseDrag: true,
+				autoplay: true,
+				smartSpeed: 1000
+			},
+			991:{
+				items: 3,
+				dots: true,
+				mouseDrag: true,
+				autoplay: true,
+				smartSpeed: 1000
+			},
+			1099:{
+				items: 4,
+				dots: true,
+				mouseDrag: true
+			}
+		}
+	});
 	
 });
-
 
 'use strict';
 function r(f){/in/.test(document.readyState)?setTimeout('r('+f+')',9):f()}
@@ -47,6 +102,5 @@ r(function(){
             // Заменяем начальное изображение (постер) на iFrame
             this.parentNode.replaceChild(iframe, this);
         }
-        
     }
 });

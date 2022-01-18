@@ -6,9 +6,15 @@
 }
 
 @media (max-width: 1199px){
-
+    .youtube {
+        height: 525px;
+    }
 }
-@media (max-width: 991px){
+@media (max-width: 991px){ 
+    .parentTextBanner h2{
+        padding-top: 20px;
+        text-align: center; 
+    }
     .responsive_menu{
         display: block;
     }
@@ -33,10 +39,7 @@
         padding-top: 70px;
         padding-bottom: 111px;
     }
-    .parentTextBanner h2{
-        padding-top: 20px;
-        font-size: 42px ; 
-    }
+   
     .parentTextBanner p{
         padding: 0px 30px 40px;
     }
@@ -63,10 +66,7 @@
     .parent-galery .fancyChild {
         height: 243px;
     }
-    .microsoft .container {
-        padding-top: 40px;
-        padding-bottom: 65px;
-    }
+   
     .block4 {
         padding-top: 50px;
     }
@@ -104,10 +104,7 @@
     .video{
         padding-bottom: 10px;
     }
-    .microsoft .container {
-        padding-top: 5px;
-        padding-bottom: 10px;
-    }
+    
 
     .input {
         padding-bottom: 70px;

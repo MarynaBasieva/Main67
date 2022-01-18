@@ -14,10 +14,12 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-<link  href="vendor/fancybox/dist/jquery.fancybox.min.css">
+<link rel="stylesheet" href="vendor/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css" rel="stylesheet">
+<link  rel="stylesheet" href="vendor/fancybox/dist/jquery.fancybox.min.css" type="text/css">
 
 <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
-<script type="text/javascript" src="vendor/fancybox/dist/jquery.fancybox.min.css"></script>
+<script type="text/javascript" src="vendor/fancybox/dist/jquery.fancybox.min.js"></script>
+<script type="text/javascript" src="vendor/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
 <script type="text/javascript" src="js/custom.js"></script>
 <script type="text/javascript" src="vendor/bootstrap-4.0.0/js/bootstrap.min.js"></script>
 
@@ -99,7 +101,7 @@
                 <div class="container">
                     <div class="row justify-content-center">
                         
-                        <div class="col-xl-2 col-lg-2 col-md-6 col-sm-12">
+                        <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6">
                             <div class="icon item1 ">
                                 <img src="img/project.png" alt="">
                                 <div class="icon-text">
@@ -109,7 +111,7 @@
                             </div>
                         </div>
 
-                        <div class="col-xl-2 col-lg-2 col-md-6 col-sm-12">
+                        <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6">
                             <div class="icon item2">
                                 <img src="img/project.png" alt="">
                                 <div class="icon-text">
@@ -119,7 +121,7 @@
                             </div>
                         </div>
 
-                        <div class="col-xl-2 col-lg-2 col-md-6 col-sm-12">
+                        <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6">
                             <div class="icon item3">
                                 <img src="img/project.png" alt="">
                                 <div class="icon-text">
@@ -129,7 +131,7 @@
                             </div>
                         </div>
 
-                        <div class="col-xl-2 col-lg-2 col-md-6 col-sm-12">
+                        <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6">
                             <div class="icon item4">
                                 <img src="img/project.png" alt="">
                                 <div class="icon-text">
@@ -139,7 +141,7 @@
                             </div>
                         </div>
 
-                        <div class="col-xl-2 col-lg-2 col-md-6 col-sm-12">
+                        <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6">
                             <div class="icon item5">
                                 <img src="img/project.png" alt="">
                                 <div class="icon-text">
@@ -149,7 +151,7 @@
                             </div>
                         </div>
 
-                        <div class="col-xl-2 col-lg-2 col-md-6 col-sm-12">
+                        <div class="col-xl-2 col-lg-2 col-md-6 col-sm-6">
                             <div class="icon item6">
                             <img src="img/project.png" alt="">
                                 <div class="icon-text">
@@ -196,8 +198,12 @@
                                 <h2>Как я работаю</h2>
                                 <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p></div>
                         </div>
-                    </div>
-                        <img src="img/Rectangle 5.png" class="video">
+                       
+                    </div> 
+                
+                    <div class="video">
+                         <div class="youtube" id="YDKFWhBkC8c"></div>
+                   </div>
 
                 </div>
             </section>
@@ -229,23 +235,30 @@
                 </a>
 
             </section>
-            <section class="microsoft">
+            <section class="slider-carousel">
                 <div class="container">
-                    <div class="row justify-content-center">
-                        
-                        <div class="col-xl-2 col-lg-2 col-md-6 col-sm-12">
-                            <img src="img/microsooft.png"></div>
-                        <div class="col-xl-2 col-lg-2 col-md-6 col-sm-12">
-                            <img src="img/microsooft.png"></div>
-                        <div class="col-xl-2 col-lg-2 col-md-6 col-sm-12">
-                            <img src="img/microsooft.png"></div>
-                        <div class="col-xl-2 col-lg-2 col-md-6 col-sm-12">
-                            <img src="img/microsooft.png">
-                        </div>
-                    </div>
-
+                   
+                       <div class="owl-carousel" id="carousel_partners">
+                            <div class="item">
+                                <img src="img/microsooft22.png">
+                            </div>
+                            <div class="item">
+                                <img src="img/microsooft22.png">
+                            </div>
+                            <div class="item">
+                                <img src="img/microsooft22.png">
+                            </div>
+                            <div class="item">
+                                <img src="img/microsooft22.png">
+                            </div>
+                            
+                            
+                       </div>
+                      
+                   </div>
                 </div>
             </section>
+
             <section class="input">
                 <div class="container">
                     <div class="row justify-content-center">
@@ -253,22 +266,13 @@
                             <div class="block4">
                                     <h2>Хотите веб-сайт?</h2>
                                     <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
+                                    
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="button-Send" data-toggle="modal" data-target="#exampleModal">ЗАКАЗАТЬ</button>
+                            
                             </div> 
-                        </div></div>
-                            <div class="form">
-                                <div class="form-name">
-                                <input type="text" name="first-name" placeholder="Ваше имя" ></div>
-                                <div class="form-email">
-                                <input type="email" name="email" placeholder="Ваш e-mail" ></div>
-                             </div>
-                                <div class="form-textarea">
-                                <input type="textarea" name="textarea" placeholder="Сообщение" maxlength="150" ></div>
-                                <div class="buttonSend">
-                                    <a href="#"class="btnSend">ОТПРАВИТЬ</a>
-                                </div>
-                             </div>
-                           
-                    
+                        </div>
+                    </div>     
                 </div>
             </section>
             <footer>
@@ -284,6 +288,38 @@
                     </div>
                 </div>
             </footer>
+
+            
+            <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Сделать заказ</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                
+                        <div class="form">
+                            <div class="form-name">
+                                <input type="text" name="first-name" placeholder="Ваше имя" ></div>
+                            <div class="form-email">
+                                 <input type="email" name="email" placeholder="Ваш e-mail" ></div>
+                                    </div>
+                            <div class="form-textarea">
+                                 <input type="textarea" name="textarea" placeholder="Сообщение" maxlength="150" ></div>
+                            <div class="buttonSend">
+                                 <a href="#"class="btnSend">ОТПРАВИТЬ</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
 
         </div>
     </main>
