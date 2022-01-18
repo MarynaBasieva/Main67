@@ -1,0 +1,202 @@
+@media (min-width: 1200px) {
+  .for-page .container {
+    max-width: 1150px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .clients-img {
+    width: 200px;
+  }
+  .form-btn {
+    margin-left: 365px;
+  }
+
+  .youtube {
+    height: 520px;
+  }
+}
+
+@media (max-width: 991px) {
+  .responsive-menu {
+    display: block;
+  }
+
+  .responsive-menu i {
+    font-size: 33px;
+    color: #34547a;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  .responsive-menu i:hover {
+    color: #035ed4;
+  }
+  .nav-menu {
+    display: none;
+  }
+
+  .parent-responsive-menu {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .banner {
+    padding: 0 0 50px 0;
+  }
+
+  .banner-img {
+    text-align: center;
+  }
+
+  .parent-text {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .parent-text h1 {
+    margin-bottom: 10px;
+    font-size: 40px;
+  }
+
+  .parent-text p {
+    margin-bottom: 41px;
+  }
+
+  .btn-banner {
+    padding: 14px 22px;
+  }
+
+  .about {
+    padding: 35px;
+  }
+
+  .youtube {
+    height: 380px;
+  }
+
+  .projects {
+    padding: 30px 0;
+  }
+
+  .projects-item {
+    margin-bottom: 20px;
+  }
+
+  .skills {
+    padding: 0 0 30px 0;
+  }
+
+  .skills-content {
+    margin: 40px 0px 0 0;
+  }
+
+  .work {
+    padding-bottom: 25px;
+  }
+
+  .gallery .fancy-child {
+    width: 50%;
+  }
+
+  .clients {
+    padding: 35px 0 35px 0;
+  }
+
+  .clients-img {
+    width: 200px;
+    margin: 0 auto;
+  }
+
+  .form-btn {
+    margin-left: 230px;
+  }
+
+  .form-name input,
+  .form-email input {
+    padding: 17px 150px 18px 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .logo {
+    margin: 0;
+  }
+  .youtube {
+    height: 280px;
+  }
+
+  .form-btn {
+    margin-left: 160px;
+  }
+
+  .form-name input,
+  .form-email input {
+    padding: 17px 61px 18px 20px;
+  }
+
+  .form-message textarea {
+    padding: 23px 335px 100px 40px;
+  }
+  footer {
+    text-align: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .parent-text h1 {
+    font-size: 35px;
+  }
+
+  .youtube {
+    height: 240px;
+  }
+
+  .gallery .fancy-child {
+    width: 100%;
+  }
+
+  .clients-img {
+    width: 200px;
+    margin: 0 auto;
+  }
+
+  .form-content {
+    display: grid;
+  }
+
+  .form-name {
+    margin-bottom: 25px;
+    margin-right: 0;
+  }
+
+  .form-btn {
+    margin-left: 130px;
+  }
+
+  .form-name input,
+  .form-email input {
+    padding: 17px 165px 18px 20px;
+  }
+
+  .form-message textarea {
+    padding: 23px 150px 100px 40px;
+  }
+}
+@media (max-width: 530px) {
+  .modal-body input {
+    margin-bottom: 25px;
+    width: 100%;
+  }
+
+  .modal-body textarea {
+    margin-top: 8px;
+  }
+}
+
+@media (max-width: 470px) {
+  .form-btn {
+    display: block;
+    margin: 0 auto;
+    padding: 20px;
+  }
+}

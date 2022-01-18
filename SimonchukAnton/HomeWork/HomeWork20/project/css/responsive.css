@@ -1,0 +1,140 @@
+@media (min-width: 1200px){
+.for_page .container {
+    max-width: 1110px;
+}
+}
+@media (max-width: 1199px) {
+}
+@media (max-width: 1199px) {
+}
+@media (max-width: 991px) {
+
+        
+    .responsive_menu {
+        display:block;
+    }
+    .nav-menu {
+        display: none;
+    }
+    .responsive_menu i {
+        font-size: 33px;
+        color: #34547A;
+        transition: 0.3s;
+        cursor: pointer;
+    }
+
+        .responsive_menu i:hover {
+            color: #a4ea0b;
+        }
+    .parents_responsive_menu {
+        display:flex;
+        justify-content:space-between;
+    }
+    .header {
+        padding-bottom: 50px;
+    }
+.banner {
+    padding-bottom: 50px;
+}
+    .parentTextBaner h2 {
+        text-align: center;
+        margin-top:20px;
+        margin-bottom:20px;
+    }
+    .parentTextBaner p {
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 0px;
+    }
+    .btnBanner {
+        margin: 0 auto;
+        display: block;
+    }
+.about {
+    padding-top: 70px;
+    
+    padding-bottom: 70px;
+}
+.project img {
+    margin: 0 auto;
+    display: block;
+}
+.skills {
+    padding: 50px 0;
+}
+    .skills h2 {
+        padding: 5px 30px;
+        text-align:center;
+    }
+.skills_line {
+    position: relative;
+    width: 650px;
+    height: 4px;
+    background: #C4C4C4;
+    margin: 20px;
+}
+
+    .skills_line:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width:555px;
+        height: 4px;
+        background: #34547A;
+    }
+.video {
+    padding: 50px 0;
+    
+}
+.about h2 {
+  
+    margin: 25px;
+}
+}
+    @media (max-width: 576px) {
+        .parentTextBaner h2 {
+          font-size:30px;
+        }
+        .btnBanner {
+            padding: 10px 40px;
+        }
+            .skills_line {
+            position: relative;
+            width: 350px;
+            height: 4px;
+            background: #C4C4C4;
+            margin: 20px;
+        }
+
+            .skills_line:after {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 295px;
+                height: 4px;
+                background: #34547A;
+            }
+
+        .galery .fancyimg {
+            width: 50%;
+        }
+        .slider-carousel .owl-carousel .owl-item img {
+            display: block;
+            margin: 0 auto;
+        }
+        }
+@media (max-width: 500px) {
+    .galery .fancyimg {
+        width: 100%;
+    }
+
+    .slider_windows .owl-carousel .item img {
+        display: block;
+        margin: 0 auto;
+    }
+}
+}
+@media (max-width: 470px) {
+}

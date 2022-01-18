@@ -1,0 +1,428 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+}
+
+img {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+}
+
+
+/*header*/
+
+.header {
+    background: #eeeff1;
+    padding-top: 57px;
+    padding-bottom: 130px;
+}
+
+
+/*header*/
+
+.responsive-menu {
+    display: none;
+}
+
+
+/*Menu*/
+
+.nav-menu ul.sub-menu {
+    display: flex;
+    list-style: none;
+    white-space: nowrap;
+    padding-left: 320px;
+}
+
+.nav-menu ul.sub-menu li a {
+    margin-right: 42px;
+    font-size: 16px;
+    line-height: 26px;
+    color: #000;
+    font-weight: 500;
+}
+
+.nav-menu ul.sub-menu li a:hover {
+    color: #34547a;
+    text-decoration: none;
+}
+
+.nav-menu ul.sub-menu li:last-child a {
+    margin-right: 0;
+}
+
+
+/*Menu*/
+
+
+/*baner*/
+
+.banner {
+    background: #eeeff1;
+    padding-bottom: 175px;
+}
+
+.banner img {
+    display: block;
+    margin: 0 auto;
+    padding-top: 27px;
+}
+
+.button {
+    padding-top: 60px;
+}
+
+.btn-baner {
+    background: #34547a;
+    color: white;
+    border: 1px solid;
+    padding: 20px 40px;
+    letter-spacing: 2px;
+}
+
+.btn-baner:hover {
+    text-decoration: none;
+    background: white;
+    transition: 0.6s;
+}
+
+.parent-text-baner h2 {
+    padding-bottom: 30px;
+    font-weight: 600;
+    font-size: 48px;
+    color: #000;
+}
+
+.parent-text-baner p {
+    color: #727272;
+    line-height: 26px;
+    font-family: "Roboto";
+}
+
+
+/*baner*/
+
+
+/*about-me*/
+
+.about {
+    max-width: 550px;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+.about-me h3 {
+    padding-bottom: 35px;
+    font-weight: 600;
+}
+
+.about-me p {
+    color: #727272;
+    font-family: "Roboto";
+}
+
+
+/*about-me*/
+
+.projects {
+    background: #34547a;
+    padding: 90px 0;
+}
+
+.projects img {
+    vertical-align: sub;
+}
+
+.projects-text {
+    display: inline-block;
+    padding-left: 11px;
+}
+
+.projects-count {
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 25px;
+    color: #ffffff;
+}
+
+.projects-projects {
+    font-size: 16px;
+    line-height: 26px;
+    color: #ffffff;
+}
+
+
+/*about-me*/
+
+
+/*skills*/
+
+.skills {
+    padding-top: 100px;
+    padding-bottom: 30px;
+}
+
+.skills-me {
+    padding-top: 100px;
+    max-width: 100%;
+}
+
+.skills-me h2 {
+    padding-bottom: 25px;
+}
+
+.skills-me p {
+    margin: 0px;
+    color: #727272;
+}
+
+.skills-me img {
+    padding-top: 13px;
+    padding-bottom: 30px;
+}
+
+.line {
+    position: relative;
+    width: 445px;
+    height: 4px;
+    background-color: #c4c4c4;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.line::before {
+    position: absolute;
+    content: "";
+    top: 0px;
+    left: 0px;
+    width: 350px;
+    height: 4px;
+    background-color: #34547a;
+}
+
+
+/*skills*/
+
+.how-work {
+    text-align: center;
+    padding: 90px 0;
+}
+
+.work {
+    max-width: 550px;
+    margin: 0 auto;
+    padding-bottom: 45px;
+}
+
+.work h3 {
+    padding-bottom: 35px;
+    font-weight: 600;
+}
+
+.work p {
+    color: #727272;
+    font-family: "Roboto";
+}
+
+
+/*youtube*/
+
+.youtube {
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    transition: all 200ms ease-out;
+    cursor: pointer;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+}
+
+.how-work iframe {
+    width: 100%;
+    height: 600px;
+    border: none;
+}
+
+.youtube .play {
+    background: url('/img/youtube-play-btn.png') no-repeat;
+    /*ВАЖНО: здесь укажите адрес до изображения*/
+    background-position: 0 -50px;
+    -webkit-background-size: 100% auto;
+    background-size: 100% auto;
+    position: absolute;
+    height: 50px;
+    width: 69px;
+    transition: none;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.youtube:hover .play {
+    background-position: 0 0;
+}
+
+
+/*youtube*/
+
+
+/* gallery */
+
+.parent-gallery {
+    padding-top: 28px;
+}
+
+.parent-gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.parent-gallery .fancy-child {
+    width: 25%;
+    overflow: hidden;
+    position: relative;
+}
+
+.parent-gallery .fancy-child:hover:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url("..//img/eyes.png") no-repeat, linear-gradient(0deg, rgba(52, 84, 122, 0.8), rgba(52, 84, 122, 0.8));
+    background-position: center center;
+    transition: 1s;
+}
+
+
+/* gallery */
+
+.slider-carousel {
+    padding-top: 72px;
+    padding-bottom: 100px;
+}
+
+
+/* send-message */
+
+.send-message {
+    background: #eeeff1;
+    padding-bottom: 100px;
+}
+
+.want-website {
+    max-width: 540px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 120px;
+    padding-bottom: 65px;
+}
+
+.want-website h2 {
+    line-height: 37px;
+    margin-bottom: 50px;
+}
+
+.form-input {
+    display: flex;
+    justify-content: center;
+}
+
+.form-name {
+    margin-right: 30px;
+}
+
+.form-name input,
+.form-email input {
+    padding: 17px 60px 18px 20px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+.message-input {
+    margin: 20px 0 50px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.message-input textarea {
+    padding: 17px 375px 143px 20px;
+    border: none;
+    outline: none;
+    resize: none;
+}
+
+.form-button {
+    display: flex;
+    justify-content: center;
+}
+
+.form-button-send {
+    cursor: pointer;
+    background: #34547a;
+    color: white;
+    border: 1px solid #34547a;
+    padding: 15px 50px;
+    letter-spacing: 2px;
+}
+
+.form-button-send:hover {
+    text-decoration: none;
+    background: white;
+    color: #34547a;
+    transition: 0.6s;
+}
+
+
+/* send-message */
+
+
+/* footer */
+
+footer {
+    background: #34547a;
+    padding-bottom: 50px;
+}
+
+.person-info h3 {
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 25px;
+    color: #ffffff;
+    padding-top: 50px;
+}
+
+.person-info p {
+    font-size: 13px;
+    line-height: 21px;
+    color: #ffffff;
+}
+
+.media-contact {
+    font-size: 40px;
+    color: #fff;
+    margin-top: 56px;
+    cursor: pointer;
+}
+
+.media-contact img:hover {
+    filter: contrast(1%);
+    transition: 0.5s;
+}
+
+
+/* footer */

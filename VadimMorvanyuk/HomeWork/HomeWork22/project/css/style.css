@@ -1,0 +1,369 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+img{
+    max-width: 100%;
+    width: auto;
+    height: auto;
+}
+a{
+    text-decoration: none;
+}
+/*header*/
+.header{
+    background: #eeeff1;
+    padding-top: 57px;
+}
+.responsive_menu{
+    display: none;
+}
+    /*Menu*/
+        .nav-menu ul.sub-menu{
+            display: flex;
+            list-style: none;
+            justify-content: end;
+        }
+        .nav-menu ul.sub-menu li a{
+            margin-right: 42px;
+            font-size: 16px;
+            line-height: 26px;
+            color: #000000;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+        .nav-menu ul.sub-menu li a:hover{
+            
+            color: #34547a;
+            text-decoration: none;
+        }
+        .nav-menu ul.sub-menu li:nth-child(5) a{
+            margin-right: 0;
+        }
+    /*Menu*/
+/*header*/
+
+/*Banner Block*/
+.banner{
+    background: #eeeff1;
+    padding: 180px 0;
+}
+
+.parentTextBaner h2{
+    font-size: 48px;
+}
+.parentTextBaner p{
+    margin: 60px 0;
+    color: #727272;
+}
+.btnBanner{
+    padding: 20px 40px;
+    background: #34547A;
+    border: none;
+    color: #ffffff;
+    transition: 0.3s;
+}
+.btnBanner:hover{
+    background: #03d5e4;
+    color: #ffffff;
+    text-decoration: none;
+}
+/*Banner Block*/
+
+/*About Block*/
+.about{
+    padding: 100px 0;
+}
+.about_text h2{
+    font-size: 32px;
+}
+.about_text p{
+    font-size: 16px;
+    color: #727272;
+    margin-top: 50px;
+}
+.about_text{
+    margin: 0 auto;
+    text-align: center;
+}
+/*About Block*/
+
+/*Projects Block*/
+.projects {
+    background: #34547A;
+    padding: 100px 0;
+}
+.projects img{
+    position: relative;
+    margin-right: 10px;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+.projects span{
+    position: absolute;
+    font-size: 21px;
+    color: #ffffff;
+}
+.projects .span1{
+    position: absolute;
+    top: 27px;
+    color: #ffffff;
+    font-size: 16px;
+}
+/*Projects Block*/
+
+/*Skills Block*/
+.skills {
+    padding: 100px 0;
+}
+.my_skills {
+    padding-top: 104px;
+}
+.my_skills h2{
+    font-size: 32px;
+    padding-bottom: 50px;
+}
+.my_skills p{
+    color: #727272;
+    position: relative;
+    padding-bottom: 20px;
+}
+.my_skills p:before{
+    content: "";
+    width: 350px;
+    height: 4px;
+    background: #34547a;
+    position: absolute;
+    top: 40px;
+}
+.my_skills p:after{
+    content: "";
+    width: 70px;
+    height: 4px;
+    background: #c4c4c4;
+    position: absolute;
+    top: 40px;
+    left: 350px;
+}
+/*Skills Block*/
+
+/*Work Block*/
+.work{
+    background: #eeeff1;
+    padding: 100px 0;
+}
+.work .work_title {
+    text-align: center;
+    margin: 0 auto;
+}
+.work_title h2{
+    font-size: 32px;
+    padding-bottom: 50px;
+    color: #000000;
+}
+.work_title p{
+    font-size: 16px;
+    color: #727272;
+    padding-bottom: 57px;
+}
+.row{
+    justify-content: center;
+}
+.youtube {
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    transition: all 200ms ease-out;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+.work_video{
+    width: 100%;
+    height: 600px;
+}
+.work_video iframe{
+    width: 100%;
+    height: 100%;
+}
+.youtube .play {
+    background: url('../img/youtube-play-btn.png') no-repeat;
+    background-position: 0 -100px;
+    -webkit-background-size: 100% auto;
+    background-size: 100% auto;
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    transition: none;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    margin:auto;
+}
+.youtube:hover .play {
+    background-position: 0 0;
+}
+/*Work Block*/
+
+/*Photos Block*/
+.photos{
+    padding-top: 28px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.photos .fancy-Child {
+    width: 25%;
+    overflow: hidden;
+    position: relative;
+    transition: 0.4s;
+}
+.photos .fancy-Child:hover:before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../img/eye.png), linear-gradient(0deg, rgba(52, 84, 122, 0.8), rgba(52, 84, 122, 0.8));
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+/*Photos Block*/
+
+/*Microsoft Block*/
+.microsoft{
+    padding: 100px 0;
+}
+/*Microsoft Block*/
+
+/*Form Block*/
+.form{
+    background: #EEEFF1;
+    text-align: center;
+    padding-bottom: 100px;
+}
+.form_title{
+    text-align: center;
+    margin: 0 auto;
+}
+.form_title h2{
+    padding: 100px 0 50px 0;
+}
+.form_title p{
+    font-size: 16px;
+    color: #727272;
+    padding-bottom: 65px;
+}
+.form input{
+    margin-bottom: 20px;
+    background: #ffffff;
+    outline: none;
+    border: none;
+    padding: 15px 0 15px 20px;
+    width: 90%;
+}
+.form textarea{
+    background: white;
+    border: none;
+    outline: none;
+    padding: 15px 0 15px 20px;
+    resize: none;
+    width: 100%;
+    margin-bottom: 50px;
+    
+}
+.form .btnForm{
+    padding: 16px 50px;
+    background: #34547A;
+    cursor: pointer;
+    color: #ffffff;
+}
+.btnForm:hover{
+    text-decoration: none;
+}
+/*Form Block*/
+
+/*Modal Window*/
+.modal input{
+    padding: 8px 24px;
+    border: none;
+    background: #f6f6ff;
+    margin-bottom: 16px;
+    outline: none;
+}
+.modal textarea{
+    width: 100%;
+    resize: none;
+    border: none;
+    background: #f6f6ff;
+    outline: none;
+    padding-top: 5px;
+    padding-left: 22px;
+    padding-bottom: 85px;
+}
+.modal-content .modal-footer{
+    justify-content: center;
+}
+.modal-footer .btnModal{
+    padding: 10px 30px;
+    background: #34547A;
+    border: none;
+    color: #ffffff;
+    transition: 0.3s;
+}
+.modal-footer .btnModal:hover{
+    background: #03d5e4;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/*Modal Window*/
+
+/*Owl Carousel*/
+.slider-carousel{
+    padding-top: 72px;
+    padding-bottom: 100px;
+}
+.slider-carousel .owl-carousel .owl-item img{
+    width: auto;
+    margin: 0 auto;
+}
+/*Owl Carousel*/
+
+/*Footer Block*/
+.footer {
+    background: #34547a;
+    padding: 50px 0;
+}
+.footer h2{
+    font-size: 21px;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+.footer p{
+    font-size: 13px;
+    color: #ffffff;
+    font-family: sans-serif;
+}
+.footer_logos{
+    text-align: end;
+}
+.footer_logos img{
+    margin-right: 20px;
+}
+/*Footer Block*/

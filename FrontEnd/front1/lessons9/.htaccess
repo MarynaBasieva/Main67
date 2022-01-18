@@ -1,7 +1,0 @@
-
-<IfModule>
-
-Redirect 301 /uslugy/uslugi-dly-bisnessa/predstavytelstvo-v-sude-2  /uslugy/predstavytelstvo-v-sude-2
-Redirect 301 /uslugy/uslugi-dly-bisnessa/uslugy/dogovornye-otnoshenyya-2  /uslugy/dogovornye-otnoshenyya-2
-
-</IfModule>
