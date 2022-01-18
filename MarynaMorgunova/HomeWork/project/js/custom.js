@@ -1,25 +1,24 @@
 jQuery.noConflict();
 jQuery(document).ready(function () {
-  'use strict';
-
-  jQuery(".fancybox").fancybox();
-
-
-  let carousel = jQuery('#carousel-clients');
+    'use strict';
+	jQuery(".fancybox").fancybox();
+    jQuery(".fancybox").fancybox();
+	
+	let carousel = jQuery('#sliderMicrosoft');
 		
 	carousel.owlCarousel({
 		items: 4,
-		autoplay: false,
+		autoplay: true,
 		autoplayTimeout: 3000,
 		autoplayHoverPause: true,
 		smartSpeed: 1500,
 		dotsSpeed: 1000,
 		loop: true,
-		nav: true,
+		nav: false,
 		navText: [''],
 		dots: true,
 		mouseDrag: true,
-		margin: 30,
+		margin: 0,
 		stagePadding: 0,
 		autoWidth: false,
 		responsiveClass: true,
@@ -48,25 +47,21 @@ jQuery(document).ready(function () {
 				smartSpeed: 1000
 			},
 			991:{
-				items: 2,
+				items: 3,
 				dots: true,
 				mouseDrag: true,
 				autoplay: true,
 				smartSpeed: 1000
 			},
-			1110:{
-				items: 1,
+			1099:{
+				items: 4,
 				dots: true,
-        nav: true,
+                nav: true,
 				mouseDrag: true
 			}
 		}
 	});
 });
-
-
-
-
 
 'use strict';
 function r(f){/in/.test(document.readyState)?setTimeout('r('+f+')',9):f()}
@@ -96,7 +91,7 @@ r(function(){
         videos[i].onclick = function() {
             // Создаем iFrame и сразу начинаем проигрывать видео, т.е. атрибут autoplay у видео в значении 1
             var iframe = document.createElement("iframe");
-            var iframe_url = "https://www.youtube.com/embed/" + this.id + "?autoplay=1&autohide=1";
+            var iframe_url = "https://www.youtube.com/embed/" + this.id + "?autoplay=1&mute=1";
             if (this.getAttribute("data-params")) iframe_url+='&'+this.getAttribute("data-params");
             iframe.setAttribute("src",iframe_url);
             iframe.setAttribute("frameborder",'0');
@@ -108,3 +103,9 @@ r(function(){
         }
     }
 });
+
+function showMenu() {
+	document.getElementById("menu").classList.toggle("show");
+	document.getElementById("navIcon").classList.toggle("active");
+	document.getElementById("banner").classList.toggle("dropBelow");
+  }

@@ -1,23 +1,24 @@
 jQuery.noConflict();
 jQuery(document).ready(function () {
-  'use strict';
 
-  jQuery(".fancybox").fancybox();
+    'use strict';
 
+
+<<<<<<< HEAD:MaibaOleksii/HomeWork/Project/js/custom.js
 
   let carousel = jQuery('#carousel-clients');
 		
 	carousel.owlCarousel({
 		items: 4,
 		autoplay: false,
-		autoplayTimeout: 3000,
-		autoplayHoverPause: true,
-		smartSpeed: 1500,
+		autoplayTimeout: 6000,
+		autoplayHoverPause: false,
+		smartSpeed: 1000,
 		dotsSpeed: 1000,
 		loop: true,
-		nav: true,
-		navText: [''],
-		dots: true,
+    nav: true,
+    dots: true,
+		navText: [".owl-nav-prev", ".owl-nav-next"],
 		mouseDrag: true,
 		margin: 30,
 		stagePadding: 0,
@@ -26,46 +27,59 @@ jQuery(document).ready(function () {
 		responsive:{
 			0:{
 				items: 1,
-				dots: true,
-				nav: true,
-				mouseDrag: true,
-				autoplay: true,
-				smartSpeed: 1000
+				
 			},
 			479:{
 				items: 1,
-				dots: true,
-				mouseDrag: true,
-				autoplay: true,
-				smartSpeed: 1000
-			},
 			
+			},
 			767:{
 				items: 2,
-				dots: true,
-				mouseDrag: true,
-				autoplay: true,
-				smartSpeed: 1000
+				
 			},
 			991:{
-				items: 2,
-				dots: true,
-				mouseDrag: true,
-				autoplay: true,
-				smartSpeed: 1000
+				items: 3,
+				
 			},
 			1110:{
 				items: 1,
-				dots: true,
-        nav: true,
-				mouseDrag: true
+        
 			}
 		}
-	});
+  });
+  
+  
+=======
+    jQuery(".fancybox").fancybox();
+
+    let carousel = jQuery('#carousel_partners');
+
+    carousel.owlCarousel({
+        items:1,
+        margin:20,
+        loop:true,
+        slideBy:1,
+        autoplay:true,
+        autoplayTimeout:3000,
+        smartSpeed:2000
+    })
+>>>>>>> de32c39dbe4ffcb03fb18cf6de30142ca5739db3:YehorPashyn/HomeWork/project/js/custom.js
+
 });
 
-
-
+jQuery("document").ready(function($){
+ 
+	var nav = $('.header');
+ 
+	$(window).scroll(function () {
+		if ($(this).scrollTop() > 136) {
+			nav.addClass("fixedbar");
+		} else {
+			nav.removeClass("fixedbar");
+		}
+	});
+ 
+});
 
 
 'use strict';
@@ -108,3 +122,4 @@ r(function(){
         }
     }
 });
+

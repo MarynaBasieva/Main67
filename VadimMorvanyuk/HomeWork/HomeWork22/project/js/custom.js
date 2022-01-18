@@ -1,18 +1,19 @@
 jQuery.noConflict();
 jQuery(document).ready(function () {
-  'use strict';
 
-  jQuery(".fancybox").fancybox();
-
-
-  let carousel = jQuery('#carousel-clients');
+    'use strict';
+	
+	
+	jQuery(".fancybox").fancybox();
+	
+	let carousel = jQuery('#carousel_partners');
 		
 	carousel.owlCarousel({
 		items: 4,
-		autoplay: false,
-		autoplayTimeout: 3000,
-		autoplayHoverPause: true,
-		smartSpeed: 1500,
+		autoplay: true,
+		autoplayTimeout: 4000,
+		autoplayHoverPause: false,
+		smartSpeed: 1000,
 		dotsSpeed: 1000,
 		loop: true,
 		nav: true,
@@ -27,7 +28,7 @@ jQuery(document).ready(function () {
 			0:{
 				items: 1,
 				dots: true,
-				nav: true,
+				nav: false,
 				mouseDrag: true,
 				autoplay: true,
 				smartSpeed: 1000
@@ -39,7 +40,6 @@ jQuery(document).ready(function () {
 				autoplay: true,
 				smartSpeed: 1000
 			},
-			
 			767:{
 				items: 2,
 				dots: true,
@@ -48,25 +48,21 @@ jQuery(document).ready(function () {
 				smartSpeed: 1000
 			},
 			991:{
-				items: 2,
+				items: 3,
 				dots: true,
 				mouseDrag: true,
 				autoplay: true,
 				smartSpeed: 1000
 			},
-			1110:{
-				items: 1,
+			1099:{
+				items: 4,
 				dots: true,
-        nav: true,
 				mouseDrag: true
 			}
 		}
 	});
+	
 });
-
-
-
-
 
 'use strict';
 function r(f){/in/.test(document.readyState)?setTimeout('r('+f+')',9):f()}
