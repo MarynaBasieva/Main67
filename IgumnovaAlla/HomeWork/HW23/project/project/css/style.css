@@ -1,0 +1,425 @@
+@charset "UTF-8";
+/* CSS Document */
+.responsive_menu {
+  display: none;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  background: #e5e5e5;
+}
+img {
+  margin: 0 auto;
+  display: block;
+}
+/*header*/
+.header {
+  background: #eeeff1;
+  padding-top: 57px;
+}
+/*header*/
+/*Banner Block*/
+/*Menu*/
+.nav-menu ul.sub-menu {
+  display: flex;
+  list-style: none;
+}
+.nav-menu ul.sub-menu li a {
+  margin-right: 42px;
+
+  font-size: 16px;
+  line-height: 26px;
+  color: 000;
+  font-weight: 500;
+  transition: 0.3 s;
+}
+.nav-menu ul.sub-menu li a:hover {
+  color: #34547a;
+
+  text-decoration: none;
+}
+.nav-menu ul.sub-menu li a:last child {
+  margin-right: 0;
+}
+/*Menu*/
+.banner {
+  padding-top: 162px;
+
+  background: #eeeff1;
+  padding-bottom: 146px;
+}
+
+.parentTextBaner h2 {
+  margin-top: 79px;
+  font-size: 48px;
+}
+.for_page {
+  min-height: 100%;
+  position: relative;
+}
+
+.page {
+  padding-bottom: 167px;
+}
+
+.banner .parentTextBanner a {
+  background: #34547a;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+  padding: 25px 41px;
+  margin-top: 85px;
+  display: inline-block;
+}
+.banner .parentTextBanner a:hover {
+  background: #000000;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+  padding: 25px 41px;
+}
+
+.banner .parentTextBanner p {
+  margin-top: 60px;
+  margin-bottom: 85px;
+}
+.banner .parentTextBanner h2 {
+  font-weight: 500;
+  font-size: 48px;
+  line-height: normal;
+  color: #000000;
+  margin-bottom: 10px;
+}
+.parentText {
+  max-width: ;
+}
+.about {
+  padding-top: 119px;
+  margin-top: 100px;
+}
+.about p {
+  padding-top: 50px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  padding-bottom: 100px;
+}
+.about h2 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 37px;
+  text-align: center;
+}
+.new {
+  width: 100%;
+  background: #34547a;
+  margin-top: 100px;
+  padding: 100px 0;
+  text-align: center;
+}
+.item {
+  padding: 20px;
+  display: flex;
+}
+.form {
+  display: flex;
+  justify-content: center;
+}
+.form-image img {
+  width: 555px;
+}
+.line {
+  position: relative;
+  width: 445px;
+  height: 4px;
+  background-color: #c4c4c4;
+  margin-bottom: 33px;
+}
+.line:before {
+  content: '';
+
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 349.36px;
+  height: 4px;
+  background-color: #34547a;
+}
+.form-block {
+  padding: 150px;
+  padding-top: 204px;
+}
+.photoshop {
+  padding-top: 50px;
+}
+.wrapper_img {
+  display: flex;
+  padding: 10px 100px;
+}
+.form_wrapper {
+  display: flex;
+}
+.form-image {
+  padding-top: 102px;
+  padding-bottom: 101px;
+  padding-left: 150px;
+  padding-right: 384px;
+}
+.work p {
+  padding-top: 100px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 37px;
+  text-align: center;
+}
+
+.Parentvideo {
+  padding: 100px 0;
+}
+.youtube {
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  transition: all 200ms ease-out;
+  cursor: pointer;
+  background-size: cover;
+  width: 100%;
+  height: 600px;
+}
+.Parentvideo .container iframe {
+  width: 100%;
+  height: 600px;
+}
+.youtube .play {
+  background: url('../img/youtube-play-btn.png') no-repeat;
+  background-position: 0 -100px;
+  -webkit-background-size: 100% auto;
+  background-size: 100% auto;
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  transition: none;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+.youtube:hover .play {
+  background-position: 0 0;
+}
+.ParentGalery {
+  padding-top: 28px;
+  padding-bottom: 72px;
+}
+.ParentGalery {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.ParentGalery .fancyChild {
+  width: 25%;
+  height: 360px;
+  overflow: hidden;
+
+  transition: 0.3s;
+
+  position: relative;
+}
+
+.ParentGalery .fancyChild:hover:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    0deg,
+    rgba(52, 84, 122, 0.8),
+    rgba(52, 84, 122, 0.8)
+  );
+  background: url('../img/viev.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.btn-form {
+  padding: 15px 40px;
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+  width: 190px;
+  height: 55px;
+  left: 864px;
+  top: 4853px;
+  background: #34547a;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.15em;
+}
+.btn-form:hover {
+  color: white;
+  text-decoration: none;
+  width: 190px;
+  height: 55px;
+  left: 864px;
+  top: 4853px;
+  background: #34547a;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.15em;
+}
+.container_texterea {
+  margin: 10px;
+}
+
+.information-form {
+  width: 1920px;
+  height: 762px;
+  left: 0px;
+  top: 4246px;
+
+  /* Silver */
+
+  background: #eeeff1;
+}
+.container .new-input {
+  margin-left: 10px;
+  width: 225px;
+}
+.wrapper_next {
+  padding-top: 100px;
+  padding-left: 420px;
+}
+.wrapper_next p {
+  padding-top: 50px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+
+  color: #727272;
+}
+
+.wrapper_next h3 {
+  margin-left: 100px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 37px;
+  text-align: center;
+  font-weight: bold;
+
+  color: #000000;
+}
+.wrapper_next textarea {
+  margin-top: 20px;
+  width: 472px;
+  margin-left: 10px;
+}
+.btn_new {
+  position: absolute;
+  width: 190px;
+  height: 55px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.15em;
+  color: #ffffff;
+  background: #34547a;
+  padding: 20px 19px;
+  margin-top: 70px;
+  margin-left: 103px;
+}
+.vk .container {
+  width: 100%;
+  background: #34547a;
+}
+.icons-vk {
+  margin-left: 400px;
+}
+.information-form,
+.vk {
+  margin: 0 auto;
+  margin: block;
+}
+.microsoft {
+  background: #e5e5e5;
+}
+.last-step {
+  background: #34547a;
+  margin: 0 auto;
+}
+.slider-carousel .owl-carousel .owl-item img {
+  display: block;
+  width: auto;
+  margin: 0 auto;
+}
+
+.group {
+  margin: 0 auto;
+  display: block;
+}
+.skills {
+  margin-left: 10px;
+  width: 445px;
+  height: 257px;
+  margin-top: 204px;
+}
+.Rectangle {
+  margin-top: 102px;
+  width: 555px;
+  height: 450px;
+}
+.Parentvideo .workContent h3 {
+  margin-top: 100px;
+  padding-left: 758px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 37px;
+  text-align: center;
+
+  color: #000000;
+}
+.Parentvideo .workContent p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  padding-left: 690px;
+  color: #727272;
+}

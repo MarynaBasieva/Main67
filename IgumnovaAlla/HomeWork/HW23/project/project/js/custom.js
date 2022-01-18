@@ -1,21 +1,19 @@
 jQuery.noConflict();
 jQuery(document).ready(function () {
-  'use strict';
+    'use strict';
+	jQuery(".fancybox").fancybox();
+});
+let carousel = jQuery('#carousel_partners');
 
-  jQuery(".fancybox").fancybox();
-
-
-  let carousel = jQuery('#carousel-clients');
-		
 	carousel.owlCarousel({
 		items: 4,
 		autoplay: false,
-		autoplayTimeout: 3000,
-		autoplayHoverPause: true,
-		smartSpeed: 1500,
+		autoplayTimeout: 6000,
+		autoplayHoverPause: false,
+		smartSpeed: 1000,
 		dotsSpeed: 1000,
 		loop: true,
-		nav: true,
+		nav: false,
 		navText: [''],
 		dots: true,
 		mouseDrag: true,
@@ -27,7 +25,7 @@ jQuery(document).ready(function () {
 			0:{
 				items: 1,
 				dots: true,
-				nav: true,
+				nav: false,
 				mouseDrag: true,
 				autoplay: true,
 				smartSpeed: 1000
@@ -39,33 +37,31 @@ jQuery(document).ready(function () {
 				autoplay: true,
 				smartSpeed: 1000
 			},
-			
 			767:{
-				items: 2,
+				items: 1,
 				dots: true,
 				mouseDrag: true,
 				autoplay: true,
 				smartSpeed: 1000
 			},
 			991:{
-				items: 2,
+				items: 3,
 				dots: true,
 				mouseDrag: true,
 				autoplay: true,
 				smartSpeed: 1000
 			},
-			1110:{
-				items: 1,
+			1099:{
+				items: 4,
 				dots: true,
-        nav: true,
 				mouseDrag: true
 			}
 		}
 	});
+
 });
 
-
-
+'use strict';
 
 
 'use strict';
@@ -96,7 +92,7 @@ r(function(){
         videos[i].onclick = function() {
             // Создаем iFrame и сразу начинаем проигрывать видео, т.е. атрибут autoplay у видео в значении 1
             var iframe = document.createElement("iframe");
-            var iframe_url = "https://www.youtube.com/embed/" + this.id + "?autoplay=1&autohide=1";
+            var iframe_url = "https://www.youtube.com/embed/" + this.id + "?autoplay=1&mute=1";
             if (this.getAttribute("data-params")) iframe_url+='&'+this.getAttribute("data-params");
             iframe.setAttribute("src",iframe_url);
             iframe.setAttribute("frameborder",'0');

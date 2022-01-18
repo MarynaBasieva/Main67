@@ -7,15 +7,14 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/fonts.css">
     <link rel="stylesheet" href="./css/restyle.css">
+    <link rel="icon" href="./img/favicon.ico" type="imge / x-icon">
     <link rel="stylesheet" href="./vendor/bootstrap-4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="./vendor/bootstrap-4.0.0/css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="./vendor/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="./vendor/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./vendor/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
     <link rel="stylesheet" href="./vendor/fancybox/dist/jquery.fancybox.min.css">
-    <script src="./js/jquery-3.6.0.min.js"></script>
-    <script src="./vendor/fancybox/dist/jquery.fancybox.min.js"></script>
-    <script src="./js/custom.js"></script>
-    <script src="./vendor/bootstrap-4.0.0/js/bootstrap.min.js"></script>
-    <title>HW 21</title>
+    <title>Final Project</title>
 </head>
 <body>
     <main class="for_page">
@@ -69,10 +68,9 @@
                             <div class="parent_text_banner">
                                 <h2>Дизайн и верстка</h2>
                                 <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
-                                <a href="#" class="btn_banner" >НАПИСАТЬ МНЕ</a>
                                 <button type="button" class="btn_banner" data-toggle="modal" data-target="#exampleModal">
                                     НАПИСАТЬ МНЕ
-                                  </button>
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -221,47 +219,58 @@
                     <img src="./img/img_1.jpg" alt="1" /> 
                 </a> 
             </div>
-            <div class="clients">
+            <section class="slider-carousel">
                 <div class="container">
-                    <div class="container_clients">
-                        <div class="product">
-                            <img src="./img/clients.png" alt="Microsoft">
-                        </div>
-                        <div class="product">
-                            <img src="./img/clients.png" alt="Microsoft">
-                        </div>
-                        <div class="product">
-                            <img src="./img/clients.png" alt="Microsoft">
-                        </div>
-                        <div class="product">
-                            <img src="./img/clients.png" alt="Microsoft">
-                        </div>
+                    <div class="owl-carousel owl-theme" id="carousel_partners">
+                            <div class="item">
+                                <img src="./img/clients.png" />
+                            </div>
+                            <div class="item">
+                                <img src="./img/google.jpg" />
+                            </div>
+                            <div class="item">
+                                <img src="./img/clients.png" />
+                            </div>
+                            <div class="item">
+                                <img src="./img/google.jpg" />
+                            </div>
+                            <div class="item">
+                                <img src="./img/clients.png" />
+                            </div>
+                            <div class="item">
+                                <img src="./img/google.jpg" />
+                            </div>
+                            <div class="item">
+                                <img src="./img/clients.png" />
+                            </div>
+                            <div class="item">
+                                <img src="./img/google.jpg" />
+                            </div>
                     </div>
                 </div>
-            </div>
+            </section>
             <section class="form">
                 <div class="container">
                     <div class="text_form">
-                        <h2>Хотите веб-сайт?</h2>
-                        <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и <br> вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов <br> на латинице с начала XVI века.</p>
-                        
-                        <form class="form_child">
-                            <div class="container_form_input">
-                                <div class="form_input">
-                                    <input type="text" placeholder="Ваше имя">
-                                </div>
-                                <div class="form_input">
-                                    <input class="input_email" type="email" placeholder="Ваш e-mail">
-                                </div>
+                                <h2>Хотите веб-сайт?</h2>
+                                <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и <br> вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов <br> на латинице с начала XVI века.</p>
                             </div>
-                            <div class="input_textarea">
-                                <textarea name="Send" cols="50" rows="5" placeholder="Сообщение"></textarea>
-                            </div>
-                            <div class="btn_input">
-                                <input type="submit" value="Отправить" >
-                            </div>
-                        </form>
-                    </div>
+                                <form class="form_child">
+                                    <div class="container_form_input">
+                                        <div class="form_input">
+                                            <input type="text" placeholder="Ваше имя">
+                                        </div>
+                                        <div class="form_input">
+                                            <input class="input_email" type="email" placeholder="Ваш e-mail">
+                                        </div>
+                                    </div>
+                                    <div class="input_textarea">
+                                        <textarea name="Send" cols="50" rows="5" placeholder="Сообщение"></textarea>
+                                    </div>
+                                    <div class="btn_input">
+                                        <input type="submit" value="Отправить" >
+                                    </div>
+                                </form>
                 </div>
             </section>
             <footer class="footer">
@@ -282,12 +291,12 @@
         </div>
         <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Написать мне</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
                 </div>
                 <div class="modal-body">
                     <form class="form_child">
@@ -308,12 +317,19 @@
                     </form>
                 </div>
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-primary">Save changes</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
                 </div>
-              </div>
             </div>
-          </div>
+            </div>
+        </div>
     </main>
+
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./vendor/fancybox/dist/jquery.fancybox.min.js"></script>
+    <script src="./vendor/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+    <script src="./js/custom.js"></script>
+    <script src="./vendor/bootstrap-4.0.0/js/bootstrap.min.js"></script>
+
 </body>
 </html>

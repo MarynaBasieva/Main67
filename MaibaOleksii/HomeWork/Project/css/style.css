@@ -26,12 +26,17 @@ p {
 /* HEADER */
 
 .header {
-  background: #eeeff1;
-  padding-top: 57px;
   position: fixed;
+  background: #eeeff1;
+  padding: 57px;
   top: 0;
   width: 100%;
   z-index: 99;
+  transition: 0.2s;
+}
+
+.fixedbar {
+  box-shadow: 2px -1px 5px 0px;
 }
 
 .logo {
@@ -75,6 +80,7 @@ p {
 .banner {
   background: #eeeff1;
   padding: 140px 0 145px 0;
+  margin-top: 140px;
 }
 
 .banner-img {
@@ -113,7 +119,7 @@ p {
   max-width: 540px;
   margin: 0 auto;
   text-align: center;
-  padding-top: 120px;
+  padding: 120px 0 100px 0;
 }
 
 .about h2 {
@@ -129,7 +135,6 @@ p {
 .projects {
   width: 100%;
   background: #34547a;
-  margin-top: 100px;
   padding: 100px 0;
   text-align: center;
 }
@@ -162,7 +167,7 @@ p {
 /* SKILLS */
 
 .skills {
-  margin-top: 100px;
+  padding: 100px 0 100px 0;
 }
 
 .skills-content {
@@ -191,12 +196,8 @@ p {
 
 .work {
   background: #eeeff1;
-  margin-top: 100px;
-  padding-bottom: 100px;
-}
 
-.work .about {
-  padding: 100px 0 60px 0;
+  padding-bottom: 100px;
 }
 
 .youtube {
@@ -241,7 +242,7 @@ p {
 /* GALLERY */
 
 .gallery {
-  padding: 28px 0 72px 0;
+  padding-top: 28px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -277,12 +278,39 @@ p {
 /* CLIENTS */
 
 .clients {
-  margin-top: 70px;
+  padding: 70px 0 100px 0;
 }
 
 .clients-img {
   width: 255px;
   margin-right: 30px;
+}
+
+.owl-navigation {
+  text-align: center;
+}
+
+.owl-navigation i {
+  font-size: 20px;
+}
+
+.owl-nav-prev,
+.owl-nav-next {
+  color: #fff;
+  font-size: 23px;
+  margin: 5px;
+  padding: 1px 8px;
+  background: #d6d6d6;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.owl-nav-prev:hover,
+.owl-nav-next:hover {
+  background: #869791;
+  color: #fff;
+  text-decoration: none;
 }
 
 /* CLIENTS */
@@ -291,12 +319,7 @@ p {
 
 .form {
   background: #eeeff1;
-  margin-top: 100px;
   padding-bottom: 100px;
-}
-
-.form .about {
-  padding: 100px 0 60px 0;
 }
 
 .form-btn {
@@ -382,3 +405,22 @@ footer {
 }
 
 /* FOOTER */
+
+.modal-body input {
+  padding: 17px;
+  outline: none;
+  margin-right: 22px;
+}
+
+.modal-body input:nth-child(2) {
+  margin-right: 0;
+}
+
+.modal-body textarea {
+  resize: none;
+  outline: none;
+  margin-top: 20px;
+  padding: 10px 10px 30px 10px;
+  width: 100%;
+  display: block;
+}
