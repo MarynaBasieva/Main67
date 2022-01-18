@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title> Link properties</title>
+</head>
+<style>
+	a{
+		display:block;
+		text-decoration: none;
+	}
+	.hover_link{
+		color:#2f9fb1;
+	}
+	.hover_link:hover{
+		text-decoration: underline;
+		color: #EB0E12;
+	}
+	.link:link{
+		color: #D612B0;
+	}
+	a.active{
+		color: #110756;
+	}
+	a:visited{
+		color:#6F2223;
+	}
+	a:focus{
+		color: #EDDD23;
+	}
+	
+</style>
+<body>
+	<div class="main">
+		<a href="#" class="hover_link">перейти на hover</a>
+		<a href="#" class="link">Link</a>
+		<a href="#" class="active">active</a>
+		<a href="#" class="visited">visited</a>
+		<a href="#" class="focus">focus</a>
+	</div>
+</body>
+</html>

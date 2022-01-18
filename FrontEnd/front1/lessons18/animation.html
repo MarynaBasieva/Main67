@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>animation</title>
+</head>
+<style>
+	/*
+	animation-iteration-count - сколько раз должна выполниться анимация
+	animation-direction - указывает провести анимацию вперед или назад в циклах
+	animation-timing-function - определяет привую скорости фкнкции
+	animation-fill-mode - задает стиль для целевого элемента если анимация в данный момент не воспроизводиться до начала и завершения
+	animation-delay - указывает аздержку начала анимации
+	animation-duration - укаывает сколько времени должно зфнять анимация для завершения цикла
+	animation-name - указывает имя анимации
+	animation-play-state - указывает запущена ли анимация или приостановлена
+	animation:;
+	
+	
+	*/
+	.right{
+		position: relative;
+	}
+	.moving{
+		width: 50px;
+		height: 50px;
+		position: relative;
+		background: #1023E7;
+		animation: fromto 3s;
+		animation-delay: 1s;
+		animation-iteration-count:infinite;
+	}
+	.square{
+		width: 50px;
+		height: 50px;
+		position: relative;
+		background: green;
+		-webkit-animation:;
+		-o-animation:;
+		-moz-animation:;
+		animation: square 5s;
+		animation-iteration-count: 6;
+	}
+	@keyframes fromto{
+		from{
+			left: 0;
+			background: #2CC9CE;
+		}
+		50%{
+			left: 400px;
+			background: #BA26DD;
+		}
+		to{
+			left:0;
+			background: #084BC4;
+			
+		}
+	}
+	@keyframes square{
+		0%{
+			top:0;
+			left: 0;
+		}
+		50%{
+			top: 0;
+			left: 400px;
+			background: #22686A;	
+		}
+		100%{
+		    top: 0px;
+			left:0px;
+			background: #13781B;	
+		}
+	}
+</style>
+<body>
+	 <div class="right">
+		 <div class="moving"></div>
+		 <div class="square"></div>
+	 </div>
+</body>
+</html>
