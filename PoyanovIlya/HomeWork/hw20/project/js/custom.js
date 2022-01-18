@@ -1,11 +1,68 @@
 jQuery.noConflict();
 jQuery(document).ready(function() {
+
     'use strict'
 
     jQuery(".fancybox").fancybox();
+
+    let carousel = jQuery('#carousel-partners');
+
+    carousel.owlCarousel({
+        items: 4,
+        autoplay: false,
+        autoplayTimeout: 6000,
+        autoplayHoverPause: false,
+        smartSpeed: 1000,
+        dotsSpeed: 1000,
+        loop: true,
+        nav: false,
+        navText: [''],
+        dots: true,
+        mouseDrag: true,
+        margin: 30,
+        stagePadding: 0,
+        autoWidth: false,
+        responsiveClass: true,
+        responsive: {
+            0: {
+                items: 1,
+                dots: true,
+                nav: false,
+                mouseDrag: true,
+                autoplay: true,
+                smartSpeed: 1000,
+            },
+            479: {
+                items: 1,
+                dots: true,
+                autoplay: true,
+                smartSpeed: 1000,
+                mouseDrag: true,
+            },
+            767: {
+                items: 2,
+                dots: true,
+                autoplay: true,
+                smartSpeed: 1000,
+                mouseDrag: true,
+            },
+            991: {
+                items: 3,
+                dots: true,
+                autoplay: true,
+                smartSpeed: 1000,
+                mouseDrag: true,
+            },
+            1099: {
+                items: 4,
+                dots: true,
+                mouseDrag: true,
+            }
+        }
+    });
+
 });
 
-'use strict';
 
 function r(f) { /in/.test(document.readyState) ? setTimeout('r(' + f + ')', 9) : f() }
 r(function() {
@@ -34,7 +91,7 @@ r(function() {
         videos[i].onclick = function() {
             // Создаем iFrame и сразу начинаем проигрывать видео, т.е. атрибут autoplay у видео в значении 1
             var iframe = document.createElement("iframe");
-            var iframe_url = "https://www.youtube.com/embed/" + this.id + "?autoplay=1&autohide=1";
+            var iframe_url = "https://www.youtube.com/embed/" + this.id + "?autoplay=1&mute=1";
             if (this.getAttribute("data-params")) iframe_url += '&' + this.getAttribute("data-params");
             iframe.setAttribute("src", iframe_url);
             iframe.setAttribute("frameborder", '0');
@@ -46,3 +103,7 @@ r(function() {
         }
     }
 });
+
+$('#myModal').on('shown.bs.modal', function() {
+    $('#myInput').focus()
+})
