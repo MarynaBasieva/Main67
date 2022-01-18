@@ -1,0 +1,524 @@
+img {
+  height: auto;
+  max-width: 100%;
+}
+a:hover {
+  text-decoration: none;
+}
+.container {
+  padding: 0 20px;
+}
+.main-title {
+  font-family: "Roboto", sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 37.5px;
+  color: #000;
+}
+.main-desc {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  color: #727272;
+}
+.modal-dialog .modal-content {
+  position: relative;
+  padding: 20px 10px;
+}
+.modal-dialog .order-form {
+  padding: 0;
+}
+.modal-dialog .close {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+.modal-dialog .modal-title {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+.modal-dialog .wraper {
+  margin: 0;
+}
+.modal-dialog input,
+.modal-dialog textarea {
+  display: block;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: #5f5d5d;
+  border: 1px solid #5f5d5d;
+  padding: 17px 20px;
+}
+.modal-dialog input::placeholder,
+.modal-dialog textarea::placeholder {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: #5f5d5d;
+  padding: 17px 20px;
+}
+.modal-dialog input {
+  width: 46%;
+  margin-bottom: 20px;
+}
+.modal-dialog input[type="submit"] {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+  background-color: #34547a;
+  color: #fff;
+  transition: 0.4s;
+}
+.modal-dialog input[type="submit"]:hover {
+  background-color: #4e77a9;
+}
+.modal-dialog textarea {
+  width: 100%;
+  resize: none;
+  margin-bottom: 50px;
+}
+.head-part {
+  padding: 57px 0 146px;
+  background-color: #e5e5e5;
+}
+.head-part .navbar {
+  margin-bottom: 162px;
+}
+.head-part .navbar .navbar-nav .nav-item {
+  padding: 0 21px;
+}
+.head-part header {
+  width: auto;
+  transition: 0.2s;
+}
+.head-part .fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #e5e5e5;
+  z-index: 9;
+}
+.head-part .fixed .navbar {
+  margin-bottom: 0;
+}
+.head-part .navbar-toggler {
+  position: relative;
+  height: 50px;
+  width: 50px;
+  border: 2px solid #fff;
+  padding: 5px;
+}
+.head-part .navbar-toggler .navbar-row {
+  position: absolute;
+  height: 3px;
+  background-color: #fff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+}
+.head-part .navbar-toggler:after,
+.head-part .navbar-toggler:before {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  content: "";
+  height: 3px;
+  width: 90%;
+  background-color: #fff;
+}
+.head-part .navbar-toggler:after {
+  top: 10px;
+}
+.head-part .navbar-toggler:before {
+  bottom: 10px;
+}
+.head-part .nav-item {
+  padding: 0 21px;
+}
+.head-part .nav-item a {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #000;
+  transition: 0.4s;
+}
+.head-part .nav-item a:hover {
+  color: #34547a;
+}
+.head-part .nav-item:first-child a {
+  color: #34547a;
+}
+.head-part .nav-item .active {
+  color: #34547a;
+}
+.head-part .head-title {
+  font-family: "Roboto", sans-serif;
+  font-size: 48px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 60px;
+  color: #000;
+}
+.head-part .text-container {
+  padding-left: 130px;
+}
+.head-part .main-desc {
+  margin-bottom: 60px;
+}
+.head-part .head-btn {
+  display: block;
+  max-width: 225px;
+  padding: 20px 40px;
+  background-color: #34547a;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #fff;
+  border-radius: 0px;
+  transition: 0.4s;
+}
+.head-part .head-btn:hover {
+  background-color: #4e77a9;
+}
+.about-me {
+  padding: 120px 0 100px;
+  background-color: #f9f9f9;
+}
+.about-me .main-title {
+  margin-bottom: 50px;
+  text-align: center;
+}
+.about-me .main-desc {
+  text-align: center;
+}
+.projects {
+  padding: 100px 0;
+  background-color: #34547a;
+}
+.projects .skill-item img {
+  width: 50px;
+  height: 50px;
+}
+.projects .skill-item .wraper {
+  padding-left: 20px;
+}
+.projects .skill-item .project-title {
+  font-family: "Roboto", sans-serif;
+  font-size: 21px;
+  font-weight: 500;
+  color: #fff;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.projects .skill-item .project-text {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+}
+.skills {
+  padding: 100px 0;
+  background-color: #e5e5e5;
+}
+.skills .skill-wraper {
+  padding-top: 50px;
+}
+.skills .skill-wraper .image-wraper img {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+}
+.skills .skill-wraper .main-title {
+  font-family: "Roboto", sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 50px;
+}
+.skills .skill-wraper .skil-desc {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: #727272;
+  margin-bottom: 20px;
+}
+.skills .skill-wraper .skill-metr {
+  position: relative;
+  height: 4px;
+  width: 100%;
+  background-color: #c4c4c4;
+  margin-bottom: 30px;
+}
+.skills .skill-wraper .skill-metr:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 78%;
+  background-color: #34547a;
+}
+.how {
+  padding: 93px 0 105px;
+  background-color: #eeeff1;
+}
+.how .main-title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.how .main-desc {
+  max-width: 540px;
+  text-align: center;
+  margin-bottom: 57px;
+}
+.how .youtube {
+  position: relative;
+  background-size: cover;
+}
+.how .youtube svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  fill: #fff;
+  transition: 0.4s;
+}
+.how .youtube svg:hover {
+  cursor: pointer;
+  fill: #36aeae;
+}
+.gallery {
+  min-width: 100%;
+  overflow: hidden;
+  margin: 0;
+}
+.gallery .gallery-item {
+  position: relative;
+  display: block;
+  width: 25%;
+}
+.gallery .gallery-item img {
+  width: 100%;
+}
+.gallery .gallery-item:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  background: url(../img/eye-ico.svg) transparent no-repeat center center;
+  fill: transparent;
+  transition: 0.4s;
+}
+.gallery .gallery-item:hover:after {
+  opacity: 1;
+  background-color: #34537ac0;
+}
+.logo-slider {
+  padding: 72px 0 100px;
+  background-color: #eeeff1;
+}
+.logo-slider .owl-carousel button,
+.logo-slider .owl-carousel span {
+  opacity: 0;
+}
+.logo-slider .owl-carousel:hover .owl-prev,
+.logo-slider .owl-carousel:hover .owl-next {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.logo-slider .owl-carousel:hover .owl-prev i,
+.logo-slider .owl-carousel:hover .owl-next i {
+  opacity: 1;
+}
+.logo-slider .owl-stage-outer {
+  position: relative;
+}
+.logo-slider .owl-prev {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  height: 100%;
+  width: 20%;
+  transition: 0.4s;
+  background: transparent;
+}
+.logo-slider .owl-prev i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+  transition: 0.4s;
+  opacity: 0;
+}
+.logo-slider .owl-next {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  height: 100%;
+  width: 20%;
+  transition: 0.4s;
+  background: transparent;
+}
+.logo-slider .owl-next i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+  transition: 0.4s;
+  opacity: 0;
+}
+.order-part {
+  padding: 100px 0;
+  background-color: #e5e5e5;
+}
+.order-part .main-title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.order-part .main-desc {
+  text-align: center;
+  margin: 0 auto 65px auto;
+}
+.order-part .order-form {
+  padding: 0;
+  margin: 0 auto;
+}
+.order-part .wraper {
+  margin: 0;
+}
+.order-part input,
+.order-part textarea {
+  display: block;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: #5f5d5d;
+  border: none;
+  padding: 17px 20px;
+}
+.order-part input::placeholder,
+.order-part textarea::placeholder {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: #5f5d5d;
+  padding: 17px 20px;
+}
+.order-part input {
+  width: 46%;
+  margin-bottom: 20px;
+}
+.order-part input[type="submit"] {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+  background-color: #34547a;
+  color: #fff;
+  transition: 0.4s;
+}
+.order-part input[type="submit"]:hover {
+  background-color: #4e77a9;
+}
+.order-part textarea {
+  width: 100%;
+  resize: none;
+  margin-bottom: 50px;
+}
+footer {
+  padding: 50px 0;
+  background-color: #34547a;
+}
+footer .author-link {
+  font-family: "Roboto", sans-serif;
+  font-size: 21px;
+  font-weight: 500;
+  color: #fff;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+footer .copyr {
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: #fff;
+}
+footer .social-navs li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 10px;
+}
+@media screen and (max-width: 991px) {
+  .navbar-nav .nav-item {
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 2px solid transparent;
+    transition: 0.4s;
+  }
+  .navbar-nav .nav-item:hover {
+    background-color: rgba(0, 0, 0, 0.357);
+    border-bottom: 2px solid #000;
+  }
+  .navbar-nav .nav-item:hover a {
+    color: #fff;
+  }
+  .head-part {
+    padding-top: 10px;
+  }
+  .head-part .navbar {
+    margin-bottom: 50px;
+  }
+  .head-part .head-image {
+    margin: 0 auto 50px;
+    text-align: center;
+  }
+  .head-part .text-container {
+    padding-left: 0;
+  }
+  .head-part .head-title {
+    font-size: 30px;
+    text-align: center;
+  }
+  .head-part .main-desc {
+    text-align: center;
+  }
+  .head-part .head-btn {
+    display: block;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 767px) {
+  .about-me,
+  .projects,
+  .skills,
+  .how,
+  .order-part {
+    padding: 30px 0;
+  }
+  .gallery .gallery-item {
+    width: 50%;
+  }
+  .order-part .order-form .wraper input,
+  .modal-content .order-form .wraper input {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 580px) {
+  .gallery .gallery-item {
+    width: 100%;
+  }
+}
