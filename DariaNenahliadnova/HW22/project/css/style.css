@@ -224,7 +224,7 @@ img{
 
 .parent-video iframe{
     width: 100%;
-    height: 400px;
+    height: 600px;
 }
 
 .youtube .play {
@@ -287,10 +287,10 @@ img{
 .input{
     background: #EEEFF1;
     padding-bottom: 100px;
-    
+     padding-top: 100px;
 }
 .block4{
-    padding-top: 100px;
+   
     text-align: center;
 }
 .block4 h2{
@@ -330,26 +330,33 @@ img{
     transition: 0.3s;
 }
 
-.form-textarea input{
-    padding: 20px 50px 50px 20px;
+.form-textarea textarea{
+    padding: 19px 302px 50px 15px;
     border: none;
     background: #d3d2d2;
-    width: 100%;
+    font-size: 14px;
     margin-bottom: 20px;
+    resize: none;
+    margin: 0 18px;
+
 }
-.form-textarea input:hover{
+    
+
+.form-textarea textarea:hover{
     transform: scale(1.1);
     transition: 0.3s;
 }
-
+textarea {
+    overflow: auto;
+}
+.block4 .button-Send{
+    border: none;
+}
 .button-Send{
    background: #34547A;
    color: #ffffff;
    padding: 20px 50px;
-   border: none;
    letter-spacing: 0.15em;
-   
-
 }
 .button-Send:hover{
     background:#03d5e4 ;
@@ -373,6 +380,7 @@ img{
     display: flex;
     justify-content: center;
     transition: 0.3s;
+    margin: 15px 0;
 }
 .btnSend:hover{
     background:#03d5e4 ;

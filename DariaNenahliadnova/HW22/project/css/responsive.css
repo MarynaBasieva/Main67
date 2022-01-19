@@ -37,22 +37,34 @@
     }
     .banner{
         padding-top: 70px;
-        padding-bottom: 111px;
+        padding-bottom: 75px;
     }
+
    
     .parentTextBanner p{
         padding: 0px 30px 40px;
     }
     .parentTextBanner .btnBanner{
         padding: 20px 30px;
+        margin-left: 210px;
     }
-    .block2{
-        margin-top: 55px;
-        margin-bottom: 65px;
+    .about {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    .block2 h3 {
+        margin-bottom: 20px;
+    }
+    .ic {
+        background: #34547A;
+        padding-top: 20px;
+        padding-bottom: 0px;
     }
     .icon {
-        margin-top: 25px;
-        margin-bottom: 20px;
+        margin: 0;
+    }
+    .skills {
+        padding: 0 0 50px 0;
     }
     .my-skills {
         padding-top: 50px;
@@ -60,23 +72,42 @@
     .my-photo img {
         padding-top: 60px;  
     }
+    
+    .parent-video {
+        padding-top: 0px;
+        padding-bottom: 30px;
+    }
+    .youtube {
+        height: 390px;
+    }
     .block3 {
         margin-top: 50px;
     }
     .parent-galery .fancyChild {
         height: 243px;
     }
-   
-    .block4 {
-        padding-top: 50px;
+    .slider-carousel {
+        padding-top: 30px;
+        padding-bottom: 20px;
     }
     .block4 p {
         padding-top: 30px;
     }
-
-
+    .input {
+        padding-bottom: 50px;
+    }
+    .end h3 {
+        padding-top: 30px;
+    }
+    .end-i {
+        padding-top: 30px;
+    }
+    .end p {
+        margin-top: 10px;
+    }
 }
 @media (max-width: 767px ){
+
     .parentTextBanner h2 {
         padding-top: 20px;
         font-size: 38px;
@@ -86,65 +117,226 @@
         text-align: center;
     }
     .parentTextBanner .btnBanner{
-        margin-left: 140px;
+        margin-left: 155px;
+    }
+    .banner {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .about {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .my-skills {
+        padding-top: 30px;
+        padding-left: 30px;
+    }
+    .my-skills h3 {
+        margin-bottom: 25px;
+        text-align: center;
+    }
+    .my-photo img {
+        padding-top: 20px;
+    }
+    .block3 {
+        margin-top: 20px;
+    }
+    .block3 p {
+        margin-top: 15px;
+    }
+    .youtube {
+        height: 289px;
+    }
+    .parent-galery .fancyChild {
+        height: 375px;
+    }
+    .parent-galery .fancyChild {
+        width: 50%;
+    }
+    .parent-galery {
+        padding-top: 0px;
+    }
+    .slider-carousel {
+        padding: 0px;
     }
     .icon {
         margin-top: 5px;
         margin-bottom: 5px;
     }
-
-    .parent-galery .fancyChild {
-        height: 187px;
-    }
-
-    .parent-galery {
-        padding-top: 0px;
-    }
-
+    
     .video{
         padding-bottom: 10px;
     }
-    
 
     .input {
-        padding-bottom: 70px;
+        padding-bottom: 35px;
+        padding-top: 30px;
     }
-
+    .button-Send{
+        padding: 15px 40px;
+    }
+    .block4 p {
+        padding-top: 15px;
+        margin-bottom: 30px;
+    }
 }
 @media (max-width: 500px ){
     
     .parentTextBanner .btnBanner {
         padding: 18px 20px;
     }
+    .parentTextBanner .btnBanner {
+        padding: 15px 15px;
+    }
+    .parentTextBanner a.btnBanner {
+        letter-spacing: normal; 
+    }
+    .parentTextBanner h2 {
+        font-size: 35px;
+    }
+    .parentTextBanner p {
+        padding: 0px 34px 25px;
+    }
+    .block2 p {
+        text-indent: 30px;
+        font-size: 14px;
+    }
+    .icon {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+    .block2 h3 {
+        font-size: 30px;
+    }
+    .skills {
+        padding: 0 0 25px 0;
+    }
+    .my-skills h3 {
+        margin-bottom: 15px;
+    }
+    .my-skills {
+        padding: 12px 30px 0 30px;
+    }
+    .my-skills .linear {
+        width: 385px;
+        margin-bottom: 20px;
+        margin-top: 10px;
+    }
+    .my-skills .linear:before {
+        content: "";
+        border-bottom: 4px solid #34547A;
+        width: 290px;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .my-skills h3 {
+        margin-bottom: 15px;
+        font-size: 28px;
+    }  
+    .my-photo img {
+        padding: 20px 27px 0;
+    }
+    .block3 h2 {
+        font-size: 28px;
+    } 
+    .block3 p {
+        font-size: 14px;
+        line-height: 22px;
+        margin-top: 10px;
+    }
+    .youtube {
+        height: 232px;
+    }
+    .video{
+        padding: 0 20px 0;
+    }
     .banner {
-        padding-bottom: 80px;
+        padding-bottom: 46px;
     }
 
     .parent-galery .fancyChild {
-        height: 120px;
+        height: 360px;
     }
-    .form-email input {
-        padding: 17px 50px 18px 20px;
+    .parent-galery .fancyChild {
+        width: 100%;
     }
-
-    .form-name input {
-        padding: 17px 50px 18px 20px;
+    .block4 h2 {
+        font-size: 28px;
     }
-    .form-name input {
-        margin-right: 10px;
+    .button-Send {
+        padding: 10px 20px;
+        letter-spacing: normal;
     }
-    .form-textarea input {
-    padding: 17px 268px 143px 20px;
+    .block4 h2 {
+        font-weight: 500;
+        font-size: 28px;
+    }
+    .block4 p{
+        padding-top: 0px;
+        margin-bottom: 20px;
+    }
+    .for_page .modal {
+        position: fixed;
+        top: 22px;
+        right: 45px;
+        bottom: 0px;
+        left: 45px;
+        z-index: 1050;
+        display: none;
+        overflow: hidden;
+        outline: 0;
+    }
+    .form-textarea textarea {
+        padding: 19px 183px 50px 15px;
+        margin: 0 16px;
     }
     .btnSend {
-        padding: 15px 19px;
+        padding: 12px 15px;
+        margin: 10px 0;
     }
-
+    .end-i {
+        font-size: 30px;
+    }
+    .end h3 {
+        font-size: 17px;
+    }
+    .end p {
+        margin-top: 0px;
+    }
 
 }
 @media (max-width: 470px){
-    
+    .parentTextBanner .btnBanner {
+        margin-left: 100px;
+    }
+    .youtube {
+        height: 170px;
+    }
+    .gallery .galleryImg {
+        width: 100%;
+    }
+    .my-skills .linear {
+        width: 100%;
+    }
+    .my-skills .linear:before {
+        content: "";
+        border-bottom: 4px solid #34547A;
+        width: 80%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .form-textarea textarea {
+        padding: 18px 60px 50px 13px;
+        margin: 0 30px;
+    }
+    .form-email input, .form-name input {
+        padding-right: 10px;
+    }
 }
+
 @media (max-width: 400px){
     
 }
