@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>pseudo class</title>
+</head>
+<style>
+	.nthChild{
+	   font-size: 20px;
+		color: #13CD9D;
+		background:#585259;
+		list-style: none;
+		padding: 20px;
+	}
+	.nthChildItem:first-child{
+		color:#F70004;
+		
+	}
+	.nthChild .nthChildItem:nth-child(3){
+		color:#0A37D9;
+		
+	}
+	.nthChild .nthChildItem:nth-child(5){
+		color:#13E256;
+		font-size: 30px;
+		
+	}
+	.nthChild .nthChildItem:last-child{
+		color: #1E2DEA;
+		
+	}
+	.table{
+		 border-collapse: collapse;
+		margin-top: 20px;
+	}
+	.table tr{
+		
+	}
+	.table tr td{
+		    border: solid 1px #333;
+		padding: 10px;
+	}
+	.table tr:nth-child(odd){
+		background: #ccc;
+	}
+	.table tr:hover:nth-child(even){
+		background:#0CE9A1;
+		cursor: pointer;
+	}
+	ul.pseudoBeforeAfter{
+		font-size: 20px;
+		font-weight: bold;
+		color: aqua;
+		list-style: none;
+		    width: 209px;
+		
+	}
+	ul.pseudoBeforeAfter li{
+		padding-left: 70px;
+		position: relative;
+	}
+	ul.pseudoBeforeAfter li:nth-child(1):before{
+		content: "Before";
+		position: absolute;
+		font-size: 20px;
+		left: 0px;
+		top: 1px;
+		color: #333;
+	}
+	ul.pseudoBeforeAfter li:after{
+		content: "+";
+		position: absolute;
+		font-size: 20px;
+		right: 0px;
+		top: -1px;
+		color: #333;
+	}
+</style>
+
+<body>
+	<div class="nthChild">
+		<div class="nthChildItem">lorem ipsum dolar1</div>
+		<div class="nthChildItem">lorem ipsum dolar1</div>
+		<div class="nthChildItem">lorem ipsum dolar1</div>
+		<div class="nthChildItem">lorem ipsum dolar1</div>
+		<div class="nthChildItem">lorem ipsum dolar1</div>
+	</div>
+	
+	<table class="table">
+		<tr>
+			<td>column1</td>
+			<td>column1</td>
+			<td>column1</td>
+		</tr>
+		<tr>
+			<td>column2</td>
+			<td>column2</td>
+			<td>column2</td>
+		</tr>
+		<tr>
+			<td>column3</td>
+			<td>column3</td>
+			<td>column3</td>
+		</tr>
+		<tr>
+			<td>column4</td>
+			<td>column4</td>
+			<td>column4</td>
+		</tr>
+	</table>
+	
+	<ul class="pseudoBeforeAfter">
+		<li>pseudo class1</li>
+		<li>pseudo class2</li>
+		<li>pseudo class3</li>
+		<li>pseudo class4</li>
+		<li>pseudo class5</li>
+	</ul>
+</body>
+</html>
