@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>text-oveflow</title>
+</head>
+<style>
+	*{
+		padding: 0;
+		margin: 0;
+	}
+	.main{
+		width: 900px;
+		margin: 0 auto;
+		padding-top: 60px;
+	}
+	div{
+		margin: 30px;
+	}
+	.clip{
+		border: 1px solid #000;
+		padding: 5px;
+		width: 300px;
+		white-space: nowrap;/*запрещает перенос строк*/
+		overflow: hidden;/*Обрезает все что не помещается в область ширины*/
+		text-overflow: ellipsis;/*Добавляет много точие*/
+	}
+	.word-wrap{
+		border: 1px solid #000;
+		font-size: 18px;
+		width: 200px;
+		padding: 10px;
+		word-break: break-word; /*для переноса строки*/
+	}
+	.word-break{
+		border: 1px solid #000;
+		font-size: 18px;
+		width: 200px;
+		padding: 10px;
+		word-break: break-all;/*для переноса строки*/
+	}
+</style>
+<body>
+	<div class="main">
+		<div class="clip">
+			lorem ipsum dolar lorem ipsum dolar lorem ipsum dolar lorem ipsum dolar lorem ipsum dolar lorem ipsum dolar lorem ipsum dolar lorem ipsum dolar lorem ipsum dolar lorem ipsum dolar lorem ipsum dolar lorem ipsum dolar lorem ipsum dolar lorem ipsum dolar
+		</div>
+		
+		<div class="word-wrap">
+			<p>lorem ipsum dolar lorem ipsum dolar lorem ipsum dolar</p>
+			<p>lorem ipsum dolar</p>
+			<p>lorem ipsum dolar</p>
+			<p>lorem ipsum dolar</p>
+			<p>lorem ipsum dolar</p>
+			<p>lorem ipsum dolar</p>
+		</div>
+		
+		<div class="word-break">
+			<p>lorem ipsum dolar lorem ipsum dolar lorem ipsum dolar</p>
+			<p>lorem ipsum dolar</p>
+			<p>lorem ipsum dolar</p>
+			<p>lorem ipsum dolar</p>
+			<p>lorem ipsum dolar</p>
+			<p>lorem ipsum dolar</p>	
+		</div>
+	</div>
+</body>
+</html>

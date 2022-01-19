@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>gradient</title>
+</head>
+<style>
+	.grad{
+		height: 200px;
+		margin-bottom: 20px;
+	}
+	.grad1_lineynuy{
+		background: linear-gradient(to right, #E90669, #1243BB);
+	}
+	.grad2_lineynuy{
+		background: linear-gradient(to bottom, #E90669, #1243BB);
+	}
+	.grad3_lineynuy{
+		background: linear-gradient(-90deg, #E90669, #1243BB);
+	}
+	.grad4_lineynuy{
+		background: linear-gradient(#18CEB0, #E90669, #1243BB);
+	}
+	.grad5_lineynuy{
+		background: linear-gradient( to right, red, orange, yellow, green, blue, indigo, violet);
+	}
+	.grad6_lineynuy{
+		background: linear-gradient(to right, rgba(265,0,0,0), rgba(265,0,0,1));
+	}
+	.grad7_lineynuy{
+		background: linear-gradient(red, green 100%, yellow 20%);
+	}
+	.radial{
+		height: 200px;
+		width: 200px;
+		margin-bottom: 20px;
+	}
+	.radial1{
+		background: radial-gradient(yellow, red, green);
+	}
+	.radial2{
+		background: radial-gradient(red 5%, yellow 15%, green 60%);
+	}
+	.radial3{
+		background: radial-gradient(circle, red, yellow, green);
+	}
+	.radial4{
+		background: radial-gradient(closest-side at 60% 55%, red, yellow, green);
+	}
+	.radial5{
+		background: radial-gradient(farthest-side at 60% 55%, red, yellow, green);
+	}
+	.radial6{
+		background: radial-gradient(closest-corner at 60% 55%, red, yellow, green);
+	}
+	.radial7{
+		background: repeating-radial-gradient(red, yellow 10%, green 15%);
+	}
+	.radial8{
+		farthest
+	}
+</style>
+<body>
+	<h2>Линейный градиент</h2>
+	    <div class="grad1_lineynuy grad"></div>
+		<div class="grad2_lineynuy grad"></div>
+		<div class="grad3_lineynuy grad"></div>
+		<div class="grad4_lineynuy grad"></div>
+		<div class="grad5_lineynuy grad"></div>
+		<div class="grad6_lineynuy grad"></div>
+		<div class="grad7_lineynuy grad"></div>
+	<h2>Радиальный градиент</h2>
+	   	<div class="radial1 radial"></div>
+		<div class="radial2 radial"></div>
+		<div class="radial3 radial"></div>
+	<h2>Использование ключевых слов разного размера радиального градиента</h2>
+	    <div class="radial4 radial"></div>
+		<div class="radial5 radial"></div>
+		<div class="radial6 radial"></div>
+		<div class="radial7 radial"></div>
+		<div class="radial8 radial"></div>
+</body>
+</html>
