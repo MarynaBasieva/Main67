@@ -112,10 +112,13 @@ img {
 /*about-me*/
 
 .about {
+    padding-bottom: 100px;
+}
+
+.about-me {
     max-width: 550px;
     margin: 0 auto;
     text-align: center;
-    padding-bottom: 100px;
 }
 
 .about-me h3 {
@@ -256,12 +259,12 @@ img {
 .youtube .play {
     background: url('/img/youtube-play-btn.png') no-repeat;
     /*ВАЖНО: здесь укажите адрес до изображения*/
-    background-position: 0 -50px;
+    background-position: 0 -136px;
     -webkit-background-size: 100% auto;
     background-size: 100% auto;
     position: absolute;
-    height: 50px;
-    width: 69px;
+    height: 136px;
+    width: 136px;
     transition: none;
     top: 0;
     left: 0;
@@ -307,20 +310,36 @@ img {
     transition: 1s;
 }
 
-
-/* gallery */
-
 .slider-carousel {
     padding-top: 72px;
     padding-bottom: 100px;
 }
 
 
+/* gallery */
+
+
+/* slider carousel */
+
+.slider-carousel .owl-carousel .owl-item img {
+    display: block;
+    width: auto;
+    margin: 0 auto;
+}
+
+.slider-carousel {
+    padding-bottom: 30px;
+}
+
+
+/* slider carousel */
+
+
 /* send-message */
 
 .send-message {
-    background: #eeeff1;
     padding-bottom: 100px;
+    padding-top: 15px;
 }
 
 .want-website {
@@ -336,13 +355,18 @@ img {
     margin-bottom: 50px;
 }
 
+form {
+    max-width: 540px;
+    margin: 0 auto;
+}
+
 .form-input {
     display: flex;
     justify-content: center;
 }
 
 .form-name {
-    margin-right: 30px;
+    margin-right: 17px;
 }
 
 .form-name input,
