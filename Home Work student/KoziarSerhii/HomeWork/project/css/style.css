@@ -1,0 +1,225 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+img {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+}
+
+.row {
+    /*border: solid black 1px;*/
+}
+
+/*header*/
+.header {
+    background: #EEEFF1;
+    padding-top: 57px;
+}
+
+.logo img {
+    transition: 0.2s ease-in-out;
+}
+
+.logo img:hover {
+    transform: scale(1.01);
+    transition: 0.2s ease-in-out;
+}
+
+/*Menu*/
+.nav-menu ul.sub-menu {
+    display: flex;
+    list-style: none;
+}
+
+.nav-menu ul.sub-menu li a {
+    margin-right: 42px;
+
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 500;
+    color: #34547A;
+    transition: 0.3s;
+}
+
+.nav-menu ul.sub-menu li a:hover {
+    color: #000;
+    text-decoration: none;
+}
+
+.nav-menu ul.sub-menu li:nth-child(4) {
+    margin-right: 0;
+}
+
+/*Menu*/
+/*header*/
+
+/*baner Block*/
+.banner {
+    background: #EEEFF1;
+    padding-top: 140px;
+    height: 600px;
+}
+.banner img {
+    display: block;
+    margin: 0 auto;
+}
+.banner .parentTextBaner p {
+    padding-top: 60px;
+    display: block;
+}
+
+.banner .parentTextBaner .btnBanner {
+    margin-top: 60px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    width: 225px;
+    padding: 20px 0;
+    background: #34547A;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.banner .parentTextBaner .btnBanner:hover {
+    background: black;
+    transition: 0.2s;
+}
+
+/*baner Block*/
+
+/*aboutme*/
+.about-me {
+    margin: 0 auto;
+    max-width: 540px;
+}
+
+.about-me h2 {
+    display: block;
+    padding-top: 112px;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 37px;
+    text-align: center;
+}
+
+.about-me p {
+    display: block;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+}
+
+/*aboutme*/
+
+/*numbers*/
+.numbers {
+    background: #34547A;
+    padding: 100px 0;
+}
+
+.numbers .row > * {
+    display: flex;
+}
+
+.numbers .imgProject {
+    padding-right: 20px;
+}
+
+.parentTextProject h2 {
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 25px;
+    margin: 0 auto;
+}
+
+.parentTextProject p {
+    font-size: 16px;
+    line-height: 26px;
+    margin: 0 auto;
+}
+
+/*numbers*/
+
+/*skills*/
+.mySkills {
+    padding-top: 102px;
+    padding-bottom: 101px;
+}
+
+.mySkills .skillsDescription {
+    max-width: 445px;
+}
+
+.mySkills h2 {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 37px;
+}
+
+.mySkills .skillItem {
+    font-size: 16px;
+    line-height: 26px;
+    color: #727272;
+}
+
+.mySkills .skillBar {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 10px;
+    background: #C4C4C4;
+    overflow: hidden;
+}
+
+.mySkills .skillBarProgress {
+    position: relative;
+    left: 0;
+    height: 10px;
+    border-radius: 4px;
+    width: 75%;
+    background: #34547A;
+}
+
+/*skills*/
+
+/*how-i-work*/
+.how-i-work {
+    background: #EEEFF1;
+}
+.how-i-work h2 {
+    padding-top: 100px;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 37px;
+    text-align: center;
+}
+.how-i-work p {
+    margin: 0 auto;
+    max-width: 540px;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #727272;
+}
+.how-i-work iframe {
+    margin: 0 auto;
+    /*padding-bottom: 100px;*/
+}
+/*how-i-work*/
+
+
+
+
+
