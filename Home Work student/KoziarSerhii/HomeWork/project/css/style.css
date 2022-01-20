@@ -34,6 +34,11 @@ img {
 }
 
 /*Menu*/
+
+.responsive_menu {
+    display: none;
+}
+
 .nav-menu ul.sub-menu {
     display: flex;
     list-style: none;
@@ -65,18 +70,25 @@ img {
 .banner {
     background: #EEEFF1;
     padding-top: 140px;
-    height: 600px;
+
 }
+
 .banner img {
     display: block;
     margin: 0 auto;
+    padding-top: 25px;
 }
-.banner .parentTextBaner p {
+
+.banner .parentTextBanner {
+    padding-bottom: 146px;
+}
+
+.banner .parentTextBanner p {
     padding-top: 60px;
     display: block;
 }
 
-.banner .parentTextBaner .btnBanner {
+.banner .parentTextBanner .btnBanner {
     margin-top: 60px;
     display: block;
     text-decoration: none;
@@ -90,7 +102,7 @@ img {
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.banner .parentTextBaner .btnBanner:hover {
+.banner .parentTextBanner .btnBanner:hover {
     background: black;
     transition: 0.2s;
 }
@@ -126,11 +138,13 @@ img {
 /*numbers*/
 .numbers {
     background: #34547A;
-    padding: 100px 0;
+    padding: 92px 0;
 }
 
 .numbers .row > * {
     display: flex;
+    padding: 10px 0;
+    justify-content: center;
 }
 
 .numbers .imgProject {
@@ -154,12 +168,12 @@ img {
 
 /*skills*/
 .mySkills {
-    padding-top: 102px;
-    padding-bottom: 101px;
+    padding: 101px 0;
 }
 
 .mySkills .skillsDescription {
     max-width: 445px;
+    padding-bottom: 10px;
 }
 
 .mySkills h2 {
@@ -197,14 +211,17 @@ img {
 /*how-i-work*/
 .how-i-work {
     background: #EEEFF1;
+    padding: 100px 0;
 }
+
 .how-i-work h2 {
-    padding-top: 100px;
+    /*padding-top: 100px;*/
     font-weight: 500;
     font-size: 32px;
     line-height: 37px;
     text-align: center;
 }
+
 .how-i-work p {
     margin: 0 auto;
     max-width: 540px;
@@ -212,14 +229,76 @@ img {
     line-height: 26px;
     text-align: center;
     color: #727272;
+    padding-bottom: 20px;
 }
+
 .how-i-work iframe {
     margin: 0 auto;
-    /*padding-bottom: 100px;*/
+    width: 100%;
+    height: 600px;
 }
+
+.how-i-work .youtube {
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    transition: all 200ms ease-out;
+    cursor: pointer;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+}
+
+.how-i-work .youtube .play {
+    background: url('../img/youtube-play-btn.png') no-repeat;
+    background-position: 0 0;
+    -webkit-background-size: 100% auto;
+    background-size: 100% auto;
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    transition: none;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.how-i-work .youtube:hover .play {
+    background-position: 0 -100px;
+}
+
 /*how-i-work*/
 
+/*fancyGallery*/
+.fancyGallery {
+    padding-top: 28px;
+    /*padding-bottom: 72px;*/
+    display: flex;
+    flex-wrap: wrap;
 
+}
 
+.fancyGallery .fancyGalleryChild {
+    width: 25%;
+    max-height: 360px;
+    overflow: hidden;
+    position: relative;
 
+}
+
+.fancyGallery .fancyGalleryChild:hover:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../img/view.png) no-repeat center center, linear-gradient(0deg, rgba(52, 84, 122, 0.8), rgba(52, 84, 122, 0.8));
+}
+
+/*fancyGallery*/
 

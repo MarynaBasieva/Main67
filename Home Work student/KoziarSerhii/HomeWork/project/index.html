@@ -10,11 +10,18 @@
     <link type="text/css" rel="stylesheet" href="vendor/bootstrap-4.0.0/css/bootstrap.min.css">
     <link type="text/css" rel="stylesheet" href="vendor/bootstrap-4.0.0/css/bootstrap-grid.min.css">
 
+    <link type="text/css" rel="stylesheet" href="vendor/fontawesome/css/all.min.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
+    <link type="text/css" rel="stylesheet" href="vendor/OwlCarousel/dist/assets/owl.carousel.min.css">
+    <link type="text/css" rel="stylesheet" href="vendor/fancybox/dist/jquery.fancybox.min.css">
+
     <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="vendor/fancybox/dist/jquery.fancybox.min.js"></script>
+    <script type="text/javascript" src="vendor/OwlCarousel/dist/owl.carousel.min.js"></script>
     <script type="text/javascript" src="js/custom.js"></script>
     <script type="text/javascript" src="vendor/bootstrap-4.0.0/js/bootstrap.min.js"></script>
 </head>
@@ -24,12 +31,15 @@
         <header class="header">
             <div class="container">
                 <div class="row">
-                    <div class="col-xl-5 col-lg-2 col-md-4 col-sm-12">
+                    <div class="col-xl-4 col-lg-4 col-md-10 col-sm-10">
                         <a href="#" class="logo">
                             <img src="./img/logo-wd.svg" alt="logo">
                         </a>
                     </div>
-                    <div class="col-xl-7 col-lg-10 col-md-8 col-sm-12">
+                    <div class="col-xl-8 col-lg-8 col-md-2 col-sm-2">
+                        <div class="responsive_menu">
+                            <i class="fas fa-bars"></i>
+                        </div>
                         <nav class="nav-menu">
                             <ul class="sub-menu">
                                 <li class="item-menu"><a class="link-item-menu" href="#">ГЛАВНАЯ</a></li>
@@ -45,12 +55,12 @@
         </header>
         <section class="banner">
             <div class="container">
-                <div class="row align-items-center">
+                <div class="row">
                     <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12">
                         <img src="img/laptop.png" alt="laptop"/>
                     </div>
                     <div class="col-xl-7 col-lg-7 col-md-12 col-sm-12">
-                        <div class="parentTextBaner">
+                        <div class="parentTextBanner">
                             <h2>Дизайн и верстка</h2>
                             <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum
                                 является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
@@ -75,42 +85,42 @@
         <section class="numbers">
             <div class="container">
                 <div class="row">
-                    <div class="col-xl-2 col-lg-5 col-md-12 col-sm-12 testclas">
+                    <div class="col-xl-2 col-lg-4 col-md-4 col-sm-6">
                         <img class="imgProject" src="img/projects.png" alt="projects"/>
                         <div class="parentTextProject">
                             <h2>40+</h2>
                             <p>проектов</p>
                         </div>
                     </div>
-                    <div class="col-xl-2 col-lg-5 col-md-12 col-sm-12 testclas">
+                    <div class="col-xl-2 col-lg-4 col-md-4 col-sm-6">
                         <img class="imgProject" src="img/projects.png" alt="projects"/>
                         <div class="parentTextProject">
                             <h2>40+</h2>
                             <p>проектов</p>
                         </div>
                     </div>
-                    <div class="col-xl-2 col-lg-5 col-md-12 col-sm-12 testclas">
+                    <div class="col-xl-2 col-lg-4 col-md-4 col-sm-6">
                         <img class="imgProject" src="img/projects.png" alt="projects"/>
                         <div class="parentTextProject">
                             <h2>40+</h2>
                             <p>проектов</p>
                         </div>
                     </div>
-                    <div class="col-xl-2 col-lg-5 col-md-12 col-sm-12 testclas">
+                    <div class="col-xl-2 col-lg-4 col-md-4 col-sm-6">
                         <img class="imgProject" src="img/projects.png" alt="projects"/>
                         <div class="parentTextProject">
                             <h2>40+</h2>
                             <p>проектов</p>
                         </div>
                     </div>
-                    <div class="col-xl-2 col-lg-5 col-md-12 col-sm-12">
+                    <div class="col-xl-2 col-lg-4 col-md-4 col-sm-6">
                         <img class="imgProject" src="img/projects.png" alt="projects"/>
                         <div class="parentTextProject">
                             <h2>40+</h2>
                             <p>проектов</p>
                         </div>
                     </div>
-                    <div class="col-xl-2 col-lg-5 col-md-12 col-sm-12 testclas">
+                    <div class="col-xl-2 col-lg-4 col-md-4 col-sm-6">
                         <img class="imgProject" src="img/projects.png" alt="projects"/>
                         <div class="parentTextProject">
                             <h2>40+</h2>
@@ -139,7 +149,7 @@
                         </div>
                     </div>
                     <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 skillsPhoto">
-                        <img src="./img/foto.png">
+                        <img src="./img/foto.png" alt="">
                     </div>
                 </div>
             </div>
@@ -151,15 +161,36 @@
                         <h2>Как я работаю</h2>
                         <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum
                             является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
-                        <div>
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/wAmbDCJocJM"
-                                    title="YouTube video player" frameborder="0"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                    allowfullscreen></iframe>
-                        </div>
+                        <div class="youtube" id="wAmbDCJocJM"></div>
                     </div>
                 </div>
             </div>
+        </section>
+        <section class="fancyGallery">
+            <a href="./img/img1.jpg" data-fancybox="gallery" class="fancyGalleryChild">
+                <img src="./img/img1.jpg" alt=""/>
+            </a>
+            <a href="./img/img2.jpg" data-fancybox="gallery" class="fancyGalleryChild">
+                <img src="./img/img2.jpg" alt=""/>
+            </a>
+            <a href="./img/img1.jpg" data-fancybox="gallery" class="fancyGalleryChild">
+                <img src="./img/img1.jpg" alt=""/>
+            </a>
+            <a href="./img/img2.jpg" data-fancybox="gallery" class="fancyGalleryChild">
+                <img src="./img/img2.jpg" alt=""/>
+            </a>
+            <a href="./img/img2.jpg" data-fancybox="gallery" class="fancyGalleryChild">
+                <img src="./img/img2.jpg" alt=""/>
+            </a>
+            <a href="./img/img1.jpg" data-fancybox="gallery" class="fancyGalleryChild">
+                <img src="./img/img1.jpg" alt=""/>
+            </a>
+            <a href="./img/img2.jpg" data-fancybox="gallery" class="fancyGalleryChild">
+                <img src="./img/img2.jpg" alt=""/>
+            </a>
+            <a href="./img/img1.jpg" data-fancybox="gallery" class="fancyGalleryChild">
+                <img src="./img/img1.jpg" alt=""/>
+            </a>
         </section>
     </div>
 </main>
