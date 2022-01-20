@@ -177,7 +177,7 @@
             order: 8;
   }
   .form {
-    padding: 35px 15px;
+    padding: 50px 15px;
   }
   .form .text_form h2 {
     margin-bottom: 30px;
@@ -217,7 +217,7 @@
             align-items: center;
   }
   .form {
-    padding: 30px 15px;
+    padding: 50px 15px 25px 15px;
   }
   .form .text_form {
     width: 360px;

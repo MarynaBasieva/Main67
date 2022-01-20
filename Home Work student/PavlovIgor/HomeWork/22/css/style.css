@@ -477,6 +477,10 @@ img {
   max-height: 120px;
 }
 
+.slider-carousel .owl-theme .owl-dots .owl-dot {
+  display: none;
+}
+
 .form {
   width: 100%;
   height: auto;
@@ -552,6 +556,7 @@ img {
   border: none;
   -webkit-box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.438);
           box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.438);
+  outline: none;
 }
 
 .form_child .input_textarea {
@@ -570,6 +575,7 @@ img {
   resize: none;
   -webkit-box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.438);
           box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.438);
+  outline: none;
 }
 
 .form_child .btn_input {

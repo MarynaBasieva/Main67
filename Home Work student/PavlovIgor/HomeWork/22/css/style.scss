@@ -414,6 +414,10 @@ img {
         max-width: 255px;
         max-height: 120px;
     }
+
+    .owl-theme .owl-dots .owl-dot {
+        display: none;
+    }
 }
 // ===Carusel===
 // ===Form===
@@ -477,6 +481,7 @@ img {
                 padding: 17px 0 18px 20px;
                 border: none;
                 box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.438);
+                outline: none;
             }
         }
     }
@@ -495,6 +500,7 @@ img {
             border: none;
             resize: none;
             box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.438);
+            outline: none;
         }
     }
     

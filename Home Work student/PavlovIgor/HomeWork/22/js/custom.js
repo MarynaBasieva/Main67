@@ -17,7 +17,7 @@ jQuery(document).ready(function () {
 		loop: true,
 		nav: true,
 		navText: ['<i class="fas fa-chevron-circle-left"></i>','<i class="fas fa-chevron-circle-right"></i>'],
-		dots: true,
+		dots: false,
 		mouseDrag: true,
 		margin: 30,
 		stagePadding: 0,
