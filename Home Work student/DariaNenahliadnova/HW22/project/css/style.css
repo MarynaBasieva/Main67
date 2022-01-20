@@ -54,7 +54,6 @@ img{
 .banner img {
     display: block;
     margin: 0 auto;
-
 }
 
 .parentTextBanner h2{
@@ -113,11 +112,6 @@ img{
     padding-top: 100px;
     padding-bottom: 50px;
 }
-.icon:hover{
-    transform: scale(1.1);
-    transition: 0.3s;
-}
-
 
 .icon{
     
@@ -255,6 +249,11 @@ img{
     padding-top: 28px;
     display: flex;
     flex-wrap: wrap;
+    height: 100%;
+}
+.parent-galery img{
+    height: 100%;
+    width: 100%;
 }
 .parent-galery .fancyChild{
     width: 25%;
@@ -287,7 +286,8 @@ img{
 .input{
     background: #EEEFF1;
     padding-bottom: 100px;
-     padding-top: 100px;
+    padding-top: 100px;
+    text-align: center;
 }
 .block4{
    
@@ -310,83 +310,46 @@ img{
 }
 
 
-.form-email input, 
-.form-name input{
-    background: #d3d2d2;
-    padding: 17px 161px 18px 20px;
+.input-email, 
+.input-name {
+    background: #FFFFFF;
+    padding: 17px 44px 18px 20px; 
     border: none;
     outline: none;
-    font-size: 14px;
-    width: 100%; 
-    margin-bottom: 10px;
-    
-}
-.form-name input:hover{
-    transform: scale(1.1);
-    transition: 0.3s;
-}
-.form-email input:hover{
-    transform: scale(1.1);
-    transition: 0.3s;
+    margin-bottom:20px;
 }
 
-.form-textarea textarea{
-    padding: 19px 302px 50px 15px;
+
+.input-name{
+    margin-right: 30px;
+}
+.text-texterea {
+    background: #FFFFFF;
+    width: 100%;
+    
     border: none;
-    background: #d3d2d2;
-    font-size: 14px;
-    margin-bottom: 20px;
+    outline: none;
+    padding: 17px 0 143px 20px;
     resize: none;
-    margin: 0 18px;
-
-}
-    
-
-.form-textarea textarea:hover{
-    transform: scale(1.1);
-    transition: 0.3s;
-}
-textarea {
-    overflow: auto;
-}
-.block4 .button-Send{
-    border: none;
-}
-.button-Send{
-   background: #34547A;
-   color: #ffffff;
-   padding: 20px 50px;
-   letter-spacing: 0.15em;
-}
-.button-Send:hover{
-    background:#03d5e4 ;
-    color: #ffffff;
-    text-decoration: none;
-}
-.buttonSend{
-    display: flex;
-    justify-content: center;
 }
 
-
- .btnSend {
-    padding: 15px 20px;
+.btn-Send{
+    padding: 19px 40px;
     background: #34547A;
-    text-align: center;
+    color: #ffffff;
+    border: none;
     font-size: 14px;
     line-height: 23px;
+    text-align: center;
     letter-spacing: 0.15em;
-    color: #FFFFFF;
-    display: flex;
-    justify-content: center;
-    transition: 0.3s;
-    margin: 15px 0;
+    margin-top: 50px;
+    
 }
-.btnSend:hover{
-    background:#03d5e4 ;
-    color: #ffffff;
-    text-decoration: none;
+.btn-Send:hover{
+    background: #03d5e4;
+    transition: 2s;
 }
+
 footer{
     background: #34547A;
     color: #FFFFFF;

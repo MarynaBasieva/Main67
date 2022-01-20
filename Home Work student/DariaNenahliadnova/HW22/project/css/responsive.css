@@ -38,15 +38,14 @@
     .banner{
         padding-top: 70px;
         padding-bottom: 75px;
+        text-align: center;
     }
-
-   
+    
     .parentTextBanner p{
         padding: 0px 30px 40px;
     }
     .parentTextBanner .btnBanner{
         padding: 20px 30px;
-        margin-left: 210px;
     }
     .about {
         margin-top: 40px;
@@ -93,9 +92,7 @@
     .block4 p {
         padding-top: 30px;
     }
-    .input {
-        padding-bottom: 50px;
-    }
+    
     .end h3 {
         padding-top: 30px;
     }
@@ -116,9 +113,7 @@
     .parentTextBanner p{
         text-align: center;
     }
-    .parentTextBanner .btnBanner{
-        margin-left: 155px;
-    }
+    
     .banner {
         padding-top: 50px;
         padding-bottom: 50px;
@@ -159,6 +154,9 @@
     .slider-carousel {
         padding: 0px;
     }
+    .slider-carousel .owl-carousel .owl-item img {
+        margin: 0 auto;
+    }
     .icon {
         margin-top: 5px;
         margin-bottom: 5px;
@@ -168,13 +166,7 @@
         padding-bottom: 10px;
     }
 
-    .input {
-        padding-bottom: 35px;
-        padding-top: 30px;
-    }
-    .button-Send{
-        padding: 15px 40px;
-    }
+    
     .block4 p {
         padding-top: 15px;
         margin-bottom: 30px;
@@ -200,6 +192,9 @@
     .block2 p {
         text-indent: 30px;
         font-size: 14px;
+    }
+    .ic {
+        padding: 40px 0px;
     }
     .icon {
         display: flex;
@@ -262,6 +257,7 @@
     .parent-galery .fancyChild {
         width: 100%;
     }
+    
     .block4 h2 {
         font-size: 28px;
     }
@@ -277,25 +273,17 @@
         padding-top: 0px;
         margin-bottom: 20px;
     }
-    .for_page .modal {
-        position: fixed;
-        top: 22px;
-        right: 45px;
-        bottom: 0px;
-        left: 45px;
-        z-index: 1050;
-        display: none;
-        overflow: hidden;
-        outline: 0;
+    .input-name {
+         margin-right: 0;
     }
-    .form-textarea textarea {
-        padding: 19px 183px 50px 15px;
-        margin: 0 16px;
+    .text-texterea {
+        width: 90%;
     }
-    .btnSend {
-        padding: 12px 15px;
-        margin: 10px 0;
+    .input {
+        padding-bottom: 40px;
+        padding-top: 40px;
     }
+    
     .end-i {
         font-size: 30px;
     }
@@ -308,9 +296,6 @@
 
 }
 @media (max-width: 470px){
-    .parentTextBanner .btnBanner {
-        margin-left: 100px;
-    }
     .youtube {
         height: 170px;
     }
@@ -328,13 +313,7 @@
         top: 0;
         left: 0;
     }
-    .form-textarea textarea {
-        padding: 18px 60px 50px 13px;
-        margin: 0 30px;
-    }
-    .form-email input, .form-name input {
-        padding-right: 10px;
-    }
+    
 }
 
 @media (max-width: 400px){

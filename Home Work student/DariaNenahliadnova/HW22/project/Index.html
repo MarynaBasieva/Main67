@@ -71,7 +71,7 @@
             </header>
             <section class="banner">
                 <div class="container">
-                    <div class="row" >
+                    <div class="row justify-content-center" >
                         <div class="col-xl-6 col-lg-6 col-md-8 col-sm-12">
                             <img src="img/Frame.png" class="banner-img" alt="Computer">
                         </div>
@@ -266,13 +266,25 @@
                             <div class="block4">
                                     <h2>Хотите веб-сайт?</h2>
                                     <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
-                                    
-                                    <!-- Button trigger modal -->
-                                    <button type="button" class="button-Send" data-toggle="modal" data-target="#exampleModal">ЗАКАЗАТЬ</button>
-                            
                             </div> 
                         </div>
-                    </div>     
+                    </div>   
+                    <div class="row justify-content-center">
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                            <form>
+                                        <input type="text" name="first-name" 
+                                        class="input-name" placeholder="Ваше имя" >
+                                    
+                                        <input type="email" name="email" class="input-email"  placeholder="Ваш e-mail" >
+                                    
+                                        <textarea name="textarea" class="text-texterea"  placeholder="Сообщение" ></textarea>
+                                    
+                                        <button class="btn-Send">ОТПРАВИТЬ</button>
+                            </form>
+                        </div>
+                    </div>
+
+                              
                 </div>
             </section>
             <footer>
@@ -290,39 +302,8 @@
             </footer>
 
             
-            <!-- Modal -->
-        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Сделать заказ</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-
-                        <form>
-                            
-                                <div class="form-name">
-                                    <input type="text" name="first-name" placeholder="Ваше имя" ></div>
-                                <div class="form-email">
-                                    <input type="email" name="email" placeholder="Ваш e-mail" ></div>
-                                        </div>
-                                <div class="form-textarea">
-                                    <textarea name="textarea" placeholder="Сообщение" ></textarea></div>
-                                <div class="buttonSend">
-                                    <a href="#"class="btnSend">ОТПРАВИТЬ</a></div>
-                            
-                    </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-
-
+        
+          
         </div>
     </main>
 </body>
