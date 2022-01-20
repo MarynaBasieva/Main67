@@ -1,9 +1,7 @@
 let num = '123'; 
-let num2 = '24'; 
- 
-let result = parseInt(num) + parseInt(num2); 
- 
-console.log(result); 
+let num2 = '24';  
+
+console.log(parseInt(num) + parseInt(num2)); 
  
  
 let a = 10; 
