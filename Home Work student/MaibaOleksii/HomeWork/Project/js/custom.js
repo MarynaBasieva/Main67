@@ -25,7 +25,6 @@ jQuery(document).ready(function () {
 		responsive:{
 			0:{
 				items: 1,
-				dots: true,
 				nav: true,
 				mouseDrag: true,
 				autoplay: true,
@@ -33,29 +32,25 @@ jQuery(document).ready(function () {
 			},
 			479:{
 				items: 1,
-				dots: true,
 				mouseDrag: true,
 				autoplay: true,
 				smartSpeed: 1000
 			},
 			
 			767:{
-				items: 2,
-				dots: true,
+				items: 2,			
 				mouseDrag: true,
 				autoplay: true,
 				smartSpeed: 1000
 			},
 			991:{
-				items: 3,
-				dots: true,
+				items: 3,				
 				mouseDrag: true,
 				autoplay: true,
 				smartSpeed: 1000
 			},
 			1110:{
-				items: 1,
-				dots: true,
+				items: 4,
         nav: true,
 				mouseDrag: true
 			}
@@ -63,6 +58,20 @@ jQuery(document).ready(function () {
 	});
 });
 
+
+jQuery("document").ready(function($){
+ 
+	var nav = $('.header');
+ 
+	$(window).scroll(function () {
+		if ($(this).scrollTop() > 136) {
+			nav.addClass("fixedbar");
+		} else {
+			nav.removeClass("fixedbar");
+		}
+	});
+ 
+});
 
 
 

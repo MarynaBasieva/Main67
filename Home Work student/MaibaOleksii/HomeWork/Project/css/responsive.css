@@ -121,6 +121,15 @@
   .logo {
     margin: 0;
   }
+
+  .header {
+    padding: 36px;
+  }
+
+  .banner {
+    margin-top: 100px;
+  }
+
   .youtube {
     height: 280px;
   }
@@ -135,10 +144,21 @@
   }
 
   .form-message textarea {
-    padding: 23px 335px 100px 40px;
+    padding: 23px 316px 100px 40px;
   }
   footer {
     text-align: center;
+  }
+}
+
+@media (max-width: 570px) {
+  .form-name input,
+  .form-email input {
+    padding: 16px 42px 18px 20px;
+  }
+
+  .form-message textarea {
+    padding: 23px 278px 100px 40px;
   }
 }
 
@@ -198,5 +218,21 @@
     display: block;
     margin: 0 auto;
     padding: 20px;
+  }
+
+  .form-name input,
+  .form-email input {
+    padding: 16px 75px 18px 20px;
+  }
+
+  .form-message textarea {
+    padding: 24px 90px 90px 11px;
+  }
+
+  footer {
+    padding: 0px;
+  }
+  .footer-social {
+    margin: 10px 0 24px 0;
   }
 }
