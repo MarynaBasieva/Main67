@@ -302,3 +302,97 @@ img {
 
 /*fancyGallery*/
 
+/*clients*/
+.clients {
+    padding-top: 72px;
+    padding-bottom: 100px;
+}
+#clients-carousel img{
+    display: block;
+    width: auto;
+    margin: 0 auto;
+}
+/*clients*/
+
+/*contact-form*/
+.contact-form {
+    background: #EEEFF1;
+}
+.contact-form .contactDescription {
+    margin: 0 auto;
+    max-width: 540px;
+    padding-top: 100px;
+}
+.contact-form .contactDescription h2 {
+    display: block;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 37px;
+    text-align: center;
+}
+
+.contact-form .contactDescription p {
+    display: block;
+    padding-top: 50px;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+}
+
+.contact-form .submitForm {
+    margin: 0 auto;
+    max-width: 540px;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+.contact-form .submitForm textarea {
+    resize: none;
+}
+.contact-form .submitForm button {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    width: 225px;
+    padding: 20px 0;
+    background: #34547A;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    margin: 50px auto 0 auto;
+}
+
+.contact-form .submitForm button:hover {
+    background: black;
+    transition: 0.2s;
+}
+/*contact-form*/
+
+/*footer*/
+.footer {
+    background: #34547A
+}
+.footer .row {
+    padding: 50px 0;
+}
+.footer h2 {
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 25px;
+    color: #FFFFFF;
+}
+.footer p {
+    font-size: 13px;
+    line-height: 21px;
+    color: #FFFFFF;
+    padding-top: 20px;
+}
+.footer img{
+    padding: 20px 2px;
+}
+.footer-social{
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+/*footer*/

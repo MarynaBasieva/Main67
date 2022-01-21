@@ -8,6 +8,10 @@
     .numbers {
         padding: 54px 0;
     }
+
+    .how-i-work .youtube {
+        height: 500px;
+    }
 }
 
 @media (max-width: 991px) {
@@ -75,10 +79,58 @@
     .how-i-work {
         padding: 20px 0;
     }
+    .how-i-work .youtube {
+        height: 390px;
+    }
+    .clients {
+        padding: 0;
+    }
+    .contact-form .contactDescription {
+        padding-top: 20px;
+    }
+    .contact-form .contactDescription p{
+        padding-top: 10px;
+    }
+    .contact-form .submitForm {
+        padding-top: 0;
+        padding-bottom: 20px;
+    }
+    .contact-form .submitForm button {
+        margin: 0 auto;
+    }
+    .footer .row {
+        padding: 20px 0;
+    }
+    .footer p {
+        padding-top: 0;
+    }
+    .footer img{
+        padding: 20px 0;
+    }
+    .footer .footer-social {
+        display: flex;
+        justify-content: center;
+    }
+    .footer .footer-legal {
+        align-content: center;
+    }
 }
 
 @media (max-width: 767px) {
-
+    .how-i-work .youtube {
+        height: 287px;
+    }
+    .contact-form .submit-form-input {
+        padding-top: 10px;
+    }
+    .footer-legal {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    .footer img{
+        padding: 0;
+    }
 
 }
 
