@@ -107,10 +107,7 @@
     .footer img{
         padding: 20px 0;
     }
-    .footer .footer-social {
-        display: flex;
-        justify-content: center;
-    }
+
     .footer .footer-legal {
         align-content: center;
     }
@@ -120,7 +117,7 @@
     .how-i-work .youtube {
         height: 287px;
     }
-    .contact-form .submit-form-input {
+    .submit-form-input {
         padding-top: 10px;
     }
     .footer-legal {
@@ -131,7 +128,10 @@
     .footer img{
         padding: 0;
     }
-
+    .footer .footer-social {
+        display: flex;
+        justify-content: center;
+    }
 }
 
 @media (max-width: 500px) {
