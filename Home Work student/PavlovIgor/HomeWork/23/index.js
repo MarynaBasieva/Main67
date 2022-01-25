@@ -1,12 +1,5 @@
-let num = "123",
-    num2 = "24";
+let num1 = "20",
+    num2 = "40";
 
-console.log((parseInt (num)) + (parseInt (num2)));
-
-let a = 10;
-
-console.log (a);
-
-a = 20;
-
-console.log (a);
+let result = +num1 == +num2;
+console.log (result);
