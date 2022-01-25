@@ -1,12 +1,7 @@
 jQuery.noConflict();
-<<<<<<< HEAD:PoyanovIlya/HomeWork/hw20/project/js/custom.js
-jQuery(document).ready(function() {
 
-    'use strict'
-=======
 jQuery(document).ready(function () {
     'use strict';
->>>>>>> 0f0b5270dbba3f38908042cd5c0d4489fa4e3352:ahapovnikita/HomeWork/ahapov-HW22/js/custom.js
 
     jQuery(".fancybox").fancybox();
 
@@ -68,11 +63,8 @@ jQuery(document).ready(function () {
 
 });
 
-<<<<<<< HEAD:PoyanovIlya/HomeWork/hw20/project/js/custom.js
-=======
-"use strict";
->>>>>>> 0f0b5270dbba3f38908042cd5c0d4489fa4e3352:ahapovnikita/HomeWork/ahapov-HW22/js/custom.js
 
+"use strict";
 
 
 function r(f) {
@@ -105,15 +97,12 @@ r(function () {
         videos[i].onclick = function () {
             // Создаем iFrame и сразу начинаем проигрывать видео, т.е. атрибут autoplay у видео в значении 1
             var iframe = document.createElement("iframe");
-<<<<<<< HEAD:PoyanovIlya/HomeWork/hw20/project/js/custom.js
             var iframe_url = "https://www.youtube.com/embed/" + this.id + "?autoplay=1&mute=1";
             if (this.getAttribute("data-params")) iframe_url += '&' + this.getAttribute("data-params");
-=======
             var iframe_url =
                 "https://www.youtube.com/embed/" + this.id + "?autoplay=1&autohide=1";
             if (this.getAttribute("data-params"))
                 iframe_url += "&" + this.getAttribute("data-params");
->>>>>>> 0f0b5270dbba3f38908042cd5c0d4489fa4e3352:ahapovnikita/HomeWork/ahapov-HW22/js/custom.js
             iframe.setAttribute("src", iframe_url);
             iframe.setAttribute("frameborder", "0");
             // Высота и ширина iFrame будет как у элемента-родителя

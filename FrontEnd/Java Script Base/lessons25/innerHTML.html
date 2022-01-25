@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>innerHTML</title>
+</head>
+
+<body>
+	<div id="test">Text1</div>
+	<div class="test2">Text2</div>
+	<div class="test3">Text3</div>
+</body>
+	<script>
+		let test1 = document.getElementById('test');
+		test1.innerHTML = "????";
+		
+		let test2 = document.querySelector('.test2');
+		test2.innerHTML += "<div class='name'>я новый текст</div>";
+		
+		let test3 = document.querySelector('.test3');
+		test3.innerHTML= "<div><b>Hello</b><br> Hello</div>";
+	</script>
+	Имя: 
+	Фамилия:
+	Возраст:
+</html>

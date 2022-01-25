@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>if else</title>
+</head>
+<script>
+	/*if(параметр, условие){
+		условие будет всегда true
+	}*/
+	
+	/*let number = 5;
+	let number2 = 2;
+	if (number > number2){
+		console.log("условие верны");
+	}*/
+	
+	/*let year = prompt("в каком ты году родился", " ");
+	if(year == 1999){
+		alert("Вы правы в точку");
+		alert("Это опять я");
+	}*/
+	
+	/*let year = prompt("Тебе есть 18 лет?", " ");
+	
+	if(year >= 18){
+		alert("Да Вам есть 18 лет");
+	}else{
+		alert("Вам нет 18 лет, вам рано заходить идите домой спать");
+	}*/
+	
+	/*let year = prompt("Тебе есть 18 лет", " ");
+	if(year < 18){
+		alert("Тебе рано 18 лет тебе нету еще");
+	}else if(year >= 60){
+		alert("Подходит, но уже поздно сюда заходить");
+	}else{
+		alert("Правильно Вам есть 18 лет");
+	}*/
+	
+	//Тернарный оператор
+	//условие ? выражение1 : выражение2
+	
+	let dayNumber = new Date().getDay();
+	
+	let day = (dayNumber === 0) ? 'Воскресенье':
+		      (dayNumber === 1) ? 'Понедельник':
+		      (dayNumber === 2) ? 'Вторник':
+		      (dayNumber === 3) ? 'Среда':
+		      (dayNumber === 4) ? 'Четверг':
+		      (dayNumber === 5) ? 'Пятница':
+		      (dayNumber === 6) ? 'Суббота': 'не известный день недели';
+	
+	console.log('Сегодня' + ":" + day.toLowerCase() + '.');
+	
+	
+	
+	
+	
+	
+	 
+</script>
+<body>
+</body>
+</html>
