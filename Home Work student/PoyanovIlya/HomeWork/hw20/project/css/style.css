@@ -257,7 +257,7 @@ img {
 }
 
 .youtube .play {
-    background: url('/img/youtube-play-btn.png') no-repeat;
+    background: url('../img/youtube-play-btn.png') no-repeat;
     /*ВАЖНО: здесь укажите адрес до изображения*/
     background-position: 0 -136px;
     -webkit-background-size: 100% auto;
