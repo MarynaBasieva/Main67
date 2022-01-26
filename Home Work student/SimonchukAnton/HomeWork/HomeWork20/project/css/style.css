@@ -214,7 +214,7 @@ img{
 }
 
 	.youtube .play {
-		background: url('../img/youtube_play.png') no-repeat;
+		background: url('../img/youtube_play1.png') no-repeat;
 		background-position: 0 -100px;
 		-webkit-background-size: 100% auto;
 		background-size: 100% auto;
@@ -290,7 +290,7 @@ img{
 	width: 100%;
 	margin-bottom: 20px;
 	padding: 10px;
-	
+	outline:none;
 	border: none;
 	background: #ffffff;
 }
