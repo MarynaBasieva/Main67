@@ -13,13 +13,15 @@
         let a = Math.max(50,49,36,39);
         
         sum = prompt("Введите максимальное число"); 
-        if (sum == a ){
+        /* if (sum == a ){
             alert("В точку!");
         } else if( sum > a) {
             alert("Это сильно большое число");
         }else{
             alert("Были числа и побольше")
-        }
+        } */
+        let num = (sum == a ) ? alert("В точку!") :
+                  (sum > a ) ? alert("Это сильно большое число") : alert("Были числа и побольше");
     </script>
 </body>
 </html>
