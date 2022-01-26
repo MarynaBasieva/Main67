@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>Homework 25 </p>
+<p>Спробуй вгадати число від 1 до 10</p>
+<button onclick="gess()">Спробувати</button>
+<script>
+    // let a = Math.max(50,49,36,39);
+    // let sum = prompt("Введіть число",'');
+    //
+    // if (a === parseInt(sum)) {
+    //     alert("Ви вгадали число");
+    // } else if (a > sum) {
+    //     alert("Ваше число менше");
+    // } else {
+    //     alert("Ваше число більше");
+    // }
+
+    let number = getRandomInt(10);
+
+    function gess(){
+        let gess = prompt("Введіть число від 1 до 10");
+
+        if (number === parseInt(gess)) {
+            alert("Ви вгадали число");
+        } else if (number > gess) {
+            alert("Ваше число менше");
+        } else {
+            alert("Ваше число більше");
+        }
+    }
+
+    function getRandomInt(max) {
+        return Math.floor(Math.random() * max);
+    }
+</script>
+</body>
+</html>
