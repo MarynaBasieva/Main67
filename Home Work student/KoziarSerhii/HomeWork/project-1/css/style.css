@@ -1,0 +1,148 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.clear {
+    clear: both;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+img {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+}
+
+/*header*/
+.nav-menu ul.sub-menu {
+    display: flex;
+    list-style: none;
+    padding-top: 18px;
+}
+
+.nav-menu ul.sub-menu li a {
+    margin-right: 60px;
+    font-size: 14px;
+    line-height: 24px;
+    color: #505F98;
+
+    transition: 0.3s;
+}
+
+.nav-menu ul.sub-menu li a:hover {
+    color: #000;
+    text-decoration: none;
+}
+
+.pageTitle {
+    display: flex;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 38px;
+    color: #37447E;
+    padding-top: 12px;
+    justify-content: center;
+}
+.pageTitle:hover {
+    text-decoration: none;
+    color: #000;
+}
+.btnBuyCol{
+    display: flex;
+    justify-content: end;
+}
+.header .btnBuy {
+    margin-top: 18px;
+    width: 160px;
+    background: #111B47;
+    border-radius: 2px;
+    border-color: #111B47;
+    padding: 3px 0;
+
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    color: #FFFFFF;
+    box-sizing: border-box;
+
+    max-height: 26px;
+}
+
+.header .btnBuy:hover {
+    background: #37447E;
+    border-color: #37447E;
+}
+
+/*header*/
+
+/*hero*/
+.hero{
+    padding-top: 244px;
+
+}
+.hero .heroCol {
+    max-width: 550px;
+    padding: 0;
+}
+.hero h2 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 66px;
+    letter-spacing: 1px;
+    color: #091133;
+
+}
+.hero p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+    color: #505F98;
+    padding-top: 20px;
+}
+.heroRow {
+    padding-top: 69px;
+}
+
+.hero .btnBuyHero{
+    width: 189px;
+    background: #111B47;
+    border-radius: 2px;
+    border-color: #111B47;
+    padding: 4px 0;
+
+    /*box-sizing: border-box;*/
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #FFFFFF;
+
+
+
+}
+.hero .btnLearnHero{
+    width: 189px;
+    background: rgb(17,27,71, 0);
+    padding: 3px 0;
+    border: 2px solid #091133;
+
+    font-weight: 500;
+    box-sizing: border-box;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #091133;
+}
+
+/*hero*/
