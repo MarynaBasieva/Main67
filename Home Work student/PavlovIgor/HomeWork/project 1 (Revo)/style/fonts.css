@@ -1,0 +1,55 @@
+@font-face {
+  font-family: Nunito_Bold;
+  src: url(../fonts/Nunito/Nunito-Bold.eot) format("eot"), url(../fonts/Nunito/Nunito-Bold.ttf) format("ttf"), url(../fonts/Nunito/Nunito-Bold.woff) format("woff"), url(../fonts/Nunito/Nunito-Bold.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: Nunito_Light;
+  src: url(../fonts/Nunito/Nunito-Light.eot) format("eot"), url(../fonts/Nunito/Nunito-Light.ttf) format("ttf"), url(../fonts/Nunito/Nunito-Light.woff) format("woff"), url(../fonts/Nunito/Nunito-Light.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: Nunito_SemiBold;
+  src: url(../fonts/Nunito/Nunito-SemiBold.eot) format("eot"), url(../fonts/Nunito/Nunito-SemiBold.ttf) format("ttf"), url(../fonts/Nunito/Nunito-SemiBold.woff) format("woff"), url(../fonts/Nunito/Nunito-SemiBold.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: Nunito_LightItalic;
+  src: url(../fonts/Nunito/Nunito-LightItalic.eot) format("eot"), url(../fonts/Nunito/Nunito-LightItalic.ttf) format("ttf"), url(../fonts/Nunito/Nunito-LightItalic.woff) format("woff"), url(../fonts/Nunito/Nunito-LightItalic.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: OpenSans_Regular;
+  src: url(../fonts/Open_Sans/OpenSans-Regular.eot) format("eot"), url(../fonts/Open_Sans/OpenSans-Regular.ttf) format("ttf"), url(../fonts/Open_Sans/OpenSans-Regular.woff) format("woff"), url(../fonts/Open_Sans/OpenSans-Regular.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: OpenSans_SemiBold;
+  src: url(../fonts/Open_Sans/OpenSans-SemiBold.eot) format("eot"), url(../fonts/Open_Sans/OpenSans-SemiBold.ttf) format("ttf"), url(../fonts/Open_Sans/OpenSans-SemiBold.woff) format("woff"), url(../fonts/Open_Sans/OpenSans-SemiBold.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: OpenSans_ExtraBold;
+  src: url(../fonts/Open_Sans/OpenSans-ExtraBold.eot) format("eot"), url(../fonts/Open_Sans/OpenSans-ExtraBold.ttf) format("ttf"), url(../fonts/Open_Sans/OpenSans-ExtraBold.woff) format("woff"), url(../fonts/Open_Sans/OpenSans-ExtraBold.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: OpenSans_Bold;
+  src: url(../fonts/Open_Sans/OpenSans-Bold.eot) format("eot"), url(../fonts/Open_Sans/OpenSans-Bold.ttf) format("ttf"), url(../fonts/Open_Sans/OpenSans-Bold.woff) format("woff"), url(../fonts/Open_Sans/OpenSans-Bold.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: OpenSans_LightItalic;
+  src: url(../fonts/Open_Sans/OpenSans-LightItalic.eot) format("eot"), url(../fonts/Open_Sans/OpenSans-LightItalic.ttf) format("ttf"), url(../fonts/Open_Sans/OpenSans-LightItalic.woff) format("woff"), url(../fonts/Open_Sans/OpenSans-LightItalic.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: Montserrat_Black;
+  src: url(../fonts/Montserrat/Montserrat-Black.eot) format("eot"), url(../fonts/Montserrat/Montserrat-Black.ttf) format("ttf"), url(../fonts/Montserrat/Montserrat-Black.woff) format("woff"), url(../fonts/Montserrat/Montserrat-Black.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: Montserrat_Medium;
+  src: url(../fonts/Montserrat/Montserrat-Medium.eot) format("eot"), url(../fonts/Montserrat/Montserrat-Medium.ttf) format("ttf"), url(../fonts/Montserrat/Montserrat-Medium.woff) format("woff"), url(../fonts/Montserrat/Montserrat-Medium.woff2) format("woff2");
+}
+/*# sourceMappingURL=fonts.css.map */
