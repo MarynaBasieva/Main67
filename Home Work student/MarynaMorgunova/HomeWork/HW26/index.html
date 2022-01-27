@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW26</title>
+</head>
+<body>
+    <script>
+
+        // task2
+        let color = prompt("Введите цвет", "");
+        switch (color) {
+            case "черный":
+            case "белый":
+                console.log("Упс, не угадали!");
+                break;
+            case "зеленный":
+                console.log("Верно!");
+                break;
+            case "красный":
+                console.log("Упс, не угадали!");
+                break;  
+            case "синий":
+                console.log("Упс, не угадали!");
+                break;
+            default:
+                console.log("Такого цвета в списке нет.");  
+        }
+
+        // task3
+        for (let i = 0; i < 100; i++) {
+            if (i == 5 || i == 55 || i == 68 || i == 99) {
+                continue
+            } 
+            else { 
+                console.log(i);
+            }
+        }
+
+        // task4
+        let data = ["яблоко", "апельсин", "банан", "киви", "ананас", "груша", "слива", "персик", "манго", "лимон"];
+        for (let i in data) {
+            console.log(data[i]);
+        }
+    </script>
+    
+</body>
+</html>
