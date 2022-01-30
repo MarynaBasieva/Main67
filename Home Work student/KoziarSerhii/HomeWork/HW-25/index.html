@@ -9,36 +9,39 @@
 <p>Спробуй вгадати число від 1 до 10</p>
 <button onclick="guessNumber()">Спробувати</button>
 <script>
-    // let a = Math.max(50,49,36,39);
-    // let sum = prompt("Введіть число",'');
+    let a = Math.max(50, 49, 36, 39);
+    let sum = prompt("Введіть число", '');
+    sum = parseInt(sum);
+    if (isNaN(sum)) {
+        alert("Потрібно ввести число");
+    } else if (a === sum) {
+        alert("Ви вгадали число");
+    } else if (a > sum) {
+        alert("Ваше число менше");
+    } else {
+        alert("Ваше число більше");
+    }
+
+
+    // let number = getRandomInt(10);
     //
-    // if (a === parseInt(sum)) {
-    //     alert("Ви вгадали число");
-    // } else if (a > sum) {
-    //     alert("Ваше число менше");
-    // } else {
-    //     alert("Ваше число більше");
+    // function guessNumber(){
+    //     let guess = parseInt(prompt("Введіть число від 1 до 10"));
+    //
+    //     if (isNaN(guess)) {
+    //         alert("Потрібно ввести число");
+    //     } else if (number === guess) {
+    //         alert("Ви вгадали число");
+    //     } else if (number > guess) {
+    //         alert("Ваше число менше");
+    //     } else {
+    //         alert("Ваше число більше");
+    //     }
     // }
-
-    let number = getRandomInt(10);
-
-    function guessNumber(){
-        let guess = parseInt(prompt("Введіть число від 1 до 10"));
-
-        if (isNaN(guess)) {
-            alert("Потрібно ввести число");
-        } else if (number === guess) {
-            alert("Ви вгадали число");
-        } else if (number > guess) {
-            alert("Ваше число менше");
-        } else {
-            alert("Ваше число більше");
-        }
-    }
-
-    function getRandomInt(max) {
-        return Math.floor(Math.random() * max);
-    }
+    //
+    // function getRandomInt(max) {
+    //     return Math.floor(Math.random() * max);
+    // }
 </script>
 </body>
 </html>
