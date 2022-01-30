@@ -101,13 +101,28 @@ img {
 
 /*hero*/
 .herro-banner{
+    position: relative;
+}
+.herro-banner::before{
+    content: "";
+    width: 1490px;
+    height: 1161px;
+    position: absolute;
+    top: -5%;
+    left: 25%;
+    background-image: url("../img/hero.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.herro-banner{
     max-width: 1110px;
     margin: 0 auto;
-    background: url("../img/hero.png") ;
-    background-repeat: no-repeat;
+                        /*background: url("../img/hero.png") ;*/
+                        /*background-repeat: no-repeat;*/
     /*background-size: contain;*/
-    background-position: -50% 800%;
-    background-size: 126%;
+    /*                    background-position: -50% 800%;*/
+    /*                    background-size: 126%;*/
     /*background-size: cover;*/
     /*background: box;*/
     /*position: center;*/
@@ -271,8 +286,7 @@ img {
 
 /*pricing*/
 .pricing {
-    background: url("../img/rectangle.jpg") no-repeat, rgb(231,236,255, 50%);
-    background-position: 45% 50%;
+    background: rgb(231, 236, 255, 50%) url("../img/rectangle.jpg") no-repeat 45% 50%;
 }
 .pricing .row{
     margin: 237px auto 172px auto;
