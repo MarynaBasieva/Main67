@@ -1,0 +1,426 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+}
+
+img {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+}
+
+p {
+  font-size: 16px;
+  line-height: 26px;
+  color: #727272;
+}
+/* HEADER */
+
+.header {
+  position: fixed;
+  background: #eeeff1;
+  padding: 57px;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+  transition: 0.2s;
+}
+
+.fixedbar {
+  box-shadow: -3px -1px 5px 0px;
+}
+
+.logo {
+  margin-right: 398px;
+}
+
+.responsive-menu {
+  display: none;
+}
+
+/* MENU */
+.sub-menu {
+  display: flex;
+  list-style: none;
+  justify-content: right;
+}
+
+.sub-menu li a {
+  margin-right: 42px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  color: #000;
+  text-decoration: none;
+  transition: 0.4s;
+}
+
+.sub-menu li a:hover {
+  color: #34547a;
+}
+
+.sub-menu li:last-child a {
+  margin-right: 0;
+}
+/* MENU */
+
+/* HEADER */
+
+/* BANNER */
+
+.banner {
+  background: #eeeff1;
+  padding: 140px 0 145px 0;
+  margin-top: 140px;
+}
+
+.banner-img {
+  padding-top: 45px;
+}
+
+.parent-text h1 {
+  font-size: 48px;
+  line-height: 79px;
+  margin-bottom: 60px;
+}
+
+.parent-text p {
+  font-size: 16px;
+  line-height: 26px;
+  color: #727272;
+  margin-bottom: 75px;
+}
+
+.btn-banner {
+  padding: 25px 40px;
+  color: #fff;
+  line-height: 26px;
+  text-align: center;
+  background: #34547a;
+  transition: 0.3s;
+}
+
+.btn-banner:hover {
+  background: rgb(3, 135, 212);
+}
+
+/* BANNER */
+
+.about {
+  max-width: 540px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 120px 0 100px 0;
+}
+
+.about h2 {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 37px;
+  color: #000000;
+  margin-bottom: 50px;
+}
+
+/* PROJECTS */
+
+.projects {
+  width: 100%;
+  background: #34547a;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.projects-item {
+  display: inline-block;
+  padding-left: 20px;
+}
+
+.projects img {
+  vertical-align: sub;
+}
+
+.projects-value {
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 25px;
+  color: #ffffff;
+  padding-left: 11px;
+}
+
+.projects-text {
+  font-size: 16px;
+  line-height: 26px;
+  color: #ffffff;
+}
+
+/* PROJECTS */
+
+/* SKILLS */
+
+.skills {
+  padding: 100px 0 100px 0;
+}
+
+.skills-content {
+  margin: 100px 150px 0 0;
+}
+
+.skills-content h2 {
+  padding-bottom: 50px;
+}
+
+.skills-line {
+  background: #c4c4c4;
+  height: 4px;
+  margin-bottom: 30px;
+}
+
+.skills-line div {
+  background: #34547a;
+  height: 4px;
+  width: 80%;
+}
+
+/* SKILLS */
+
+/* WORK */
+
+.work {
+  background: #eeeff1;
+
+  padding-bottom: 100px;
+}
+
+.youtube {
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  transition: all 200ms ease-out;
+  cursor: pointer;
+  width: 100%;
+  height: 600px;
+  background-size: cover;
+}
+
+.work-video iframe {
+  width: 100%;
+  height: 600px;
+}
+
+.youtube .play {
+  background: url("../img/youtube-play-btn.png") no-repeat;
+  background-position: 0 -100px;
+  -webkit-background-size: 100% auto;
+  background-size: 100% auto;
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  transition: none;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+.play:hover {
+  background-position: 0 0;
+}
+
+/* WORK */
+
+/* GALLERY */
+
+.gallery {
+  padding-top: 28px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gallery .fancy-child {
+  width: 25%;
+  max-height: 475px;
+  overflow: hidden;
+  position: relative;
+}
+
+.gallery .fancy-child:hover:before {
+  opacity: 1;
+}
+
+.gallery .fancy-child:before {
+  content: "";
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../img/eye.png),
+    linear-gradient(0deg, rgba(52, 84, 122, 0.8), rgba(52, 84, 122, 0.8));
+  background-repeat: no-repeat;
+  background-position: center center;
+  transition: 0.5s;
+}
+
+/* GALLERY */
+
+/* CLIENTS */
+
+.clients {
+  padding: 70px 0 100px 0;
+}
+
+.clients-img {
+  width: 255px;
+  margin-right: 30px;
+}
+
+.owl-navigation {
+  text-align: center;
+}
+
+.owl-navigation i {
+  font-size: 20px;
+}
+
+.owl-nav-prev,
+.owl-nav-next {
+  color: #fff;
+  font-size: 23px;
+  margin: 5px;
+  padding: 1px 8px;
+  background: #d6d6d6;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.owl-nav-prev:hover,
+.owl-nav-next:hover {
+  background: #869791;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* CLIENTS */
+
+/* FORM */
+
+.form {
+  background: #eeeff1;
+  padding-bottom: 100px;
+}
+
+.form-btn {
+  padding: 25px 40px;
+  color: #fff;
+  line-height: 26px;
+  text-align: center;
+  background: #34547a;
+  margin-left: 460px;
+  transition: 0.3s;
+}
+
+.form-btn:hover {
+  background: rgb(3, 135, 212);
+}
+
+.form-name input,
+.form-email input {
+  padding: 17px 161px 18px 20px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+
+.form-content {
+  display: flex;
+  justify-content: center;
+}
+
+.form-name {
+  margin-right: 30px;
+}
+
+.form-message {
+  margin: 20px 0 50px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.form-message textarea {
+  padding: 17px 527px 143px 20px;
+  border: none;
+  outline: none;
+  resize: none;
+}
+
+/* FORM */
+
+/* FOOTER */
+
+footer {
+  background: #34547a;
+  padding-bottom: 50px;
+}
+
+.footer-info h3 {
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 25px;
+  color: #ffffff;
+  padding-top: 50px;
+}
+
+.footer-info p {
+  font-size: 13px;
+  line-height: 21px;
+  color: #ffffff;
+}
+
+.footer-social {
+  font-size: 40px;
+  color: #fff;
+  margin-top: 56px;
+  cursor: pointer;
+}
+
+.footer-social i {
+  transition: 0.3s;
+}
+
+.footer-social i:hover {
+  color: #0ac0f7;
+}
+
+/* FOOTER */
+
+.modal-body input {
+  padding: 17px;
+  outline: none;
+  margin-right: 22px;
+}
+
+.modal-body input:nth-child(2) {
+  margin-right: 0;
+}
+
+.modal-body textarea {
+  resize: none;
+  outline: none;
+  margin-top: 20px;
+  padding: 10px 10px 30px 10px;
+  width: 100%;
+  display: block;
+}

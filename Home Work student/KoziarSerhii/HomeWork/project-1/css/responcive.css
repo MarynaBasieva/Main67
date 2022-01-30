@@ -1,0 +1,81 @@
+@media (min-width: 1200px) {
+    .for_page .container {
+        max-width: 1110px;
+    }
+}
+
+@media (max-width: 1199px) {
+
+}
+
+@media (max-width: 991px) {
+    .nav-menu ul.sub-menu li a {
+        margin-right: 30px;
+    }
+
+}
+
+@media (max-width: 767px) {
+    .nav-menu ul.sub-menu li a {
+        margin-right: 20px;
+    }
+    .btnBuyCol {
+        justify-content: center;
+    }
+    .header .btnBuy {
+        margin-top: 20px;
+    }
+    .nav-menu ul.sub-menu {
+        justify-content: center;
+        padding-top: 20px;
+        margin: 0;
+    }
+    .pageTitle {
+        padding-top: 20px;
+        margin: 0;
+    }
+    .hero{
+        padding-top: 20px;
+    }
+    .hero .heroCol {
+        padding: 0 15px;
+    }
+    .heroRow {
+        padding-top: 20px;
+    }
+    .hero .btnBuyHeroCol{
+        justify-content: center;
+        display: flex;
+    }
+    .hero .btnLearnHeroCol{
+        justify-content: center;
+        display: flex;
+        margin-top: 20px;
+    }
+    .mobile .mobileCol{
+        order: 1;
+    }
+    .heroRow .btnBuyHeroCol{
+        margin: 0 auto;
+    }
+    .footer .footer-row1 p{
+        display: flex;
+        justify-content: center;
+    }
+    .footer-row1 .btnFooterBuynowCol{
+        justify-content: center;
+    }
+    .footer .footer-row2 .footer-social-coll{
+        padding-top: 10px;
+        padding-bottom: 20px;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 500px) {
+
+}
+
+@media (max-width: 470px) {
+
+}

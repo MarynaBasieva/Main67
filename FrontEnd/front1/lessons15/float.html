@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Float</title>
+</head>
+	
+<style>
+	.container{
+		width:400px;
+		margin: 0 auto;
+	}
+	.container div{
+		margin: 5px;
+		width: 100px;
+		height: 100px;
+		border: solid 1px #000;
+	}
+	.float-left{
+		background: #134AD6;
+		float: left;
+	}
+	.float-right{
+		background: #F20CFA;
+		float: right;
+	}
+	.clear{
+		clear: both;
+	}
+	.box{
+		background: #11E5D1;
+	}
+	.fl{
+		float:left;
+	}
+	.fr{
+		float:right;
+	}
+</style>
+	
+<body>
+	<div class="container">
+		<div class="float-left">left</div>
+		<div class="float-right">right</div>
+		<div class="clear"></div>
+		<p>Lorem ipsum dolar Lorem ipsum dolar Lorem ipsum dolar Lorem ipsum dolar Lorem ipsum dolar Lorem ipsum dolar Lorem ipsum dolar Lorem ipsum dolar Lorem ipsum dolar</p>
+		
+		<div class="float-left">left</div>
+		<div class="clear"></div>
+		<div class="float-right">right</div>
+		<div class="clear"></div>
+		<p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</p>
+	</div>
+	
+	<div class="container">
+		<div class="fl box">left</div>
+		<div class="fr box">right</div>
+		<div class="clear"></div>
+		<div class="fl box">left</div>
+		<div class="fr box">right</div>
+		<p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum </p> 
+	</div>
+</body>
+</html>

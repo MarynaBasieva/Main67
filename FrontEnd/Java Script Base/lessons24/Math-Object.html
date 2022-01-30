@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Math Object</title>
+</head>
+<script>
+	//abs - возвращает абсолютное число
+	let abs1 = -25;
+	console.log(Math.abs(abs1));//25
+	
+	let abs2 = 30;
+	console.log(Math.abs(abs2));//30
+	
+	// min() max()
+	let max = Math.max(20,13,99,45,1,-34,3); //99
+	console.log(max);
+	
+	let min = Math.min(20,-13,99,45,1,34,3); //99
+	console.log(min);
+	
+	//ceil()
+	let x = Math.ceil(9.3);//10
+	console.log(x);
+	let x2 = Math.ceil(-9.3);//-9
+	console.log(x2);
+	
+	//floor()
+	let y = Math.floor(9.3);//9
+	console.log(y);
+	let y2 = Math.floor(-9.3);//-10
+	console.log(y2);
+	
+	//round()
+    let num1 = Math.round(6.5);//7
+	console.log(num1);
+	let num2 = Math.round(6.4);//6
+	console.log(num2);
+	let num3 = Math.round(-6.4);//	-6
+	console.log(num3);
+	let num4 = Math.round(-6.5);// -6
+	console.log(num4);
+	let num5 = Math.round(-6.6);// -7
+	console.log(num5);
+	
+	//random()
+	let ran = Math.random();
+	console.log(ran);
+	//pow
+	let step = Math.pow(2,3);
+	
+	let one = 1.23456
+	let res = Math.round(one*100);
+	console.log(res);// (123)   123,456
+	
+	let two = 1.23557
+	let res2 = two.toFixed(2);
+	console.log(res2);
+	
+	
+	
+</script>
+<body>
+</body>
+</html>

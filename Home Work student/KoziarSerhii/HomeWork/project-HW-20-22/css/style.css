@@ -1,0 +1,419 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+img {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+}
+
+.row {
+    /*border: solid black 1px;*/
+}
+
+/*header*/
+.header {
+    background: #EEEFF1;
+    padding-top: 57px;
+}
+
+.logo img {
+    transition: 0.2s ease-in-out;
+}
+
+.logo img:hover {
+    transform: scale(1.01);
+    transition: 0.2s ease-in-out;
+}
+
+/*Menu*/
+
+.responsive_menu {
+    display: none;
+}
+
+.nav-menu ul.sub-menu {
+    display: flex;
+    list-style: none;
+}
+
+.nav-menu ul.sub-menu li a {
+    margin-right: 42px;
+
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 500;
+    color: #34547A;
+    transition: 0.3s;
+}
+
+.nav-menu ul.sub-menu li a:hover {
+    color: #000;
+    text-decoration: none;
+}
+
+.nav-menu ul.sub-menu li:nth-child(4) {
+    margin-right: 0;
+}
+
+/*Menu*/
+/*header*/
+
+/*baner Block*/
+.banner {
+    background: #EEEFF1;
+    padding-top: 140px;
+
+}
+
+.banner img {
+    display: block;
+    margin: 0 auto;
+    padding-top: 25px;
+}
+
+.banner .parentTextBanner {
+    padding-bottom: 146px;
+}
+
+.banner .parentTextBanner p {
+    padding-top: 60px;
+    display: block;
+}
+
+.banner .parentTextBanner .btnBanner {
+    margin-top: 60px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    width: 225px;
+    padding: 20px 0;
+    background: #34547A;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.banner .parentTextBanner .btnBanner:hover {
+    background: black;
+    transition: 0.2s;
+}
+
+/*baner Block*/
+
+/*aboutme*/
+.about-me {
+    margin: 0 auto;
+    max-width: 540px;
+}
+
+.about-me h2 {
+    display: block;
+    padding-top: 112px;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 37px;
+    text-align: center;
+}
+
+.about-me p {
+    display: block;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+}
+
+/*aboutme*/
+
+/*numbers*/
+.numbers {
+    background: #34547A;
+    padding: 92px 0;
+}
+
+.numbers .row > * {
+    display: flex;
+    padding: 10px 0;
+    justify-content: center;
+}
+
+.numbers .imgProject {
+    padding-right: 20px;
+}
+
+.parentTextProject h2 {
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 25px;
+    margin: 0 auto;
+}
+
+.parentTextProject p {
+    font-size: 16px;
+    line-height: 26px;
+    margin: 0 auto;
+}
+
+/*numbers*/
+
+/*skills*/
+.mySkills {
+    padding: 101px 0;
+}
+
+.mySkills .skillsDescription {
+    max-width: 445px;
+    padding-bottom: 10px;
+}
+
+.mySkills h2 {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 37px;
+}
+
+.mySkills .skillItem {
+    font-size: 16px;
+    line-height: 26px;
+    color: #727272;
+}
+
+.mySkills .skillBar {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 10px;
+    background: #C4C4C4;
+    overflow: hidden;
+}
+
+.mySkills .skillBarProgress {
+    position: relative;
+    left: 0;
+    height: 10px;
+    border-radius: 4px;
+    width: 75%;
+    background: #34547A;
+}
+
+/*skills*/
+
+/*how-i-work*/
+.how-i-work {
+    background: #EEEFF1;
+    padding: 100px 0;
+}
+
+.how-i-work h2 {
+    /*padding-top: 100px;*/
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 37px;
+    text-align: center;
+}
+
+.how-i-work p {
+    margin: 0 auto;
+    max-width: 540px;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #727272;
+    padding-bottom: 20px;
+}
+
+.how-i-work iframe {
+    margin: 0 auto;
+    width: 100%;
+    height: 600px;
+}
+
+.how-i-work .youtube {
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    transition: all 200ms ease-out;
+    cursor: pointer;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+}
+
+.how-i-work .youtube .play {
+    background: url('../img/youtube-play-btn.png') no-repeat;
+    background-position: 0 0;
+    -webkit-background-size: 100% auto;
+    background-size: 100% auto;
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    transition: none;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.how-i-work .youtube:hover .play {
+    background-position: 0 -100px;
+}
+
+/*how-i-work*/
+
+/*fancyGallery*/
+.fancyGallery {
+    padding-top: 28px;
+    /*padding-bottom: 72px;*/
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.fancyGallery .fancyGalleryChild {
+    width: 25%;
+    max-height: 360px;
+    overflow: hidden;
+    position: relative;
+
+}
+
+.fancyGallery .fancyGalleryChild:hover:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../img/view.png) no-repeat center center, linear-gradient(0deg, rgba(52, 84, 122, 0.8), rgba(52, 84, 122, 0.8));
+}
+
+/*fancyGallery*/
+
+/*clients*/
+.clients {
+    padding-top: 72px;
+    padding-bottom: 100px;
+}
+#clients-carousel img{
+    display: block;
+    width: auto;
+    margin: 0 auto;
+}
+/*clients*/
+
+/*contact-form*/
+.contact-form {
+    background: #EEEFF1;
+}
+.contact-form .contactDescription {
+    margin: 0 auto;
+    max-width: 540px;
+    padding-top: 100px;
+}
+.contact-form .contactDescription h2 {
+    display: block;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 37px;
+    text-align: center;
+}
+
+.contact-form .contactDescription p {
+    display: block;
+    padding-top: 50px;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+}
+
+.contact-form .submitForm {
+    margin: 0 auto;
+    max-width: 540px;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+.submitForm textarea {
+    resize: none;
+}
+.contact-form .submitForm button {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    width: 225px;
+    padding: 20px 0;
+    background: #34547A;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    margin: 50px auto 0 auto;
+}
+
+.contact-form .submitForm button:hover {
+    background: black;
+    transition: 0.2s;
+}
+/*contact-form*/
+
+/*footer*/
+.footer {
+    background: #34547A
+}
+.footer .row {
+    padding: 40px 0;
+}
+.footer h2 {
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 25px;
+    color: #FFFFFF;
+}
+.footer p {
+    font-size: 13px;
+    line-height: 21px;
+    color: #FFFFFF;
+    padding-top: 5px;
+}
+.footer img{
+    padding: 20px 2px;
+}
+.footer-social{
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+/*footer*/
+
+/*modal*/
+.btnModal {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    width: 225px;
+    padding: 20px 0;
+    background: #34547A;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    margin: 0 auto;
+}
+
+.btnModal:hover {
+    background: black;
+    transition: 0.2s;
+}
+/*modal*/

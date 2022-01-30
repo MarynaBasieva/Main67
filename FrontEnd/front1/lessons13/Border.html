@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Border</title>
+</head>
+<style>
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	.Parent_border{
+		width: 1170px;
+		margin: 0 auto;
+	}
+	.border{
+		width: 200px;
+		height: 200px;
+		margin-bottom: 20px;
+		box-sizing: border-box;
+		background:#0BC02D;
+	}
+	.border1{
+		border-color: #000;
+		border-width: 5px;
+		border-style: solid;
+	}
+	.border2{
+		border: dotted 5px #ccc;
+	}
+	.border3{
+		border-bottom: 5px solid #1007E8;
+		border-left: #F80408 solid 5px;
+		border-right: solid #F05006 5px;
+		border-top: 5px #03EEDD solid;
+	}
+	.border4{
+		border: dashed 5px #EB0DF0;
+	}
+	.bg{
+		background: #1193E5;
+	}
+	.container{
+		width: 600px;
+		margin: 0 auto;
+	}
+	.bg h2{
+		text-align: center;
+		border-bottom: solid 1px #000;
+		padding-bottom: 20px;
+		margin-bottom: 20px;
+	}
+	
+	.bg p{
+		text-align: justify;
+	}
+</style>
+<body>
+	<div class="Parent_border">
+		<div class="border border1"></div>
+		<div class="border border2"></div>
+		<div class="border border3"></div>
+		<div class="border border4"></div>
+		<div class="bg">
+			<div class="container">
+				<h2>Heading lorem ipsum</h2>
+				<p>lorem ipsum dolar lorem ipsum dolar lorem ipsum dolar lorem ipsum dolar lorem ipsum dolar lorem ipsum dolar lorem ipsum dolar lorem ipsum dolar lorem ipsum dolar lorem ipsum dolar lorem ipsum dolar lorem ipsum dolar lorem ipsum dolar lorem ipsum dolar lorem ipsum dolar lorem ipsum dolar</p>
+				<p>lorem ipsum dolar lorem ipsum dolar lorem ipsum dolar lorem ipsum dolar lorem ipsum dolar lorem ipsum dolar lorem ipsum dolar lorem ipsum dolar lorem ipsum dolar lorem ipsum dolar lorem ipsum dolar lorem ipsum dolar lorem ipsum dolar lorem ipsum dolar lorem ipsum dolar lorem ipsum dolar</p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

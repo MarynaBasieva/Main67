@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Primitive types</title>
+</head>
+<script>
+	//Number
+	let n = 123;
+	let n2 = 12.45;
+	console.log("не число"*2);//NaN
+	console.log(1/0); //infinity
+	
+	//String
+	let str = "Hello my dear pets";
+	let str2 = 'Hello World';
+	console.log(str, str2);
+	
+	//Boolean
+	
+	let check = true;
+	let check2 = false;
+	console.log(check, check2);
+	
+	//Null - не чего
+	let age = null;
+	console.log(age);
+	
+	let person = {firstName:"Maya", lastName:"Petrova", age:50};
+	person = null;
+	console.log(person);
+	
+	//Undefined
+	let y;
+	console.log(y);
+	
+	//parseInt(String, radix)
+	console.log("///////parseInt//////");
+	console.log(parseInt("12px"));
+	console.log(parseInt("0123"));
+	console.log(parseInt("1230"));
+	console.log(parseInt("0xf"));//0xf- 15, 0xff- 255
+	console.log(parseInt("f"));
+	console.log(parseInt("0123",8));
+	console.log(parseInt("ff",16));
+	console.log(parseInt(12.7)); //12.7 -> 12
+	console.log(parseInt("12.7.gdjfgkfhlk"));
+	console.log(parseInt("+12"));
+	console.log(parseInt("-12"));
+	console.log(parseInt("px12"));
+	
+	//parseFloat("string")
+	console.log("///////parseFloat//////");
+	console.log(parseFloat("string"));
+	console.log(parseFloat("3.14"));
+	console.log(parseFloat("314e-2"));//второй степени
+	console.log(parseFloat("a12"));// NaN
+	
+	//Number -числовый тип
+	let a1 = 1e9; //1 000 000 000
+	let a2 = 0.5e3; // 0.5*1000=500
+	let a3 = 1e-6;//0.000001
+	let a4 = 0xff; //шустнадцатиричная запись (f = 15)(ff = 255)
+	let a5 = 0b11111111;//двоичная запись десятичного числа 255
+	let a6 = 0o377; // восьмеричная форма записи числа 255
+	
+	console.log("///////parseFloat//////");
+	console.log(parseFloat(0.1+0.2));
+	
+	let par = 0.1 + 0.2;//0.30000000000000004
+	console.log(par === 0.3);
+	
+	let num = 1.245567;
+	let result = num.toFixed(2);//получить два знака после запятой
+	console.log(result);
+</script>
+<body>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Menu</title>
+</head>
+<style>
+	*{
+		padding: 0;
+		margin: 0;
+	}
+	.container{
+	width: 1170px;
+	margin: 0 auto;
+}
+.navigate{
+	background: #0C176E;
+}
+.navigate ul{
+	list-style: none;
+}
+.navigate ul.menu > li{
+	display: inline-block;
+	position: relative;
+}
+.navigate ul.menu > li > a{
+	color: #fff;
+	font-size: 15px;
+	padding: 10px 25px;
+	display: inline-block;
+	text-decoration: none;
+}
+.navigate ul.menu  li  a:hover{
+	background:#075D71;
+}
+.navigate ul.menu  li ul.sub-menu li a{
+	color: #fff;
+	font-size: 15px;
+	padding: 10px 25px;
+	display:block;
+	text-decoration: none;
+}
+ul.sub-menu{
+	display: none;
+	background: #63359E;
+	position: absolute;
+	left: 0;
+	top: 37px;
+	width: 200px;
+	
+}
+.navigate ul.menu li:nth-child(3):hover ul.sub-menu{
+	display: block;
+}
+</style>
+<body>
+	<nav class="navigate">
+					<div class="container">
+						<ul  class="menu">
+							<li class="item-menu"><a href="s/" class="link-item-menu">Home</a></li>
+							<li class="item-menu"><a href="#" class="link-item-menu">About</a></li>
+							<li class="item-menu"><a href="#" class="link-item-menu">Catalog</a>
+								<ul class="sub-menu">
+									<li class="item-menu">
+										<a href="#" class="link-item-menu">Product1</a>
+									</li>
+									<li class="item-menu">
+										<a href="#" class="link-item-menu">Product1</a>
+									</li>
+									<li class="item-menu">
+										<a href="#" class="link-item-menu">Product1</a>
+									</li>
+									<li class="item-menu">
+										<a href="#" class="link-item-menu">Catalog2</a>
+									</li>
+									<li class="item-menu">
+										<a href="#" class="link-item-menu">Product1</a>
+									</li>
+								</ul>
+							</li>
+							<li class="item-menu"><a href="#" class="link-item-menu">Contact</a></li>
+						</ul>
+					</div>
+				</nav>
+</body>
+</html>

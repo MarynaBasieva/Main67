@@ -1,0 +1,36 @@
+*{
+	padding: 0;
+	margin: 0;
+
+}
+.container{
+	width: 1170px;
+	margin: 0 auto;
+}
+.block h2{ 
+	font-family: 'open_sansregular';
+	font-weight: bold;
+	font-size: 35px;
+	text-align: center;
+}
+
+.text{
+   font-family: 'open_sansregular';
+   font-size: 17px;
+   font-style: italic;
+}
+.text span{
+	font-weight: bold;
+}
+
+/*
+font-family: 'open_sansbold_italic';
+font-family: 'open_sansbold';
+font-family: 'open_sansextrabold';
+font-family: 'open_sansextrabold_italic';
+font-family: 'open_sansitalic';
+font-family: 'open_sanslight';
+font-family: 'open_sanslight_italic';
+font-family: 'open_sansregular';
+font-family: 'open_sanssemibold';
+font-family: 'open_sanssemibold_italic';*/

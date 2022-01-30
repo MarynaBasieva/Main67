@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>For in for of</title>
+</head>
+<script>
+	//for цикл
+	//существует три способа использования
+	 console.log("===For===");
+	
+	for(let i=0; i<=5; i++){
+		//console.log(i);//0 1 2 3 4 5  //<= - 0 1 2 3 4 5
+		if(i==4){
+			continue;
+		}
+		console.log(i);
+	} 
+	
+	const data = ['first', 'second', 'last'];
+	
+	const user =[
+		{tiket: true, name: "Maya", LastName: "Petrova" },
+		{tiket: true, name: "Maryna", LastName: "Basieva" },
+		{tiket: true, name: "Oleksey", LastName: "Ivanov" }
+	];
+	//перебор индексов Array и Object
+	//для перебора массива использовать не рекомендуется for in
+	console.log("===For in===");
+	for(let i in user){
+		console.log(user[i]);
+		//console.log(user[i]);
+	}
+	
+	//перебор значений интерируемых Array, Map
+	// не подходит для объектов
+	console.log("===For of===");
+	for (let i of data){
+		console.log(i);
+	}
+	
+	
+</script>
+<body>
+</body>
+</html>

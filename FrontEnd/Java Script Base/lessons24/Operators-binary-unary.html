@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Operators binary unary</title>
+</head>
+<script>
+	 //операторах числа называются (операнд или агрумент)
+	let y = 2;
+	y = -y ;
+	console.log(y); //-2 применили унарный минус
+	
+	// бинарный когда применяем к двум операндам или агрументам
+	let a = 3, b =2;
+	console.log(a-b); // вычисление 2 числа становиться бинарным, а число становится операндом
+	
+	console.log(5%2); //1 взятие остатка
+	//возведение в степеь **
+	console.log(2 ** 3); //8(2*2*2, 3 раза)
+	console.log(4 ** (1/2)); //2
+	
+	// сложение строк + (бинарный минус)
+	let str = "cat" + " " + "is my famaliy";
+	console.log(str);
+	
+	console.log("1" + 2);//12
+	console.log(2 + "1");//21
+	console.log(2+2+"1");//41 2+2= 4+ string1= 41
+	console.log("1"+2+2);//122
+	
+	//унарный плюс
+	let x = 1;
+	console.log(+x);
+	
+	let q = -3;
+	console.log(+q);
+	
+	console.log(+true);//1
+	console.log(+"");//0
+	
+	let numberNew1 = "5";
+	let numberNew2 = "5";
+	console.log(numberNew1 + numberNew2);
+	console.log(+numberNew1 + +numberNew2);
+	
+	let numv = 2*2+3;
+	console.log(numv);
+	
+	//побитовые операторы (когда присвоение изпользуем арифметику)
+	let qwert = 3;
+	qwert += 5;
+	qwert += 3;
+	console.log(qwert);
+	
+	//инкремент ++ / Декремент --
+	//Инкремент величивает переменную на +1
+	let count = 2;
+	count ++;
+	console.log(count);//3
+	
+	//Декремент уменьшает переменную на -1
+	let count2 = 2;
+	count2 --;
+	console.log(count2);
+</script>
+<body>
+	
+</body>
+</html>
