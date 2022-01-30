@@ -219,22 +219,28 @@ img {
 
 /*mobile*/
 /*intro*/
+.intro .row{
+    margin: 20px auto 130px auto;
+}
 .intro-banner{
     padding-top: 100px;
 }
 /*intro*/
 /*intro2*/
+.intro2 .row{
+    margin: 20px auto 130px auto;
+}
 .intro2-banner{
     padding-top: 50px;
 }
 /*intro2*/
 
 /*mention*/
-.mention-banner{
-    padding-top: 160px;
+.mention  .row{
+    margin: 115px auto 115px auto;
 }
-.btnPurchaseNow{
-
+.mention .mentionCol{
+    margin-top: 20px;
 }
 .mention .btnPurchaseNow{
     width: 150px;
@@ -257,6 +263,13 @@ img {
 /*mention*/
 
 /*pricing*/
+.pricing {
+    mix-blend-mode: normal;
+    background: rgb(231,236,255, 0.5);
+}
+.pricing .row{
+    margin: 237px auto 172px auto;
+}
 .pricing h2{
     text-align: center;
     max-width: 600px;
