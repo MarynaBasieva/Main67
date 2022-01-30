@@ -1,0 +1,552 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Arial, sans-serif;
+}
+.for-page{
+    background: #EEEEEA;
+}
+img{
+    max-width: 100%;
+    width: auto;
+    height: auto;
+}
+html,
+body{
+    position: relative;
+}
+.for-page{
+    min-height: 100%;
+    position: relative;
+    margin: 0 auto;
+}
+.page{
+    position: relative;
+    padding-bottom: 150px;
+}
+
+
+
+
+
+
+
+
+/*--------------------------header----------------*/
+.header{
+    padding-top: 51px;
+    padding-bottom: 10px;
+}
+.header .parent_responsive .responsive_menu{
+    display: none;
+}
+.header .nav ul{
+    padding-top: 10px;
+    display: flex;
+}
+.header .nav li{
+    list-style: none;
+}
+.header .nav a{
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 28px;
+    color: #000000;
+    margin-right: 58px;
+}
+.header .nav a:hover{
+    text-decoration: underline;
+}
+.header .headerBtn{
+    padding-top: 10px;
+    text-align: end;
+}
+.header .headerBtn a{
+    padding: 15px 26px;
+    background: #000000;
+    border-radius: 20px;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.header .headerBtn a:hover{
+    text-decoration: none;
+}
+/*----------------------header------------------*/
+
+/*--------------banner-------------------*/
+
+.banner{
+    padding-top: 122px;
+    text-align: center;
+    padding-bottom: 90px;
+}
+.banner .bannerInner .bannerTitle{
+    font-size: 43px;
+    line-height: 45px;
+    text-align: center;
+    color: #000000;
+    max-width: 618px;
+    margin: 0 auto;
+    margin-bottom: 48px;
+}
+.banner .bannerInner .text{
+    margin-bottom: 50px;
+    font-size: 20px;
+    line-height: 20px;
+    color: #000000;
+    display: inline-block;
+    margin-right: 20px;
+}
+.banner .bannerInner .switcher{
+    max-width: 140px;
+    margin: 0 auto;
+    display: flex;
+}
+/*----------переключатель---------*/
+#toggles {
+    width:60px;
+    margin:50px auto;
+    text-align:center;
+   }
+    
+   .ios-toggle,.ios-toggle:active {
+    position:absolute;
+    top:-5000px;
+    height:0;
+    width:0;
+    opacity:0;
+    border:none;
+    outline:none;
+   }
+    
+   .checkbox-label {
+    display:block;
+    position:relative;
+    padding:10px;
+    margin-bottom:20px;
+    font-size:12px;
+    line-height:16px;
+    width:100%;
+    height:36px;
+    border-radius:18px;
+    background:#f8f8f8;
+    cursor:pointer;
+   }
+    
+   .checkbox-label:hover {
+     
+   }
+    
+   .checkbox-label:before {
+    content:'';
+    display:block;
+    position:absolute;
+    z-index:1;
+    line-height:34px;
+    text-indent:40px;
+    height:36px;
+    width:36px;
+    border-radius:100%;
+    top:0px;
+    left:0px;
+    right:auto;
+    background:white;
+    box-shadow:0 3px 3px rgba(0,0,0,.2),0 0 0 2px #dddddd;
+   }
+    
+   .checkbox-label:after {
+    content:attr(data-off);
+    display:block;
+    position:absolute;
+    z-index:0;
+    top:0;
+    left:-300px;
+    padding:10px;
+    height:100%;
+    width:300px;
+    text-align:right;
+    color:#bfbfbf;
+    white-space:nowrap;
+   }
+    
+   .ios-toggle:checked + .checkbox-label {
+    box-shadow:inset 0 0 0 20px rgba(19,191,17,1),0 0 0 2px rgba(19,191,17,1);
+   }
+    
+   .ios-toggle:checked + .checkbox-label:before {
+    left:calc(100% - 36px);
+    box-shadow:0 0 0 2px transparent,0 3px 3px rgba(0,0,0,.3);
+   }
+    
+   .ios-toggle:checked + .checkbox-label:after {
+    content:attr(data-on);
+    left:60px;
+    width:36px;
+   }
+    
+   #checkbox1 + .checkbox-label {
+    box-shadow:inset 0 0 0 0px rgba(19,191,17,1),0 0 0 2px #dddddd;
+   }
+    
+   #checkbox1:checked + .checkbox-label {
+    box-shadow:inset 0 0 0 18px rgba(19,191,17,1),0 0 0 2px rgba(19,191,17,1);
+   }
+    
+   #checkbox1:checked + .checkbox-label:after {
+    color:rgba(19,191,17,1);
+   }
+/*-------переключатель-------*/
+
+.banner .bannerText{
+    text-align: left;
+    padding: 55px 0;
+}
+.banner .bannerText .simple{
+    font-size: 43px;
+    line-height: 45px;
+    color: #000000;
+}
+.banner .bannerText .lower{
+    font-size: 12px;
+    line-height: 27px;
+    color: #000000;
+    margin: 33px 0;
+    max-width: 440px;
+}
+.banner .bannerText .integrate{
+    font-size: 15px;
+    line-height: 21px;
+    color: #7A7A7A;
+    max-width: 260px;
+    margin-bottom: 0;
+}
+.banner .bannerText img{
+    margin-right: 30px;
+}
+.banner .middleText{
+    margin-top: 68px;
+}
+.banner .middleText .import{
+    font-size: 15px;
+    line-height: 21px;
+    color: #7A7A7A;
+}
+/*------banner-------*/
+
+/*------------block2---------*/
+
+.block2{
+    padding: 68px 0;
+}
+.block2 .pictureHidden{
+    display: none;
+}
+.block2 .picture{
+    position: relative;
+}
+.block2 .picture img{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.block2 .create{
+    padding-top: 14px;
+}
+.block2 .create .custom{
+    font-size: 43px;
+    line-height: 45px;
+    color: #000000;
+}
+.block2 .create .team{
+    margin: 20px 0;
+    font-size: 18px;
+    line-height: 27px;
+}
+.block2 .create .addition{
+    margin-bottom: 44px;
+    font-size: 12px;
+    line-height: 29px;
+}
+.block2 .create a{
+    background: #000000;
+    border-radius: 20px;
+    padding: 15px 23px;
+    color: #FFFFFF;
+    font-size: 18px;
+    line-height: 28px;
+}
+.block2 .create a:hover{
+    text-decoration: none;
+}
+/*-------------block2-*/
+
+/*-----block3-------*/
+.block3{
+    padding-top: 150px;
+    margin-bottom: 32px;
+}
+.block3 .flex{
+    max-width: 732px;
+}
+.block3 .flex .flexTitle{
+    font-size: 43px;
+    line-height: 45px;
+    color: #000000;
+    margin-bottom: 25px;
+}
+.block3 .flex .flexText{
+    font-size: 12px;
+    line-height: 27px;
+    color: #000000;
+}
+/*-----block3-------*/
+
+
+/*-----block4-------*/
+.block4{
+    padding-top: 90px;
+}
+.block4 .optimise{
+    max-width: 422px;
+    padding-top: 30px;
+    margin-bottom: 70px;
+}
+.block4 .optimise .optimiseTitle{
+    font-size: 43px;
+    line-height: 45px;
+}
+.block4 .optimise .optimiseText{
+    font-size: 18px;
+    line-height: 27px;
+    margin-top: 25px;
+    margin-bottom: 40px;
+}
+.block4 .optimise a{
+    background: #000000;
+    border-radius: 20px;
+    padding: 15px 27px;
+    color: #FFFFFF;
+    font-size: 18px;
+    line-height: 28px;
+}
+.block4 .optimise a:hover{
+    text-decoration: none;
+}
+
+
+
+
+.block4 .analyze{
+    padding-top: 30px;
+    margin-bottom: 70px;
+    max-width: 350px;
+}
+.block4 .analyze .analyzeTitle{
+    font-size: 43px;
+    line-height: 45px;
+}
+.block4 .analyze .analyzeText{
+    font-size: 18px;
+    line-height: 27px;
+    margin-top: 25px;
+
+}
+.block4 .inner{
+    padding-top: 70px;
+}
+.block4 .analyze .analyzeLower{
+    font-size: 12px;
+    line-height: 29px;
+    margin-bottom: 40px;
+    max-width: 270px;
+}
+.block4 .analyze a{
+    background: #000000;
+    border-radius: 20px;
+    padding: 15px 27px;
+    color: #FFFFFF;
+    font-size: 18px;
+    line-height: 28px;
+}
+.block4 .analyze a:hover{
+    text-decoration: none;
+}
+/*-------------block4-------*/
+
+
+/*---------------block5-------*/
+
+.block5{
+    padding-top: 100px;
+}
+.block5 .part{
+    padding-top: 70px;
+    padding-left: 60px;
+    padding-bottom: 67px;
+    background: #FFFFFF;
+    border-radius: 50px;
+}
+.block5 .part .partTitle{
+    margin-top: 36px;
+    font-size: 43px;
+    line-height: 45px;
+    margin-bottom: 0;
+}
+.block5 .part span{
+    font-size: 43px;
+    line-height: 45px;
+}
+.block5 .part ul{
+    margin-top: 35px;
+    font-size: 18px;
+    line-height: 27px;
+    margin-bottom: 0;
+}
+.block5 .part li{
+    list-style: inside;
+}
+.block5 .part .part-Title{
+    margin-top: 36px;
+    font-size: 43px;
+    max-width: 250px;
+    line-height: 45px;
+    margin-bottom: 0;
+}
+/*----------block5--------*/
+
+/*----------block6-------*/
+.block6{
+    padding-top: 122px;
+    text-align: center;
+    padding-bottom: 64px;
+}
+.block6 .schedule{
+    max-width: 672px;
+    margin: 0 auto;
+}
+.block6 .schedule .scheduleTitle{
+    font-size: 43px;
+    line-height: 47px;
+    margin-bottom: 40px;
+}
+.block6 .schedule a{
+    background: #000000;
+    border-radius: 20px;
+    color: #FFFFFF;
+    font-size: 18px;
+    line-height: 28px;
+    padding: 15px 38px;
+}
+.block6 .schedule a:hover{
+    text-decoration: none;
+}
+.block6 .picturePeople{
+    margin-top: 50px;
+    text-align-last: left;
+}
+.block6 .picturePeople img{
+    position: relative;
+    padding-bottom: 80px;
+}
+.block6 .picturePeople .offer{
+    position: absolute;
+    bottom: 0;
+    left: 60px;
+}
+.block6 .picturePeople .offer .part1{
+    font-size: 43px;
+    line-height: 45px;
+    margin-bottom: 0;
+}
+.block6 .picturePeople .offer .part2{
+    font-size: 43px;
+    line-height: 45px;
+    margin-bottom: 17px;
+}
+.block6 .picturePeople .offer .lower{
+    font-size: 18px;
+    line-height: 27px;
+    margin-bottom: 27px;
+}
+.block6 .picturePeople .offer form input{
+    padding: 20px 28px;
+    border: none;
+    background: #FFFFFF;
+    border-radius: 20px;
+    font-size: 18px;
+    line-height: 27px;
+    margin-right: 45px;
+}
+.block6 .picturePeople .offer form input:focus{
+    outline: none;
+}
+.block6 .picturePeople .offer form button{
+    background: #B1FA16;
+    border-radius: 20px;
+    font-size: 17px;
+    line-height: 20px;
+    padding: 26px 36px;
+    border: none;
+}
+.block6 .picturePeople .offer form button:hover{
+    cursor: pointer;
+}
+/*---------block6------------*/
+
+/*--------------footer---------*/
+.footer{
+    padding: 50px 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+.footer .price a{
+    font-size: 18px;
+    line-height: 27px;
+    color: #000;
+}
+.footer .footerLogo{
+    text-align: right;
+}
+
+.footer .footerLower .footerText{
+    font-size: 18px;
+    margin-top: 22px;
+    line-height: 29px;
+    color: #7B7B7B;
+    display: inline-flex;
+    margin-right: 20px;
+    margin-bottom: 0;
+}
+.footer .footerLower a{
+    color: #000000;
+    font-size: 18px;
+    line-height: 29px;
+}
+.footer .footerLang{
+    text-align: right;
+    margin-top: 22px;
+}
+.footer .footerLang .language{
+    color: #7B7B7B;
+    font-size: 18px;
+    line-height: 29px;
+    transition: .5s;
+    margin-top: 22px;
+    margin-left: 27px;
+}
+.footer .footerLang .language:hover{
+    transition: .5s;
+    color: #000000;
+    text-decoration: none;
+}
+
+
+
+
+

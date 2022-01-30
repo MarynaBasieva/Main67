@@ -1,0 +1,306 @@
+@media (min-width: 1200px){
+.for-page .container{
+    max-width: 1199px;
+}
+}
+@media (max-width: 1199px ){
+    .banner {
+        padding-top: 80px;
+        padding-bottom: 30px;
+    }
+    .banner .bannerText .lower {
+        font-size: 15px;
+    }
+    .banner .middleText {
+        margin-top: 10px;
+    }
+    .block2 {
+        padding: 40px 0;
+    }
+    .block2 .picture {
+        display: none;
+    }
+    .block2 .pictureHidden {
+        display: block;
+    }
+    .block3 .flex .flexText {
+        font-size: 17px;
+    }
+    .block4 {
+        padding-top: 50px;
+    }
+    .block5 {
+        padding-top: 80px;
+    }
+    .block6 {
+        padding-top: 80px;
+    }
+    .block6 .picturePeople {
+        margin-top: 20px;
+    }
+    .footer .footerLower .footerText{
+        margin-right: 10px;
+    }
+}
+@media (max-width: 991px ){
+    .header .parent_responsive .responsive_menu {
+        display: block;
+    }
+    .header .parent_responsive{
+        display: flex;
+        justify-content: space-between;
+    }
+    .header .nav{
+        display: none;
+    }
+    .header .headerBtn{
+        display: none;
+    }
+    .banner {
+        padding-top: 60px;
+    }
+    .banner .bannerText .simple {
+        line-height: 40px;
+    }
+    .banner .bannerText .lower{
+        margin: 20px 0;
+    }
+    .banner .bannerText{
+        padding-bottom: 20px;
+    }
+    .block2 .create {
+        padding-top:0;
+    }
+    .block2 .create .custom{
+        line-height: 40px;
+    }
+    .block2 .create .team {
+        margin: 10px 0;
+    }
+    .block2 .create .addition {
+        margin-bottom: 40px;
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .block3 {
+        padding-top: 100px;
+        margin-bottom: 10px;
+    }
+    .block4 .optimise{
+        padding-top: 0;
+    }
+    .block4 .optimise .optimiseText {
+        margin-top: 15px;
+        margin-bottom: 35px;
+    }
+    .block4 .analyze .analyzeText {
+        margin-top: 15px;
+        margin-bottom: 35px;
+    }
+    .block4 .analyze {
+        margin-bottom: 30px;
+    }
+    .block5 {
+        padding-top: 50px;
+    }
+    .block5 .part {
+        padding-top: 40px;
+        padding-left: 30px;
+        min-height: 490px;
+    }
+    .block5 .part .partTitle {
+        line-height: 40px;
+        margin-top: 20px;
+        margin-bottom: 8px;
+    }
+    .block5 .part span {
+        line-height: 40px;
+    }
+    .block5 .part .part-Title {
+        margin-top: 20px;
+        line-height: 40px;
+    }
+    .block6 .picturePeople img {
+        padding-bottom: 110px;
+    }
+}
+@media (max-width: 767px ){
+    .header{
+        padding-top: 20px;
+    }
+    .page {
+        padding-bottom: 215px;
+    }
+    .banner .bannerInner .bannerTitle {
+        font-size: 38px;
+        line-height: 40px;
+        margin-bottom: 30px;
+    }
+    .banner .bannerText{
+        padding-top: 30px;
+    }
+    .banner .bannerText .picturesLow{
+        display: flex;
+        justify-content: space-between;
+    }
+    .block3 .flex .flexTitle {
+        font-size: 35px;
+        line-height: 35px;
+        margin-bottom: 20px;
+    }
+    .block4 .analyze .analyzeLower {
+        font-size: 17px;
+    }
+    .block5 .part{
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .block6 .schedule .scheduleTitle {
+        font-size: 37px;
+    }
+    .block6 .picturePeople img {
+        padding-bottom: 155px;
+    }
+    .block6 .picturePeople img {
+        padding-bottom: 0;
+        position: static;
+    }
+    .block6 .picturePeople .offer{
+        position: static;
+        text-align: initial;
+    }
+    .block6 .picturePeople img {
+        padding-bottom: 0;
+        position: static;
+    }
+    .block6 .picturePeople .offer{
+        position: static;
+        text-align: initial;
+    }
+    .block5 .part .part-Title{
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+    .block5 .part ul{
+        text-align: left;
+    }
+    .footer .footerLower{
+        text-align: center;
+    }
+    .footer .footerLang{
+        text-align: center;
+    }
+    .footer .price{
+        padding-top: 7px;
+    }
+}
+@media (max-width: 500px ){
+    .banner {
+        padding-top: 30px;
+    }
+    .banner .bannerText .simple {
+        font-size: 33px;
+    }
+    .banner .bannerText .lower {
+        margin: 15px 0;
+        line-height: 23px;
+    }
+    .block2 .create .custom {
+        font-size: 35px;
+    }
+    .block3 .pic{
+        text-align: center;
+    }
+    .block4 .inner {
+        padding-top: 40px;
+    }
+    .block4 .analyze .analyzeTitle {
+        font-size: 37px;
+    }
+    .block6 .picturePeople .offer form input{
+        width: 100%;
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
+    .footer{
+        text-align: center;
+    }
+    .footer .footerLogo{
+        text-align: center;
+    }
+    .footer .price {
+        margin-bottom: 12px;
+    }
+}
+@media (max-width: 400px ){
+    .banner .bannerText .simple {
+        font-size: 29px;
+    }
+    .banner .bannerInner .bannerTitle {
+        font-size: 21px;
+        line-height: 25px;
+    }
+    .block2 .create .custom {
+        line-height: 26px;
+        font-size: 24px;
+    }
+    .block6 .picturePeople .offer .part1 {
+        font-size: 32px;
+        line-height: 35px;
+    }
+    .block6 .picturePeople .offer .part2 {
+        font-size: 32px;
+        line-height: 35px;
+    }
+    .block6 {
+        padding-top: 30px;
+    }
+    .block5 .part {
+        min-height: 450px;
+    }
+    .block6 .schedule .scheduleTitle {
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .block5 .part .partTitle {
+        font-size: 30px;
+    }
+    .block5 .part span {
+        font-size: 30px;
+    }
+    .block5 .part .part-Title {
+        font-size: 30px;
+    }
+    .banner .bannerText .lower {
+        font-size: 18px;
+    }
+    .banner .bannerText img {
+        margin-right: 30px;
+    }
+    .block5 .part {
+        padding-left: 15px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
