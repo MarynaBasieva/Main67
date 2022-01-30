@@ -7,16 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
-    <link rel="stylesheet" href="vendor/css/bootstrap.min.css">
-    <link rel="stylesheet" href="vendor/css/bootstrap-grid.min.css">
-    <link rel="shortcut icon" href="img/puzzle.png" sizes="any">
-    <link rel="stylesheet" type="text/css" href="vendor/fancybox/dist/jquery.fancybox.min.js">
+    <link type="text/css" rel="stylesheet" href="vendor/css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="vendor/css/bootstrap-grid.min.css">
+    <link type="text/css" rel="shortcut icon" href="img/puzzle.png" sizes="any">
+    <link type="text/css" rel="stylesheet" href="vendor/fancybox/dist/jquery.fancybox.min.js">
     <link rel="stylesheet" href="vendor/fontawesome-free-5.15.4-web/fontawesome-free-5.15.4-web/js/all.min.js">
+    <link rel="stylesheet" href="vendor/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
     <script type="text/javascript" src="vendor/fancybox/dist/jquery.fancybox.min.js"></script>
     <script src="js/jquery-3.6.0.min.js"></script>
-    <script src="js/custom.js">
-    </script>
-    <title>Site</title>
+    <script src="vendor/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+    <script src="js/custom.js"></script>
+    <title>Website</title>
 </head>
 
 <body>
@@ -26,10 +27,15 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-xl-2 col-lg-2 col-md-12 col-sm-12">
-                            <a href="#" class="logo">
-                                <img src="img/logo.png" alt="logo">
-                            </a>
-                            <div class="responsive__menu">
+                            <div class="responsiveMenuWrapper">
+                                <a href="#" class="logo">
+                                    <img src="img/logo.png" alt="logo">
+                                </a>
+                                <div class="responsive__menu">
+                                    <button id="navIcon" onclick="showMenu()">
+                                        <i class="fas fa-bars"></i>
+                                    </button>
+                                </div>
                             </div>
                         </div>
                         <div class="col-xl-10 col-lg-10 col-md-12 col-sm-12">
@@ -126,7 +132,7 @@
                         стандартной "рыбой" для
                         текстов на латинице с начала XVI века.</p>
                 </div>
-                <div class="col-12"></div>
+                <div class="col-xl-12"></div>
                 <div class="youtube" id="T9BSDeyHOPY"></div>
             </section>
             <!---gallery-->
@@ -157,20 +163,32 @@
                 </a>
             </section>
             <!---microsoft-->
-            <section class="microsoft">
+            <section class="slider-carousel">
                 <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-7">
-                            <img src="img/microsoft.png" alt="" />
+                    <div class="owl-carousel" id="carousel-partners">
+                        <div class="item">
+                            <img src="img/microsoft.png" alt="">
                         </div>
-                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-7">
-                            <img src="img/microsoft.png" alt="" />
+                        <div class="item">
+                            <img src="img/microsoft.png" alt="">
                         </div>
-                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-7">
-                            <img src="img/microsoft.png" alt="" />
+                        <div class="item">
+                            <img src="img/microsoft.png" alt="">
                         </div>
-                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-7">
-                            <img src="img/microsoft.png" alt="" />
+                        <div class="item">
+                            <img src="img/microsoft.png" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="img/microsoft.png" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="img/microsoft.png" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="img/microsoft.png" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="img/microsoft.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -207,7 +225,7 @@
                     </div>
                 </div>
             </section>
-<!---footer-->
+            <!---footer-->
             <footer class="footer" id="footer">
                 <div class="container">
                     <div class="row justify-content-space-beetween">
@@ -229,6 +247,7 @@
             </footer>
         </div>
     </main>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </body>
 
 </html>

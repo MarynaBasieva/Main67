@@ -1,4 +1,69 @@
 jQuery.noConflict();
+<<<<<<< HEAD:ahapovnikita/HomeWork/ahapov-HW22/js/custom.js
+jQuery(document).ready(function () {
+    'use strict'
+
+    jQuery(".fancybox").fancybox();
+
+    let carousel = jQuery('#carousel-partners');
+
+    carousel.owlCarousel({
+        items: 4,
+        autoplay: 1000,
+        autoplayTimeout: 6000,
+        autoplayHoverPause: false,
+        smartSpeed: 1000,
+        dotsSpeed: 1000,
+        loop: true,
+        nav: false,
+        navText: [""],
+        dots: true,
+        mouseDrag: true,
+        margin: 30,
+        stagePadding: 0,
+        autoWidth: false,
+        responsiveClass: true,
+        responsive: {
+            0: {
+                items: 1,
+                dots: true,
+                nav: false,
+                mouseDrag: true,
+                autoplay: true,
+                smartSpeed: 1000,
+            },
+            479: {
+                items: 1,
+                dots: true,
+                mouseDrag: true,
+                autoplay: true,
+                smartSpeed: 1000,
+            },
+            767: {
+                items: 2,
+                dots: true,
+                mouseDrag: true,
+                autoplay: true,
+                smartSpeed: 1000,
+            },
+            991: {
+                items: 3,
+                dots: true,
+                mouseDrag: true,
+                autoplay: true,
+                smartSpeed: 1000,
+            },
+            1099: {
+                items: 4,
+                dots: true,
+                mouseDrag: true,
+            },
+        },
+    });
+});
+
+("use strict");
+=======
 jQuery(document).ready(function() {
 
     'use strict'
@@ -6,6 +71,7 @@ jQuery(document).ready(function() {
     jQuery(".fancybox").fancybox();
 
 });
+>>>>>>> 07c7f1a573b5ec61d2aebd69509672c70f810188:Home Work student/PoyanovIlya/projects/Alivio/js/custom.js
 
 function r(f) { /in/.test(document.readyState) ? setTimeout('r(' + f + ')', 9) : f() }
 r(function() {
