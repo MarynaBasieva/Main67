@@ -8,10 +8,66 @@
   </head>
   <body>
     <script>
+      // part 11
       let UserColor = prompt("Enter Your Color");
-      switch (UserColor) {
-        case UserColor == "green":
-          alert("you win");
+      let isEmpty = typeof UserColor;
+      switch (isEmpty) {
+        case "object":
+          alert("you can try anytime");
+          break;
+        case "string":
+          let color = UserColor.trim();
+          switch (color) {
+            case "blue":
+            case "yellow":
+              alert("blue or yellow is not corect color");
+              break;
+            case "green":
+              alert("you win!!");
+              break;
+            case "red":
+              alert("red is not corect color");
+              break;
+
+            case "black":
+              alert("black is not corect color");
+              break;
+            default:
+              alert(color + " is not corect color try again");
+
+              break;
+            case "":
+              alert("Please enter your color!!!");
+              window.location = "index.html";
+          }
+      }
+      // part 2
+
+      for (let i = 0; i <= 100; i++) {
+        // console.log(i);
+        if (i === 5 || i === 55 || i === 68 || i === 99) {
+          console.error(i);
+          continue;
+        }
+        console.log(i);
+      }
+      // part 3
+      let fruits = [
+        "яблуко",
+        "банан",
+        "абрикос",
+        "вишня",
+        "виноград",
+        "лимон",
+        "апельсин",
+        "гранат",
+        "персик",
+        "полуниця",
+      ];
+      let a = 1;
+      for (let i = 0; i < fruits.length; i++) {
+        console.warn("фрукт №" + a + " " + fruits[i]);
+        a++;
       }
     </script>
   </body>
