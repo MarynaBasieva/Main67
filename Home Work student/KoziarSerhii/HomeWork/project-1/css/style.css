@@ -80,7 +80,6 @@ img {
     background: #111B47;
     border-radius: 2px;
     border-color: #111B47;
-    padding: 3px 0;
 
     font-weight: 500;
     font-size: 12px;
@@ -95,6 +94,7 @@ img {
 .header .btnBuy:hover {
     background: #37447E;
     border-color: #37447E;
+    cursor: pointer;
 }
 
 /*header*/
@@ -171,6 +171,7 @@ img {
 .hero .btnBuyHero:hover {
     background: #37447E;
     border-color: #37447E;
+    cursor: pointer;
 }
 
 .heroRow .btnBuyHeroCol{
@@ -181,6 +182,7 @@ img {
     padding: 0;
 }
 .hero .btnLearnHero{
+    display: block;
     width: 189px;
     background: rgb(17,27,71, 0);
     padding: 3px 0;
@@ -193,12 +195,14 @@ img {
     line-height: 26px;
     text-align: center;
     color: #091133;
+    text-decoration: none;
 }
 
 
 .hero .btnLearnHero:hover {
-    background: #37447E;
+    background: rgb(198, 203, 220);
     border-color: #37447E;
+    cursor: pointer;
 }
 /*hero*/
 /*mobile*/
@@ -281,6 +285,7 @@ img {
 .mention .btnPurchaseNow:hover {
     background: #37447E;
     border-color: #37447E;
+    cursor: pointer;
 }
 /*mention*/
 
@@ -351,25 +356,10 @@ img {
 .pricing .btnPurchaseNowLong:hover {
     background: #37447E;
     border-color: #37447E;
+    cursor: pointer;
 }
 
 /*pricing*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*footer*/
 .footer{
@@ -411,6 +401,7 @@ img {
 .footer .btnFooterBuynow:hover {
     background: #37447E;
     border-color: #37447E;
+    cursor: pointer;
 }
 .footer .footer-row2 .footer-social-coll{
     display: flex;
@@ -421,3 +412,26 @@ img {
     margin: 0 15px;
 }
 /*footer*/
+
+/*modal*/
+.btnModal {
+    display: block;
+    margin: 0 auto;
+    width: 189px;
+    background: #111B47;
+    border-radius: 2px;
+    border-color: #111B47;
+    padding: 4px 0;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.btnModal:hover {
+    background: #37447E;
+    border-color: #37447E;
+}
+/*modal*/

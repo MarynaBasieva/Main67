@@ -9,6 +9,13 @@
     <link type="text/css" rel="stylesheet" href="css/responcive.css">
     <link type="text/css" rel="stylesheet" href="vendor/bootstrap-4.0.0/css/bootstrap.min.css">
     <link type="text/css" rel="stylesheet" href="vendor/bootstrap-4.0.0/css/bootstrap-grid.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="vendor/bootstrap-4.0.0/js/bootstrap.min.js"></script>
 </head>
 <body>
 <main class="for_page">
@@ -30,8 +37,8 @@
                         <a href="#" class="pageTitle">Landie</a>
                     </div>
                     <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 btnBuyCol">
-                        <button type="button" class="btn btn-primary btnBuy" data-toggle="modal"
-                                data-target="#buyNowModal">Buy Now
+                        <button type="button" class="btnBuy" data-toggle="modal"
+                                data-target="#exampleModal">Buy Now
                         </button>
                     </div>
                 </div>
@@ -50,14 +57,14 @@
                             massa quis enim.</p>
                         <div class="row heroRow">
                             <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 btnBuyHeroCol">
-                                <button type="button" class="btn btn-primary btnBuyHero" data-toggle="modal"
-                                        data-target="#buyNowModal">Purchase UI Kit
+                                <button type="button" class="btnBuyHero" data-toggle="modal"
+                                        data-target="#exampleModal">Purchase UI Kit
                                 </button>
                             </div>
                             <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 btnLearnHeroCol">
-                                <button type="button" class="btn btn-primary btnLearnHero" data-toggle="modal"
-                                        data-target="#buyNowModal">Learn More
-                                </button>
+                                <a class="btnLearnHero" target="_blank" href="https://www.w3schools.com/css/default.asp">
+                                    Learn More
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -143,8 +150,8 @@
                             ridiculus <br>
                             mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat
                             massa quis enim.</p>
-                        <button type="button" class="btn btn-primary btnPurchaseNow" data-toggle="modal"
-                                data-target="#buyNowModal">Purchase Now
+                        <button type="button" class="btnPurchaseNow" data-toggle="modal"
+                                data-target="#exampleModal">Purchase Now
                         </button>
 
                     </div>
@@ -163,8 +170,8 @@
                         <h2 class="price">$40</h2>
                         <p class="price-short-desc">UI Design Kit</p>
                         <p class="price-see-one">See, One price. Simple.</p>
-                        <button type="button" class="btn btn-primary btnPurchaseNowLong" data-toggle="modal"
-                                data-target="#buyNowModal">Purchase Now
+                        <button type="button" class="btnPurchaseNowLong" data-toggle="modal"
+                                data-target="#exampleModal">Purchase Now
                         </button>
                     </div>
                 </div>
@@ -180,8 +187,8 @@
                         <a href="#" class="pageTitle">Landie</a>
                     </div>
                     <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 btnFooterBuynowCol">
-                        <button type="button" class="btn btn-primary btnFooterBuynow" data-toggle="modal"
-                                data-target="#buyNowModal">Purchase Now
+                        <button type="button" class="btnFooterBuynow" data-toggle="modal"
+                                data-target="#exampleModal">Purchase Now
                         </button>
                     </div>
                 </div>
@@ -218,5 +225,40 @@
         </footer>
     </div>
 </main>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Place Order</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form class="submitForm">
+                    <div class="form-group row">
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 submit-form-input">
+                            <input id="name-modal" name="name" type="text" placeholder="Your name" class="form-control"
+                                   required>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 submit-form-input">
+                            <input id="email-modal" name="email" type="email" placeholder="Your e-mail"
+                                   class="form-control" required>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-12">
+                            <textarea id="textarea-modal" name="textarea" cols="40" rows="5" class="form-control"
+                                      placeholder="Message" required></textarea>
+                        </div>
+                    </div>
+                    <button type="submit" class="btnModal">Send</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 </html>

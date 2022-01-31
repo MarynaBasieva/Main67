@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    let color = prompt('Выберите цвет');
+    switch(color){
+        case 'желтый':
+        case 'оранжевый':
+            alert('Вы не угадали :(');
+            break;
+        case 'зеленый':
+            alert('Вы угадали! :)');
+            break;
+        case 'красный':
+            alert('Вы не угадали :(');
+            break;
+        case 'синий':
+            alert('Вы не угадали! :(');
+            break;
+        default:
+            alert('Неверное значение!');
+    }
+
+
+    for(i = 0; i <= 100; i++){
+        if(i == 5 || i == 55 || i == 68 || i == 99)  continue;
+        console.log(i);
+        
+    }
+
+    const fruits = ['яблоко', 'груша', 'вишня', 'ананас', 'кокос', 'банан', 'абрикос', 'мандарин', 'апельсин', 'виноград'];
+    for (item of fruits){
+        console.log(item);
+    }
+</script>
+<body>
+    
+</body>
+</html>

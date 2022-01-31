@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <script>
+        let color = prompt("Введіть назву кольору українською, з великої букви ", "");
+        switch (color) {
+            case "Чорний":
+            case "Білий":
+                alert("Не той колір");
+                break;
+            case "Зелений":
+                alert("Правильний колір");
+                break;
+            case "Жовтий":
+                alert("Не той колір");
+                break;
+            case "Червоний":
+                alert("Не той колір");
+                break;
+            default:
+                alert("Некоректні дані");
+        }
+
+        for (let i = 0; i <= 100; i++) {
+            if (i == 5 || i == 55 || i == 68 || i == 99) {
+                continue
+            }
+
+            let res = i;
+            console.log(res);
+        }
+        let fruits = ["Яблоко", "Апельсин", "Слива", "Полуниця", "Малина", "Груша", "Абрикос", "Персик"]
+     
+        
+        document.write(fruits);
+    </script>
+</body>
+</html>
