@@ -12,7 +12,7 @@ html {
   scroll-behavior: smooth;
 }
 .fontColor {
-  background: linear-gradient(#fd749b 0%, #281ac8 100%);
+  background: linear-gradient(#fd749b 0%, #281ac8 100%) center top 20% / auto 200%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -42,7 +42,7 @@ html {
   font-weight: 700;
   font-size: 28px;
   line-height: 65px;
-  background: linear-gradient(#fd749b 0%, #281ac8 100%);
+  background: linear-gradient(#fd749b 0%, #281ac8 100%) center top 20% / auto 200%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   position: relative;
@@ -250,7 +250,7 @@ body .page .banner .content .button {
 body .page .banner .content .button::after {
   content: "GET STARTED";
   font-size: 14px;
-  background: linear-gradient(#fd749b 0%, #281ac8 100%);
+  background: linear-gradient(#fd749b 0%, #281ac8 100%) center top 20% / auto 200%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -289,7 +289,7 @@ body .page .statistics .container .statisticsWrapper .statisticsHeaderWrapper .s
   font-weight: 700;
   font-size: 18px;
   line-height: 65px;
-  background: linear-gradient(#fd749b 0%, #281ac8 100%);
+  background: linear-gradient(#fd749b 0%, #281ac8 100%) center top 20% / auto 200%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -497,7 +497,7 @@ body .page .blog .container .articlesParent .active::before {
 body .page .blog .container .articlesParent .active h3 {
   font-size: 22px;
   line-height: 37px;
-  background: linear-gradient(#fd749b 0%, #281ac8 100%);
+  background: linear-gradient(#fd749b 0%, #281ac8 100%) center top 20% / auto 200%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -820,7 +820,7 @@ body .page .modal .modal-content {
 }
 body .page .modal .modal-content .close {
   font-size: 30px;
-  background: linear-gradient(#fd749b 0%, #281ac8 100%);
+  background: linear-gradient(#fd749b 0%, #281ac8 100%) center top 20% / auto 200%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   opacity: 1;
@@ -860,7 +860,7 @@ body .page .modal .modal-content form textarea::placeholder {
   font-family: 'Poppins';
   color: #333333;
   font-size: 14px;
-  background: linear-gradient(#fd749b 0%, #281ac8 100%);
+  background: linear-gradient(#fd749b 0%, #281ac8 100%) center top 20% / auto 200%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: 0.3s;
