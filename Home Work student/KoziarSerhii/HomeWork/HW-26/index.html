@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>
+    HW26
+    1) Выучить все операторы
+    2) Создать switch case на цвета 5 цветов(зеленый цвет вывести как верный вариант использовать prompt) и case 1,2
+    объеденить
+    3) создать цикл из 100 пропустить итерация (5,55,68,99) вывести через консоль
+    4) Создать массив (фруктов 10 индексов) и вывести в документ все значения массива
+    Пример(const data = ['first', 'second', 'last'];)</p>
+<script>
+    let color = prompt('Enter colour, one of: red, green, blue, yellow, orange');
+
+    switch (color) {
+        case 'red':
+            console.log('red is wrong color');
+        case 'green':
+            console.log('green is correct color');
+            break;
+        case 'blue':
+            console.log('blue is wrong color');
+            break;
+        case 'yellow':
+            console.log('yellow is wrong color');
+            break;
+        case 'orange':
+            console.log('orange is wrong color');
+            break;
+        default:
+            console.log('please choose one of offered colors')
+    }
+
+    for (let i = 1; i < 101; i++) {
+        switch (i) {
+            case 5:
+            case 55:
+            case 68:
+            case 99:
+                continue;
+            default:
+                console.log(i);
+        }
+    }
+    const fruits = [
+        'Apple',
+        'Apricots',
+        'Avocado',
+        'Banana',
+        'Blackberries',
+        'Breadfruit',
+        'Blueberries',
+        'Blackcurrant',
+        'Carambola',
+        'Cherimoya'
+    ]
+    for (const fruit of fruits) {
+        console.log(fruit);
+    }
+</script>
+</body>
+</html>
