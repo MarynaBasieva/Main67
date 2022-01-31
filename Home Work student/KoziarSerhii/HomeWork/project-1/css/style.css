@@ -15,7 +15,7 @@ img {
     height: auto;
 }
 .container {
-    border: solid black 1px;
+    /*border: solid black 1px;*/
     max-width: 1110px;
 }
 /*typical*/
@@ -118,8 +118,8 @@ img {
 .herro-banner{
     max-width: 1110px;
     margin: 0 auto;
-                        /*background: url("../img/hero.png") ;*/
-                        /*background-repeat: no-repeat;*/
+    /*background: url("../img/hero.png") ;*/
+    /*background-repeat: no-repeat;*/
     /*background-size: contain;*/
     /*                    background-position: -50% 800%;*/
     /*                    background-size: 126%;*/
@@ -204,18 +204,21 @@ img {
     border-color: #37447E;
     cursor: pointer;
 }
-/*hero*/
-/*mobile*/
-.mobileCol{
-    padding-top: 160px;
-}
-.mobilebanner {
-    padding-top: 110px;
-}
 .heroRow {
     padding-bottom: 388px;
 }
-
+/*hero*/
+/*mobile*/
+.mobile .row {
+    display: flex;
+    padding-bottom: 80px;
+}
+.mobileCol{
+    padding-top: 150px;
+}
+.mobilebanner {
+    padding-top: 100px;
+}
 
 .mobile .mobileRow img{
     max-height: 36px;
@@ -238,11 +241,6 @@ img {
     color: #5D6970;
 }
 
-
-.mobile .row {
-    margin-bottom: 160px;
-    display: flex;
-}
 /*mobile*/
 /*intro*/
 .intro .row{
@@ -294,7 +292,8 @@ img {
     background: rgb(231, 236, 255, 50%) url("../img/rectangle.jpg") no-repeat 45% 50%;
 }
 .pricing .row{
-    margin: 237px auto 172px auto;
+    padding-top: 237px;
+    padding-bottom: 172px;
 }
 .pricing h2{
     text-align: center;

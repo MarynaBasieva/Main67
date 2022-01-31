@@ -19,53 +19,149 @@
     .nav-menu ul.sub-menu li a {
         margin-right: 20px;
     }
+
     .btnBuyCol {
         justify-content: center;
     }
+
     .header .btnBuy {
         margin-top: 20px;
     }
+
     .nav-menu ul.sub-menu {
         justify-content: center;
         padding-top: 20px;
         margin: 0;
     }
+
     .pageTitle {
         padding-top: 20px;
         margin: 0;
     }
-    .hero{
+
+    .hero .first-row {
         padding-top: 20px;
     }
+
+    .hero .first-row h2, .hero .first-row p {
+        text-align: center;
+    }
+
+    .row .heroRow {
+        padding-bottom: 0;
+    }
+
+    .herro-banner::before {
+        background: none;
+    }
+
     .hero .heroCol {
         padding: 0 15px;
     }
+
     .heroRow {
         padding-top: 20px;
     }
-    .hero .btnBuyHeroCol{
+
+    .hero .btnBuyHeroCol {
         justify-content: center;
         display: flex;
     }
-    .hero .btnLearnHeroCol{
+
+    .hero .btnLearnHeroCol {
         justify-content: center;
         display: flex;
         margin-top: 20px;
     }
-    .mobile .mobileCol{
+
+    .mobile .mobileCol {
         order: 1;
     }
-    .heroRow .btnBuyHeroCol{
+
+    .heroRow .btnBuyHeroCol {
         margin: 0 auto;
     }
-    .footer .footer-row1 p{
+
+    .mobilebanner {
+        padding-top: 0;
+    }
+
+    .mobileCol {
+        padding-top: 20px;
+    }
+
+    .mobileCol h2, .mobileCol p {
+        text-align: center;
+    }
+
+    .mobile .mobileRow img {
+        display: block;
+        margin: 0 auto;
+        /*margin-top: 20px;*/
+    }
+
+    .mobile .row {
+        padding-bottom: 0;
+    }
+
+    .intro-banner {
+        padding-top: 0;
+    }
+
+    .intro .row {
+        margin: 0;
+    }
+
+    .intro2-banner {
+        padding-top: 0;
+    }
+
+    .intro2 .row {
+        margin: 0;
+    }
+
+    .mention .row {
+        margin: 0;
+    }
+
+    .mention h2, .mention p {
+        text-align: center;
+    }
+
+    .mention .btnPurchaseNow {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .pricing .row {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .pricing .price {
+        padding-top: 0;
+    }
+
+    .pricing .price-see-one {
+        padding-top: 10px;
+    }
+    .footer .nav-menu ul.sub-menu{
+        padding-top: 0;
+    }
+    .footer .footer-row1 {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .footer .footer-row1 p {
         display: flex;
         justify-content: center;
     }
-    .footer-row1 .btnFooterBuynowCol{
+
+    .footer-row1 .btnFooterBuynowCol {
         justify-content: center;
     }
-    .footer .footer-row2 .footer-social-coll{
+
+    .footer .footer-row2 .footer-social-coll {
         padding-top: 10px;
         padding-bottom: 20px;
         justify-content: center;
