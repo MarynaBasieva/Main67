@@ -1150,6 +1150,9 @@ main {
 }
 footer {
   padding: 145px 0 79px;
+  background-image: url(../img/svg/Frame.svg);
+  background-size: cover;
+  background-position: center center;
 }
 footer .pre-footer {
   max-width: 984px;
