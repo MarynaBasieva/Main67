@@ -217,3 +217,45 @@
         padding-right: 152px;
     }
 }
+@media (max-width:400px){
+    .btn-login{
+        padding: 0px 24px;
+    }
+    .banner-btn:last-child{
+        padding: 16px 8px;
+    }
+    .banner-btn:first-child{
+        margin-right: 10px;
+    }
+    .certificate-text h1{
+        font-size: 36px;
+    }
+    .about-text h1{
+        font-size: 38px;
+    }
+    .courses-title h1{
+        font-size: 36px;
+    }
+    .courses-title {
+        flex-direction: column;
+        
+    }
+    .course-title{
+        text-align: center;
+    }
+    .benefits-title h1{
+        font-size: 36px;
+    }
+    .events-title h1{
+        font-size: 35px;
+    }
+    .team h2{
+        font-size: 26px;
+    }
+    .testimonials-title h1{
+        font-size: 34px;
+    }
+    .subscribe-title h1{
+        font-size: 36px;
+    }
+}

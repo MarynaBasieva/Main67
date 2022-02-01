@@ -126,3 +126,23 @@
         top: 222px;
     }
 }
+@media (max-width: 400px){
+    .bannerBtn{
+        padding: 15px 28px;
+    }
+    .banner-text h1{
+        font-size: 35px;
+    }
+    .help{
+        margin-bottom: 8px;
+    }
+    .help1 img{
+        margin-right: -1px;
+    }
+    .help2{
+        margin-bottom: 13px;
+    }
+    .help4 span{
+        font-size: 14px;
+    }
+}

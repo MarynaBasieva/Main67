@@ -661,6 +661,38 @@ a{
     text-decoration: none;
     background: #72ff38;
 }
+.resource-links{
+    display: flex;
+    flex-direction: column;
+}
+.legal-stuff-links{
+    display: flex;
+    flex-direction: column;
+}
+.resource-links a{
+    font-size: 16px;
+    font-weight: 400;
+    color: #22343D;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.resource-links a:hover{
+    text-decoration: none;
+    color: #02897A;
+}
+.legal-stuff-links a{
+    font-size: 16px;
+    font-weight: 400;
+    color: #22343D;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.legal-stuff-links a:hover{
+    text-decoration: none;
+    color: #02897A;
+}
 /*footer*/
 .responsive-menu{
     display: none;

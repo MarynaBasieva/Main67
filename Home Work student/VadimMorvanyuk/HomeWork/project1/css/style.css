@@ -800,6 +800,36 @@ ul.about-list{
     transition: 0.5s;
     cursor: pointer;
 }
+.footer .site-map-footer a{
+    font-size: 16px;
+    color: #70737e;
+    line-height: 37px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.footer .site-map-footer a:hover{
+    text-decoration: none;
+    color: white;
+}
+.courses-footer-links{
+    display: flex;
+    flex-direction: column;
+}
+.courses-footer-links a{
+    font-size: 16px;
+    color: #70737e;
+    line-height: 37px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.courses-footer-links a:hover{
+    text-decoration: none;
+    color: white;
+}
+.site-map-links {
+    display: flex;
+    flex-direction: column;
+}
 .footer li:hover{
     color: white;
 }
