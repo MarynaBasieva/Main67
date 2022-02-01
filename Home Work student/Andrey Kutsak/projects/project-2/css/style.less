@@ -1,0 +1,332 @@
+@import "fonts.less";
+// varibles
+@wsans: "WorkSans", "Open sans", sans-serif;
+// resset
+a {
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
+}
+ul {
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+* {
+  box-sizing: border-box;
+}
+// common styles
+.container {
+  max-width: 1269px;
+}
+.logo {
+  width: 150px;
+}
+.main-lg-head {
+  font-family: @wsans;
+  font-size: 55px;
+  font-weight: 400;
+  line-height: 60px;
+  color: #333333;
+}
+.main-head {
+  font-family: @wsans;
+  font-weight: 400;
+  font-size: 45px;
+  line-height: 50px;
+  color: #333333;
+  margin-bottom: 32px;
+}
+.sm-title {
+  font-family: @wsans;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #333333;
+}
+.main-desc {
+  font-family: @wsans;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 35px;
+  color: #333333;
+  margin-bottom: 30px;
+}
+.btn-wraper {
+  max-width: 305px;
+  .btn {
+    border: none;
+    width: 147px;
+    height: 50px;
+    transition: 0.4s;
+    border-radius: 4px;
+    margin: 0 5px;
+    &:active {
+      transform: scale(0.9);
+    }
+  }
+  .playMarket-btn {
+    background-image: url(../img/svg/google-btn-blue.svg);
+    background-size: cover;
+    background-position: center center;
+  }
+
+  .playMarket-btn-usaly {
+    background-image: url(../img/svg/google-btn.svg);
+    background-size: cover;
+    background-position: center center;
+  }
+  .playStore-btn-usaly {
+    background-image: url(../img/svg/aple-btn.svg);
+    background-size: cover;
+    background-position: center center;
+  }
+  .playStore-btn {
+    background-image: url(../img/svg/apple-btn-blue.svg);
+    background-size: cover;
+    background-position: center center;
+  }
+}
+.install {
+  padding: 45px 0 70px;
+  .label {
+    position: fixed;
+    top: 92px;
+    left: -45px;
+    transform: rotate(90deg);
+    background: #39cdcc;
+    padding: 8px 25px;
+    border-radius: 0px 6px 6px 0px;
+    font-family: @wsans;
+    font-weight: 400;
+    font-size: 10px;
+    text-decoration: capitalize;
+    line-height: 20px;
+    color: #000000;
+  }
+  .menu {
+    max-width: 300px;
+    .menu-item {
+      list-style: none;
+      a {
+        font-family: @wsans;
+        font-size: 15px;
+        font-weight: 400;
+        text-transform: capitalize;
+        color: #222222;
+        transition: 0.4s;
+        &:hover {
+          color: #0082f3;
+        }
+      }
+      &:first-child {
+        a {
+          color: #0082f3;
+        }
+      }
+    }
+  }
+  .toggle-btn {
+    display: none;
+  }
+  .main-lg-head {
+    margin: 148px 0 32px;
+  }
+}
+.save {
+  padding: 70px 0 44px;
+  .main-head {
+    margin-top: 43px;
+  }
+  .main-desc {
+    max-width: 310px;
+  }
+}
+
+.how {
+  padding: 23px 0 29px;
+  .main-head {
+    text-align: center;
+  }
+  .block {
+    position: relative;
+    margin-top: 12px;
+    padding: 42px 10px 30px;
+    box-shadow: 1px 0px 10px #b7b7;
+    img {
+      display: block;
+      margin-bottom: 49px;
+    }
+    .sm-title {
+      text-align: center;
+      margin-bottom: 31px;
+    }
+    .block-desc {
+      font-family: @wsans;
+      font-size: 16px;
+      line-height: 25px;
+      text-align: center;
+      color: #333333;
+    }
+    &:first-child {
+      border-top: 12px solid #582eff;
+      box-shadow: 0px 0px 10px #b7b7b7;
+      &:after {
+        position: absolute;
+        content: "";
+        top: 50%;
+        right: -60px;
+        height: 40px;
+        width: 40px;
+        background-image: url(../img/svg/arow.svg);
+        background-size: cover;
+      }
+    }
+    &:nth-child(2) {
+      border-top: 12px solid #ff814a;
+      box-shadow: 1px 0px 10px #b7b7b7;
+      &:after {
+        position: absolute;
+        content: "";
+        top: 50%;
+        right: -60px;
+        height: 40px;
+        width: 40px;
+        background-image: url(../img/svg/arow.svg);
+        background-size: cover;
+      }
+    }
+    &:nth-child(3) {
+      border-top: 12px solid #31c5a1;
+      box-shadow: 0px 1px 10px #b7b7b7;
+    }
+  }
+}
+.download {
+  padding: 136px 0 80px;
+  background-color: #31c5a1;
+  .download-title {
+    font-family: @wsans;
+    font-size: 30px;
+    line-height: 35px;
+    color: #ffffff;
+    max-width: 555px;
+    text-align: center;
+    margin: 0 auto 40px auto;
+  }
+  .btn-wraper {
+    margin: 0 auto;
+  }
+}
+footer {
+  padding: 50px 0 55px;
+  .sm-title {
+    line-height: 30px;
+  }
+  address,
+  a,
+  .footer-desc {
+    font-family: @wsans;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 30px;
+    letter-spacing: 0.2px;
+    word-spacing: 0px;
+    color: #333333;
+    margin-bottom: 0;
+  }
+}
+@media screen and(max-width:768px) {
+  section {
+    padding: 20px 0;
+  }
+
+  .install {
+    position: relative;
+    nav {
+      width: 100%;
+    }
+    .menu {
+      position: absolute;
+      top: 40px;
+      left: 0;
+      min-width: 100%;
+      transform: translateX(0);
+      background: rgba(0, 0, 0, 0.433);
+      transition: 0.4s;
+      overflow: hidden;
+      .menu-item {
+        width: 100%;
+        border-bottom: 2px solid transparent;
+        transition: 0.4s;
+        text-align: center;
+        &:hover {
+          border-bottom: 2px solid #000;
+          color: #fff;
+        }
+      }
+    }
+    .toggle-btn {
+      display: block;
+      position: relative;
+      top: -20px;
+      left: 80%;
+      height: 50px;
+      width: 50px;
+      border: 2px solid#000;
+      border-radius: 5px;
+      background: transparent;
+      &:after {
+        position: absolute;
+        content: "";
+        top: 15px;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 2px;
+        width: 80%;
+        background-color: #000;
+      }
+      &:before {
+        position: absolute;
+        content: "";
+        bottom: 15px;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 2px;
+        width: 80%;
+        background-color: #000;
+      }
+    }
+    .hide {
+      transform: translateX(-200%);
+    }
+  }
+  .main-lg-head {
+    margin-top: 30px;
+  }
+  .how {
+    .block {
+      margin: 35px 0;
+      &:first-child {
+        &:after {
+          top: 100%;
+          left: 50%;
+          transform: translateX(-50%) rotate(90deg);
+        }
+      }
+      &:nth-child(2) {
+        &:after {
+          top: 100%;
+          left: 50%;
+          transform: translateX(-50%) rotate(90deg);
+        }
+      }
+    }
+  }
+}
