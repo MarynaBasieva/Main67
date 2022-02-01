@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW26</title>
+</head>
+
+<body>
+    <h1 style="font-size: 48px; color: black;">HW26</h1>
+    <script>
+        let color = prompt('Pick a color', '');
+        switch (color) {
+            case 'green':
+                alert('great');
+                break;
+            case 'black':
+            case 'blue':
+                alert('wrong try again');
+                break;
+            default:
+                alert('try again with another color');
+                break;
+        }
+
+        <!--2-->
+        let num = '';
+        for (let i = 0; i < 100; i++) {
+            if (i == 5 || i == 55 || i == 68 || i == 99) {
+                continue;
+            }
+            num = num + i;
+        }
+        console.log(num);
+
+        <!--3-->
+
+        const fruits = ['apple', 'mango', 'kiwi', 'banana', 'strawberry', 'peach', 'watermelons', 'arpicots', 'limes',
+            'grapefruits'
+        ];
+        for (let i in fruits) {
+            console.log(fruits[i]);
+            document.write(fruits[i] + '&nbsp;');
+        }
+    </script>
+</body>
+
+</html>
