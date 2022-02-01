@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Map</title>
+</head>
+<script>
+	/*const map = new Map([
+		['Hey', 'Hello'],
+		[42, "Вот столько лет человеку!!!"],
+		[true, false],
+		[{}, 'Объект'],
+		[function(){}, 'функции']
+	]);*/
+	
+	const map = new Map();
+	
+	map.set(42, 'Вот столько лет человеку');
+	map.set('42','Вот столько лет человеку');
+	
+	//map.delete('42');// удаляет полность ключ значение
+	//map.clear();// очищает все что находится в map
+	//console.log(map.size); //получение размера
+	console.log(map.get(42));// выводит значение по заданому ключу
+	console.log(map.has(42));// выводит  булевые значение true или false
+	console.log(map);
+	
+	
+	const mapNew = new Map();
+	mapNew.set("React", "New Framvork")
+	      .set("CSS", "stylesheet")
+	      .set("Html", "Hyper text");
+	
+	console.log(mapNew.keys());
+	console.log(mapNew.values());
+	
+	const map2 = new Map(mapNew.entries());
+	console.log(map2);
+	
+	
+	
+</script>
+<body>
+</body>
+</html>

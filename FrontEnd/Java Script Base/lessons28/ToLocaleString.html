@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ToLocaleString () method</title>
+</head>
+<script>
+	 //дата.toLocaleString(язык, опции);
+	 console.log(new Date());
+	
+	 let data = new Date().toLocaleString();
+	 console.log(data);
+	
+	let dataRus = new Date();
+	console.log("Русский:" + dataRus.toLocaleString('ru'));
+	
+	let dataEng = new Date();
+	console.log("Англиский:" + dataEng.toLocaleString('en'));
+	
+	let Num = new Date().toLocaleString("en",{
+		year: 'numeric',
+		month: 'long',
+		day:'numeric',
+		weekday:'long',
+		timezone:'UTC',
+		hour:'numeric',
+		minute:'numeric',
+		second:'numeric'
+	});
+	console.log(Num);
+	
+	let res = new Date();
+	let option = {
+		year: 'numeric',
+		month: 'long',
+		day:'numeric',
+		weekday:'long',
+		timezone:'UTC',
+		hour:'numeric',
+		minute:'numeric',
+		second:'numeric'
+	};
+	console.log("Россия" + ":" + res.toLocaleString('ru', option));
+	console.log("Америка" + ":" + res.toLocaleString('en', option));
+	console.log("Украина" + ":" + res.toLocaleString('ua', option));
+	
+	//new Numbe = (21.2).toLocaleString();
+</script>
+<body>
+</body>
+</html>

@@ -20,8 +20,10 @@ switch(color) {
 
 
 for(let i = 0; i <= 100; i++) {
-    if(i === 5 || i === 55 || i === 68 || i === 99) continue;
-    console.log(i)
+    if(i === 5 || i === 55 || i === 68 || i === 99){ 
+		continue;
+	}
+    console.log(i);
 }
 
 let arr = ["orange","apple","fig","lime","lemon","melon","watermelon","pineapple","avocado","banana"];
