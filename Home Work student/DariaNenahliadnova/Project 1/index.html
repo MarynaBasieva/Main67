@@ -12,59 +12,77 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope&family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="vendor/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="vendor/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
     <link rel="stylesheet" href="vendor/fontawesome-free-5.15.4-web/css/all.min.css" type="text/css">
 
     <link rel="stylesheet" href="vendor/fancybox/dist/jquery.fancybox.min.css" type="text/css">
 
     <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
     <script type="text/javascript" src="vendor/fancybox/dist/jquery.fancybox.min.js"></script>
+    <script type="text/javascript" src="vendor/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
     <script type="text/javascript" src="js/custom.js"></script>
     <script type="text/javascript" src="vendor/bootstrap-4.0.0/js/bootstrap.min.js"></script>
 </head>
 <body>
     <main class="for_page">
         <div class="page">
-            <header class="header">
-                <div class="box-logo">
-                    <div class="box-logo-1">
-                        <a href="/index.html">
-                            <img class="box-logo-img" src="img/logo.png">
-                        </a>
-            
-                        <a class="logo-tel" href="tel:(+22) 123 456 7890">
-                            <img class="logo-tel-img" src="img/tel.png">
-                            Call Us - (+22) 123 456 7890</a>
-                    </div>
-                     <nav class="nav-menu">
-                        <ul class="sub-menu">
-                            <li class="item-menu">
-                                <a class="link-item-menu" href="#">Home</a>
-                            </li>
-                            <li class="item-menu">
-                                 <a class="link-item-menu" href="#">About</a>
-                            </li>
-                            <li class="item-menu">
-                                <a class="link-item-menu" href="#">Pages</a>
-                            </li>
-                            <li class="item-menu">
-                                <a class="link-item-menu" href="#">Contact Us</a>
-                            </li>
-                            <li><a><img src="img/fac.png"></a></li>
-                            <li><a><img src="img/twitter.png"></a></li>
-                            <li><a><img src="img/in.png"></a></li>
-                            <li><a><button><img src="img/button img.png" >RESERVATION</button></a></li>
-                         </ul> 
-                    </nav>
-                    <div class="clear"></div>
-                </div>
-                       
+
+              <!--header-->         
             </header>
+            <header class="header">
+                <div class="row justify-content-center">
+                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                        <div class="box-logo">
+                            <div class="box-logo-1">
+                                <a href="/index.html">
+                                    <img class="box-logo-img" src="img/logo.png">
+                                </a>
+                                <div class="responsive_menu">
+                                    <i class="fas fa-bars"></i>
+                                    </div>
+                    
+                                <a class="logo-tel" href="tel:+221234567890">
+                                    <img class="logo-tel-img" src="img/tel.png">
+                                    Call Us - (+22) 123 456 7890</a>
+                            </div>
+                        </div>
+                    </div>
+                        <div class="col-xl-6 col-lg-6 col-md-2 col-sm-3">
+                            <nav class="nav-menu">
+                                <ul class="sub-menu">
+                                    <li class="item-menu">
+                                        <a class="link-item-menu" href="#">Home</a>
+                                    </li>
+                                    <li class="item-menu">
+                                        <a class="link-item-menu" href="#">About</a>
+                                    </li>
+                                    <li class="item-menu">
+                                        <a class="link-item-menu" href="#">Pages</a>
+                                    </li>
+                                    <li class="item-menu">
+                                        <a class="link-item-menu" href="#">Contact Us</a>
+                                    </li>
+                                </ul>
+                                    
+                                    <a><img src="img/fac.png"></a>
+                                    <a><img src="img/twitter.png"></a>
+                                   <a><img src="img/in.png"></a>
+                                    <a><button><img src="img/button img.png" >RESERVATION</button></a>
+                                 
+                            </nav>
+                        </div>
+                            
+                        
+                </div>      
+            </header>
+            <!--banner-->
             <section class="banner">
                 <div class="container">
                     <div class="row justify-content-center ">
                         <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
                             <div class="parentBanner">
-                                <p><img src="img/voscle.png"> WELCOME TO BEAUTYNESS!!!</p>
+                                <h4 class="paragraf-all"><img src="img/voscle.png"> WELCOME TO BEAUTYNESS!!!</h4>
                                 <h1>Bring The well being & beauty naturally!!!</h1>
                                 <p>Your body does a lot for you, and your caring therapist can help you return the favor in a way that benefits both your physical and mental wellness.</p>
                                 <a href="#" class="btn-banner">MAKE A RESERVATION</a>
@@ -76,58 +94,63 @@
                     </div>
                 </div>
             </section>
+            <!--block1-->
             <section class="block1">
                 <div class="container">
-                    <div class="blog1">
-                        <div class="article">
-
-                            <div class="img-article">
-                                <img src="img/123.png">
+                    <div class="row justify-content-center ">
+                        <div class=" col-sm-4">
+                            <div class="article">
+                                <div class="img-article">
+                                    <img src="img/123.png">
+                                </div>
+                                <div class="title-article">
+                                    <a href="#">Spa & Massage</a>
+                                </div>
+                                <div class="text-article">
+                                    <p>Your wellness goals and the areas of preference, then unwind with a customized massage experience.</p>
+                                </div>
+                                <a href="#" class="btn-article">READ MORE</a>
                             </div>
-                            <div class="title-article">
-                                <a href="#">Spa & Massage</a>
-                            </div>
-                            <div class="text-article">
-                                <p>Your wellness goals and the areas of preference, then unwind with a customized massage experience.</p>
-                            </div>
-                            <a href="#" class="btn-article">READ MORE</a>
                         </div>
-                        <div class="article">
-                            <div class="img-article">
-                                <img src="img/IMAGE (2).png">
+                        <div class="col-sm-4">
+                            <div class="article">
+                                <div class="img-article">
+                                    <img src="img/IMAGE (2).png">
+                                </div>
+                                <div class="title-article">
+                                    <a href="#">Hair & Beauty</a>
+                                </div>
+                                <div class="text-article">
+                                    <p>Combining skin-type-specific cleansing & toning, exfoliation, deep-pore cleansing extractions customized treatment.</p>
+                                </div>
+                                <a href="#" class="btn-article">READ MORE</a>
                             </div>
-                            <div class="title-article">
-                                <a href="#">Hair & Beauty</a>
-                            </div>
-                            <div class="text-article">
-                                <p>Combining skin-type-specific cleansing & toning, exfoliation, deep-pore cleansing extractions customized treatment.</p>
-                            </div>
-                            <a href="#" class="btn-article">READ MORE</a>
                         </div>
-                        <div class="article">
-                            <div class="img-article">
-                                <img src="img/IMAGE (3).png">
+                        <div class=" col-sm-4">
+                            <div class="article">
+                                <div class="img-article">
+                                    <img src="img/IMAGE (3).png">
+                                </div>
+                                <div class="title-article">
+                                    <a href="#">Body Treatments</a>
+                                </div>
+                                <div class="text-article">
+                                    <p>Offers therapeutic benefits such as relief of muscle tension and increased circulation to the areas worked.</p>
+                                </div>
+                                <a href="#" class="btn-article">READ MORE</a>
                             </div>
-                            <div class="title-article">
-                                <a href="#">Body Treatments</a>
-                            </div>
-                            <div class="text-article">
-                                <p>Offers therapeutic benefits such as relief of muscle tension and increased circulation to the areas worked.</p>
-                            </div>
-                            <a href="#" class="btn-article">READ MORE</a>
                         </div>
-                        
-                    </div>
-                    <div class="clear"></div>
+                    </div> 
                 </div>
             </section>
+            <!--block2-->
             <section class="block2">
                 <div class="container">
                     <div class="row justify-content-center ">
                         <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
                             <div class="parent-block2">
                                 <div class="parent-block2-text">
-                                    <h4>TAKE YOUR CARE</h4>
+                                    <h4 class="paragraf-all">TAKE YOUR CARE</h4>
                                     <h2>Elevate Your Lifestyle by Bring Balance and Well Being Into Your Life</h2>
                                     <p>Designed to allow you to unwind and feel confident that you’re in good, caring hands. Our first priority is cleanliness. We have a full-time staff whose job is to ensure that the environment at Beautyness remains.</p>
                                 </div>
@@ -155,12 +178,13 @@
                     </div>
                 </div>
             </section>
+            <!--block3-->
             <section class="block3">
                 <div class="container">
                     <div class="row justify-content-center ">
                         <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12">
                             <div class="block3-title">
-                                <h4>Our Services</h4>
+                                <h4 class="paragraf-all">Our Services</h4>
                                 <h2>Creative excellence and the unparalleled hospitality</h2>
                             </div>
                         </div>
@@ -220,7 +244,7 @@
                         </div>
                     </div> 
 
-                        <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12">
+                        <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12 ord_1">
                             <div class="block3-text">
                                 <div class="block3-square2">
                                     <img src="img/square.png">
@@ -264,10 +288,10 @@
                                     <p class="block3-paragraf">Treatment for natural lashes that can add curl and definition.</p>
                                 </div>
                             </div> 
-                            <button class="btn-block3">GET AN APPOINTMENT</button>
+                            <button class="btn-block3 force">GET AN APPOINTMENT</button>
                         </div>
 
-                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 ord_2">
                             <div class="block3-img2">
                                 <img  src="img/IMAGE (6).png">
                             </div>
@@ -276,68 +300,83 @@
                     </div>
                 </div>
             </section>
+            <!--BLOCK4-->
             <section class="block4">
                 <div class="container">
                     <div class="row justify-content-center ">
 
                         <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12">
                             <div class="block4-title">
-                                <h4>Testimonials</h4>
+                                <h4 class="paragraf-all">Testimonials</h4>
                                 <h2>What our Customers says...</h2>
                             </div>
                         </div>
+                   
 
-                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
-                            <div class="block4-reviews">
-                                <div class="block4-reviews1">
-                                    <p class="block4-paragraf">“ Made an appointment with Beautyness and it was the best experience in a salon I have ever had. They went above and beyond to make sure I got what I wanted, & patiently explained her process “</p>
-                                    <div class="block4-reviews1-response">
-                                        <img class="block4-img" src="img/IMAGE (7).png">
-                                        <div class="ddd">
-                                            <img src="img/stars.png">
-                                            <h4>James Williams</h4>
-                                            <p>United States</p>
-                                        </div>
-                                        <div class="vector">
-                                            <img class="vector_1" src="img/vector2.png">
-                                        
+                        
+                            <div class="owl-carousel" id="carousel_partner">
+                                <div class="col-12">
+                                    <div class="block4-reviews">
+                                        <div class="block4-reviews1">
+                                            <p class="block4-paragraf">“Made an appointment with Beautyness and it was the best experience in a salon I have ever had. They went above and beyond to make sure I got what I wanted, & patiently explained her process“</p>
+                                            <div class="block4-reviews1-response">
+                                                <img class="block4-img" src="img/IMAGE (7).png">
+                                                <div class="ddd">
+                                                    <div class="ddd-img">
+                                                        <img src="img/Vector11.png">
+                                                        <img src="img/Vector11.png">
+                                                        <img src="img/Vector11.png">
+                                                        <img src="img/Vector 22.png"></div>
+                                                    <h4>James Williams</h4>
+                                                    <p>United States</p>
+                                                </div>
+                                                <div class="vector">
+                                            
+                                                </div>
+                                            </div>
+                                        </div></div>
+                                    </div> 
+                                
+                   
+
+                          <div class="col-12">
+                                <div class="block4-reviews">
+                                  
+                                        <div class="block4-reviews1">
+                                            <p class="block4-paragraf">“I've been going to Beautyness they are always goes above and beyond my expectations and leaves my hair looking and feeling fantastic and looking exactly as I hoped, if not better“</p>
+                                            <div class="block4-reviews1-response">
+                                                <img class="block4-img" src="img/IMAGE (8).png">
+                                                <div class="ddd">
+                                                    <div class="ddd-img">
+                                                    <img src="img/Vector11.png">
+                                                    <img src="img/Vector11.png">
+                                                    <img src="img/Vector11.png">
+                                                    <img src="img/Vector 22.png"></div>
+                                                    <h4>Carolyn James</h4>
+                                                    <p>United Kingdom</p>
+                                                </div>
+                                                <div class="vector">
+                                            
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div> 
-                        </div>
-
-                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
-                            <div class="block4-reviews">
-                                <div class="block4-reviews1">
-                                    <p class="block4-paragraf">“ I've been going to Beautyness they are always goes above and beyond my expectations and leaves my hair looking and feeling fantastic and looking exactly as I hoped, if not better “</p>
-                                    <div class="block4-reviews1-response">
-                                        <img class="block4-img" src="img/IMAGE (8).png">
-                                        <div class="ddd">
-                                            <img src="img/stars.png">
-                                            <h4>Carolyn James</h4>
-                                            <p>United Kingdom</p>
-                                        </div>
-                                        <div class="vector">
-                                            <img class="vector_1"  src="img/vector2.png">
-                                           
-                                        </div>
-                                    </div>
-                                </div>
-                            </div> 
-                        </div>
-
+                        
+                           
 
                     </div>
                 </div>
             </section>
+            <!--block5-->
             <section class="block5">
                 <div class="container">
                     <div class="row justify-content-center ">
 
                         <div class="col-12">
                             <div class="block5-title">
-                                <h4>Our Awesome Benefits</h4>
+                                <h4 class="paragraf-all">Our Awesome Benefits</h4>
                                 <h2>What you’ll get from Us</h2>
                             </div>
                         </div>
@@ -389,13 +428,14 @@
                     </div>
                 </div>
             </section>
+            <!--block6-->
             <section class="block6">
                 <div class="container">
                     <div class="row justify-content-center ">
                         <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
                             
                             <div class="block6-article">
-                                <h4>Flat Discount</h4>
+                                <h4 class="paragraf-all">Flat Discount</h4>
                                 <h2>Claim upto 50% offer on the most popular services...</h2>
                                 <p>Our Retreat is not meant to be an occasional treat, but rather a part of your routine that restores balance to your daily life.</p>
                                 <div class="block6-sale">
@@ -408,7 +448,7 @@
                                         <div class="sale2">
                                             
                                             <p>Call us :</p>
-                                            <a href="tel:(+1) 235 890 12">(+1) 235 890 12</a>
+                                            <a href="tel:+123589012">(+1) 235 890 12</a>
                                         </div>
                                     </div>
                                     <div class="sale-img">
@@ -428,7 +468,7 @@
                                         <div class="input-tel"><input type="tel" name="tel"></div>
                                         <div class="input-text"><input type="text"></div>
                                         <div class="block6-textarea"><textarea></textarea></div>
-                                        <button class="block6-btn"></button>
+                                        <button class="block6-btn">SEND</button>
                                     
                                 </form>
                             </div>
@@ -437,45 +477,48 @@
                     </div>
                 </div>
             </section>
+            <!--block7-->
             <section class="block7">
                 <div class="container">
                     <div class="row justify-content-center ">
 
                         <div class="col-12">
                             <div class="block7-title">
-                                <h4>Our Blog</h4>
+                                <h4 class="paragraf-all">Our Blog</h4>
                                 <h2>Latest Updates</h2>
                             </div>
                         </div>
-                    </div>
-                    <div class="blog2">
-                        <div class="article2">
+                  
+                    <div class="col-sm-4">
+                        
+                            <div class="article2">
 
-                            <div class="img-article2">
-                                <img src="img/123.png">
-                            </div>
-                            <div class="block7-article-p">
-                                <p>September 30, 2021</p>
-                                <p class="blog2-p">Peter Bergson</p>
-                            </div>
-                            <div class="title-article2">
-                                <a href="#">How to make the make-up stay last</a>
-                            </div>
-                            <div class="text-article2">
-                                <p>Therapeutic aromatherapy can help bring balance both mentally, physically, and different blends.</p>
+                                <div class="img-article2">
+                                    <img src="img/123.png">
+                                </div>
+                                <div class="block7-article-p">
+                                    <p>September 30, 2021</p>
+                                    <p class="blog2-p">Peter Bergson</p>
+                                </div>
+                                <div class="title-article2">
+                                    <a href="#">How to make the make-up stay last</a>
+                                </div>
+                                <div class="text-article2">
+                                    <p>Therapeutic aromatherapy can help bring balance both mentally, physically, and different blends.</p>
+                                </div>
                             </div>
                         
-                        </div>
+                    </div>
 
-
+                    <div class="col-sm-4">
                         <div class="article2">
 
                             <div class="img-article2">
                                 <img src="img/IMAGE (2).png">
                             </div>
-                            <div class="block7-article-p">
+                            <div class="block7-article-p blog-padd">
                                 <p>September 30, 2021</p>
-                                <p class="blog2-p">John Walker</p>
+                                <p class="blog2-p ">John Walker</p>
                             </div>
                             <div class="title-article2">
                                 <a href="#">Tips to improve your body via cleansing</a>
@@ -485,7 +528,8 @@
                             </div>
                         
                         </div>
-
+                    </div>
+                    <div class="col-sm-4">
                         <div class="article2 column3">
 
                             <div class="img-article2">
@@ -503,13 +547,18 @@
                             </div>
                         
                         </div>
-                     
+                     </div>
+                     <div class="col-12">
                         <div class="block7-btn">
                                 <button class="blog2-btn">view more stories</button></div>
-                        </div>
-                  
+                        </div></div>
+                    
+                   </div>
                 </div>
             </section>
+
+
+            <!--footer-->
             <footer class="last-block">
                 <div class="container">
                     <div class="logo-footer">
@@ -546,16 +595,11 @@
                         </div>
                         <div class="footer-address">
                             <h4>Keep in Touch</h4>
-                            <ul>
-                                <li><p >Address:</p>
-                               </li>
-                                <li><p>Mail:</p></li>
-                                <li><p>Phone :</p></li>
-                            </ul>
-                            <ul class="spisok_2">
-                                <li> <p >24A Kingston St, Los Vegas <br>NC 28202, USA.</p></li>
-                                <li><a href="mailto:support@doctors.com">support@doctors.com</a></li>
-                                <li><a  href="tel:(+22) 123 - 4567 - 900">(+22) 123 - 4567 - 900</a></li>
+                            
+                            <ul class="spisok">
+                                <li> <p>Address:  24A Kingston St, Los Vegas <br>NC 28202, USA.</p></li>
+                                <li><a href="mailto:support@doctors.com">Mail:  support@doctors.com</a></li>
+                                <li><a  href="tel:+221234567900">Phone : (+22) 123 - 4567 - 900</a></li>
                             </ul>
                         </div>
                         <div class="time-work">
