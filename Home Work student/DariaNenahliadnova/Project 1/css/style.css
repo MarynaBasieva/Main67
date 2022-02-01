@@ -19,8 +19,22 @@ img{
 .header{
     background: #ffff;
 }
-.box-logo-1{
-    float: left;
+
+.responsive_menu{
+    display: none;
+}
+.header .nav-menu{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.header .sub-menu   {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+.nav-menu{
+    padding-top: 40px;
 }
 .box-logo .box-logo-img{
     margin: 33px 20px 37px 30px;
@@ -38,13 +52,6 @@ img{
 .logo-tel .logo-tel-img{
     padding-right: 10px;
 }
-.nav-menu{
-    float: right;
-    margin: 20px 30px 20px 0;
-}
-.nav-menu ul{
-    list-style: none;
-}
 .sub-menu .item-menu:nth-child(1),
 .sub-menu .item-menu:nth-child(2){
     padding-right: 38px;
@@ -54,11 +61,6 @@ img{
 }
 .sub-menu .item-menu:nth-child(4){
     padding-right: 20px;  
-}
-
-.nav-menu ul.sub-menu > li{
-    display: inline-block;
-   
 }
 .nav-menu .item-menu a{
     font-family: 'Manrope', sans-serif;
@@ -70,15 +72,15 @@ img{
     color: #5C8692;
     text-decoration: none;
 }
-.nav-menu li img:hover{
+.nav-menu a  img:hover{
     cursor: pointer;
     transform: scale(1.1);
     transition: 0.3s;
 }
-.sub-menu li a img{
+.nav-menu  a img{
     padding: 7px 10px 6px;
 }
-.sub-menu  li a button{
+.nav-menu a button{
     background: #5C8692;
     color: #ffff;
     font-family: 'Manrope', sans-serif;
@@ -88,15 +90,12 @@ img{
     text-transform: uppercase;
     padding: 10px 20px;
     border: none;
-    margin-left: 20px;
     outline: none;
+    margin: -10px 10px 0;
 }
-.sub-menu  li a button:hover{
+.nav-menu a button:hover{
     cursor: pointer;
     background:#1ea8ce;
-}
-.clear{
-    clear: both;
 }
 .banner{
     background: #EBF3F5;
@@ -109,7 +108,7 @@ img{
 .parentBanner{
     margin-top: 25px;
 }
-.parentBanner p:nth-child(1){
+.parentBanner h4{
     font-family: 'Manrope', sans-serif;
     font-size: 15px;
     line-height: 22px;
@@ -153,8 +152,6 @@ img{
     background: #ffff;;
 }
 .block1 .blog1 .article {
-    width: 31%;
-    float: left;
     margin-right: 30px;
 }
 .block1 .blog1 .article:nth-child(3){
@@ -180,7 +177,7 @@ img{
     letter-spacing: 0.36px;
     color: #555555;
     padding-top: 13px;
-    padding-right: 32px;
+    padding-right: 10px;
     padding-bottom: 17px;
 }
 .article .btn-article{
@@ -193,7 +190,7 @@ img{
     text-transform: uppercase;
     color: #141414;
     border: 2px solid #5C8692;
-    padding: 16px 26px 17px;
+    padding: 16px 27px 17px 26px;
     
 }
 .article .btn-article:hover{
@@ -401,9 +398,11 @@ img{
 .block4{
     padding: 99px 0 119px;
     background: #EBF3F5;
+    
 }
 .block4-title{
     text-align: center;
+    padding-bottom: 40px;
 }
 .block4-title h4{
     font-family: 'Manrope', sans-serif;
@@ -423,10 +422,8 @@ img{
     letter-spacing: 0.45px;
     color: #141414;
 }
-.block4-reviews{
-    padding-top: 40px;
-}
-.block4-reviews .block4-paragraf{
+
+.block4-paragraf{
     background: #ffff;
     font-family: 'Manrope', sans-serif;
     font-weight: normal;
@@ -434,47 +431,33 @@ img{
     line-height: 32px;
     color: #141414;
     padding: 33px 47px 25px 30px;
-    margin-bottom: 0;
+     
 }
-.block4-reviews1-response{
-    background: #1E2C30;
+.block4-reviews{
+    background:#1E2C30 ;
     color: #FFFFFF;
 }
-.block4-reviews1-response .block4-img{
-    margin: -36px 20px 26px 30px;
+.block4-reviews .block4-reviews1-response .block4-img{
+    width: 15%;
+    margin: -30px 6px 26px 30px;
+    display: inline;
+}
+.block4-reviews1-response {
+    position: relative;
 }
 .block4-reviews1-response .ddd{
     display: inline-block; 
 }
-
-.block4-reviews1-response .vector{
-    display: inline-block;
-    position: relative;
-    padding-left: 226px;
-    
-}
-.block4-reviews1-response .vector .vector_1{
-    position: absolute;
-    right: -48px;
-    bottom: 7px;
-    
-}
-.block4-reviews1-response .vector .vector_2{
-    position: absolute;
-    right: -6px;
-    bottom: 7px;
-}
 .ddd{
-    padding-top: 20px;
+    padding:22px 0 22px 20px;
 }
 .ddd h4{
     font-family: 'Playfair Display', serif;
-    font-weight: normal;
     font-size: 20px;
-    line-height: 24px;
+    line-height: 22px;
     letter-spacing: 0.24px;
     color: #FFFFFF;
-    padding-top: 3px;
+    padding-top: 7px;
 }
 .ddd p{
     font-family: 'Manrope', sans-serif;
@@ -484,10 +467,22 @@ img{
     letter-spacing: 0.42px;
     color: #FFFFFF;
 }
+.block4 .block4-reviews1 .ddd-img img{
+    display: inline;
+}
+.block4-reviews .block4-reviews1 .ddd-img img{
+    width: 12%;
+}
+.block4-reviews1-response .vector::before{
+    content: url(../img/vector2.png);
+    right: 24px;
+    bottom: 52px;
+    position: absolute;
+    width: 12%;
+} 
 .block5{
     padding: 99px 0 60px;
-    background: #ffff;
-    
+    background: #ffff;  
 }
 .block5-title{
     text-align: center;
@@ -501,7 +496,6 @@ img{
     letter-spacing: 1.5px;
     text-transform: uppercase;
     color: #5C8692;
-
 }
 .block5-title h2{
     font-family:'Playfair Display', serif;
@@ -512,7 +506,6 @@ img{
     letter-spacing: 0.45px;
     color: #141414;
     padding-bottom: 70px;
-
 }
 .block5-block:hover{
     transform: scale(1.1);
@@ -535,7 +528,6 @@ img{
     color: #555555;
     padding-bottom: 50px;
     padding-top: 11px;
-
 }
 .block6{
     padding: 109px 0 110px;
@@ -575,7 +567,7 @@ img{
 .sale{
     border: 2px solid #5C8692;
     background: #ffff;
-    padding: 32px 32px 37px 82px; 
+    padding: 26px 32px 37px 82px;
     border-right: none;
 }
 .sale p{
@@ -616,9 +608,7 @@ img{
     padding-top: 15px;
     margin-bottom: 0;
 }
-.sale-img{
-    padding-top: 3px;
-}
+
 .block6-input{
     background: #ffff;
     padding: 69px 50px 65px;
@@ -637,21 +627,27 @@ textarea{
 .input-name input{
     background: url(../img/inputname.png) no-repeat; 
     padding-top: 0;
+    padding-left: 38px;
 }
 .input-email input{
     background: url(../img/email.png) no-repeat;
+    padding-left: 42px;
 }
 .input-tel input{
     background: url(../img/tel2.png) no-repeat;
+    padding-left: 40px;
 } 
 .input-text input{
     background: url(../img/book.png) no-repeat;
+    padding-left: 40px;
 }
 .block6-textarea textarea{
     background: url(../img/write.png) no-repeat;
     margin-bottom: 20px;
     resize: none;
     height: 130px;
+    padding-left: 40px;
+    padding-top: 20px;
 }
 .block6-btn{
     width: 100%;
@@ -659,6 +655,13 @@ textarea{
     background: #5C8692;
     border: none;
     outline: none;
+    font-family: 'Manrope', sans-serif;
+    font-size: 15px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 1.56px;
+    color: #FFFFFF;
+
 }
 .block6-btn:hover{
     background:#1ea8ce;
@@ -689,19 +692,14 @@ textarea{
     text-align: center;
     letter-spacing: 0.45px;
     color: #141414;
+    margin-bottom: 66px;
 }
 
 .article2{
     background: #EBF3F5;
-    height: 100%;
-    
+    height: 100%;  
 }
-.blog2 .article2 {
-    width: 31%;
-    float: left;
-    margin-right: 20px;
-   
-}
+
 .block7 .blog2  .column3{
     margin-right: 0;
 }
@@ -740,7 +738,7 @@ textarea{
 
 .img-article2 img{
     max-height: 275px;
-    width: 363px;
+    width: 100%;
 }
 .img-article2 img:hover{
     cursor: pointer;
@@ -763,9 +761,17 @@ textarea{
     border-top: 4px solid #000;
     width: 30px;
     right: 121px;
-    top: 8px;
+    top: 6px;
     position: absolute;
 
+}
+.blog-padd .blog2-p::before{
+    content: "";
+    border-top: 4px solid #000;
+    width: 30px;
+    right: 100px;
+    top: 6px;
+    position: absolute;
 }
 .block7-btn{
     text-align: center;
@@ -872,18 +878,16 @@ textarea{
     font-family: 'Manrope', sans-serif;
     font-weight: normal;
     font-size: 17px;
-    line-height: 20px;
+    line-height: 40px;
     color: #FFFFFF;
 }
-
-.footer-address ul {
-    display: inline-block;
+.footer-address li a:hover{
+    color: #5C8692;
+    text-decoration: none;
 }
-
 
 .time-work h4{
     font-family:'Playfair Display', serif;
-    font-weight: normal;
     font-size: 22px;
     line-height: 31px;
     letter-spacing: 0.352px;
@@ -892,8 +896,6 @@ textarea{
 .time-work ul li{
     list-style: none;
     font-family: 'Manrope', sans-serif;
-    font-style: normal;
-    font-weight: normal;
     font-size: 17px;
     line-height: 34px;
     color: #FFFFFF;
