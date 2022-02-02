@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>
+    HW27
+    1) Создать 5 индекс значение массивов(Строковые) получить все значение массивов с помощью for of
+    2) создать 7 индекс значение массивов (Строковые) получить значение и индекс всех массивов for in
+    3) создать 5 индекс значение массивов (Строковые) получить длину массива через for
+    Все задание вывести в консоль или просто в документ
+</p>
+<script>
+    let array = ['Apple', 'Apricots', 'Avocado', 'Lime', 'Cherry', 'Cucumber', 'Raspberry'];
+
+    for (const string of array) {
+        console.log(string);
+    }
+
+    console.log('');
+    for (const arrayKey in array) {
+        console.log(array[arrayKey]);
+    }
+
+    console.log('');
+    for (let i = 0; i < array.length; i++) {
+        console.log(array[i]);
+    }
+</script>
+</body>
+</html>
