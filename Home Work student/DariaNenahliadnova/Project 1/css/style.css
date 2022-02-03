@@ -19,19 +19,13 @@ img{
 .header{
     background: #ffff;
 }
-
 .responsive_menu{
     display: none;
-}
-.header .nav-menu{
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
 }
 .header .sub-menu   {
     list-style: none;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 .nav-menu{
     padding-top: 40px;
@@ -52,13 +46,7 @@ img{
 .logo-tel .logo-tel-img{
     padding-right: 10px;
 }
-.sub-menu .item-menu:nth-child(1),
-.sub-menu .item-menu:nth-child(2){
-    padding-right: 38px;
-}
-.sub-menu .item-menu:nth-child(3){
-    padding-right: 50px;  
-}
+
 .sub-menu .item-menu:nth-child(4){
     padding-right: 20px;  
 }
@@ -72,15 +60,18 @@ img{
     color: #5C8692;
     text-decoration: none;
 }
-.nav-menu a  img:hover{
+.header-icon {
+    padding-top: 35px;
+}
+.header-icon a  img:hover{
     cursor: pointer;
     transform: scale(1.1);
     transition: 0.3s;
 }
-.nav-menu  a img{
+.header-icon  a img{
     padding: 7px 10px 6px;
 }
-.nav-menu a button{
+.header-icon a button{
     background: #5C8692;
     color: #ffff;
     font-family: 'Manrope', sans-serif;
@@ -93,7 +84,7 @@ img{
     outline: none;
     margin: -10px 10px 0;
 }
-.nav-menu a button:hover{
+.header-icon a button:hover{
     cursor: pointer;
     background:#1ea8ce;
 }
@@ -177,7 +168,7 @@ img{
     letter-spacing: 0.36px;
     color: #555555;
     padding-top: 13px;
-    padding-right: 10px;
+    padding-right: 4px;
     padding-bottom: 17px;
 }
 .article .btn-article{
