@@ -6,21 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="libs/bootstrap/css/bootstrap-reboot.min.css" />
     <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.min.css" />
     <title>Irorun</title>
   </head>
   <body>
+    <div class="modals-wraper hide" id="modal-bg">
+      <span id="close-btn" class="close-btn" data-target="modal-bg">X</span>
+      <div class="contact-form">
+        <form action="#">
+          <input type="email" placeholder="Your Email" />
+          <textarea
+            cols="30"
+            rows="10"
+            placeholder="Enter text here"
+          ></textarea>
+          <input type="submit" value="send data" />
+        </form>
+      </div>
+    </div>
     <section class="install">
-      <a href="#" class="label">Contact Us</a>
+      <a href="#" class="label" id="label">Contact Us</a>
       <div class="container">
         <header>
           <div class="row">
-            <div class="col-2">
+            <div class="col-3">
               <a href="index.html" class="logo"
                 ><img src="img/svg/logo.svg" alt="logo icon"
               /></a>
             </div>
-            <div class="col-12 col-md-4 offset-md-1">
+            <div class="col-9 col-md-4 offset-md-1">
               <nav>
                 <ul
                   class="menu hide d-flex flex-column flex-md-row justify-content-between"
@@ -41,7 +55,9 @@
             <p class="main-desc">
               Get instant loans with ease on your smartphone.
             </p>
-            <div class="btn-wraper d-flex justify-content-between">
+            <div
+              class="btn-wraper d-flex justify-content-center justify-content-md-between"
+            >
               <button class="btn playMarket-btn"></button
               ><button class="btn playStore-btn"></button>
             </div>
@@ -69,7 +85,9 @@
           <div class="col-12 col-md-5">
             <h2 class="main-head">Save on your own terms</h2>
             <p class="main-desc">Savings give you financial options</p>
-            <div class="btn-wraper d-flex justify-content-between">
+            <div
+              class="btn-wraper d-flex justify-content-center justify-content-md-between"
+            >
               <button class="btn playMarket-btn"></button
               ><button class="btn playStore-btn"></button>
             </div>
@@ -81,14 +99,14 @@
       <div class="container">
         <h2 class="main-head">How it works</h2>
         <div class="row">
-          <div class="block col-12 col-md-3">
+          <div class="block mx-auto col-8 col-md-3">
             <img src="img/svg/set-ico.svg" alt="set ico" class="mx-auto" />
             <h3 class="sm-title">Set up an account</h3>
             <p class="block-desc">
               Download the app for free, sign Download the app for free, sign
             </p>
           </div>
-          <div class="block col-12 col-md-3 offset-md-1">
+          <div class="block mx-auto col-8 col-md-3 offset-md-1">
             <img src="img/svg/apply-ico.svg" alt="aply icon" class="mx-auto" />
             <h3 class="sm-title">Apply for a loan</h3>
             <p class="block-desc">
@@ -96,7 +114,7 @@
               decide if you are qualified.
             </p>
           </div>
-          <div class="block col-12 col-md-3 offset-md-1">
+          <div class="block mx-auto col-8 col-md-3 offset-md-1">
             <img src="img/svg/get-ico.svg" alt="get icon" class="mx-auto" />
             <h3 class="sm-title">Get your cash</h3>
             <p class="block-desc">
@@ -111,7 +129,9 @@
         <h2 class="download-title">
           Get it on Play Store and download on the App Store
         </h2>
-        <div class="btn-wraper d-flex">
+        <div
+          class="btn-wraper d-flex justify-content-center justify-content-md-between"
+        >
           <button class="btn playMarket-btn-usaly"></button>
           <button class="btn playStore-btn-usaly"></button>
         </div>

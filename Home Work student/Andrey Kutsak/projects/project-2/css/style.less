@@ -22,6 +22,7 @@ img {
   box-sizing: border-box;
 }
 // common styles
+
 .container {
   max-width: 1269px;
 }
@@ -93,6 +94,68 @@ img {
     background-position: center center;
   }
 }
+// modal-window
+.modals-wraper {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.604);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  .close-btn {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: red;
+    cursor: pointer;
+  }
+  .contact-form {
+    padding: 20px 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    input,
+    textarea {
+      font-family: @wsans;
+      font-size: 16px;
+      color: #333333;
+      resize: none;
+      width: 100%;
+      padding: 15px 20px;
+      margin-bottom: 30px;
+      outline: none;
+      border: 1px solid #333333;
+      border-radius: 5px;
+      transition: 0.4s;
+      &:focus {
+        border: 1px solid #36aeae;
+        background-color: rgb(177, 177, 177);
+      }
+    }
+
+    input[type="submit"] {
+      color: #fff;
+      text-transform: uppercase;
+      font-weight: bold;
+      border: none;
+      background-color: #333333;
+      transition: 0.4s;
+      &:hover {
+        background-color: #4f4f4f;
+      }
+      &:active {
+        transform: scale(0.95);
+      }
+    }
+  }
+}
+.hide {
+  position: sticky;
+  display: none;
+}
 .install {
   padding: 45px 0 70px;
   .label {
@@ -113,6 +176,7 @@ img {
   .menu {
     max-width: 300px;
     .menu-item {
+      padding: 10px;
       list-style: none;
       a {
         font-family: @wsans;
@@ -245,12 +309,30 @@ footer {
 @media screen and(max-width:768px) {
   section {
     padding: 20px 0;
+    .main-desc,
+    .main-head,
+    .main-lg-head {
+      text-align: center;
+      margin: 0 auto 30px auto;
+    }
+    .btn-wraper {
+      max-width: 90%;
+      margin: 0 auto;
+    }
   }
-
+  picture,
+  source,
+  img {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px 0;
+  }
   .install {
     position: relative;
+    .col-9,
     nav {
-      width: 100%;
+      flex-basis: 100%;
+      max-width: 100%;
     }
     .menu {
       position: absolute;
@@ -275,7 +357,7 @@ footer {
     .toggle-btn {
       display: block;
       position: relative;
-      top: -20px;
+      top: -60px;
       left: 80%;
       height: 50px;
       width: 50px;
@@ -327,6 +409,17 @@ footer {
           transform: translateX(-50%) rotate(90deg);
         }
       }
+    }
+  }
+  footer {
+    .sm-title {
+      font-size: 20px;
+      font-weight: bold;
+      line-height: 25px;
+    }
+    .footer-desc {
+      font-size: 16px;
+      line-height: 22px;
     }
   }
 }

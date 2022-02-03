@@ -6,17 +6,42 @@
 
 
 @media (max-width: 991px){
+    .header{
+        padding-bottom: 10px
+    }
     .responsive_menu{
-        display: block;
+        display: inline;
     }
     .responsive_menu i{
-        font-size: 33px;
-        color: #34547A;
-        transition: 0.3px;
+        font-size: 40px;
+        color: #5C8692;
+        transition: 0.3s;
         cursor: pointer;
     }
     .responsive_menu i:hover{
-        color: #03d5e4;
+        color: #1ea8ce;
+        transform: scale(1.1);
+        transition: 2s;
+    }
+    .logo-responsive{
+        display: flex;
+        justify-content: flex-end;
+        padding: 20px 20px 0 0;
+    }
+
+    .header-icon{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .header .nav-menu{
+        display: none;
+    }
+    .header-icon {
+        padding-top: 0;
+    }
+    .header-icon a button {
+        font-size: 12px;
+        padding: 7px 12px;
     }
     .banner{
         padding: 0 0 30px;
@@ -240,6 +265,20 @@
     .for_page .paragraf-all{
         font-size: 12px;
     }
+    .box-logo .box-logo-img {
+        margin: 12px 0px 12px 30px;
+    }
+    .box-logo .logo-tel {
+        font-size: 12px;
+        display: block;
+        padding-left: 42px;
+    }
+    .logo-tel .logo-tel-img {
+        width: 6%;
+    }
+    .header-icon {
+        justify-content: flex-start;
+    }
     .parentBanner h1 {
         font-size: 30px;
         line-height: 40px;
@@ -448,6 +487,10 @@
     body .container h2 {
         font-size: 18px;
         line-height: 30px;
+    }
+    .header-icon a button {
+        font-size: 9px;
+        padding: 3px 6px;
     }
     .parentBanner h1 {
         font-size: 20px;
