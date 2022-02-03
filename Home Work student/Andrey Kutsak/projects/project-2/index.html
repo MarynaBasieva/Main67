@@ -10,8 +10,22 @@
     <title>Irorun</title>
   </head>
   <body>
+    <div class="modals-wraper hide" id="modal-bg">
+      <span id="close-btn" class="close-btn" data-target="modal-bg">X</span>
+      <div class="contact-form">
+        <form action="#">
+          <input type="email" placeholder="Your Email" />
+          <textarea
+            cols="30"
+            rows="10"
+            placeholder="Enter text here"
+          ></textarea>
+          <input type="submit" value="send data" />
+        </form>
+      </div>
+    </div>
     <section class="install">
-      <a href="#" class="label">Contact Us</a>
+      <a href="#" class="label" id="label">Contact Us</a>
       <div class="container">
         <header>
           <div class="row">

@@ -94,6 +94,50 @@ img {
   background-size: cover;
   background-position: center center;
 }
+.modals-wraper {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.604);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+.modals-wraper .close-btn {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: red;
+  cursor: pointer;
+}
+.modals-wraper .contact-form {
+  padding: 20px 10px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+.modals-wraper .contact-form input,
+.modals-wraper .contact-form textarea {
+  font-family: "WorkSans", "Open sans", sans-serif;
+  font-size: 16px;
+  color: #333333;
+  resize: none;
+  width: 100%;
+  margin-bottom: 30px;
+  outline: none;
+  border-radius: 5px;
+}
+.modals-wraper .contact-form input[type="submit"] {
+  color: #fff;
+  border: none;
+  background-color: #333333;
+}
+.hide {
+  position: sticky;
+  display: none;
+}
 .install {
   padding: 45px 0 70px;
 }
