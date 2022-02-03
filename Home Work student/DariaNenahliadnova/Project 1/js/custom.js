@@ -14,7 +14,7 @@ jQuery(document).ready(function () {
 		smartSpeed: 1000,
 		dotsSpeed: 1000,
 		loop: true,
-		nav: true,
+		nav: false,
 		navText: [''],
 		dots: true,
 		mouseDrag: true,
