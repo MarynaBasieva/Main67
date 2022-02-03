@@ -11,6 +11,36 @@
   </head>
   <body>
     <main>
+      <div class="modal-wraper hide">
+        <span class="close-btn">X</span>
+        <div class="content-wraper">
+          <div class="sign hide" id="signIn">
+            <form
+              action="#"
+              class="inp-wraper d-flex flex-column align-content-center"
+            >
+              <h2>Sing In</h2>
+              <input type="email" placeholder="Enter your Email" />
+              <input type="password" placeholder="Enter your Password" />
+              <input type="submit" value="Sing In" />
+            </form>
+          </div>
+          <div class="sign hide" id="signUp">
+            <form
+              action="#"
+              class="inp-wraper d-flex flex-column align-content-center"
+            >
+              <h2>Sign Up</h2>
+              <input type="text" placeholder="Enter Your User name" /><input
+                type="email"
+                placeholder="Enter Your Email"
+              /><input type="password" placeholder="Enter Your Password" />
+              <input type="password" placeholder="Repeat Your Password" />
+              <input type="submit" value="Sign Up" />
+            </form>
+          </div>
+        </div>
+      </div>
       <section class="reasons">
         <div class="container">
           <header>
@@ -39,8 +69,15 @@
                   <li class="menu-item"><a href="#">benefits</a></li>
                 </ul>
                 <div class="btn-wraper">
-                  <button class="head-btn btn">Sing in</button>
-                  <button class="head-btn active btn">Sign Up</button>
+                  <button class="head-btn btn btna" data-target="#signIn">
+                    Sing in
+                  </button>
+                  <button
+                    class="head-btn active btn btna"
+                    data-target="#signUp"
+                  >
+                    Sign Up
+                  </button>
                 </div>
               </div>
             </nav>
@@ -59,8 +96,12 @@
                 <button class="head-btn active btn">demo</button>
               </div>
               <div class="video-wraper d-flex">
-                <div class="video-baner">
+                <div
+                  class="video-baner"
+                  data-source="https://www.youtube.com/embed/LaQj636PJh0"
+                >
                   <svg
+                    id="playBtn"
                     class="play-btn"
                     width="40"
                     height="40"
