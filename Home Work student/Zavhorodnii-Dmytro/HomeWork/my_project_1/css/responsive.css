@@ -1,0 +1,181 @@
+@media (min-width: 1200px) {
+.for_page .container {
+    max-width: 1373px;
+}
+}
+
+@media (max-width: 1417px) {
+    .block_minus {
+        width: 240px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .companies {
+        padding-top: 77px;
+        padding-bottom: 100px;
+    }
+    .start_list .start_list_item {
+        max-width: 318px;
+        margin-bottom: 25px;
+    }
+
+    .content a {
+        padding: 15px 108px 17px 61px;
+    }
+}
+@media (max-width: 1013px) {
+    
+}
+
+@media (max-width: 991px) {
+    
+    .ord {
+        order: 2;
+    }
+    .payment_two .costom_two {
+        order: 1;
+    }
+    .pre_footer {
+        padding-top: 30px;
+        padding-bottom: 43px;
+    }
+    .blog {
+        padding-top: 44px;
+        padding-bottom: 24px;
+    }
+    .start {
+        padding-top: 50px;
+        padding-bottom: 15px;
+    }
+    .start_list .start_list_item {
+        margin-bottom: 61px;
+    }
+    .aft::after  {
+        display: none;
+    }
+    .price {
+        padding-top: 39px;
+        padding-bottom: 50px;
+    }
+    .cosrumers_carousel {
+        padding-bottom: 51px;
+        padding-top: 43px;
+    }
+    .payment_two {
+        padding-top: 66px;
+        padding-bottom: 58px;
+    }
+    .costom_two {
+        padding-top: 20px;
+    }
+    .column_information {
+        padding-top: 42px;
+        padding-bottom: 10px;
+    }
+    .design {
+        padding-bottom: 15px;
+    }
+    .design_description {
+        padding-top: 25px;
+    }
+    .companies {
+        padding-bottom: 43px;
+    }
+    .picturies {
+        margin-left: 119px;
+    }
+    .demo_links {
+        justify-content: center;
+        padding-bottom: 15px;
+    }
+    .carousel_item {
+        text-align: center;
+    }
+    .carousel_item img {
+        margin: 0 auto;
+    }
+    .content a {
+        padding: 15px 108px 17px 108px;
+    }
+    .block_minus {
+        max-width: 240px;
+    }
+    .minus_flex {
+        display: flex;
+        justify-content:center;
+        padding-bottom: 20px;
+    }
+    .companies {
+        padding-top: 480px;
+    }
+}
+@media (max-width: 767px) {
+    .useful_links {
+        padding-bottom: 20px;
+    }
+    .start_list .start_list_item {
+        margin-bottom: 46px;
+    }
+    .start {
+        padding-top: 37px;
+        padding-bottom: 44px;
+    }
+    .content {
+        padding: 30px 44px 20px 45px;
+    }
+    .costom_two {
+        padding-top: 90px;
+    }
+    .picturies {
+        margin-left: 67px;
+    }
+    .start_list_item  {
+        margin: 0 auto;
+    }
+    .nav-menu ul.sub-menu {
+    margin-left: 42px;
+    }
+    
+}
+@media (max-width: 576px) {
+    .reviews {
+        
+        padding-top: 100px;
+    }
+    .costom_two {
+        padding-top: 160px;
+    }
+    .picturies {
+        margin-left: 55px;
+    }
+    .text_and_buttons .demo_links a {
+        padding: 1px 35px;
+    }
+    .burger {
+        display: flex;
+        justify-content:space-between;
+    }
+    .nav-menu {
+        display: none;
+    }
+    .responsive_menu {
+        display: block;
+    }
+}
+@media (max-width: 500px) {
+    .picturies {
+        margin-left: 34px;
+    }
+}
+@media (max-width: 470px) {
+    .content a {
+        width: 276px;
+    }
+    .content a {
+        padding: 15px 108px 17px 108px;
+    }
+    .picturies {
+        margin-left: 15px;
+    }
+}
