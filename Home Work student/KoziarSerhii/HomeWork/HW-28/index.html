@@ -25,26 +25,29 @@
     ctx.fillRect(30, 30, 50, 50);
 
     let canvasStar = document.getElementById('canvas-star');
-    let ctxHouse = canvasStar.getContext('2d');
+    let star = canvasStar.getContext('2d');
 
-    ctxHouse.fillStyle = 'rgb(200, 0, 0)';
-    ctxHouse.beginPath();
-    ctxHouse.moveTo(10, 60);
-    ctxHouse.lineTo(70, 60);
-    ctxHouse.lineTo(85, 0);
-    ctxHouse.lineTo(100, 60);
-    ctxHouse.lineTo(160, 60);
-    ctxHouse.lineTo(110, 85);
-    ctxHouse.lineTo(130, 150);
-    ctxHouse.lineTo(85, 100);
-    ctxHouse.lineTo(40, 150);
-    ctxHouse.lineTo(60, 85);
-    ctxHouse.fill();
 
-    ctxHouse.fillStyle = 'rgb(8,0,250)';
-    ctxHouse.beginPath();
-    ctxHouse.arc(85, 83, 81, 0, Math.PI * 2, false);
-    ctxHouse.stroke();
+    star.fillStyle = 'rgb(40,68,137)';
+    star.beginPath();
+    star.arc(85, 83, 81, 0, Math.PI * 2, false);
+    star.fill();
+    star.stroke();
+
+    star.fillStyle = 'rgb(255,255,255)';
+    star.beginPath();
+    star.moveTo(10, 60);
+    star.lineTo(70, 60);
+    star.lineTo(85, 0);
+    star.lineTo(100, 60);
+    star.lineTo(160, 60);
+    star.lineTo(110, 85);
+    star.lineTo(130, 150);
+    star.lineTo(85, 100);
+    star.lineTo(40, 150);
+    star.lineTo(60, 85);
+    star.fill();
+
 
     const workers = [
         {name: "Vasyl", lastName: "Barak", salary: 83000},
