@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <canvas id="canvas"></canvas>
+
+  <div></div>
+  
+</body>
+
+<script>
+
+  let canvas = document.getElementById('canvas');
+    let result = canvas.getContext('2d');
+    result.beginPath();
+      result.rect(20, 20, 150, 100);
+      result.fillStyle = "red";
+      result.fill();
+
+      result.beginPath();
+      result.arc(95, 70, 40, 0, 2 * Math.PI);
+      result.fillStyle = "blue";
+      result.fill();
+
+  const people = [
+    { name: 'Игорь', lastName: 'Иванов', age: 14, salary: 40000 },
+    { name: 'Татьяна', lastName: 'Петрова', age: 30, salary: 80000 },
+    { name: 'Андрей', lastName: 'Андреев', age: 44, salary: 3400 },
+    { name: 'Сергей', lastName: 'Попов', age: 16, salary: 1000 },
+    { name: 'Даша', lastName: 'Кузнецова', age: 57, salary: 2300 },
+    { name: 'Анатолий', lastName: 'Данилов', age: 20, salary: 11000 },
+    { name: 'Иван', lastName: 'Быков', age: 18, salary: 7000 },
+    { name: 'Алексей', lastName: 'Алексеев', age: 22, salary: 27000 },
+    { name: 'Олег', lastName: 'Смирнов', age: 26, salary: 5000 },
+    { name: 'Наталья', lastName: 'Соколова', age: 28, salary: 25000 }
+  ]
+
+  for (let student of people) {
+      if (student.salary > 5000) {
+        document.write(`${student.name} ${student.lastName} (${student.salary}) <br/>`);
+      }
+    }
+
+  const salary = people.filter(student => student.salary > 5000);
+  console.log(salary);
+
+ 
+
+    
+
+</script>
+
+</html>
