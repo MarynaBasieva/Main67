@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>
+    HW29
+    1) Создать любые две фигуры с помощью fill на canvas
+    2) создать массив объектов рабочих и получить данные по зарплате у которых больше 5000 грн (рабочих 10)
+    3) Вывести в документ фамилияю Имя рабочого с зарплатой больше 5000грн
+</p>
+<script>
+    const workers = [
+        {name: "Vasyl", lastName: "Barak", salary: 83000},
+        {name: "Serhii", lastName: "Kapusta", salary: 53000},
+        {name: "Andrii", lastName: "Glusko", salary: 53000},
+        {name: "Andrii", lastName: "Baranec", salary: 63000},
+        {name: "Volodymyr", lastName: "Tverdohlib", salary: 73000},
+        {name: "Serhii", lastName: "Kosyu", salary: 53000},
+        {name: "Bogdan", lastName: "Center", salary: 400},
+        {name: "Taras", lastName: "Druzba", salary: 5000},
+        {name: "Mukola", lastName: "Bam", salary: 63000},
+        {name: "Igor", lastName: "Alaska", salary: 63000},
+    ];
+    
+      for (let worker of workers) {
+      if (worker.salary > 5000) {
+        console.log(worker.name + ' ' + worker.lastName + ' ' + worker.salary);
+      }
+    }
+</script>
+</body>
+</html>
