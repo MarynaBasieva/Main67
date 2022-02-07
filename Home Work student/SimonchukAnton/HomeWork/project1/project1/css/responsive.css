@@ -1,0 +1,103 @@
+﻿@media (min-width: 1200px) {
+    .for_page .container {
+        max-width: 1110px;
+    }
+}
+
+@media (max-width: 1199px) {
+}
+
+@media (max-width: 1199px) {
+}
+
+@media (max-width: 991px) {
+    .responsive_menu {
+        display: block;
+    }
+
+    .nav-menu {
+        display: none;
+    }
+
+    .responsive_menu i {
+        font-size: 33px;
+        color: #00A4E5;
+        
+        transition: 0.3s;
+        cursor: pointer;
+    }
+
+        .responsive_menu i:hover {
+            color: #040264;
+        }
+    .parents_responsive_menu {
+        display: flex;
+        justify-content: space-between;
+    }
+    .OUR_STORY_h2_text  {
+        padding-bottom: 0px;
+    }
+    .OUR_STORY_h2_text h2 {
+        padding-bottom: 60px;
+    }
+    
+    .OUR_STORY_h2_text h2:after {
+        left: 302px;
+    }
+    .OUR_STORY p:first-child {
+        padding-bottom: 20px;
+    }
+    .OUR_CAPABILITIES_parents {
+        padding-top: 110px;
+        padding-bottom: 10px;
+    }
+    .OUR_STORY_img {
+        padding-top: 40px;
+    }
+    .buildings {
+        padding: 100px 0 150px;
+    }
+    .footer_about .row {
+        flex-wrap: nowrap;
+    }
+    }
+        @media (max-width: 576px) {
+            .OUR_STORY_h2_text h2:after {
+                left: 213px;
+            }
+            .OUR_STORY p {
+                text-align:center;
+            }
+            .OUR_CAPABILITIES_parents {
+                text-align: center;
+            }
+            
+                .OUR_CAPABILITIES_p1::before {
+                display: none;
+            }
+            .project_parents {
+                text-align: center;
+            }
+            
+            .Newsletter_button {
+                right: 0px;
+            }
+            .footer_about p{
+                font-size:8px;
+            }
+            .footer_about li {
+                font-size: 9px;
+            }
+            .fab {
+                margin:0 auto;
+            }
+            }
+
+        @media (max-width: 500px) {
+.OUR_STORY_h2_text h2:after {
+    left: 183px;
+}
+        }
+
+        @media (max-width: 470px) {
+        }

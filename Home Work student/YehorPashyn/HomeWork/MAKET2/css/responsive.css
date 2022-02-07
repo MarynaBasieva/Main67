@@ -1,0 +1,244 @@
+@media (min-width: 1200px){
+.for-page .container{
+    max-width: 1152px;
+}
+}
+@media (max-width: 1200px ){
+    .banner{
+        padding-top: 47px;
+        padding-bottom: 57px;
+    }
+    .banner .vase{
+        display: none;
+    }
+    .banner .vaseHidden{
+        display: block;
+        padding: 97px 0;
+    }
+    .banner .banner-text .title{
+        font-size: 42px;
+    }
+    .block2{
+        padding: 60px 0;
+    }
+    .block2 .transform .rotated{
+        display: none;
+    }
+    .options .Rotated .featured{
+        display: none;
+    }
+    .collection{
+        padding: 60px 0;
+    }
+    .collection .product .rotatedProduct{
+        display: none;
+    }
+    .ready{
+        margin-top: 20px;
+    }
+    .updates{
+        padding: 80px 0;
+    }
+    .updates .inTouch .intouchRotated{
+        display: none;
+    }
+}
+@media (max-width: 991px ){
+    .responsive_menu{
+        display: block;
+    }
+    .responsive_menu i{
+        font-size: 33px;
+        transition: .3s;
+        cursor: pointer;
+    }
+    .responsive_menu i:hover{
+        color: #AC1313;
+    }
+    .header .parent_responsive{
+        display: flex;
+        justify-content: space-between;
+    }
+    .header .nav{
+        display: none;
+    }
+    .banner .banner-text {
+        padding: 50px 0;
+        text-align: center;
+    }
+    .banner .vaseHidden {
+        padding: 50px 0;
+    }
+    .block2 .about .info:first-child{
+        margin-bottom: 40px;
+    }
+    .block2 .about .info .upperPart{
+        margin-bottom: 14px;
+    }
+    .options .description {
+        margin: 75px 0;
+    }
+    .ready{
+        padding: 100px 0;
+    }
+    .ready .inner .start{
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .ready .inner .addition {
+        font-size: 15px;
+    }
+    .updates{
+        padding: 40px 0;
+    }
+    .final{
+        padding: 40px 0;
+    }
+}
+@media (max-width: 767px ){
+    .banner .banner-text{
+        padding-top: 0;
+        margin-bottom: 20px;
+    }
+    .banner .banner-text .title {
+        font-size: 24px;
+    }
+    .banner .vaseHidden{
+        padding: 0;
+    }
+    .block2 {
+        padding: 30px 0;
+    }
+    .block2 img{
+        margin-bottom: 20px;
+    }
+    .block2 .text .porcelain{
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+    .block2 .text .porcelain .and{
+        font-size: 50px;
+    }
+    .block2 .about {
+        margin-top: 40px;
+    }
+    .options .description {
+        margin: 40px 0;
+    }
+    .options .description .aboutVase {
+        margin-top: 18px;
+        margin-bottom: 20px;
+    }
+    .collection .store {
+        margin-bottom: 30px;
+    }
+    .collection .store .online{
+        margin-bottom: 10px;
+    }
+    .collection .store .pottery{
+        font-size: 30px;
+    }
+    .collection .choice{
+        text-align: center;
+    }
+    .ready {
+        padding: 70px 0;
+    }
+    .ready .inner .start {
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .updates .news .latest{
+        margin-top: 20px;
+        margin-bottom: 0;
+    }
+    .updates .news .new{
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+    .updates .news .new .and{
+        font-size: 50px;
+    }
+    .updates .news .form{
+        margin-bottom: 25px;
+    }
+    .updates .news .form input {
+        width: 84%;
+        margin-bottom: 20px;
+    }
+    .updates .news .form button{
+        padding: 20px 70px;
+    }
+    .updates .news .signUp{
+        font-size: 20px;
+    }
+    .final .finalLogo{
+        max-width: 420px;
+        margin: 0 auto;
+    }
+    .final .finalLogo .finalText {
+        margin-top: 15px;
+        margin-bottom: 30px;
+        font-size: 20px;
+    }
+    .final .aboutUs{
+        margin-bottom: 20px;
+    }
+    .final .aboutUs .things {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 16px;
+        line-height: 10px;
+    }
+    .final .aboutUs a {
+        font-size: 18px;
+    }
+    .final .aboutUs .address{
+        font-size: 18px;
+        max-width: 200px;
+        margin: 0 auto;
+    }
+    .footer{
+        padding: 20px 0;
+    }
+}
+@media (max-width: 500px ){
+    .banner .banner-text .title {
+        font-size: 32px;
+        line-height: 40px;
+    }
+    .banner .banner-text .unique {
+        font-size: 19px;
+        line-height: 25px;
+    }
+    .ready{
+        padding: 30px 0;
+    }
+    .footer .footerInfo .designed{
+        font-size: 19px;
+    }
+    .footer .footerInfo .designed .who {
+        font-size: 19px;
+    }
+}
+@media (max-width: 400px ){
+    .page {
+        padding-bottom: 120px;
+    }
+    .banner .banner-text .title {
+        font-size: 25px;
+        line-height: 35px;
+    }
+    .banner .banner-text .title .and{
+        font-size: 45px;
+    }
+    .ready .inner .addition {
+        font-size: 20px;
+    }
+    .footer .footerInfo .designed{
+        font-size: 19px;
+    }
+    .footer .footerInfo .designed .who {
+        font-size: 19px;
+    }
+}

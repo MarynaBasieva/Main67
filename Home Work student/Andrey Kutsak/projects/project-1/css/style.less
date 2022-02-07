@@ -16,6 +16,95 @@ svg {
 li {
   list-style: none;
 }
+// modsal-window
+.modal-wraper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.611);
+  z-index: 999;
+  opacity: 1;
+  transition: height, width 0.1s, background-color 0.4s;
+  overflow: hidden;
+  padding: 30px 10px;
+  .close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: red;
+    cursor: pointer;
+    z-index: 10;
+  }
+  .content-wraper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: auto;
+    width: 80%;
+    .sign {
+      border-radius: 5px;
+      padding: 20px 10px;
+      max-width: 500px;
+      margin: 0 auto;
+      background-color: @magenta200;
+      .inp-wraper {
+        font-family: @rubik;
+        font-size: 20px;
+        text-transform: uppercase;
+        text-align: center;
+        color: @green100;
+        input {
+          font-family: @inter;
+          color: @white;
+          width: 100%;
+          border: 1px solid @orange;
+          border-radius: 5px;
+          padding: 15px 10px;
+          margin-bottom: 20px;
+          background: transparent;
+          &::placeholder {
+            font-family: @inter;
+            font-size: 16px;
+            font-weight: 400;
+            color: @white;
+          }
+          &:focus {
+            background-color: rgba(255, 255, 255, 0.392);
+            outline: none;
+          }
+        }
+        input[type="submit"] {
+          display: block;
+          max-width: 150px;
+          margin: 0 auto;
+          background-color: @orange;
+          color: @white;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  iframe {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16/9;
+  }
+}
+.hide {
+  height: 0;
+  width: 0;
+  overflow: hidden;
+  visibility: hidden;
+  opacity: 0;
+  background-color: rgba(255, 255, 255, 0);
+}
 // common
 .btn-wraper {
   .btn {

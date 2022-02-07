@@ -1,40 +1,5 @@
 @font-face {
   font-family: "Rubik";
-  src: url("../fonts/Rubik-BlackItalic.woff2") format("woff2"), url("../fonts/Rubik-BlackItalic.woff") format("woff");
-  font-weight: 900;
-  font-style: italic;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Rubik";
-  src: url("../fonts/Rubik-SemiBoldItalic.woff2") format("woff2"), url("../fonts/Rubik-SemiBoldItalic.woff") format("woff");
-  font-weight: 600;
-  font-style: italic;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Rubik";
-  src: url("../fonts/Rubik-MediumItalic.woff2") format("woff2"), url("../fonts/Rubik-MediumItalic.woff") format("woff");
-  font-weight: 500;
-  font-style: italic;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Rubik";
-  src: url("../fonts/Rubik-Bold.woff2") format("woff2"), url("../fonts/Rubik-Bold.woff") format("woff");
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Rubik";
-  src: url("../fonts/Rubik-ExtraBoldItalic.woff2") format("woff2"), url("../fonts/Rubik-ExtraBoldItalic.woff") format("woff");
-  font-weight: bold;
-  font-style: italic;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Rubik";
   src: url("../fonts/Rubik-Medium.woff2") format("woff2"), url("../fonts/Rubik-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
@@ -49,36 +14,8 @@
 }
 @font-face {
   font-family: "Rubik";
-  src: url("../fonts/Rubik-BoldItalic.woff2") format("woff2"), url("../fonts/Rubik-BoldItalic.woff") format("woff");
-  font-weight: bold;
-  font-style: italic;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Rubik";
-  src: url("../fonts/Rubik-ExtraBold.woff2") format("woff2"), url("../fonts/Rubik-ExtraBold.woff") format("woff");
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Rubik";
-  src: url("../fonts/Rubik-Italic.woff2") format("woff2"), url("../fonts/Rubik-Italic.woff") format("woff");
-  font-weight: normal;
-  font-style: italic;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Rubik";
   src: url("../fonts/Rubik-Black.woff2") format("woff2"), url("../fonts/Rubik-Black.woff") format("woff");
   font-weight: 900;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Rubik";
-  src: url("../fonts/Rubik-SemiBold.woff2") format("woff2"), url("../fonts/Rubik-SemiBold.woff") format("woff");
-  font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
@@ -515,6 +452,93 @@ svg {
 }
 li {
   list-style: none;
+}
+.modal-wraper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.611);
+  z-index: 999;
+  opacity: 1;
+  transition: height, width 0.1s, background-color 0.4s;
+  overflow: hidden;
+  padding: 30px 10px;
+}
+.modal-wraper .close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: red;
+  cursor: pointer;
+  z-index: 10;
+}
+.modal-wraper .content-wraper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: auto;
+  width: 80%;
+}
+.modal-wraper .content-wraper .sign {
+  border-radius: 5px;
+  padding: 20px 10px;
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: #516ea9;
+}
+.modal-wraper .content-wraper .sign .inp-wraper {
+  font-family: "Rubik", sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #99efd0;
+}
+.modal-wraper .content-wraper .sign .inp-wraper input {
+  font-family: "Inter", sans-serif, "roboto", "Open Sans";
+  color: #fff;
+  width: 100%;
+  border: 1px solid #f2994a;
+  border-radius: 5px;
+  padding: 15px 10px;
+  margin-bottom: 20px;
+  background: transparent;
+}
+.modal-wraper .content-wraper .sign .inp-wraper input::placeholder {
+  font-family: "Inter", sans-serif, "roboto", "Open Sans";
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+}
+.modal-wraper .content-wraper .sign .inp-wraper input:focus {
+  background-color: rgba(255, 255, 255, 0.392);
+  outline: none;
+}
+.modal-wraper .content-wraper .sign .inp-wraper input[type="submit"] {
+  display: block;
+  max-width: 150px;
+  margin: 0 auto;
+  background-color: #f2994a;
+  color: #fff;
+  cursor: pointer;
+}
+.modal-wraper iframe {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16/9;
+}
+.hide {
+  height: 0;
+  width: 0;
+  overflow: hidden;
+  visibility: hidden;
+  opacity: 0;
+  background-color: rgba(255, 255, 255, 0);
 }
 .btn-wraper .btn {
   font-family: "Rubik", sans-serif;

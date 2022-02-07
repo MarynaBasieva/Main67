@@ -1,0 +1,155 @@
+@media (max-width: 1078px) {
+  .last-site-item {
+    margin-right: 0px;
+  }
+}
+
+@media (max-width: 992px) {
+  .site {
+    text-align: center;
+  }
+  .nav-menu {
+    display: none;
+  }
+  .responsive_menu {
+    display: block;
+    margin: 30px 0px 60px 20px;
+  }
+  .responsive_menu i {
+    font-size: 33px;
+    color: #acacac;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  .responsive_menu i:hover {
+    color: #03d5e4;
+  }
+
+  .site-content .sitee {
+    display: block;
+  }
+
+  .site-item {
+    margin-right: 30px;
+  }
+
+  .wrap {
+    flex-wrap: wrap;
+  }
+
+  .polar {
+    margin-right: 0px;
+    margin-bottom: 20px;
+  }
+
+  .most-recent{
+    display: none;
+  }
+
+  .most-recent-slider{
+    display: flex;
+    background: #f7f7f7;;
+  }
+
+  .most-recent-slider .container .row .author-img{
+    width: 13%;
+  }
+
+  .nav-background .nav-menu-footer{
+    display: block;
+  }
+}
+
+@media (max-width: 660px) {
+  .site-item {
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+
+  .site-item {
+    margin-right: 20px;
+  }
+
+
+  .featured-posts-slider .author-date{
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .featured-posts-slider .polar p{
+    min-width: 45px;
+    margin-bottom: 24px;
+  }
+
+  .searchline-submit{
+    display: none;
+  }
+
+  .footer{
+    padding-top: 30px;
+  }
+
+  .searchbar {
+    margin-bottom: 40px;
+  }
+
+  .footer .searchline{
+    width: 250px;
+    padding: 2px 2px 2x 2px;
+  }
+
+  .nav-menu ul.site {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: center;
+    padding-top: 27px;
+  }
+  .site-content {
+    padding: 3px 0px;
+    margin-left: 32px;
+  }
+
+  .banner p {
+    padding: 0px 30px;
+  }
+
+  .featured-posts-slider .author-date{
+    flex-wrap: wrap;
+  }
+
+  
+}
+
+@media (max-width: 480px) {
+  .featured-posts {
+    padding: 15px 0px;
+  }
+  .wrap .recent-posts {
+    padding-left: 9px;
+    padding-right: 9px;
+  }
+
+  .most-recent-slider .small-block .author-date{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  
+  body > main > div > footer > div.nav-background > div > div > nav > ul > li:nth-child(1){
+    margin-right: 0px;
+  }
+}
+
+@media (max-width: 373px) {
+  .polar {
+    padding-top: 120px;
+  }
+
+  .ballon h3{
+    margin-top: 50px;
+  }
+}

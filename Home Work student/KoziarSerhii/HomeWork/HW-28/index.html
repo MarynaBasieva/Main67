@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>
+    HW29
+    1) Создать любые две фигуры с помощью fill на canvas
+    2) создать массив объектов рабочих и получить данные по зарплате у которых больше 5000 грн (рабочих 10)
+    3) Вывести в документ фамилияю Имя рабочого с зарплатой больше 5000грн
+</p>
+<canvas id="foobar" width="150" height="150"></canvas>
+<canvas id="canvas-star" width="300" height="300"></canvas>
+<div class="employees"></div>
+<script>
+    let canvas = document.getElementById('foobar');
+    let ctx = canvas.getContext('2d');
+
+    ctx.fillStyle = 'rgb(200, 0, 0)';
+    ctx.fillRect(10, 10, 50, 50);
+
+    ctx.fillStyle = 'rgba(0, 0, 200, 0.5)';
+    ctx.fillRect(30, 30, 50, 50);
+
+    let canvasStar = document.getElementById('canvas-star');
+    let star = canvasStar.getContext('2d');
+
+    star.fillStyle = 'rgb(255,0,0)';
+    star.beginPath();
+    star.arc(135, 133,98, 0, Math.PI * 2, false);
+    star.fill();
+    star.stroke();
+
+    star.fillStyle = 'rgb(255,255,255)';
+    star.beginPath();
+    star.arc(135, 133,89, 0, Math.PI * 2, false);
+    star.fill();
+    star.stroke();
+
+    star.fillStyle = 'rgb(40,68,137)';
+    star.beginPath();
+    star.arc(135, 133, 81, 0, Math.PI * 2, false);
+    star.fill();
+    star.stroke();
+
+    star.fillStyle = 'rgb(255,255,255)';
+    star.beginPath();
+    star.moveTo(60, 110);
+    star.lineTo(120, 110);
+    star.lineTo(135, 50);
+    star.lineTo(150, 110);
+    star.lineTo(210, 110);
+    star.lineTo(160, 135);
+    star.lineTo(180, 200);
+    star.lineTo(135, 150);
+    star.lineTo(90, 200);
+    star.lineTo(110, 135);
+    star.fill();
+
+
+    const workers = [
+        {name: "Vasyl", lastName: "Barak", salary: 83000},
+        {name: "Serhii", lastName: "Kapusta", salary: 53000},
+        {name: "Andrii", lastName: "Glusko", salary: 53000},
+        {name: "Andrii", lastName: "Baranec", salary: 63000},
+        {name: "Volodymyr", lastName: "Tverdohlib", salary: 73000},
+        {name: "Serhii", lastName: "Kosyu", salary: 53000},
+        {name: "Bogdan", lastName: "Center", salary: 400},
+        {name: "Taras", lastName: "Druzba", salary: 5000},
+        {name: "Mukola", lastName: "Bam", salary: 63000},
+        {name: "Igor", lastName: "Alaska", salary: 63000},
+    ];
+
+    let div = document.querySelector('.employees');
+    for (let worker of workers) {
+        if (worker.salary > 5000) {
+            let row = worker.name + ' ' + worker.lastName + ': ' + worker.salary;
+            let employee = document.createElement("p");
+            employee.appendChild(document.createTextNode(row));
+            div.appendChild(employee);
+        }
+    }
+</script>
+</body>
+</html>
