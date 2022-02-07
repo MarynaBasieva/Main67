@@ -12,7 +12,8 @@
     3) Вывести в документ фамилияю Имя рабочого с зарплатой больше 5000грн
 </p>
 <canvas id="foobar" width="150" height="150"></canvas>
-<canvas id="canvas-star" width="170" height="170" ></canvas>
+<canvas id="canvas-star" width="170" height="170"></canvas>
+<div class="employees"></div>
 <script>
     let canvas = document.getElementById('foobar');
     let ctx = canvas.getContext('2d');
@@ -39,7 +40,7 @@
     ctxHouse.lineTo(40, 150);
     ctxHouse.lineTo(60, 85);
     ctxHouse.fill();
-    
+
     ctxHouse.fillStyle = 'rgb(8,0,250)';
     ctxHouse.beginPath();
     ctxHouse.arc(85, 83, 81, 0, Math.PI * 2, false);
@@ -58,10 +59,13 @@
         {name: "Igor", lastName: "Alaska", salary: 63000},
     ];
 
-
+    let div = document.querySelector('.employees');
     for (let worker of workers) {
         if (worker.salary > 5000) {
-            console.log(worker.name + ' ' + worker.lastName + ' ' + worker.salary);
+            let row = worker.name + ' ' + worker.lastName + ': ' + worker.salary;
+            let employee = document.createElement("p");
+            employee.appendChild(document.createTextNode(row));
+            div.appendChild(employee);
         }
     }
 </script>
