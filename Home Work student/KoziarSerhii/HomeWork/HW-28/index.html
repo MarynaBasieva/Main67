@@ -12,7 +12,7 @@
     3) Вывести в документ фамилияю Имя рабочого с зарплатой больше 5000грн
 </p>
 <canvas id="foobar" width="150" height="150"></canvas>
-<canvas id="canvas-star" width="170" height="170"></canvas>
+<canvas id="canvas-star" width="300" height="300"></canvas>
 <div class="employees"></div>
 <script>
     let canvas = document.getElementById('foobar');
@@ -27,25 +27,36 @@
     let canvasStar = document.getElementById('canvas-star');
     let star = canvasStar.getContext('2d');
 
-
-    star.fillStyle = 'rgb(40,68,137)';
+    star.fillStyle = 'rgb(255,0,0)';
     star.beginPath();
-    star.arc(85, 83, 81, 0, Math.PI * 2, false);
+    star.arc(135, 133,98, 0, Math.PI * 2, false);
     star.fill();
     star.stroke();
 
     star.fillStyle = 'rgb(255,255,255)';
     star.beginPath();
-    star.moveTo(10, 60);
-    star.lineTo(70, 60);
-    star.lineTo(85, 0);
-    star.lineTo(100, 60);
-    star.lineTo(160, 60);
-    star.lineTo(110, 85);
-    star.lineTo(130, 150);
-    star.lineTo(85, 100);
-    star.lineTo(40, 150);
-    star.lineTo(60, 85);
+    star.arc(135, 133,89, 0, Math.PI * 2, false);
+    star.fill();
+    star.stroke();
+
+    star.fillStyle = 'rgb(40,68,137)';
+    star.beginPath();
+    star.arc(135, 133, 81, 0, Math.PI * 2, false);
+    star.fill();
+    star.stroke();
+
+    star.fillStyle = 'rgb(255,255,255)';
+    star.beginPath();
+    star.moveTo(60, 110);
+    star.lineTo(120, 110);
+    star.lineTo(135, 50);
+    star.lineTo(150, 110);
+    star.lineTo(210, 110);
+    star.lineTo(160, 135);
+    star.lineTo(180, 200);
+    star.lineTo(135, 150);
+    star.lineTo(90, 200);
+    star.lineTo(110, 135);
     star.fill();
 
 
