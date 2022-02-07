@@ -11,7 +11,40 @@
     2) создать массив объектов рабочих и получить данные по зарплате у которых больше 5000 грн (рабочих 10)
     3) Вывести в документ фамилияю Имя рабочого с зарплатой больше 5000грн
 </p>
+<canvas id="foobar" width="150" height="150"></canvas>
+<canvas id="canvas-star" width="170" height="170" ></canvas>
 <script>
+    let canvas = document.getElementById('foobar');
+    let ctx = canvas.getContext('2d');
+
+    ctx.fillStyle = 'rgb(200, 0, 0)';
+    ctx.fillRect(10, 10, 50, 50);
+
+    ctx.fillStyle = 'rgba(0, 0, 200, 0.5)';
+    ctx.fillRect(30, 30, 50, 50);
+
+    let canvasStar = document.getElementById('canvas-star');
+    let ctxHouse = canvasStar.getContext('2d');
+
+    ctxHouse.fillStyle = 'rgb(200, 0, 0)';
+    ctxHouse.beginPath();
+    ctxHouse.moveTo(10, 60);
+    ctxHouse.lineTo(70, 60);
+    ctxHouse.lineTo(85, 0);
+    ctxHouse.lineTo(100, 60);
+    ctxHouse.lineTo(160, 60);
+    ctxHouse.lineTo(110, 85);
+    ctxHouse.lineTo(130, 150);
+    ctxHouse.lineTo(85, 100);
+    ctxHouse.lineTo(40, 150);
+    ctxHouse.lineTo(60, 85);
+    ctxHouse.fill();
+    
+    ctxHouse.fillStyle = 'rgb(8,0,250)';
+    ctxHouse.beginPath();
+    ctxHouse.arc(85, 83, 81, 0, Math.PI * 2, false);
+    ctxHouse.stroke();
+
     const workers = [
         {name: "Vasyl", lastName: "Barak", salary: 83000},
         {name: "Serhii", lastName: "Kapusta", salary: 53000},
@@ -24,11 +57,12 @@
         {name: "Mukola", lastName: "Bam", salary: 63000},
         {name: "Igor", lastName: "Alaska", salary: 63000},
     ];
-    
-      for (let worker of workers) {
-      if (worker.salary > 5000) {
-        console.log(worker.name + ' ' + worker.lastName + ' ' + worker.salary);
-      }
+
+
+    for (let worker of workers) {
+        if (worker.salary > 5000) {
+            console.log(worker.name + ' ' + worker.lastName + ' ' + worker.salary);
+        }
     }
 </script>
 </body>
