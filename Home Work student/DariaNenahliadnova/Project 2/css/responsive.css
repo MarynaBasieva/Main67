@@ -1,0 +1,278 @@
+@media (min-width: 1600px){
+.for_page .container {
+    max-width: 1150px;
+}
+}
+@media (max-width: 1200px){
+    .banner {
+        padding-bottom: 0px;
+    }
+    
+    .banner-text h1 {
+        font-size: 44px;
+    }
+    .block3 .block3-reviews .item-icon {
+        padding: 58px 30px 15px;
+    }
+    .block3-reviews .item-icon::before {
+        left: 30px;
+        top: 32px;
+    }
+}
+@media (max-width: 991px){
+    body .header{
+        background-color:#fff;
+    }
+    .responsive-menu {
+        display: block;
+        padding-top: 25px;
+    }
+    .responsive-menu i {
+        font-size: 33px;
+        color: #2D74FF;
+        transition: 0.5s;
+        cursor: pointer;
+    }
+    .responsive-menu i:hover{
+        transform: scale(1.2);
+        transition: 1s;
+        color: rgb(46, 116, 255, 0.5);
+    }
+    .logo{
+        display: flex;
+        justify-content: space-between;
+    }
+    .navigation,
+    .btn-btn{
+        display: none;
+    }
+    .banner {
+        padding-bottom: 115px; 
+        background-position: top 0px right -26px;
+    }
+    .banner p {
+        padding-left: 68px;
+        display: block;
+        padding-top: 30px;
+    }
+    .banner p::before {
+        left: 5px;
+        top: 20px;
+    }
+    .banner-text h3 {
+        padding-top: 20px;
+        padding-bottom: 0;
+    }
+    .banner-text{
+        padding-bottom: 0;
+    
+    }
+    .banner .banner-img {
+        bottom: -20px;
+        right: 0; 
+    }
+    .banner-text h1 {
+        font-size: 38px;
+    }
+    .btn-btn a {
+        font-size: 16px;
+    }
+    .block1-text {
+        text-align: center;
+    }
+    .block1-video {
+        justify-content: center;
+        padding-top: 70px;
+    }
+    .block1-video .play {
+        transform: translate(-90%,-11%);
+    }
+    .block1{
+        padding-bottom: 80px;
+    }
+    .block3 {
+        padding-bottom: 70px;
+    }
+    .block4 {
+        padding-bottom: 80px;
+    }
+    footer .logo2{
+        padding: 0;
+    }
+    .logo2:after {
+        left: 32px;
+        top: 29px;
+    }
+    .footer-block2 {
+        padding-top: 38px;
+    }
+    .footer-home {
+        padding-right: 10px;
+    }
+    .footer-pages {
+        padding-right: 10px;
+    }
+    .contact-us img {
+        padding-right: 16px;
+    }
+    .contact-us .mail {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 767px){
+    .container h3 {
+        font-size: 14px;
+    }
+    .banner-text h1 {
+        font-size: 36px;
+        padding-bottom: 15px;
+    }
+    .btn-btn a {
+        font-size: 15px;
+    }
+    .banner {
+        padding-bottom: 60px;
+        background-position: top 0px right -63px;
+    }
+    .banner p {
+        font-size: 15px;
+        display: inline-block;
+        padding-top: 34px;
+        padding-left: 54px;
+    }  
+    .banner .banner-img {
+        right: 90px;
+    }
+    .banner p::before {
+        left: 0px;
+        top: 20px;
+    }
+    .banner p {
+        padding-left: 68px;
+        display: block;
+    }
+    
+    .for_page h2 {
+        font-size: 28px;
+        padding-bottom: 10px;
+    }
+    .block1 p {
+        font-size: 16px;
+        padding-bottom: 20px;
+    }
+    .block1-video {
+        justify-content: center;
+        padding-top: 50px;
+    }
+    .icon1 {
+        padding: 30px 40px 15px;
+        margin-bottom: 20px;
+    }
+    .block2 p {
+        font-size: 16px;
+        padding-top: 0;
+    }
+    .block2 {
+        padding-bottom: 60px;
+    }
+    .block3 .block3-reviews .item-icon {
+        font-size: 14px;
+        padding: 44px 37px 15px;
+    }
+    .block3-reviews .item-icon::before {
+        left: 38px;
+        top: 12px;
+    }
+    .person-name h4{
+        font-size: 18px;
+    }
+    .person-name p{
+        font-size: 14px;
+    }
+    .block3-person {
+        padding-bottom: 10px;
+    }
+    .block3 {
+        padding-bottom: 22px;
+    }
+    .block4-text p {
+        font-size: 15px;
+        padding-bottom: 10px;
+    }
+    .pform {
+        width: 380px;
+    }
+    .input-email {
+        width: 258px;
+        font-size: 14px;
+    }
+    footer .logo2 p {
+        font-size: 14px;
+        padding-top:0;
+    }
+    footer li a {
+        font-size: 14px;
+        line-height: 30px;
+    }
+    footer h4 {
+        font-size: 16px;
+        padding-bottom: 5px;
+    }
+}
+    @media (max-width: 500px){
+    .banner {
+        padding-top: 20px;
+    }
+    .banner-text h1 {
+        font-size: 33px;
+    }
+    .banner {
+        padding-bottom: 0px;
+    }
+    .for_page h2 {
+        font-size: 25px;
+    }
+    .block1 p {
+        font-size: 14px;
+        padding-bottom: 14px;
+    }
+    .icon1 h4 {
+        font-size: 17px;
+    }
+    .block2 p {
+        font-size: 14px;
+    }
+    .circle img {
+        box-shadow: 0px 1px 2px 20px #f4f4f4;
+        width: 7%;
+    }
+    .block4-text p {
+        font-size: 13px;
+        padding-bottom: 0px;
+    }
+    .block4 {
+        padding-bottom: 30px;
+    }
+    .contact-us .mail {
+        font-size: 12px;
+    }
+    .contact-us img {
+        padding-right: 15px;
+    }
+    footer {
+        padding-bottom: 10px;
+    }
+}
+    @media (max-width: 467px){
+        .pform {
+            width: 320px;
+        }
+        .input-email {
+            width: 197px;
+            font-size: 12px;
+        }
+
+    }
+
+
