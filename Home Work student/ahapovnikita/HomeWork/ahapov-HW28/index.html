@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW28</title>
+</head>
+
+<body>
+    <h1 style="font-size: 48px; background-color: aqua;">HW28</h1>
+    <canvas id="canvas" width="480" height="280" style="border:5px dotted #f0b0b0;"></canvas>
+    <script>
+        //
+        const canvas = document.getElementById('canvas');
+        const ctx = canvas.getContext('2d');
+
+        ctx.beginPath();
+        ctx.rect(20, 20, 150, 150);
+        ctx.fillStyle = "aqua";
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.rect(200, 20, 150, 150);
+        ctx.fillStyle = "orange";
+        ctx.fill();
+
+
+        // 2
+
+        let employees = [{
+                'name': 'Olha',
+                'surname': 'Shevchenko',
+                'salary': 5000,
+            },
+            {
+                'name': 'Mark',
+                'surname': 'Anthony',
+                'salary': 1000,
+            },
+            {
+                'name': 'Yuryi',
+                'surname': 'Sokolov',
+                'salary': 2000,
+            },
+            {
+                'name': 'Joakim',
+                'surname': 'Third',
+                'salary': 5000,
+            },
+            {
+                'name': 'Liza',
+                'surname': 'Groove',
+                'salary': 4900,
+            },
+            {
+                'name': 'Tony',
+                'surname': 'Luka',
+                'salary': 500,
+            },
+            {
+                'name': 'Leroy',
+                'surname': 'Sane',
+                'salary': 6000,
+            },
+            {
+                'name': 'Yosef',
+                'surname': 'Koletzki',
+                'salary': 3000,
+            },
+            {
+                name: 'Mike',
+                surname: 'Sam',
+                salary: 5000,
+            },
+            {
+                name: 'Timothey',
+                surname: 'Rose',
+                salary: 3000,
+            }
+        ]
+
+        let salary = employees.filter(employees => {
+            if (employees.salary >= 5000) {
+                return true;
+            }
+        });
+        console.log(salary);
+
+
+        console.log('\n');
+
+        for (let partners of employees) {
+            if (partners.salary >= 5000) {
+                document.write(`${partners.name} ${partners.surname}: ${partners.salary}<br/>`);
+            }
+        }
+    </script>
+</body>
+
+</html>
