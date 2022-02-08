@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+</body>
+   <script>
+        let canvasNew = document.getElementById('canvas');
+        let result = canvasNew.getContext('2d');
+
+        result.strokeRect(50,50,50,50);
+
+        result.beginPath();
+        result.rect(200,10,100,100);
+        result.fillStyle = 'red';
+        result.fill();
+
+        const people = [
+            {surname:'Иванов', name:'Иван', salary:4000},
+            {surname:'Петров', name:'Олег', salary:3500},
+            {surname:'Шевченко', name:'Олександр', salary:5100},
+            {surname:'Дуров', name:'Андрей', salary:5500},
+            {surname:'Кравчук', name:'Игорь', salary:6000},
+            {surname:'Исаев', name:'Илья', salary:2000},
+            {surname:'Яковлев', name:'Сергей', salary:9000},
+            {surname:'Макеев', name:'Артур', salary:7000},
+            {surname:'Прилучный', name:'Дмитрий', salary:6999},
+            {surname:'Данилов', name:'Богдан', salary:4999}
+        ]
+
+        const getSalary = people.filter(person => person.salary > 5000)
+        console.log(getSalary)
+
+        const names = people.filter(person => {
+            if(person.salary > 5000) {
+                document.write(person.name +  ' ' + person.surname + '<br>')
+            }
+        })
+        
+
+        
+
+    </script>
+</html>
