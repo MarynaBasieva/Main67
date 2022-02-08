@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>includes, sort, reverse</title>
+</head>
+<script>
+	//arr.includes(searchElement, fromIndex)
+	let arr = [1,2,3,4,5,NaN];
+	
+	console.log(arr.includes(2));//true
+	console.log(arr.includes(8));//false
+	console.log(arr.includes(3,2));//true
+	console.log(arr.includes(NaN));//false
+	console.log(arr.indexOf(NaN));//-1
+	
+	
+	///sort
+	/// arr.sort(compareFunction)
+	
+	let arr2 = [0,1,4,10,14,20];
+	arr2.sort();
+	console.log(arr2);
+	
+	
+	//reverse
+	
+	let arr3  = [1,2,3,4,"a","b","cat"];
+	console.log(arr3.reverse());
+</script>
+<body>
+</body>
+</html>

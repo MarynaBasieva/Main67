@@ -1,0 +1,170 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Objects</title>
+</head>
+<script>
+	/*let user = new Object();//конструктор
+	let user2 = {};// литерал Объекта
+	console.log(user);
+	console.log(user2);*/
+	let filterSearch = "Home";
+	let user = {
+		name:"Maryna",
+		age:30,
+		"Last Name":"Basieva",
+		[filterSearch + " js"]:true,
+	};
+	//console.log(user);
+	console.log(user.name);
+	console.log(user['name']);
+	console.log(user['Last Name']);
+	//console.log(user["Home js"]);
+	//console.log(user[filterSearch]);
+	
+	
+	/*let user2={
+		let: "Maryna",
+		for:30,
+	};
+	console.log(user2.let);
+	console.log(user2.for);
+	
+	*/
+	
+	let user3 = {
+		0: "Maryna",
+	};
+	console.log(user3[0]);
+	console.log(user3["0"]);
+	
+	//Тип данных Symbol
+	let id = Symbol("id");
+	let userInfo = {
+		name:"Maryna",
+		age:30,
+		[id]: "Не которое значение"
+	};
+	console.log(userInfo);
+	
+	
+	
+	let userInfo2 = {
+		name:"Maryna",
+		age:30,
+		adress:{
+			city:"Kiev",
+			street:"Chastlivay",
+		}
+	};
+	console.log(userInfo2);
+	console.log(userInfo2.adress);
+	console.log(userInfo2.adress.city);
+	
+	//cвойства переменной
+	
+	function FooInfo(name,age){
+		return{
+			name:name,
+			age:age,
+			
+		};
+	}
+	let user4 = FooInfo("Maryna",30);
+	console.log(user4);
+	
+	
+	let user5 = {
+		name: "Maryna",
+	}
+	console.log(user5);
+	
+	user5.age = 30;
+	console.log(user5);
+	
+	user5['Last Name'] = "Basieva";
+	console.log(user5);
+	
+	user5.adress = {
+		city: "Kiev",
+		street:"Chastlivay",
+	}
+	console.log(user5);
+	
+	
+	let userInfo3={
+	    name:"Maryna",
+		age:30,
+		"Last Name": "Basieva",
+	};
+	console.log(userInfo3);
+	
+	delete userInfo3.age;
+	console.log(userInfo3);
+	
+	delete userInfo3["Last Name"];
+	console.log(userInfo3);
+	
+	//изменить значение свойства
+	let userInfo4={
+	    name:"Maryna",
+		age:30,
+	};
+	console.log(userInfo4);
+	
+	userInfo4.age = 18;
+	console.log(userInfo4);
+	
+	
+	let userInfo5={
+	    name:"Maryna",
+		age:30,
+	};
+	console.log(userInfo5);
+	
+	let userNewObj = userInfo5;
+	
+	console.log(userNewObj);
+	
+	
+	userNewObj.age =18;
+	
+	console.log(userInfo5);
+	
+	
+	//дублирование объектов (Object.assign)
+	//Object.assign(куда(объект), что(свойство #1), что(свойство #2),...);
+	
+	
+	
+	let userInfo6={
+	    name:"Maryna",
+		age:30,
+	};
+	
+	Object.assign(userInfo6, {['Last Name']:"Basieva", city:"Kiev"});
+	console.log(userInfo6);
+	
+	let userNewAssin = Object.assign({}, userInfo6);
+	userNewAssin.age = 18;
+	
+	console.log(userInfo6);
+	console.log(userNewAssin);
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</script>
+<body>
+</body>
+</html>
