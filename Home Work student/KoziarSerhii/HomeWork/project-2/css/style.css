@@ -2,16 +2,101 @@
     padding: 0;
     margin: 0;
 }
+
 body {
-    font-family: 'Roboto', sans-serif;
-    font-size: 14px;
+    font-family: 'Gothic A1', sans-serif;
+    font-style: normal;
+    font-weight: normal;
 }
+
+body h2 {
+    font-family: 'Gothic A1', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+}
+
 img {
     max-width: 100%;
     width: auto;
     height: auto;
 }
+
 .container {
     border: solid black 1px;
     max-width: 1296px;
 }
+
+
+.header-banner {
+    background: linear-gradient(287.15deg, #450E4B 0%, #3C0C41 24.48%, rgba(207, 0, 99, 0) 100%), #CF0063;
+
+}
+
+.header .container .row {
+    max-width: 1152px;
+    margin: 0 auto;
+    padding: 28px 0;
+    align-items: center;
+}
+
+.header .sub-menu {
+    list-style: none;
+    display: flex;
+    justify-content: end;
+    margin-bottom: 0;
+
+}
+
+.header .sub-menu li {
+    margin: 0 15px;
+    font-size: 15px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+
+.header .sub-menu li a {
+    font-size: 15px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+
+/*momentum*/
+.momentum .container {
+    max-width: 1152px;
+    margin: 0 auto;
+    padding-top: 198px;
+
+    background-image: url("../img/header-banner.png");
+    background-repeat: no-repeat;
+    background-position: 99% 50%;
+}
+
+.momentum h2 {
+    font-size: 80px;
+    line-height: 80px;
+    color: #FFFFFF;
+}
+
+.momentum p {
+    margin-top: 10px;
+    font-size: 30px;
+    line-height: 44px;
+    color: #FFFFFF;
+}
+
+.momentum .buttonMomentum {
+    background: #FC0A7E;
+    border-radius: 3px;
+    border: none;
+    width: 170px;
+    height: 68px;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #FFFFFF;
+
+    margin-top: 25px;
+    margin-bottom: 277px;
+}
+
+/*momentum*/
