@@ -1,0 +1,350 @@
+@media (min-width: 1200px){
+.for-page .container{
+    max-width: 1111px;
+}
+}
+@media (max-width: 1200px ){
+    .header{
+        padding: 20px;
+    }
+    .block2{
+        padding-top: 40px;
+        margin-bottom: 110px;
+    }
+    .block2 .work .business{
+        font-size: 52px;
+        line-height: 64px;
+        margin: 20px 0;
+    }
+    .block2 .work .understand{
+        margin-bottom: 30px;
+    }
+    .picture{
+        display: none;
+    }
+    .block2 .pictureHidden{
+        display: block;
+        position: relative;
+    }
+    .block2 .pictureHidden .icons{
+        position: absolute;
+        bottom: -245px;
+        left: 0;
+    }
+    .block4 {
+        margin-bottom: 110px;
+    }
+    .block4 .service .needed {
+        line-height: 64px;
+    }
+    .block4 .part {
+        margin-top: 50px;
+    }
+    .block4 .part .partTitle {
+        line-height: 24px;
+        margin: 25px 0;
+        font-size: 22px;
+    }
+    .block4 .part .desc {
+        line-height: 24px;
+    }
+    .block5{
+        margin-bottom: 40px;
+    }
+    .block5 .innerPart .innerTitle{
+        line-height: 64px;
+    }
+    .block5 .blocks {
+        margin-top: 60px;
+    }
+    .block5 .blocks .blocksTitle {
+        margin-bottom: 25px;
+    }
+    .block5 .blocks .blocksDesc {
+        line-height: 26px;
+    }
+    .block5 .blocks2 .blocksTitle{
+        margin-bottom: 25px;
+    }
+    .block5 .blocks2 .blocksDesc {
+        line-height: 25px;
+    }
+    .block6{
+        margin-bottom: 100px;
+    }
+    .block6 .blog .blogText {
+        margin-bottom: 10px;
+    }
+    .block6 .blog .blogTitle {
+        line-height: 64px;
+        margin-bottom: 20px;
+    }
+    .carousel .publishing img{
+        margin-bottom: 30px;
+    }
+    .carousel .publishing .title{
+        margin-bottom: 20px;
+        font-size: 21px;
+    }
+    .carousel .publishing .About{
+        line-height: 25px;
+    }
+    .block7{
+        padding: 40px 0;
+    }
+}
+@media (max-width: 991px ){
+    .header .responsive_menu{
+        display: block;
+    }
+    .header .parent_responsive{
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+    .header .responsive_menu .fas:hover{
+        cursor: pointer;
+        color: #FF823B;
+    }
+    .header .nav {
+        display: none;
+    }
+    .header .login{
+        display: none;
+    }
+    .block2 .work{
+        padding-bottom: 60px;
+    }
+    .block2 .work .works{
+        margin: 0 auto;
+    }
+    .block2 .work{
+        text-align: center;
+    }
+    .block2 .work .understand{
+        margin: 0 auto;
+        max-width: 525px;
+        margin-bottom: 30px;
+    }
+    .block2 .pictureHidden .icons {
+        bottom: -170px;
+        left: 30px;
+    }
+    .block3{
+        margin-bottom: 50px;
+    }
+    .block4{
+        margin-bottom: 80px;
+    }
+    .block4 .service .needed{
+        line-height: 55px;
+        font-size: 34px;
+    }
+    .block4 .understanding {
+        margin-top: 66px;
+    }
+    .block4 .part{
+        text-align: center;
+        margin: 30px 0;
+    }
+    .block4 .part .partTitle{
+        line-height: 10px;
+    }
+    .block4 .part .bggreen{
+        margin: 0 auto;
+    }
+    .block4 .part .desc{
+        margin-bottom: 35px;
+    }
+    .block4 .part .bgyellow{
+        margin: 0 auto;
+    }
+    .block4 .part .bgpink{
+        margin: 0 auto;
+    }
+    .block5 .innerPart .innerTitle{
+        font-size: 38px;
+        line-height: 50px;
+    }
+    .block5 .part2{
+        padding-top: 40px;
+    }
+    .block5 .part2 table .num{
+        font-size: 30px;
+    }
+    .block5 .part2 table .middle{
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .block5 .part2 table .orders{
+        line-height: 18px;
+    }
+    .block5 .part2 table tr td {
+        padding: 5px;
+    }
+}
+@media (max-width: 767px ){
+    .block2 .work .business {
+        font-size: 46px;
+        line-height: 50px;
+    }
+    .block4 .understanding {
+        margin-top: 30px;
+    }
+    .block4 {
+        margin-bottom: 50px;
+    }
+    .block5 .part2{
+        text-align: center;
+    }
+    .block5 .part2 table tr td {
+        padding: 11px;
+    }
+    .block5 .part2 table .middle {
+        font-size: 20px;
+        line-height: 27px;
+    }
+    .block5 .part2 table .orders {
+        font-size: 17px;
+    }
+    .block5 .blocks2 {
+        margin-top: 40px;
+    }
+    .block6 .blog .blogTitle {
+        line-height: 50px;
+        font-size: 34px;
+    }
+    .carousel {
+        margin-top: 20px;
+    }
+    .block6{
+        margin-bottom: 50px;
+    }
+    .block7{
+        text-align: center;
+    }
+    .block7 .final{
+        margin-bottom: 40px;
+    }
+    .block7 .final .finalTitle{
+        font-size: 35px;
+        line-height: 46px;
+    }
+    .block7 .finalNav{
+        margin: 30px 0;
+        padding-top: 0;
+    }
+    .block7 .info a{
+        line-height: 25px;
+    }
+    .footer .socials a{
+        margin-left: 15px;
+    }
+}
+@media (max-width: 500px ){
+    .block2 .work{
+        padding-top: 0;
+    }
+    .block2 .work .business {
+        font-size: 39px;
+        line-height: 44px;
+    }
+    .block3{
+        margin-bottom: 30px;
+    }
+    .block4 .service .needed{
+        line-height: 42px;
+    }
+    .block4 {
+        margin-bottom: 30px;
+    }
+    .block5 {
+        margin-bottom: 30px;
+    }
+    .block5 .innerPart .innerTitle {
+        font-size: 37px;
+        line-height: 46px;
+    }
+    .block5 .blocks {
+        margin-top: 30px;
+    }
+    .block6 {
+        margin-bottom: 50px;
+    }
+    .block6 .blog .blogTitle {
+        line-height: 33px;
+        font-size: 30px;
+    }
+    .block7 .final .finalTitle {
+        font-size: 31px;
+        line-height: 41px;
+    }
+    .block7 .final .finalTitle{
+        margin-bottom: 35px;
+    }
+    .footer .socials a{
+        margin-left: 10px;
+    }
+}
+@media (max-width: 400px ){
+    .page{
+        padding-bottom: 100px;
+    }
+    .block2 .work .business {
+        font-size: 29px;
+    }
+    .block2 .work .buttons{
+        display: flex;
+        flex-direction: column;
+    }
+    .block2 .work .buttons .get {
+        width: 100%;
+    }
+    .block2 .work .buttons .demo{
+        width: 100%;
+    }
+    .block5 .part2 table tr td {
+        padding: 5px;
+    }
+    .block7 .final .finalTitle {
+        font-size: 25px;
+        line-height: 37px;
+        margin-bottom: 20px;
+    }
+    .block7 .final .finalBtn{
+        display: flex;
+        flex-direction: column;
+    }
+    .block7 .final {
+        margin-bottom: 30px;
+    }
+    .footer{
+        text-align: center;
+    }
+    .footer .footerText .footerCopy{
+        position: static;
+    }
+    .footer .socials {
+        text-align: center;
+    }
+    .block5 .part2 table .num {
+        font-size: 20px;
+    }
+    .block5 .part2 table .middle {
+        font-size: 20px;
+        line-height: 17px;
+    }
+    .block5 .part2 table .orders {
+        font-size: 17px;
+    }
+    .block5 .part2 table tr td{
+        padding: 0;
+    }
+    .block4 .part .partTitle {
+        line-height: 22px;
+    }
+    .block2 .pictureHidden .icons {
+        bottom: -103px;
+        left: 5px;
+    }
+}
