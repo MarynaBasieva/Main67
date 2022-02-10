@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Object</title>
+</head>
+<script>
+	
+	//console.log(user.age);
+	 /* if(user.name){
+		  console.log(user.name);
+	  }*/
+	
+	//console.log(user?.adrees?.street);//проверка существующего свойства
+	/*			
+	if("name" in user){
+		console.log(user.name);
+	}*/
+	
+	
+	/*for(let key in object){
+		//тело цикла выполняется для каждого свойства объекта
+	}
+	*/
+	
+	
+	/*for(let key in user){
+		//ключи
+		console.log(key);
+		//значение ключей
+		console.log(user[key]);
+	}
+	
+	for(let key in user.adrees){
+		//ключи
+		console.log(key);
+		//значение ключей
+		console.log(user.adrees[key]);
+	}*/
+	
+	let user ={
+	    name: "Maryna",
+		age: 30,
+		adrees:{
+			city:"Kiev",
+			street:"Shastlivay",
+		},
+		
+	 ShowObj(){
+		 //function Show(){
+		/*console.log(`${user.name}, ${user.age} Adress town: ${user.adrees.city}, ${user.adrees.street}`);*/
+		 console.log(`${this.name}, ${this.age} Adress town: ${this.adrees.city}, ${this.adrees.street}`);
+		}
+		/* let Show =() => console.log(`${this.name}, ${this.age} Adress town: ${this.adrees.city}, ${this.adrees.street}`);
+		 Show();
+	 }*/
+	};
+	
+	user.ShowObj();
+	
+	let UserNew = user;
+	user=null;
+	UserNew.ShowObj();
+	
+	
+	function UserInfo(name, age){
+		//this ={}; //Создаем пустой объект(неявный)
+		this.name = name;
+		this.age = age;
+		//return this //возвращает объект (неявно)
+	}
+	console.log(new UserInfo("Mari", 30));
+	console.log(new UserInfo("Petr",40));
+	
+	
+	
+	
+	
+	
+</script>
+<body>
+</body>
+</html>

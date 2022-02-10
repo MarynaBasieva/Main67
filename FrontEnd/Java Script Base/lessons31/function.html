@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>function</title>
+</head>
+<script>
+	let  foo = myFunction(3,4);
+	function myFunction(a,b){
+		return a+b;
+	}
+	console.log(foo);
+	 
+	let foo2 =(a,b) => a+b;
+	console.log(foo2(3,4));
+	console.log(foo2(3,4));
+	
+	
+	let age = prompt("сколько Вам лет?",18);
+	let mess = (age<18) ?
+		() => alert("Hello"):
+	    () => alert("hi Hello");
+	mess();
+	//let Func = (a,b) => option code
+</script>
+<body>
+</body>
+</html>

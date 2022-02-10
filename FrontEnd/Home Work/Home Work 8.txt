@@ -1,0 +1,5 @@
+1) https://odesseo.com.ua/chto-takoe-mikrorazmetka/ (прочитать статью о микроразметки)
+2) Взять весомое изображение оптимизировать с помощью https://tinypng.com/
+И переводим в формат webP. 
+https://www.online-convert.com/ru/result#j=7e229acd-73ba-4d58-b98a-9d5459ae4e00
+Прописать правильно alt, title
