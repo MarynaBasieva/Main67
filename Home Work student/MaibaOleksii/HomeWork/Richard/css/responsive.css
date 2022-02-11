@@ -1,0 +1,200 @@
+@media (min-width: 1400px) {
+  .page .container {
+    max-width: 1300px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .about-text {
+    margin: 35px 0 30px 0;
+  }
+
+  .about-img {
+    width: 950px;
+  }
+
+  .icon {
+    margin-top: 90px;
+  }
+
+  .statistic {
+    margin-top: 60px;
+  }
+
+  .food-text {
+    margin-top: 160px;
+    padding: 0px 50px;
+  }
+
+  .food-img {
+    margin-top: 125px;
+  }
+
+  .food-text2 {
+    padding: 0px 49px;
+  }
+}
+
+@media (max-width: 991px) {
+  .banner-text {
+    margin-top: 120px;
+  }
+
+  .about-img {
+    width: 690px;
+  }
+
+  .app-text {
+    margin: 160px 0 0 0;
+  }
+
+  .app-img img {
+    max-height: 500px;
+  }
+
+  .app-img-two {
+    margin: 130px 0px 0 0px;
+  }
+
+  .icon-text {
+    margin-bottom: 40px;
+    margin-right: 0;
+  }
+
+  .statistic {
+    margin-top: 40px;
+  }
+
+  .statistic-text {
+    margin-bottom: 40px;
+  }
+
+  .food-text {
+    margin-top: 80px;
+  }
+
+  .food-img {
+    margin-top: 60px;
+    text-align: center;
+  }
+
+  .food-img2 {
+    order: 2;
+    text-align: center;
+    margin-top: 60px;
+  }
+
+  .reviews-text {
+    margin: 100px 0 160px 0;
+  }
+
+  .started-text {
+    padding: 75px 0 100px 0;
+  }
+
+  .form {
+    padding-top: 80px;
+  }
+
+  .form-input {
+    padding: 15px 130px 15px 15px;
+    outline: none;
+  }
+  .form-btn {
+    padding: 17px 30px;
+  }
+
+  .form form {
+    margin-bottom: 70px;
+  }
+}
+
+@media (max-width: 767px) {
+  .parent-logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .responsive-menu {
+    display: block;
+  }
+
+  .responsive-menu i {
+    font-size: 26px;
+    color: #ffffff;
+    cursor: pointer;
+  }
+
+  .sub-menu {
+    display: none;
+  }
+
+  .banner-text {
+    margin-top: 70px;
+  }
+
+  .banner-text h1 {
+    font-size: 60px;
+    line-height: 70px;
+  }
+
+  .banner-img img {
+    width: 500px;
+  }
+
+  .about-img {
+    width: 530px;
+  }
+
+  .app-text {
+    margin: 90px 0 0 150px;
+  }
+
+  .app-img {
+    margin-top: 60px;
+    text-align: center;
+  }
+
+  .app-img-two {
+    margin: 70px 0px 0 0px;
+    order: 2;
+    text-align: center;
+  }
+
+  .food-text {
+    margin-top: 40px;
+  }
+
+  .reviews-text {
+    margin: 85px 0 140px 0;
+  }
+  .footer-link {
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .parent-logo {
+    margin-top: 0px;
+  }
+
+  .logo img {
+    margin-top: 30px;
+  }
+
+  .nav-menu {
+    margin-top: 0;
+  }
+
+  .sub-menu li a {
+    margin-right: 10px;
+  }
+
+  .about-img {
+    width: 450px;
+  }
+}
+
+@media (max-width: 470px) {
+}
