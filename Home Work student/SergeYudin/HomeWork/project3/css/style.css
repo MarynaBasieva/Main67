@@ -1,0 +1,845 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+}
+
+.responsive_menu {
+  display: none;
+}
+
+.orng-btn-no_background {
+  color: #e27b3a;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+}
+
+.orng-btn-no_background_border {
+  padding: 12px 30px;
+  border: 1px solid #e27a3a3f;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.orng-btn-no_background:hover {
+  text-decoration: none;
+  color: #e27b3a;
+}
+
+.orng-btn {
+  color: white;
+  padding: 12px 30px;
+  background-color: #e27b3a;
+  transition: 0.5s ease-out, 0.5s ease-in;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  border-radius: 24px;
+}
+
+.orng-btn:hover {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  background-color: #fae900;
+}
+
+.wht-btn {
+  color: #e27b3a;
+  padding: 12px 30px;
+  background-color: white;
+  transition: 0.5s ease-out, 0.5s ease-in;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  border-radius: 24px;
+  border: solid 1px #e27b3a;
+}
+
+.wht-btn:hover {
+  text-decoration: none;
+  color: #fae900;
+}
+/*font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;*/
+
+.introduction {
+  background-image: url("../img/first-section/Rectangle=background.png");
+  background-position: right 0% top 0%;
+  background-repeat: no-repeat;
+  background-size: initial;
+  padding: 41px 0px 131px 0px;
+  width: 100%;
+}
+
+.header {
+  margin-bottom: 33px;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo h4 {
+  display: inline;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.sub-menu {
+  display: flex;
+  list-style: none;
+  padding-top: 15px;
+}
+
+.nav-menu ul.sub-menu li a {
+  transition: 0.5s ease-out, 0.5s ease-in;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #170c04;
+}
+
+.nav-menu ul.sub-menu li a:hover {
+  color: #afafaf;
+}
+
+.item {
+  margin-right: 30px;
+}
+
+.forth-item {
+  margin-right: 0px;
+}
+
+.account img {
+  margin-right: 41.89px;
+  cursor: pointer;
+}
+
+.title-and-text h1 {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 100px;
+  line-height: 120px;
+
+  color: #170c04;
+  margin-bottom: 119px;
+}
+
+.dogs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title-and-text .orng-btn {
+  margin-right: 50px;
+}
+
+.quality-foods {
+  padding-bottom: 118px;
+}
+
+.food {
+  padding: 40px 60px 18px;
+  border: 1px solid rgba(194, 194, 194, 0.1);
+  box-sizing: border-box;
+  border-radius: 8px;
+  margin-right: 30px;
+  text-align: center;
+  position: relative;
+  transition: 0.5s ease-out, 0.5s ease-in;
+}
+
+.food:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 0px 10px 34px 11px rgba(226, 123, 58, 0.15);
+  -moz-box-shadow: 0px 10px 34px 11px rgba(226, 123, 58, 0.15);
+  box-shadow: 0px 10px 34px 11px rgba(226, 123, 58, 0.15);
+}
+
+.quality-foods .row div:nth-child(3) {
+  margin-right: 0px;
+}
+
+.food h3 {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 37px;
+  color: #170c04;
+}
+
+.food p {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #170c04;
+  opacity: 0.6;
+}
+
+.picture-food {
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 14px 14px;
+  position: absolute;
+  top: calc(0% - 29px);
+  left: calc(50% - 35px);
+}
+
+.first-picture-food {
+  background-image: url("../img/second-section/icons/pink-bowl-background.png");
+}
+
+.second-picture-food {
+  background-image: url("../img/second-section/icons/green-bowl-background.png");
+}
+
+.third-picture-food {
+  background-image: url("../img/second-section/icons/can-background.png");
+}
+
+.popular-products {
+  padding-bottom: 142px;
+}
+
+.background {
+  background: #fcf2eb;
+  border-radius: 20px;
+  margin-bottom: 25px;
+}
+
+.box {
+  text-align: center;
+}
+
+.first-big-box {
+  padding: 71px 91px;
+}
+
+.second-big-box {
+  padding: 58px 125px 58px 126px;
+}
+
+.first-small-box {
+  padding: 0px 42px 0px 26px;
+}
+
+.second-small-box {
+  padding: 57px 83px 57px 82px;
+}
+
+.third-small-box {
+  padding: 83px 49px 38px 49px;
+}
+
+.popular-products .first-row {
+  margin-bottom: 25px;
+}
+
+.title-text h3 {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32.25px;
+  line-height: 48px;
+  color: #170c04;
+  margin-bottom: 18px;
+}
+
+.title-text p {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #170c04;
+  opacity: 0.6;
+  max-width: 505px;
+  text-align: center;
+}
+
+.popular-products .second-row,
+.third-row h3 {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 37px;
+  color: #170c04;
+}
+
+.popular-products .big-boxes {
+  column-gap: 30px;
+}
+
+.popular-products .small-boxes {
+  column-gap: 30px;
+}
+
+.popular-products .second-row {
+  margin-bottom: 57px;
+}
+
+.small-boxes {
+  margin-bottom: 46px;
+}
+
+.third-row {
+  margin-bottom: 45px;
+}
+
+.dog-care {
+  padding-bottom: 116px;
+}
+
+.dog-hospital {
+  transform: rotate(15deg);
+}
+
+.dog-care .dog-info h4 {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #e27b3a;
+  opacity: 0.8;
+  margin-bottom: 4px;
+}
+
+.dog-care .dog-info h3 {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32.25px;
+  line-height: 45px;
+  color: #170c04;
+  max-width: 487px;
+  margin-bottom: 18px;
+}
+
+.dog-care .dog-info p {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #170c04;
+  opacity: 0.6;
+  max-width: 487px;
+  margin-bottom: 40px;
+  text-align: justify;
+}
+
+.dog-care .dog-info .orng-btn {
+  margin-right: 89px;
+}
+
+.quality-foods .first-row h3 {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32.25px;
+  line-height: 45px;
+  color: #170c04;
+  max-width: 506px;
+  text-align: center;
+}
+
+.quality-foods .first-row {
+  margin-bottom: 36px;
+}
+
+.quality-foods .dog {
+  margin-bottom: 51px;
+}
+
+.quality-foods .title {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #170c04;
+  max-width: 360px;
+  margin-bottom: 22px;
+}
+
+.quality-foods .text {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #170c04;
+  opacity: 0.6;
+  max-width: 359px;
+}
+
+.quality-foods .dogs-pedigree {
+  padding: 15px 4px;
+  border: none;
+}
+
+.quality-foods .second-row {
+  margin-bottom: 46px;
+}
+
+.popular-products-gall {
+  padding-bottom: 125px;
+}
+
+.popular-products-gall h3 {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32.25px;
+  line-height: 45px;
+  text-align: center;
+  color: #170c04;
+  margin-bottom: 12px;
+}
+
+.popular-products-gall p {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #170c04;
+  opacity: 0.6;
+  max-width: 554px;
+  margin-bottom: 30px;
+}
+
+.popular-products-gall .background-popular {
+  display: inline-block;
+  border-radius: 5px;
+}
+
+.bow-mask {
+  margin-bottom: 43px;
+}
+
+.item1-bck {
+  background: #900a082a;
+  padding: 25px 41px 25px 37px;
+  margin-right: 30px;
+}
+
+.item2-bck {
+  background: #243e7e2d;
+  padding: 25px 40px 27px 40px;
+}
+
+.item3-bck {
+  background: #8001252f;
+  padding: 30px 48px 30px 44px;
+  margin-right: 30px;
+}
+
+.item4-bck {
+  background: #c48cae27;
+  padding: 25px 38px 25px 38px;
+}
+
+.main-picture {
+  background: #c4154c2a;
+  padding: 39px 46px 45px 46px;
+  border-radius: 5px;
+}
+
+.testimonial .parent-container {
+  padding-bottom: 86px;
+}
+
+.testimonial .parent-container {
+  position: relative;
+}
+
+.testimonial .parent-container .child-container1 {
+  position: absolute;
+  max-width: 555px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.testimonial .parent-container .child-container2 {
+  position: absolute;
+  max-width: 555px;
+  left: 10px;
+  top: 10px;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.testimonial .parent-container .child-container3 {
+  position: absolute;
+  max-width: 555px;
+  left: 20px;
+  top: 20px;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+.testimonial .parent-container .child-container4 {
+  position: absolute;
+  max-width: 555px;
+  left: 30px;
+  top: 30px;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.testimonial h3 {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32.25px;
+  line-height: 45px;
+  color: #170c04;
+}
+
+.testimonial .first-row {
+  margin-bottom: 32px;
+}
+
+.testimonial .card-descrp {
+  padding: 30px 30px 21px 30px;
+  background: #ffffff;
+  text-align: center;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.06);
+  border-radius: 10px;
+  max-width: 555px;
+  position: relative;
+}
+
+.testimonial .card-descrp .dude {
+  margin-bottom: 20px;
+  width: 6%;
+  left: 30px;
+  top: 30px;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.testimonial .name-title {
+  display: inline-block;
+  vertical-align: center;
+}
+
+.testimonial .motto-dogs {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #170c04;
+  opacity: 0.7;
+  max-width: 495px;
+  text-align: center;
+  margin-bottom: 20.28px;
+}
+
+.testimonial .stars {
+  margin-bottom: 24px;
+}
+
+.name-title h4 {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #170c04;
+  margin-bottom: 0px;
+}
+
+.name-title p {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 24px;
+  text-align: center;
+  color: #170c04;
+  opacity: 0.6;
+}
+
+.testimonial .stars .star {
+  background: url("../img/seventh-section/icons/star-inactive.svg");
+  padding-bottom: 15px;
+  padding-left: 15px;
+  display: inline-block;
+  transition: 0.2s ease-out, 0.2s ease-in;
+  cursor: pointer;
+}
+
+.testimonial .stars .star:hover {
+  background: url("../img/seventh-section/icons/star.svg");
+  padding-bottom: 15px;
+  padding-left: 15px;
+}
+
+.quotes-start img {
+  margin-bottom: 20px;
+}
+
+.quote-start-container {
+  position: absolute;
+}
+
+.quote-finish-container {
+  position: absolute;
+  bottom: 30px;
+  right: 30.2px;
+}
+
+.quote-start-svg {
+  background: url("../img/seventh-section/icons/quote-start.svg");
+  background-repeat: no-repeat;
+  opacity: 0.1;
+  padding-bottom: 34px;
+  padding-left: 22px;
+}
+
+.quote-finish-svg {
+  background: url("../img/seventh-section/icons/quote-finish.svg");
+  background-repeat: no-repeat;
+  opacity: 0.1;
+  padding-bottom: 34px;
+  padding-left: 22px;
+}
+
+.testimonial .second-row .parent-container {
+  padding-bottom: 445px;
+}
+
+.paw-prints .row {
+  background: url("../img/eighth-secion/rectangle-blue.png");
+  background-repeat: no-repeat;
+  padding: 102px 65px 102px 69px;
+  margin-bottom: 70px;
+}
+
+.paw-prints .dogs-leave h3 {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 31.25px;
+  line-height: 41px;
+  color: #ffffff;
+  max-width: 423px;
+  margin-bottom: 18px;
+}
+
+.paw-prints .dogs-leave p {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+  opacity: 0.7;
+  max-width: 423px;
+}
+
+.paw-prints .searchbar input {
+  width: 372px;
+  padding: 15px 21px;
+  border-radius: 3px 0px 0px 3px;
+  outline: none;
+  border: none;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  color: #170c04;
+}
+
+.paw-prints .searchbar input:placeholder {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 41px;
+  color: #170c04;
+  opacity: 0.4;
+}
+
+.paw-prints .searchbar .searchline-submit {
+  padding: 6.5px 37px;
+  background: #e27b3a;
+  border-radius: 0px 10px 10px 0px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 41px;
+  color: #ffffff;
+}
+
+.paw-prints .searchbar .searchline-submit:hover {
+  text-decoration: none;
+  color: white;
+}
+
+.footer {
+  background: url("../img/ninth-section/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 122px 0px 105px 0px;
+}
+
+.footer .parent-container {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.footer .column-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  row-gap: 37px;
+  text-decoration: none;
+}
+
+.footer .column-footer a {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+  opacity: 0.8;
+}
+
+.footer .column-footer a:hover {
+  text-decoration: none;
+  color: #ffffff;
+  opacity: 0.8;
+}
+
+.footer .left-column {
+  text-align: left;
+  margin-right: 215px;
+}
+
+.footer .left-column div .email {
+  color: #e27b3a;
+}
+
+.footer .left-column div .email:hover {
+  color: #e27b3a;
+  text-decoration: underline;
+}
+
+.footer .right-column {
+  text-align: right;
+}
+
+.footer .central-column {
+  text-align: center;
+  margin-right: 368px;
+}
+
+.footer .central-column h5 {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 30px;
+  color: #ffffff;
+}
+
+.footer .central-column img {
+  margin-right: 37px;
+  cursor: pointer;
+}
+
+.footer .central-column .no-margin {
+  margin-right: 0px;
+}
+
+.footer .dog-absl {
+  position: absolute;
+  left: 5px;
+  right: 0;
+  top: -75px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.owl-carousel .nav-btn {
+  height: 47px;
+  position: absolute;
+  width: 26px;
+  cursor: pointer;
+  top: 100px !important;
+}
+
+.owl-carousel .prev-slide {
+  background: url("../img/seventh-section/icons/arrow-up-inactive.png");
+  background-repeat: no-repeat;
+  padding-bottom: 35px;
+  left: 580px;
+  top: 150px !important;
+  transition: 0.5s ease-out, 0.5s ease-in;
+}
+.owl-carousel .next-slide {
+  background: url("../img/seventh-section/icons/arrow-down-inactive.png");
+  background-repeat: no-repeat;
+  padding-bottom: 35px;
+  left: 580px;
+  top: 220px !important;
+  transition: 0.5s ease-out, 0.5s ease-in;
+}
+.owl-carousel .prev-slide:hover {
+  background: url("../img/seventh-section/icons/arrow-up-active.png");
+  background-repeat: no-repeat;
+  padding-bottom: 35px;
+}
+.owl-carousel .next-slide:hover {
+  background: url("../img/seventh-section/icons/arrow-down-active.png");
+  background-repeat: no-repeat;
+  padding-bottom: 35px;
+}

@@ -1,0 +1,288 @@
+@media (max-width: 1500px) {
+  .footer {
+    background: black;
+  }
+
+  .footer .parent-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer .left-column {
+    margin: 0px;
+  }
+
+  .footer .central-column {
+    margin: 0px;
+  }
+
+  .footer .dog-absl {
+    display: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  .for_page .container {
+    max-width: 1350px;
+  }
+
+  .for_page .popular-products-gall .container {
+    max-width: 1200px;
+  }
+
+  .for_page .paw-prints .container {
+    max-width: 1173px;
+  }
+
+  .for_page .footer .container {
+    max-width: 1200px;
+  }
+}
+
+@media (max-width: 1205px) {
+  .popular-products {
+    padding-bottom: 80px;
+  }
+  .popular-products .big-boxes {
+    flex-direction: column;
+    row-gap: 20px;
+    justify-content: center;
+  }
+
+  .popular-products .small-boxes {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+
+  .popular-products .box {
+    align-self: center;
+  }
+
+  .quality-foods {
+    padding-bottom: 33px;
+  }
+
+  .dog-care .reverse-colu {
+    flex-direction: column;
+  }
+
+  .dog-care .dog-hospital {
+    order: 1;
+    margin-top: 30px;
+  }
+
+  .dog-care .dog-info {
+    text-align: center;
+  }
+
+  .dogs-pedigree-container .snippets {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .dogs-pedigree-container .first-row h3 {
+    margin-bottom: 10px;
+  }
+
+  .dogs-pedigree-container .second-row {
+    margin-bottom: 0px;
+  }
+
+  .popular-products-gall {
+    padding-bottom: 40px;
+  }
+
+  .popular-products-gall .two-dif-box {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+
+  .testimonial .second-row .parent-container {
+    padding-bottom: 390px;
+  }
+
+  .testimonial .first-row {
+    margin-bottom: 0px;
+  }
+
+  .testimonial .second-row .parent-container {
+    padding-bottom: 360px;
+  }
+
+  .paw-prints .row {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 1136px) {
+  .introduction {
+    background-size: cover;
+    padding-bottom: 45px;
+    margin-bottom: 55px;
+  }
+  .introduction .banner .dogs {
+    flex-direction: column;
+    align-items: center;
+  }
+  .introduction .banner .dogs .title-and-text {
+    margin-bottom: 60px;
+  }
+
+  .introduction .banner .dogs .title-and-text h1 {
+    margin-bottom: 35px;
+  }
+
+  .testimonial .parent-container .arrows-container {
+    display: none;
+  }
+
+  .owl-carousel .prev-slide {
+    background: url("../img/seventh-section/icons/arrow-up-inactive.png");
+    background-repeat: no-repeat;
+    padding-bottom: 35px;
+    left: 250px;
+    top: 300px !important;
+    transition: 0.5s ease-out, 0.5s ease-in;
+    transform: rotate(-90deg);
+  }
+  .owl-carousel .next-slide {
+    background: url("../img/seventh-section/icons/arrow-down-inactive.png");
+    background-repeat: no-repeat;
+    padding-bottom: 35px;
+    left: 310px;
+    top: 300px !important;
+    transition: 0.5s ease-out, 0.5s ease-in;
+    transform: rotate(270deg);
+  }
+}
+
+@media (max-width: 992px) {
+  .nav-menu {
+    display: none;
+  }
+  .responsive_menu {
+    display: block;
+    margin: 30px 0px 60px 20px;
+  }
+  .responsive_menu i {
+    font-size: 33px;
+    color: #eca14b;
+    transition: 0.3s;
+    cursor: pointer;
+    transition: 0.3s linear;
+  }
+  .responsive_menu i:hover {
+    color: #f1ef47;
+  }
+
+  .footer {
+    padding-bottom: 30px;
+  }
+}
+
+@media (max-width: 1002px) {
+  .paw-prints .row {
+    padding: 65px 0px;
+  }
+  .paw-prints .bck-blue {
+    flex-direction: column;
+    padding: 0px;
+    text-align: center;
+  }
+
+  .quality-foods .snippets {
+    flex-direction: column;
+    row-gap: 45px;
+  }
+
+  .paw-prints .bck-blue input {
+    width: 230px;
+  }
+}
+
+@media (max-width: 887px) {
+  .footer .parent-container {
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 40px;
+  }
+
+  .dog-care .orng-btn {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .dog-care .wht-btn {
+    display: block;
+  }
+
+  .footer .parent-container .central-column,
+  .right-column {
+    text-align: left;
+  }
+
+  .footer .parent-container .right-column {
+    text-align: left;
+  }
+
+  .footer .parent-container .central-column {
+    order: 2;
+  }
+}
+
+@media (max-width: 784px) {
+
+  .introduction .banner h1{
+    text-align: center;
+    max-width: 300px;
+    font-size: 45px;
+    line-height: 48px;
+  }
+
+  .popular-products-gall .bow-mask {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    row-gap: 10px;
+    margin-bottom: 10px;
+  }
+
+  .popular-products-gall .flowers-mask{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    row-gap: 10px;
+  }
+
+ .popular-products-gall .accecories .bow-mask .background-popular.item1-bck {
+    margin-right: 0px;
+  }
+
+  .popular-products-gall .accecories .flowers-mask .background-popular.item3-bck {
+    margin-right: 0px;
+  }
+
+}
+
+@media (max-width: 590px) {
+  .for_page {
+    padding: 0px 0px 0px 5px
+  }
+  .paw-prints .searchbar{
+    flex-direction: column;
+  }
+
+  .paw-prints .searchbar .searchline{
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  .paw-prints .searchbar .searchline-submit{
+    border-radius: 10px;
+    margin-top: 5px;
+    padding: 2px 15px;
+  }
+}
