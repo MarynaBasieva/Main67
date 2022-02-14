@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+</head>
+<style>
+    .Result{
+        margin-bottom: 20px;
+    }
+    p{
+        margin: 5px;
+    }
+    .ResultFinish{
+        margin-bottom: 20px;
+    }
+</style>
+<body>
+    <div class="Result"></div>
+    <div class="ResultFinish"></div>
+    <div class="ResultFinishArr"></div>
+    
+    <script>
+        
+        let resultFinishArr = document.querySelector(".ResultFinishArr");
+
+    
+        let userJob = {
+            name: "Yehor",
+            lastName: "Pashyn",
+            age: 22,
+            money: {
+                salary: 15000,
+                workingDays: 20,
+                free: {
+                    paid: 10000,
+                    days: 10,
+                },
+            },
+        };
+
+
+        function renderUserData (obj){
+            for (let prop in obj){
+                if (typeof obj[prop]==='object'){
+                    renderUserData(obj[prop])
+                } else {
+                    let p = document.createElement('p');
+                    p.innerHTML = `${prop} --- ${obj[prop]};`
+                    document.querySelector('.Result').append(p)
+                }
+            }
+        }
+        renderUserData(userJob)
+
+
+
+        let userJob2 = userJob;
+        
+        userJob2.name = "Anatoliy";
+        userJob2.lastName = "Timoschuk";
+        userJob2.age = 15;
+        userJob2.money.salary = 5000;
+        userJob2.money.workingDays = 10;
+        userJob2.money.free.paid = 5000;
+        userJob2.money.free.days = 5;
+       
+        
+
+        function renderUserData2(obj){
+            for (let key in obj){
+                if (typeof obj[key]==='object'){
+                    renderUserData2(obj[key])
+                } else {
+                    let p = document.createElement('p');
+                    p.innerHTML = `${key} --- ${obj[key]};`
+                    document.querySelector('.ResultFinish').append(p)
+                }
+            }
+        }
+        
+        renderUserData2(userJob2)
+
+
+
+
+
+
+
+        let workers = [
+            {
+            name: "David",
+            lastName: "Backhem",
+            age: 48,
+            money: {
+                salary: 18500,
+                workingDays: 23,
+                daysOff: {
+                    paid: 11100,
+                    days: 14,
+                }
+            }
+        },
+        {
+            name: "Igor",
+            lastName: "Akenfeev",
+            age: 32,
+            money: {
+                salary: 25200,
+                workingDays: 26,
+                daysOff: {
+                    paid: 15000,
+                    days: 14,
+                }
+            }
+        },
+        {
+            name: "Aleksandr",
+            lastName: "Petrov",
+            age: 39,
+            money: {
+                salary: 41000,
+                workingDays: 22,
+                daysOff: {
+                    paid: 12000,
+                    days: 14,
+                }
+            }
+        },
+        {
+            name: "Andrey",
+            lastName: "Arshavin",
+            age: 41,
+            money: {
+                salary: 10000,
+                workingDays: 25,
+                daysOff: {
+                    paid: 7000,
+                    days: 14,
+                }
+            }
+        },
+        {
+            name: "Artur",
+            lastName: "Sereda",
+            age: 25,
+            money: {
+                salary: 21000,
+                workingDays: 27,
+                daysOff: {
+                    paid: 13000,
+                    days: 24,
+                }
+            }
+        }];
+
+
+        
+        workers.map(worker => resultFinishArr.innerHTML += ( ` У cотрудника : ${worker.lastName} ${worker.name} отпускные в колличестве ${worker.money.daysOff.days} дней на сумму ${worker.money.daysOff.paid} грн.\n`));
+
+
+
+
+    
+        
+
+
+
+    </script>
+</body>
+</html>
