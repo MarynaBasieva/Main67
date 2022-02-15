@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW30</title>
+</head>
+
+<body>
+    <h1 style="font-size: 48px; background-color: rgb(250, 214, 56);">HW30</h1>
+    <div id="result"></div>
+    <div class="resultFinish"></div>
+    <div class="resultFinishArr"></div>
+
+    <script>
+        let result = document.querySelector('.result');
+        let userJob = {
+            name: 'John',
+            lastname: 'Rossi',
+            age: 44,
+            salary: {
+                jobsalary: 5000,
+                workhours: 160,
+                daysoff: {
+                    paidleave: 2000,
+                    freedays: 8,
+                },
+            },
+        };
+        for (let x in userJob) {
+            console.log(userJob[x]);
+        }
+
+        let resultFinish = document.querySelector('.resultFinish');
+        let newJob = Object.assign({}, userJob);
+        newJob.name = 'Alfredo';
+        newJob.lastname = 'Kovalchuk';
+        newJob.age = 30;
+        newJob.salary.jobsalary = 20000;
+        newJob.salary.workhours = 200;
+        newJob.salary.daysoff.paidleave = 3200;
+        newJob.salary.daysoff.freedays = 10;
+
+        console.log(newJob);
+
+        console.log('\n');
+
+
+        const squad = [{
+                name: 'John',
+                lastname: 'Rossi',
+                age: 44,
+                salary: {
+                    jobsalary: 5000,
+                    workhours: 160,
+                    daysoff: {
+                        paidleave: 2000,
+                        freedays: 8,
+                    },
+                },
+            },
+            {
+                name: 'CJ',
+                lastname: 'Smith',
+                age: 55,
+                salary: {
+                    jobsalary: 1000,
+                    workhours: 20,
+                    daysoff: {
+                        paidleave: 3800,
+                        freedays: 12,
+                    },
+                },
+            },
+            {
+                name: 'Nicholas',
+                lastname: 'Ljunberg',
+                age: 22,
+                salary: {
+                    jobsalary: 4400,
+                    workhours: 175,
+                    daysoff: {
+                        paidleave: 500,
+                        freedays: 5,
+                    },
+                },
+            },
+            {
+                name: 'Martin',
+                lastname: 'Kopert',
+                age: 34,
+                salary: {
+                    jobsalary: 7000,
+                    workhours: 185,
+                    daysoff: {
+                        paidleave: 100,
+                        freedays: 1,
+                    },
+                },
+            },
+            {
+                name: 'Pavel',
+                lastname: 'Nedved',
+                age: 18,
+                salary: {
+                    jobsalary: 1000,
+                    workhours: 40,
+                    daysoff: {
+                        paidleave: 450,
+                        freedays: 3,
+                    },
+                },
+            }
+        ];
+        let resultFinishArr = document.querySelector('.resultFinishArr');
+        squad.map(squad => resultFinishArr.innerHTML += `${squad.name} ${squad.lastname} ${squad.salary.daysoff.paidleave}\n uah <br>\n`);
+    </script>
+</body>
+
+</html>
