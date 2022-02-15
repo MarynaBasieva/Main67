@@ -11,12 +11,13 @@ img {
     width: auto;
     height: auto;
 }
+.for_page{
+    display: flex;
+}
 .sidebar {
     width: 25%;
     background-color: #2D3E4F;
-    position: fixed;
-    height: 100%;
-    z-index: 999;
+    position: relative;
 }
 .container{
     width: 940px;
@@ -28,6 +29,9 @@ img {
     float: right;
     height: 100%;
     background: #FFFFFF;
+}
+.responsive_menu {
+    display: none;
 }
 .clear{
     clear: both;
@@ -44,10 +48,12 @@ img {
     text-align: center;
     letter-spacing: 1px;
     color: #CF404D;
+    transition: 1s;
 }
 .logo a:hover{
     color: #FFFFFF;
     text-decoration: none;
+    
 }
 .navigation .menu li{
     list-style: none; 
@@ -64,19 +70,24 @@ img {
 .navigation .menu li a:hover{
     color: #CF404D;
     text-decoration: none;  
-    
-    border: 1px solid #CF404D;
-    transition: 1s;
+    border-bottom: 1px solid #CF404D;
+    transition: 2s;
 }
 .navigation{
     padding: 79px ;
     text-align: center;
 }
 .header-icon{
-    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 50px;
+    right: 50px;
+    padding-bottom: 40px;
+    display: flex;
+    justify-content: center;
 }
 .header-icon a {
-    padding-right: 10px;
+    padding-right: 14px;
 }
 .header-icon a img:hover{
     transform: scale(1.4);
@@ -129,13 +140,15 @@ img {
     color: #FFFFFF;
     padding: 11px 22px 15px;
     border: 2px solid #FFFFFF;
+    transition: 1s;
 }
 .banner-btn a:hover{
     background:#CF404D;
     text-decoration: none;
     color: #FFFFFF;
-    transition: 1s;
+    
     border-color: #CF404D;
+    
 }
 /*BLOCK1*/
 .block1{
@@ -264,6 +277,10 @@ img {
     padding: 10px;
     width: 100%;
     height: 100%;
+    transition: 2s;
+}
+.block3 img:hover{
+    transform: scale(1.1);
 }
 /*BLOCK4*/
 .block4{
@@ -288,7 +305,7 @@ img {
     line-height: 30px;
     text-align: center;
     color: rgba(115, 115, 115, 0.74);
-    padding-bottom: 62px;
+    padding-bottom: 40px;
 }
 .block4-form{
     display: flex;
@@ -346,6 +363,7 @@ img {
     background: #FFFFFF;
 }
 .last-block p{
+    font-size: 16px;
     font-family: 'Oswald', sans-serif;
     line-height: 20px;
     text-align: center;

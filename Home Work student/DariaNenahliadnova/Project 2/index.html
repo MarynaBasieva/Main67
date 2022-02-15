@@ -4,18 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title> 
+    <title>Project-2</title> 
     <link rel="stylesheet" href="css/style.css" type="text/css"> 
     <link rel="stylesheet" href="css/responsive.css" type="text/css"> 
+	 <link rel="stylesheet" type="text/css" href="vendor/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="vendor/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
     <link rel="stylesheet" href="vendor/bootstrap-4.0.0/css/bootstrap.min.css" type="text/css"> 
     <link rel="stylesheet" href="vendor/bootstrap-4.0.0/css/bootstrap-grid.css" type="text/css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gelasio:wght@500;600&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="vendor/fontawesome-free-5.15.4-web/css/all.min.css" type="text/css">
+    
 
-    <link rel="stylesheet" href="vendor/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="vendor/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+   
     <link rel="stylesheet" href="vendor/fontawesome-free-5.15.4-web/css/all.min.css" type="text/css">
     <link rel="stylesheet" href="vendor/fancybox/dist/jquery.fancybox.min.css" type="text/css">
     <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
@@ -63,20 +66,26 @@
             <section class="banner">
                 <div class="container">
                     <div class="row justify-content-left">
-                        <div class="col-xl-6 col-lg-5 col-md-6 col-sm-6">
+                        <div class="col-xl-6 col-lg-5 col-md-12 col-sm-12">
                             <div class="banner-text">
                                 <h3>Digtal business</h3>
                                 <h1>Our job help you to make a  <span class="colortext">Brand</span>.</h1>
                                 <div class="btn-btn"><a href="#">Get started</a></div>
-                                <p>Play video</p>
+                                <div class="btn-i">
+                                    <i class="fa fa-play-circle" aria-hidden="true"></i>
+                                </div>
+                                <div class="banner-text-p"><p>Play video</p>
+                                </div>
                             </div>
                         </div>
-                        <!--
+                        
                         <div class="col-xl-6 col-lg-7 col-md-12 col-sm-12">
                             <div class="banner-img1">
-                                <div class="banner-img"></div>
+                                <div class="banner-img">
+                                    <img src="img/banner222.png">
+                                </div>
                             </div>
-                        </div>-->
+                        </div>
                     </div>
                 </div>
             </section>
@@ -84,7 +93,7 @@
             <section class="block1">
                 <div class="container">
                     <div class="row">
-                        <div class="col-xl-5 col-lg-6 col-md-12 col-sm-12">
+                        <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12">
                                 <div class="block1-text">
                                     <h3>Community</h3>
                                     <h2>Platfrom dedicated to promoting</h2>
@@ -92,11 +101,9 @@
                                     <div class="btn-btn"><a href="#">What we do</a></div>
                                 </div>
                         </div>
-                        <div class="col-xl-7 col-lg-6 col-md-12 col-sm-12">
-                            <div class="block1-video">
-                                <img src="img/block2.png">
-                                <div class="play">
-                                </div>
+                        <div class="col-xl-7 col-lg-7 col-md-12 col-sm-12">
+                            <div class="video">
+                                <div class="youtube" id="GoBvYPwv-g8" ></div>
                             </div>
                         </div>
                     </div>  
@@ -142,8 +149,8 @@
                         <h2>What our customar are saying</h2>
                     </div>
                     <div class="row justify-content-center ">
-                        <div class="owl-carousel" id="carousel_partner">
-                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                        <div class="owl-carousel owl-theme" id="carousel_partner">
+                            <div class="item">
                                 <div class="block3-reviews">
                             
                                     <p class="item-icon">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tristique ipsum ultrices sit rutrum lobortis. Ipsum, nulla nam.</p>
@@ -158,7 +165,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                            <div class="item">
                                 <div class="block3-reviews">
                                     
                                     <p class="item-icon">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tristique ipsum ultrices sit rutrum lobortis. Ipsum, nulla nam.</p>
@@ -173,6 +180,37 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="item">
+                                <div class="block3-reviews">
+                            
+                                    <p class="item-icon">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tristique ipsum ultrices sit rutrum lobortis. Ipsum, nulla nam.</p>
+                                    <div class="block3-person">
+                                        <div class="person-img">
+                                            <img src="img/Ellipse6.png">
+                                        </div>
+                                        <div class="person-name">
+                                            <h4>Elon Musk</h4>
+                                            <p>CEO</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+							 <div class="item">
+                                <div class="block3-reviews">
+                                    
+                                    <p class="item-icon">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tristique ipsum ultrices sit rutrum lobortis. Ipsum, nulla nam.</p>
+                                    <div class="block3-person">
+                                        <div class="person-img">
+                                            <img src="img/Ellipse7.png">
+                                        </div>
+                                        <div class="person-name">
+                                            <h4>Easin Arafat</h4>
+                                            <p>Product Design</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
 
                         </div>
                     </div>

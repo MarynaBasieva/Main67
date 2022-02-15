@@ -34,13 +34,11 @@ img {
     color: #171832;
     font-family: 'Gelasio', serif;
     font-weight: 500;
-    font-size: 24px;
-   
+    font-size: 24px; 
 }
 .sub-menu li {
     list-style: none;  
 }
-
 .sub-menu {
     list-style: none;
     display: flex;
@@ -78,15 +76,12 @@ img {
     background: #8aaef5;
     color: #FFFFFF;
     text-decoration: none;
+    transition: 0.3s; 
 }
 /*BANNER*/
+
 .banner{
-    padding:50px 0 140px;
-    position: relative;
-    background: url(../img/1111.png);
-    background-repeat: no-repeat;
-    background-position: top -15px right -80px;
-    background-size: contain;
+    padding-top:50px; 
 }
 .container h3{
     font-family:'Poppins', sans-serif;
@@ -120,37 +115,32 @@ img {
 .banner .btn-btn{
     display: inline;
 }
+.banner-text-p{
+    display: inline-block;
+}
 .banner p{
-    display: inline;
     font-family: 'Poppins', sans-serif;
     font-weight: normal;
     font-size: 18px;
     letter-spacing: 0.02em;
     color: #171832;
     opacity: 0.7;
-    position: relative;
-    padding-left: 100px;
 }
-.banner p::before{
-    content: url(../img/play.png);
-    position: absolute;
-    left: 40px;
+.btn-i{
+    display: inline;
+    position: relative; padding-right: 70px;
+}
+.btn-i i{
+    color: #2D74FF;
+    font-size: 45px;
+    transition: 0.3s;
+    position: absolute; 
     top: -14px;
-    width: 100%;
+    left: 12px;
 }
-.banner .banner-img{
-    position: relative;
+.btn-i i:hover{
+    color: #8aaef5;
 }
-/*
-.banner .banner-img{
-    background: url(../img/banner222.png);
-    background-repeat:no-repeat ;
-    width: 686px;
-    height: 714px;
-    right: 40px;
-    bottom: 60px;
-
-}*/
 /*BLOCK1*/
 .block1{
     padding: 70px 0 140px;
@@ -173,23 +163,41 @@ img {
     opacity: 0.7;
     padding-bottom: 20px;
 }
-.block1-video {
-    display: flex;
-    justify-content: flex-end;
-}  
-.block1-video img{
+.youtube {
+    background-position: center;
+    background-repeat: no-repeat;
     position: relative;
-
+    display: inline-block;
+    overflow: hidden;
+    transition: all 200ms ease-out;
+    cursor: pointer;
+    width: 100%;
+    height: 358px;
+    background-size: cover;
 }
-.block1-video .play{
-    content: url(../img/Group219.png);
-    background-repeat:no-repeat ;
-    position: absolute;
-    top: 50%;
-    left: 55%;
-    transform: translate(-50%,-50%);
+.video iframe{
+    width: 100%;
+    height: 358px;
+}
+.youtube .play {
+    background: url('../img/youtube.png') no-repeat;
+    background-position: 0 -100px;
+    -webkit-background-size: 100% auto;
     background-size: 100% auto;
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    transition: none;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    margin:auto;
 }
+.youtube:hover .play {
+    background-position: 0 0;
+}
+
 /*BLOCK2*/
 .block2{
     padding-bottom: 140px ;
@@ -293,6 +301,29 @@ img {
     color: #171832;
     padding-left: 30px;
     padding-top: 10px;
+}
+#carousel_partner.owl-theme .owl-nav {
+    position: absolute;
+    right: 35px;
+    top: -95px;
+}
+#carousel_partner .owl-nav button{
+	outline: none;
+	font-size: 20px;
+	color: #009dff;
+	transition: 0.3s;
+   background: #F3F5F9;
+    width: 60px;
+    height: 60px;
+    border-radius: 35px;
+}
+#carousel_partner .owl-nav button:hover{
+	background: inherit;
+	color: #125ea0; 
+    background: rgb(255 255 255);
+    width: 60px;
+    height: 60px;
+    border-radius: 35px;
 }
 /*BLOCK4*/
 .block4{
@@ -442,3 +473,4 @@ footer li a:hover{
     transform: scale(1.2);
     transition: 2s;
 }
+
