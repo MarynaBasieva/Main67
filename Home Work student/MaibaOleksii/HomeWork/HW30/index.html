@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HW30</title>
+</head>
+
+<!-- HW30
+1) Создать объект userJob
+- name
+-last name
+-age
+Sullary{
+- зарплата
+- рабочий дни
+отпускные{
+- деньги
+- сколько дней отпускных
+}
+
+}
+
+Через цикл for in получить все свойства всего объекта и вывести через class="Result"
+
+Дублировать этот объект к другой переменной и поменять все значения и вывести в class="ResultFinish"
+
+
+2) Создать массив со всеми значениями как в объекте создать 5 рабочих с такими значениями
+И вывести отпускные рабочих в class="ResultFinishArr" -->
+
+
+
+<body>
+
+  <div class="result" style="border-bottom: 2px solid #ccc;"></div>
+  <div class="result-finish" style="border-bottom: 2px solid #ccc;"></div>
+  <div class="result-finish-arr" style="border-bottom: 2px solid #ccc;"></div>
+  
+</body>
+
+<script>
+
+  let userJob = {
+    name: "Alex",
+    lastName: "Maiba",
+    age: 22,
+    work: {
+      salary: 10000,
+      day: 5,
+
+      vacation: {
+        money: 15000,
+        vacationDay: 14,
+      },
+    },
+  };
+
+  for (let worker in userJob) {
+    console.log(userJob[worker]);
+  }
+
+  let result = document.querySelector('.result');
+  result.innerHTML = JSON.stringify(userJob);
+
+  let newUser = Object.assign({}, userJob);
+    newUser.name = "Ivan";
+    newUser.lastName = "Ivanov";
+    newUser.age = 18;
+    newUser.work.salary = 6000;
+    newUser.work.day = 4;
+    newUser.work.vacation.money = 4000;
+    newUser.work.vacation.vacationDay = 7;
+    console.log(newUser);
+
+    let ResultFinish = document.querySelector('.result-finish');
+      ResultFinish.innerHTML = JSON.stringify(newUser);
+
+
+      const people = [
+          { name: 'Alex', lastName: "Maiba", age: 22, work:{ salary: 10000, day: 5}, vacation:{money:15000, vacationDay:14}},
+          { name: 'Ivan', lastName: "Ivanov", age: 18, work: { salary: 6000, day: 3 }, vacation: { money: 4000, vacationDay: 7 } },
+          { name: 'Andrey', lastName: "Andreev", age: 33, work: { salary: 16000, day: 4 }, vacation: { money: 10000, vacationDay: 10 } },
+          { name: 'Alina', lastName: "Popova", age: 50, work: { salary: 5000, day: 2 }, vacation: { money: 2500, vacationDay: 6 }},
+          { name: 'Natali', lastName: "Romanova", age: 28, work: { salary: 28000, day: 5 }, vacation: { money: 19000, vacationDay: 21 }}
+        ]
+
+        console.log(people);
+
+        
+
+        for(let human of people){
+
+        }
+
+        const finish = people.map(human=>{
+          return{
+            info: `${human.name} ${human.lastName} ${human.vacation.money}`
+          }
+        });
+
+        // people.forEach((human)=> console.log(human.name + " " + human.lastName + " " + human.vacation.money));
+
+        console.log(finish);
+        
+        let ResultFinishArr = document.querySelector('.result-finish-arr');
+          ResultFinishArr.innerHTML = JSON.stringify(finish);
+
+</script>
+
+</html>
