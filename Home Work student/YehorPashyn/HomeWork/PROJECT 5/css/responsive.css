@@ -1,0 +1,357 @@
+@media (min-width: 1200px){
+.for-page .container{
+    max-width: 1111px;
+}
+}
+@media (max-width: 1200px ){
+    .header .nav a {
+        padding: 5px 2px;
+    }
+    .header .login a {
+        padding: 5px 3px;
+    }
+    .block1 .part {
+        padding: 50px 0;
+    }
+    .block1 .part .partTitle{
+        font-size: 59px;
+    }
+    .block1 .part .partTitle span{
+        font-size: 59px;
+    }
+    .block3{
+        margin-bottom: 50px;
+    }
+    .block4{
+        margin-bottom: 0;
+    }
+    .block4 .innerPicture {
+        padding: 90px 0;
+    }
+    .block4 .inner1{
+        padding: 20px 12px;
+    }
+    .block5 .pic {
+        top: 65px;
+    }
+    .block6 .innerPart {
+        padding: 15px;
+    }
+    .block6 .Pic {
+        text-align: end;
+    }
+    .block1 .flight .middleFLight{
+        display: block;
+    }
+    .flight .from{
+        display: inline-block;
+        width: 400px;
+    }
+    .block1 .flight .calendar{
+        display: flex;
+    }
+    .flight{
+        bottom: -480px;
+    }
+    .block1 {
+        margin-bottom: 370px;
+    }
+    .flight .book {
+        bottom: -15%;
+    }
+}
+@media (max-width: 991px ){
+    .header .nav{
+        display: none;
+    }
+    .header .login{
+        display: none;
+    }
+    .parent_responsive .responsive_menu{
+        display: block;
+    }
+    .parent_responsive{
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+    .parent_responsive .responsive_menu:hover{
+        cursor: pointer;
+        color: #656293;
+    }
+    .block1 .part {
+        padding: 25px 0;
+    }
+    .block2 .privat {
+        font-size: 31px;
+    }
+    .block2 .content {
+        padding: 30px 0;
+    }
+    .block2 .content {
+        padding: 30px 0;
+    }
+    .block2 .content .text {
+        line-height: 21px;
+    }
+    .block2 .bg {
+        width: 230px;
+        height: 390px;
+    }
+    .block3 .content {
+        padding: 30px 0;
+    }
+    .block3 .content .text {
+        line-height: 21px;
+    }
+    .block3 .bg2{
+        width: 230px;
+        height: 390px;
+    }
+    .block4 .titlePerfomance .perfomance {
+        font-size: 31px;
+    }
+    .block4 .inner1{
+        text-align: center;
+        max-width: 370px;
+        margin: 30px auto;
+    }
+    .block4 .inner1 .innerTitle{
+        margin: 13px auto;
+    }
+    .block4 .inner1 .innerText{
+        margin: 0 auto;
+    }
+    .block4 .innerPicture {
+        padding: 40px 0;
+    }
+    .block5 .luxuryTitle {
+        margin-bottom: 15px;
+    }
+    .block5{
+        margin-bottom: 50px;
+    }
+    .block5 .plane{
+        margin-bottom: 20px;
+    }
+    .block6 .title {
+        margin-bottom: 20px;
+    }
+    .block6 .innerPart {
+        padding: 20px;
+        max-width: 400px;
+        margin: 20px auto;
+    }
+    .block6 .left{
+        border-radius: 20px 20px 0px 0px;
+    }
+    .block6 .right {
+        border-radius: 0px 0px 20px 20px;
+    }
+    .page{
+        padding-bottom: 240px;
+    }
+    .block4 .titlePerfomance .perfomance {
+        margin-bottom: 10px;
+    }
+    .block1 {
+        margin-bottom: 600px;
+    }
+    .flight {
+        bottom: -660px;
+    }
+    .flight .from{
+        display: block;
+        margin: 16px auto;
+    }
+    .block1 .flight .middleFLight a{
+        margin-left: 315px;
+    }
+    .flight .middleFLight .to {
+        margin-top: 16px;
+    }
+    .flight .middleFLight a {
+        margin-left: 0px;
+    }
+    .flight .calendar .departure .btns a{
+        margin-left: 0;
+    }
+    .flight .chooise{
+        text-align: center;
+    }
+    .flight .add {
+        margin-left: 255px;
+    }
+    .block1 .part .partTitle span {
+        font-size: 43px;
+        line-height: 53px;
+    }
+    .block1 .part .partTitle {
+        line-height: 50px;
+        font-size: 43px;
+    }
+
+}
+@media (max-width: 767px ){
+    .header{
+        margin-bottom: 0;
+    }
+    .block1 .part .partTitle {
+        line-height: 55px;
+    }
+    .block1 .picture {
+        text-align: center;
+    }
+    .block2 .privat {
+        margin-bottom: 10px;
+    }
+    .block2 .bg {
+        height: 490px;
+    }
+    .block3 .bg2 {
+        top: 244px;
+        height: 490px;
+    }
+    .footer .footerNav ul {
+        justify-content: center;
+    }
+    .block5 .plane {
+        max-width: 255px;
+        margin: 10px auto;
+    }
+    .footer .footerText {
+        text-align: center;
+    }
+    .block1 .flight {
+        bottom: -685px;
+    }
+    .block1 {
+        margin-bottom: 625px;
+    }
+    .block1 .flight .middleFLight a {
+        margin-left: 210px;
+    }
+    .flight .add {
+        margin-left: 170px;
+    }
+}
+@media (max-width: 500px ){
+    .block2 .bg{
+        display: none;
+    }
+    .block2{
+        margin-bottom: 0;
+    }
+    .block2 .thing img {
+        padding: 10px 0;
+    }
+    .block3 .content{
+        padding: 0;
+    }
+    .block3 .thing img{
+        padding: 10px 0;
+    }
+    .block3 .bg2 {
+        display: none;
+    }
+    .block1 .part .partTitle {
+        font-size: 45px;
+    }
+    .block1 .part .partTitle span {
+        font-size: 45px;
+    }
+    .flight .book .fas {
+        margin-left: 20px;
+    }
+    .flight .add {
+        margin-left: 128px;
+    }
+    .flight .chooise{
+        display: flex;
+    }
+    .flight .middleFLight .from{
+        width: 320px;
+    }
+    .block1 .flight .calendar {
+        display: block;
+    }
+    .block1 .flight .middleFLight .calendar .departure{
+        margin-bottom: 25px;
+    }
+    .block1 .flight {
+        bottom: -810px;
+    }
+    .block1 {
+        margin-bottom: 785px;
+    }
+    .flight .book {
+        bottom: -11%;
+    }
+    .block1 .flight .middleFLight a {
+        margin-left: 175px;
+    }
+} 
+@media (max-width: 400px ){
+    .block1 .part .partTitle {
+        line-height: 50px;
+    }
+    .block1 .part .partTitle span{
+        line-height: 50px;
+    }
+    .block1 .part .partTitle {
+        font-size: 40px;
+    }
+    .block1 .part .partTitle span {
+        font-size: 40px;
+    }
+    .block1 .part .partTitle {
+        margin-bottom: 20px;
+    }
+    .block2 .privat {
+        line-height: 40px;
+    }
+    .block4 .titlePerfomance .perfomance {
+        line-height: 40px;
+    }
+    .block4 .inner1 .innerText{
+        width: auto;
+    }
+    .block4 .inner1 .innerTitle{
+        width: auto;
+    }
+    .flight .book{
+        padding: 13px;
+        bottom: -18%;
+    }
+    .flight{
+        bottom: -330px;
+    }
+    .flight .chooise {
+        flex-direction: column;
+    }
+    .flight .chooise select{
+        margin-bottom: 10px;
+    }
+    .block1 .flight {
+        bottom: -900px;
+    }
+    .block1 .flight .middleFLight a {
+        margin-left: 107px;
+    }
+    .flight .add {
+        margin-left: 50px;
+    }
+    .block1 {
+        margin-bottom: 825px;
+    }
+    .flight .book {
+        bottom: -7%;
+    }
+    .flight .middleFLight .from {
+        width: 245px;
+    }
+    .flight .book {
+        bottom: -55px;
+        width: 85%;
+    }
+}

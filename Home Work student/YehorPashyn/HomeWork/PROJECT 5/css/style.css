@@ -1,0 +1,645 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body .for-page{
+    font-family: 'Poppins', sans-serif;
+}
+.for-page .page .bgpicture{
+    background: url(/img/bg.png) no-repeat;
+    background-size: cover;
+}
+html,
+body{
+    position: relative;
+}
+.page{
+    position: relative;
+    padding-bottom: 210px;
+}
+img{
+    max-width: 100%;
+    width: auto;
+    height: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*------------------header*----------------------*/
+
+.header{
+    padding-top: 40px;
+    margin-bottom: 34px;
+}
+.header .responsive_menu{
+    display: none;
+}
+.header .nav{
+    display: flex;
+    justify-content: space-around;
+}
+.header .nav ul{
+    display: flex;
+    justify-content: space-between;
+}
+.header .nav li{
+    list-style: none;
+}
+.header .nav a{
+    padding: 5px 9px;
+    color: #000;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: right;
+    text-transform: capitalize;
+    color: #181818;
+    transition: .5s;
+    margin-right: 5px;
+    border-radius: 5px;
+}
+.header .nav a:hover{
+    background: #656293;
+    text-decoration: none;
+    color: #fff;
+    transition: .5s;
+}
+.header .login{
+    display: flex;
+    justify-content: right;
+}
+.header .login ul{
+    display: flex;
+}
+.header .login li{
+    list-style: none;
+}
+.header .login a{
+    padding: 5px 9px;
+    color: #000;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: right;
+    text-transform: capitalize;
+    color: #181818;
+    transition: .5s;
+    margin-left: 5px;
+    border-radius: 5px;
+}
+.header .login a:hover{
+    background: #656293;
+    text-decoration: none;
+    color: #fff;
+    transition: .5s;
+}
+/*--------------------------header-----------*/
+
+/*----------block1--------*/
+.block1{
+    padding-top: 8px;
+    padding-bottom: 150px;
+    margin-bottom: 270px;
+
+
+
+
+    position: relative;
+}
+.block1 .part{
+    padding: 104px 0;
+}
+.block1 .part .partTitle{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 66px;
+    line-height: 77px;
+    text-transform: capitalize;
+    color: #151515;
+    margin-bottom: 48px;
+}
+.block1 .part .partTitle span{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 66px;
+    line-height: 77px;
+    text-transform: uppercase;
+    color: #656293;
+}
+.block1 .part a{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #151515;
+}
+.block1 .part a .fas{
+    margin-left: 10px;
+}
+.block1 .part a:hover{
+    text-decoration: none;
+}
+.block1 .picture{
+    text-align: end;
+}
+.flight{
+    background: #FFFFFF;
+    box-shadow: 0px 30px 84px rgba(19, 10, 46, 0.08), 0px 8px 32px rgba(19, 10, 46, 0.07), 0px 3px 14px rgba(19, 10, 46, 0.03), 0px 1px 3px rgba(19, 10, 46, 0.13);
+    border-radius: 12px;
+    position: absolute;
+    bottom: -335px;
+    left: 0;
+    padding: 34px 29px;
+    width: 100%;
+}
+.block1 .flight .middleFLight{
+    display: flex;
+    align-items: center;
+}
+
+.flight select{
+    border: none;
+    margin-right: 20px;
+}
+.flight select:focus{
+    outline: none;
+}
+.flight .chooise{
+    margin-bottom: 30px;
+}
+.flight .from{
+    border: 1px solid #AAAAAA;
+    box-sizing: border-box;
+    border-radius: 10px;
+    width: 300px;
+    padding: 16px 20px;
+    margin-bottom: 16px;
+    min-height: 139px;
+}
+.flight .to{
+    margin-right: 30px;
+}
+.flight .from p{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: rgba(21, 21, 21, 0.6);
+    margin-bottom: 0px;
+}
+.flight .from .text{
+    margin-bottom: 14px;
+}
+.flight .arrow{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    text-decoration-line: underline;
+    text-transform: capitalize;
+    color: #151515;
+    margin: 0 10px;
+}
+.flight .book{
+    position: absolute;
+    left: 50%;
+    bottom: -28%;
+    transform: translate(-50%,-50%);
+    background: #656293;
+    border-radius: 10px;
+    padding: 27px 30px;
+    text-decoration: none;
+    color: #fff;
+}
+.flight .book .fas{
+    margin-left: 60px;
+    align-items: baseline;
+}
+.flight .middleFLight select{
+    margin-bottom: 14px;
+}
+.flight .middleFLight select{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    text-transform: capitalize;
+    color: #151515;
+}
+.flight .middleFLight .fas{
+
+}
+.flight .calendar{
+    width: 381px;
+    display: flex;
+    justify-content: space-between;
+}
+.flight .calendar .departure .date{
+    display: inline-block;
+    margin-right: 10px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    text-transform: capitalize;
+    color: #151515;
+}
+.flight .calendar .departure .btns{
+    display: block;
+}
+.flight .calendar .departure .btns .prev{
+    margin-right: 44px;
+}
+.flight .calendar .departure .btns a{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    color: rgba(21, 21, 21, 0.6);
+}
+.flight .calendar .departure .btns a:hover{
+    color: rgba(21, 21, 21, 1);
+}
+/*-----------------block1------------*/
+/*-----------------block2------------*/
+.block2{
+    position: relative;
+    margin-bottom: 50px;
+}
+.block2 .privat{
+    text-align: center;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 54px;
+    text-decoration-line: underline;
+    text-transform: capitalize;
+    color: #000000;
+    margin-bottom: 65px;
+}
+.block2 .thing img{
+    position: relative;
+    padding: 66px 0;
+}
+.block2 .bg{
+    position: absolute;
+    top: 103px;
+    left: 0;
+    background: #E5F4F6;
+    border-radius: 0px 50px 50px 0px;
+    width: 400px;
+    height: 523px;
+}
+.block2 .content{
+    padding: 147px 0;
+}
+.block2 .content .contentTitle{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    color: #000000;
+    margin-bottom: 14px;
+}
+.block2 .content .text{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: justify;
+    letter-spacing: 0.02em;
+    color: rgba(21, 21, 21, 0.6);
+}
+/*--------------block2---------*/
+/*---------------block3---------*/
+.block3{
+    position: relative;
+    margin-bottom: 83px;
+}
+.block3 .content{
+    padding: 147px 0;
+}
+.block3 .content .contentTitle{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    color: #000000;
+    margin-bottom: 14px;
+}
+.block3 .thing img{
+    position: relative;
+    padding: 66px 0;
+    z-index: 1;
+}
+.block3 .bg2{
+    position: absolute;
+    top: -14px;
+    right: 0;
+    background: #E5F4F6;
+    border-radius: 50px 0px 0px 50px;
+    width: 400px;
+    height: 523px;
+}
+.block3 .content .text{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: justify;
+    letter-spacing: 0.02em;
+    color: rgba(21, 21, 21, 0.6);
+}
+/*--------block3------*/
+/*------------block4------*/
+.block4{
+    margin-bottom: 36px;
+}
+.block4 .titlePerfomance .perfomance{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 54px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #000000;
+    margin-bottom: 68px;
+}
+.block4 .inner1{
+    background: #FFFFFF;
+    box-shadow: 0px 30px 84px rgba(19, 10, 46, 0.08), 0px 8px 32px rgba(19, 10, 46, 0.07), 0px 3px 14px rgba(19, 10, 46, 0.03), 0px 1px 3px rgba(19, 10, 46, 0.13);
+    border-radius: 12px;
+    padding: 40px 51px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.block4 .inner1 .innerTitle{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #151515;
+    margin: 13px 0;
+    width: 263px;
+}
+.block4 .inner1 .innerText{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: rgba(21, 21, 21, 0.6);
+    width: 266px;
+}
+.block4 .innerPicture{
+    padding: 126px 0;
+    text-align: center;
+}
+/*-------------------block4---------------*/
+/*------------------block5-------------*/
+.block5{
+    margin-bottom: 80px;
+    position: relative;
+}
+.block5 .pic{
+    position: absolute;
+    top: 120px;
+    right: 0;
+}
+.block5 .luxuryTitle{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 54px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #000000;
+    margin-bottom: 69px;
+}
+.block5 .plane{
+    padding: 12px;
+    background: #FFFFFF;
+    box-shadow: 0px 30px 84px rgba(19, 10, 46, 0.08), 0px 8px 32px rgba(19, 10, 46, 0.07), 0px 3px 14px rgba(19, 10, 46, 0.03), 0px 1px 3px rgba(19, 10, 46, 0.13);
+    border-radius: 12px;
+    text-align: center;
+    z-index: 1;
+}
+.block5 .plane .name{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #151515;
+    margin-top: 14px;
+}
+/*----------------block5-------------*/
+/*------------------block6-*-----------*/
+.block6 .title{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 54px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #000000;
+    margin-bottom: 65px;
+}
+
+.block6 .innerPart{
+    background: #F5F5F5;
+    border-radius: 20px 0px 0px 20px;
+    padding: 24px;
+    margin-bottom: 17px;
+}
+.block6 .innerPart .InnerTitle{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 40px;
+    color: #151515;
+}
+.block6 .innerPart p{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 33px;
+    color: #A9A9AA;
+    margin-top: 32px;
+    margin-bottom: 24px;
+}
+.block6 .innerPart ul{
+    border-bottom: 1px dashed #A9A9AA;
+    margin-bottom: 35px;
+}
+.block6 .innerPart li{
+    list-style: inside;
+    list-style: none;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #151515;
+}
+.block6 .innerPart li .fas{
+    margin-right: 8px;
+    margin-bottom: 16px;
+}
+.block6 .innerPart .num{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 40px;
+    color: #161616;
+}
+.block6 .innerPart .month{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 40px;
+    color: #161616;
+}
+.block6 .innerPart a{
+    display: block;
+    width: 100%;
+    background: #656293;
+    border-radius: 12px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 40px;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 12px 0;
+    margin-top: 24px;
+    transition: .5s ease-in-out;
+}
+.block6 .innerPart a:hover{
+    text-decoration: none;
+}
+.block6 .middle{
+    border-radius: 0;
+}
+.block6 .right{
+    border-radius: 0px 20px 20px 0px;
+}
+.block6 .Pic{
+    text-align: right;
+    margin-top: 20px;
+}
+/*------------------------*/
+.block6 .innerPart:hover{
+    transform: scale(1.1);
+    transition: .5s ease-in-out;
+    background: #656293;
+}
+.block6 .innerPart:hover .InnerTitle{
+    color: #FFFFFF;
+    transition: .5s;
+}
+.block6 .innerPart:hover li{
+    color: #FFFFFF;
+}
+.block6 .innerPart:hover .num{
+    color: #FFFFFF;
+}
+.block6 .innerPart:hover .month{
+    color: #FFFFFF;
+}
+.block6 .innerPart:hover a{
+    background: #FFFFFF;
+    color: #151515;
+}   
+/*---------------------------*/
+/*-----------------block6--------*/
+/*------------------footer-------------*/
+.footer{
+    padding-top: 50px;
+    background: #656293;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+.footer .Logo{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+.footer .footerNav ul{
+    display: flex;
+}
+.footer .footerNav li{
+    list-style: none;
+    margin-right: 10px;
+}
+.footer .footerNav a{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    text-transform: capitalize;
+    color: rgba(255, 255, 255);
+    opacity: .5;
+    transition: .3s;
+}
+.footer .footerNav a:hover{
+    transition: .3s;
+    text-decoration: none;
+    opacity: 1;
+}
+.footer .footerText{
+    text-align: right;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    text-transform: capitalize;
+    color: rgba(255, 255, 255);
+    opacity: .5;
+}
