@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<script>
+    let result = document.querySelector('.result');
+    let userJob = {
+        name: "Evgen",
+        lastName: "Babin",
+        age: 18,
+        sallary: {
+            ammount: "15000",
+            dayWork: "5",
+            holiday: {
+                money: 1500,
+                dayHoliday: 30,
+            },
+        },
+    };
+    for (let i in userJob) {
+        console.log(userJob[i]);
+    };
+    let resultFinish = document.querySelector('.resultFinish');
+    let newJob = Object.assign({}, userJob);
+    newJob.name = 'Dmitro';
+    newJob.lastname = 'volkov';
+    newJob.age = 19;
+    newJob.sallary.ammount = 25712;
+    newJob.sallary.dayWork = 31;
+    newJob.sallary.holiday.money = 2000;
+    newJob.sallary.holiday.dayHoliday = 15;
+    console.log(newJob);
+    // #2
+    const secondArr = [{
+        name: 'Lisa',
+        lastname: 'Verova',
+        age: 19,
+        sallary: {
+            ammount: 8600,
+            dayWork: 20,
+            holiday: {
+                money: 2333,
+                dayHoliday: 11,
+            },
+        },
+    }, {
+        name: 'Adam',
+        lastname: 'Moran',
+        age: 24,
+        sallary: {
+            ammount: 1000,
+            dayWork: 20,
+            holiday: {
+                money: 3800,
+                dayHoliday: 12,
+            },
+        },
+    }, {
+        name: 'Yana',
+        lastname: 'Igina',
+        age: 50,
+        sallary: {
+            ammount: 5000,
+            dayWork: 356,
+            holiday: {
+                money: 50,
+                dayHoliday: 0,
+            },
+        },
+    }, {
+        name: 'Artem',
+        lastname: 'Krumalenko',
+        age: 20,
+        sallary: {
+            ammount: 42000,
+            dayWork: 200,
+            holiday: {
+                money: 5000,
+                dayHoliday: 20,
+            },
+        },
+    }, {
+        name: 'Dmytro',
+        lastname: 'Cherno',
+        age: 22,
+        sallary: {
+            ammount: 3400,
+            dayWork: 21,
+            holiday: {
+                money: 111,
+                dayHoliday: 1,
+            },
+        },
+    }];
+    let resultFinishArr = document.querySelector('.resultFinishArr');
+    secondArr.map(secondArr => resultFinishArr += `${secondArr.name} ${secondArr.lastname} ${secondArr.sallary.holiday.money}`);
+</script>
+
+<body>
+    <div id="result"></div>
+    <div class="resultFinish"></div>
+    <div class="resultFinishArr"></div>
+</body>
+
+
+</html>
