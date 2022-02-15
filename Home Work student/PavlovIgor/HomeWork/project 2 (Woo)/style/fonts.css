@@ -1,0 +1,30 @@
+@font-face {
+  font-family: Roboto-Regular-400;
+  src: url(../fonts/Roboto/Roboto-Regular-400.eot) format("eot"), url(../fonts/Roboto/Roboto-Regular-400.ttf) format("ttf"), url(../fonts/Roboto/Roboto-Regular-400.woff) format("woff"), url(../fonts/Roboto/Roboto-Regular-400.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: Roboto-Bold-700;
+  src: url(../fonts/Roboto/Roboto-Bold-700.eot) format("eot"), url(../fonts/Roboto/Roboto-Bold-700.ttf) format("ttf"), url(../fonts/Roboto/Roboto-Bold-700.woff) format("woff"), url(../fonts/Roboto/Roboto-Bold-700.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: Roboto-Medium-500;
+  src: url(../fonts/Roboto/Roboto-Medium-500.eot) format("eot"), url(../fonts/Roboto/Roboto-Medium-500.ttf) format("ttf"), url(../fonts/Roboto/Roboto-Medium-500.woff) format("woff"), url(../fonts/Roboto/Roboto-Medium-500.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: CircularStd-Bold-700;
+  src: url(../fonts/CircularStd/CircularStd-Bold-700.eot) format("eot"), url(../fonts/CircularStd/CircularStd-Bold-700.ttf) format("ttf"), url(../fonts/CircularStd/CircularStd-Bold-700.woff) format("woff"), url(../fonts/CircularStd/CircularStd-Bold-700.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: CircularStd-Book-350;
+  src: url(../fonts/CircularStd/CircularStd-Book-350.eot) format("eot"), url(../fonts/CircularStd/CircularStd-Book-350.ttf) format("ttf"), url(../fonts/CircularStd/CircularStd-Book-350.woff) format("woff"), url(../fonts/CircularStd/CircularStd-Book-350.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: VarelaRound-Regular-400;
+  src: url(../fonts/CircularStd//VarelaRound-Regular-400.eot) format("eot"), url(../fonts/CircularStd/VarelaRound-Regular-400.ttf) format("ttf"), url(../fonts/CircularStd/VarelaRound-Regular-400.woff) format("woff"), url(../fonts/CircularStd/VarelaRound-Regular-400.woff2) format("woff2");
+}
+/*# sourceMappingURL=fonts.css.map */
