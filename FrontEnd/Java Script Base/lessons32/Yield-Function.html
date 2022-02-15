@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Yield Function</title>
+</head>
+<script>
+	/*function* generatorFoo(){
+		yield 1;
+		yield 2;
+		yield 3;
+	}*/
+	
+	
+	function* generatorFoo(){
+		yield 1;
+		yield 2;
+		yield 3;
+	}
+	
+	let generator = generatorFoo();
+	
+	
+	for(let value of generator){
+		console.log(value);
+	}
+	//let OneNext = generator.next();
+	//let TwoNext = generator.next();
+	//let ThreeNext = generator.next();
+	
+	//console.log(JSON.stringify(OneNext));
+	//console.log(JSON.stringify(TwoNext));
+	//console.log(JSON.stringify(ThreeNext));
+	
+	
+	function* yieldAdd(){
+		yield 1;
+		yield* [20,30,50];
+	}
+	
+	let a = yieldAdd();
+	console.log(a.next());
+	console.log(a.next());
+	console.log(a.next());
+	console.log(a.next());
+	
+</script>
+<body>
+</body>
+</html>

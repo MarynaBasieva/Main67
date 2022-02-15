@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Function Constructor</title>
+</head>
+<script>
+	let Func = function(){
+		this.name;
+	};
+	new Func();
+	console.log(Func);
+	
+	
+	let Man = function(name){
+		this.name = name;
+		this.speak = true;
+		
+		let age = "34";
+		
+		this.sayHay = function(){
+			return 'Привет меня зовут, ' + this.name + '. Мне ' + age + ' года';
+		};
+	
+	};
+	
+	let petr = new Man('Петр');
+	let yura = new Man('Юра');
+	
+	
+	console.log(petr);
+	console.log(petr.name);
+	console.log(petr.speak);
+	console.log(petr.sayHay());
+	//console.log(petr.age);
+	
+	
+	let MyApp = {
+		Man: function(name){
+			this.name  = name;
+			this.speak = true;
+			
+		}
+	};
+	
+	let goha = new MyApp.Man('Гоша');
+	console.log(goha);
+</script>
+<body>
+</body>
+</html>

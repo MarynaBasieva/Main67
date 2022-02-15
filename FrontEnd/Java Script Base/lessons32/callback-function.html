@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>callback function</title>
+</head>
+<script>
+	
+	/*const newSushi = makeSushi("feladelfia"); 
+	
+	readBookJS();
+	
+	eatSushi(newSushi);*/
+	
+	
+/*	const makeSushi = function(title, cb){
+		console.log(`Заказ на приготовление суши ${title}  получен. Начинаем готовить`);
+		setTimeout(cb, 3000);
+	}
+	
+	const readBookJS = function(){
+		console.log("Читать книгу по JS будем");
+	}
+	
+	const eatSushi = function(){
+		console.log('Ура суши готовы давайте есть');
+	}
+	
+	makeSushi("Филадельфия", eatSushi);
+	readBookJS();
+	
+	
+	
+	const foo = function(){
+		return "Hello World";
+	}
+	
+	console.log(foo());//hello World
+	
+	console.log(foo);//{return "Hello World"}
+	
+	const runMan = function(fn){
+		return fn(); //вызываем функции переданную в качестве параметра
+	}
+	console.log(foo);
+	*/
+	
+	
+	console.log("===========");
+	
+	
+/*	function call(){
+		setTimeout(function(){
+			console.log("я тебе звоню");
+		},3000);
+	}
+	
+	function answerPhone(){
+		console.log("Оставьте свое сообщение");
+	}
+	
+	
+	call();
+	answerPhone();*/
+	
+	
+	function callTo(name,callback){
+		console.log("Привет" + ' ' + name);
+		callback();
+	}
+	callTo('Maryna', function(){
+		console.log("после сигнала");
+	});
+	
+	
+	
+	
+</script>
+	<style>
+		.box{
+			background: #000;
+			width: 200px;
+			height: 70px;
+			margin-bottom: 20px;
+			color: #fff;
+			text-align: center;
+		}
+	</style>
+<body>
+	<div class="box">Box 1</div>
+	<div class="box">Box 2</div>
+	<div class="box">Box 3</div>
+</body>
+	<script>
+		let box = document.querySelectorAll(".box");
+		box.forEach(function(item,i,boxes){
+			item.style.backgroundColor = 'blue';
+		});
+		console.log(box);
+	</script>
+</html>
