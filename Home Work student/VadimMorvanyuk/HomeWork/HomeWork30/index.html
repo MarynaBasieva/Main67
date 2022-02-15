@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="Result"></div>
+    <div class="ResultFinish"></div>
+    <div class="ResultFinishArr"></div>
+</body>
+<script>
+    
+    
+
+    let userjob = {
+        name: 'Ivan',
+        lastname: 'Ivanov',
+        age: 20,
+        sallary: {
+            vacation: 2500,
+            days: 15,
+            vacationMoney: {
+                moneyVacation: 3000,
+                dayVacation: 5,
+            },
+        },
+        
+    };
+    for (let i in userjob) {
+        console.log(userjob[i])
+    }
+
+    let Result = document.querySelector('.Result');
+    Result.innerHTML = JSON.stringify(userjob);
+    
+   
+
+    let userjob2 = Object.assign({}, userjob);
+    userjob2.name = 'Petr';
+    userjob2.lastname = 'Petrov';
+    userjob2.age = '25';
+    userjob2.sallary.vacation = 5000;
+    userjob2.sallary.days = 20;
+    userjob2.sallary.vacationMoney.moneyVacation = 2500;
+    userjob2.sallary.vacationMoney.dayVacation = 6;
+    let ResultFinish = document.querySelector('.ResultFinish');
+    ResultFinish.innerHTML = JSON.stringify(userjob2);
+
+
+    const people = [
+        {
+            name: 'Chris',
+            lastname: 'Evans',
+            age: '40',
+            sallary: {
+                vacation: 1000,
+                days: 9,
+                vacationMoney: {
+                    moneyVacation: 3005,
+                    dayVacation: 6,
+                },
+            },
+            
+        },
+        {
+            name: 'Chris',
+            lastname: 'Evans',
+            age: '40',
+            sallary: {
+                vacation: 1000,
+                days: 9,
+                vacationMoney: {
+                    moneyVacation: 3005,
+                    dayVacation: 6,
+                },
+            },
+            
+        },
+        {
+            name: 'Chris',
+            lastname: 'Evans',
+            age: '40',
+            sallary: {
+                vacation: 1000,
+                days: 9,
+                vacationMoney: {
+                    moneyVacation: 3005,
+                    dayVacation: 6,
+                },
+            },
+            
+        },
+        {
+            name: 'Chris',
+            lastname: 'Evans',
+            age: '40',
+            sallary: {
+                vacation: 1000,
+                days: 9,
+                vacationMoney: {
+                    moneyVacation: 3005,
+                    dayVacation: 6,
+                },
+            },
+            
+        },
+        {
+            name: 'Chris',
+            lastname: 'Evans',
+            age: '40',
+            sallary: {
+                vacation: 1000,
+                days: 9,
+                vacationMoney: {
+                    moneyVacation: 3005,
+                    dayVacation: 6,
+                },
+            },
+            
+        },
+        
+    ]
+    
+    console.log(people)
+
+
+    let ResultFinishArr = document.querySelector('.ResultFinishArr');
+    people.map(people => ResultFinishArr.innerHTML += (`${people.name} ${people.lastname}  ${people.sallary.vacationMoney.moneyVacation} \n`));
+
+    
+
+
+
+    
+</script>
+</html>
