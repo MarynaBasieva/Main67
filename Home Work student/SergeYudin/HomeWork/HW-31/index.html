@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>HW-28</title>
+    <style>
+      #canvas {
+        margin-left: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      
+      ////1////
+
+      let NewCar = function (make, model, color, mileage, year) {
+        this.make = make;
+        this.model = model;
+        this.color = color;
+        this.mileage = mileage;
+        this.year = year;
+
+        this.car = function () {
+          return (
+            "Продается автомобиль " +
+            make +
+            " " +
+            model +
+            ", цвет: " +
+            color +
+            ", пробег: " +
+            mileage +
+            ", год: " +
+            year
+          );
+        };
+      };
+
+      let bmw = new NewCar("BMW", "535d ", "черный", "136 000 км", "2015");
+
+      const keys = Object.keys(bmw);
+      for (let i = 0; i < keys.length - 1; i++) {
+        document.write(bmw[keys[i]], "<br>");
+      }
+
+      document.write(bmw.car())
+
+      ////1////
+
+      ////2////
+      let makeCall = function () {
+        console.log("Звоню");
+      };
+
+      let waitingCall = function () {
+        console.log("Ожидаю звонок");
+      };
+
+      let calyouBack = function () {
+        console.log("Мы вам перезвоним");
+      };
+
+      let callBack = function () {
+        console.log("Мы вам перезваниваем");
+      };
+
+      let callCenter = function (a, b, c, d) {
+        setTimeout(a, 500);
+        setTimeout(b, 1500);
+        setTimeout(c, 5500);
+        setTimeout(d, 8500);
+      };
+
+      callCenter(makeCall, waitingCall, calyouBack, callBack);
+      ////2////
+    </script>
+  </body>
+</html>
