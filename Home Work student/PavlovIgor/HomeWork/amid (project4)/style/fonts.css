@@ -1,0 +1,45 @@
+@font-face {
+  font-family: Roboto-Regular-400;
+  src: url(../fonts/Roboto/Roboto-Regular-400.eot) format("eot"), url(../fonts/Roboto/Roboto-Regular-400.ttf) format("ttf"), url(../fonts/Roboto/Roboto-Regular-400.woff) format("woff"), url(../fonts/Roboto/Roboto-Regular-400.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: Roboto-Bold-700;
+  src: url(../fonts/Roboto/Roboto-Bold-700.eot) format("eot"), url(../fonts/Roboto/Roboto-Bold-700.ttf) format("ttf"), url(../fonts/Roboto/Roboto-Bold-700.woff) format("woff"), url(../fonts/Roboto/Roboto-Bold-700.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: Roboto-Medium-500;
+  src: url(../fonts/Roboto/Roboto-Medium-500.eot) format("eot"), url(../fonts/Roboto/Roboto-Medium-500.ttf) format("ttf"), url(../fonts/Roboto/Roboto-Medium-500.woff) format("woff"), url(../fonts/Roboto/Roboto-Medium-500.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: Graphik-Medium-500;
+  src: url(../fonts/Poppins/Graphik-Medium.eot) format("eot"), url(../fonts/Poppins/Graphik-Medium.ttf) format("ttf"), url(../fonts/Poppins/Graphik-Medium.woff) format("woff"), url(../fonts/Poppins/Graphik-Medium.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: OpenSans-Regular-400;
+  src: url(../fonts/Poppins/OpenSans-Regular.eot) format("eot"), url(../fonts/Poppins/OpenSans-Regular.ttf) format("ttf"), url(../fonts/Poppins/OpenSans-Regular.woff) format("woff");
+}
+
+@font-face {
+  font-family: OpenSans-SemiBold-800;
+  src: url(../fonts/Poppins/OpenSans-SemiBold.eot) format("eot"), url(../fonts/Poppins/OpenSans-SemiBold.ttf) format("ttf"), url(../fonts/Poppins/OpenSans-SemiBold.woff) format("woff");
+}
+
+@font-face {
+  font-family: Poppins-Bold-700;
+  src: url(../fonts/Poppins/Poppins-Bold.eot) format("eot"), url(../fonts/Poppins/Poppins-Bold.ttf) format("ttf"), url(../fonts/Poppins/Poppins-Bold.woff) format("woff"), url(../fonts/Poppins/Poppins-Bold.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: Poppins-ExtraBold-900;
+  src: url(../fonts/Poppins/Poppins-ExtraBold.eot) format("eot"), url(../fonts/Poppins/Poppins-ExtraBold.ttf) format("ttf"), url(../fonts/Poppins/Poppins-ExtraBold.woff) format("woff"), url(../fonts/Poppins/Poppins-ExtraBold.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: Poppins-Regular-400;
+  src: url(../fonts/Poppins/Poppins-Regular.eot) format("eot"), url(../fonts/Poppins/Poppins-Regular.ttf) format("ttf"), url(../fonts/Poppins/Poppins-Regular.woff) format("woff"), url(../fonts/Poppins/Poppins-Regular.woff2) format("woff2");
+}
+/*# sourceMappingURL=fonts.css.map */
