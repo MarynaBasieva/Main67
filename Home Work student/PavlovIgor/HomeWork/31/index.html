@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        font-size: 30px;
+        line-height: 50px;
+        width: auto;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: wheat;
+        background: black;
+      }
+    </style>
+</head>
+<body>
+    <script>
+        // ===one===
+function Name (dog, cat, rabbit, fish, parrot) {
+    this.dog = dog;
+    this.cat = cat;
+    this.rabbit = rabbit;
+    this.fish = fish;
+    this.parrot = parrot
+}
+
+let animals = new Name ("Mylo", "Murka", "King", "Dora", "Gosha");
+
+let res = Object.keys(animals);
+
+    for (let i in res) {
+        document.write(animals[res[i]], "<br>");
+    };
+
+console.log (animals.dog);
+console.log (animals.cat);
+console.log (animals.rabbit);
+console.log (animals.fish);
+console.log (animals.parrot);
+
+// ===two===
+let makeCall = function (ec, cl, cb, ty) {
+    console.log("Звоню");
+    setTimeout(ec, 2000),
+    setTimeout(cl, 4000),
+    setTimeout(cb, 6000),
+    setTimeout(ty, 8000);
+  };
+
+  let thankYou = function () {
+    console.log("Спасибо за заказ");
+  }
+
+  let callBack = function () {
+    console.log("Мы вам перезваниваем");
+  };
+
+  let expectСall = function () {
+    console.log("Ожидаю звонок");
+  };
+
+  let callLater = function () {
+    console.log("Мы вам перезвоним");
+  };
+
+  makeCall(expectСall, callLater, callBack, thankYou);
+    </script>
+</body>
+</html>
