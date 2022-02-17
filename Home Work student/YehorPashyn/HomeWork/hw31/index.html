@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="person"></div>
+    <script>
+
+    const Person = function (name, speak, age, gender) {
+        this.name = name;
+        this.speak = speak;
+        this.age = age;
+        this.gender = gender;
+        this.isProgrammer = true;
+    }
+    let Yehor = new Person('Yehor', 'russian', 22, 'man');
+    console.log(Yehor);
+
+    let Yulia = new Person('Yulia', 'russian',23, 'woman')
+    console.log(Yulia)
+
+    let David = new Person('David', 'english', 11, 'man')
+
+    function renderUserData (obj){
+        for (let key in obj){
+            document.querySelector('.person').innerHTML += `${key} --- ${obj[key]};\n`
+        }
+    }
+
+    renderUserData(Yehor);
+    renderUserData(Yulia);
+    renderUserData(David);
+
+
+
+    function call(){
+        setTimeout(function () {
+            console.log("Вы позвонили в службу доставки");
+          }, 1000);
+    }
+
+    function waitCall(){
+        setTimeout(function(){
+            console.log('Oжидайте звонoк');
+        }, 3000);
+    }
+
+    function recall(){
+        setTimeout(function(){
+            console.log('Мы вам перезвоним в ближайшее время');
+        }, 6000);
+    }
+    
+    function calling(){
+        setTimeout(function(){
+            console.log('Мы вам звоним');
+        }, 9000);
+    }
+
+    call();
+    waitCall();
+    recall();
+    calling();
+
+    </script>
+</body>
+</html>
