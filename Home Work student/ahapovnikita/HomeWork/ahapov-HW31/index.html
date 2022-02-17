@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW31</title>
+</head>
+
+<body>
+    <h1 style="font-size: 48px; background-color: rgb(133, 245, 99);">HW31</h1>
+    <script>
+        /////
+        let person = function (name, surname, job, salary, day) {
+            this.name = name;
+            this.surname = surname;
+            this.job = job;
+            this.salary = salary;
+            this.day = day;
+
+            this.alarm = function () {
+                return ('welcome' + '&nbsp;&nbsp;'+ name +'&nbsp;&nbsp;' + surname + 'My Job occupation is..' +'&nbsp;&nbsp;'+ job+'&nbsp;&nbsp;'+ 'My salary is' +'&nbsp;&nbsp;'+'&nbsp;&nbsp;'+ salary +'&nbsp;&nbsp;'+'today is' +'&nbsp;&nbsp;'+ day + '');
+            };
+        };
+        let human = new person('Homer', 'Simpson', 'Nuclear Safety Inspector', "€374160", 'Friday');
+        document.write(human.alarm());
+
+        console.log('\n');
+////////
+        function call () {
+            setTimeout(function () {
+                console.log('callinng you...');
+            }, 1200);
+        }
+        function waitcall () {
+            setTimeout(function () {
+                console.log('waiting for a call..');
+            }, 1600);
+        }
+        
+        function wecall () {
+            setTimeout(function () {
+                console.log('we will call...');
+            }, 2000);
+        }
+        
+        function callback () {
+            setTimeout(function () {
+                console.log('calling you back...');
+            }, 2200);
+        }
+        
+        call();
+        waitcall();
+        wecall();
+        callback();
+
+        console.log('\n');
+/////////
+    </script>
+</body>
+
+</html>
