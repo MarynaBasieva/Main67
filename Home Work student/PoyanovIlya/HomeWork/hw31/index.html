@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    // #2
+    function call() {
+        setTimeout(function() {
+            console.log('звоните');
+        }, 1000);
+    }
+
+    function expectation() {
+        setTimeout(function() {
+            console.log('ожидаете звонок');
+        }, 2000);
+    }
+
+    function callBack() {
+        setTimeout(function() {
+            console.log('мы Вам перезвоним');
+        }, 3000);
+    }
+
+    function callYou() {
+        setTimeout(function() {
+            console.log('Мы Вам звоним');
+        }, 4000);
+    }
+
+    call();
+    expectation();
+    callBack();
+    callYou();
+
+    // #1
+    function vegetables(globe, beans, apareka, avocado, beetroot) {
+        this.globe = globe;
+        this.beans = beans;
+        this.apareka = apareka;
+        this.avocado = avocado;
+        this.beetroot = beetroot;
+    }
+    let nameVegetables = new vegetables('globe', 'beans', 'apareka', 'avocado', 'beetroot');
+    let result = Object.keys(nameVegetables);
+    for (let i in result) {
+        document.write(nameVegetables[result[i]], '<br/>');
+    }
+</script>
+
+<body>
+
+</body>
+
+</html>
