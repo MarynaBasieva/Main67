@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    
+</head>
+<body>
+   
+</body>
+<script>
+    
+
+    let Car = function(name,model,cost,age){
+        this.name = name;
+        this.model = model;
+        this.cost = cost;
+        this.age = age;
+        this.hay = function(){
+            return 'Марка машины: ' + this.name + '. ' + 'Модель машины: ' + this.model + '. ' + 'Стоимость машины: ' + this.cost + '. ' + 'Год выпуска: ' + this.age;
+        };
+    };
+
+    let tesla = new Car('Tesla', 'Model X', '60000$', '2016');
+    document.write(tesla.hay())
+
+   function call(){
+        setTimeout(function(){
+            console.log('Звоним...')
+        }, 2000)
+    }
+    function wait(){
+        setTimeout(function(){
+            console.log('Ожидаем...')
+        }, 3500)
+    }
+    function callback(){
+        setTimeout(function(){
+            console.log('Мы вам перезвоним...')
+        }, 5000)
+    }
+    function callyou(){
+        setTimeout(function(){
+            console.log('Мы звоним вам...')
+        }, 6500)
+    }
+    call()
+    wait()
+    callback()
+    callyou()
+    
+     
+</script>
+</html>
