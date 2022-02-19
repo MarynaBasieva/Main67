@@ -187,7 +187,13 @@
   .enjoy .card:hover{
     transform: translateY(0%);
   }
+  .booking .booking-window .itinerary .ret{
+    margin: 0 19.5px 4px 16.75px;
+  }
 
+  .booking .booking-window .itinerary .dates h4{
+    font-size: 16px;
+  }
 }
 
 @media (max-width: 1043px) {
