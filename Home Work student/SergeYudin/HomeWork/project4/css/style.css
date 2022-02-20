@@ -1,0 +1,670 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+}
+
+/*font-family: 'Inter', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Prosto One', cursive;
+font-family: 'Roboto', sans-serif;*/
+
+.responsive_menu {
+  display: none;
+}
+
+.introduction {
+  background-image: url("../img/1/background-final.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 25px 0px 438px;
+}
+
+.introduction .nav-menu ul {
+  list-style: none;
+}
+
+.introduction .nav-menu ul.sub-menu li a {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: right;
+  text-transform: capitalize;
+  color: #181818;
+  transition: 0.5s ease-in, 0.5s ease-out;
+}
+.introduction .nav-menu ul.sub-menu li a:hover {
+  text-decoration: none;
+  color: rgb(177, 177, 177);
+}
+
+.introduction .nav-menu ul.sub-menu {
+  padding-top: 15px;
+}
+
+.introduction .nav-menu ul.sub-menu li {
+  margin-right: 15px;
+}
+
+.introduction .nav-menu ul.sub-menu .sixth-item {
+  margin-right: 0px;
+}
+
+.introduction .nav-menu ul.sub-menu .first-item {
+  background-image: url("../img/1/elipsewhite.png");
+  background-repeat: no-repeat;
+  background-size: initial;
+}
+
+.introduction .regular-btn {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: right;
+  transition: 0.5s ease-in-out;
+  color: #181818;
+  margin-right: 15px;
+}
+
+.introduction .regular-btn:hover {
+  text-decoration: none;
+}
+
+.introduction .account .prpl-button {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: right;
+  transition: 0.5s ease-in-out;
+  background: #656293;
+  border-radius: 5px;
+  padding: 5px 23px;
+  color: #ffffff;
+}
+
+.introduction .account .prpl-button:hover {
+  text-decoration: none;
+  background: #8982e5;
+}
+
+.introduction .header {
+  margin-bottom: 190px;
+}
+
+.introduction .banner .title-and-button .main-h1,
+.h1-block {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 66px;
+  line-height: 77px;
+  text-transform: capitalize;
+
+  color: #151515;
+}
+
+.introduction .banner .title-and-button .main-h1 {
+  display: inline;
+  margin-right: 5px;
+}
+
+.introduction .banner .title-and-button .alt-h1 {
+  display: inline;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 66px;
+  line-height: 77px;
+  text-transform: uppercase;
+  color: #656293;
+  letter-spacing: 2px;
+}
+
+.introduction .banner .title-and-button .h1-block {
+  display: block;
+  margin-right: 0px;
+  margin-bottom: 48px;
+}
+
+.introduction .banner .title-and-button .arrow-btn {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #151515;
+  position: relative;
+  margin-left: 10px;
+  transition: 0.5s ease-in-out;
+}
+
+.introduction .banner .title-and-button .arrow-btn:hover {
+  text-decoration: none;
+}
+
+.introduction .banner .title-and-button .arrow-btn:hover:after {
+  position: absolute;
+  content: "";
+  background-image: url("../img/1/icons/arrow-right_1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 30px;
+  height: 25px;
+}
+
+.booking {
+  padding-bottom: 172px;
+}
+
+.booking .booking-window {
+  background: #ffffff;
+  box-shadow: 0px 30px 84px rgba(19, 10, 46, 0.08),
+    0px 8px 32px rgba(19, 10, 46, 0.07), 0px 3px 14px rgba(19, 10, 46, 0.03),
+    0px 1px 3px rgba(19, 10, 46, 0.13);
+  border-radius: 12px;
+  padding: 34px 30px 33px 29px;
+  margin-top: -105px;
+}
+
+.booking .booking-window .nav-seaters {
+  list-style: none;
+  display: flex;
+  margin-bottom: 24px;
+}
+
+.booking .booking-window .nav-seaters li a {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: capitalize;
+  color: #151515;
+  margin-right: 8.41px;
+  transition: 0.5s ease-in-out;
+}
+
+.booking .booking-window .nav-seaters li a:hover {
+  text-decoration: none;
+  color: rgb(150, 154, 158);
+}
+
+.booking .booking-window .nav-seaters li a img {
+  margin-right: 18.41px;
+}
+
+.booking .booking-window .itinerary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  position: relative;
+}
+
+.booking .booking-window .itinerary .from-to {
+  border: 1px solid #aaaaaa;
+  box-sizing: border-box;
+  border-radius: 10px;
+  padding: 16px 34px 15px 20px;
+}
+
+.booking .booking-window .itinerary .from-to h5 {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: rgba(21, 21, 21, 0.6);
+}
+
+.booking .booking-window .itinerary .from-to h4 {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  text-transform: capitalize;
+  color: #151515;
+}
+
+.booking .booking-window .itinerary .dates {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 23px 18px 15px 23px;
+  border: 1px solid #aaaaaa;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.booking .booking-window .itinerary .dates h5 {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: rgba(21, 21, 21, 0.6);
+  margin-bottom: 4px;
+}
+
+.booking .booking-window .itinerary .dates h4 {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  text-transform: capitalize;
+  color: #151515;
+  margin-bottom: 4px;
+}
+
+.booking .booking-window .itinerary .dates .prev-next {
+  display: flex;
+  justify-content: space-between;
+}
+
+.booking .booking-window .itinerary .dates .prev-next h5 {
+  text-transform: none;
+  cursor: pointer;
+}
+
+.booking .booking-window .itinerary .dates .prev-next h5:hover {
+  text-decoration: underline;
+}
+
+.booking .booking-window .itinerary .dep {
+  margin-right: 28.75px;
+}
+
+.booking .booking-window .itinerary .ret {
+  margin: 0 24.5px 4px 34.75px;
+}
+
+.booking .booking-window .add-smth {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: capitalize;
+  color: #151515;
+}
+
+.booking .booking-window .add-smth:hover {
+  text-decoration: underline;
+}
+
+.booking .booking-window .btn-widnwow {
+  display: block;
+  padding: 27px 95px 26px 30px;
+  position: absolute;
+  max-width: 233px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 0 auto;
+  background: #656293;
+  border-radius: 10px;
+  transition: 1s ease-in-out;
+  cursor: pointer;
+}
+
+.booking .booking-window .btn-widnwow:hover {
+  background-color: #9e9ace;
+}
+
+.booking .booking-window .btn-widnwow a {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  text-transform: capitalize;
+  color: #ffffff;
+  position: relative;
+}
+
+.booking .booking-window .btn-widnwow a:hover {
+  text-decoration: none;
+}
+
+.booking .booking-window .btn-widnwow a::after {
+  content: "";
+  position: absolute;
+  top: 15%;
+  left: 130%;
+  height: 15px;
+  width: 18px;
+  background-image: url("../img/2/icons/arrow-right.png");
+  background-repeat: no-repeat;
+}
+
+.insd {
+  background-image: url("../img/3/Rectangle.png");
+  background-repeat: no-repeat;
+  background-position: 0% 90%;
+  padding-bottom: 83px;
+}
+
+.outsd {
+  background-image: url("../img/3/left-bck.png");
+  background-repeat: no-repeat;
+  background-position: 100% 0%;
+  padding: 68px 0 83px;
+  margin-bottom: 83px;
+}
+
+.background-title {
+  text-align: center;
+  background-image: url("../img/1/Ellipse.png");
+  background-repeat: no-repeat;
+  background-size: initial;
+  background-position: 50.3% 25%;
+  padding: 2px 0;
+}
+
+.background-title h2 {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 54px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #000000;
+}
+
+.private-jets .first-row {
+  margin-bottom: 131px;
+}
+
+.private-jets .jets .jet-descrp h4 {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  color: #000000;
+  margin-bottom: 14px;
+}
+
+.private-jets .jets .jet-descrp p {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: justify;
+  letter-spacing: 0.02em;
+  text-align: justify;
+  color: rgba(21, 21, 21, 0.6);
+  max-width: 463px;
+}
+
+.performance {
+  padding-bottom: 66px;
+}
+
+.performance .background-title {
+  margin-bottom: 68px;
+}
+
+.performance .small-container {
+  text-align: center;
+  background: #ffffff;
+  box-shadow: 0px 30px 84px rgba(19, 10, 46, 0.08),
+    0px 8px 32px rgba(19, 10, 46, 0.07), 0px 3px 14px rgba(19, 10, 46, 0.03),
+    0px 1px 3px rgba(19, 10, 46, 0.13);
+  border-radius: 12px;
+  padding: 40px 52px 51px 52px;
+}
+
+.performance .small-container h5 {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: #151515;
+  margin: 13px 0px 11px;
+}
+
+.performance .small-container p {
+  max-width: 266px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  color: rgba(21, 21, 21, 0.6);
+}
+
+.performance .first {
+  margin-bottom: 30px;
+}
+
+.lxr-chart {
+  padding-bottom: 66px;
+}
+
+.lxr-chart .first-row {
+  margin-bottom: 69px;
+}
+
+.lxr-chart .plane {
+  padding: 10px 10px 14px 10px;
+  background: #ffffff;
+  border-radius: 12px;
+  -webkit-box-shadow: -1px 20px 49px -14px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: -1px 20px 49px -14px rgba(34, 60, 80, 0.2);
+  box-shadow: -1px 20px 49px -14px rgba(34, 60, 80, 0.2);
+  margin-bottom: 80px;
+}
+
+.lxr-chart .plane img {
+  border-radius: 12px;
+  max-width: 100%;
+  margin-bottom: 14px;
+}
+
+.lxr-chart .plane h5 {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #151515;
+}
+
+.enjoy {
+  padding-bottom: 17px;
+}
+
+.enjoy .first-row {
+  margin-bottom: 105px;
+}
+
+.enjoy .card {
+  background: #f5f5f5;
+  width: 31.6%;
+  background: #f5f5f5;
+  border-radius: 20px 0px 0px 20px;
+  padding: 24px;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+
+.enjoy .card h3 {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 40px;
+  color: #151515;
+  margin-bottom: 32px;
+  transition: 0.5s ease-in-out;
+}
+
+.enjoy .card h4 {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 33px;
+  color: #a9a9aa;
+  margin-bottom: 24px;
+}
+
+.enjoy .card ul {
+  list-style: none;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Poppins", sans-serif;
+  color: #151515;
+  padding-bottom: 18px;
+  margin-bottom: 65px;
+  border-bottom: 1px dashed #a9a9aa;
+  transition: 0.5s ease-in-out;
+}
+
+.enjoy .card ul li {
+  position: relative;
+  margin-left: 30px;
+}
+
+.enjoy .card ul .last-item {
+  margin-bottom: 0px;
+}
+
+.enjoy .card ul li:before {
+  top: 1.5px;
+  left: -30px;
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  background-image: url("../img/5/icons/black-tick.svg");
+  transition: 0.5s ease-in-out;
+}
+
+.enjoy .card .price-tag {
+  margin-bottom: 24px;
+}
+
+.enjoy .card .btn {
+  background: #656293;
+  border-radius: 12px;
+  padding: 12px 0;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 40px;
+  color: #ffffff;
+  transition: 0.5s ease-in-out;
+}
+
+.enjoy .card:hover {
+  transform: translateY(-15%);
+  background: #656293;
+  border-radius: 20px;
+}
+
+.enjoy .card:hover ul li:before {
+  background-image: url("../img/5/icons/white-tick.svg");
+}
+
+.enjoy .card:hover ul {
+  color: #ffffff;
+}
+
+.enjoy .card:hover h3 {
+  color: #ffffff;
+}
+
+.enjoy .card:hover .btn {
+  background: #ffffff;
+  color: #151515;
+}
+
+.enjoy .center {
+  border-radius: 20px;
+}
+
+.enjoy .right {
+  border-radius: 0px 20px 20px 0px;
+}
+
+.footer {
+  background: #656293;
+}
+
+.footer .first-row {
+  padding: 50px 0 35px 0;
+}
+
+.footer .nav-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 17px;
+  border-top: 1px rgba(255, 255, 255, 0.2) solid;
+}
+
+.footer .nav-footer ul {
+  list-style: none;
+  display: flex;
+}
+
+.footer .nav-footer ul li {
+  margin-right: 30px;
+}
+
+.footer .nav-footer ul li a {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+}
+
+.footer .nav-footer ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer .nav-footer ul .last-item {
+  margin-right: 0;
+}
+
+.footer .nav-footer p {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: capitalize;
+  color: rgba(255, 255, 255, 0.7);
+}

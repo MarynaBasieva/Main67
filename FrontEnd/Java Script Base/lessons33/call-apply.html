@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>call() apply()</title>
+</head>
+<script>
+	//call()
+	console.log("======call()=======");
+	let a = 10;
+	let obj = {x:15};
+	
+	function foo(){
+		console.log(this.a);
+		console.log(this);
+	}
+	foo();
+	foo.call(obj);
+	
+	
+	
+	let person ={
+		name: "Lena",
+		lastName: "Vorova",
+		specialty: "programist"
+	};
+	
+	function nameFoo(a,b){
+		console.log(this[a] + " " + this[b]);
+	}
+	nameFoo.call(person, "name","lastName");
+	nameFoo.call(person, "name","specialty");
+	
+	
+	//apply()
+	console.log("======apply()=======");
+	let arr = [6,7,9,8,5];
+	
+	let max = Math.max.apply(null,arr);
+	
+	let min = Math.min.apply(null,arr);
+	
+	console.log(max);
+	console.log(min);
+	
+	
+	max= -10, min=+10;
+	
+	for(let i =0; i<arr.length; i++){
+		if(arr[i] >max){
+			max=arr[i];
+		}
+		if(arr[i]<min){
+			min = arr[i];
+		}
+	}
+	console.log(max);
+	console.log(min);
+	
+
+</script>
+<body>
+</body>
+</html>

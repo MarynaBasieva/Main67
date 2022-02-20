@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>function Class</title>
+</head>
+<script>
+	/*const person ={
+		name: "Lena",
+		age:10,
+		sayHay: true
+	}*/
+	
+	class Person {
+		static type = 'Lena';
+		
+		constructor(options){
+			this.name = options.name;
+			this.age = options.age;
+			this.sayHay = options.sayHay;
+		}
+		voice(){
+			console.log('I am Lena');
+		}
+	}
+	
+	
+	
+/*	const person = new Person({
+		name: "Lena",
+		age:10,
+		sayHay: true
+	});
+	console.log(Person.type);*/
+	
+	class Human extends Person{
+		static type = "Human";
+		
+	 constructor(options){
+		 super(options)
+		 this.colorEyes = options.colorEyes;
+	 }
+	voice(){
+		super.voice();
+		console.log('I am Human')
+	}
+	} 
+	
+	
+	const human = new Human({
+		name: 'Human',
+		age: 20,
+		sayHay: true,
+		colorEyes: 'blue'
+	});
+	console.log(human.voice());
+	
+	
+	
+	
+</script>
+<body>
+</body>
+</html>
