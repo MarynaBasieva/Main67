@@ -249,6 +249,10 @@ font-family: 'Roboto', sans-serif;*/
   border-radius: 10px;
 }
 
+.booking .booking-window .itinerary .dates .calendar {
+  flex-shrink: 0;
+}
+
 .booking .booking-window .itinerary .dates h5 {
   font-family: "Poppins", sans-serif;
   font-style: normal;
@@ -668,3 +672,8 @@ font-family: 'Roboto', sans-serif;*/
   text-transform: capitalize;
   color: rgba(255, 255, 255, 0.7);
 }
+
+.sidenav{
+  display: none;
+}
+
