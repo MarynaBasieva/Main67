@@ -235,7 +235,7 @@
     position: relative;
     width: 40px;
     height: 25px;
-    margin: 10px 10px 0px 0px;
+    margin: 6px 10px 0px 0px;
     padding-right: 10px;
   }
 
@@ -297,6 +297,7 @@
     background-color: rgb(255, 255, 255);
     overflow-x: hidden;
     overflow-y: hidden;
+    overflow: auto;
     transition: 0.5s;
     padding-top: 80px;
     text-align: center;
@@ -328,6 +329,13 @@
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
+  }
+}
+
+@media (max-width: 575px){
+  .nav-footer ul,
+  .nav-footer p{
+    padding-left: 10px;
   }
 }
 

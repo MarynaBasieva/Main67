@@ -64,6 +64,11 @@ $(document).ready(function () {
     $(".sidenav, .nav-button").toggleClass("active");
     $("body").toggleClass("lock");
   });
+  $(".remove-window").click(function () {
+    $(".sidenav, .nav-button").removeClass("active");
+    $("body").removeClass("lock")
+  });
+
 });
 
 

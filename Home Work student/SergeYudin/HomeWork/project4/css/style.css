@@ -3,6 +3,8 @@
   padding: 0;
 }
 
+html{scroll-behavior:smooth}
+
 img {
   max-width: 100%;
   width: auto;
@@ -53,7 +55,7 @@ font-family: 'Roboto', sans-serif;*/
   margin-right: 15px;
 }
 
-.introduction .nav-menu ul.sub-menu .sixth-item {
+.introduction .nav-menu ul.sub-menu .seventh-item {
   margin-right: 0px;
 }
 
