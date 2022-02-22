@@ -6,12 +6,7 @@
     
 }
 @media (max-width:1200px){
-    .img_galery1{
-        display: none;
-    }
-    .galery_wrapper{
-        width: 100%;
-    }
+    
 }
 @media (max-width:991px){
     .nav-menu{
@@ -118,9 +113,32 @@
     .service{
         margin-bottom: 44px;
     }
+    .tab-content{
+        padding: 0 35px;
+    }
+    .img_galery1{
+        width: 100%;
+    }
+    .galery_wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .img_galery2{
+        flex-wrap: wrap;
+    }
+    .img_galery3{
+        flex-wrap: wrap;
+    }
+    .img_galery{
+        width: 100%;
+    }
     
 }
 @media (max-width:576px){
+    .header .container{
+        border: none;
+    }
     .banner-text h1{
         font-size: 68px;
     }
