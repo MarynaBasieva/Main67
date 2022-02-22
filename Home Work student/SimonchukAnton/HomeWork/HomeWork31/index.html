@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>hw31</title>
+</head>
+<body>
+    <script>
+        let Name = function (name, lastname) {
+            this.name = name;
+            this.lastname = lastname;
+            this.age = "25";
+            this.sity = "Рівне";
+          
+            this.newName = function () {
+                return (
+                    "Мене звати " +
+                    this.name + ' ,' +
+                    "моє призвіще " + ' ' +
+                    lastname + ', ' +
+                    "мені " +
+                    this.age + ' ' +
+                    "роки " +
+                    ", і я з міста " +
+                    this.sity);
+            };
+            
+        };
+        let Olya = new Name('Ольга', 'Сімончук');
+
+        console.log(Olya);
+        console.log(Olya.name);
+        console.log(Olya.lastName);
+        console.log(Olya.newName());
+        document.write(Olya.newName());
+        console.log("===========");
+        function call() {
+            setTimeout(function () {
+                console.log("Очікуйте дзвінок");
+            }, 1000);
+        }
+
+        function callagain() {
+            setTimeout(function () {
+                console.log("Ми вам передзвонимо");
+            }, 3000);
+        }
+        function answerPhone() {
+            setTimeout(function () {
+                console.log("Ми вам дзвонимо");
+            }, 5000);
+        }
+
+        call();
+        callagain();
+        answerPhone();
+        
+    </script>
+</body>
+</html>

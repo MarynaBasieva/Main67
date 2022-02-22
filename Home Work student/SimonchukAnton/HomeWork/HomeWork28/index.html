@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>hw29</title>
+</head>
+<body>
+    
+    <canvas id="canvas"></canvas>
+   <script>
+       let canvasNew = document.getElementById("canvas");
+       let result = canvasNew.getContext("2d");
+       result.beginPath();
+       result.rect(10, 10, 100, 100);
+       result.fillStyle = "blue";
+       result.fill();
+       result.fillStyle = "red";
+       result.fillRect(20, 30, 100, 100);
+
+       
+       let man = [
+           { name: "Anton", age: "26", salary: 98000 },
+           { name: "Petro", age: "25", salary: 9800 },
+           { name: "Stas", age: "24", salary: 980 },
+           { name: "Vanya", age: "32", salary: 1300},
+           { name: "Bogdan", age: "12", salary: 6000},
+           { name: "Ilya", age: "19", salary: 9000 },
+           { name: "Andriy", age: "33", salary: 500 },
+           { name: "Nazar", age: "22", salary: 50000 },
+           { name: "Vadim", age: "36", salary: 5000 },
+           { name: "Oleg", age: "14", salary: 7000 }
+           ]
+
+       const results = man.filter(person => {
+           if (person.salary >5000) {
+               return true;
+           }
+       });
+       console.log(results);
+       for (let salaryman of man) {
+           if (salaryman.salary > 5000) {
+               document.write(`</p> ${salaryman.name}  `);
+           }
+       }
+       
+      
+   </script>
+</body>
+</html>

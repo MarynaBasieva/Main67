@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>hw30</title>
+</head>
+<body>
+    <div class="result" ></div>
+    <div class="result-finish" ></div>
+    <div class="result-finish-arr" ></div>
+    <script>
+
+        let userJob = {
+            name: "Anton",
+            lastName: "Simonchuk",
+            age: 25,
+            work: {
+                salary: 100000,
+                day: 249,
+
+                vacation: {
+                    money: 110000,
+                    vacationDay: 14,
+                },
+            },
+        };
+        for (let working in userJob) {
+            console.log(userJob[working]);
+        }
+        let result = document.querySelector('.result');
+        result.innerHTML = JSON.stringify(userJob);
+
+        let userNewAssin = Object.assign({}, userJob);
+        userNewAssin.age = 18;
+        userNewAssin.name = "Stepan";
+        userNewAssin.lastName = "Ivanov";
+        userNewAssin.age = 22;
+        userNewAssin.work.salary = 100000;
+        userNewAssin.work.day = 7;
+        userNewAssin.work.vacation.money = 3000;
+        userNewAssin.work.vacation.vacationDay = 7;
+
+        console.log(userNewAssin);
+        let ResultFinish = document.querySelector('.result-finish');
+        ResultFinish.innerHTML = JSON.stringify(userNewAssin);
+        const workers = [
+            { name: 'Anton', lastName: "Simonchuk", age: 25, work: { salary: 100000, day: 5 }, vacation: { money: 15000, vacationDay: 14 } },
+            { name: 'Stepan', lastName: "Ivanov", age: 18, work: { salary: 7000, day: 5 }, vacation: { money: 4000, vacationDay: 7 } },
+            { name: 'Andrey', lastName: "Bogdaniv", age: 33, work: { salary: 16000, day: 4 }, vacation: { money: 10000, vacationDay: 10 } },
+            { name: 'Polina', lastName: "Popova", age: 50, work: { salary: 5000, day: 2 }, vacation: { money: 2500, vacationDay: 6 } },
+            { name: 'Olya', lastName: "Fedoruk", age: 28, work: { salary: 28000, day: 5 }, vacation: { money: 19000, vacationDay: 21 } }
+        ]
+        console.log(workers);
+        for (let people of workers) {
+
+        }
+
+        const vacation = workers.map(people => {
+            return {
+                info: `${people.name} ${people.lastName} ${people.vacation.money}`
+            }
+        });
+        console.log(vacation);
+            
+        let ResultFinishArr = document.querySelector('.result-finish-arr');
+        ResultFinishArr.innerHTML = JSON.stringify(vacation);
+
+    </script>
+</body>
+</html>
