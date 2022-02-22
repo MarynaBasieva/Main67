@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW32</title>
+</head>
+<!--HW32
+1) Сделать квадрат с помощью рекурсии, который перемещаеться по квадрату
+2) Функции класса создать пять опций , после создать еще один класс и наследовать первый, во втором вывести вызове все значения. Во втором добавить пару новых опции с наследования и тоже вывести-->
+
+<body>
+    
+</body>
+
+<script>
+    
+    //2
+    class User{
+        static type = "User";
+
+        constructor(options){
+            this.name = options.name;
+            this.lastName = options.lastName;
+            this.age = options.age;
+            this.country = options.country;
+            this.city = options.city;
+        }
+    }
+    class Person extends User {
+        static type ="Person";
+        constructor(options){
+        super(options)
+        this.hair = options.hair;
+        this.eyes = options.eyes;
+        }
+    };
+
+    const person = new Person({
+        name: "Igor",
+        lastName: "Igorov",
+        age: 25,
+        country: "Ukraine",
+        city: "Kiev",
+        hair: "black",
+        eyes: "blue"
+    });
+
+    console.log(person);
+</script>
+
+</html>

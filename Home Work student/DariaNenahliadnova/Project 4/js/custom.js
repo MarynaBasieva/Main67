@@ -9,7 +9,7 @@ jQuery(document).ready(function () {
 	carousel.owlCarousel({
 		items: 4,
 		autoplay: true,
-		autoplayTimeout: 1500,
+		autoplayTimeout: 2000,
 		autoplayHoverPause: true,
 		smartSpeed: 1000,
 		dotsSpeed: 1000,
@@ -27,34 +27,29 @@ jQuery(document).ready(function () {
 			0:{
 				items: 1,
 				mouseDrag: true,
-				autoplay: true,
 				smartSpeed: 1000
 			},
 			479:{
 				items: 2,
                 dots: true,
 				mouseDrag: true,
-				autoplay: true,
 				smartSpeed: 1000
 			},
 			767:{
 				items: 2,
                 dots: true,
 				mouseDrag: true,
-				autoplay: true,
 				smartSpeed: 1000
 			},
 			991:{
 				items: 4,
                 dots: true,
 				mouseDrag: true,
-				autoplay: true,
 				smartSpeed: 1000
 			},
 			1099:{
 				items: 4,
                 dots: true,
-				autoplay: true,
 				mouseDrag: true,
 				smartSpeed: 1000
 			}

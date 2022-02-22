@@ -53,6 +53,9 @@ img {
     color: #656293;
     border-bottom: 1px solid;
 }
+.responsive-menu{
+    display: none;
+}
 .register{
     display: flex;
     flex-wrap: nowrap;
@@ -133,6 +136,9 @@ img {
 .btn-banner i { 
     padding-left: 10px;
 }
+.banner button:focus{
+    outline: none;
+}
 .button-Send{
     font-family:'Poppins', sans-serif;
     font-weight: 500;
@@ -147,7 +153,6 @@ img {
     text-decoration: none;
     color: #656293; 
 }
-
 /*BLOCK-1*/
 .block1{
     padding: 100px 0 83px;
@@ -157,7 +162,7 @@ img {
 .block1::before{
     content: "";
     top: 183px;
-    width: 23%;
+    width: 43%;
     height: 40%;
     position: absolute;
     background: #E5F4F6;
@@ -167,7 +172,7 @@ img {
     content: "";
     right: 0;
     bottom: 37px;
-    width: 27%;
+    width: 43%;
     height: 40%;
     position: absolute;
     background: #E5F4F6;
@@ -226,22 +231,30 @@ img {
     color: #000000;
     padding-bottom: 68px;
 }
+.block2 p{
+    font-family:'Poppins', sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: rgba(21, 21, 21, 0.6);
+}
 .box1,
 .box2{
     box-shadow: 0px 0px 12px -5px hsl(0deg 0% 8% / 60%);
     text-align: center;
     padding: 39px 52px 20px;
     margin-bottom: 30px;
+    transition: 2s;
 }
 .box1:hover{
     transform: scale(1.1);
-    transition: 2s;
     cursor: pointer;
     opacity: 0.5;
 }
 .box2:hover{
     transform: scale(1.1);
-    transition: 2s;
     cursor: pointer;
     opacity: 0.5;
 }
@@ -315,7 +328,10 @@ body .for_page .owl-theme .owl-dots .owl-dot.active + .owl-dot span {
     outline: none;
     background: rgb(0, 0, 0,0.5);
 }
-  
+#carousel_partner.owl-carousel .owl-dots.disabled{
+    display: flex;
+    justify-content: center;
+}
 /*BLOCK-4*/
 .block4{
     padding: 8px  0 17px;
@@ -395,11 +411,16 @@ body .for_page .owl-theme .owl-dots .owl-dot.active + .owl-dot span {
     border-radius: 12px; 
     border: none; 
 }
+.box-prise{
+    transition: 1s; 
+}
 .box-prise:hover{
     background: #656293;
     border-radius: 20px;
     transform: translate(0,-50px);
-    transition: 1ss;
+}
+.box-prise button:focus{
+    outline: none;
 }
 .box-prise:hover button{
     background: #FFFFFF;
@@ -465,6 +486,7 @@ body .for_page .owl-theme .owl-dots .owl-dot.active + .owl-dot span {
     color: rgba(255, 255, 255, 0.7);
 }
 /*modal*/
+
 #exampleModal .modal-header button {
     padding-right: 50px;
 }
@@ -512,6 +534,7 @@ body .for_page .owl-theme .owl-dots .owl-dot.active + .owl-dot span {
 .modal-box3{
     border: 1px  solid rgba(170, 170, 170, 1);
     border-radius: 10px;
+    height: 100%;
 }
 .modal-body h3{   
     font-family: 'Poppins', sans-serif;
@@ -537,49 +560,34 @@ body .for_page .owl-theme .owl-dots .owl-dot.active + .owl-dot span {
     text-transform: uppercase;
     color: rgba(21, 21, 21, 0.6);
 }
-/*arrow*/
-.arrow-modal{
-    text-align: center;
-    padding-top: 56px;
-    margin: 0 10px 0;
+.pad{
+    position: relative;
 }
-.arrow-modal .fa{
-    font-size: 10px;
-    color: #353535;
-    display: block;
+.pad::before{
+    content: "\2190";
+    position: absolute;
+    top: 40px;
+    left: -25px;
+    font-size: 20px;
 }
-.arrow-modal button{
-    padding: 8px 12px;
-    border-radius: 20px;
-    border: none;
-    background: #f1f1f1;
-}
-.arrow-modal button:hover{
-    background: #d1d1d1;
-}
-.block99{
-    display: flex;
-    justify-content: space-between;
-    align-items: stretch;
-}
-.modal-box3{
-    display: flex;
-    justify-content: space-around;
-    width: 40%;
-    margin-left: 20px;
-}
-.block99 .pad {
-    width: 30%;
+.pad::after{
+    content: "\2192";
+    position: absolute;
+    top: 50px;
+    left: -25px;
+    font-size: 20px;
 }
 .box p{
     display: inline;
     padding-right: 43px;
 }
 .modal-box3 .pad2{
-    padding: 15px 0  15px 25px;
+    padding: 15px 31px  15px 27px;
+    display: inline-block;
 }
 .modal-box3 .pad3{
-    padding: 15px 25px  15px 0;
+    padding: 15px 25px  15px 10px;
+    display: inline-block;
 }
 .last-text {
     padding: 16px 0 12px;  
@@ -604,8 +612,7 @@ body .for_page .owl-theme .owl-dots .owl-dot.active + .owl-dot span {
     font-size: 18px;
     line-height: 27px;
     text-transform: capitalize;
-    color: #FFFFFF;
-    padding: 20px;
+    color: #FFFFFF;   
 }
 .modal{
     position: relative;
@@ -616,8 +623,8 @@ body .for_page .owl-theme .owl-dots .owl-dot.active + .owl-dot span {
     border-radius: 10px;
     display: inline;
     text-align: center;
-    padding: 20px 0 15px;
-    right: 40%;
+    padding: 20px 15px 15px;
+    right: 44%;
 }
 .book-flights i{
     padding-left: 30px;
@@ -629,3 +636,4 @@ body .for_page .owl-theme .owl-dots .owl-dot.active + .owl-dot span {
     color: #FFFFFF;
     border-radius: 10px;
 }
+

@@ -25,6 +25,11 @@
     .header-icon {
         left: 40px;
     }
+    .name, 
+    .email {
+    
+        width: 100%;
+    }
 
 }
 @media (max-width: 991px){
@@ -101,9 +106,6 @@
     .block4 {
         padding: 50px 0 45px;
     }
-    .input-name {
-        margin-right: 13px;
-    }
     .block4-title h2 {
         font-size: 25px;
         line-height: 0px;
@@ -162,6 +164,9 @@
     }
     .block3 img:hover{
         transform: none;
+    }
+    .block3 img {
+        width: 88%;
     }
 
 }
@@ -227,12 +232,10 @@
         font-size: 14px;
         line-height: 0px;
     }
-    .input-name {
-        margin-right: 10px;
-    }
     .block4 {
         padding: 30px 0 30px;
     }
+    
 }
 @media (max-width: 467px){
     .banner {

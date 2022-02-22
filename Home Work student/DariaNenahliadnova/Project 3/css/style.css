@@ -66,12 +66,12 @@ img {
     text-transform: uppercase;
     color: #FFFFFF;
     padding: 10px 20px;
+    transition: 2s;
 }
 .navigation .menu li a:hover{
     color: #CF404D;
     text-decoration: none;  
     border-bottom: 1px solid #CF404D;
-    transition: 2s;
 }
 .navigation{
     padding: 79px ;
@@ -89,9 +89,11 @@ img {
 .header-icon a {
     padding-right: 14px;
 }
-.header-icon a img:hover{
-    transform: scale(1.4);
+.header-icon a img{
     transition: 2s;
+}
+.header-icon a img:hover{
+    transform: scale(1.4); 
 }
 /*BANNER*/
 .banner{
@@ -106,11 +108,6 @@ img {
     text-align: center;
 }
 .banner .container{
-    /*
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;*/
     height: 100%;
 }
 .banner-content h1{
@@ -145,10 +142,8 @@ img {
 .banner-btn a:hover{
     background:#CF404D;
     text-decoration: none;
-    color: #FFFFFF;
-    
-    border-color: #CF404D;
-    
+    color: #FFFFFF;  
+    border-color: #CF404D;  
 }
 /*BLOCK1*/
 .block1{
@@ -158,9 +153,11 @@ img {
     max-width: 100px;
     height: 100px;
 }
+.block1-article{
+    transition: 2s;
+}
 .block1-article:hover{
     transform: scale(1.1);
-    transition: 2s;
     cursor: pointer;
 }
 .block1-title{
@@ -277,10 +274,9 @@ img {
     padding: 10px;
     width: 100%;
     height: 100%;
-    transition: 2s;
 }
 .block3 img:hover{
-    transform: scale(1.1);
+    opacity: 0.5;
 }
 /*BLOCK4*/
 .block4{
@@ -307,10 +303,13 @@ img {
     color: rgba(115, 115, 115, 0.74);
     padding-bottom: 40px;
 }
-.block4-form{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+.name,
+.email {
+    display: inline-block;
+    width: 48%;
+}
+.name{
+    margin-right: 15px;
 }
 .input-name{
     margin-right: 21px;
@@ -325,7 +324,7 @@ img {
     outline: none;
     margin-bottom: 17px;
     background: #FFFFFF;
-    width: 48%;
+    width: 100%;
     padding: 12px 0 13px 31px;
 }
 .text-texterea{
@@ -340,22 +339,24 @@ img {
     outline: none;
     width: 100%;
 }
-.btn-Send {
-    width: 100%;
-    background: #CF404D;
-    padding: 12px;
-    margin-top: 17px;
-}
-.btn-Send a{
-    color: #FFFFFF;
+.btn-Send  button{
     font-family:'Oswald', sans-serif;
-    font-size: 16px;
-    line-height: 21px; 
+    background: #CF404D;
+    color: #FFFFFF;
     border-radius: 4px;
+    width: 100%;
+    height: 55px;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    margin-top: 15px;
 }
-.btn-Send a:hover{
-    color: rgba(0, 0, 0);
-    text-decoration: none; 
+.btn-Send  button:hover{
+    background: rgb(207, 64, 77,0.7);
+    cursor: pointer;
+}
+.btn-Send  button:focus{
+    outline: none;
 }
 /*FOOTER*/
 .last-block{
