@@ -44,7 +44,16 @@
 		super.voice();
 		console.log('I am Human')
 	}
+	get infoAge(){
+		return this.age *12;
+	}
+	
+	set infoAge(newAge){
+		this.age = newAge;
+	}
 	} 
+	
+	
 	
 	
 	const human = new Human({
@@ -54,6 +63,9 @@
 		colorEyes: 'blue'
 	});
 	console.log(human.voice());
+	console.log(human.infoAge);
+	console.log(human.infoAge=8);
+	console.log(human.infoAge);
 	
 	
 	

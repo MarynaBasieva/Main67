@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>function Class 2</title>
+</head>
+
+<body>
+	
+	<div id="box1"></div>
+	<div id="box2"></div>
+	<div id="circle"></div>
+</body>
+<script>
+	class Component{
+		constructor(selector){
+			this.$one = document.querySelector(selector);
+		}
+		
+		hide(){
+			 this.$one.style.display = "none";
+		}
+		
+		show(){
+			 this.$one.style.display = "block";
+		}
+	}
+	
+	class Box extends Component{
+		constructor(options){
+			super(options.selector)
+			this.$one.style.width = options.sizeWidth + 'px';
+			this.$one.style.height = options.sizeHeight + 'px';
+			this.$one.style.background = options.background;
+		}
+	}
+	class Circle extends Box{
+		constructor(options){
+			super(options)
+			
+			this.$one.style.borderRadius = '100%';
+		}
+	}
+	
+	const box1 = new Box({
+		selector: '#box1',
+		sizeWidth:300,
+		sizeHeight:100,
+		background:'blue'
+	});
+	
+	const box2 = new Box({
+		selector: '#box2',
+		sizeWidth:300,
+		sizeHeight:100,
+		background:'yellow'
+	});
+	
+	const circle = new Circle({
+		selector: '#circle',
+		sizeWidth:90,
+		sizeHeight:90,
+		background:'pink'
+	});
+	
+  //console.log(box1.hide()); 
+  //console.log(box1.show());
+	
+</script>
+</html>

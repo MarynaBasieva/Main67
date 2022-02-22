@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Try..catch</title>
+</head>
+
+<body>
+	<div class="result"></div>
+	
+	<p>Введите число от 2 до 10:</p>
+	<input class="res" type="text" />
+	<button type="button" onClick="myFunction()">Проверка ошибок</button>
+	<div class="message"></div>
+</body>
+	<script>
+		/*try{
+			alertttt("Hello");//проверяем блок кода
+		}catch(err){
+			document.querySelector(".result").innerHTML = err.message;// блок кода для обработки ошибок
+		}*/
+		
+		
+		function myFunction(){
+			let message, res;
+			message = document.querySelector(".message"); 
+			message.innerHTML= '';
+			res = document.querySelector(".res").value;
+			
+			try{
+				if(res == "")throw 'пусто';
+				if(isNaN(res))throw 'не число';
+				res = Number(res);
+				if(res < 2)throw 'слишком мало';
+				if(res > 10)throw 'слишком много';
+			}catch(err){
+				message.innerHTML = 'Вы ввели:' + ' ' + err;
+			}
+		}
+    </script>
+</html>

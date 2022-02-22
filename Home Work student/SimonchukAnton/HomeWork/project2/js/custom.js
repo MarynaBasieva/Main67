@@ -51,7 +51,6 @@ jQuery(document).ready(function () {
 
 	carousel.owlCarousel({
 		items:1,
-
 		autoplay: true,
 		autoplayTimeout: 3000,
 		autoplayHoverPause: false,
@@ -84,21 +83,21 @@ jQuery(document).ready(function () {
 				smartSpeed: 1000
 			},
 			767: {
-				items: 2,
+				items: 1,
 				dots: true,
 				mouseDrag: true,
 				autoplay: true,
 				smartSpeed: 1000
 			},
 			991: {
-				items: 3,
+				items: 1,
 				dots: true,
 				mouseDrag: true,
 				autoplay: true,
 				smartSpeed: 1000
 			},
 			1099: {
-				items: 4,
+				items: 1,
 				dots: true,
 				mouseDrag: true
 			}
