@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<body>
+    <canvas id="squere"></canvas>
+    <br>
+</body>
+<script>
+    const squere = document.getElementById('squere');
+    const x = squere.getContext('2d');
+    x.fillStyle = 'orange';
+    x.fillRect(50, 50, 50, 50);
+
+    x.fillStyle = 'blue';
+    x.beginPath();
+    x.ellipse(150, 75, 50, 30, Math.PI * .25, 0, Math.PI);
+    x.fill();
+
+    // masive
+    const people = [{
+        name: 'Evgen',
+        surname: 'Babin',
+        age: 15,
+        salary: 200
+    }, {
+        name: 'Ivan',
+        lastName: 'Petrov',
+        age: 17,
+        salary: 6311
+    }, {
+        name: 'Dmitriy',
+        lastName: 'Pushin',
+        age: 22,
+        salary: 23451
+    }, {
+        name: 'Mody',
+        lastName: 'Chat',
+        age: 77,
+        salary: 51341
+    }, {
+        name: 'Vlada',
+        lastName: 'Klygina',
+        age: 57,
+        salary: 34511
+    }, {
+        name: 'Anton',
+        lastName: 'Petrov',
+        age: 15,
+        salary: 62135
+    }, {
+        name: 'Ivan',
+        lastName: 'Lord',
+        age: 37,
+        salary: 4531
+    }, {
+        name: 'Alex',
+        lastName: 'Desov',
+        age: 84,
+        salary: 51
+    }, {
+        name: 'Katerina',
+        lastName: 'Sovova',
+        age: 27,
+        salary: 31325
+    }, {
+        name: 'Roman',
+        lastName: 'Pochtov',
+        age: 74,
+        salary: 1235612
+    }];
+    for (let person of people) {
+        if (person.salary > 5000) {
+            document.write(`${person.name} ${person.surname} (${person.salary}) <br/> <br/>`);
+        }
+    };
+    const salary = people.filter(person => person.salary > 5000);
+    console.log(salary);
+</script>
+
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    // #1
+    let itemString = [
+        'pen',
+        'pineapple',
+        'apple',
+        'orange',
+        'tomato'
+    ];
+    for (let i of itemString) {
+        document.write(i + "<br\>");
+    };
+    // #2
+    let itemSecondString = [
+        'red',
+        'yellow',
+        'black',
+        'white',
+        'pink',
+        'green',
+        'orang'
+    ];
+    for (let i in itemSecondString) {
+        document.write(itemSecondString[i] + ' =  ' + i + '<br\>')
+    };
+    // #3
+    let itemThirdString = [
+        'Sasha',
+        'Vladislava',
+        'Marina',
+        'Dasha',
+        'Eugen'
+    ];
+    for (let i = 0; i < itemThirdString.length; i++) {
+        console.log('Lenght ms =' + itemThirdString.length);
+    }
+</script>
+
+<body>
+
+</body>
+
+</html>
