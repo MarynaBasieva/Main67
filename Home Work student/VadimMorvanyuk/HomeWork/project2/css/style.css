@@ -76,6 +76,9 @@ a{
 .sign img{
     cursor: pointer;
 }
+.theme{
+    display: inline-block;
+}
 
 /*header*/
 
@@ -615,9 +618,18 @@ a{
 .social-footer{
     margin-top: 25px;
 }
-.social-footer img{
-    margin-right: 16px;
+.social-footer .fab{
+    font-size: 26px;
+    color: #02897A;
+    background: #edfffc;
+    padding: 8px;
+    border-radius: 20px;
     cursor: pointer;
+    transition: 0.4s;
+    margin-right: 15px;
+}
+.social-footer .fab:hover{
+    font-size: 30px;
 }
 .footer h3{
     font-size: 20px;

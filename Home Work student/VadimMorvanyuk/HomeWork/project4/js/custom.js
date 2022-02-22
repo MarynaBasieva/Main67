@@ -6,12 +6,12 @@ jQuery(document).ready(function () {
 	
 	jQuery(".fancybox").fancybox();
 	
-	let carousel = jQuery('#carousel_leaders');
+	let carousel = jQuery('#carousel-banner');
 		
 	carousel.owlCarousel({
-		items: 4,
-		autoplay: true,
-		autoplayTimeout: 3000,
+		items: 1,
+		autoplay: false,
+		autoplayTimeout: 5000,
 		autoplayHoverPause: false,
 		smartSpeed: 1000,
 		dotsSpeed: 1000,
@@ -30,35 +30,36 @@ jQuery(document).ready(function () {
 				dots: true,
 				nav: false,
 				mouseDrag: true,
-				autoplay: true,
+				autoplay: false,
 				smartSpeed: 1000
 			},
 			479:{
-				items: 2,
+				items: 1,
 				dots: true,
 				mouseDrag: true,
-				autoplay: true,
+				autoplay: false,
 				smartSpeed: 1000
 			},
 			767:{
-				items: 2,
+				items: 1,
 				dots: true,
 				mouseDrag: true,
-				autoplay: true,
+				autoplay: false,
 				smartSpeed: 1000
 			},
 			991:{
-				items: 3,
+				items: 1,
 				dots: true,
 				mouseDrag: true,
-				autoplay: true,
+				autoplay: false,
 				smartSpeed: 1000
 			},
 			1099:{
-				items: 4,
+				items: 1,
 				dots: true,
 				mouseDrag: true,
-				nav: true
+				nav: true,
+				autoplay: false
 			},
 			
 		}
