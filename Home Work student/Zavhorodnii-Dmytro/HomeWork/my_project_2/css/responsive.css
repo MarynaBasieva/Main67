@@ -1,0 +1,120 @@
+@media (min-width: 1200px) {
+.for_page .container {
+    max-width: 960px;
+}
+}
+
+@media (max-width: 1199px) {
+    
+}
+@media (max-width: 1013px) {
+    
+}
+@media (max-width: 991px) {
+    .services_block {
+        margin-bottom: 50px;
+    }
+    .two h5 {
+        margin-left: 0px;
+    }
+    .main_page {
+        padding-top: 125px;
+        padding-bottom: 153px;
+    }
+    .header {
+        padding-top: 7px;
+        padding-bottom: 6px;
+    }
+    .doing {
+        padding-top: 52px;
+        padding-bottom: 50px;
+    }
+    .services {
+        padding-top: 45px;
+        padding-bottom: 30px;
+    }
+    .tab {
+        padding-top: 42px;
+        padding-bottom: 40px;
+    }
+    .picture {
+        padding-bottom: 45px;
+    }
+    .links {
+        padding-bottom: 18px;
+    }
+    .footer {
+        padding-top: 28px;
+        padding-bottom: 10px;
+    }
+    .main_text {
+        margin-bottom: 32px;
+    }
+}
+@media (max-width: 767px) {
+    .tab_title:first-child {
+        margin-bottom: 28px;
+    }
+   .adapt_doing {
+       display: flex;
+       flex-wrap:wrap;
+       
+   }
+   .doing_block {
+       margin: 0 auto;
+       justify-content: center;
+       margin-bottom: 10px;
+   }
+   .doing_block:first-child {
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+.tab_buttons_adapt {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+.tab_buttons_adapt a {
+    margin-bottom: 5px;
+}
+
+.tab .tab_title a {
+    margin: 0;
+    margin-bottom: 10px;
+}
+}
+@media (max-width: 576px) {
+    .main_page {
+        padding-top: 54px;
+        padding-bottom: 84px;
+    }
+    .adapt_head {
+        display: flex;
+        justify-content: center;
+    }
+    .foot_text {
+        display: inline-flex;
+        justify-content: center;
+    }
+    .foot_text :first-child {
+        margin-right: 10px;
+    }
+    .header .foot_text p {
+        text-align: center;
+        margin-right: 0;
+    }
+    .main_page h1 {
+        white-space: normal;
+    }
+    .links_block {
+        margin: 0 auto;
+    }
+}
+@media (max-width: 500px) {
+   
+    
+}
+@media (max-width: 470px) {
+    
+}
+    

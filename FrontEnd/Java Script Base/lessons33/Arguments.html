@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Arguments</title>
+</head>
+<script>
+	function sayHay(){
+		for(let i=0; i<arguments.length; i++){
+			console.log('Hello,' + arguments[i]);
+		}
+	}
+	sayHay("Lena","Petr");
+	
+	
+	
+	function foo(a){
+		arguments[0] = 2;
+		console.log(a);
+	}
+	foo(1);
+	
+	/*let args = [];
+	for(let i =0; i<arguments.length; i++){
+		args[i] = arguments[i];
+	}*/
+  //arguments.calee
+</script>
+<body>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>HW-28</title>
+    <style>
+      #canvas {
+        margin-left: 20px;
+      }
+    </style>
+  </head>
+  <style>
+    .container {
+      width: 1170px;
+      margin: 0 auto;
+    }
+    .blue {
+      width: 100px;
+      height: 100px;
+      position: relative;
+      padding: 5px;
+      box-sizing: border-box;
+      background: #223ed0;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="test"></div>
+      <div class="blue"></div>
+      <button class="up">up</button>
+      <button class="right">right</button>
+      <button class="down">down</button>
+      <button class="left">left</button>
+    </div>
+  </body>
+  <body>
+    <script>
+      ////1////
+
+      let right = 0;
+      let down = 0;
+      let left = 0;
+      let up = 0;
+
+      function leftfoo() {
+        document.querySelector(".blue").style.left = left + "px";
+        left = left + 5;
+        if (left > 30) {
+          return left;
+        }
+        setTimeout(leftfoo, 500);
+      }
+      document.querySelector(".left").onclick = leftfoo;
+
+      function rightfoo() {
+        document.querySelector(".blue").style.right = right + "px";
+        right = right + 5;
+        if (right > 30) {
+          return right;
+        }
+        setTimeout(leftfoo, 500);
+      }
+      document.querySelector(".right").onclick = rightfoo;
+
+      function upfoo() {
+        document.querySelector(".blue").style.up = up + "px";
+        up = up + 5;
+        if (up > 30) {
+          return up;
+        }
+        setTimeout(upfoo, 500);
+      }
+      document.querySelector(".down").onclick = downfoo;
+
+      function downfoo() {
+        document.querySelector(".blue").style.down = down + "px";
+        down = down + 5;
+        if (down > 30) {
+          return down;
+        }
+        setTimeout(downfoo, 500);
+      }
+      document.querySelector(".down").onclick = rightfoo;
+      ////1////
+
+      ////2////
+      class Car {
+        constructor(options) {
+          this.model = options.model;
+          this.make = options.make;
+          this.year = options.year;
+          this.mileage = options.mileage;
+          this.origin = options.origin;
+        }
+      }
+
+      class Auto extends Car {
+        constructor(options) {
+          super(options);
+          this.color = options.color;
+          this.owner = options.owner;
+        }
+      }
+
+      const mazda = new Auto({
+        model: "Mazda",
+        make: "six",
+        year: 2017,
+        mileage: "100 000 km",
+        origin: "Japan",
+        color: "Silver",
+        owner: "Michael",
+      });
+
+      for (let [key, value] of Object.entries(mazda)) {
+        console.log(`${key}: ${value}`);
+      }
+
+      ////2////
+    </script>
+  </body>
+</html>

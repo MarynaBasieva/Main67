@@ -1,5 +1,4 @@
 // 1
-
 let innerResult = document.getElementsByClassName("result")[0];
 let innerResult2 = document.getElementsByClassName("ResultFinish")[0];
 innerResult2.style.background = "yellow";

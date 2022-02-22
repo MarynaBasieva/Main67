@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>HW-26</title>
+  </head>
+  <body>
+    <div class="object"></div>
+
+    <script>
+
+      ////1////
+
+      let people = ["Mary", "Ann", "Anton", "Lilly", "Alex"];
+
+      for (let i of people) {
+        console.log(i);
+      }
+
+      ////1////
+
+      ////2////
+
+      let objects = [
+        "Phone",
+        "Carrot",
+        "Cane",
+        "Marshmallow",
+        "Car",
+        "Bike",
+        "Candy",
+      ];
+      for (let i = 0; i < objects.length; i++) {
+        let element = document.querySelector(".object");
+        element.innerHTML += objects[i] + "<br>";
+      }
+
+      ////2////
+
+      ////3////
+
+      let sins = [
+        "Glutony",
+        "Lust",
+        "Greed",
+        "Sloth",
+        "Envy",
+        "Pride",
+        "Wrath",
+      ];
+
+      for (let i = 0; i < sins.length; i++) {
+        console.log(sins.length + " deadly sins");
+      }
+      ////3////
+      
+    </script>
+  </body>
+</html>

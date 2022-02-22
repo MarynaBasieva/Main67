@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HW25</title>
+  </head>
+  <body>
+    <script>
+      let userNum = prompt("Введіть ваше число");
+      let max = Math.max(50, 49, 36, 39);
+      if (typeof userNum === "object") {
+        alert("ви не ввели потрібне число");
+      } else if (typeof userNum === "string") {
+        console.log(typeof Number(userNum));
+        if (isNaN(userNum)) {
+          alert("Те що ви ввели не являється числом");
+        } else {
+          if (userNum < max) {
+            alert("Ви ввели занадто мале число");
+          } else if (userNum === max) {
+            alert("Вітаю ви вгадали");
+          } else if (userNum > max) {
+            alert("Ви ввели занадто велике число");
+          }
+        }
+      }
+    </script>
+  </body>
+</html>
