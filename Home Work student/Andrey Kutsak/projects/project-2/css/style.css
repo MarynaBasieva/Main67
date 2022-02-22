@@ -152,6 +152,7 @@ img {
   transform: scale(0.95);
 }
 .hide {
+  position: -webkit-sticky;
   position: sticky;
   display: none;
 }
@@ -169,6 +170,7 @@ img {
   font-family: "WorkSans", "Open sans", sans-serif;
   font-weight: 400;
   font-size: 10px;
+  -webkit-text-decoration: capitalize;
   text-decoration: capitalize;
   line-height: 20px;
   color: #000000;
@@ -302,6 +304,11 @@ footer .footer-desc {
   color: #333333;
   margin-bottom: 0;
 }
+@media screen and (max-width: 2000px) {
+  .main-lg-head {
+    max-width: 478px;
+  }
+}
 @media screen and (max-width: 768px) {
   section {
     padding: 20px 0;
@@ -309,6 +316,7 @@ footer .footer-desc {
   section .main-desc,
   section .main-head,
   section .main-lg-head {
+    max-width: 100%;
     text-align: center;
     margin: 0 auto 30px auto;
   }

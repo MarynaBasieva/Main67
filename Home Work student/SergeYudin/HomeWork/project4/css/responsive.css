@@ -1,0 +1,355 @@
+@media (min-width: 1200px) {
+  .for_page .lxr-chart .container {
+    max-width: 1350px;
+  }
+
+  .for_page .enjoy .container {
+    max-width: 1450px;
+  }
+  .for_page .booking .container {
+    max-width: 1050px;
+  }
+  .for_page .booking .container {
+    max-width: 1050px;
+  }
+  .for_page .container {
+    max-width: 1350px;
+  }
+}
+
+@media (max-width: 1203px) {
+  .introduction {
+    padding-bottom: 200px;
+  }
+
+  .introduction .banner {
+    text-align: center;
+  }
+
+  .booking {
+    padding-bottom: 50px;
+  }
+  .booking .booking-window .itinerary {
+    flex-direction: column;
+    justify-content: stretch;
+    padding: 0;
+  }
+  .booking .booking-window .itinerary .from-to {
+    padding: 0px;
+    width: 60%;
+    text-align: center;
+    border: none;
+  }
+
+  .booking .booking-window .itinerary .from-to h5 {
+    margin-bottom: 2px;
+  }
+  .booking .booking-window .itinerary .from-to h4 {
+    margin-bottom: 2px;
+  }
+
+  .booking .booking-window .itinerary .arrows {
+    margin: 9px 0px 9px;
+  }
+
+  .booking .booking-window .itinerary .to {
+    margin-bottom: 18px;
+  }
+
+  .booking .booking-window .itinerary .dates {
+    padding: 2px;
+    border: none;
+  }
+
+  .booking .booking-window .itinerary .dates h5 {
+    margin-bottom: 2px;
+    font-size: 24px;
+    line-height: 24px;
+  }
+  .booking .booking-window .itinerary .dates h4 {
+    margin-bottom: 2px;
+    line-height: 28px;
+    font-size: 22px;
+  }
+
+  .booking .booking-window .btn-widnwow {
+    top: 94%;
+    padding: 6px 4px;
+    max-width: 170px;
+  }
+
+  .booking .booking-window .itinerary .dates .prev-next h5 {
+    font-size: 15px;
+    line-height: 17px;
+  }
+
+  .booking .booking-window .itinerary .dep {
+    margin-right: 8px;
+  }
+
+  .booking .booking-window .itinerary .ret {
+    margin: 0 8px 4px 8px;
+  }
+  .background-title {
+    background-position: 50% 10%;
+  }
+
+  .private-jets .first-row {
+    margin-bottom: 30px;
+  }
+
+  .private-jets .jets {
+    flex-direction: column;
+  }
+
+  .private-jets .jets img {
+    margin-bottom: 10px;
+  }
+
+  .private-jets .jets h4 {
+    margin-bottom: 4px;
+    text-align: center;
+  }
+
+  .outsd {
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+  }
+
+  .performance {
+    padding-bottom: 40px;
+  }
+
+  .performance .background-title {
+    margin-bottom: 8px;
+  }
+
+  .performance .plane-picture {
+    display: none;
+  }
+
+  .performance .general-container {
+    flex-direction: column;
+  }
+
+  .performance .second {
+    margin-bottom: 40px;
+  }
+
+  .lxr-chart {
+    padding-bottom: 20px;
+  }
+
+  .lxr-chart .first-row {
+    margin-bottom: 20px;
+  }
+
+  .lxr-chart .plane {
+    margin-bottom: 3px;
+  }
+
+  .enjoy .first-row {
+    margin-bottom: 20px;
+  }
+
+  .enjoy .second-row .card-container {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 25px;
+    text-align: center;
+  }
+
+  .enjoy .second-row .card-container .card {
+    width: 80%;
+  }
+
+  .enjoy .card ul li:before {
+    left: 5;
+  }
+
+  .enjoy .card .btn {
+    padding: 5px 0px;
+  }
+  .enjoy .card h3,
+  h4 {
+    margin-bottom: 10px;
+  }
+
+  .enjoy .card ul {
+    margin-bottom: 20px;
+  }
+
+  .footer .first-row {
+    padding: 20px 0 15px 0;
+  }
+
+  .footer .nav-footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer .nav-footer ul {
+    flex-direction: column;
+  }
+  .enjoy .card:hover {
+    transform: translateY(0%);
+  }
+
+  .booking .booking-window .itinerary .dates h4 {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1043px) {
+  body.lock {
+    overflow: hidden;
+  }
+  .introduction {
+    padding-top: 0px;
+  }
+  .introduction .navs {
+    display: none;
+  }
+
+  .header {
+    position: sticky;
+  }
+
+  .resp-menu-sticky {
+    background-color: rgba(87, 163, 226, 0.158);
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+  .responsive_menu {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    padding: 15px 0px 15px 0px;
+  }
+
+  .responsive_menu .nav-button {
+    position: relative;
+    width: 40px;
+    height: 25px;
+    margin: 6px 10px 0px 0px;
+    padding-right: 10px;
+  }
+
+  .responsive_menu .nav-button span {
+    background-color: blueviolet;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    left: 0;
+    top: 11px;
+    transition: 0.5s ease-in-out;
+  }
+
+  .responsive_menu .nav-button::before,
+  .responsive_menu .nav-button::after {
+    content: "";
+    background-color: blueviolet;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    left: 0;
+    transition: 0.5s ease-in-out;
+  }
+
+  .responsive_menu .nav-button::before {
+    top: 0;
+  }
+
+  .responsive_menu .nav-button::after {
+    bottom: 0;
+  }
+
+  .responsive_menu span:hover {
+    color: #f1ef47;
+  }
+
+  .responsive_menu .active span{
+    transform: scale(0);
+  }
+
+  .responsive_menu .active::before{
+    transform: rotate(45deg);
+    top: 10px;
+  }
+
+  .responsive_menu .active::after{
+    transform: rotate(-45deg);
+    bottom: 10px;
+  }
+
+  .sidenav {
+    display: block;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(255, 255, 255);
+    overflow-x: hidden;
+    overflow-y: hidden;
+    overflow: auto;
+    transition: 0.5s;
+    padding-top: 80px;
+    text-align: center;
+  }
+
+  .active {
+    width: 100%;
+  }
+
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    color: #656293;
+    display: block;
+    transition: 0.5s ease-in-out;
+  }
+
+  .sidenav a:hover {
+    text-decoration: none;
+  }
+
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+}
+
+@media (max-width: 575px){
+  .nav-footer ul,
+  .nav-footer p{
+    padding-left: 10px;
+  }
+}
+
+@media (max-width: 508px) {
+  .private-jets .jets .jet-descrp p {
+    max-width: 340px;
+  }
+  .introduction .banner .title-and-button .alt-h1 {
+    font-size: 55px;
+  }
+}
+
+@media (max-width: 339px) {
+  .booking .booking-window .itinerary .dates .calendar {
+    display: none;
+  }
+}
