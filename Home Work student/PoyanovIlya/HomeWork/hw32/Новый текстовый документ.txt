@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div {
+        position: relative;
+        width: 50px;
+        height: 50px;
+        background: red;
+    }
+</style>
+
+<body>
+    <div></div>
+
+    <script>
+        let div = document.querySelector('div');
+
+        (run = () => {
+
+            var l = parseFloat(getComputedStyle(div).left),
+
+                t = parseFloat(getComputedStyle(div).top);
+
+            if (l < 200 && t == 0) div.style.left = l + 1 + 'px';
+
+            if (l == 200 && t < 200) div.style.top = t + 1 + 'px';
+
+            if (l > 0 && t == 200) div.style.left = l - 1 + 'px';
+
+            if (l == 0 && t > 0) div.style.top = t - 1 + 'px';
+
+            setTimeout(run, 4);
+
+        })();
+    </script>
+
+</body>
+
+</html>

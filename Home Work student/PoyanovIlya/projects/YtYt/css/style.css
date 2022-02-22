@@ -1,0 +1,106 @@
+* {
+    font-family: 'Gilroy Regular';
+}
+
+.header {
+    background: url(../img/banner.png);
+    height: 1500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 30px;
+}
+
+.bg-header {
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(15px);
+    border-radius: 75px;
+    align-items: center;
+    padding: 13px 0;
+}
+
+
+/* menu */
+
+.nav-menu {
+    padding-left: 73px;
+}
+
+.sub-menu {
+    display: flex;
+    margin: 0 auto;
+}
+
+.sub-menu li {
+    padding-right: 41px;
+}
+
+.sub-menu li a {
+    font-size: 13px;
+    line-height: 14px;
+    color: #22253B;
+    transition: 0.3s;
+}
+
+.sub-menu li a:hover {
+    color: #F15525;
+    text-decoration: none;
+}
+
+
+/* reg-menu */
+
+.sub-reg-menu {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 auto;
+}
+
+.sub-reg-menu li {
+    padding-right: 30px;
+}
+
+.sub-reg-menu li:nth-child(1)>a {
+    font-size: 13px;
+    line-height: 14px;
+    color: #3C3E50;
+    transition: 0.3s;
+}
+
+.sub-reg-menu li:nth-child(1)>a:hover {
+    color: #F15525;
+    text-decoration: none;
+}
+
+.sub-reg-menu li:nth-child(2)>a {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 13px;
+    color: #fff;
+    background: #38BFF2;
+    border-radius: 34px;
+    padding: 8px 16px;
+    transition: 0.3s;
+}
+
+.sub-reg-menu li:nth-child(2)>a:hover {
+    text-decoration: none;
+    background: #F15525;
+}
+
+
+/* banner   */
+
+.banner {
+    padding-top: 70px;
+}
+
+.banner-text h1 {
+    font-weight: 500;
+    font-size: 46px;
+    line-height: 46px;
+    color: #22253B;
+}
+
+.banner-text span {
+    color: #F15525;
+}
