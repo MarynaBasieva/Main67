@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<style>
+  .date{
+    color: rgb(20, 66, 196);
+    font-size: 30px;
+  }
+
+  .res{
+    border: 1px solid #ccc;
+    outline: none;
+  }
+
+</style>
+
+<!-- HW33
+1) Дата вывсети дату 2020 ноября 12 в документ
+2) Через prompt если вводим текущий год выводим да это этот год, водим ниже говорим прошел, водим больше текущего года
+пишем не наступил через alert
+3) Дополнительно с моего файла если есть пользовательская ошибка при вызове функции, а то есть по нажатию на кнопку
+окрашивать инпут красным бордером -->
+<body>
+    <div class="date"></div>
+    
+    <div class="result"></div>
+    
+    <p>Введите число от 2 до 10:</p>
+    <input class="res" type="text">
+    <button  type="button" onClick="myFunction()">Проверка ошибок</button>
+    <div class="message"></div>
+</body>
+
+<script>
+
+    function myFunction() {
+        let message, res, input;
+        message = document.querySelector(".message");
+        res = document.querySelector(".res").value;
+        input = document.querySelector(".res");
+
+        try {
+          if (res == "")  throw 'пусто' ;
+          if (isNaN(res)) throw 'не число';
+          res = Number(res);
+          if (res < 2) throw 'слишком мало';
+          if (res > 10) throw 'слишком много';
+         
+        } catch (err) {
+          message.innerHTML = 'Вы ввели:' + ' ' + err;
+          message.style.color = "red"
+          input.style.borderColor = "red"
+        }
+
+        try{  
+           if (res >= 2 && res <= 10) throw 'Правильно';
+        }catch(correct) {
+          message.innerHTML = 'Вы ввели:' + ' ' + correct;
+          input.style.borderColor = "green"
+          message.style.color = "green"
+        }
+        
+      }
+
+  
+    let date = new Date();
+    date.setFullYear(2020, 10, 12);
+    let months = ['Січень', 'Лютий', 'Березень', 'Квітень', 'Травень', 'Червень', 'Липень', 'Серпень', 'Вересень', 'Жовтень', 'Листопад', 'Грудень'];
+    document.querySelector('.date').innerHTML = (date.getFullYear() + ' / ' + months[date.getMonth()] + ' / ' + date.getDate());
+    date = prompt("Уведіть рік: ");
+    if(date === ''){
+      alert("Пусте поле");
+    }else if(date < 2020){
+      alert("Рік вже пройшов");
+    }else if(date == 2020){
+      alert("Це цей рік");
+    }else {
+      alert("Рік ще не наступив");
+      
+    }
+
+
+
+    
+  
+</script>
+</html>
