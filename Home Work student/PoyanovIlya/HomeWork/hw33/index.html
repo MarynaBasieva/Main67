@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="date"></div>
+    <form action="#">
+        <input type="text" class="result" placeholder="number 1 - 10: ">
+        <button class="number-btn" onClick="correctMessage()">test</button>
+        <div class="message"></div>
+    </form>
+</body>
+<script>
+    // №1
+    let date = new Date(2020, 10, 12);
+    document.querySelector('.date').innerText += date;
+
+    // №2
+    let year = prompt('write the year')
+    let nowYear = new Date(2020);
+    if (year == nowYear) {
+        alert('ты прав')
+    } else if (year > nowYear) {
+        alert('будущий год')
+    } else if (year < nowYear) {
+        alert('прошлый год')
+    } else if (year.replace(/\s/g, '').length === 0 || isNaN(year)) {
+        alert('Нужно писать число!');
+    }
+    // №3
+    function correctMessage() {
+        let message, res, input;
+        message = document.querySelector(".message");
+        res = document.querySelector(".result").value;
+        input = document.querySelector(".result");
+
+        try {
+            if (isNaN(res)) throw 'NaN';
+            res = Number(res);
+            if (res < 2) throw 'too small';
+            if (res > 10) throw 'too big';
+
+        } catch (error) {
+            message.innerHTML = 'your write:' + ' ' + error;
+            message.style.color = "red"
+            input.style.borderColor = "red"
+        }
+
+        try {
+            if (res >= 2 && res <= 10) throw 'rigth';
+        } catch (correct) {
+            message.innerHTML = 'you write:' + ' ' + correct;
+            input.style.borderColor = "green"
+            message.style.color = "green"
+        }
+
+    };
+</script>
+
+</html>
