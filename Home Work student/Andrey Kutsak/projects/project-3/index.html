@@ -1,303 +1,218 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lora&family=Oxygen&family=Roboto&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="libs/animate css v_4.1.1/animate_css_v_4.1.1.min.css"
-    />
-    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap-reboot.min.css" />
-    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <title>Escape</title>
-  </head>
-  <body>
-    <main>
-      <section class="together wow animate__fadeInUp">
-        <div class="container">
-          <div class="row d-flex flex-column align-items-center">
-            <header class="d-flex justify-content-between">
-              <nav
-                class="head-menu d-flex flex-column flex-md-row justify-content-md-between"
-              >
-                <div class="wraper">
-                  <a href="index.html" class="logo">
-                    <img src="img/logo.svg" alt="logo icon" />
-                  </a>
-                  <button class="toggle-btn" id="toggleBtn">
-                    <span class="rows"></span><span class="rows"></span
-                    ><span class="rows"></span>
-                  </button>
-                </div>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="libs/resset/resset.css" />
+		<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.css" />
+		<link rel="stylesheet" href="libs/animate css v_4.1.1/animate_css_v_4.1.1.min.css" />
+		<link rel="stylesheet" href="css/style.min.css" />
+		<title>Escape</title>
+	</head>
+	<body>
+		<section class="head-section">
+			<div class="container">
+				<header class="d-flex flex-row justify-content-between align-items-center">
+					<a class="logo" href="index.html">Escape.</a>
+					<button class="btn-responsive" id="res-btn">
+						<div class="btn-row"></div>
+						<div class="btn-row"></div>
+						<div class="btn-row"></div>
+					</button>
+					<nav>
+						<ul class="head-menu flex-md-row flex-column d-flex justify-content-between align-items-center">
+							<li class="menu-item"><a href="#">Home</a></li>
+							<li class="menu-item"><a href="#">Categories</a></li>
+							<li class="menu-item"><a href="#">About</a></li>
+							<li class="menu-item"><a href="#">Contact</a></li>
+						</ul>
+					</nav>
+				</header>
+				<div class="d-flex flex-column align-content-center">
+					<h1 class="main-head">Let's do it together.</h1>
+					<p class="main-head-desc">We travel the world in search of stories. Come along for the ride.</p>
+					<a href="#" class="head-btn">View Latest Posts</a>
+				</div>
+			</div>
+		</section>
+		<section class="list">
+			<div class="container">
+				<ul class="site-list d-flex flex-column flex-md-row justify-content-between mx-auto">
+					<li class="list-item"><a href="#">Nature</a></li>
+					<li class="list-item"><a href="#">Photography</a></li>
+					<li class="list-item"><a href="#">Relaxation</a></li>
+					<li class="list-item"><a href="#">Vacation</a></li>
+					<li class="list-item"><a href="#">Travel</a></li>
+					<li class="list-item"><a href="#">Adventure</a></li>
+				</ul>
+			</div>
+		</section>
+		<section class="feature">
+			<div class="container">
+				<h2 class="fuature-title">Featured Posts</h2>
+				<div class="row">
+					<div class="col-12 col-md-6">
+						<div class="block road">
+							<h3 class="block-feature-title">The Road Ahead</h3>
+							<p class="feature-desc">The road ahead might be paved - it might not be.</p>
+							<div class="d-flex justify-content-between">
+								<div class="avatar-wraper"><img src="img/user-1.png" alt="Mat Vogels" class="user-avatar" /><span class="user-name">Mat Vogels</span></div>
+								<p class="publication-date">September 25, 2015</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-6">
+						<div class="top block">
+							<h3 class="block-feature-title">From Top Down</h3>
+							<p class="feature-desc">Once a year, go someplace you’ve never been before.</p>
+							<div class="d-flex justify-content-between">
+								<div class="avatar-wraper"><img src="img/user-2.png" alt="William Wong" class="user-avatar" /><span class="user-name">William Wong</span></div>
+								<p class="publication-date">September 25, 2015</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<h2 class="fuature-title">Most Recent</h2>
+				<div class="row">
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="recent-block mx-auto">
+							<picture>
+								<source srcset="img/block-1.avif" type="image/avif" />
+								<source srcset="img/bock-1.webp" type="image/webp" />
+								<img src="img/bock-1.jpg" alt="block-1" />
+							</picture>
+							<h3 class="recent-title">Still Standing Tall</h3>
+							<p class="recent-desc">Life begins at the end of your comfort zone.</p>
+							<div class="user-data-wraper d-flex justify-content-between">
+								<div class="d-flex justify-content-between avatar-wraper">
+									<img src="img/user-1.png" alt="William Wong" />
+									<span class="user-name">William Wong</span>
+								</div>
+								<p class="publication-data">9/25/2015</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="recent-block mx-auto">
+							<picture>
+								<source srcset="img/block-2.avif" type="image/avif" />
+								<source srcset="img/bock-2.webp" type="image/webp" />
+								<img src="img/bock-2.jpg" alt="block-2" />
+							</picture>
+							<h3 class="recent-title">Sunny Side Up</h3>
+							<p class="recent-desc">No place is ever as bad as they tell you it’s going to be.</p>
+							<div class="user-data-wraper d-flex justify-content-between">
+								<div class="d-flex justify-content-between avatar-wraper">
+									<img src="img/user-2.png" alt="Mat Vogels" />
+									<span class="user-name">Mat Vogels</span>
+								</div>
+								<p class="publication-data">9/25/2015</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="recent-block mx-auto">
+							<picture>
+								<source srcset="img/block-3.avif" type="image/avif" />
+								<source srcset="img/bock-3.webp" type="image/webp" />
+								<img src="img/bock-3.jpg" alt="block-3" />
+							</picture>
+							<h3 class="recent-title">Water Falls</h3>
+							<p class="recent-desc">We travel not to escape life, but for life not to escape us.</p>
+							<div class="user-data-wraper d-flex justify-content-between">
+								<div class="d-flex justify-content-between avatar-wraper">
+									<img src="img/user-2.png" alt="Mat Vogels" />
+									<span class="user-name">Mat Vogels</span>
+								</div>
+								<p class="publication-data">9/25/2015</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="recent-block mx-auto">
+							<picture>
+								<source srcset="img/block-4.avif" type="image/avif" />
+								<source srcset="img/bock-4.webp" type="image/webp" />
+								<img src="img/bock-4.jpg" alt="block-4" />
+							</picture>
+							<h3 class="recent-title">Through the Mist</h3>
+							<p class="recent-desc">Travel makes you see what a tiny place you occupy in the world.</p>
+							<div class="user-data-wraper d-flex justify-content-between">
+								<div class="d-flex justify-content-between avatar-wraper">
+									<img src="img/user-1.png" alt="William Wong" />
+									<span class="user-name">William Wong</span>
+								</div>
+								<p class="publication-data">9/25/2015</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="recent-block mx-auto">
+							<picture>
+								<source srcset="img/block-5.avif" type="image/avif" />
+								<source srcset="img/bock-5.webp" type="image/webp" />
+								<img src="img/bock-5.jpg" alt="block-5" />
+							</picture>
+							<h3 class="recent-title">Awaken Early</h3>
+							<p class="recent-desc">Not all those who wander are lost.</p>
+							<div class="user-data-wraper d-flex justify-content-between">
+								<div class="d-flex justify-content-between avatar-wraper">
+									<img src="img/user-2.png" alt="Mat Vogels" />
+									<span class="user-name">Mat Vogels</span>
+								</div>
+								<p class="publication-data">9/25/2015</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="recent-block mx-auto">
+							<picture>
+								<source srcset="img/block-6.avif" type="image/avif" />
+								<source srcset="img/bock-6.webp" type="image/webp" />
+								<img src="img/bock-6.jpg" alt="block-6" />
+							</picture>
+							<h3 class="recent-title">Try it Always</h3>
+							<p class="recent-desc">The world is a book, and those who do not travel read only one page.</p>
+							<div class="user-data-wraper d-flex justify-content-between">
+								<div class="d-flex justify-content-between avatar-wraper">
+									<img src="img/user-2.png" alt="Mat Vogels" />
+									<span class="user-name">Mat Vogels</span>
+								</div>
+								<p class="publication-data">9/25/2015</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="touch">
+			<div class="container">
+				<h2 class="touch-title">Stay in Touch</h2>
+				<form action="#" class="mx-auto subscribe-form d-flex" id="subscribeForm">
+					<input type="text" placeholder="Enter your email address" class="subscribe-inp" id="subscrInp" name="email" />
 
-                <ul
-                  class="head-menu-list d-flex flex-column flex-md-row justify-content-md-between"
-                >
-                  <li class="list-item" data-delay="0.1">
-                    <a href="#">Home</a>
-                  </li>
-                  <li class="list-item" data-delay="0.2">
-                    <a href="#">Categories</a>
-                  </li>
-                  <li class="list-item" data-delay="0.3">
-                    <a href="#">About</a>
-                  </li>
-                  <li class="list-item" data-delay="0.4">
-                    <a href="#">Contact</a>
-                  </li>
-                </ul>
-              </nav>
-            </header>
-            <h1 class="head-title">Let's do it together.</h1>
-            <p class="head-desc">
-              We travel the world in search of stories. Come along for the ride.
-            </p>
-            <a href="" class="btn">View Latest Posts</a>
-          </div>
-        </div>
-      </section>
-      <section class="list">
-        <div class="container">
-          <nav>
-            <ul
-              class="header-footer-list d-flex flex-column flex-md-row justify-content-md-between container"
-            >
-              <li><a href="#">Nature</a></li>
-              <li><a href="#">Photography</a></li>
-              <li><a href="#">Relaxation</a></li>
-              <li><a href="#">Vacation</a></li>
-              <li><a href="#">Travel</a></li>
-              <li><a href="#">Adventure</a></li>
-            </ul>
-          </nav>
-        </div>
-      </section>
-      <section class="features">
-        <div class="container">
-          <div class="row d-flex justify-content-center">
-            <h2 class="features-title">Featured Posts</h2>
-          </div>
-
-          <div class="row">
-            <div class="col-12 col-sm-6">
-              <div class="block road">
-                <h3 class="feature-block-title">The Road Ahead</h3>
-                <p class="feature-block-desc">
-                  The road ahead might be paved - it might not be.
-                </p>
-                <div class="d-flex justify-content-between">
-                  <div class="avatar-wraper">
-                    <img
-                      src="img/user-1.png"
-                      alt="user avatar"
-                      class="avatar-img"
-                    /><a href="#" class="user-link">Mat Vogels</a>
-                  </div>
-                  <span class="publishing-date">September 25, 2015</span>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-sm-6">
-              <div class="block adwenture">
-                <h3 class="feature-block-title">From Top Down</h3>
-                <p class="feature-block-desc">
-                  Once a year, go someplace you’ve never been before.
-                </p>
-                <div class="d-flex justify-content-between">
-                  <div class="avatar-wraper">
-                    <img
-                      src="img/user-2.png"
-                      alt="user avatar"
-                      class="avatar-img"
-                    /><a href="#" class="user-link">William Wong</a>
-                  </div>
-                  <span class="publishing-date">September 25, 2015</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row d-flex justify-content-center">
-            <h2 class="features-title">Most Recent</h2>
-          </div>
-          <div class="row d-flex flex-column flex-sm-row align-content-center">
-            <div class="col-12 col-sm-6 col-md-4">
-              <div class="recent-block">
-                <picture>
-                  <source srcset="img/block-1.avif" />
-                  <source srcset="img/block-1.webp" />
-                  <img src="img/block-1.jpg" alt="" />
-                </picture>
-                <div class="text-wraper">
-                  <h3 class="recent-title">Still Standing Tall</h3>
-                  <p class="recent-desc">
-                    Life begins at the end of your comfort zone.
-                  </p>
-                </div>
-                <div class="d-flex user-data-wraper">
-                  <img
-                    src="img/user-1.png"
-                    alt="user avatar"
-                    class="user-avatar"
-                  /><a href="#" class="user-link">William Wong</a
-                  ><span class="publick-date">9/25/2015</span>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-sm-6 col-md-4">
-              <div class="recent-block">
-                <picture>
-                  <source srcset="img/block-2.avif" />
-                  <source srcset="img/block-2.webp" />
-                  <img src="img/block-2.jpg" alt="" />
-                </picture>
-                <div class="text-wraper">
-                  <h3 class="recent-title">Sunny Side Up</h3>
-                  <p class="recent-desc">
-                    No place is ever as bad as they tell you it’s going to be.
-                  </p>
-                </div>
-                <div class="d-flex user-data-wraper">
-                  <img
-                    src="img/user-2.png"
-                    alt="user avatar"
-                    class="user-avatar"
-                  /><a href="#" class="user-link">Mat Vogels</a
-                  ><span class="publick-date">9/25/2015</span>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-sm-6 col-md-4">
-              <div class="recent-block">
-                <picture>
-                  <source srcset="img/block-3.avif" />
-                  <source srcset="img/block-3.webp" />
-                  <img src="img/block-3.jpg" alt="" />
-                </picture>
-                <div class="text-wraper">
-                  <h3 class="recent-title">Water Falls</h3>
-                  <p class="recent-desc">
-                    We travel not to escape life, but for life not to escape us.
-                  </p>
-                </div>
-                <div class="d-flex user-data-wraper">
-                  <img
-                    src="img/user-2.png"
-                    alt="user avatar"
-                    class="user-avatar"
-                  /><a href="#" class="user-link">Mat Vogels</a
-                  ><span class="publick-date">9/25/2015</span>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-sm-6 col-md-4">
-              <div class="recent-block">
-                <picture>
-                  <source srcset="img/block-4.avif" />
-                  <source srcset="img/block-4.webp" />
-                  <img src="img/block-4.jpg" alt=" block image" />
-                </picture>
-                <div class="text-wraper">
-                  <h3 class="recent-title">Through the Mist</h3>
-                  <p class="recent-desc">
-                    Travel makes you see what a tiny place you occupy in the
-                    world.
-                  </p>
-                </div>
-                <div class="d-flex user-data-wraper">
-                  <img
-                    src="img/user-1.png"
-                    alt="user avatar"
-                    class="user-avatar"
-                  /><a href="#" class="user-link">William Wong</a
-                  ><span class="publick-date">9/25/2015</span>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-sm-6 col-md-4">
-              <div class="recent-block">
-                <picture>
-                  <source srcset="img/block-5.avif" />
-                  <source srcset="img/block-5.webp" />
-                  <img src="img/block-5.jpg" alt="block inage" />
-                </picture>
-                <div class="text-wraper">
-                  <h3 class="recent-title">Awaken Early</h3>
-                  <p class="recent-desc">Not all those who wander are lost.</p>
-                </div>
-                <div class="d-flex user-data-wraper">
-                  <img
-                    src="img/user-2.png"
-                    alt="user avatar"
-                    class="user-avatar"
-                  /><a href="#" class="user-link">Mat Vogels</a
-                  ><span class="publick-date">9/25/2015</span>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-sm-6 col-md-4">
-              <div class="recent-block">
-                <picture>
-                  <source srcset="img/block-6.avif" />
-                  <source srcset="img/block-6.webp" />
-                  <img src="img/block-6.jpg" alt="block image" />
-                </picture>
-                <div class="text-wraper">
-                  <h3 class="recent-title">Try it Always</h3>
-                  <p class="recent-desc">
-                    The world is a book, and those who do not travel read only
-                    one page.
-                  </p>
-                </div>
-                <div class="d-flex user-data-wraper">
-                  <img
-                    src="img/user-2.png"
-                    alt="user avatar"
-                    class="user-avatar"
-                  /><a href="#" class="user-link">Mat Vogels</a
-                  ><span class="publick-date">9/25/2015</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="stay">
-        <div class="conatiner d-flex flex-column align-items-center">
-          <h2 class="stay-title">Stay in Touch</h2>
-          <form action="#" class="inp-wraper">
-            <input type="email" placeholder="Enter your email address" />
-            <input type="submit" value="Submit" />
-          </form>
-        </div>
-
-        <footer>
-          <div class="container d-flex justify-content-between">
-            <a href="#" class="logo"
-              ><img src="img/logo.svg" alt="logo icon"
-            /></a>
-            <nav>
-              <ul class="footer-nav d-flex justify-content-between">
-                <li class="nav-item"><a href="#">Home</a></li>
-                <li class="nav-item"><a href="#">Categories</a></li>
-                <li class="nav-item"><a href="#">About</a></li>
-                <li class="nav-item"><a href="#">Contact</a></li>
-              </ul>
-            </nav>
-          </div>
-        </footer>
-      </section>
-    </main>
-    <script src="libs/jQueryv3.6.0/jQueryv3.6.0.js"></script>
-    <script src="libs/bootstrap/js/bootstrap.min.js"></script>
-    <script src="libs/wow/wow.min.js"></script>
-    <script src="js/app.js"></script>
-  </body>
+					<input type="submit" value="Submit" class="subscribe-btn" id="subscribe-btn" />
+					<div id="errData"></div>
+				</form>
+			</div>
+			<footer>
+				<div class="container">
+					<nav class="d-flex justify-content-between align-items-center">
+						<a href="#" class="logo">Escape.</a>
+						<ul class="footer-list d-flex justify-content-between flex-column flex-md-row">
+							<li class="footer-item"><a href="#">Home</a></li>
+							<li class="footer-item"><a href="#">Categories</a></li>
+							<li class="footer-item"><a href="#">About</a></li>
+							<li class="footer-item"><a href="#">Contact</a></li>
+						</ul>
+					</nav>
+				</div>
+			</footer>
+		</section>
+		<script src="libs/jQueryv3.6.0/jQueryv3.6.0.js"></script>
+		<script src="libs/bootstrap/js/bootstrap.min.js"></script>
+		<script src="libs/wow/wow.min.js"></script>
+		<script src="js/app.min.js"></script>
+	</body>
 </html>
