@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW32</title>
+</head>
+
+<body>
+    <h1 style="font-size: 48px; background-color: rgb(123, 52, 255);">HW32</h1>
+    <p>
+        <button onclick="myMove()">Click Me</button>
+    </p>
+    <div class="square" id="square"
+        style="width: 200px; height: 100px; background-color: rgb(238, 255, 0); cursor: pointer; position: relative;">
+    </div>
+    <div id="earth" style="width: 40px; height: 40px; background-color: black; position: absolute;"></div>
+    <script>
+        ////111111////
+        let id = null;
+
+        function myMove() {
+            let elem = document.getElementById("square");
+            let pos = 0;
+            clearInterval(id);
+            id = setInterval(frame, 10);
+
+            function frame() {
+                if (pos == 300) {
+                    clearInterval(id);
+                } else {
+                    pos++;
+                    elem.style.top = pos + 'px';
+                    elem.style.left = pos + 'px';
+
+                }
+            }
+        }
+
+        /////////////
+
+        ////222222/////
+
+        class Shoes {
+            static type = "Shoes";
+            constructor(options) {
+                this.brand = options.brand;
+                this.size = options.size;
+                this.color = options.color;
+                this.price = options.price;
+                this.style = options.style;
+            }
+        }
+
+        class Trainers extends Shoes {
+            static type = "trainers";
+            constructor(options) {
+                super(options)
+                this.madeFrom = options.madeFrom;
+                this.outfit = options.outfit;
+            }
+        }
+
+        const trainers = new Trainers({
+            brand: "Nike",
+            size: 8,
+            color: "yellow",
+            price: 350,
+            style: "street",
+            madeFrom: "USA",
+            outfit: "spring"
+
+        });
+
+        console.log(trainers);
+    </script>
+
+</body>
+
+</html>
