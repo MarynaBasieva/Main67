@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const store = function (price, name, pdv, weight, color) {
+            this.price = price;
+            this.name = name;
+            this.pdv = pdv;
+            this.weight = weight;
+            this.color = color;
+            this.message = function () {
+                return ("info:" + " " + price + " " + name + " " + pdv + " " + weight + " " + color);
+            };
+        };
+
+        let goods = new store("100", "poroshochek", "0.2", "5g", "white");
+
+        document.write(goods.message());
+
+
+        function callMe() {
+            setTimeout(function () {
+                console.log("call me right now!");
+            }, 1100);
+        };
+
+        function callback() {
+            setTimeout(function () {
+                console.log("we wiil call you back");
+            }, 2100);
+        };
+
+        function waiting() {
+            setTimeout(function () {
+                console.log("wait");
+            }, 3300);
+        };
+
+        function weCallYou() {
+            setTimeout(function () {
+                console.log("pick up the phone");
+            }, 300);
+        };
+
+        callMe();
+        callback();
+        waiting();
+        weCallYou();
+    </script>
+</body>
+
+</html>
