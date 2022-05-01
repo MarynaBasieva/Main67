@@ -1,0 +1,13 @@
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.blue {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    padding: 5px;
+    box-sizing: border-box;
+    background: rgb(59, 209, 189);
+}
