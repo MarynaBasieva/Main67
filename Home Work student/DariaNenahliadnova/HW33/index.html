@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW33</title>
+</head>
+<!--HW33
+1) Дата вывсети дату 2020 ноября 12 в документ
+2) Через prompt если вводим текущий год выводим да это этот год, водим ниже говорим прошел, водим больше текущего года пишем не наступил через alert
+3) Дополнительно с моего файла если есть пользовательская ошибка при вызове функции, а то есть по нажатию на кнопку окрашивать инпут красным бордером-->
+<style>
+    .container{
+        max-width: 1000px;
+        margin: 0 auto;
+        background: rgb(212, 182, 247, 0.5);
+    }
+    #today{
+        padding: 20px;
+    }
+    .sun{
+        padding: 20px;
+    }
+    p{
+        font-size: 18px;
+        font-style: oblique;
+    }
+    .res:focus{
+        outline: none;
+    }
+
+</style>
+<body>
+    <div class="container">
+        <div id ="today"></div>
+        <div class="sun">
+            <p>Введите число от 2 до 10:</p>
+            <input class="res" type="text" />
+            <button type="button" onClick="myFunction()">Проверка ошибок</button>
+            <div class="message"></div>
+        </div>
+    </div>
+</body>
+<script>
+
+    //1
+    let date = new Date();
+    date.setFullYear(2020, 10, 12);
+    document.querySelector("#today").innerHTML = date ;
+    
+    //2
+    let year = prompt("Какой сейчас год?", " ");
+	
+	if(year > 2022){
+		alert("Это будующий год");
+	}
+    if(year == 2022){
+		alert("Правильно!");
+	}
+    if(year < 2022){
+		alert("Увы, это прошедший год");
+	}
+    
+    //3
+    function myFunction(){
+			let message, res,  input;
+			message = document.querySelector(".message"); 
+			message.innerHTML= '';
+            input = document.querySelector(".res");
+			res = document.querySelector(".res").value;
+			
+			try{
+				if(res == "")throw 'пусто';
+				if(isNaN(res))throw 'не число';
+				res = Number(res);
+				if(res < 2)throw 'слишком мало';
+				if(res > 10)throw 'слишком много';
+                
+			}catch(err){
+				message.innerHTML = 'Вы ввели:' + ' ' + err;
+                input.style.borderColor = "red"
+			}
+		}
+
+</script>
+</html>

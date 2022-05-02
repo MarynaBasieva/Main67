@@ -1,0 +1,352 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: "Roboto", sans-serif;
+}
+
+img {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+}
+
+/*font-family: 'Inter', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Prosto One', cursive;
+font-family: 'Roboto', sans-serif;
+
+/.sidenav {
+  display: block;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(255, 255, 255);
+  overflow-x: hidden;
+  overflow-y: hidden;
+  overflow: auto;
+  transition: 0.5s;
+  padding-top: 80px;
+  text-align: center;
+}
+
+.active {
+  width: 100%;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  color: #656293;
+  display: block;
+  transition: 0.5s ease-in-out;
+}
+
+.sidenav a:hover {
+  text-decoration: none;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+*/
+
+.responsive_menu {
+  display: none;
+}
+
+.sidenav {
+  display: none;
+}
+
+.introduction {
+  background: url("../img/1/Group-bubbles.png") no-repeat 10% 81%,
+    linear-gradient(252.43deg, #d45b78 0.01%, #4b3862 101.01%);
+  padding: 75px 0px 83px;
+}
+
+.introduction .regular-btn {
+  font-size: 18px;
+  line-height: 21px;
+  color: #fcfcfc;
+  margin-right: 65px;
+  transition: 0.5s ease-in-out;
+}
+
+.introduction .regular-btn:hover {
+  color: #afafaf;
+  text-decoration: none;
+}
+
+.introduction .border-btn {
+  padding: 10px 38px;
+  font-size: 18px;
+  line-height: 21px;
+  color: #fcfcfc;
+  transition: 0.5s ease-in-out;
+  border: 2px solid #ffffff;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.introduction .border-btn:hover {
+  background-color: rgb(245, 180, 180);
+  text-decoration: none;
+}
+
+.introduction .banner .calmar-main {
+  margin-bottom: 20px;
+}
+
+.introduction .banner h1 {
+  font-size: 64px;
+  line-height: 75px;
+  color: #fcfcfc;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.introduction .banner p {
+  font-size: 24px;
+  line-height: 30px;
+  color: #f2f2f2;
+  margin-bottom: 90px;
+  max-width: 970px;
+  text-align: center;
+}
+
+.introduction .banner a {
+  background: #d75c78;
+  border-radius: 5px;
+  font-size: 24px;
+  line-height: 42px;
+  color: #f2f2f2;
+  padding: 20px 59px;
+  transition: 0.5s ease-in-out;
+}
+
+.introduction .banner a:hover {
+  background: #ff688e;
+  text-decoration: none;
+}
+
+.main-content {
+  background: url("../img/1/Group-bubbles.png") no-repeat 10% 9%,
+    url("../img/2/diver-blue.png") no-repeat 75% 7%,
+    url("../img/2/separate_bubble.png") no-repeat 82% 31%,
+    url("../img/2/diver-orange.png") no-repeat 21% 35%,
+    url("../img/3/submarine.png") no-repeat 87% 69%,
+    url("../img/3/fish-thing.png") no-repeat 8% 89%,
+    linear-gradient(
+      178.68deg,
+      #4f3963 -2.24%,
+      #764469 31.33%,
+      #5e3e66 76.25%,
+      #2c2142 94.12%
+    );
+  padding: 350px 0px 0px;
+}
+
+.main-content .row-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-content .card {
+  position: relative;
+  background: #523a64;
+  box-shadow: 6px 10px 45px -9px rgba(0, 0, 0, 0.25);
+  padding: 85px 101px 70px 100px;
+  overflow: hidden;
+  max-width: 551px;
+}
+
+.main-content .first-content .card-second {
+  margin-top: 266px;
+}
+
+.main-content .first-content .card-first {
+  align-self: start;
+}
+
+.main-content .second-content {
+  margin-top: -30px;
+}
+
+.main-content .second-content .card-first {
+  align-self: start;
+}
+
+.main-content .second-content .card-second {
+  margin-top: 317px;
+}
+
+.main-content .card h4 {
+  position: absolute;
+  top: 43px;
+  left: -25px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 96px;
+  line-height: 112px;
+  color: #944b6e;
+}
+
+.main-content .card h5 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #f2f2f2;
+  margin-bottom: 25px;
+}
+
+.main-content .card p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: #f2f2f2;
+}
+
+.main-content .first-row {
+  margin-bottom: 240px;
+}
+
+.main-content .have-a-look {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 150%;
+  color: #f6f6f6;
+  max-width: 652px;
+  margin-bottom: 110px;
+}
+
+.Parentvideo {
+  margin-bottom: 330px;
+}
+
+.youtube {
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  transition: all 200ms ease-out;
+  cursor: pointer;
+  background-size: cover;
+  width: 100%;
+  height: 600px;
+}
+.Parentvideo iframe {
+  width: 100%;
+  height: 655px;
+}
+.youtube .play {
+  background: url("../img/2/play-button.png") no-repeat;
+  background-position: 0 0;
+  -webkit-background-size: 100% auto;
+  background-size: 100% auto;
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  transition: none;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.main-content .try-it {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 500px;
+  padding: 50px 65px 45px;
+  background-image: url(../img/3/bck-first.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: drop-shadow(1px 63px 100px rgba(0, 0, 0, 0.25));
+  transition: ease-in-out 0.5s;
+  cursor: pointer;
+}
+
+.main-content .try-it h5 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 150%;
+  color: #ffffff;
+  margin-bottom: 40px;
+}
+
+.main-content .try-it p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 150%;
+  color: #f2f2f2;
+  margin-bottom: 100px;
+}
+
+.main-content .try-it a {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 42px;
+  color: #ffffff;
+  text-align: center;
+  padding: 17px 50px;
+  border: 5px solid #ffffff;
+  border-radius: 5px;
+  transition: ease-in-out 0.5s;
+}
+
+.main-content .try-it:hover {
+  transform: translateY(-120px);
+  background-image: url(../img/3/bck-second.png);
+  filter: drop-shadow(1px 63px 100px rgba(0, 0, 0, 0.25));
+}
+
+.main-content .try-it:hover a {
+  text-decoration: none;
+  background-color: #4f3963;
+}
+
+.main-content .card-container {
+  margin-bottom: 136px;
+}
+
+.main-content .submarine {
+  background: url("../img/3/bck.png") no-repeat center 100%;
+  width: 100%;
+  height: 510px;
+  background-size: cover;
+}
+
+.main-content .how-it-works {
+  display: none;
+}
