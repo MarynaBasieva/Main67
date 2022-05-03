@@ -8,6 +8,10 @@ img {
     width: auto;
     height: auto;
 }
+body {
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+}
 /*Header*/
 header {
     background: url(../img/header.png) no-repeat;
@@ -15,8 +19,15 @@ header {
     background-position: center bottom;
   
     padding-bottom: 200px;
+    
 }
-
+.responsive_menu {
+    display: none;
+}
+.parents_responsive_menu {
+display: flex;
+justify-content: space-between;
+}
 .nav-menu ul.sub-menu {
     display: flex;
     list-style: none;
@@ -42,14 +53,16 @@ header {
                 text-decoration: none;
             }
 
-.logo {
+.logo img {
     opacity:95%;
    
 
 }
 .basket {
     padding-right:10px;
+    
 }
+
 .logo_text {
     padding-top:150px;
     font-size:60px;
@@ -65,7 +78,9 @@ header {
     padding-top: 20px;
     padding-bottom: 20px;
 }
-header .logo_buttom {
+
+
+.logo_buttom {
     border: 3px solid #4144BF;
     background: white;
     border-radius: 20px;
@@ -73,11 +88,19 @@ header .logo_buttom {
     text-decoration: none;
     color: #4144BF;
     font-size: 18px;
+    margin: 0 auto;
+    transition: box-shadow 0.5s ease-in-out, color 1s ease-in-out;
 }
+.logo_buttom:hover {
+    box-shadow: 0 0 40px 40px #040264 inset;
+    color:#FDF8F5;
+}
+
 
 /*header_bottom_logo*/
 .header_bottom_logo {
     background: #DEE6F3;
+    
 }
 .logo_buttom_parents a:hover {
     text-decoration: none;
@@ -94,7 +117,7 @@ header .logo_buttom {
 
 /*three_text*/
 .three_text {
-    padding-top:20px;
+    padding-top:150px;
 }
 .text_first {
     font-size: 30px;
@@ -134,7 +157,7 @@ header .logo_buttom {
 /*three_text*/
 /*three_pictutes*/
 .three_pictutes {
-    padding-top:50px;
+    padding-top:150px;
     padding-bottom:50px;
 }
 .three_pictutes_text p {
@@ -149,8 +172,13 @@ header .logo_buttom {
     text-decoration: none;
     color: #4144BF;
     font-size: 18px;
-    
+    transition: box-shadow 0.5s ease-in-out, color 1s ease-in-out;
 }
+.three_pictutes_buttom:hover  {
+    box-shadow: 0 0 40px 40px #040264 inset;
+    color:#FDF8F5;
+}
+
     
     .three_pictutes_text a:hover{
   
@@ -180,10 +208,15 @@ header .logo_buttom {
     text-decoration: none;
     color: #FFFFFF;
     font-size: 18px;
+    transition: 0.5s;
+   
 }
+
 .video a:hover {
     text-decoration: none;
-    color: #FFFFFF;
+    box-shadow: 0 0 40px 40px #00A4E5 inset;
+    color:#FDF8F5;
+    border: 3px solid #00A4E5;
 }
 .youtube {
     margin-top: 60px;
@@ -261,15 +294,216 @@ header .logo_buttom {
     text-decoration: none;
     color: #FFFFFF;
     font-size: 18px;
+    
 }
+/* .no_plastic_buttom:hover {     <========= Не розумію чого не працює?
+    text-decoration: none;
+    box-shadow: 0 0 40px 40px #00A4E5 inset;
+    color:#FDF8F5;
+    border: 3px solid #00A4E5;
+}
+ */
     /*no_plastic*/
 /*photo_girl*/
-.photo_girl h2 {
-    font-size: 60px;
+.photo_girl {
+    padding-top: 170px;
+    padding-bottom: 170px;
+}
+    .photo_girl h2 {
+    font-size: 50px;
     color: #172345;
+    padding-bottom: 60px;
 }
 .photo_girl p {
     font-size: 26px;
     color: #172345;
+    padding-left: 30px;
 }
     /*photo_girl*/
+
+/*bite_photo_parents*/
+.bite_photo_parents p {
+    margin-bottom:0;
+}
+.bite_photo_parents {
+    padding-bottom: 40px;
+}
+    .bite_photo_parents1 {
+    padding-bottom: 60px;
+}
+.bite_photo1_parents {
+    padding-bottom: 30px;
+}
+.bite_photo_parents pre {
+    margin-bottom: 0;
+}
+.bite_photo1_text {
+    display: flex;
+    justify-content: space-between;
+    color: #172345;
+    font-size:17px;
+}
+   
+    .bite_photo1_text b {
+        color: #0038D2;
+        font-size:17px;
+    }
+.bite_photo1_text2 {
+    display: flex;
+    justify-content: space-between;
+    color: #AAAAAA;
+    font-size: 14px;
+}
+
+.bite_photo_parents2 pre{
+    font-size: 12px;
+}
+
+.bite_photo {
+    transition: 0.6s ease;
+}
+    .bite_photo:hover {
+        
+        transform: translateY(-20px);
+        cursor: pointer;
+    }
+    /*bite_photo_parents*/
+/*zero_waste*/
+.zero_waste {
+   background: #d3e1e6;
+   
+}
+.zero_waste_text {
+    font-size: 50px;
+    padding-bottom:60px;
+}
+
+.zero_waste_text1 {
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+.zero_waste_buttom {
+    border: 3px solid #4144BF;
+    background: #4144BF;
+    border-radius: 10px;
+    padding: 11px 34px;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 18px;
+}
+.zero_waste_buttom:hover {     
+    text-decoration: none;
+    box-shadow: 0 0 40px 40px #00A4E5 inset;
+    color:#FDF8F5;
+    border: 3px solid #00A4E5;
+}
+.modal-body form {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+    .modal-body form input {
+        margin-bottom: 10px;
+        padding: 5px;
+        border-radius: 5px;
+        border: none;
+        background: #EEEFF1;
+    }
+
+    .modal-body form textarea {
+        margin-bottom: 5px;
+        padding: 5px;
+        padding-bottom: 50px;
+        border-radius: 10px;
+        border: none;
+        resize: none;
+        background: #EEEFF1;
+    }
+.zero_waste_text2 {
+    font-size: 12px;
+    padding-top: 30px;
+}
+/*zero_waste*/
+/*one_bilion*/
+.one_bilion {
+    background: #FDF8F5;
+    padding-bottom: 100px;
+}
+.one_bilion p {
+    font-size: 11px;
+}
+   
+.one_bilion_h2 {
+    font-size: 70px;
+}
+.one_bilion_p {
+    font-size: 18px;
+}
+.one_bilion_p1 {
+    padding-top: 38px;
+}
+        /*one_bilion*/
+
+        /*Hey*/
+.Hey {
+    padding-bottom:40px;
+}
+    .Hey h2 {
+    font-size: 50px;
+}
+
+.Hey  p {
+    font-size: 24px;
+}
+
+.Hey h3 {
+    font-size: 14px;
+    color: #415286;
+    text-align:center;
+}
+.Hey h4 {
+    font-size: 20px;
+    color: #415286;
+    text-align: center;
+}
+ 
+
+
+        
+        /*Hey*/
+/*contacts*/
+.contacts {
+    padding-top: 50px;
+    padding-bottom:100px;
+    background: #FDF8F5;
+}
+    .Subscriptions {
+    font-size: 16px;
+    color: #6C77B5;
+    list-style: none;
+}
+.contacts h2 {
+    font-size: 20px;
+    
+}
+.contacts img {
+    padding-left:135px;
+    padding-bottom:20px;
+}
+.Subscriptions li{
+    padding:5px 0px 5px 0px;
+}
+.fab {
+    padding-right:10px;
+    cursor: pointer;
+}
+    /*contacts*/
+footer {
+    background: #FDF8F5;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align:center;
+}
