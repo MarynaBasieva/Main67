@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/responsive.css">
+    <link rel="stylesheet" href="./style/fonts.css">
+    <link rel="stylesheet" href="./vendor/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./vendor/bootstrap-5.0.2-dist/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="./vendor/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="./vendor/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./vendor/OwlCarousel2-2.3.4/dist/assets/owl.theme.green.min.css">
+    <link rel="stylesheet" href="./vendor/fancybox/dist/jquery.fancybox.min.css">
+    <title>Qubit</title>
+</head>
+<body>
+    <div class="for_page">
+        <div class="page">
+            <!-- Togle & Side Bar -->
+            <div class="sidebar">
+                <ul class="menu">
+                    <li><a href="#why" onclick="toggleMenu();">Why Qubit?</a></li>
+                    <li><a href="#products" onclick="toggleMenu();">Products</a></li>
+                    <li><a href="#solutions" onclick="toggleMenu();">Solutions</a></li>
+                    <li><a href="#customers" onclick="toggleMenu();">Customers</a></li>
+                    <li><a href="#case_studies" onclick="toggleMenu();">Case studies</a></li>
+                    <li><a href="#resources" onclick="toggleMenu();">Resources</a></li>
+                    <li><a href="#more" onclick="toggleMenu();">More</a></li>
+                    <div class="header_links">
+                        <a href="#" class="header_link_btn" onclick="toggleMenu();">Book a demo</a>
+                        <a href="#" class="header_login" onclick="toggleMenu();">Log In</a>
+                    </div>
+                    <!-- <div class="sidebar_icon">
+                        <div class="user">
+                            <a href="#"><i class="fa-solid fa-user-large"></i></a>
+                        </div>
+                        <div>
+                            <a href="#"><i class="fa-solid fa-basket-shopping"></i></a>
+                        </div>
+                    </div> -->
+                </ul>
+            </div>
+            <!-- Side Bar -->
+            <!-- HEADER -->
+            <header class="header">
+                <div class="header_container">
+                    <div class="header_logo">
+                        <a href="#"><img src="./img/header/logo.png" alt="logo boosted_USA"></a>
+                    </div>
+                    <div class="header_nav">
+                        <nav class="nav_menu">
+                            <ul class="sub_menu">
+                                <li class="item_menu">
+                                    <a class="link_item_menu" href="#why">Why Qubit?</a>
+                                </li>
+                                <li class="item_menu">
+                                    <a class="link_item_menu" href="#products">Products</a>
+                                </li>
+                                <li class="item_menu">
+                                    <a class="link_item_menu" href="#solutions">Solutions</a>
+                                </li>
+                                <li class="item_menu">
+                                    <a class="link_item_menu" href="#customers">Customers</a>
+                                </li>
+                                <li class="item_menu">
+                                    <a class="link_item_menu" href="#case_studies">Case studies</a>
+                                </li>
+                                <li class="item_menu">
+                                    <a class="link_item_menu" href="#resources">Resources</a>
+                                </li>
+                                <li class="item_menu">
+                                    <a class="link_item_menu" href="#more">More</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="header_links">
+                        <a href="#" class="header_link_btn">Book a demo</a>
+                        <a href="#" class="header_login">Log In</a>
+                    </div>
+                    <div class="toggle" onclick="toggleMenu();"></div>
+                </div>
+            </header>
+            <!-- MAIN -->
+            <main class="main">
+                <!-- Welcome -->
+                <section class="welcome">
+                    <div class="container">
+                        <div class="welcome_wrapper">
+                            <h6>Driving growth with personalization.</h6>
+                            <h2>Make ecommerce</h2>
+                            <h2 class="blue">More personal.</h2>
+                            <p>Hundreds of brands use <span>Qubit CommerceAI</span>  to power the next generation of product recommendations, badging and insights to build exceptional customer 
+                            experiences.</p>
+                            <div class="welcome_form">
+                                <input class="email" type="text" name="" placeholder="Enter your email">
+                                <input class="welcome_btn" type="submit" value="Book a demo">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Brands -->
+                <section class="brands">
+                    <div class="container brands_container">
+                        <h4>Trusted by world-class brands.</h4>
+                        <div class="brands_img_wrapper">
+                            <div class="items">
+                                <img src="./img/main/brands/barbour.png" alt="barbour">
+                            <img src="./img/main/brands/kate_spade.png" alt="kate_spade">
+                            <img src="./img/main/brands/lvmh.png" alt="lvmh">
+                            <img src="./img/main/brands/estee_lauder.png" alt="estee_lauder">
+                            </div>
+                            <div class="items">
+                                <img src="./img/main/brands/tjx.png" alt="tjx">
+                                <img src="./img/main/brands/river_island.png" alt="river_island">
+                                <img src="./img/main/brands/radisson.png" alt="radisson">
+                                <img src="./img/main/brands/g_star_raw.png" alt="g_star_raw">
+                            </div>
+                        </div>
+                        <div class="brads_link">
+                            <a href="#">
+                                Meet our customers >
+                            </a>
+                        </div>
+                    </div>
+                </section>
+                <!-- Grow -->
+                <section class="grow">
+                    <div class="container grow_container">
+                        <div class="item">
+                            <h3 class="title">Grow 2.5x faster than</h3>
+                            <h3 class="title">your competitors.</h3>
+                            <div class="grow_links">
+                                <a class="link_1" href="#">Book a demo</a>
+                                <div>
+                                    <a class="link_2" href="#">Meet our customers ></a>
+                                </div>
+                            </div>
+                            <p>*PwC audited methodology.</p>
+                            <a href="#" class="grow_link">Read the report</a>
+                        </div>
+                        <div class="item_2">
+                            <div class="item_2_wrapper">
+                                <div class="title_wrapper">
+                                    <h3 class="title title_1">140%</h3>
+                                    <p class="subtitle">Qubit's top customers <br> annual growth rate.</p>
+                                </div>
+                                <div class="title_wrapper">
+                                    <h3 class="title title_1">$20bn</h3>
+                                    <p class="subtitle">Online sales generated <br> by our customers in 2020.</p>
+                                </div>
+                                <div class="title_wrapper">
+                                    <h3 class="title title_1">364</h3>
+                                    <p class="subtitle">Ecommerce stores are <br> growing faster with Qubit.</p>
+                                </div>
+                            </div>
+                            <div class="item_2_wrapper">
+                                <div class="title_wrapper">
+                                    <h3 class="title">9.5m</h3>
+                                    <p>Personalized experiences <br> delivered every hour.</p>
+                                </div>
+                                <div class="title_wrapper">
+                                    <h3 class="title">4.4m</h3>
+                                    <p>Shoppers influenced <br> by Qubit every day.</p>
+                                </div>
+                                <div class="title_wrapper">
+                                    <h3 class="title">$1.6bn</h3>
+                                    <p>Incremental revenue generated <br> by our customers in 2020.*</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Commerce -->
+                <section class="commerce">
+                    <div class="container commerce_container">
+                        <h3 class="title">Qubit CommerceAI.</h3>
+                        <p>The new way to drive growth.</p>
+                        <div class="items_wrapper">
+                            <div class="item">
+                                <div class="image_wrapper">
+                                    <img src="./img/main/commerce/icon_1.png" alt="icon">
+                                </div>
+                                <h4>More insight</h4>
+                                <p>Learn which products drive performance and which don't, through automated insights you can 
+                                action.</p>
+                            </div>
+                            <div class="item">
+                                <div class="image_wrapper">
+                                    <img src="./img/main/commerce/icon_2.png" alt="icon">
+                                </div>
+                                <h4>More personal</h4>
+                                <p>Qubit CommerceAI generates a model per shopper to make every customer interaction more 
+                                relevant.</p>
+                            </div>
+                            <div class="item">
+                                <div class="image_wrapper">
+                                    <img src="./img/main/commerce/icon_3.png" alt="icon">
+                                </div>
+                                <h4>More effective</h4>
+                                <p>Qubit fuses data, intent, and design tools to enable your team to create more effective customer 
+                                experiences.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- All_Power -->
+                <section class="all_power">
+                    <div class="container all_power_container">
+                        <h3 class="title">All the power. Easy to use.</h3>
+                        <p>By collaborating with real ecommerce teams we've built the next-gen personalization tool. No code. No 
+                        clunkiness.</p>
+                        <div class="all_power_img">
+                            <img src="./img/main/all_power/image.png" alt="image">
+                        </div>
+                        <div class="all_power_link_wrapper">
+                            <a href="#" class="link_btn">See products</a>
+                            <a href="#" class="link_btn link_btn_2">Book a demo</a>
+                        </div>
+                    </div>
+                </section>
+                <!-- Product -->
+                <section class="product">
+                    <div class="container product_container">
+                        <h3 class="title">What you can do with Qubit.</h3>
+                        <div class="items_wrapper">
+                            <div class="item">
+                                <div class="item_img">
+                                    <img src="./img/main/product/product_1.svg" alt="product image">
+                                </div>
+                                <h4>1:1 Product recommendations</h4>
+                                <p>Use deep learning recommendations to engage customers in seconds.</p>
+                            </div>
+                            <div class="item">
+                                <div class="item_img">
+                                    <img src="./img/main/product/product_2.svg" alt="product image">
+                                </div>
+                                <h4>1:1 Product badging</h4>
+                                <p>Guide discovery with personalized product badging. Push sales with social proofing.</p>
+                            </div>
+                            <div class="item">
+                                <div class="item_img">
+                                    <img src="./img/main/product/product_3.svg" alt="product image">
+                                </div>
+                                <h4>Personalized content</h4>
+                                <p>Your customers are unique. Present them with content that shows you know them.</p>
+                            </div>
+                            <div class="item">
+                                <div class="item_img">
+                                    <img src="./img/main/product/product_4.svg" alt="product image">
+                                </div>
+                                <h4>Product insights</h4>
+                                <p>A platform packed with insights helping you discover the hard hitting things you can do next.</p>
+                            </div>
+                            <div class="item">
+                                <div class="item_img">
+                                    <img src="./img/main/product/product_5.svg" alt="product image">
+                                </div>
+                                <h4>CommerceAI</h4>
+                                <p>Your customer's behavioral data is telling you a story. Use predictive and affinity based algorithms to serve 
+                                them better.</p>
+                            </div>
+                            <div class="item">
+                                <div class="item_img">
+                                    <img src="./img/main/product/product_6.svg" alt="product image">
+                                </div>
+                                <h4>Platform integrations</h4>
+                                <p>Connect Qubit to any tool via API. Import data or trigger an experience on any platform.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Trusted -->
+                <section class="trusted">
+                    <div class="container trusted_container">
+                        <h3 class="title">Trusted by leading brands.</h3>
+                        <div class="slider-carousel">
+                            <div class="owl-carousel owl-theme" id="carousel_partners">
+                                <div class="item">
+                                    <img src="./img/main/trusted/product_1.png" alt="product">
+                                    <div class="item_wrapper">
+                                        <img src="./img/main/trusted/logo_1.png" alt="logo">
+                                        <p>Clinique builds relationships with millions of customers each year.</p>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img src="./img/main/trusted/product_2.png" alt="product">
+                                    <div class="item_wrapper">
+                                        <img src="./img/main/trusted/logo_2.png" alt="logo">
+                                        <p>River Island transforms the customer experience with personalization.</p>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img src="./img/main/trusted/product_3.png" alt="product">
+                                    <div class="item_wrapper">
+                                        <img src="./img/main/trusted/logo_3.png" alt="logo">
+                                        <p>MandM Direct drives increase in revenue with deep learning recs</p>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img src="./img/main/trusted/product_4.png" alt="product">
+                                    <div class="item_wrapper">
+                                        <img src="./img/main/trusted/logo_4.png" alt="logo">
+                                        <p>Jean Gritsfeldt is one of the fastest growing and most popular Ukrainian fashion brands.</p>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img src="./img/main/trusted/product_5.png" alt="product">
+                                    <div class="item_wrapper">
+                                        <img src="./img/main/trusted/logo_4.png" alt="logo">
+                                        <p>Ukrainian Designer Jean Gritsfeldt showed his autumn/winter 2022 show at Berlin Fashion Week.</p>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img src="./img/main/trusted/product_6.png" alt="product">
+                                    <div class="item_wrapper">
+                                        <img src="./img/main/trusted/logo_h&m.png" alt="logo">
+                                        <p>H&M is a leader in the "fast fashion" space, competing with Zara and Forever 21.</p>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img src="./img/main/trusted/product_7.png" alt="product">
+                                    <div class="item_wrapper">
+                                        <img src="./img/main/trusted/logo_prada.png" alt="logo">
+                                        <p>Prada is an Italian luxury fashion house that was founded in 1913 by Mario Prada.</p>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img src="./img/main/trusted/product_8.png" alt="product">
+                                    <div class="item_wrapper">
+                                        <img src="./img/main/trusted/logo_off.png" alt="logo">
+                                        <p>Off-White is an Italian luxury fashion label founded by American designer Virgil Abloh.</p>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img src="./img/main/trusted/product_9.png" alt="product">
+                                    <div class="item_wrapper">
+                                        <img src="./img/main/trusted/logo_bale.png" alt="logo">
+                                        <p>Spanish brand Balenciaga was established in the Basque Country in Spain before relocating to France and opening a boutique store in Paris in 1937</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Specialize -->
+                <section class="specialize">
+                    <div class="container specialize_container">
+                        <h3 class="title">We specialize in your industry.</h3>
+                        <p class="subtitle">Learn how we are delivering personalization at scale across sectors.</p>
+                        <div class="items_wrapper">
+                            <div class="item">
+                                <div class="item_title">
+                                    <div class="img">
+                                        <img src="./img/main/specialize/icon_1.png" alt="icon">
+                                    </div>
+                                    <h4>Beauty and cosmetics</h4>
+                                </div>
+                                <p class="item_txt">Discover relevant products. Push samples. Upsell and replenish.</p>
+                                <div class="item_txt_2">
+                                    <h5>Explore our solutions for beauty and cosmetics.</h5>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="item_title">
+                                    <div class="img">
+                                        <img src="./img/main/specialize/icon_2.png" alt="icon">
+                                    </div>
+                                    <h4>Fashion</h4>
+                                </div>
+                                <p class="item_txt">Supercharge merchandising. Reach your best customers.</p>
+                                <div class="item_txt_2">
+                                    <h5>Explore our solutions for fashion.</h5>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="item_title">
+                                    <div class="img">
+                                        <img src="./img/main/specialize/icon_3.png" alt="icon">
+                                    </div>
+                                    <h4>Luxury</h4>
+                                </div>
+                                <p class="item_txt">Drive brand experience online. Look after your VIPs.</p>
+                                <div class="item_txt_2">
+                                    <h5>Explore our solutions for luxury.</h5>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="item_title">
+                                    <div class="img">
+                                        <img src="./img/main/specialize/icon_4.png" alt="icon">
+                                    </div>
+                                    <h4>Airlines</h4>
+                                </div>
+                                <p class="item_txt">Increase loyalty. Boost ancillary sales. Capture every opportunity.</p>
+                                <div class="item_txt_2">
+                                    <h5>Explore our solutions for airlines.</h5>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="item_title">
+                                    <div class="img">
+                                        <img src="./img/main/specialize/icon_5.png" alt="icon">
+                                    </div>
+                                    <h4>Travel & tourism</h4>
+                                </div>
+                                <p class="item_txt">Be persuasive. Inspire travellers. Drive revenue.</p>
+                                <div class="item_txt_2">
+                                    <h5>Explore our solutions for travel and tourism.</h5>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="item_title">
+                                    <div class="img">
+                                        <img src="./img/main/specialize/icon_1.png" alt="icon">
+                                    </div>
+                                    <h4>Online betting</h4>
+                                </div>
+                                <p class="item_txt">Bring events to life. Personalize in real time. Be responsible.</p>
+                                <div class="item_txt_2">
+                                    <h5>Explore our solutions for online betting.</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Connected -->
+                <section class="connected">
+                    <div class="container connected_container">
+                        <div class="connected_txt">
+                            <div class="item">
+                                <h3 class="title">A connected ecosystem.</h3>
+                                <p>The Qubit personalization platform is designed with enterprise and high-growth businesses in mind.</p>
+                                <h5>Our open ecosystem approach means you can connect any data source and deliver personalization across any 
+                                channel.</h5>
+                                <a href="#">See our integrations</a>
+                            </div>
+                        </div>
+                        <div class="connected_img">
+                            <img src="./img/main/connected/img.png" alt="image">
+                        </div>
+                    </div>
+                </section>
+                <!-- Send -->
+                <section class="send">
+                    <div class="item">
+                        <h3 class="title">Book a demo today.</h3>
+                        <div class="form">
+                            <input class="email" type="text" name="" placeholder="Enter your email">
+                            <input class="form_btn" type="submit" value="Book a demo">
+                        </div>
+                    </div>
+                </section>
+                <!-- Social -->
+                <section class="social">
+                    <div class="img">
+                        <img src="./img/main/social/image.png" alt="image">
+                    </div>
+                    <p>Connect with us</p>
+                    <nav class="nav_menu">
+                        <ul class="sub_menu">
+                            <li class="item_menu">
+                                <a class="link_item_menu" href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            </li>
+                            <li class="item_menu">
+                                <a class="link_item_menu" href="#"><i class="fa-brands fa-twitter"></i></a>
+                            </li>
+                            <li class="item_menu">
+                                <a class="link_item_menu" href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                            </li>
+                            <li class="item_menu">
+                                <a class="link_item_menu" href="#"><i class="fa-brands fa-instagram"></i></a>
+                            </li>
+                            <li class="item_menu">
+                                <a class="link_item_menu" href="#"><i class="fa-brands fa-youtube"></i></a>
+                            </li>
+                        </ul>
+                    </nav>
+                </section>
+            </main>
+            <!-- FOOTER -->
+            <footer class="footer">
+                <div class="container footer_container">
+                    <div class="items_wrapper">
+                        <div class="item">
+                            <div class="footer_nav">
+                                <div class="list_item">
+                                    <div class="list_item_txt">
+                                        <p>Featured Capabilities</p>
+                                    </div>
+                                    <ul class="sub_menu">
+                                        <li><a href="#">A/B testing</a></li>
+                                        <li><a href="#">Abandonment recovery</a></li>
+                                        <li><a href="#">Customer polling and feedback</a></li>
+                                        <li><a href="#">Customer segmentation</a></li>
+                                        <li><a href="#">Data collection</a></li>
+                                        <li><a href="#">Ecommerce merchandising</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="footer_nav">
+                                <div class="list_item">
+                                    <div class="list_item_txt">
+                                        <p></p>
+                                    </div>
+                                    <ul class="sub_menu">
+                                        <li><a href="#">Custom machine learning</a></li>
+                                        <li><a href="#">Journey Personalization</a></li>
+                                        <li><a href="#">Mobile app personalization</a></li>
+                                        <li><a href="#">Cross-channel personalization</a></li>
+                                        <li><a href="#">Social proofing</a></li>
+                                        <li><a href="#">Website personalization</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="footer_nav">
+                                <div class="list_item">
+                                    <div class="list_item_txt">
+                                        <p>Products</p>
+                                    </div>
+                                    <ul class="sub_menu">
+                                        <li><a href="#">1:1 Product recommendations</a></li>
+                                        <li><a href="#">1:1 Product badging</a></li>
+                                        <li><a href="#">1:1 Journey personalization</a></li>
+                                        <li><a href="#">Personalized content</a></li>
+                                        <li><a href="#">Product insights</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="footer_nav">
+                                <div class="list_item">
+                                    <div class="list_item_txt">
+                                        <p>Resources</p>
+                                    </div>
+                                    <ul class="sub_menu">
+                                        <li><a href="#">Resources</a></li>
+                                        <li><a href="#">Customers</a></li>
+                                        <li><a href="#">Qubit Blog.</a></li>
+                                        <li><a href="#">Glossary</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="footer_nav">
+                                <div class="list_item">
+                                    <div class="list_item_txt">
+                                        <p>Company</p>
+                                    </div>
+                                    <ul class="sub_menu">
+                                        <li><a href="#">Why Qubit?</a></li>
+                                        <li><a href="#">About us</a></li>
+                                        <li><a href="#">Careers</a></li>
+                                        <li><a href="#">Press</a></li>
+                                        <li><a href="#">Contact</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="footer_nav">
+                                <div class="list_item">
+                                    <div class="list_item_txt">
+                                        <p>Working with us</p>
+                                    </div>
+                                    <ul class="sub_menu">
+                                        <li><a href="#">Legal</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="logo_wrapper">
+                        <a href="#" class="global_link">
+                            <img src="./img/footer/Vector.svg" alt="global">
+                        </a>
+                        <div class="footer_logo">
+                            <img src="./img/footer/logo.png" alt="logotype">
+                            <p>© 2021 Qubit. All rights reserved.</p>
+                        </div>
+                        <div></div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <!-- ===Page=== -->
+    </div>
+<!-- Script JS -->
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./vendor/fancybox/dist/jquery.fancybox.min.js"></script>
+    <script src="./vendor/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+    <script src="./vendor/fontawesome/js/fontawesome.min.js"></script>
+    <script src="./js/custom.js"></script>
+    <script src="./vendor/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <script src="./js/style.js"></script>
+</body>
+</html>
+
+
+
+
+
+

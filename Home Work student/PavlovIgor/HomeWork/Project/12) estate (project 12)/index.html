@@ -1,0 +1,1024 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/responsive.css">
+    <link rel="stylesheet" href="./style/fonts.css">
+    <link rel="stylesheet" href="./vendor/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./vendor/bootstrap-5.0.2-dist/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="./vendor/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./vendor/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./vendor/fancybox/dist/jquery.fancybox.min.css">
+    <title>estate</title>
+</head>
+<body>
+    <div class="for_page">
+        <div class="page">
+            <!-- Togle & Side Bar -->
+            <div class="sidebar">
+                <ul class="menu">
+                    <li><a href="#listings" onclick="toggleMenu();">Listings</a></li>
+                    <li><a href="#newsroom" onclick="toggleMenu();">Newsroom</a></li>
+                    <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
+                    <li><a href="#our_team" onclick="toggleMenu();">Our team</a></li>
+                    <li><a href="#more_info" onclick="toggleMenu();">More Info</a></li>
+                    <!-- <a href="#" class="btn">Go to Search</a> -->
+                    <!-- <div class="sidebar_icon">
+                        <div class="user">
+                            <a href="#"><i class="fa-solid fa-user-large"></i></a>
+                        </div>
+                        <div>
+                            <a href="#"><i class="fa-solid fa-basket-shopping"></i></a>
+                        </div>
+                    </div> -->
+                </ul>
+            </div>
+            <!-- Side Bar -->
+            <!-- HEADER -->
+            <header class="header">
+                <div class="container header_container">
+                    <div class="header_logo">
+                        <a href="#"><img src="./img/header/logo.png" alt="logo boosted_USA"></a>
+                    </div>
+                    <div class="header_nav">
+                        <nav class="nav_menu">
+                            <ul class="sub_menu">
+                                <li class="item_menu">
+                                    <a class="link_item_menu" href="#listings">Listings</a>
+                                </li>
+                                <li class="item_menu">
+                                    <a class="link_item_menu" href="#newsroom">Newsroom</a>
+                                </li>
+                                <li class="item_menu">
+                                    <a class="link_item_menu" href="#contact">Contact</a>
+                                </li>
+                                <li class="item_menu">
+                                    <a class="link_item_menu" href="#our_team">Our team</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="toggle" onclick="toggleMenu();"></div>
+                </div>
+            </header>
+            <!-- MAIN -->
+            <main class="main">
+                <!-- Welcome -->
+                <section class="welcome">
+                    <div class="welcome_wrapper">
+                        <section class="slider-carousel">
+                            <div class="container_2">
+                                <div class="owl-carousel owl-theme" id="carousel_partners">
+                                    <div class="item">
+                                        <div class="img">
+                                            <img src="./img/main/welcome/bacground_1.png" alt="bacground_1">
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="img">
+                                            <img src="./img/main/welcome/bacground_2.png" alt="bacground_2">
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="img">
+                                            <img src="./img/main/welcome/bacground_3.png" alt="bacground_3">
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="img">
+                                            <img src="./img/main/welcome/bacground_4.png" alt="bacground_4">
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="img">
+                                            <img src="./img/main/welcome/bacground_5.png" alt="bacground_5">
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="img">
+                                            <img src="./img/main/welcome/bacground_6.png" alt="bacground_6">
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="img">
+                                            <img src="./img/main/welcome/bacground_7.png" alt="bacground_7">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <div class="welcome_wrapper_txt">
+                            <div class="img">
+                                <img src="./img/main/welcome/logo.png" alt="logo">
+                            </div>
+                            <h3>We're here to help you find a new home.</h3>
+                        </div>
+                        <a href="#galery" class="welcome_link">
+                            <div class="wrapper_link">
+                                <img src="./img/main/welcome/scroll_down.png" alt="scroll down">
+                            </div>
+                        </a>
+                    </div>
+                </section>
+                <!-- Our Goal -->
+                <section class="our_goal">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xxl-6  col-xl-6 col-lg-6 col-md-12 col-sm-12 our_goal_title">
+                                <div class="our_goal_title_wrapper">
+                                    <h6 class="our">Our goal</h6>
+                                    <h3>We are dedicated to finding a house that you'll love.</h3>
+                                </div>
+                            </div>
+                            <div class="col-xxl-6  col-xl-6 col-lg-6 col-md-12 col-sm-12 our_goal_info">
+                                <div class="our_goal_info_wrapper">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae 
+                                    risus tristique posuere.</p>
+                                    <h4>Interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique 
+                                    posuere.</h4>
+                                    <div class="user">
+                                        <div class="img">
+                                            <img src="./img/main/our_goal/foto_user.png" alt="foto user">
+                                        </div>
+                                        <div class="txt">
+                                            <h4>Ava Orn</h4>
+                                            <p>Managing Broker</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Our Requirements -->
+                <section class="our_requirements">
+                    <div class="container">
+                        <div class="txt_wrapper">
+                            <h6 class="our">Our requirements</h6>
+                            <h3>How we choose our listings.</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque aliquam odio et faucibus.</p>
+                        </div>
+                        <div class="row">
+                            <div class="col-xxl-7  col-xl-7 col-lg-7 col-md-12 col-sm-12 our_requirements_img_container">
+                                <div class="img">
+                                    <img id="our_requirements_img" src="./img/main/our_requirements/foto_1.png" alt="foto">
+                                </div>
+                            </div>
+                            <div class="col-xxl-5  col-xl-5 col-lg-5 col-md-12 col-sm-12 our_requirements_item_container">
+                                <div class="item_wrapper">
+                                    <div class="our_requirements_item" onclick="imgsrc();">
+                                        <div class="img"><img src="./img/main/our_requirements/icon_1.png" alt="icon 1"></div>
+                                        <h4>Stellar locations</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                    </div>
+                                    <div class="our_requirements_item" onclick="imgsrc_2();">
+                                        <div class="img"><img src="./img/main/our_requirements/icon_2.png" alt="icon 2"></div>
+                                        <h4>High quality builds</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                    </div>
+                                    <div class="our_requirements_item" onclick="imgsrc_3();">
+                                        <div class="img"><img src="./img/main/our_requirements/icon_3.png" alt="icon 3"></div>
+                                        <h4>Expert interior design</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Galery -->
+                <section class="galery" id="galery">
+                    <section class="slider-carousel">
+                        <div class="container_2">
+                            <div class="owl-carousel owl-theme" id="carousel_partners_2">
+                                <div class="item">
+                                    <div class="img">
+                                        <img src="./img/main/galery/foto_1.png" alt="foto 1">
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="img">
+                                        <img src="./img/main/galery/foto_2.png" alt="foto 2">
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="img">
+                                        <img src="./img/main/galery/foto_3.png" alt="foto 3">
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="img">
+                                        <img src="./img/main/galery/foto_4.png" alt="foto 4">
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="img">
+                                        <img src="./img/main/galery/foto_5.png" alt="foto 5">
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="img">
+                                        <img src="./img/main/galery/foto_6.png" alt="foto 6">
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="img">
+                                        <img src="./img/main/galery/foto_7.png" alt="foto 7">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+                <!-- Listings -->
+                <section class="listings" id="listings">
+                    <div class="container">
+                        <h6 class="our">Current listings</h6>
+                        <h3>What we have in store for you.</h3>
+                        <p>Morbi neque ex, condimentum dapibus congue et, vulputate ut ligula. Vestibulum sit amet urna turpis. Mauris euismod elit et nisi ultrices, 
+                        ut faucibus orci tincidunt.</p>
+                        <div class="row">
+                            <div class="col-xxl-4  col-xl-4 col-lg-4 col-md-12 col-sm-12 listings_container">
+                                <div class="item">
+                                    <div class="img">
+                                        <img src="./img/main/listings/card_1.png" alt="card_1">
+                                    </div>
+                                    <div class="contant">
+                                        <h5>House</h5>
+                                        <h4>California St.</h4>
+                                        <div class="description">
+                                            <div class="beds">
+                                                <div><img src="./img/main/listings/Bed-Icon.png" alt=""></div>
+                                                <p>16<span>beds</span></p>
+                                            </div>
+                                            <div class="bathrooms">
+                                                <div><img src="./img/main/listings/Bath-Icon.png" alt=""></div>
+                                                <p>2<span>bathrooms</span></p>
+                                            </div>
+                                            <div class="rooms">
+                                                <div><img src="./img/main/listings/Door-Icon.png" alt=""></div>
+                                                <p>11<span>rooms</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xxl-4  col-xl-4 col-lg-4 col-md-12 col-sm-12 listings_container">
+                                <div class="item">
+                                    <div class="img">
+                                        <img src="./img/main/listings/card_2.png" alt="card_2">
+                                    </div>
+                                    <div class="contant">
+                                        <h5>Villa</h5>
+                                        <h4>Welford Gardens</h4>
+                                        <div class="description">
+                                            <div class="beds">
+                                                <div><img src="./img/main/listings/Bed-Icon.png" alt=""></div>
+                                                <p>12<span>beds</span></p>
+                                            </div>
+                                            <div class="bathrooms">
+                                                <div><img src="./img/main/listings/Bath-Icon.png" alt=""></div>
+                                                <p>3<span>bathrooms</span></p>
+                                            </div>
+                                            <div class="rooms">
+                                                <div><img src="./img/main/listings/Door-Icon.png" alt=""></div>
+                                                <p>16<span>rooms</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xxl-4  col-xl-4 col-lg-4 col-md-12 col-sm-12 listings_container">
+                                <div class="item">
+                                    <div class="img">
+                                        <img src="./img/main/listings/card_3.png" alt="card_3">
+                                    </div>
+                                    <div class="contant">
+                                        <h5>House</h5>
+                                        <h4>The Grove</h4>
+                                        <div class="description">
+                                            <div class="beds">
+                                                <div><img src="./img/main/listings/Bed-Icon.png" alt=""></div>
+                                                <p>12<span>beds</span></p>
+                                            </div>
+                                            <div class="bathrooms">
+                                                <div><img src="./img/main/listings/Bath-Icon.png" alt=""></div>
+                                                <p>2<span>bathrooms</span></p>
+                                            </div>
+                                            <div class="rooms">
+                                                <div><img src="./img/main/listings/Door-Icon.png" alt=""></div>
+                                                <p>14<span>rooms</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xxl-4  col-xl-4 col-lg-4 col-md-12 col-sm-12 listings_container">
+                                <div class="item">
+                                    <div class="img">
+                                        <img src="./img/main/listings/card_4.png" alt="card_4">
+                                    </div>
+                                    <div class="contant">
+                                        <h5>Apartment</h5>
+                                        <h4>Wallace St.</h4>
+                                        <div class="description">
+                                            <div class="beds">
+                                                <div><img src="./img/main/listings/Bed-Icon.png" alt=""></div>
+                                                <p>10<span>beds</span></p>
+                                            </div>
+                                            <div class="bathrooms">
+                                                <div><img src="./img/main/listings/Bath-Icon.png" alt=""></div>
+                                                <p>2<span>bathrooms</span></p>
+                                            </div>
+                                            <div class="rooms">
+                                                <div><img src="./img/main/listings/Door-Icon.png" alt=""></div>
+                                                <p>8<span>rooms</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xxl-4  col-xl-4 col-lg-4 col-md-12 col-sm-12 listings_container">
+                                <div class="item">
+                                    <div class="img">
+                                        <img src="./img/main/listings/card_5.png" alt="card_5">
+                                    </div>
+                                    <div class="contant">
+                                        <h5>Apartment</h5>
+                                        <h4>Dwight Way</h4>
+                                        <div class="description">
+                                            <div class="beds">
+                                                <div><img src="./img/main/listings/Bed-Icon.png" alt=""></div>
+                                                <p>8<span>beds</span></p>
+                                            </div>
+                                            <div class="bathrooms">
+                                                <div><img src="./img/main/listings/Bath-Icon.png" alt=""></div>
+                                                <p>1<span>bathrooms</span></p>
+                                            </div>
+                                            <div class="rooms">
+                                                <div><img src="./img/main/listings/Door-Icon.png" alt=""></div>
+                                                <p>6<span>rooms</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xxl-4  col-xl-4 col-lg-4 col-md-12 col-sm-12 listings_container">
+                                <div class="item">
+                                    <div class="img">
+                                        <img src="./img/main/listings/card_6.png" alt="card_6">
+                                    </div>
+                                    <div class="contant">
+                                        <h5>House</h5>
+                                        <h4>North Avenue</h4>
+                                        <div class="description">
+                                            <div class="beds">
+                                                <div><img src="./img/main/listings/Bed-Icon.png" alt=""></div>
+                                                <p>14<span>beds</span></p>
+                                            </div>
+                                            <div class="bathrooms">
+                                                <div><img src="./img/main/listings/Bath-Icon.png" alt=""></div>
+                                                <p>3<span>bathrooms</span></p>
+                                            </div>
+                                            <div class="rooms">
+                                                <div><img src="./img/main/listings/Door-Icon.png" alt=""></div>
+                                                <p>11<span>rooms</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row row_2">
+                            <div class="col-xxl-4  col-xl-4 col-lg-4 col-md-12 col-sm-12 listings_container">
+                                <div class="item">
+                                    <div class="img">
+                                        <img src="./img/main/listings/card_7.png" alt="card_7">
+                                    </div>
+                                    <div class="contant">
+                                        <h5>APARTMENT</h5>
+                                        <h4>Florida landscapes</h4>
+                                        <div class="description">
+                                            <div class="beds">
+                                                <div><img src="./img/main/listings/Bed-Icon.png" alt=""></div>
+                                                <p>10<span>beds</span></p>
+                                            </div>
+                                            <div class="bathrooms">
+                                                <div><img src="./img/main/listings/Bath-Icon.png" alt=""></div>
+                                                <p>2<span>bathrooms</span></p>
+                                            </div>
+                                            <div class="rooms">
+                                                <div><img src="./img/main/listings/Door-Icon.png" alt=""></div>
+                                                <p>8<span>rooms</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xxl-4  col-xl-4 col-lg-4 col-md-12 col-sm-12 listings_container">
+                                <div class="item">
+                                    <div class="img">
+                                        <img src="./img/main/listings/card_11.png" alt="card_11">
+                                    </div>
+                                    <div class="contant">
+                                        <h5>Villa</h5>
+                                        <h4>VILLA RICA IBIZA</h4>
+                                        <div class="description">
+                                            <div class="beds">
+                                                <div><img src="./img/main/listings/Bed-Icon.png" alt=""></div>
+                                                <p>12<span>beds</span></p>
+                                            </div>
+                                            <div class="bathrooms">
+                                                <div><img src="./img/main/listings/Bath-Icon.png" alt=""></div>
+                                                <p>3<span>bathrooms</span></p>
+                                            </div>
+                                            <div class="rooms">
+                                                <div><img src="./img/main/listings/Door-Icon.png" alt=""></div>
+                                                <p>16<span>rooms</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xxl-4  col-xl-4 col-lg-4 col-md-12 col-sm-12 listings_container">
+                                <div class="item">
+                                    <div class="img">
+                                        <img src="./img/main/listings/card_12.png" alt="card_12">
+                                    </div>
+                                    <div class="contant">
+                                        <h5>Villa</h5>
+                                        <h4>LA BERGERIE</h4>
+                                        <div class="description">
+                                            <div class="beds">
+                                                <div><img src="./img/main/listings/Bed-Icon.png" alt=""></div>
+                                                <p>22<span>beds</span></p>
+                                            </div>
+                                            <div class="bathrooms">
+                                                <div><img src="./img/main/listings/Bath-Icon.png" alt=""></div>
+                                                <p>4<span>bathrooms</span></p>
+                                            </div>
+                                            <div class="rooms">
+                                                <div><img src="./img/main/listings/Door-Icon.png" alt=""></div>
+                                                <p>24<span>rooms</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xxl-4  col-xl-4 col-lg-4 col-md-12 col-sm-12 listings_container">
+                                <div class="item">
+                                    <div class="img">
+                                        <img src="./img/main/listings/card_8.png" alt="card_8">
+                                    </div>
+                                    <div class="contant">
+                                        <h5>Apartment</h5>
+                                        <h4>REFLECTIONS OF THE RIVER</h4>
+                                        <div class="description">
+                                            <div class="beds">
+                                                <div><img src="./img/main/listings/Bed-Icon.png" alt=""></div>
+                                                <p>4<span>beds</span></p>
+                                            </div>
+                                            <div class="bathrooms">
+                                                <div><img src="./img/main/listings/Bath-Icon.png" alt=""></div>
+                                                <p>2<span>bathrooms</span></p>
+                                            </div>
+                                            <div class="rooms">
+                                                <div><img src="./img/main/listings/Door-Icon.png" alt=""></div>
+                                                <p>4<span>rooms</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xxl-4  col-xl-4 col-lg-4 col-md-12 col-sm-12 listings_container">
+                                <div class="item">
+                                    <div class="img">
+                                        <img src="./img/main/listings/card_10.png" alt="card_10">
+                                    </div>
+                                    <div class="contant">
+                                        <h5>Penthouse</h5>
+                                        <h4>Fisher Island</h4>
+                                        <div class="description">
+                                            <div class="beds">
+                                                <div><img src="./img/main/listings/Bed-Icon.png" alt=""></div>
+                                                <p>8<span>beds</span></p>
+                                            </div>
+                                            <div class="bathrooms">
+                                                <div><img src="./img/main/listings/Bath-Icon.png" alt=""></div>
+                                                <p>1<span>bathrooms</span></p>
+                                            </div>
+                                            <div class="rooms">
+                                                <div><img src="./img/main/listings/Door-Icon.png" alt=""></div>
+                                                <p>6<span>rooms</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xxl-4  col-xl-4 col-lg-4 col-md-12 col-sm-12 listings_container">
+                                <div class="item">
+                                    <div class="img">
+                                        <img src="./img/main/listings/card_9.png" alt="card_9">
+                                    </div>
+                                    <div class="contant">
+                                        <h5>APARTMENT</h5>
+                                        <h4>A Rake's Progress</h4>
+                                        <div class="description">
+                                            <div class="beds">
+                                                <div><img src="./img/main/listings/Bed-Icon.png" alt=""></div>
+                                                <p>4<span>beds</span></p>
+                                            </div>
+                                            <div class="bathrooms">
+                                                <div><img src="./img/main/listings/Bath-Icon.png" alt=""></div>
+                                                <p>2<span>bathrooms</span></p>
+                                            </div>
+                                            <div class="rooms">
+                                                <div><img src="./img/main/listings/Door-Icon.png" alt=""></div>
+                                                <p>4<span>rooms</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="listings_link_wrapper link_open">
+                            <p>Show all listings</p>
+                            <div class="img">
+                                <img src="./img/main/listings/right.png" alt="right">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Command -->
+                <section class="command" id="our_team">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xxl-4  col-xl-4 col-lg-4 col-md-12 col-sm-12 command_txt_container">
+                                <h6 class="our">Our people</h6>
+                                <h3>Meet our team of dedicated and talented agents.</h3>
+                                <p>Morbi neque ex, condimentum dapibus congue et, vulputate ut ligula. Vestibulum sit amet urna turpis. Mauris euismod elit et nisi ultrices, 
+                                ut faucibus orci tincidunt.</p>
+                                <div class="command_link_wrapper">
+                                    <p>View our team</p>
+                                    <div class="img">
+                                        <img src="./img/main/listings/right.png" alt="right">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xxl-4  col-xl-4 col-lg-4 col-md-6 col-sm-6 col-6 command_info_container">
+                                <div class="command_wrapper">
+                                    <div class="item">
+                                        <div class="img">
+                                            <img src="./img/main/command/img_1.png" alt="img 1">
+                                        </div>
+                                        <div class="txt">
+                                            <h4>Ava Orn</h4>
+                                            <p>Managing Broker</p>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="img">
+                                            <img src="./img/main/command/img_3.png" alt="img 3">
+                                        </div>
+                                        <div class="txt">
+                                            <h4>Ella Hessel</h4>
+                                            <p>Agent</p>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="img">
+                                            <img src="./img/main/command/img_5.png" alt="img 5">
+                                        </div>
+                                        <div class="txt">
+                                            <h4>Daryl Gislason</h4>
+                                            <p>REALTOR</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xxl-4  col-xl-4 col-lg-4 col-md-6 col-sm-6 col-6 command_info_container">
+                                <div class="command_wrapper">
+                                    <div class="item">
+                                        <div class="img">
+                                            <img src="./img/main/command/img_2.png" alt="img 2">
+                                        </div>
+                                        <div class="txt">
+                                            <h4>David Sporer</h4>
+                                            <p>Agent</p>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="img">
+                                            <img src="./img/main/command/img_4.png" alt="img 4">
+                                        </div>
+                                        <div class="txt">
+                                            <h4>Trevor Torphy</h4>
+                                            <p>Agent</p>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="img">
+                                            <img src="./img/main/command/img_6.png" alt="img 6">
+                                        </div>
+                                        <div class="txt">
+                                            <h4>Amanda Giovanni</h4>
+                                            <p>REALTOR</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Newsroom -->
+                <section class="newsroom" id="newsroom">
+                    <div class="container">
+                        <h6 class="our">Newsroom</h6>
+                        <h3 class="title">Writing from Estate.</h3>
+                        <div class="row">
+                            <div class="col-xxl-4  col-xl-4 col-lg-4 col-md-12 col-sm-12 newsroom_container">
+                                <div class="item">
+                                    <div class="img">
+                                        <img src="./img/main/newsroom/product_1.png" alt="product_1">
+                                    </div>
+                                    <div class="info">
+                                        <h6>Press release</h6>
+                                        <h3>Market watch: are condos still a good investment?</h3>
+                                        <p>August 12, 2021</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xxl-4  col-xl-4 col-lg-4 col-md-12 col-sm-12 newsroom_container">
+                                <div class="item">
+                                    <div class="img">
+                                        <img src="./img/main/newsroom/product_2.png" alt="product_2">
+                                    </div>
+                                    <div class="info">
+                                        <h6>Announcement</h6>
+                                        <h3>The history of great design</h3>
+                                        <p>August 12, 2021</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xxl-4  col-xl-4 col-lg-4 col-md-12 col-sm-12 newsroom_container">
+                                <div class="item">
+                                    <div class="img">
+                                        <img src="./img/main/newsroom/product_3.png" alt="product_3">
+                                    </div>
+                                    <div class="info">
+                                        <h6>Company news</h6>
+                                        <h3>Designers who changed everything</h3>
+                                        <p>August 12, 2021</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row row_3">
+                            <div class="col-xxl-4  col-xl-4 col-lg-4 col-md-12 col-sm-12 newsroom_container">
+                                <div class="item">
+                                    <div class="img">
+                                        <img src="./img/main/newsroom/product_4.png" alt="product_4">
+                                    </div>
+                                    <div class="info">
+                                        <h6>Press release</h6>
+                                        <h3>Market watch: are condos still a good investment?</h3>
+                                        <p>August 12, 2021</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xxl-4  col-xl-4 col-lg-4 col-md-12 col-sm-12 newsroom_container">
+                                <div class="item">
+                                    <div class="img">
+                                        <img src="./img/main/newsroom/product_5.png" alt="product_5">
+                                    </div>
+                                    <div class="info">
+                                        <h6>Announcement</h6>
+                                        <h3>The history of great design</h3>
+                                        <p>August 12, 2021</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xxl-4  col-xl-4 col-lg-4 col-md-12 col-sm-12 newsroom_container">
+                                <div class="item">
+                                    <div class="img">
+                                        <img src="./img/main/newsroom/product_6.png" alt="product_6">
+                                    </div>
+                                    <div class="info">
+                                        <h6>Company news</h6>
+                                        <h3>Designers who changed everything</h3>
+                                        <p>August 12, 2021</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xxl-4  col-xl-4 col-lg-4 col-md-12 col-sm-12 newsroom_container">
+                                <div class="item">
+                                    <div class="img">
+                                        <img src="./img/main/newsroom/product_7.png" alt="product_7">
+                                    </div>
+                                    <div class="info">
+                                        <h6>Press release</h6>
+                                        <h3>Market watch: are condos still a good investment?</h3>
+                                        <p>August 12, 2021</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xxl-4  col-xl-4 col-lg-4 col-md-12 col-sm-12 newsroom_container">
+                                <div class="item">
+                                    <div class="img">
+                                        <img src="./img/main/newsroom/product_8.png" alt="product_8">
+                                    </div>
+                                    <div class="info">
+                                        <h6>Announcement</h6>
+                                        <h3>The history of great design</h3>
+                                        <p>August 12, 2021</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xxl-4  col-xl-4 col-lg-4 col-md-12 col-sm-12 newsroom_container">
+                                <div class="item">
+                                    <div class="img">
+                                        <img src="./img/main/newsroom/product_9.png" alt="product_9">
+                                    </div>
+                                    <div class="info">
+                                        <h6>Company news</h6>
+                                        <h3>Designers who changed everything</h3>
+                                        <p>August 12, 2021</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xxl-4  col-xl-4 col-lg-4 col-md-12 col-sm-12 newsroom_container">
+                                <div class="item">
+                                    <div class="img">
+                                        <img src="./img/main/newsroom/product_10.png" alt="product_10">
+                                    </div>
+                                    <div class="info">
+                                        <h6>Press release</h6>
+                                        <h3>Market watch: are condos still a good investment?</h3>
+                                        <p>August 12, 2021</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xxl-4  col-xl-4 col-lg-4 col-md-12 col-sm-12 newsroom_container">
+                                <div class="item">
+                                    <div class="img">
+                                        <img src="./img/main/newsroom/product_11.png" alt="product_11">
+                                    </div>
+                                    <div class="info">
+                                        <h6>Announcement</h6>
+                                        <h3>The history of great design</h3>
+                                        <p>August 12, 2021</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xxl-4  col-xl-4 col-lg-4 col-md-12 col-sm-12 newsroom_container">
+                                <div class="item">
+                                    <div class="img">
+                                        <img src="./img/main/newsroom/product_12.png" alt="product_12">
+                                    </div>
+                                    <div class="info">
+                                        <h6>Company news</h6>
+                                        <h3>Designers who changed everything</h3>
+                                        <p>August 12, 2021</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="newsroom_link_wrapper link_open_2">
+                            <p>Show all listings</p>
+                            <div class="img">
+                                <img src="./img/main/listings/right.png" alt="right">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Testimonials -->
+                <section class="testimonials">
+                    <div class="container">
+                        <h6 class="our">Testimonials</h6>
+                        <h3>What our customers say.</h3>
+                        <section class="slider-carousel">
+                            <div class="owl-carousel owl-theme" id="carousel_partners_3">
+                                <div class="item">
+                                    <div class="item_wrapper">
+                                        <div class="star_wrapper">
+                                            <div><img src="./img/main/testimonials/star.png" alt="star"></div>
+                                            <div><img src="./img/main/testimonials/star.png" alt="star"></div>
+                                            <div><img src="./img/main/testimonials/star.png" alt="star"></div>
+                                            <div><img src="./img/main/testimonials/star.png" alt="star"></div>
+                                            <div><img src="./img/main/testimonials/star.png" alt="star"></div>
+                                        </div>
+                                        <h4>We found the perfect home!</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae 
+                                        risus tristique posuere.</p>
+                                        <div class="your_name"><h5>Nate Davidsson</h5></div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="item_wrapper">
+                                        <div class="star_wrapper">
+                                            <div><img src="./img/main/testimonials/star.png" alt="star"></div>
+                                            <div><img src="./img/main/testimonials/star.png" alt="star"></div>
+                                            <div><img src="./img/main/testimonials/star.png" alt="star"></div>
+                                            <div><img src="./img/main/testimonials/star.png" alt="star"></div>
+                                            <div><img src="./img/main/testimonials/star_white.png" alt="star"></div>
+                                        </div>
+                                        <h4>We're so happy with Estate.</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus 
+                                        id rutrum lorem imperdiet.</p>
+                                        <div class="your_name"><h5>Laura Paulie</h5></div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="item_wrapper">
+                                        <div class="star_wrapper">
+                                            <div><img src="./img/main/testimonials/star.png" alt="star"></div>
+                                            <div><img src="./img/main/testimonials/star.png" alt="star"></div>
+                                            <div><img src="./img/main/testimonials/star.png" alt="star"></div>
+                                            <div><img src="./img/main/testimonials/star.png" alt="star"></div>
+                                            <div><img src="./img/main/testimonials/star_white.png" alt="star"></div>
+                                        </div>
+                                        <h4>We found the perfect home!</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum 
+                                        tristique.</p>
+                                        <div class="your_name"><h5>Greg Todd</h5></div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="item_wrapper">
+                                        <div class="star_wrapper">
+                                            <div><img src="./img/main/testimonials/star.png" alt="star"></div>
+                                            <div><img src="./img/main/testimonials/star.png" alt="star"></div>
+                                            <div><img src="./img/main/testimonials/star.png" alt="star"></div>
+                                            <div><img src="./img/main/testimonials/star.png" alt="star"></div>
+                                            <div><img src="./img/main/testimonials/star.png" alt="star"></div>
+                                        </div>
+                                        <h4>We have made our lives happier</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae 
+                                        risus tristique posuere.</p>
+                                        <div class="your_name"><h5>Steve Jobs</h5></div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="item_wrapper">
+                                        <div class="star_wrapper">
+                                            <div><img src="./img/main/testimonials/star.png" alt="star"></div>
+                                            <div><img src="./img/main/testimonials/star.png" alt="star"></div>
+                                            <div><img src="./img/main/testimonials/star.png" alt="star"></div>
+                                            <div><img src="./img/main/testimonials/star.png" alt="star"></div>
+                                            <div><img src="./img/main/testimonials/star.png" alt="star"></div>
+                                        </div>
+                                        <h4>We have defined a standard of living!</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae 
+                                        risus tristique posuere.</p>
+                                        <div class="your_name"><h5>Elon Musk</h5></div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="item_wrapper">
+                                        <div class="star_wrapper">
+                                            <div><img src="./img/main/testimonials/star.png" alt="star"></div>
+                                            <div><img src="./img/main/testimonials/star.png" alt="star"></div>
+                                            <div><img src="./img/main/testimonials/star.png" alt="star"></div>
+                                            <div><img src="./img/main/testimonials/star.png" alt="star"></div>
+                                            <div><img src="./img/main/testimonials/star.png" alt="star"></div>
+                                        </div>
+                                        <h4>We give a chance to live better!</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae 
+                                        risus tristique posuere.</p>
+                                        <div class="your_name"><h5>Misha Krupsin</h5></div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="item_wrapper">
+                                        <div class="star_wrapper">
+                                            <div><img src="./img/main/testimonials/star.png" alt="star"></div>
+                                            <div><img src="./img/main/testimonials/star.png" alt="star"></div>
+                                            <div><img src="./img/main/testimonials/star.png" alt="star"></div>
+                                            <div><img src="./img/main/testimonials/star.png" alt="star"></div>
+                                            <div><img src="./img/main/testimonials/star.png" alt="star"></div>
+                                        </div>
+                                        <h4>We believe in your future!</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae 
+                                        risus tristique posuere.</p>
+                                        <div class="your_name"><h5>Vladimir Zelensky</h5></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </section>
+                <!-- Contact -->
+                <section class="contact" id="contact">
+                    <div class="container">
+                        <div class="contact_wrapper">
+                            <h6>Seen enough?</h6>
+                            <h3>Get in touch with us today.</h3>
+                        <p>Morbi neque ex, condimentum dapibus congue et, vulputate ut ligula. Vestibulum sit amet urna turpis. Mauris euismod elit et nisi ultrices, 
+                        ut faucibus orci tincidunt.</p>
+                        <div class="contact_btn_wrapper">
+                            <a href="" class="contact_btn">Contact</a>
+                            <a href="" class="contact_btn">See listings</a>
+                        </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <!-- FOOTER -->
+            <footer class="footer">
+                <div class="container">
+                    <div class="footer_logo">
+                        <img src="./img/footer/logo.png" alt="logo">
+                    </div>
+                    <div class="row">
+                        <div class="col-xxl-2  col-xl-2 col-lg-4 col-md-4 col-sm-4 col-4">
+                            <div class="footer_nav">
+                                <div class="list_item">
+                                    <div class="list_item_txt">
+                                        <p>Pages</p>
+                                    </div>
+                                    <ul class="sub_menu">
+                                        <li><a href="#">Start</a></li>
+                                        <li><a href="#">Listings</a></li>
+                                        <li><a href="#">Listings alt. 2</a></li>
+                                        <li><a href="#">Contact</a></li>
+                                        <li><a href="#">Legal</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-2  col-xl-2 col-lg-4 col-md-4 col-sm-4 col-4">
+                            <div class="footer_nav">
+                                <div class="list_item">
+                                    <div class="list_item_txt">
+                                        <p>Company</p>
+                                    </div>
+                                    <ul class="sub_menu">
+                                        <li><a href="#about">About</a></li>
+                                        <li><a href="#our_team">Our team</a></li>
+                                        <li><a href="#newsroom">Newsroom</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-2  col-xl-2 col-lg-4 col-md-4 col-sm-4 col-4">
+                            <div class="footer_nav">
+                                <div class="list_item">
+                                    <div class="list_item_txt">
+                                        <p>Utility</p>
+                                    </div>
+                                    <ul class="sub_menu">
+                                        <li><a href="#">Instructions</a></li>
+                                        <li><a href="#">Style guide</a></li>
+                                        <li><a href="#">Licenses</a></li>
+                                        <li><a href="#">Changelog</a></li>
+                                        <li><a href="#">404</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-6  col-xl-6 col-lg-12 col-md-12 col-sm-12 newsletter">
+                            <div class="newsletter_wrapper">
+                                <h6 class="our">Newsletter</h6>
+                                <p>Subscribe to our (infrequent) newsletter where we share news about upcoming listings and 
+                                projects.</p>
+                                <div class="input_wrapper">
+                                    <input class="email" type="text" name="" placeholder="Email">
+                                    <input class="btn" type="submit" value="Submit">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer_info">
+                        <p>© Estate, LLC. All rights reserved. Powered by Webflow.</p>
+                        <div class="social">
+                            <a href="#"><img src="./img/footer/link_1.png" alt="link 1"></a>
+                            <a href="#"><img src="./img/footer/link_2.png" alt="link 2"></a>
+                            <a href="#"><img src="./img/footer/link_3.png" alt="link 3"></a>
+                            <a href="#"><img src="./img/footer/link_4.png" alt="link 4"></a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <!-- ===Page=== -->
+    </div>
+<!-- Script JS -->
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./vendor/fancybox/dist/jquery.fancybox.min.js"></script>
+    <script src="./vendor/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+    <script src="./js/custom.js"></script>
+    <script src="./vendor/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <script src="./js/style.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
+
+
+
+
+

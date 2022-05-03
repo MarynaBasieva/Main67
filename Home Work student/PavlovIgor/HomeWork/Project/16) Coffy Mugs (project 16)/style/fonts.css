@@ -1,0 +1,10 @@
+@font-face {
+  font-family: Karla-Regular;
+  src: url(../fonts/Karla-Regular.eot) format("eot"), url(../fonts/Karla-Regular.ttf) format("ttf"), url(../fonts/Karla-Regular.woff) format("woff"), url(../fonts/Karla-Regular.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: Karla-Bold;
+  src: url(../fonts/Karla-Bold.eot) format("eot"), url(../fonts/Karla-Bold.ttf) format("ttf"), url(../fonts/Karla-Bold.woff) format("woff"), url(../fonts/Karla-Bold.woff2) format("woff2");
+}
+/*# sourceMappingURL=fonts.css.map */

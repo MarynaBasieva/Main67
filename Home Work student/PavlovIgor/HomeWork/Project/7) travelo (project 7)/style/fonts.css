@@ -1,0 +1,15 @@
+@font-face {
+  font-family: RedHatText-Regular;
+  src: url(../fonts/RedHatText-Regular.eot) format("eot"), url(../fonts/RedHatText-Regular.ttf) format("ttf"), url(../fonts/RedHatText-Regular.woff) format("woff"), url(../fonts/RedHatText-Regular.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: RedHatText-Medium;
+  src: url(../fonts/RedHatText-Medium.eot) format("eot"), url(../fonts/RedHatText-Medium.ttf) format("ttf"), url(../fonts/RedHatText-Medium.woff) format("woff"), url(../fonts/RedHatText-Medium.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: RedHatText-Bold;
+  src: url(../fonts/RedHatText-Bold.eot) format("eot"), url(../fonts/RedHatText-Bold.ttf) format("ttf"), url(../fonts/RedHatText-Bold.woff) format("woff"), url(../fonts/RedHatText-Bold.woff2) format("woff2");
+}
+/*# sourceMappingURL=fonts.css.map */

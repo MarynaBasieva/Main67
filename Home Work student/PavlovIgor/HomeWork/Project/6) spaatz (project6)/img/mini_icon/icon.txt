@@ -1,0 +1,4 @@
+<i class="fa-solid fa-image"></i>
+<i class="fa-solid fa-music-note"></i>
+<i class="fa-solid fa-video"></i>
+<i class="fa-solid fa-gif"></i>

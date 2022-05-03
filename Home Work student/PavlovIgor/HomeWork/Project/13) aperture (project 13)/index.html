@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/responsive.css">
+    <link rel="stylesheet" href="./style/fonts.css">
+    <link rel="stylesheet" href="./vendor/bootstrap-5.1.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./vendor/bootstrap-5.1.3-dist/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="./vendor/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./vendor/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./vendor/fancybox/dist/jquery.fancybox.min.css">
+    <title>estate</title>
+</head>
+<body>
+    <div class="for_page">
+        <div class="page">
+            <!-- Togle & Side Bar -->
+            <div class="sidebar">
+                <ul class="menu">
+                    <li><a href="#featured_images" onclick="toggleMenu();">Featured images</a></li>
+                    <li><a href="#gear_cage" onclick="toggleMenu();">Gear cage</a></li>
+                    <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
+                    <a href="#" class="btn">Get template</a>
+                    <!-- <div class="sidebar_icon">
+                        <div class="user">
+                            <a href="#"><i class="fa-solid fa-user-large"></i></a>
+                        </div>
+                        <div>
+                            <a href="#"><i class="fa-solid fa-basket-shopping"></i></a>
+                        </div>
+                    </div> -->
+                </ul>
+            </div>
+            <!-- Side Bar -->
+            <!-- HEADER -->
+            <header class="header">
+                <div class="container header_container">
+                    <div class="header_logo">
+                        <a href="#"><img src="./img/header/logo.png" alt="logo boosted_USA"></a>
+                    </div>
+                    <div class="header_menu">
+                        <p class="header_info">Business areas</p>
+                        <div class="header_nav">
+                            <nav class="nav_menu">
+                                <ul class="sub_menu">
+                                    <li class="item_menu">
+                                        <a class="link_item_menu" href="#featured_images">Featured images</a>
+                                    </li>
+                                    <li class="item_menu">
+                                        <a class="link_item_menu" href="#gear_cage">Gear cage</a>
+                                    </li>
+                                    <li class="item_menu">
+                                        <a class="link_item_menu" href="#contact">Contact</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <a href="#" class="header_link_btn">Get template</a>
+                        <div class="toggle" onclick="toggleMenu();"></div>
+                    </div>
+                </div>
+            </header>
+            <!-- MAIN -->
+            <main class="main">
+                <!-- Welcome -->
+                <section class="welcome">
+                    <div class="welcome_txt">
+                        <h4>Photographer & Filmmaker</h4>
+                        <h2>Aperture Studios</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem 
+                    vitae risus tristique posuere.</p>
+                    </div>
+                    <div class="wecome_img_wrapper">
+                        <div class="img"><img src="./img/main/welcome/indicators.png" alt="indicators"></div>
+                    </div>
+                </section>
+                <!-- Photography -->
+                <section class="photography">
+                    <div class="container">
+                        <h3>What we do.</h3>
+                        <p>The areas that we're specialized in.</p>
+                        <div class="row">
+                            <div class="col-xxl-6  col-xl-6 col-lg-6 col-md-12 col-sm-12 photography_container">
+                                <div class="photography_wrapper">
+                                    <div class="photography_info">
+                                        <p class="info_title">Product Photography</p>
+                                        <h4>Cras commodo consequat orci, in convallis risus egestas non. Nulla efficitur auctor hendrerit. Etiam ut orci varius, faucibus libero ac, 
+                                        cursus quam.</h4>
+                                        <a class="popular_link" href="#">
+                                            <div class="block"></div>
+                                            <p class="link_title">Read more</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xxl-6  col-xl-6 col-lg-6 col-md-12 col-sm-12 photography_container">
+                                <div class="photography_wrapper wrapper_2">
+                                    <div class="photography_info">
+                                        <p class="info_title">Architecture Photography</p>
+                                        <h4>Aenean porta neque eget consequat fringilla. Vestibulum ultrices, orci nec egestas pharetra, ligula est semper enim, nec auctor sapien leo nec purus. Fusce tincidunt aliquet sapien, sit amet 
+                                        rhoncus leo imperdiet nec.</h4>
+                                        <a class="popular_link" href="#">
+                                            <div class="block"></div>
+                                            <p class="link_title">Read more</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xxl-6  col-xl-6 col-lg-6 col-md-12 col-sm-12 photography_container">
+                                <div class="photography_wrapper wrapper_3">
+                                    <div class="photography_info">
+                                        <p class="info_title">Drone Photography</p>
+                                        <h4>Mauris euismod elit et nisi ultrices, ut faucibus orci tincidunt. Duis tristique sed lorem a vestibulum. Cras commodo consequat orci, in convallis risus egestas non. Nulla efficitur auctor hendrerit. Etiam ut orci varius, faucibus libero 
+                                        ac, cursus quam.</h4>
+                                        <a class="popular_link" href="#">
+                                            <div class="block"></div>
+                                            <p class="link_title">Read more</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xxl-6  col-xl-6 col-lg-6 col-md-12 col-sm-12 photography_container">
+                                <div class="photography_wrapper wrapper_4">
+                                    <div class="photography_info">
+                                        <p class="info_title">Wildlife Photography</p>
+                                        <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque aliquam odio et faucibus. Nulla rhoncus feugiat eros quis consectetur. Morbi neque ex, condimentum dapibus congue et, vulputate ut ligula. Vestibulum sit amet 
+                                        urna turpis.</h4>
+                                        <a class="popular_link" href="#">
+                                            <div class="block">
+                                            </div>
+                                            <p class="link_title">Read more</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Best_foto_1 -->
+                <section class="best_foto best_foto_1">
+                    <div></div>
+                    <div class="best_foto_text">
+                        <h4>Sunset at Mount Fuji</h4>
+                        <p>Duis tristique sed lorem a vestibulum. Cras commodo consequat orci, in convallis risus egestas 
+                        non.</p>
+                    </div>
+                    <div class="best_foto_indicators">
+                        <img src="./img/main/best_foto/frame_1.png" alt="frame">
+                    </div>
+                </section>
+                <!-- About -->
+                <section class="about">
+                    <div class="row">
+                        <div class="col-xxl-6  col-xl-6 col-lg-6 col-md-12 col-sm-12 m-0 p-0">
+                            <div class="about_txt_wrapper">
+                                <div class="txt_wrapper">
+                                    <h4>The Gear cage</h4>
+                                    <h3>The tools that we use.</h3>
+                                    <p>The say that "no place is boring if you've had a good night's sleep and have a pocket full of unexposed film". While we don't shoot (a lot) of film these days — these are the tools that we actually use everyday to capture the amazing 
+                                    things around us.</p>
+                                    <a class="popular_link" href="#">
+                                        <div class="block"></div>
+                                        <p class="link_title">Check it out</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-6  col-xl-6 col-lg-6 col-md-12 col-sm-12 m-0 p-0">
+                            <div class="about_img_wrapper">
+                                <div class="img">
+                                    <img src="./img/main/about/frame.png" alt="frame">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Best_foto_2 -->
+                <section class="best_foto best_foto_2">
+                    <div></div>
+                    <div class="best_foto_text">
+                        <h4>Monstera Leafs</h4>
+                        <p>Vestibulum sit amet urna turpis. Mauris euismod elit et nisi ultrices, ut faucibus orci 
+                        tincidunt.</p>
+                    </div>
+                    <div class="best_foto_indicators">
+                        <img src="./img/main/best_foto/frame_2.png" alt="frame">
+                    </div>
+                </section>
+                <!-- Clients -->
+                <section class="clients">
+                    <div class="container">
+                        <h3>Past clients</h3>
+                        <p>Trusted by your favourite companies</p>
+                        <div class="clients_wrapper">
+                            <div class="img">
+                                <img src="./img/main/clients/client_1.png" alt="client_1">
+                            </div>
+                            <div class="img">
+                                <img src="./img/main/clients/client_2.png" alt="client_2">
+                            </div>
+                            <div class="img">
+                                <img src="./img/main/clients/client_3.png" alt="client_3">
+                            </div>
+                            <div class="img">
+                                <img src="./img/main/clients/client_4.png" alt="client_4">
+                            </div>
+                            <div class="img">
+                                <img src="./img/main/clients/client_5.png" alt="client_5">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Best_foto_3 -->
+                <section class="best_foto best_foto_3">
+                    <div></div>
+                    <div class="best_foto_text">
+                        <h4>Star fall in the Himalayas</h4>
+                        <p>Nulla rhoncus feugiat eros quis consectetur. Morbi neque ex, condimentum dapibus congue et, vulputate 
+                        ut ligula.</p>
+                    </div>
+                    <div class="best_foto_indicators">
+                        <img src="./img/main/best_foto/frame_3.png" alt="frame">
+                    </div>
+                </section>
+                <!-- Help -->
+                <section class="help">
+                    <div class="help_txt_wrapper">
+                        <h3>Need help with photography or videography?</h3>
+                        <p>We're here for you!</p>
+                        <a class="popular_link" href="#">
+                            <div class="block"></div>
+                            <p class="link_title">Get in touch</p>
+                        </a>
+                    </div>
+                </section>
+            </main>
+            <!-- FOOTER -->
+            <footer class="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xxl-7  col-xl-7 col-lg-6 col-md-12 col-sm-12 footer_logo_container">
+                            <div class="img">
+                                <img src="./img/footer/logo.png" alt="logo">
+                            </div>
+                            <p>Photographers & videographers capturing the world around us.</p>
+                        </div>
+                        <div class="col-xxl-3  col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 footer_nav_container">
+                            <div class="footer_nav">
+                                <div class="list_item">
+                                    <div class="list_item_txt">
+                                        <p>Business areas</p>
+                                    </div>
+                                    <ul class="sub_menu">
+                                        <li><a href="#">Product Photography</a></li>
+                                        <li><a href="#">Architecture Photography</a></li>
+                                        <li><a href="#">Drone Photography</a></li>
+                                        <li><a href="#">Wildlife Photography</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-2  col-xl-2 col-lg-3 col-md-6 col-sm-6 col-6 footer_nav_container">
+                            <div class="footer_nav">
+                                <div class="list_item">
+                                    <div class="list_item_txt">
+                                        <p>Pages</p>
+                                    </div>
+                                    <ul class="sub_menu">
+                                        <li><a href="#">Gear cage</a></li>
+                                        <li><a href="#">Featured images</a></li>
+                                        <li><a href="#">Contact</a></li>
+                                        <li><a href="#">Style guide</a></li>
+                                        <li><a href="#">Instructions</a></li>
+                                        <li><a href="#">Changelog</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="line"></div>
+                    <div class="subscribe">
+                        <div class="subscribe_txt_wrapper">
+                            <h4>Subscribe to our newsletter</h4>
+                            <p>Read about all the things we do.</p>
+                        </div>
+                        <div class="subscribe_form">
+                            <input class="email" type="text" name="" placeholder="">
+                            <input class="form_btn" type="submit" value="">
+                        </div>
+                    </div>
+                    <div class="line"></div>
+                    <div class="footer_social">
+                        <p>© Aperture Photography, Inc. All rights reserved. Licensing</p>
+                        <div class="social">
+                            <a href="#" class="social_link">
+                                <div class="social_img">
+                                    <img src="./img/footer/twiter.png" alt="twiter">
+                                </div>
+                            </a>
+                            <a href="#" class="social_link">
+                                <div class="social_img">
+                                    <img src="./img/footer/instagram.png" alt="instagram">
+                                </div>
+                            </a>
+                            <a href="#" class="social_link">
+                                <div class="social_img">
+                                    <img src="./img/footer/meta.png" alt="meta">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <!-- ===Page=== -->
+    </div>
+<!-- Script JS -->
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./vendor/fancybox/dist/jquery.fancybox.min.js"></script>
+    <script src="./vendor/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+    <script src="./js/custom.js"></script>
+    <script src="./vendor/bootstrap-5.1.3-dist/js/bootstrap.min.js"></script>
+    <script src="./js/style.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
+
+<!-- <a class="popular_link" href="#">
+    <div class="block"></div>
+    <p>Read more</p>
+</a> -->
+
+
+
+
+

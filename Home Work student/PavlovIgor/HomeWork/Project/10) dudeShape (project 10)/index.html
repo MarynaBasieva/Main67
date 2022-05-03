@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/responsive.css">
+    <link rel="stylesheet" href="./style/fonts.css">
+    <link rel="stylesheet" href="./vendor/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./vendor/bootstrap-5.0.2-dist/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="./vendor/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="./vendor/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./vendor/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./vendor/fancybox/dist/jquery.fancybox.min.css">
+    <title>DudeShape</title>
+</head>
+<body>
+    <div class="for_page">
+        <div class="page">
+            <!-- Togle & Side Bar -->
+            <div class="sidebar">
+                <ul class="menu">
+                    <li><a href="#home" onclick="toggleMenu();">Home</a></li>
+                    <li><a href="#about_us" onclick="toggleMenu();">About</a></li>
+                    <li><a href="#features" onclick="toggleMenu();">Features</a></li>
+                    <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
+                    <a href="#" class="btn">Go to Search</a>
+                </ul>
+            </div>
+            <!-- Side Bar -->
+            <!-- HEADER -->
+            <header class="header">
+                <div class="container header_container">
+                    <div class="header_logo">
+                        <a href="#"><h2 class="title">DudeShape</h2></a>
+                    </div>
+                    <div class="header_nav">
+                        <nav class="nav_menu">
+                            <ul class="sub_menu">
+                                <li class="item_menu">
+                                    <a class="link_item_menu" href="#home">Home</a>
+                                </li>
+                                <li class="item_menu">
+                                    <a class="link_item_menu" href="#about_us">About</a>
+                                </li>
+                                <li class="item_menu">
+                                    <a class="link_item_menu" href="#features">Features</a>
+                                </li>
+                                <li class="item_menu">
+                                    <a class="link_item_menu" href="#contact">Contact</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="header_icon">
+                        <div class="search">
+                            <a href="#"><img src="./img/header/loupe.png" alt="loupe"></a>
+                        </div>
+                        <div>
+                            <a href="#"><img src="./img/header/menu.png" alt="menu"></a>
+                        </div>
+                    </div>
+                    <div class="toggle" onclick="toggleMenu();"></div>
+                </div>
+            </header>
+            <!-- MAIN -->
+            <main class="main">
+                <!-- Welcome -->
+                <section class="welcome">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xxl-4  col-xl-4 col-lg-4 col-md-6 col-sm-12 welcome_img m-0 p-0">
+                                <div class="wrapper_img"></div>
+                            </div>
+                            <div class="col-xxl-8  col-xl-8 col-lg-8 col-md-6 col-sm-12 welcome_text m-0 p-0">
+                                <div class="welcome_text_wrapper">
+                                    <div class="wrapper_txt">
+                                        <h2 class="title">We Help You Make Modern Furniture</h2>
+                                        <p>All of our furniture uses the best materials and choices for our customers.All of our furniture uses the 
+                                            best materials </p>
+                                    </div>
+                                    <a href="#" class="welcome_btn">Explore More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Partners -->
+                <section class="partners">
+                    <div class="container">
+                        <h2 class="title">Trusted by 20,000+ companies</h2>
+                        <div class="partners_wrapper">
+                            <div class="first_wrapper">
+                                <div><img src="./img/main/partners/master_card.png" alt="master_card"></div>
+                                <div><img src="./img/main/partners/airbmb.png" alt="airbmb"></div>
+                                <div><img src="./img/main/partners/uber.png" alt="uber"></div>
+                            </div>
+                            <div class="second_wrapper">
+                                <div><img src="./img/main/partners/pay_pal.png" alt="pay_pal"></div>
+                                <div><img src="./img/main/partners/visa.png" alt="visa"></div>
+                                <div><img src="./img/main/partners/stripe.png" alt="stripe"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- About Us -->
+                <section class="about_us" id="about_us">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xxl-6  col-xl-6 col-lg-6 col-md-12 col-sm-12 about_container_img">
+                                <div class="about_us_img">
+                                    <img src="./img/main/about_us/foto.png" alt="foto">
+                                </div>
+                            </div>
+                            <div class="col-xxl-6  col-xl-6 col-lg-6 col-md-12 col-sm-12 about_container_txt">
+                                <div class="about_us_txt">
+                                    <div class="about_us_wrapper">
+                                        <h2 class="title">About Us</h2>
+                                        <p class="subtitle">All of our furniture uses the best materials and choices for our customers.All of our furniture uses the 
+                                        best materials </p>
+                                        <div class="icon">
+                                            <div class="item">
+                                                <div class="img">
+                                                    <img src="./img/main/about_us/icon_1.png" alt="icon 1">
+                                                </div>
+                                                <div class="item_txt">
+                                                    <h2>Best Quality</h2>
+                                                    <p>All of our furniture uses the best materials and choices</p>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="img">
+                                                    <img src="./img/main/about_us/icon_2.png" alt="icon 2">
+                                                </div>
+                                                <div class="item_txt">
+                                                    <h2>100% Secure</h2>
+                                                    <p>All of our furniture uses the best materials and choices</p>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="img">
+                                                    <img src="./img/main/about_us/icon_3.png" alt="icon 3">
+                                                </div>
+                                                <div class="item_txt">
+                                                    <h2>Free Shpping</h2>
+                                                    <p>All of our furniture uses the best materials and choices</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Galery -->
+                <section class="galery">
+                    <div class="container">
+                        <h2 class="title">Our Popular Furniture</h2>
+                        <p class="subtitle">All of our furniture uses the best materials and choices for our customers.All of our furniture uses the best materials and choices 
+                        for our customers.</p>
+                    </div>
+                        <section class="slider-carousel">
+                            <div class="container">
+                                <div class="owl-carousel owl-theme" id="carousel_partners_2">
+                                    <div class="item">
+                                        <div class="galery_card_wrapper">
+                                            <div class="img">
+                                                <img src="./img/main/galery/card_1.png" alt="card 1">
+                                            </div>
+                                            <div class="item_galery">
+                                                <div class="price">
+                                                    <h4>White Swan Chair </h4>
+                                                    <h3>$40</h3>
+                                                </div>
+                                                <div class="buy">
+                                                    <div class="like_wrapper">
+                                                        <div class="like"><a href="#"><ion-icon class="heart" name="heart-outline"></ion-icon></a></div>
+                                                        <div class="share"><a href="#"><ion-icon class="share_i" name="share-social-outline"></ion-icon></a></div>
+                                                    </div>
+                                                    <a href="#" class="buy_btn">Buy Now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="galery_card_wrapper">
+                                            <div class="img">
+                                                <img src="./img/main/galery/card_2.png" alt="card 2">
+                                            </div>
+                                            <div class="item_galery">
+                                                <div class="price">
+                                                    <h4>White Swan Chair </h4>
+                                                    <h3>$40</h3>
+                                                </div>
+                                                <div class="buy">
+                                                    <div class="like_wrapper">
+                                                        <div class="like"><a href="#"><ion-icon class="heart" name="heart-outline"></ion-icon></a></div>
+                                                        <div class="share"><a href="#"><ion-icon class="share_i" name="share-social-outline"></ion-icon></a></div>
+                                                    </div>
+                                                    <a href="#" class="buy_btn">Buy Now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="galery_card_wrapper">
+                                            <div class="img">
+                                                <img src="./img/main/galery/card_3.png" alt="card 3">
+                                            </div>
+                                            <div class="item_galery">
+                                                <div class="price">
+                                                    <h4>White Swan Chair </h4>
+                                                    <h3>$40</h3>
+                                                </div>
+                                                <div class="buy">
+                                                    <div class="like_wrapper">
+                                                        <div class="like"><a href="#"><ion-icon class="heart" name="heart-outline"></ion-icon></a></div>
+                                                        <div class="share"><a href="#"><ion-icon class="share_i" name="share-social-outline"></ion-icon></a></div>
+                                                    </div>
+                                                    <a href="#" class="buy_btn">Buy Now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="galery_card_wrapper">
+                                            <div class="img">
+                                                <img src="./img/main/galery/card_4.png" alt="card 4">
+                                            </div>
+                                            <div class="item_galery">
+                                                <div class="price">
+                                                    <h4>White Swan Chair </h4>
+                                                    <h3>$40</h3>
+                                                </div>
+                                                <div class="buy">
+                                                    <div class="like_wrapper">
+                                                        <div class="like"><a href="#"><ion-icon class="heart" name="heart-outline"></ion-icon></a></div>
+                                                        <div class="share"><a href="#"><ion-icon class="share_i" name="share-social-outline"></ion-icon></a></div>
+                                                    </div>
+                                                    <a href="#" class="buy_btn">Buy Now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="galery_card_wrapper">
+                                            <div class="img">
+                                                <img src="./img/main/galery/card_5.png" alt="card 5">
+                                            </div>
+                                            <div class="item_galery">
+                                                <div class="price">
+                                                    <h4>White Swan Chair </h4>
+                                                    <h3>$40</h3>
+                                                </div>
+                                                <div class="buy">
+                                                    <div class="like_wrapper">
+                                                        <div class="like"><a href="#"><ion-icon class="heart" name="heart-outline"></ion-icon></a></div>
+                                                        <div class="share"><a href="#"><ion-icon class="share_i" name="share-social-outline"></ion-icon></a></div>
+                                                    </div>
+                                                    <a href="#" class="buy_btn">Buy Now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="galery_card_wrapper">
+                                            <div class="img">
+                                                <img src="./img/main/galery/card_6.png" alt="card 6">
+                                            </div>
+                                            <div class="item_galery">
+                                                <div class="price">
+                                                    <h4>White Swan Chair </h4>
+                                                    <h3>$40</h3>
+                                                </div>
+                                                <div class="buy">
+                                                    <div class="like_wrapper">
+                                                        <div class="like"><a href="#"><ion-icon class="heart" name="heart-outline"></ion-icon></a></div>
+                                                        <div class="share"><a href="#"><ion-icon class="share_i" name="share-social-outline"></ion-icon></a></div>
+                                                    </div>
+                                                    <a href="#" class="buy_btn">Buy Now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="galery_card_wrapper">
+                                            <div class="img">
+                                                <img src="./img/main/galery/card_7.png" alt="card 7">
+                                            </div>
+                                            <div class="item_galery">
+                                                <div class="price">
+                                                    <h4>White Swan Chair </h4>
+                                                    <h3>$40</h3>
+                                                </div>
+                                                <div class="buy">
+                                                    <div class="like_wrapper">
+                                                        <div class="like"><a href="#"><ion-icon class="heart" name="heart-outline"></ion-icon></a></div>
+                                                        <div class="share"><a href="#"><ion-icon class="share_i" name="share-social-outline"></ion-icon></a></div>
+                                                    </div>
+                                                    <a href="#" class="buy_btn">Buy Now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="galery_card_wrapper">
+                                            <div class="img">
+                                                <img src="./img/main/galery/card_8.png" alt="card 8">
+                                            </div>
+                                            <div class="item_galery">
+                                                <div class="price">
+                                                    <h4>White Swan Chair </h4>
+                                                    <h3>$40</h3>
+                                                </div>
+                                                <div class="buy">
+                                                    <div class="like_wrapper">
+                                                        <div class="like"><a href="#"><ion-icon class="heart" name="heart-outline"></ion-icon></a></div>
+                                                        <div class="share"><a href="#"><ion-icon class="share_i" name="share-social-outline"></ion-icon></a></div>
+                                                    </div>
+                                                    <a href="#" class="buy_btn">Buy Now</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                </section>
+                <!-- Furniture -->
+                <section class="furniture">
+                    <div class="container">
+                        <h2 class="title">All Furniture</h2>
+                        <nav class="nav_menu">
+                            <ul class="sub_menu">
+                                <li class="item_menu">
+                                    <p class="link_item_menu">Shop By Room</p>
+                                </li>
+                                <li class="item_menu">
+                                    <p class="link_item_menu">Shop By Category</p>
+                                </li>
+                                <li class="item_menu">
+                                    <p class="link_item_menu">Shop By Style</p>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="row">
+                            <div class="col-xxl-6  col-xl-6 col-lg-6 col-md-12 col-sm-12 furniture_img_container">
+                                <div class="furniture_img">
+                                    <img id="furniture_img" src="./img/main/furniture/foto_1.png" alt="foto">
+                                </div>
+                            </div>
+                            <div class="col-xxl-6  col-xl-6 col-lg-6 col-md-12 col-sm-12 furniture_container">
+                                <div class="furniture_wrapper">
+                                    <div class="furniture_item" onclick="imgsrc();">
+                                        <div class="content">
+                                            <div class="icon icon_1"></div>
+                                            <h3>Living Room</h3>
+                                        </div>
+                                    </div>
+                                    <div class="furniture_item" onclick="imgsrc_2();">
+                                        <div class="content">
+                                            <div class="icon icon_2"></div>
+                                            <h3>Kitchen</h3>
+                                        </div>
+                                    </div>
+                                    <div class="furniture_item" onclick="imgsrc_3();">
+                                        <div class="content">
+                                            <div class="icon icon_3"></div>
+                                            <h3>Dining Room</h3>
+                                        </div>
+                                    </div>
+                                    <div class="furniture_item" onclick="imgsrc_4();">
+                                        <div class="content">
+                                            <div class="icon icon_4"></div>
+                                            <h3>Office</h3>
+                                        </div>
+                                    </div>
+                                    <div class="furniture_item" onclick="imgsrc_5();">
+                                        <div class="content">
+                                            <div class="icon icon_5"></div>
+                                            <h3>Bed Room</h3>
+                                        </div>
+                                    </div>
+                                    <div class="furniture_item" onclick="imgsrc_6();">
+                                        <div class="content">
+                                            <div class="icon icon_6"></div>
+                                            <h3>Hallway</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Reviews -->
+                <section class="reviews">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xxl-6  col-xl-6 col-lg-6 col-md-12 col-sm-12 reviews_img_container">
+                                <div class="img">
+                                    <img src="./img/main/reviews/foto.png" alt="foto">
+                                </div>
+                            </div>
+                            <div class="col-xxl-6  col-xl-6 col-lg-6 col-md-12 col-sm-12 reviews_txt_container">
+                                <div class="reviews_wrapper">
+                                    <h2 class="title">Our customers are verry importan to us</h2>
+                                    <p class="subtitle">All of our furniture uses the best materials and choices for our customers.All of our furniture uses the best materials and choices for our customers.</p>
+                                    <div class="img_user">
+                                        <img src="./img/main/./reviews/user.png" alt="user">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Subscribe -->
+                <section class="subscribe">
+                    <div class="container">
+                        <div class="subscribe_wrapper">
+                            <div class="subscribe_txt">
+                                <h2 class="title">Subscribe to get the latest news about us</h2>
+                                <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incididunt ut labore at dolore.</p>
+                            </div>
+                            <div class="subscribe_form">
+                                <div class="mail">
+                                    <div class="img_mail"><img src="./img/main/furniture/email.png" alt="email"></div>
+                                    <input class="email" type="text" name="" placeholder='Enter your email'>
+                                </div>
+                                <input class="btn" type="submit" value="Register">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Pre_Footer -->
+                <section class="pre_footer">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xxl-4  col-xl-4 col-lg-4 col-md-12 col-sm-12 social_container">
+                                <h2 class="title">DudeShape</h2>
+                                <p class="subtitle">Lorem ipsum dolor sit amet, conse
+                                    ctetur adipiscing elit, sed eiusmod tempor incididunt ut labore .</p>
+                                <div class="social">
+                                    <h2 class="title">Follow Us :</h2>
+                                    <div class="items">
+                                        <div><a href="#"><i class="fa-brands fa-facebook-f icon"></i></a></div>
+                                        <div><a href="#"><ion-icon class="icon" name="logo-twitter"></ion-icon></a></div>
+                                        <div><a href="#"><ion-icon class="icon" name="logo-instagram"></ion-icon></a></div>
+                                        <div><a href="#"><ion-icon class="icon" name="logo-youtube"></ion-icon></a></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xxl-2  col-xl-2 col-lg-2 col-md-6 col-sm-6 col-6 link_container">
+                                <div class="footer_nav">
+                                    <div class="list_item">
+                                        <div class="list_item_txt">
+                                            <h2 class="title">Take a tour</h2>
+                                        </div>
+                                        <ul class="sub_menu">
+                                            <li><a href="#">Features</a></li>
+                                            <li><a href="#">Pricing</a></li>
+                                            <li><a href="#">Product</a></li>
+                                            <li><a href="#">Support</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xxl-2  col-xl-2 col-lg-2 col-md-6 col-sm-6 col-6 link_container">
+                                <div class="footer_nav nav_2">
+                                    <div class="list_item">
+                                        <div class="list_item_txt">
+                                            <h2 class="title">Our company</h2>
+                                        </div>
+                                        <ul class="sub_menu">
+                                            <li><a class="list_item_link" href="#about_us">About Us</a></li>
+                                            <li><a class="list_item_link" href="#blog">Blog</a></li>
+                                            <li><a class="list_item_link" href="#">Media</a></li>
+                                            <li><a class="list_item_link" href="#contact_us">Contact Us</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xxl-4  col-xl-4 col-lg-4 col-md-12 col-sm-12 subscribe_container">
+                                <h2 class="title">Subscribe</h2>
+                                <p class="subtitle">Subscribe to get the latest news from us</p>
+                                <div class="pre_footer_form">
+                                    <input class="email" type="text" name="" placeholder='Email Address'>
+                                    <a href="#" class="btn"><div><i class="fa-solid fa-arrow-right"></i></div></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <!-- FOOTER -->
+            <footer class="footer">
+                <p>Copyright @ 2021. Crafted with love.</p>
+            </footer>
+        </div>
+        <!-- ===Page=== -->
+    </div>
+<!-- Script JS -->
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./vendor/fancybox/dist/jquery.fancybox.min.js"></script>
+    <script src="./vendor/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+    <script src="./js/custom.js"></script>
+    <script src="./vendor/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <script src="./js/style.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
+
+
+
+
+

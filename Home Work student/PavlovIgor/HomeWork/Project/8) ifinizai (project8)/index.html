@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/responsive.css">
+    <link rel="stylesheet" href="./style/fonts.css">
+    <link rel="stylesheet" href="./vendor/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./vendor/bootstrap-5.0.2-dist/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="./vendor/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="./vendor/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./vendor/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./vendor/fancybox/dist/jquery.fancybox.min.css">
+    <title>ifinizai</title>
+</head>
+<body>
+    <div class="for_page">
+        <div class="page">
+            <!-- Togle & Side Bar -->
+            <div class="toggle" onclick="toggleMenu();"></div>
+
+            <div class="sidebar">
+                <ul class="menu">
+                    <li><a href="#home" onclick="toggleMenu();">Home</a></li>
+                    <li><a href="#about" onclick="toggleMenu();">About</a></li>
+                    <li><a href="#team" onclick="toggleMenu();">Team</a></li>
+                    <li><a href="#shop" onclick="toggleMenu();">Shop</a></li>
+                    <li><a href="#pages" onclick="toggleMenu();">Pages</a></li>
+                    <a href="#" class="btn">Contact Us</a>
+                </ul>
+            </div>
+            <main class="main">
+                <!-- Welcome -->
+                <section class="welcome">
+                    <header class="header">
+                        <div class="container header_container">
+                            <div class="header_logo">
+                                <img src="./img/header/logo.png" alt="header logo">
+                            </div>
+                            <nav class="nav_menu">
+                                <ul class="sub_menu">
+                                    <li class="item_menu">
+                                        <a class="link_item_menu" href="#home">Home</a>
+                                    </li>
+                                    <li class="item_menu">
+                                        <a class="link_item_menu" href="#about">About</a>
+                                    </li>
+                                    <li class="item_menu">
+                                        <a class="link_item_menu" href="#team">Team</a>
+                                    </li>
+                                    <li class="item_menu">
+                                        <a class="link_item_menu" href="#shop">Shop</a>
+                                    </li>
+                                    <li class="item_menu">
+                                        <a class="link_item_menu" href="#pages">Pages</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <div class="header_btn">
+                                <a href="#" class="basket">
+                                    <div class="basket_img">
+                                        <img src="./img/header/basket.png" alt="basket">
+                                        <div class="sum">
+                                            <p class="result">0</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#" class="btn">Contact Us</a>
+                            </div>
+                        </div>
+                    </header>
+                    <section class="welcome_contant">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xxl-6  col-xl-6 col-lg-6 col-md-12 col-sm-12 m-0 p-0">
+                                    <div class="welcome_info">
+                                        <span class="future_fire"><img src="./img/main/welcome/fire.png" alt="fire">FUTURE OF eSPORTS</span>
+                                        <div class="welcome_title">
+                                            <h2>Unleash the Next Generation of Gaming</h2>
+                                            <div class="title_img"><img src="./img/main/welcome/line.png" alt="line"></div>
+                                        </div>
+                                        <div class="welcome_subtitle">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Felis, nec donec in morbi pulvinar. Enim non pulvinar neque.</p>
+                                        </div>
+                                        <div class="welcome_form">
+                                            <input class="btn" type="submit" value="Explore More">
+                                            <input class="form_txt" type="text" name="" placeholder="View our team">
+                                        </div>
+                                        <div class="welcome_social">
+                                            <a href="#">FACEBOOK</a>
+                                            <a href="#">INSTAGRAM</a>
+                                            <a href="#">TWITCH</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xxl-6  col-xl-6 col-lg-6 col-md-12 col-sm-12 m-0 p-0">
+                                    <div class="welcome_img">
+                                        <div class="welcome_webflow">
+                                            <img src="./img/main/welcome/webflow.png" alt="webflow logo">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+                <!-- Sponsors -->
+                <section class="sponsors">
+                    <div class="container">
+                        <div class="sponsors_title">
+                            <h2>Our Sponsors</h2>
+                            <div class="line">
+                                <img src="./img/main/sponsors/line.png" alt="line">
+                            </div>
+                        </div>
+                        <div class="sponsors_subtitle">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Felis, nec donec in morbi pulvinar. 
+                                Enim non pulvinar neque.</p>
+                        </div>
+                        <section class="slider-carousel">
+                            <div class="owl-carousel owl-theme" id="carousel_partners">
+                                <div class="item">
+                                    <div class="slider_img">
+                                        <img src="./img/main/sponsors/ideaa.png" alt="ideaa">
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="slider_img">
+                                        <img src="./img/main/sponsors/amara.png" alt="amara">
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="slider_img">
+                                        <img src="./img/main/sponsors/lightAl.png" alt="lightAl">
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="slider_img">
+                                        <img src="./img/main/sponsors/circle.png" alt="circle">
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="slider_img">
+                                        <img src="./img/main/sponsors/musica.png" alt="musica">
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="slider_img">
+                                        <img src="./img/main/sponsors/lightAl.png" alt="lightAl">
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </section>
+                <!-- Shop -->
+                <section class="shop" id="shop">
+                    <div class="container shop_container">
+                        <span class="future_fire"><img src="./img/main/welcome/fire.png" alt="fire">FUTURE OF eSPORTS</span>
+                        <div class="shop_title">
+                            <h2>Your one stop shop gaming needs!</h2>
+                        </div>
+                        <div class="shop_subtitle">
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam</p>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xxl-6  col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                                <div class="shop_card">
+                                    <div class="shop_img">
+                                        <img src="./img/main/shop/diamond.png" alt="diamond">
+                                    </div>
+                                    <div class="shop_item">
+                                        <h3>All New Gameplay</h3>
+                                        <p>Vivamus magna justo, lacinia eget coecetur sed, convallis at tellus. Curabitur non nulla sit 
+                                            Vestibum ante ipsum primis in faucibus orci</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xxl-6  col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                                <div class="shop_card">
+                                    <div class="shop_img">
+                                        <img src="./img/main/shop/diamond.png" alt="diamond">
+                                    </div>
+                                    <div class="shop_item">
+                                        <h3>Generation Graphics</h3>
+                                        <p>Vivamus magna justo, lacinia eget coecetur sed, convallis at tellus. Curabitur non nulla sit 
+                                            Vestibum ante ipsum primis in faucibus orci</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xxl-6  col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                                <div class="shop_card">
+                                    <div class="shop_img">
+                                        <img src="./img/main/shop/diamond.png" alt="diamond">
+                                    </div>
+                                    <div class="shop_item">
+                                        <h3>Lastest Game Engine</h3>
+                                        <p>Vivamus magna justo, lacinia eget coecetur sed, convallis at tellus. Curabitur non nulla sit 
+                                            Vestibum ante ipsum primis in faucibus orci</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xxl-6  col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                                <div class="shop_card">
+                                    <div class="shop_img">
+                                        <img src="./img/main/shop/diamond.png" alt="diamond">
+                                    </div>
+                                    <div class="shop_item">
+                                        <h3>Multiplayer on the go</h3>
+                                        <p>Vivamus magna justo, lacinia eget coecetur sed, convallis at tellus. Curabitur non nulla sit 
+                                            Vestibum ante ipsum primis in faucibus orci</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- About -->
+                <section class="about" id="about">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xxl-7  col-xl-7 col-lg-7 col-md-12 col-sm-12">
+                                <div class="about_wrapper">
+                                    <span class="future_fire"><img src="./img/main/welcome/fire.png" alt="fire">FUTURE OF eSPORTS</span>
+                                    <div class="about_title">
+                                        <h2>The new era of cloud gaming here</h2>
+                                    </div>
+                                    <div class="about_subtitle">
+                                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
+                                            Nemo enim ipsam voluptatem quia</p>
+                                    </div>
+                                    <a href="#" class="about_btn">Explore More</a>
+                                </div>
+                            </div>
+                            <div class="col-xxl-5  col-xl-5 col-lg-5 col-md-12 col-sm-12 d-flex justify-content-center m-0 p-0">
+                                <div class="video_img_container">
+                                    <div class="youtube" id="b9fUdJdlExU"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Customize -->
+                <section class="customize">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xxl-6  col-xl-6 col-lg-12 col-md-12 col-sm-12">
+                                <div class="customize_img"></div>
+                            </div>
+                            <div class="col-xxl-6  col-xl-6 col-lg-12 col-md-12 col-sm-12 m-0 p-0 customize_container">
+                                <div class="customize_wrapper">
+                                    <span class="future_fire"><img src="./img/main/welcome/fire.png" alt="fire">FUTURE OF eSPORTS</span>
+                                    <div class="customize_title">
+                                        <h2>Customize your Own Character</h2>
+                                    </div>
+                                    <div class="customize_subtitle">
+                                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab 
+                                        illo inventore veritatis et quasi architecto beatae.</p>
+                                    </div>
+                                    <section class="slider-carousel">
+                                        <div class="owl-carousel owl-theme" id="carousel_partners_2">
+                                            <div class="item">
+                                                <div class="customize_slider_img">
+                                                    <img src="./img/main/customize/image_1.png" alt="image 1">
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="customize_slider_img">
+                                                    <img src="./img/main/customize/image_2.png" alt="image 2">
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="customize_slider_img">
+                                                    <img src="./img/main/customize/image_3.png" alt="image 3">
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="customize_slider_img">
+                                                    <img src="./img/main/customize/image_4.png" alt="image 4">
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="customize_slider_img">
+                                                    <img src="./img/main/customize/image_5.jpg" alt="image 5">
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="customize_slider_img">
+                                                    <img src="./img/main/customize/image_6.png" alt="image 6">
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="customize_slider_img">
+                                                    <img src="./img/main/customize/image_7.jpg" alt="image 7">
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="customize_slider_img">
+                                                    <img src="./img/main/customize/image_8.jpg" alt="image 8">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="frame"></div>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Pages -->
+                <section class="pages" id="pages">
+                    <div class="pages_container">
+                        <div class="pages_item">
+                            <div class="paiges_img">
+                                <img src="./img/main/pages/img_1.png" alt="img 1">
+                            </div>
+                            <div class="pages_txt">
+                                <h4>Smooth FPS</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pages_container container_2">
+                        <div class="pages_item">
+                            <div class="paiges_img">
+                                <img src="./img/main/pages/img_2.png" alt="img 2">
+                            </div>
+                            <div class="pages_txt">
+                                <h4>Multiplayer</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pages_container container_3">
+                        <div class="pages_item">
+                            <div class="paiges_img">
+                                <img src="./img/main/pages/img_3.png" alt="img 3">
+                            </div>
+                            <div class="pages_txt">
+                                <h4>Open World</h4>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- News -->
+                <section class="news">
+                    <div class="container">
+                        <div class="news_title_wrapper">
+                            <div class="news_txt_wrapper">
+                                <span class="future_fire"><img src="./img/main/welcome/fire.png" alt="fire">FUTURE OF eSPORTS</span>
+                                <div class="news_title">
+                                    <h2>Latest News & Articles</h2>
+                                </div>
+                            </div>
+                            <a href="#" class="news_btn">Read More</a>
+                        </div>
+                        <div class="row">
+                            <div class="col-xxl-6  col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                                <div class="news_contant_wrapper_first">
+                                    <div class="news_img_first">
+                                        <img src="./img/main/news/img_first.png" alt="img">
+                                    </div>
+                                    <p class="news_data">April 2, 2021</p>
+                                    <div class="news_first_title">
+                                        <h3>Esports Group teams up with the Indianapolis Colts</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xxl-6  col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                                <div class="row">
+                                    <div class="col-xxl-6  col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
+                                        <div class="news_contant_wrapper_second">
+                                            <div class="news_img_second">
+                                                <img src="./img/main/news/img_second_1.png" alt="img">
+                                            </div>
+                                            <p class="news_data">April 2, 2021</p>
+                                            <div class="news_second_title">
+                                                <h4>NAVI reveals s1mple fifth anniversary</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xxl-6  col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
+                                        <div class="news_contant_wrapper_second second_2">
+                                            <div class="news_img_second">
+                                                <img src="./img/main/news/img_second_2.png" alt="img 2">
+                                            </div>
+                                            <p class="news_data">April 2, 2021</p>
+                                            <div class="news_second_title">
+                                                <h4>A1esports Shares new picture</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xxl-6  col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
+                                        <div class="news_contant_wrapper_second second_3">
+                                            <div class="news_img_second">
+                                                <img src="./img/main/news/img_second_3.png" alt="img 3">
+                                            </div>
+                                            <p class="news_data">April 2, 2021</p>
+                                            <div class="news_second_title">
+                                                <h4>T1 unveil partnership with Razer</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xxl-6  col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
+                                        <div class="news_contant_wrapper_second second_2 second_3">
+                                            <div class="news_img_second">
+                                                <img src="./img/main/news/img_second_4.png" alt="img 4">
+                                            </div>
+                                            <p class="news_data">April 2, 2021</p>
+                                            <div class="news_second_title">
+                                                <h4>RX secures content partnership with</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Join -->
+                <section class="join">
+                    <div class="join_title">
+                        <h2>Join the largest gaming community</h2>
+                        <div class="join_img">
+                            <img src="./img/main/join/line.png" alt="line">
+                        </div>
+                    </div>
+                    <div class="join_subtitle">
+                        <p>Nulla porttitor accumsan tincidunt. Curabitur non nulla sit amet nisl tempus <br> lectus. Cras ultricies ligula sed magna dictum porta. Nulla quis lorem ut libero malesu ada feugiat. Nulla quis lorem ut libero malesuada feugiat. 
+                            Vivamus magna justo</p>
+                    </div>
+                    <div class="join_form">
+                        <input class="email" type="text" name="" placeholder="Your Email Address">
+                        <input class="btn" type="submit" value="Subscribe Now">
+                    </div>
+                </section>
+                <!-- pre_footer -->
+                <section class="pre_footer">
+                    <div class="container pre_footer_contaainer">
+                        <div class="row">
+                            <div class="col-xxl-4  col-xl-4 col-lg-4 col-md-12 col-sm-12 m-0 p-0">
+                                <div class="pre_footer_info">
+                                    <div class="pre_footer_logo">
+                                        <img src="./img/main/pre_footer/logo.png" alt="logo">
+                                    </div>
+                                    <div class="pre_footer_info_txt">
+                                        <p>Lorem ipsum dolor amet, consectetur adipiscing elit. Eget nisl nunc quam ac sed turpis volutpat. Cursus sed massa non .</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xxl-3  col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 m-0 p-0">
+                                <div class="pre_footer_item">
+                                    <div class="list_item">
+                                        <div class="list_item_txt">
+                                            <p>Menu Items</p>
+                                        </div>
+                                        <ul class="sub_menu">
+                                            <li><a href="#about">About</a></li>
+                                            <li><a href="#blog">Blog</a></li>
+                                            <li><a href="#shop">Shop</a></li>
+                                            <li><a href="#contact_us">Contact us</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xxl-3  col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6 m-0 p-0">
+                                <div class="pre_footer_item item_2">
+                                    <div class="list_item">
+                                        <div class="list_item_txt">
+                                            <p>Other Pages</p>
+                                        </div>
+                                        <ul class="sub_menu">
+                                            <li><a href="#">Styleguide</a></li>
+                                            <li><a href="#">Changelog</a></li>
+                                            <li><a href="#">licenses</a></li>
+                                            <li><a href="#">Team</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xxl-2  col-xl-2 col-lg-2 col-md-12 col-sm-12 m-0 p-0">
+                                <div class="pre_footer_icons">
+                                    <div class="icons_txt">
+                                        <p>Social Icons</p>
+                                    </div>
+                                    <div class="icons">
+                                        <div><a href="#"><i class="fa-brands fa-twitch"></i></a></div>
+                                        <div><a href="#"><i class="fa-brands fa-youtube"></i></a></div>
+                                        <div><a href="#"><i class="fa-brands fa-instagram"></i></a></div>
+                                        <div><a href="#"><i class="fa-brands fa-telegram"></i></a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <footer class="footer">
+                <div class="footer_title">
+                    <p>Copyright by 2021 Flowzai</p>
+                </div>
+            </footer>
+        </div>
+        <!-- ===Page=== -->
+    </div>
+<!-- Script JS -->
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./vendor/fancybox/dist/jquery.fancybox.min.js"></script>
+    <script src="./vendor/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+    <script src="./js/custom.js"></script>
+    <script src="./vendor/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <script src="./js/style.js"></script>
+</body>
+</html>
+
+<!-- <span class="future_fire"><img src="./img/main/welcome/fire.png" alt="fire">FUTURE OF eSPORTS</span> -->
+
+<!-- <p class="news_data">April 2, 2021</p> -->
+
+
