@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW34</title>
+</head>
+
+<body>
+    <p>HW34</p>
+    <section>
+        <button onclick="OpenIt()">Open</button>
+        <button onclick="MoveIt()">Move</button>
+    </section>
+    <style>
+        body {
+            background-color: rgb(219, 96, 75);
+        }
+
+        p {
+            display: flex;
+            justify-content: center;
+            font-size: 32px;
+            color: rgb(194, 191, 250);
+        }
+
+        section {
+            display: flex;
+            justify-content: center;
+        }
+
+        button {
+            margin-top: 250px;
+            font-size: 20px;
+            font-weight: 500;
+            cursor: pointer;
+            border-radius: 9px;
+            text-decoration: none;
+            padding: .7rem 1.2rem .65rem;
+        }
+
+        button:hover {
+            background-color: rgb(252, 171, 49);
+        }
+    </style>
+
+
+    <script>
+        let myW;
+        function OpenIt() {
+            myW = window.open("_blank", "myW", "toolbar=yes,scrollbars=yes,resizable=yes,top=100,left=300,width=200,height=200" ); 
+            myW.document.write("PRESS MOVE");  
+        };
+
+        function MoveIt() {
+            myW.moveBy(200, 200);
+            myW.focus();
+            }
+    </script>
+</body>
+
+</html>
