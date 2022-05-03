@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    
+</head>
+<style>
+    
+</style>
+<body>
+    <button onclick="Open()">відкрити</button>
+    <button onclick="Move()">перетягнути</button>
+   
+  
+   
+</body>
+<script>
+    let win;
+    function Open(){
+       win = window.open('about:blank', 'win', 'scroolbars=yes, menubar=yes, width=200, height=200, top=200, left=200')
+       win.document.write('НОВЕ ВІКНО НОВЕ ВІКНО НОВЕ ВІКНО НОВЕ ВІКНО НОВЕ ВІКНО НОВЕ ВІКНО НОВЕ ВІКНО НОВЕ ВІКНО НОВЕ ВІКНО НОВЕ ВІКНО НОВЕ ВІКНО НОВЕ ВІКНО НОВЕ ВІКНО НОВЕ ВІКНО НОВЕ ВІКНО НОВЕ ВІКНО НОВЕ ВІКНО НОВЕ ВІКНО НОВЕ ВІКНО НОВЕ ВІКНО НОВЕ ВІКНО')
+       win.opener.innerHTML('.text')
+       
+    }
+    function Move(){
+        win.moveBy(200,200);
+        win.focus()
+    }
+     
+</script>
+</html>
