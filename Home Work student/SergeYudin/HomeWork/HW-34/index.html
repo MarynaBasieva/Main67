@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>CW-34</title>
+  </head>
+  <body>
+    <button onclick="OpenWin()">New window</button>
+    <button onclick="MoveWin()">Move</button>
+    <script>
+      let win;
+      let body;
+      function OpenWin() {
+        win = window.open(
+          "about:blank",
+          "newwindow",
+          "top=600, left=800 scrollbars=yes, titlebar=yes, menubar=yes, location=yes, , height=200, width=200, "
+        );
+        win.document.write("I am new window");
+        win.opener.document.write("I am parent window");
+      }
+
+      function MoveWin() {
+        win.moveBy(200, 300);
+        win.focus();
+      }
+    </script>
+  </body>
+</html>
