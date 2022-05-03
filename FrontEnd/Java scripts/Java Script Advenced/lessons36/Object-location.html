@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>object location</title>
+</head>
+
+<body>
+	<div class="text"></div>
+	<div class="text2"></div>
+	<div class="text3"></div>
+	<div class="text4"></div>
+	<div class="text5"></div>
+	<button onClick="newParent()">Загрузити новий документ</button>
+	<button onClick="newParentLoad()">Перезагрузити  сторінку</button>
+	<button onClick="replaceDoc()">Замінити поточну сторінку за головну</button>
+</body>
+	<script>
+document.querySelector(".text").innerHTML = "адреса Сторінки:" + window.location.href;
+		document.querySelector(".text2").innerHTML = "Імя хоста:" + window.location.hostname;
+		document.querySelector(".text3").innerHTML = "Шлях сторінки:" + window.location.pathname;
+		document.querySelector(".text4").innerHTML = "Протокол сторінки:" + window.location.protocol;
+		document.querySelector(".text5").innerHTML = "Номер порта:" + window.location.port;
+		
+		//method location
+		//method assing location
+		function newParent(){
+			window.location.assign("https://sinoptik.ua/");
+		}
+		
+		function newParentLoad(){
+			window.location.reload();
+		}
+		function replaceDoc(){
+			window.location.replace("https://sinoptik.ua/");
+		}
+	</script>
+</html>

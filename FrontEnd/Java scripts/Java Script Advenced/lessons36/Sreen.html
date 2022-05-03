@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Screen</title>
+</head>
+
+<body>
+	<div id="userScreen"></div>
+	<div id="userScreenWidth"></div>
+	<div id="availSizerWindowWidth"></div>
+	<div id="availSizerWindowHeight"></div>
+	<div id="colorDepth"></div>
+</body>
+	
+	<script>
+		let userScreen,
+			userScreenWidth;
+		
+		userScreenWidth = "Ширина єкрана:"+  screen.width;
+		userScreen +="<br>";
+		userScreen = "Висота Екрана:" + screen.height;
+		window.document.getElementById("userScreen").innerHTML= userScreen;
+		window.document.getElementById("userScreenWidth").innerHTML= userScreenWidth;
+		
+		let availSizerWindowWidth,
+			availSizerWindowHeight;
+		
+		availSizerWindowWidth = "Ширина екрана Вся window:"+  screen.availWidth;
+		availSizerWindowWidth +="<br>";
+		availSizerWindowHeight = "Висота екрана Вся window:" + screen.availHeight;
+		window.document.getElementById("availSizerWindowWidth").innerHTML= availSizerWindowWidth;
+		window.document.getElementById("availSizerWindowHeight").innerHTML= availSizerWindowHeight;
+		
+		
+		let colorDepth;
+		colorDepth = "качество кольоро передачі:" + screen.colorDepth;
+		window.document.getElementById("colorDepth").innerHTML= colorDepth;
+		
+		
+		
+		
+	
+	</script>
+</html>

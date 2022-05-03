@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>form</title>
+</head>
+<style>
+	.error{
+		border: solid red 2px;
+	}
+</style>
+<body>
+  <form id="form">
+	  <p>
+	   <input value="Maryna" id="first-name" />
+	  </p>
+	  <p>
+	   <input value="Basieva" id="last-name" />
+	  </p>
+	  <p>
+	   <input value="Kiev region state" id="adress" />
+	  </p>
+	  <p>
+		  <button id="sendButton">Send</button>
+	  </p>
+  </form>
+	
+	
+</body>
+	<script>
+		function errorClass(elementId){
+			let element = document.getElementById(elementId);
+			element.className='error';
+		}
+		
+		function addErrorClass(){
+			errorClass('first-name');
+			errorClass('last-name');
+			errorClass('adress');
+		}
+	
+		//addErrorClass();
+		//window.setTimeout(addErrorClass,3000);
+		
+		let sendButton = document.getElementById("sendButton");
+		sendButton.addEventListener("click", addErrorClass);
+		
+		
+		function SendButtonInput(){
+			errorClass('first-name');
+		}
+		
+		function SendButtonInputKeyUp(){
+			errorClass('first-name');
+		}
+		
+		let firstNameInput = document.getElementById('first-name');
+		
+		firstNameInput.addEventListener('keyup', SendButtonInputKeyUp);
+		
+	</script>
+</html>
