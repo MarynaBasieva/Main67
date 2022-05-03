@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <button  onclick="openWin()">Open</button>
+    <button  onclick="openWinParentsText()">OpenParentsText</button>
+    <button onClick="MoveW()">Перетянути</button>
+    <button  onclick="CloseWin()">Close</button>
+<script>
+    let win;
+    function openWin(){
+       
+       win = window.open("about:blank","open","width=200, height=200 ,left=200")
+       win.document.write("Я нове вікно")
+       /* win.opener.document.write("Текст батьківського вікна"); */
+    }
+    function openWinParentsText(){
+       
+       win = window.open("about:blank","open","width=200, height=200 ,left=200")
+       win.opener.document.write("Текст батьківського вікна");
+      }
+    function MoveW(){
+			win.moveBy(200,200);
+			win.focus();
+	 }
+     function CloseWin(){
+			if(win != null){
+				win.close();
+			}
+		}
+   
+</script>
+</body>
