@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<body>
+    <section class="section">
+        <button onclick="OpenWin()">Open</button>
+        <button onclick="MoveWin()">Move</button>
+        <button onclick="Opener()">Opener</button>
+    </section>
+    <script>
+        let win;
+
+        function OpenWin() {
+            win = window.open("something", "win",
+                'width = 200,resizable=no,toolbar=yes,menubar=yes,height=200,top=200,left=200');
+            win.document.write(' qq all ');
+        }
+
+        function MoveWin() {
+            win.moveBy(200, 200);
+            win.focus();
+        }
+
+        function Opener() {
+            let win = window.open();
+            win.document.write("Текст нового вікна");
+            win.opener.document.write('Новий текст');
+        }
+    </script>
+
+    <style>
+        .section {
+            display: flex;
+            justify-content: center;
+        }
+
+        button {
+            background-color: rgb(74, 77, 78);
+            padding: 20px 40px 20px 40px;
+            border: none;
+            margin-right: 20px;
+            margin-top: 50px;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            color: greenyellow;
+        }
+    </style>
+</body>
+
+</html>
