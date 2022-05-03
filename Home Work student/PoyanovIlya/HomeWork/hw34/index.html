@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="openWin()">Open</button>
+    <button onclick="moveWin()">Move</button>
+    
+    <script>
+        let win;
+        const openWin = () =>{
+            win = window.open('about:blank', 'win', 'width = 400, height =200, top=100, left=100');
+            win.document.write('lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem');
+            win.opener.document.write('lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem');
+        }
+
+        // const moveWin = () => {
+        // win.moveBy(200, 200);
+        // win.focus();
+        // }
+    </script>
+</body>
+</html>
