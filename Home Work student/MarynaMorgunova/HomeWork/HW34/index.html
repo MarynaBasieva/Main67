@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button class="btnOpen">Open window</button>
+    <button class="btnMove">Move window</button>    
+</body>
+
+<script>
+    let win, body;
+
+    document.querySelector('.btnOpen').addEventListener('click', () => {
+        win = window.open('','','scrollbars=yes, menubar=yes, location = yes, width=200, height=200, top=300, left=200');
+        win.document.write('Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim alias sit totam adipisci dicta itaque illo placeat similique dolore. Est magni tenetur reprehenderit rerum laborum. Ipsum assumenda magnam cum quisquam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim alias sit totam adipisci dicta itaque illo placeat similique dolore. Est magni tenetur reprehenderit rerum laborum. Ipsum assumenda magnam cum quisquam.')
+        win.opener.document.write('&nbsp; Lorem ipsum dolor sit amet, consectetur adipisicing elit.');
+
+        let btnMove = win.opener.document.createElement('button'),
+            body = win.opener.document.body;
+        btnMove.innerHTML = 'Move window';
+        btnMove.setAttribute('onclick', 'btnMove()');
+        
+        body.insertBefore(btnMove, body.firstChild);
+    });
+
+    function btnMove() {
+        win.moveBy(200, 200);
+        win.focus();
+    }
+
+</script>
+</html>

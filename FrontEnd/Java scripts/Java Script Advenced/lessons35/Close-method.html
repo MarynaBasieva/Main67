@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>close-method</title>
+</head>
+
+<body>
+	<button onClick="OpenWin()">Відкрити</button>
+	<button onClick="CloseWin()">Закрити</button>
+</body>
+	<script>
+		let win;
+		function OpenWin(){
+			win = window.open("about:blank", "win", "width=200, height=200,top=400,left=400");
+		}
+		function CloseWin(){
+			if(win != null){
+				win.close();
+			}
+		}
+	</script>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    
+</head>
+<style>
+    
+</style>
+<body>
+    <div class="date"></div>
+    <div class="result"></div>
+	
+	<p>Введите число от 2 до 10:</p>
+	<input class="res" type="text" />
+	<button type="button" onClick="myFunction()">Проверка ошибок</button>
+	<div class="message"></div>
+   
+  
+   
+</body>
+<script>
+    let date = new Date();
+        date.setFullYear(2020, 10, 12);
+    document.querySelector('.date').innerText += date;
+
+
+    let year = prompt('Введите год')
+    let myYear = new Date().getFullYear()
+    if(year == myYear){
+        alert('Это текущий год')
+    }
+    else if(year < myYear){
+        alert('этот год прошел')
+    }
+    else if(year > myYear){
+        alert('этот год еще не наступил')
+    }
+
+    function myFunction(){
+			let message, res;
+			message = document.querySelector(".message"); 
+			message.innerHTML= '';
+			res = document.querySelector(".res").value;
+			
+			try{
+				if(res == "")throw 'пусто';
+				if(isNaN(res))throw 'не число';
+				res = Number(res);
+				if(res < 2)throw 'слишком мало';
+				if(res > 10)throw 'слишком много';
+			}catch(err){
+				message.innerHTML = 'Вы ввели:' + ' ' + err;
+                
+			}
+		}
+        
+
+    
+</script>
+</html>

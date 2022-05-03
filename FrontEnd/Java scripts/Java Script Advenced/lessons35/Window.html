@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Window</title>
+</head>
+
+<body>
+	<script>
+	document.writeln( 'Строка меню:' + window.menubar.visible + '<br>' );
+    document.writeln( 'Панель инструментов:' + window.toolbar.visible + '<br>' );
+		</script>
+	<button onClick="Open()">Відкрити нове вікно</button>
+</body>
+	<script>
+		//window.open(url,name,params);
+		//window.open('https://sinoptik.ua/');
+		
+		/*window.open('https://sinoptik.ua',"scroolbars=no,resizable=no,location=yes, toolbar=no, menubar=no, width=200, height=200, top=200,left=200");*/
+		
+		function Open(){ 
+			let win = window.open('https://sinoptik.ua', "win", "width=200, height=200, top=400,left=600");
+		}
+		//window.alert("Hey!!!");
+	</script>
+</html>

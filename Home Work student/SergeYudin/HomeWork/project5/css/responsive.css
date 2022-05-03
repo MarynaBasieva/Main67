@@ -1,0 +1,296 @@
+@media (min-width: 1200px) {
+  .for_page .container {
+    max-width: 1120px;
+  }
+}
+
+@media (max-width: 1208px) {
+  .main-content {
+    padding: 100px 0px 0px 0px;
+    background: 
+    linear-gradient(
+      178.68deg,
+      #4f3963 -2.24%,
+      #764469 31.33%,
+      #5e3e66 76.25%,
+      #2c2142 94.12%
+    );
+  }
+
+  .main-content .how-it-works {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+  }
+
+  .main-content .how-it-works h5 {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 150%;
+    text-align: center;
+    color: #f6f6f6;
+    max-width: 250px;
+  }
+
+  .main-content .row-content {
+    flex-direction: column;
+  }
+
+  .main-content .first-row {
+    margin-bottom: 0px;
+  }
+
+  .main-content .first-content .card-second {
+    margin-top: 20px;
+  }
+
+  .main-content .first-content {
+    margin-bottom: 20px;
+  }
+
+  .main-content .second-content .card-second {
+    margin: 20px 0;
+  }
+
+  .main-content .second-content .card-first {
+    margin-top: 25px;
+  }
+
+  .main-content .card {
+    max-width: 99%;
+  }
+
+  .youtube {
+    height: 461px;
+  }
+
+  .main-content .have-a-look {
+    text-align: center;
+    max-width: 330px;
+    font-size: 24px;
+    line-height: 150%;
+    margin: 40px 0px;
+  }
+
+  .have-a-look-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .Parentvideo {
+    margin-bottom: 85px;
+  }
+
+  .card-container {
+    flex-direction: column;
+    row-gap: 37px;
+  }
+
+  .main-content .try-it {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .main-content .try-it:hover{
+    transform: none;
+  }
+}
+
+@media (max-width: 1043px) {
+  body.lock {
+    overflow: hidden;
+  }
+
+  header{
+    margin-bottom: 90px;
+  }
+  .introduction {
+    padding-top: 0px;
+  }
+  .introduction .navs {
+    display: none;
+  }
+
+  .header {
+    position: sticky;
+  }
+
+  .resp-menu-sticky {
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+  .responsive_menu {
+    display: flex;
+    background: linear-gradient(252.43deg, #d45b78 0.01%, #4b3862 101.01%);
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px 0px 5px 10px;
+  }
+
+  .responsive_menu .nav-button {
+    position: relative;
+    width: 30px;
+    height: 25px;
+    margin: 6px 10px 0px 0px;
+  }
+
+  .responsive_menu .nav-button span {
+    background-color: #fcfcfc;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    left: 0;
+    top: 11px;
+    transition: 0.5s ease-in-out;
+  }
+
+  .responsive_menu .nav-button::before,
+  .responsive_menu .nav-button::after {
+    content: "";
+    background-color: #fcfcfc;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    left: 0;
+    transition: 0.5s ease-in-out;
+  }
+
+  .responsive_menu .nav-button::before {
+    top: 0;
+  }
+
+  .responsive_menu .nav-button::after {
+    bottom: 0;
+  }
+
+  .responsive_menu span:hover {
+    color: #f1ef47;
+  }
+
+  .responsive_menu .active span {
+    transform: scale(0);
+  }
+
+  .responsive_menu .active::before {
+    transform: rotate(45deg);
+    top: 10px;
+  }
+
+  .responsive_menu .active::after {
+    transform: rotate(-45deg);
+    bottom: 10px;
+  }
+
+  .sidenav {
+    display: block;
+    height: 100%;
+    transform: translate(-100%, 0);
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background: linear-gradient(252.43deg, #d45b78 0.01%, #4b3862 101.01%);
+    overflow-x: hidden;
+    overflow-y: hidden;
+    overflow: auto;
+    transition: 0.5s;
+    padding-top: 80px;
+    text-align: center;
+  }
+
+  .active {
+    transform: translate(0px, 0px)
+  }
+
+  .sidenav a {
+    padding: 4px 8px 4px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    color: #af7bda;
+    display: block;
+    transition: 0.5s ease-in-out;
+  }
+
+  .sidenav a:hover {
+    text-decoration: none;
+  }
+
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+}
+
+@media (max-width: 992px) {
+  .introduction {
+    padding-bottom: 35px;
+  }
+
+  .introduction .banner h1 {
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .introduction .banner p {
+    font-size: 14px;
+    line-height: 150%;
+    max-width: 300px;
+    margin-bottom: 70px;
+  }
+
+  .introduction .banner a {
+    padding: 16px 63px;
+    line-height: 28px;
+    transition: 0.5s ease-in-out;
+  }
+}
+
+@media (max-width: 650px){
+  .submarine{
+    height: 220px;
+  }
+}
+
+@media (max-width: 532px) {
+  .main-content .try-it h5 {
+    font-size: 24px;
+    line-height: 150%;
+  }
+
+  .main-content .try-it p {
+    font-size: 14px;
+    line-height: 150%;
+  }
+
+  .main-content .card-container{
+    margin-bottom: 0px;
+  }
+}
+
+@media (max-width: 500px){
+  .main-content .card{
+    padding: 40px 20px 40px 100px;
+  }
+}
+
+@media (max-width: 472px){
+  .main-content .try-it a{
+    padding: 2px 2px;
+    font-size: 15px;
+  }
+}
