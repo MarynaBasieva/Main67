@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>caculator</title>
+  </head>
+  <style>
+    .main-calculator {
+      width: 500px;
+      margin: 0 auto;
+      text-align: center;
+      background: #07386b;
+      padding: 20px;
+      border: solid 2px #fff;
+      margin-top: 100px;
+    }
+    .operation-block button {
+      width: 40px;
+      height: 40px;
+      margin: 20px;
+      border: none;
+      outline: none;
+      transition: linear 0.3s;
+      background: #000;
+      color: #fff;
+      font-size: 20px;
+      text-align: center;
+      cursor: pointer;
+    }
+    .operation-block button:hover {
+      background: #0a4c5d;
+    }
+    .input-block {
+      display: inline-block;
+      padding: 10px;
+    }
+    .input-block input {
+      outline: none;
+      padding: 10px;
+    }
+    .input-block label {
+      display: block;
+      margin-bottom: 8px;
+      color: #fff;
+    }
+    #result {
+      color: rgb(0, 255, 42);
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 68px;
+      margin-top: 70px;
+      display: flex;
+      justify-content: center;
+    }
+  </style>
+  <body>
+    <div class="main-calculator">
+      <div class="operation-block">
+        <button id="buttonPlus">+</button>
+        <button id="buttonMinus">-</button>
+        <button id="buttonMultiply">*</button>
+        <button id="buttonDEvide">/</button>
+        <button id="buttonPercent">%</button>
+      </div>
+      <hr />
+      <div class="form-inputs">
+        <form>
+          <div class="input-block">
+            <label>Number1</label>
+            <input type="number" id="number1" value="20" />
+          </div>
+
+          <div class="input-block">
+            <label>Number2</label>
+            <input type="number" id="number2" value="10" />
+          </div>
+        </form>
+      </div>
+    </div>
+    <div id="result"></div>
+  </body>
+  <script>
+    let buttonPlus = document.getElementById("buttonPlus");
+    let buttonMinus = document.getElementById("buttonMinus");
+    let buttonMultiply = document.getElementById("buttonMultiply");
+    let buttonDEvide = document.getElementById("buttonDEvide");
+    let buttonPercent = document.getElementById("buttonPercent");
+    let resultCalc = document.getElementById("result");
+
+    let input1 = document.getElementById("number1");
+    let input2 = document.getElementById("number2");
+
+    function SetNumber1() {
+      return Number(input1.value);
+    }
+    function SetNumber2() {
+      return Number(input2.value);
+    }
+
+    function OperationNumber(operationCode) {
+      let result;
+      if (operationCode === "+") {
+        result = SetNumber1() + SetNumber2();
+      } else if (operationCode === "-") {
+        result = SetNumber1() - SetNumber2();
+      } else if (operationCode === "*") {
+        result = SetNumber1() * SetNumber2();
+      } else if (operationCode === "/") {
+        result = SetNumber1() / SetNumber2();
+      } else if (operationCode === "%") {
+        result = (SetNumber2() / 100) * SetNumber1();
+      } else {
+        console.log("Немає такого значення");
+      }
+      resultCalc.innerHTML = result;
+    }
+
+    function onButtonPlusClick() {
+      OperationNumber("+");
+    }
+
+    function onButtonMinusClick() {
+      OperationNumber("-");
+    }
+
+    function onButtonMultiplyClick() {
+      OperationNumber("*");
+    }
+
+    function onButtonDEvideClick() {
+      OperationNumber("/");
+    }
+
+    function onButtonPersentClick() {
+      OperationNumber("%");
+    }
+
+    buttonPlus.addEventListener("click", onButtonPlusClick);
+    buttonMinus.addEventListener("click", onButtonMinusClick);
+    buttonMultiply.addEventListener("click", onButtonMultiplyClick);
+    buttonDEvide.addEventListener("click", onButtonDEvideClick);
+    buttonPercent.addEventListener("click", onButtonPersentClick);
+  </script>
+</html>
