@@ -6,17 +6,48 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Document</title>
 	</head>
+	<style>
+		.calc {
+			max-width: 400px;
+			margin: 100px auto;
+			padding: 20px 40px;
+			background-color: rgb(112, 141, 245);
+		}
+		.screen {
+			max-width: 100%;
+			background-color: rgb(185, 252, 130);
+			padding: 20px;
+			border-radius: 5px;
+		}
+		.operators-wraper {
+			display: flex;
+			justify-content: space-between;
+			padding-top: 30px;
+		}
+		button {
+			height: 30px;
+			width: 30px;
+			background-color: rgb(151, 80, 209);
+			border: none;
+			border-radius: 5px;
+			color: #fff;
+			font-size: 20px;
+			font-weight: bold;
+		}
+		.inp-wraper {
+			padding: 20px 30px;
+			display: flex;
+			justify-content: space-between;
+		}
+		.inp-wraper input {
+			width: 45%;
+		}
+	</style>
 	<body>
 		<div class="calc">
-			<div class="screen"></div>
-			<botton class="btn">+</botton>
-			<botton class="btn">-</botton>
-			<botton class="btn">*</botton>
-			<botton class="btn">/</botton>
-		</div>
-		<div class="numbers-btn">
-			<button class="btn">1</button><button class="btn">2</button><button class="btn">3</button><button class="btn">4</button><button class="btn">5</button><button class="btn">6</button
-			><button class="btn">7</button><button class="btn">8</button><button class="btn">9</button><button class="btn">0</button>
+			<div class="screen">0</div>
+			<div class="operators-wraper"><button>*</button><button>/</button><button>+</button><button>-</button> <button>%</button><button>=</button></div>
+			<div class="inp-wraper"><input type="number" placeholder="Введіть перше число або відсоток від другого числа" id="num1" /><input type="number" placeholder="Введіть друге число" id="num2" /></div>
 		</div>
 
 		<script src="app.js"></script>
