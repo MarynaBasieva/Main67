@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="picturies">
+        <div>
+            <img class="one" title="cat_one"
+                src="https://bipbap.ru/wp-content/uploads/2021/11/1619541010_52-oir_mobi-p-nyashnie-kotiki-zhivotnie-krasivo-foto-57-730x856.jpg"
+                alt="">
+            <span id="first_cat">
+
+            </span>
+        </div>
+        <div>
+            <img class="two" title="cat_two"
+                src="https://funart.pro/uploads/posts/2021-07/1625692181_22-funart-pro-p-kotik-laik-zhivotnie-krasivo-foto-46.jpg"
+                alt="">
+            <span id="second_cat">
+
+            </span>
+        </div>
+        <div>
+            <img class="three" title="cat_three" src="https://img.novosti-n.org/upload/ukraine/925417.jpg" alt="">
+            <span id="third_cat">
+
+            </span>
+        </div>
+    </div>
+
+    <script>
+        let cat1 = document.querySelector('.one');
+        let cat2 = document.querySelector('.two');
+        let cat3 = document.querySelector('.three');
+
+        let result1 = document.getElementById("first_cat");
+        let result2 = document.getElementById("second_cat");
+        let result3 = document.getElementById("third_cat");
+
+
+        let titleClick1 = function (event) {
+            result1.innerHTML = event.target.title;
+        };
+
+        let titleClick2 = function (event) {
+            result2.innerHTML = event.target.title;
+        };
+
+        let titleClick3 = function (event) {
+            result3.innerHTML = event.target.title;
+        };
+
+        cat1.addEventListener('click', titleClick1);
+        cat2.addEventListener('click', titleClick2);
+        cat3.addEventListener('click', titleClick3);
+    </script>
+</body>
+
+</html>

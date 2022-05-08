@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>onmouseover</title>
+</head>
+<style>
+	img{
+		width: 400px;
+		height: auto;
+	}
+</style>
+<body>
+	<p onMouseOver="this.style.color='yellow'" onMouseOut="this.style.color='blue'">Наведи на текст</p>
+	<img src="https://komish-gromada.gov.ua/wp-content/uploads/2021/08/unnamed-2.jpg" alt="flag" title="flag" id="flag" />
+</body>
+	<script>
+		
+		flag.onmouseover = function(){
+			this.src = "https://images.prom.ua/3440319020_w640_h640_flag-ukrainy-serdtsenaklejki.jpg";
+			this.alt = this.title = "Flag hard";
+			console.log(flag);
+		}
+		flag.onmouseout = function(){
+			this.src="https://images.prom.ua/3136820504_w640_h640_3136820504.jpg";
+			this.alt= this.title = "coat of arms";
+			console.log(flag);
+		}
+	</script>
+</html>

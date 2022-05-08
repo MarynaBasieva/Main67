@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container {
+        max-width: 700px;
+        margin: 50px auto 0;
+    }
+    p {
+        transition: 1s;
+    }
+    img {
+		max-width: 100%;
+		height: auto;
+	}       
+</style>
+<body>
+    <div class="container">
+        <div class="content">
+            <img id="img" src="https://bipbap.ru/wp-content/uploads/2021/08/1623148584_12-oir_mobi-p-samaya-krasivaya-priroda-v-mire-priroda-kr-12-730x456.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil atque vero eum error pariatur deserunt.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil atque vero eum error pariatur deserunt.</p>
+        </div>
+        <button id="btn" type="button">Button</button>
+    </div>
+    <script>
+        let text = document.querySelectorAll('.content p:last-child');
+        let btn = document.getElementById('btn');
+        let img = document.querySelector('#img');
+        
+        img.addEventListener('mouseover', () => {
+            img.src = 'https://bipbap.ru/wp-content/uploads/2021/08/1623148698_32-oir_mobi-p-samaya-krasivaya-priroda-v-mire-priroda-kr-33-730x456.jpg'
+        })
+
+        btn.addEventListener('click', () => {
+            for (let p of text) {
+            p.style.opacity = '0';
+            }
+        })
+    </script>   
+</body>
+</html>
