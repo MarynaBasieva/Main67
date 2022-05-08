@@ -1,0 +1,27 @@
+body {
+    background: url(IconPatternBackgroundsWeb.png);
+}
+
+
+img {
+    display: block;
+    width: 350px;
+    height: 350px;
+    border-radius: 8px;
+    box-shadow: 5px 7px 10px #6072d6;
+    margin-left: 20px;
+}
+
+.picturies {
+    padding-top: 50px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+span {
+    margin-top: 30px;
+    display: block;
+    color: rgb(18, 19, 19);
+    font-size: 50px;
+    text-align: center;
+}
