@@ -1,0 +1,573 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+}
+/*Header*/
+.Header{
+padding-top: 20px;
+padding-bottom: 20px;
+background: #FFFFFF;
+box-shadow: 0px 8px 8px #efefef;
+position: fixed;
+z-index: 999;
+width: 100%;
+}
+.responsive_menu {
+    display: none;
+}
+
+.parents_responsive_menu {
+    display: flex;
+    justify-content: flex-start;
+    }
+.sub_menu{
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+}
+.item_menu a{
+    margin-right: 20px;
+    font-size: 15px;
+    line-height: 48px;
+    color: #666666;
+    letter-spacing: 1.5px;
+    transition: 0.3s;
+    text-decoration: none;
+}
+.item_menu a:hover{
+    text-decoration: none;
+    color: rgb(182,85,247);
+    color: linear-gradient(144deg, rgba(182,85,247,1) 13%, 
+    rgba(166,101,241,1) 28.000000000000004%, rgba(103,155,232,1) 85%);
+}
+.header_buttom {
+    line-height: 48px;
+    border-radius: 7px;
+    background: #222222;
+    padding: 7px 20px;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 18px;
+  
+    
+    
+}
+.header_buttom:hover {
+    background: rgb(182,85,247);
+    background: linear-gradient(144deg, rgba(182,85,247,1) 13%, 
+    rgba(166,101,241,1) 28.000000000000004%, rgba(103,155,232,1) 85%);
+    color:#FDF8F5;
+    text-decoration: none;
+    
+}
+/*Header*/
+/*The_future*/
+.The_future_parents{
+    padding-top: 140px;
+    padding-left: 100px;
+}
+.The_future_text h2{
+    padding-top: 10px;
+    padding-bottom: 20px;
+    font-size: 50px;
+    color: #222222;
+}
+.The_future_text p{
+    font-size: 16px;
+    color: #222222;  
+}
+.The_future_buttom{
+    padding-left: 120px;
+}
+.The_future_buttom1{
+    margin-right: 10px;
+    line-height: 48px;
+    border-radius: 7px;
+    background: #222222;
+    padding: 11px 37px;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 18px;
+}
+.The_future_buttom1:hover {
+    background: rgb(182,85,247);
+    background: linear-gradient(144deg, rgba(182,85,247,1) 13%, 
+    rgba(166,101,241,1) 28.000000000000004%, rgba(103,155,232,1) 85%);
+    color:#FDF8F5;
+    text-decoration: none;
+    
+}
+.The_future_buttom2{
+    
+    line-height: 48px;
+    border-radius: 7px;
+    background: #222222;
+    padding: 11px 40px;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 18px;
+}
+.The_future_buttom2:hover {
+    background: rgb(182,85,247);
+    background: linear-gradient(144deg, rgba(182,85,247,1) 13%, 
+    rgba(166,101,241,1) 28.000000000000004%, rgba(103,155,232,1) 85%);
+    color:#FDF8F5;
+    text-decoration: none;
+    
+}
+.telefon{
+    
+    padding-left: 100px;
+}
+.telefon img{
+padding-top: 100px;
+}
+/*The_future*/
+/* Phone_photography */
+.Phone_photography{
+    background: #222222;
+    padding-bottom: 100px;
+}
+.Phone_photography_text p{
+    padding-top: 120px;
+    font-size: 14px;
+    color: #FFFFFF;
+}
+.Phone_photography_text h2{
+    font-size: 35px;
+    color: #FFFFFF;
+    padding-bottom: 50px;
+}
+.Phone_photography_background{
+    background: #FFFFFF;
+    border-radius: 25px;
+    color:#222222;
+    text-align: center;
+    position: relative;
+    transition: 1s; 
+}
+.Phone_photography_background:hover{
+    background: #71558b;
+    border-radius: 20px;
+    transform: translate(0,-10px);
+}
+.Phone_photography_calendar img{
+    padding-top: 40px;
+    
+}
+.Phone_photography_calendar1{
+    position: absolute;
+    top: 220px;
+    left: 120px;
+}
+.Phone_photography_background p{
+    padding: 0px 40px 40px 40px;
+    color:#222222;
+    font-size: 15px;
+}
+.Phone_photography_background h2{
+    color:#0278ED;
+    font-size: 24px;
+    padding-top: 50px;
+}
+.list_text h2{
+    color:#FF5437;
+    padding-bottom: 14px;
+}
+.list_text p{
+    padding-bottom: 50px;
+}
+.Varied_text h2{
+    color:#FF9209;
+    padding-bottom: 16px;
+}
+.Varied_text p{
+    padding-bottom: 50px;
+}
+.Split_text h2{
+    color:#E738CE;
+    
+}
+.Uploads_text h2{
+    color:#00C6DF;
+    
+}
+.Focus_text h2{
+    color:#B25DF8;
+    padding-bottom: 16px;
+}
+.Focus_text p{
+    padding-bottom: 50px;
+}
+
+/* Phone_photography */
+/* Number */
+.Number{
+    background: #FF5437;
+    
+}
+.number_text h2{
+    color:#FFFFFF;
+    padding-top: 50px;
+    padding-left: 25px;
+    font-size: 95px;
+}
+.number_text p{
+    color:#FFFFFF;
+    padding-bottom: 60px;
+    font-size: 14px;
+}
+
+/* Number */
+/* Technology */
+.The_technology_parents{
+    padding-top: 180px;
+}
+.The_technology_text em{
+    font-size: 16px;
+}
+.The_technology_text h2{
+    font-size: 32px;
+    padding-bottom: 15px;
+}
+.The_technology_photo img{
+    padding-top: 100px;
+    padding-left: 200px;
+}
+/* Technology */
+/* Speed  */
+.Speed{
+    background: #F2F2F2;
+}
+
+.Speed_parents{
+    padding-top: 180px;
+}
+.Speed_text em{
+    font-size: 16px;
+}
+.Speed_text h2{
+    font-size: 32px;
+    padding-bottom: 15px;
+}
+.Speed_photo img{
+    padding-top: 100px;
+    padding-bottom: 10px;
+    
+}
+/* Speed  */
+/* Dark */
+.Dark{
+    background: #222222;
+    padding-bottom: 180px;
+}
+.Dark_text{
+    padding-top: 100px;
+}
+.Dark_text em{
+    font-size: 16px;
+    color: #FFFFFF;
+    letter-spacing: 1px;
+}
+.Dark_text h2{
+    font-size: 45px;
+    padding-bottom: 15px;
+    color: #FFFFFF;
+}
+.Dark_photo_parents1{
+    position: relative;
+}
+    .Dark_photo_parents1:after {
+        content: "";
+        position: absolute;
+        width: 600px;
+        top: -5px;
+        left: 250px;
+        padding-top: 5px;
+        border-bottom: 2px solid #E5E5E5;
+    }
+.Dark_photo_parents1{
+    padding-top: 40px;
+}
+
+
+/* Dark */
+/* Plan*/
+.Plan {
+    padding-bottom: 100px;
+}
+.Plan_text{
+    padding-top: 100px;
+}
+.Plan_text em{
+    font-size: 16px;
+    color: #222222;
+    letter-spacing: 1px;
+    
+}
+.Plan_text p{
+    padding-bottom: 40px;
+}
+.Plan_text h2{
+    font-size: 45px;
+    padding-bottom: 15px;
+    color: #222222;
+    
+}
+.Plan_background{
+    background: #F2F2F2;
+    border-radius: 25px;
+    text-align: center;
+    transition: 1s; 
+}
+.Plan_background:hover{
+    background: #71558b;
+    border-radius: 20px;
+    transform: translate(0,-30px);
+}
+.Plan_text1 h1:first-child{
+    padding-top: 50px;
+    color: #0278ED;
+    font-size: 30px;
+}
+.Plan_text1 h1{
+    color: #0278ED;
+    font-size: 128px;
+    padding-bottom: 25px;
+ }
+ .Plan_text1 em{
+   
+    color: #222222;
+    font-size: 16px;
+    letter-spacing: 1px;
+   
+ }
+ .Plan_text1 p{
+     padding-top: 10px;
+     padding-bottom: 40px;
+
+ }
+ .Plan_buttom1 {
+    line-height: 48px;
+    border-radius: 5px;
+    background: #0278ED;
+    padding: 7px 37px;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 18px;
+    
+    
+  }
+  .Plan_buttom1:hover {
+    background: rgb(182,85,247);
+    background: linear-gradient(144deg, rgba(182,85,247,1) 13%, 
+    rgba(166,101,241,1) 28.000000000000004%, rgba(103,155,232,1) 85%);
+    color:#FDF8F5;
+    text-decoration: none;
+    
+}
+.Plan_text2 h1:first-child{
+    padding-top: 50px;
+    color: #FF5437;
+    font-size: 30px;
+}
+.Plan_text2 h1{
+    color: #FF5437;
+    font-size: 128px;
+    padding-bottom: 25px;
+ }
+ .Plan_text2 em{
+   
+    color: #222222;
+    font-size: 16px;
+    letter-spacing: 1px;
+   
+ }
+ .Plan_text2 p{
+     padding-top: 10px;
+     padding-bottom: 40px;
+
+ }
+ .Plan_buttom2 {
+    line-height: 48px;
+    border-radius: 5px;
+    background: #F5437D;
+    padding: 7px 37px;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 18px;
+ }
+    
+  .Plan_buttom2:hover {
+    background: rgb(182,85,247);
+    background: linear-gradient(144deg, rgba(182,85,247,1) 13%, 
+    rgba(166,101,241,1) 28.000000000000004%, rgba(103,155,232,1) 85%);
+    color:#FDF8F5;
+    text-decoration: none;
+    
+}
+.Plan_text3 h1:first-child{
+    padding-top: 50px;
+    color: #FF9209;
+    font-size: 30px;
+}
+.Plan_text3 h1{
+    color: #FF9209;
+    font-size: 128px;
+    padding-bottom: 25px;
+ }
+ .Plan_text3 em{
+   
+    color: #222222;
+    font-size: 16px;
+    letter-spacing: 1px;
+    
+ }
+ .Plan_text3 p{
+     padding-top: 10px;
+     padding-bottom: 40px;
+
+ }
+ .Plan_buttom3 {
+    line-height: 48px;
+    border-radius: 5px;
+    background: #FF9209;
+    padding: 7px 37px;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 18px;
+    
+    
+  }
+  .Plan_buttom3:hover {
+    background: rgb(182,85,247);
+    background: linear-gradient(144deg, rgba(182,85,247,1) 13%, 
+    rgba(166,101,241,1) 28.000000000000004%, rgba(103,155,232,1) 85%);
+    color:#FDF8F5;
+    text-decoration: none;
+    
+}
+
+/* Plan */
+/* Testimonials */
+.Testimonials{
+background:#F2F2F2;
+padding-bottom: 100px;
+}
+.Testimonials_background{
+    background: #FFFFFF;
+    border-radius: 25px;
+   
+}
+
+
+.Testimonials_text{
+    padding:60px 60px 30px 30px;
+}
+.Testimonials_text em{
+    font-size: 16px;
+    color: #222222;
+    letter-spacing: 1px;
+    
+}
+.Testimonials_text p{
+    padding-bottom: 30px;
+}
+
+.Testimonials_text h2{
+    font-size: 45px;
+    padding-bottom: 15px;
+    color: #222222;
+    
+}
+.reviews{
+    display: flex;
+}
+.reviews span{
+    padding-left: 10px;
+    font-size: 14px;
+}
+.reviews3{
+    display: flex;
+    padding-top: 25px;
+    padding-left: 10px;
+    font-size: 14px;
+}
+.reviews3 span{
+    padding-left: 10px;
+}
+/* Testimonials */
+/* Download */
+.Download_text{
+    padding-top: 100px;
+    text-align: center;
+    padding-bottom: 140px;
+}
+.Download_text em{
+    font-size: 16px;
+    color: #222222;
+    letter-spacing: 1px;
+    
+}
+.Download_text p{
+    padding-bottom: 30px;
+}
+
+.Download_text h2{
+    font-size: 45px;
+    padding-bottom: 15px;
+    color: #222222;
+    
+}
+/* Download */
+/* FAQ */
+.FAQ{
+    background:#E5E5E5;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.FAQ_tex1 h1{
+font-size: 32px;
+}
+.FAQ_tex1 p{
+    font-size: 15px;
+}
+.FAQ_text2{
+    padding-top: 55px;
+}
+/* FAQ */
+/* footer  */
+
+.Icon{
+background: #F2F2F2;
+padding-top: 100px;
+padding-bottom: 50px;
+}
+.Icon a ,img{
+    padding-bottom: 20px;
+}
+
+.Icon img{
+    padding-right: 25px;
+    cursor: pointer;
+}
+footer {
+    
+    background: #F2F2F2;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align:center;
+}
+/* footer  */
