@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+</head>
+<style>
+    body{
+		background: #A156E5;
+	}
+    .homework{
+        
+        padding-top: 40px;
+        
+    }
+    img{
+        width: 350px;
+        height: 400px;
+        
+    }
+   .homework_img{
+       display: flex;
+       justify-content: space-around;
+   }
+    h2{
+    font-size: 35px;
+    text-align: center;
+    }
+    .parents_text{
+    padding-top: 20px;
+    display: flex;
+    justify-content:space-around;
+    }
+    input {
+    background:#A156E5 ;
+    font-size: 20px;
+    text-align: center;
+    
+}
+</style>
+<body>
+    
+	<div class="homework">
+        <h2>Вибери флаг клікнувши на нього мишкою</h2>
+        <div class="homework_img">
+       <img  class ="img1"  src="https://iprosvita.com/wp-content/uploads/2019/08/flah-v-nebe-1024x600.jpg" title="Правильний вибір!">
+       <img class ="img2" id="img2" src="https://fakty.com.ua/wp-content/uploads/2017/03/02/World_Russia_Flag_of_the_Russian_Federation_035272_-e1488434374720.jpg" title="Нехай горить!">
+       <img class ="img3" src="https://content.rozetka.com.ua/goods/images/big/18250031.jpg" title="Правильний вибір!">
+    </div>
+    </div>
+    <div class="parents_text">
+         <input type="text" name="text1" />
+         <input type="text" name="text2" />
+         <input type="text" name="text3" />
+    </div>
+    <script>
+        let text1=document.querySelector('.text1');
+        function funcName1(){
+        let inputs = document.getElementsByName('text1');
+        for(let i=0; i< inputs.length; i++){
+            inputs[i].style.border= "2px solid green";
+        }
+        inputs[0].value = event.target.title;
+        
+    }
+    let img1 = document.querySelector('.img1');
+    img1.addEventListener('click', funcName1);
+
+     /////////
+    let img2 = document.querySelector('.img2');
+    
+            img2.onmouseover =function(){
+            this.src ='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThvgyPA5U4ZYb0qyvq7ikZUbsfdlnLz7MqGg&usqp=CAU';
+        }
+    
+        let text2=document.querySelector('.text2');
+        function funcName2(){
+        let inputs = document.getElementsByName('text2');
+        for(let i=0; i< inputs.length; i++){
+            inputs[i].style.border= "2px solid green";
+        }
+        inputs[0].value = event.target.title;
+        
+    }
+    img2.addEventListener('click', funcName2);
+    
+    
+           
+      
+    /////////
+        let text3=document.querySelector('.text3');
+        function funcName3(){
+			let inputs = document.getElementsByName('text3');
+			for(let i=0; i< inputs.length; i++){
+				inputs[i].style.border= "2px solid green";
+			}
+			inputs[0].value = event.target.title;
+			
+		}
+        let img3 = document.querySelector('.img3');
+		img3.addEventListener('click', funcName3);
+    </script>	
+
+    
+</body>
+	
+</html>
