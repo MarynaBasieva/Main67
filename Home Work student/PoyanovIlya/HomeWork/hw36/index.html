@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    main{
+        max-width: 900px;
+        margin: 0 auto;
+    }
+    main p{
+        font-size: 24px;
+        font-weight: bold;
+    }
+</style>
+<body>
+    <main>
+        <div class="hasirama">
+            <img id="myImg" title="ЕСЛИ НЕ ПЫТАТЬСЯ ЧТО-ТО ИЗМЕНИТЬ, ТО НИЧЕГО И НЕ ИЗМЕНИТЬСЯ" src="https://a-static.besthdwallpaper.com/khashirama-sendzhu-anime-naruto-oboi-2560x2048-57642_33.jpg" width="800px" height="600px" alt="HASIRAMA">
+            <p></p>
+        </div>
+       <div class="madara">
+            <img id="myImg" title="ВАМ КЛОНОВ С СУСАНО ИЛИ БЕЗ?" src="https://i.pinimg.com/736x/66/66/4e/66664e9ad4ec09eb4e0b05c028b2c798.jpg" alt="MADARA">
+            <p></p>
+        </div>
+       <div class="itachi">
+           <img id="myImg" title="Я БОГ ИЛЮЗИЙ ИТАЧИ" src="https://besthqwallpapers.com/Uploads/11-7-2019/99582/thumb2-itachi-uchiha-fan-art-manga-naruto-anbu-captain.jpg"  alt="goditachi">
+           <p></p>
+        </div>
+    </main>
+</body>
+<script>
+    let images = document.querySelectorAll("#myImg");
+    images.forEach(function (item) {
+      item.addEventListener("click", (e) => {
+        e.target.nextElementSibling.textContent = e.target.title;
+        e.target.nextElementSibling.classList.toggle('active');    
+      })
+    });
+    
+
+</script>
+</html>
