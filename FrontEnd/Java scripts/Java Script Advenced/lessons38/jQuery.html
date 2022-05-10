@@ -1,0 +1,192 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>jQuery</title>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+
+<style>
+	.hoverItem{
+		width: 200px;
+		background: #270304;
+		color: #fff;
+		padding: 9px 0;
+		text-align: center;
+	}
+	
+	.ItemOn{
+		cursor: pointer;
+		width: 200px;
+		background:#680F70;
+		color: #fff;
+		padding: 9px 0;
+		text-align: center;
+		margin: 0 auto;
+	}
+	.buttonAnimate,
+	.slidebtn3,
+	.slidebtn2,
+	.slidebtn,
+	.btnFade,
+	.buttonMe{
+		cursor: pointer;
+		width: 200px;
+		background:#051A76;
+		color: #fff;
+		padding: 9px 0;
+		text-align: center;
+		border: none;
+	}
+	.panel{
+		display: none;
+	}
+	.parentAnimate{
+		padding: 60px 0;
+		position: relative;
+	}
+	.textAnimate{
+		position: absolute;
+		font-size: 40px;
+		background:#414BCC;
+	}
+</style>
+	
+<body>
+	<div class="test">
+		Lorem ipsum dolar Lorem ipsum dolar Lorem ipsum dolar Lorem ipsum dolar Lorem ipsum dolar Lorem ipsum dolar Lorem ipsum dolar
+	</div>
+	<input class="input" type="text" placeholder="Your Name" />
+	<input class="input2" type="text" placeholder="Your Last Name" />
+	<div class="hoverItem">Lorem ipsum</div>
+	
+	<div class="ItemOn">Lorem ipsum</div>
+	<button class="button">Click me</button>
+	<button class="buttonMe">Click me Please</button>
+	<div class="TextMe">
+		<h2>jQuery API</h2>
+<p>jQuery is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude of browsers. If you're new to jQuery, we recommend that you check out the jQuery Learning Center.</p>
+	</div>
+	
+	<div class="parentFade">
+		<div class="fade1">jQuery is a fast, small</div>
+		<div class="fade2">jQuery is a fast, small</div>
+		<div class="fade3">jQuery is a fast, small</div>
+		<button class="btnFade">Click Fade</button>
+	</div>
+	<button class="slidebtn">Slide Click Show</button>
+	<button class="slidebtn2">Slide Click Hide</button>
+	<div class="panel">
+		Slide Content
+	</div>
+	<button class="slidebtn3">Slide Click Toofgle</button>
+	<div class="panel3">
+		Slide Content
+	</div>
+	<div class="parentAnimate">
+		<button class="buttonAnimate">Click Animation</button>
+		<div class="textAnimate">jQuery API</div>
+		
+		
+	</div>
+	<button class="addClass">Add class click</button>
+		<div class="textAddClass">Click Animation</div>
+	
+	
+</body>
+	<script>
+		//jQuery.noConflict();
+		jQuery(document).ready(function () {
+			//'use strict';
+			//jQuery(selector).diay();
+			//jQuery(".test").hide();
+			/*$(function(){
+				////
+			});*/
+			jQuery(".button").click(function(){
+				jQuery(".test").hide("slow");
+			});
+			
+			/*jQuery(".hoverItem").hover(function(){
+				alert("You Welcome hoverItem");
+			},
+			 function(){
+				alert("Bay bay");
+		
+			});*/
+			
+			jQuery(".input").focus(function(){
+				jQuery(this).css("background-color", "#333");
+			});
+			jQuery(".input").blur(function(){
+				jQuery(this).css("background-color", "#fff");
+			});
+			jQuery(".ItemOn").on({
+				mouseenter: function(){
+					jQuery(this).css("background-color", "blue");
+				},
+				mouseleave: function(){
+					jQuery(this).css("background-color", "yellow");
+				},
+				click: function(){
+					jQuery(this).css("background-color", "red");
+				},
+			});
+			/*jQuery(".buttonMe").click(function(){
+				jQuery(".TextMe").hide("slow");
+			});
+			
+			jQuery(".buttonMe").click(function(){
+				jQuery(".TextMe").show("slow");
+			});*/
+			
+			/*jQuery(".buttonMe").click(function(){
+				jQuery(".TextMe").toggle("slow");
+			});*/
+			
+			//$(selector).fadeIn(speed,callback);
+			//fadeIn FadeOut FadeToogle
+			jQuery('.btnFade').click(function(){
+				jQuery(".fade1").fadeToggle();
+				jQuery(".fade2").fadeToggle("slow");
+				jQuery(".fade3").fadeToggle(3000);
+			});
+			
+			
+			
+			//$(selector).Slide[type](speed,callback);
+			jQuery('.slidebtn').click(function(){
+				jQuery('.panel').slideDown();
+			});
+			
+			jQuery('.slidebtn2').click(function(){
+				jQuery('.panel').slideUp();
+			});
+			
+			jQuery('.slidebtn3').click(function(){
+				jQuery('.panel3').slideToggle();
+			});
+			
+			//animation
+			//$(selector).animate({params},speed,callback);
+			jQuery(".buttonAnimate").click(function(){
+				jQuery(".textAnimate").animate({
+					left:'250px',
+					opacity:'0.5',
+					height:'150px',
+					width:'200px'
+				});
+			});
+			
+			//remove()
+			//addClass
+			 jQuery('.addClass').click(function(){
+				 jQuery('.textAddClass').addClass('active');
+			 });
+
+			
+		});
+		
+		
+	</script>
+</html>
