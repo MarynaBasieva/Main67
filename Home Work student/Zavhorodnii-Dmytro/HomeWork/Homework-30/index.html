@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="result" style="margin-bottom: 30px;">
+
+    </div>
+    <div class="ResultFinish">
+
+    </div>
+    <div class="resultFinishArr">
+
+    </div>
+    <!-- HW30
+                1) Создать объект userJob 
+                - name
+                -last name
+                -age
+                Sullary{
+                - зарплата
+                - рабочий дни
+                отпускные{
+                    - деньги
+                    - сколько дней отпускных 
+                }
+
+                }
+
+                Через цикл for in получить все свойства всего объекта и вывести через class="Result"
+
+                Дублировать этот объект к другой переменной и поменять все значения и вывести в class="ResultFinish"
+
+
+                2) Создать массив со всеми значениями как в объекте создать 5 рабочих с такими значениями 
+                И вывести отпускные рабочих в class="ResultFinishArr" -->
+
+    <script>
+        let result = document.querySelector('.result');
+        let resultFinish = document.querySelector('.ResultFinish');
+        let resultFinishArr = document.querySelector('.resultFinishArr');
+        let userJob = {
+            name: "Victor",
+            lastName: "Rabinovich",
+            age: 58,
+            Salary: {
+                pay: 11000,
+                workDays: 24,
+                HolidayPay: {
+                    money: 5000,
+                    HolidayNums: 21,
+                },
+            },
+        };
+
+
+        function everything(obj) {
+            for (let key in obj) {
+                let value = obj[key];
+                result.innerHTML += " Свойство:" + value + '</br>';
+
+                if (typeof value === "object") {
+
+                    everything(value);
+                }
+            }
+        };
+        everything(userJob);
+
+
+        let userJob_new = userJob;
+
+
+        userJob_new.name = "Gosha";
+        userJob_new.lastName = "Promedol";
+        userJob_new.age = 29;
+        userJob_new.Salary.pay = 33000;
+        userJob_new.Salary.workDays = 29;
+        userJob_new.Salary.HolidayPay.money = 3000;
+        userJob_new.Salary.HolidayPay.HolidayNums = 1;
+        console.log(userJob_new);
+
+
+
+
+        function everything2(obj) {
+            for (let key in obj) {
+                let value = obj[key];
+                resultFinish.innerHTML += " Свойство:" + value + '</br>';
+
+                if (typeof value == "object") {
+
+                    everything2(value);
+                }
+            }
+        };
+        everything2(userJob_new);
+
+
+
+        let employees = [{
+                name: "Petr",
+                lastName: "Popov",
+                age: 51,
+                Salary: {
+                    pay: 111000,
+                    workDays: 29,
+                    HolidayPay: {
+                        money: 50000,
+                        HolidayNums: 11,
+                    },
+                },
+            },
+            {
+                name: "Anna",
+                lastName: "Bezhatko",
+                age: 19,
+                Salary: {
+                    pay: 1000,
+                    workDays: 9,
+                    HolidayPay: {
+                        money: 1100,
+                        HolidayNums: 25,
+                    },
+                },
+            },
+            {
+                name: "Dmitrii",
+                lastName: "Gordon",
+                age: 50,
+                Salary: {
+                    pay: 11111000,
+                    workDays: 5,
+                    HolidayPay: {
+                        money: 1250000,
+                        HolidayNums: 25,
+                    },
+                },
+            },
+            {
+                name: "Ernesto",
+                lastName: "Petrov",
+                age: 21,
+                Salary: {
+                    pay: 31000,
+                    workDays: 24,
+                    HolidayPay: {
+                        money: 50000,
+                        HolidayNums: 1,
+                    },
+                },
+            },
+            {
+                name: "Kirill",
+                lastName: "Lee",
+                age: 31,
+                Salary: {
+                    pay: 11000,
+                    workDays: 29,
+                    HolidayPay: {
+                        money: 5000,
+                        HolidayNums: 4,
+                    },
+                },
+            },
+        ];
+        employees.map(human => resultFinishArr.innerHTML += (`
+             ${human.Salary.HolidayPay.money}  ${human.Salary.HolidayPay.HolidayNums}`));
+    </script>
+</body>
+
+</html>
