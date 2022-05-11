@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW-37</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <main class="page">
+        <header>
+            <div class="inner">
+                <nav>
+                    <ul class="menu-list">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Shop</a></li>
+                        <li><a href="#">Contacts</a></li>
+                    </ul>
+                    <a class="btn-signIn" href="#">Sign In</a>
+                </nav>
+            </div>
+        </header>
+        <section class="content">
+            <div class="inner">
+                <p>content</p>
+                <p>content</p>
+                <p>content</p>
+            </div>
+        </section>
+        <div class="popup-signIn">
+            <div class="form-wrapper">
+                <h3>Sign Up with…</h3>
+                <a class="close" href="#">+</a>
+                <form action="contact.php">
+                    <input type="email" placeholder="Email">
+                    <input type="password" placeholder="Password">
+                    <button type="submit">Sign In</button>
+                </form>
+            </div>
+        </div>
+        <div class="popup-callBack">
+            <button class="btn-callBack"></button>
+            <div class="form-wrapper">
+                <h3>Call back…</h3>
+                <form action="contact.php">
+                    <input type="text" placeholder="Name">
+                    <input type="email" placeholder="Email">
+                    <input type="date">
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <script>
+        jQuery(document).ready(function () {
+            const $signInPopup = $('.popup-signIn');
+            const $signInBtn = $('.btn-signIn');
+
+            $('.menu-list').find('li').click(function() {
+                $('.menu-list').find('li').removeClass('active');
+                $(this).addClass('active');
+            });
+
+            $signInBtn.click(function(e){
+                $('.page').addClass('show-popup');
+                $signInPopup.show(300);
+                e.stopPropagation();
+            });
+
+            $('.close').click(function(e){
+                $('.page').removeClass('show-popup');
+                $signInPopup.hide(300);
+            });
+
+            $(document.body).on('click', ({ target }) => {
+                if (target !== $signInBtn && $signInPopup.has(target).length === 0) {
+                    $('.page').removeClass('show-popup');
+                    $signInPopup.hide(300);
+                };
+            });
+
+            $('.btn-callBack').click(function(){
+                $('.popup-callBack .form-wrapper').toggle('slow');
+            });
+        });
+    </script>
+    
+</body>
+</html>
