@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Json</title>
+</head>
+
+<body>
+</body>
+	<div id="result"></div>
+	<script>
+	//let json ='[0,1,2,3]';
+/*	let json = '{
+	  "name":"Mari",
+	  "age":20,
+	  "lastName":"Kotova",
+	  "arr":[1,2,3],
+	}';
+	*/
+	// не коректний json
+	
+	/*let json2 = '{
+	  name :"Mari",//ключ не допустимий без кавичек
+	  "age":'20',// одинарні кавички не допустимі
+	}';*/
+	
+/*	{
+		"work":[
+			{"firstname": "Anna", "lastname":"Kotova"},
+			{"firstname": "Olga", "lastname":"Frolova"},
+			{"firstname": "Viktor", "lastname":"Send"},
+		]
+	}*/
+	//JSOM method
+	// parse and sringify
+
+		
+	console.log("===JSON sringify===");	
+	let person = {
+		name:"Anna",
+		age:20,
+		birthday:{
+			year:1999,
+			month:"June",
+			day:26
+		}
+	};
+		console.log(JSON.stringify(person));//{"name":"Anna","age":20,"birthday":{"year":1999,"month":"June","day":26}}
+		
+ let person2 ={
+	 name: "Alex",
+	 age:35,
+	 sayHi:function(){
+		 console.log(this.name)
+	 }
+ };
+		console.log(JSON.stringify(person2));//{"name":"Alex","age":35}
+		
+	let user = '{"name":"Anna","age":20,"birthday": {"year":1999,"month":"June","day":26}}';
+	console.log("===JSON parse===");
+	user = JSON.parse(user);
+	//console.log(result);
+	//document.write(result.name+"<br>");
+	//document.write(result.birthday.year);
+		
+	let renderObject = (obj)=>{
+		let resultFinish;
+		for(let key in obj){
+			resultFinish +=`${key} : ${obj[key]} <br/>`;
+		}
+		return resultFinish;
+	}
+	let finaly = document.getElementById("result");
+		finaly.innerHTML = renderObject(user);
+		console.log(renderObject(user));
+</script>
+</html>
