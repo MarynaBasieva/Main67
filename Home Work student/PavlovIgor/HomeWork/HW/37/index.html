@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/responsive.css">
+    <link rel="stylesheet" href="./style/fonts.css">
+    <link rel="stylesheet" href="./vendor/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./vendor/bootstrap-5.0.2-dist/css/bootstrap-grid.min.css">
+    <title>LEANSPIN</title>
+</head>
+<body>
+    <div class="for_page">
+        <div class="page">
+            <!-- Togle & Side Bar -->
+            <div class="sidebar">
+                <ul class="menu">
+                    <li><a href="#home" onclick="toggleMenu();">KNOW-HOW</a></li>
+                    <li><a href="#about_me" onclick="toggleMenu();">O NAS</a></li>
+                    <li><a href="#products" onclick="toggleMenu();">BLOG</a></li>
+                    <li><a href="#our_team" onclick="toggleMenu();">KONTAKT</a></li>
+                    <!-- <a href="#" class="btn">Go to Search</a> -->
+                    <!-- <div class="sidebar_icon">
+                        <div class="user">
+                            <a href="#"><i class="fa-solid fa-user-large"></i></a>
+                        </div>
+                        <div>
+                            <a href="#"><i class="fa-solid fa-basket-shopping"></i></a>
+                        </div>
+                    </div> -->
+                </ul>
+            </div>
+            <!-- Side Bar -->
+            <!-- HEADER -->
+            <header class="header">
+                <div class="container header_container">
+                    <div class="header_logo">
+                        <a class="header_logo" href="#"><img src="./img/header/logo.png" alt="logo boosted_USA"></a>
+                        <a class="header_btn" href="#">Skontaktuj się z nami</a>
+                    </div>
+                    <div class="header_nav">
+                        <nav class="nav_menu">
+                            <ul class="sub_menu">
+                                <li class="item_menu">
+                                    <a class="link_item_menu" href="#">KNOW-HOW</a>
+                                </li>
+                                <li class="item_menu">
+                                    <a class="link_item_menu" href="#">O NAS</a>
+                                </li>
+                                <li class="item_menu">
+                                    <a class="link_item_menu" href="#">BLOG</a>
+                                </li>
+                                <li class="item_menu">
+                                    <a class="link_item_menu" href="#">KONTAKT</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="toggle" onclick="toggleMenu();"></div>
+                </div>
+            </header>
+            <!-- MAIN -->
+            <main class="main">
+                <div class="welcome">
+                    <div class="container welcome_container">
+                        <div class="welcome_img">
+                            <div class="welcome_text">
+                                <h3>[re]designing <br><span>[re]</span> your business</h3>
+                            </div>
+                        </div>
+                        <div class="welcome_items">
+                            <div class="item">
+                                <p>Pomagamy rozwijać progresywne firmy, zespoły <br>i kompetencje w coraz szybciej zmieniającym się świecie.</p>
+                            </div>
+                            <div class="item">
+                                <h4>Poznajmy się!</h4>
+                                <h5>Umów się na bezpłatną konsultację</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <!-- MODAL -->
+            <div class="modal_window">
+                <div class="modal_item">
+                    <div class="modal_text">
+                        <h3>Skontaktuj się z nami</h3>
+                        <a class="modal_close" href="#">
+                            <img src="./img/modal/12.jpg" alt="">
+                        </a>
+                    </div>
+                    <form>
+                        <input type="text" placeholder="Wpisz swoje imię">
+                        <input type="tel" placeholder="Wprowadź swój numer telefonu">
+                        <input type="date"
+                        min="2022-01-01" max="2022-12-31">
+                        <label class="input_label">wyjaśnij szczegóły ---></label>
+                        <textarea class="input_textarea" placeholder="Jesteśmy gotowi Cię wysłuchać"></textarea>
+                        <input class="input_btn" type="button" value="Prześlij zapytanie">
+                    </form>
+                </div>
+            </div>
+            <div class="modal_item_2">
+                <div class="link_active">
+                    <p>Kontakt</p>
+                </div>
+                <div class="modal_text">
+                    <h3>Skontaktuj się z nami</h3>
+                </div>
+                <form>
+                    <input type="text" placeholder="Wpisz swoje imię">
+                    <input type="tel" placeholder="Wprowadź swój numer telefonu">
+                    <input type="date"
+                    min="2022-01-01" max="2022-12-31">
+                    <label class="input_label">wyjaśnij szczegóły ---></label>
+                    <textarea class="input_textarea" placeholder="Jesteśmy gotowi Cię wysłuchać"></textarea>
+                    <input class="input_btn" type="button" value="Prześlij zapytanie">
+                </form>
+            </div>
+        </div>
+        <!-- ===Page=== -->
+    </div>
+<!-- Script JS -->
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./vendor/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <script src="./js/custom.js"></script>
+    <script src="./js/style.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
+
+
+
+
+

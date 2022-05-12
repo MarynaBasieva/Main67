@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>delete-panel</title>
+</head>
+<style>
+body {
+  margin: 10px auto;
+  width: 470px;
+}
+
+h3 {
+  margin: 0;
+  padding-bottom: .3em;
+  font-size: 1.1em;
+  color:#1758B3;
+}
+
+p {
+  margin: 0;
+  padding: 0 0 .5em;
+}
+
+.pane_1, .pane_2,.pane_3 {
+  background: #edf5e1;
+  padding: 10px 20px 10px;
+  border-top: solid 2px #c4df9b;
+  position: relative;
+}
+
+.remove-button {
+  font-size: 110%;
+  color: #000;
+  right: 10px;
+  width: 24px;
+  height: 24px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  outline:none;
+  float:right; 
+}
+.remove-button:hover{
+	color:#173DD3;
+	}
+
+.btn_close_1,
+.btn_close_2,
+.btn_close_3 {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-size: 20px;
+  cursor: pointer;
+}
+</style>
+<body>
+
+  <div>
+    <div class="pane_1">
+      <h3>Мобильный телефон Huawei P30 Lite 4/128GB  Peacock Blue </h3> 
+      <p>Экран (6.15", LTPS, 2312x1080)/ HiSilicon Kirin 710 (4 x 2.2 ГГц + 4 x 1.7 ГГц)/ тройная основная камера: 48 Мп + 8 Мп + 2 Мп, фронтальная камера: 24 Мп/ RAM 4 ГБ/ 128 ГБ встроенной памяти + microSD (до 512 ГБ)/ 3G/ LTE/ GPS/ GLONASS/ BDS/ поддержка 2х SIM-карт (Nano-SIM)/ Android 9.0 (EMUI 9.0.1)/ 3340 мА*ч lorem ipsum</p>
+      <div class="btn_close_1">X</div>
+    </div>
+    <div class="pane_2">
+      <h3>Мобильный телефон Samsung Galaxy M21 4/64GB Black (SM-M215FZKUSEK)</h3> 
+      <p>Экран (6.4", Super AMOLED, 2340х1080) / Samsung Exynos 9611 (4 x 2.3 ГГц + 4 x 1.7 ГГц) / тройная основная камера: 48 Мп + 8 Мп + 5 Мп, фронтальная 20 Мп / RAM 4 ГБ / 64 ГБ встроенной памяти + microSD (до 512 ГБ) / 3G / LTE / GPS / поддержка 2х SIM-карт (Nano-SIM) / Android 10 (Q) / 6000 мА*ч</p>
+      <div class="btn_close_2">X</div>
+    </div>
+    <div class="pane_3">
+      <h3>Мобильный телефон Apple iPhone 11 Pro 64GB Space Gray Официальная гарантия</h3> 
+      <p>Экран (5.8", OLED (Super Retina XDR), 2436x1125) / Apple A13 Bionic / основная тройная камера: 12 Мп + 12 Мп + 12 Мп, фронтальная камера: 12 Мп / RAM 4 ГБ / 64 ГБ встроенной памяти / 3G / LTE / GPS / ГЛОНАСС / Nano-SIM / iOS 13</p>
+      <div class="btn_close_3">X</div>
+    </div>
+  </div>
+
+
+  <script>
+    const block1 = document.querySelector ('.pane_1');
+    const block2 = document.querySelector ('.pane_2');
+    const block3 = document.querySelector ('.pane_3');
+
+    const clickBtn1 = document.querySelector ('.btn_close_1');
+    const clickBtn2 = document.querySelector ('.btn_close_2');
+    const clickBtn3 = document.querySelector ('.btn_close_3');
+
+    clickBtn1.addEventListener('click', function (){
+      block1.remove()
+    });
+
+    clickBtn2.addEventListener('click', function (){
+      block2.remove()
+    });
+
+    clickBtn3.addEventListener('click', function (){
+      block3.remove()
+    });
+  </script>
+
+</body>
+</html>
