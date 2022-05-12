@@ -13,5 +13,5 @@ $(document).ready(function () {
     $(".popup-board").removeClass("popup-board-active");
     $(".page").removeClass("page-dimmed");
   });
-  
+
 });
