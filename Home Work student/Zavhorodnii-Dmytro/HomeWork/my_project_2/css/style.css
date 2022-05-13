@@ -34,10 +34,6 @@ color: #0082F3;
 .foot_text :first-child {
     margin-right: 40px;
 }
-.header .foot_text  :nth-child(2) {
-    color: #676770;
-}
-
 
 .foot_text p {
     font-family: 'Open Sans', sans-serif;
@@ -91,14 +87,15 @@ color: #FFFFFF;
 
 .btn_sign {
     margin-right: 20px;
-    background: #69B9FF;
+    border: 1px solid #FFFFFF;
+    /* background: #69B9FF; */
 border-radius: 4px;
 padding: 11px 30px 13px 30px;
 }
 
 .main_page .buttons .btn_sign:hover {
     background: none;
-    border: 1px solid #FFFFFF;
+    background: #69B9FF;
 
 }
 .main_page .buttons .btn_learn:hover {
