@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>target</title>
+</head>
+<style>
+	body{
+		background: #A156E5;
+	}
+	.mainButton{
+		padding-top: 70px;
+	}
+	.container{
+		max-width: 970px;
+		margin: 0 auto;
+	}
+	.btn{
+		outline: none;
+		border: none;
+		font-size: 15px;
+		background: #333;
+		color: #fff;
+		text-align: center;
+		display: inline-block;
+		padding: 10px 25px;
+		cursor: pointer;
+		transition: 0.3s;
+	}
+	.btn:hover{
+		background: #0E053C;
+	}
+	h2{
+		color: #fff;
+		font-size: 20px;
+	}
+</style>
+<body>
+	<div class="mainButton">
+	  <div class="container">
+		  <h2>Event Target</h2>
+		<button data-num="1" class="btn">Click <span>1</span></button>
+		<button data-num="2" class="btn">Click <span>2</span></button>
+		<button data-num="3" class="btn">Click <span>3</span></button>
+		<button data-num="4" class="btn">Click <span>4</span></button>
+	  </div>
+		<img src="https://hubs.ua/wp-content/uploads/2021/08/prapor_ukrajini_500x317-640x360.jpg" />
+	</div>
+</body>
+	<script>
+		let buttons = document.querySelectorAll('.btn');
+		
+		let handClick = function(event){
+			console.log("target :", event.target);
+			console.log("currentTarget :", event.currentTarget);
+			console.log(event.target === event.currentTarget);
+			//event.stopPropagation();
+		}
+		
+		window.addEventListener('click', function(event){
+			console.log('Window Click', event.target)
+		},{capture:true});
+		
+		
+		buttons.forEach(button =>{
+			button.addEventListener('click',handClick);
+		});
+		
+		let img = document.querySelector('img');
+		img.addEventListener('mouseover', function(event){
+			console.log(event.currentTarget);
+			console.log(this);
+		});
+		
+	
+	</script>
+</html>

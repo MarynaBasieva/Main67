@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW36</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--1)   Створити 3 картинки 
+        2) через подію target отримати title 
+        3) При кліку на картинку виводимо title  під картинкою
+        4) Через css красиво оформити-->
+
+        <div class="container">
+            <div class="block">
+                <img class="img" src="https://i.ytimg.com/vi/QvMvkRtwSDk/maxresdefault.jpg" alt="mountains" title="Карпати">
+                <p></p>
+            </div>
+            <div class="block">
+                <img  class="img" src="https://usm.media/wp-content/uploads/2022/03/o_1f8v0pp7aq4kfo0d9g1isp1120bn-2.jpeg" alt="sea" title="Санжейка Чорне море">
+                <p></p>
+            </div>
+            <div class="block">
+                <img  class="img" src="https://tamtour.com.ua/local/image/440/009/ua241.jpg" alt="city" title="Моє місто Вінниця"> 
+                <p></p>
+            </div>
+           
+        </div>
+    
+</body>
+<script>
+    
+    let images = document.querySelectorAll(".img");
+    images.forEach(function (item) {
+      item.addEventListener("click", (i) => {
+        i.target.nextElementSibling.textContent = i.target.title;
+        i.target.nextElementSibling.classList.toggle('active');    
+      })
+    });
+
+</script>
+	
+</html>

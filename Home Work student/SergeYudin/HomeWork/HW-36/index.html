@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>HW-36</title>
+  </head>
+  <style>
+    img {
+      height: auto;
+      width: 20%;
+    }
+
+    body {
+      text-align: center;
+    }
+
+    .img-container {
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      column-gap: 10px;
+      margin-bottom: 40px;
+    }
+  </style>
+  <body>
+    <div class="img-container">
+      <img src="./first-bird.jpg" title="first bird" id="img" />
+      <img src="./second_bird.jpg" title="second bird" id="img" />
+      <img src="./third_bird.jpg" title="third-bird" id="img" />
+    </div>
+    <span id="title"></span>
+    <script>
+      let title = document.getElementById("title");
+      document.querySelectorAll("img").forEach((item) => {
+        item.addEventListener("click", (event) => {
+          title.innerHTML = event.target.title;
+        });
+      });
+    </script>
+  </body>
+</html>

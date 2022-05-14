@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW36</title>
+</head>
+<style>
+    body{
+        background: url(https://www.agrodostatok.com.ua/wp-content/uploads/2016/01/%D0%9F%D1%88%D0%B5%D0%BD%D0%B8%D1%86%D1%8F-2.jpg);
+        background-size: 100%;
+    }
+    img{
+        width: 400px;
+        height: 300px;
+        margin: 10px;
+        transition: 0.5s;
+        
+    }
+    img:hover{
+        transform: scale(1.05)
+    }
+    .container{
+        max-width: 1300px;
+        margin: 0 auto;
+        display: flex;
+        text-align: center;
+    }
+    span{
+        margin: 0 auto;
+        font-size: 35px;
+        font-family: sans-serif;
+        display: block;
+    }
+</style>
+<body>
+    <div class="container">
+        <div>
+            <img id="img1" title="Київ" src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2018/07/19/14/kiev-landscape.jpg?quality=75&width=982&height=726&auto=webp">
+            <span id="title1"></span>
+        </div>
+        <div>
+            <img id="img2" title="Львів" src="https://d2bgjx2gb489de.cloudfront.net/gbb-blogs/wp-content/uploads/2021/12/17091121/Lviv-square-2.jpg">
+            <span id="title2"></span>
+        </div>
+        <div>
+            <img id="img3" title="Одеса" src="https://www.dobovo.com/blog/wp-content/uploads/2018/05/odessa-1-825x510.jpg">
+            <span id="title3"></span>
+        </div>
+       
+    </div>
+    
+</body>
+<script>
+    let img1 = document.getElementById('img1');
+    let img2 = document.getElementById('img2');
+    let img3 = document.getElementById('img3');
+    
+    img1.addEventListener('click', (event) => {
+        title1.innerHTML = event.target.title;
+    });
+
+    img2.addEventListener('click', (event) => {
+        title2.innerHTML = event.target.title;
+    });
+
+    img3.addEventListener('click', (event) => {
+        title3.innerHTML = event.target.title;
+    });
+</script>
+</html>
