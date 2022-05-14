@@ -44,6 +44,15 @@ img {
   max-width: 100%;
 }
 
+input {
+  outline: none;
+}
+
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 .main-title {
   font-family: "Mont";
   font-size: 30px;
@@ -191,6 +200,14 @@ header .order-consult {
 header .order-consult:hover {
   -webkit-transform: scale(1.03);
           transform: scale(1.03);
+}
+
+header .responce-btn {
+  display: none;
+}
+
+header .responce-wraper {
+  width: 70%;
 }
 
 .custom-form {
@@ -365,6 +382,74 @@ header .order-consult:hover {
   width: 100%;
 }
 
+.custom-btn-wraper {
+  max-width: 270px;
+}
+
+.custom-btn-wraper a.btn {
+  display: block;
+  position: relative;
+  width: 125px;
+  height: 70px;
+  border-radius: 20px;
+  margin: 0 5px 10px;
+}
+
+.custom-btn-wraper a.btn img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.owl-carousel {
+  position: relative;
+  max-width: 898px;
+}
+
+.owl-carousel .owl-nav {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 100%;
+}
+
+.owl-carousel .owl-nav .owl-prev {
+  position: absolute;
+  left: -70px;
+  height: 63px;
+  width: 63px;
+  border-radius: 50%;
+  background-color: #43aaff;
+  background-image: url(../img/arrowDown.svg);
+  background-size: 40%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  -webkit-box-shadow: inset 0px 4px 10px rgba(255, 255, 255, 0.3);
+          box-shadow: inset 0px 4px 10px rgba(255, 255, 255, 0.3);
+}
+
+.owl-carousel .owl-nav .owl-next {
+  position: absolute;
+  right: -70px;
+  height: 63px;
+  width: 63px;
+  border-radius: 50%;
+  background-color: #43aaff;
+  background-image: url(../img/arrowDown.svg);
+  background-size: 40%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  -webkit-box-shadow: inset 0px 4px 10px rgba(255, 255, 255, 0.3);
+          box-shadow: inset 0px 4px 10px rgba(255, 255, 255, 0.3);
+}
+
 .cleaning {
   padding-bottom: 127px;
   background-image: url(../img/bottom-header-bg.png), url(../img/header-bg.jpg);
@@ -465,6 +550,7 @@ header .order-consult:hover {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right bottom;
+  height: 90%;
 }
 
 .calculation .block .block-desc {
@@ -481,6 +567,7 @@ header .order-consult:hover {
 }
 
 .calculation .cl {
+  background-color: #ffc24d;
   background-image: url(../img/cleaning.png);
 }
 
@@ -489,7 +576,8 @@ header .order-consult:hover {
 }
 
 .calculation .pay {
-  background-image: url(../img/payment.png);
+  background-color: #ffc24d;
+  background-image: url(../img/result.png);
 }
 
 .calculation .cat-list {
@@ -501,8 +589,8 @@ header .order-consult:hover {
 }
 
 .calculation .cat-list .cat-item a {
-  display: inline-block;
-  padding: 28px 37px;
+  display: block;
+  padding: 28px 30px;
   font-family: "Mont";
   font-size: 14px;
   font-weight: 400;
@@ -511,6 +599,7 @@ header .order-consult:hover {
   background-color: #fff;
   -webkit-transition: 0.4s;
   transition: 0.4s;
+  max-width: 300px;
 }
 
 .calculation .cat-list .cat-item a:hover {
@@ -535,7 +624,7 @@ header .order-consult:hover {
   background-image: url(../img/calculator.png);
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: 120%;
+  background-size: cover;
   border-radius: 100px;
   overflow: hidden;
 }
@@ -648,57 +737,40 @@ header .order-consult:hover {
           box-shadow: inset 0px 4px 10px rgba(255, 255, 255, 0.3);
 }
 
-.calculation .calc-container .reword-form .chk-wraper {
-  margin-left: 20px;
-  margin-bottom: 119px;
+.calculation .calc-container .reword-form .polici-wraper {
+  max-width: 275px;
+  margin-bottom: 120px;
 }
 
-.calculation .calc-container .reword-form .chk {
-  display: inline-block;
-  position: relative;
-  overflow: hidden;
-  margin-right: 10px;
-  border-radius: 4px;
-  height: 13px;
-  width: 13px;
-}
-
-.calculation .calc-container .reword-form .chk:checked:after {
-  position: absolute;
-  content: "";
-  height: inherit;
-  width: inherit;
-  background-color: #ffc24d;
-  mix-blend-mode: lighten;
-}
-
-.calculation .calc-container .reword-form .checkBox-text {
-  font-family: "Mont";
-  font-size: 11px;
-  line-height: 16px;
-  font-weight: 600;
-  color: #ffffff;
-  max-width: 256px;
-  text-align: left;
-}
-
-.calculation .calc-container .reword-form .checkBox-text a {
+.calculation .calc-container .reword-form .polici-text {
   color: #fff;
-  text-decoration: underline;
 }
 
-.calculation .calc-container .phone-img {
+.calculation .calc-container .reword-form .polici-text a {
+  color: #fff;
+}
+
+.calculation .calc-container .img-wraper {
+  position: relative;
+}
+
+.calculation .calc-container .img-wraper:after {
   position: absolute;
-  bottom: 0;
-  -o-object-fit: cover;
-  object-fit: cover;
-  height: 78%;
+  top: 0;
+  left: 0;
+  content: "";
+  height: 100%;
+  width: 100%;
+  background-image: url(../img/phone.png);
+  background-size: 120%;
+  background-repeat: no-repeat;
+  background-position: center bottom;
 }
 
 .services {
   position: relative;
   top: -2px;
-  padding: 136px 0 161px;
+  padding: 136px 0 131px;
   background-color: #f2f9ff;
 }
 
@@ -735,7 +807,16 @@ header .order-consult:hover {
   -webkit-box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
   border-radius: 30px;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+.services .block img {
+  height: 200px;
+  -o-object-fit: cover;
+  object-fit: cover;
   margin-bottom: 20px;
+  width: 100%;
 }
 
 .services .block .services-block-title {
@@ -760,6 +841,8 @@ header .order-consult:hover {
   -webkit-box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
   border-radius: 30px;
+  margin-top: 20px;
+  margin-bottom: 30px;
 }
 
 .services .personal-block img {
@@ -767,7 +850,7 @@ header .order-consult:hover {
 }
 
 .services .personal-block .text-wraper {
-  padding: 44px 40px 56px 0;
+  padding: 44px 20px 56px 40px;
 }
 
 .services .personal-block .text-wraper .block-title {
@@ -791,6 +874,7 @@ header .order-consult:hover {
   background: #43aaff;
   border-radius: 30px;
   padding: 35px;
+  margin-top: 20px;
   margin-bottom: 105px;
 }
 
@@ -830,20 +914,29 @@ header .order-consult:hover {
 }
 
 .services .our-work .block {
+  position: relative;
   background-color: #ffffff;
   -webkit-box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
   border-radius: 30px;
   margin-bottom: 30px;
+  overflow-y: hidden;
 }
 
 .services .our-work .block img {
+  position: relative;
+  top: 0;
+  left: 0;
   display: block;
-  margin: 0 auto 20px auto;
   -o-object-fit: cover;
   object-fit: cover;
   -o-object-position: center;
   object-position: center;
+}
+
+.services .our-work .block .waranty-img {
+  -o-object-fit: contain;
+  object-fit: contain;
 }
 
 .services .our-work .block .main-block-title {
@@ -852,7 +945,7 @@ header .order-consult:hover {
   font-weight: bold;
   line-height: 25px;
   margin-bottom: 14px;
-  padding: 0 35px;
+  padding: 0 25px;
 }
 
 .services .our-work .block .main-block-desc {
@@ -860,7 +953,7 @@ header .order-consult:hover {
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
-  padding: 0 35px 35px;
+  padding: 0 25px 35px;
 }
 
 .services .our-work .consalting-container {
@@ -868,7 +961,7 @@ header .order-consult:hover {
   border-radius: 30px;
   background-image: url(../img/consalting.jpg);
   background-position: center center;
-  background-size: 110%;
+  background-size: cover;
 }
 
 .services .our-work .consalting-container .consalting-title {
@@ -923,38 +1016,14 @@ header .order-consult:hover {
   margin-bottom: 25px;
 }
 
-.services .our-work .consalting-container .consalting-form .chk {
-  display: inline-block;
-  position: relative;
-  overflow: hidden;
-  margin-right: 10px;
-  border-radius: 4px;
-  height: 13px;
-  width: 13px;
+.services .our-work .consalting-container .consalting-form .polici-wraper {
+  max-width: 100%;
 }
 
-.services .our-work .consalting-container .consalting-form .chk:checked:after {
-  position: absolute;
-  content: "";
-  height: inherit;
-  width: inherit;
-  background-color: #ffc24d;
-  mix-blend-mode: lighten;
-}
-
-.services .our-work .consalting-container .consalting-form .cons-label-text {
-  font-family: "Mont";
-  font-size: 11px;
-  line-height: 16px;
-  font-weight: 600;
+.services .our-work .consalting-container .consalting-form .polici-wraper .polici-text,
+.services .our-work .consalting-container .consalting-form .polici-wraper a {
+  max-width: 100%;
   color: #ffffff;
-  max-width: 495px;
-  text-align: left;
-}
-
-.services .our-work .consalting-container .consalting-form .cons-label-text a {
-  color: #fff;
-  text-decoration: underline;
 }
 
 .type {
@@ -984,7 +1053,7 @@ header .order-consult:hover {
   -webkit-box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
   border-radius: 30px;
-  padding: 35px 60px 29px;
+  padding: 35px 40px 29px;
   margin-bottom: 20px;
 }
 
@@ -1199,6 +1268,88 @@ header .order-consult:hover {
   text-align: left;
 }
 
+.type .pricelist-baner .custom-btn-wraper a.btn {
+  background-color: #fff;
+}
+
+.type .pricelist-baner .price-form {
+  max-width: 275px;
+}
+
+.type .pricelist-baner .price-form input {
+  width: 100%;
+  border: none;
+  border-radius: 100px;
+  margin-bottom: 13px;
+}
+
+.type .pricelist-baner .price-form input[type="text"] {
+  padding: 25px 39px;
+  background-color: #fff;
+  font-family: "Mont";
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 600;
+  color: #959a9d;
+}
+
+.type .pricelist-baner .price-form input[type="text"]::-webkit-input-placeholder {
+  padding-left: 39px;
+  font-family: "Mont";
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 600;
+  color: #959a9d;
+}
+
+.type .pricelist-baner .price-form input[type="text"]:-ms-input-placeholder {
+  padding-left: 39px;
+  font-family: "Mont";
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 600;
+  color: #959a9d;
+}
+
+.type .pricelist-baner .price-form input[type="text"]::-ms-input-placeholder {
+  padding-left: 39px;
+  font-family: "Mont";
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 600;
+  color: #959a9d;
+}
+
+.type .pricelist-baner .price-form input[type="text"]::placeholder {
+  padding-left: 39px;
+  font-family: "Mont";
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 600;
+  color: #959a9d;
+}
+
+.type .pricelist-baner .price-form input[type="submit"] {
+  font-family: "Mont";
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 150%;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+  background: #ffc24d;
+  -webkit-box-shadow: inset 0px 4px 10px rgba(255, 255, 255, 0.3);
+          box-shadow: inset 0px 4px 10px rgba(255, 255, 255, 0.3);
+  border-radius: 100px;
+  padding: 25px 15px;
+}
+
+.type .pricelist-baner .polici-wraper .polici-text,
+.type .pricelist-baner .polici-wraper a {
+  color: #fff;
+}
+
 .examples {
   position: relative;
   top: -5px;
@@ -1268,12 +1419,60 @@ header .order-consult:hover {
 
 .slider {
   position: relative;
-  top: -5px;
+  top: -7px;
   background-image: url(../img/green-bg-bt.svg);
   background-position: center top;
   background-size: 100%;
   background-repeat: no-repeat;
   padding: 130px 0;
+}
+
+.slider .photo-wraper {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.slider .photo-wraper .line {
+  position: absolute;
+  top: 0;
+  left: 49.5%;
+  height: 100%;
+  width: 3px;
+  background-color: #fff;
+  z-index: 4;
+  cursor: move;
+}
+
+.slider .photo-wraper .line::after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  height: 63px;
+  width: 63px;
+  background-image: url(../img/slider-clip-btn.svg);
+  background-size: 100%;
+}
+
+.slider .photo-wraper .photo-before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+.slider .photo-wraper .photo-after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 3;
 }
 
 .slider .main-title {
@@ -1288,12 +1487,14 @@ header .order-consult:hover {
 }
 
 .slider .slider-wraper {
+  position: relative;
   max-width: 1024px;
   background: #ffffff;
   -webkit-box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
   border-radius: 30px;
   overflow: hidden;
+  padding: 10px;
 }
 
 .slider .slider-wraper .text-wraper {
@@ -1324,6 +1525,7 @@ header .order-consult:hover {
 }
 
 .slider .slider-wraper .text-wraper .slide-btn {
+  display: block;
   font-family: "Mont";
   font-size: 14px;
   line-height: 21px;
@@ -1603,53 +1805,6 @@ header .order-consult:hover {
   text-align: center;
 }
 
-.sertificats .owl-carousel {
-  position: relative;
-  max-width: 898px;
-}
-
-.sertificats .owl-carousel .owl-nav {
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  width: 100%;
-}
-
-.sertificats .owl-carousel .owl-nav .owl-prev {
-  position: absolute;
-  left: -70px;
-  height: 63px;
-  width: 63px;
-  border-radius: 50%;
-  background-color: #43aaff;
-  background-image: url(../img/arrowDown.svg);
-  background-size: 40%;
-  background-position: center center;
-  background-repeat: no-repeat;
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
-  -webkit-box-shadow: inset 0px 4px 10px rgba(255, 255, 255, 0.3);
-          box-shadow: inset 0px 4px 10px rgba(255, 255, 255, 0.3);
-}
-
-.sertificats .owl-carousel .owl-nav .owl-next {
-  position: absolute;
-  right: -70px;
-  height: 63px;
-  width: 63px;
-  border-radius: 50%;
-  background-color: #43aaff;
-  background-image: url(../img/arrowDown.svg);
-  background-size: 40%;
-  background-position: center center;
-  background-repeat: no-repeat;
-  -webkit-transform: rotate(-90deg);
-          transform: rotate(-90deg);
-  -webkit-box-shadow: inset 0px 4px 10px rgba(255, 255, 255, 0.3);
-          box-shadow: inset 0px 4px 10px rgba(255, 255, 255, 0.3);
-}
-
 .order {
   padding: 60px 0 0;
 }
@@ -1812,12 +1967,24 @@ header .order-consult:hover {
   color: #4b5258;
   overflow: hidden;
   height: 0;
-  margin: 0;
+  opacity: 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.question .question-list .show .question-desc {
+  height: auto;
+  opacity: 1;
+}
+
+.question .question-list .show:hover:after {
+  -webkit-transform: rotate(-180deg) translateY(-50%) scale(1.05);
+          transform: rotate(-180deg) translateY(-50%) scale(1.05);
 }
 
 .question .question-list .show:after {
-  -webkit-transform: rotate(-180deg), translateY(-50%);
-          transform: rotate(-180deg), translateY(-50%);
+  -webkit-transform: rotate(-180deg) translateY(-50%);
+          transform: rotate(-180deg) translateY(-50%);
 }
 
 footer {
@@ -1835,5 +2002,102 @@ footer .footer-text {
 
 footer img {
   margin: 0 5px;
+}
+
+@media screen and (max-width: 995px) {
+  header .logo {
+    z-index: 5;
+  }
+  header .responcive-btn {
+    display: block;
+    height: 50px;
+    width: 50px;
+    border: 3px solid #43aaff;
+    border-radius: 5px;
+    z-index: 5;
+    background: transparent;
+    padding: 10px 5px;
+  }
+  header .responcive-btn .btn-row {
+    height: 3px;
+    width: 100%;
+    background-color: #43aaff;
+    border-radius: 3px;
+    margin-bottom: 8px;
+  }
+  header .responce-wraper {
+    padding: 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    min-height: 100vh;
+    width: 100vw;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: #fff;
+    z-index: 2;
+  }
+  header .hide {
+    position: absolute;
+    -webkit-transform: translateX(-300%);
+            transform: translateX(-300%);
+  }
+  .calculation .cat-list .cat-item {
+    width: 100%;
+  }
+  .calculation .cat-list .cat-item a {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .calculation .calc-container {
+    padding: 40px 0;
+  }
+  .calculation .calc-container .phone-img,
+  .calculation .calc-container .img-wraper {
+    display: none;
+  }
+  .services .block {
+    padding-top: 20px;
+  }
+  .services .block img {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 2px solid #43aaff;
+    margin: 0px auto 20px auto;
+    display: block;
+  }
+  .services .block .services-block-title,
+  .services .block .services-block-desc {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .services .our-work .consalting-container {
+    padding: 42px 20px;
+  }
+  .services .our-work .consalting-container .consalting-form {
+    width: 100%;
+  }
+  .services .our-work .consalting-container .consalting-form input[type="text"] {
+    margin: 0;
+    width: 60%;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  .services .our-work .consalting-container .consalting-form input[type="submit"] {
+    margin: 0;
+    width: 40%;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */
