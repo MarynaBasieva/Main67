@@ -3,6 +3,11 @@
         max-width: 1110px;
     }
 }
+@media (max-width: 1550px) {
+.zero_waste_photo{
+    text-align: center;
+}
+}
 @media (max-width: 1080px) {
    
 .nav-menu ul.sub-menu li a{
@@ -90,4 +95,5 @@ text-align: center;
     .parenst_header_icon{
         display: none;
     }
+    
 }

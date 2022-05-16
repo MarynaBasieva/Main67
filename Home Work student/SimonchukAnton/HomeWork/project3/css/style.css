@@ -28,7 +28,7 @@ width: 100%;
 
 .parents_responsive_menu {
     display: flex;
-    justify-content: flex-start;
+    justify-content: flex-end;
     }
 .sub_menu{
     list-style: none;
@@ -546,6 +546,31 @@ font-size: 32px;
     padding-top: 55px;
 }
 /* FAQ */
+/* Modal */
+.modal-body form {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+    .modal-body form input {
+        margin-bottom: 10px;
+        padding: 5px;
+        border-radius: 5px;
+        border: none;
+        background: #EEEFF1;
+    }
+
+    .modal-body form textarea {
+        margin-bottom: 5px;
+        padding: 5px;
+        padding-bottom: 50px;
+        border-radius: 10px;
+        border: none;
+        resize: none;
+        background: #EEEFF1;
+    }
+/* Modal */
 /* footer  */
 
 .Icon{

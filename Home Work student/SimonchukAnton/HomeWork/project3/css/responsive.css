@@ -3,3 +3,70 @@
         max-width: 1110px;
     }
 }
+@media (min-width: 1440px) {
+    .Phone_photography_calendar1 {
+        left: 165px;
+    }
+}
+@media (max-width: 1199px) {
+    .Dark_photo_parents1:after {
+        left: 180px;
+    }
+}
+@media (max-width: 991px) {
+.The_future{
+    padding-bottom: 50px;
+}
+.responsive_menu {
+    display: block;
+    text-align: left;
+    color:rgb(113, 21, 199);
+    font-size: 20px;
+}
+.responsive_menu:hover{
+    color: rgb(182,85,247);
+    color: linear-gradient(144deg, rgba(182,85,247,1) 13%, 
+    rgba(166,101,241,1) 28.000000000000004%, rgba(103,155,232,1) 85%);
+}
+
+.nav_menu {
+    display: none;
+}
+.header_buttom_parents{
+    display: none;
+}
+.Dark_photo_parents1:after {
+    left: 50px;
+}
+}
+@media (max-width: 825px) {
+    .Phone_photography_calendar1{
+        left:94px;
+    }
+    .Speed{
+        padding-bottom: 40px;
+    }
+
+}
+
+@media (max-width: 576px) {
+.logo_perents{
+    display: none;
+}
+.responsive_menu {
+    font-size: 30px;
+}
+.The_future {
+    text-align: center;
+}
+.The_future_parents {
+    padding-top: 140px;
+    text-align: center;
+}
+.Phone_photography_calendar1 {
+    right: 90px;
+}
+.Dark_photo_parents1:after {
+    left: -15px;
+}
+}

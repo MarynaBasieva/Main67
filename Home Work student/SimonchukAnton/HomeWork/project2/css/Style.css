@@ -14,7 +14,7 @@ body {
 }
 /*Header*/
 header {
-    background: url(../img/header.png) no-repeat;
+    background: url(../img/header.png) ;
     
     background-position: center bottom;
   
