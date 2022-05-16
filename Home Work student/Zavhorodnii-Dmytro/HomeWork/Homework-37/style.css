@@ -1,0 +1,177 @@
+body {
+    background: url(leaves.webp);
+    overflow-x:hidden;
+}
+
+.main-block {
+    padding-top: 30px;
+}
+.navigation {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.nav-list {
+    display: flex;
+    justify-content:space-around;
+}
+
+.nav-list li a {
+    font-style: normal;
+font-weight: 400;
+font-size: 21px;
+line-height: 155%;
+color: #086CF9;
+margin-right: 40px;
+text-decoration: none;
+transition: 0.8s;
+}
+
+.nav-list li {
+    list-style-type: none;
+}
+
+.btn {
+    background: #8be16f;
+    color: #086CF9;
+    border-radius: 5px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 2px 52px 2px 52px;
+    border: none;
+    cursor: pointer;
+    transition: 0.9s;
+}
+
+.btn:hover {
+    color: aliceblue;
+    background-color: rgb(33, 36, 73);
+}
+
+.nav-list li .active {
+    color: rgb(48, 214, 56);
+}
+
+
+.modal_window {
+    width: 400px;
+    margin: 0 auto;
+    display: none;
+    z-index: 999;
+}
+
+.cross {
+    width: 30px;
+    height: 30px;
+}
+
+.main_text {
+    display: inline-block;
+}
+
+.main_form input {
+    width: 80%;
+    padding: 10px 10px 10px 10px;
+    color: rgb(14, 185, 185);
+    margin: 0 auto;
+    margin-bottom: 30px;
+    border: 2px solid #4777d1;
+    border-radius: 5px;
+}
+
+.main_form button {
+    width: 80%;
+    padding: 10px 10px 10px 10px;
+    border: 2px solid #19cc31;
+    border-radius: 5px;
+    margin-left: 10px;
+    transition: 0.8s;
+}
+.main_form button:hover {
+    background-color: rgb(95, 218, 58);
+}
+
+.window_main_text {
+    position: relative;
+}
+
+.window_main_text a {
+    position: absolute;
+    top: 17px;
+    right: 57px;
+}
+
+
+.content {
+    position: relative;
+}
+
+.form_window {
+    padding: 20px;
+    width: 350px;
+    background: #086CF9;
+    border-radius: 5px;
+    position: absolute;
+    top: 315px;
+    right: -398px;
+}
+
+.form_window h2 {
+    font-size: 30px;
+    text-align: center;
+}
+
+form input {
+    width: 90%;
+    padding: 13px 16px 13px 16px;
+    margin-bottom: 20px;
+}
+form button {
+    width: 90%;
+    background: #25bac1;
+    color: #0e0f10;
+    border-radius: 5px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 13px 16px 13px 16px;
+    border: none;
+    cursor: pointer;
+    transition: 0.9s;
+    text-align: center;
+    margin-left: 16px;
+}
+
+form button:hover {
+    background: #4777d1;
+}
+
+.open::after {
+    content: 'Open';
+    position: absolute;
+    top: 1%;
+    left: -73px;
+    width: 110px;
+    transform: rotate(-90deg);
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: #1e0606;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.active_two {
+    padding: 20px;
+    width: 350px;
+    background: #086CF9;
+    border-radius: 5px;
+    position: absolute;
+    top: 315px;
+    right: -398px;
+}
