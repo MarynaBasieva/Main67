@@ -1,0 +1,122 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url('bg.jpg');
+}
+a{
+    text-decoration: none;
+}
+.header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 20px;
+}
+.menu{
+    background-color: blueviolet;
+}
+.item{
+    text-decoration: none;
+    list-style: none;
+    padding-right: 60px;
+}
+.item a{
+    color: #fff;
+    transition: 0.3s;
+}
+.item a:hover{
+    color: crimson;
+}
+.sub-menu{
+    display: flex;
+}
+.btn-register a{
+    background: rgb(30, 30, 201);
+    padding: 15px 40px;
+    transition: 0.3s;
+    color: #fff;
+}
+.btn-register a:hover{
+    color: crimson;
+    border-radius: 20px;
+}
+.select a{
+    color: crimson;
+}
+.modalWin{
+    display: none;
+    z-index: 6;
+    width: 400px;
+    margin: 0 auto;
+}
+.register{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.registerForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.registerForm input{
+    margin-bottom: 20px;
+    padding: 20px;
+}
+.registerForm button{
+    background: rgb(30, 30, 201);
+    padding: 15px 40px;
+    transition: 0.3s;
+    color: #fff;
+    border: none;
+    outline: none;
+}
+.registerForm button:hover{
+    border: 2px red solid;
+    outline: none;
+}
+
+.callBack{
+    position: fixed;
+    right: 0;
+    bottom: 250px;
+    display: flex;
+}
+
+.btnOpen{
+    width: 50px;
+    height: 200px;
+    position: relative;
+    background: black;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.btnOpen::after{
+    content: 'HELP';
+    position: absolute;
+    top: 51%;
+    left: -7px;
+    width: 73px;
+    transform: rotate(-90deg);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+    color: #fff;
+    letter-spacing: 12px;
+}
+.helpForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.preForm{
+    display: none;
+    background: red;
+    height: 200px;
+    margin-top: 16px;
+
+}
+.helpForm input{
+    margin-bottom: 25px;
+    padding: 5px;
+}
