@@ -38,7 +38,13 @@ img {
 	height: auto;
 	max-width: 100%;
 }
-
+input {
+	outline: none;
+}
+body {
+	max-width: 100%;
+	overflow-x: hidden;
+}
 //    customize elements
 // custom text
 .main-title {
@@ -180,6 +186,12 @@ header {
 		&:hover {
 			transform: scale(1.03);
 		}
+	}
+	.responce-btn {
+		display: none;
+	}
+	.responce-wraper {
+		width: 70%;
 	}
 }
 .custom-form {
@@ -341,7 +353,63 @@ header {
 	bottom: -1px;
 	width: 100%;
 }
-
+// custom buttons
+.custom-btn-wraper {
+	max-width: 270px;
+	a.btn {
+		display: block;
+		position: relative;
+		width: 125px;
+		height: 70px;
+		border-radius: 20px;
+		margin: 0 5px 10px;
+		img {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+	}
+}
+// custom slider
+.owl-carousel {
+	position: relative;
+	max-width: 898px;
+	.owl-nav {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		width: 100%;
+		.owl-prev {
+			position: absolute;
+			left: -70px;
+			height: 63px;
+			width: 63px;
+			border-radius: 50%;
+			background-color: #43aaff;
+			background-image: url(../img/arrowDown.svg);
+			background-size: 40%;
+			background-position: center center;
+			background-repeat: no-repeat;
+			transform: rotate(90deg);
+			box-shadow: inset 0px 4px 10px rgba(255, 255, 255, 0.3);
+		}
+		.owl-next {
+			position: absolute;
+			right: -70px;
+			height: 63px;
+			width: 63px;
+			border-radius: 50%;
+			background-color: #43aaff;
+			background-image: url(../img/arrowDown.svg);
+			background-size: 40%;
+			background-position: center center;
+			background-repeat: no-repeat;
+			transform: rotate(-90deg);
+			box-shadow: inset 0px 4px 10px rgba(255, 255, 255, 0.3);
+		}
+	}
+}
 // cleaning
 .cleaning {
 	padding-bottom: 127px;
@@ -425,6 +493,7 @@ header {
 		background-size: contain;
 		background-repeat: no-repeat;
 		background-position: right bottom;
+		height: 90%;
 		.block-desc {
 			font-family: "Mont";
 			font-size: 14px;
@@ -438,13 +507,15 @@ header {
 		background-image: url(../img/devices.png);
 	}
 	.cl {
+		background-color: #ffc24d;
 		background-image: url(../img/cleaning.png);
 	}
 	.hand {
 		background-image: url(../img/hands.png);
 	}
 	.pay {
-		background-image: url(../img/payment.png);
+		background-color: #ffc24d;
+		background-image: url(../img/result.png);
 	}
 	.cat-list {
 		background: #ffffff;
@@ -453,8 +524,8 @@ header {
 		margin-bottom: 18px;
 		.cat-item {
 			a {
-				display: inline-block;
-				padding: 28px 37px;
+				display: block;
+				padding: 28px 30px;
 				font-family: "Mont";
 				font-size: 14px;
 				font-weight: 400;
@@ -462,6 +533,7 @@ header {
 				color: #4b5258;
 				background-color: #fff;
 				transition: 0.4s;
+				max-width: 300px;
 				&:hover {
 					background-color: #43aaff;
 					color: #fff;
@@ -485,7 +557,7 @@ header {
 		background-image: url(../img/calculator.png);
 		background-repeat: no-repeat;
 		background-position: center center;
-		background-size: 120%;
+		background-size: cover;
 		border-radius: 100px;
 		overflow: hidden;
 		.form-title {
@@ -587,56 +659,39 @@ header {
 				margin-bottom: 15px;
 				box-shadow: inset 0px 4px 10px rgba(255, 255, 255, 0.3);
 			}
-			.chk-wraper {
-				margin-left: 20px;
-				margin-bottom: 119px;
+			.polici-wraper {
+				max-width: 275px;
+				margin-bottom: 120px;
 			}
-			.chk {
-				display: inline-block;
-				position: relative;
-				overflow: hidden;
-				margin-right: 10px;
-				border-radius: 4px;
-				height: 13px;
-				width: 13px;
-				&:checked {
-					&:after {
-						position: absolute;
-						content: "";
-						height: inherit;
-						width: inherit;
-						background-color: #ffc24d;
-						mix-blend-mode: lighten;
-					}
-				}
-			}
-			.checkBox-text {
-				font-family: "Mont";
-				font-size: 11px;
-				line-height: 16px;
-				font-weight: 600;
-				color: #ffffff;
-				max-width: 256px;
-				text-align: left;
+
+			.polici-text {
+				color: #fff;
 				a {
 					color: #fff;
-					text-decoration: underline;
 				}
 			}
 		}
-		.phone-img {
-			position: absolute;
-			bottom: 0;
-			-o-object-fit: cover;
-			object-fit: cover;
-			height: 78%;
+		.img-wraper {
+			position: relative;
+			&:after {
+				position: absolute;
+				top: 0;
+				left: 0;
+				content: "";
+				height: 100%;
+				width: 100%;
+				background-image: url(../img/phone.png);
+				background-size: 120%;
+				background-repeat: no-repeat;
+				background-position: center bottom;
+			}
 		}
 	}
 }
 .services {
 	position: relative;
 	top: -2px;
-	padding: 136px 0 161px;
+	padding: 136px 0 131px;
 	background-color: #f2f9ff;
 
 	.btn-know {
@@ -668,7 +723,16 @@ header {
 		background-color: #ffffff;
 		box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
 		border-radius: 30px;
-		margin-bottom: 20px;
+		overflow: hidden;
+
+		margin-bottom: 30px;
+		img {
+			height: 200px;
+			-o-object-fit: cover;
+			object-fit: cover;
+			margin-bottom: 20px;
+			width: 100%;
+		}
 		.services-block-title {
 			font-family: "Mont";
 			font-size: 18px;
@@ -689,11 +753,13 @@ header {
 		background-color: #fff;
 		box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
 		border-radius: 30px;
+		margin-top: 20px;
+		margin-bottom: 30px;
 		img {
 			margin-right: 45px;
 		}
 		.text-wraper {
-			padding: 44px 40px 56px 0;
+			padding: 44px 20px 56px 40px;
 			.block-title {
 				font-family: "Mont";
 				font-size: 18px;
@@ -715,6 +781,7 @@ header {
 		background: #43aaff;
 		border-radius: 30px;
 		padding: 35px;
+		margin-top: 20px;
 		margin-bottom: 105px;
 		.attentive-title {
 			font-family: "Mont";
@@ -749,42 +816,54 @@ header {
 			max-width: 552px;
 			margin-bottom: 16px;
 		}
-
 		.block {
+			position: relative;
 			background-color: #ffffff;
 			box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
 			border-radius: 30px;
 			margin-bottom: 30px;
+
+			overflow-y: hidden;
 			img {
+				position: relative;
+				top: 0;
+				left: 0;
 				display: block;
-				margin: 0 auto 20px auto;
+
 				-o-object-fit: cover;
 				object-fit: cover;
 				-o-object-position: center;
 				object-position: center;
 			}
+			.waranty-img {
+				-o-object-fit: contain;
+				object-fit: contain;
+			}
+
 			.main-block-title {
 				font-family: "Mont";
 				font-size: 18px;
 				font-weight: bold;
 				line-height: 25px;
 				margin-bottom: 14px;
-				padding: 0 35px;
+				padding: 0 25px;
 			}
 			.main-block-desc {
 				font-family: "Mont";
 				font-size: 14px;
 				font-weight: 400;
 				line-height: 18px;
-				padding: 0 35px 35px;
+				padding: 0 25px 35px;
 			}
 		}
+
 		.consalting-container {
 			padding: 42px 49px 59px;
 			border-radius: 30px;
 			background-image: url(../img/consalting.jpg);
 			background-position: center center;
-			background-size: 110%;
+			background-size: cover;
+
 			.consalting-title {
 				font-family: "Mont";
 				font-size: 20px;
@@ -833,36 +912,12 @@ header {
 					margin-left: 10px;
 					margin-bottom: 25px;
 				}
-				.chk {
-					display: inline-block;
-					position: relative;
-					overflow: hidden;
-					margin-right: 10px;
-					border-radius: 4px;
-					height: 13px;
-					width: 13px;
-					&:checked {
-						&:after {
-							position: absolute;
-							content: "";
-							height: inherit;
-							width: inherit;
-							background-color: #ffc24d;
-							mix-blend-mode: lighten;
-						}
-					}
-				}
-				.cons-label-text {
-					font-family: "Mont";
-					font-size: 11px;
-					line-height: 16px;
-					font-weight: 600;
-					color: #ffffff;
-					max-width: 495px;
-					text-align: left;
+				.polici-wraper {
+					max-width: 100%;
+					.polici-text,
 					a {
-						color: #fff;
-						text-decoration: underline;
+						max-width: 100%;
+						color: #ffffff;
 					}
 				}
 			}
@@ -893,7 +948,7 @@ header {
 
 		box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
 		border-radius: 30px;
-		padding: 35px 60px 29px;
+		padding: 35px 40px 29px;
 		margin-bottom: 20px;
 		img {
 			display: block;
@@ -1081,6 +1136,89 @@ header {
 			max-width: 436px;
 			text-align: left;
 		}
+		.custom-btn-wraper {
+			a.btn {
+				background-color: #fff;
+			}
+		}
+		.price-form {
+			max-width: 275px;
+			input {
+				width: 100%;
+				border: none;
+				border-radius: 100px;
+				margin-bottom: 13px;
+			}
+			input[type="text"] {
+				padding: 25px 39px;
+				background-color: #fff;
+				font-family: "Mont";
+				font-size: 14px;
+				line-height: 14px;
+				font-weight: 600;
+				color: #959a9d;
+				&::-webkit-input-placeholder {
+					padding-left: 39px;
+					font-family: "Mont";
+					font-size: 14px;
+					line-height: 14px;
+					font-weight: 600;
+					color: #959a9d;
+				}
+				&::-moz-placeholder {
+					padding-left: 39px;
+					font-family: "Mont";
+					font-size: 14px;
+					line-height: 14px;
+					font-weight: 600;
+					color: #959a9d;
+				}
+				&:-ms-input-placeholder {
+					padding-left: 39px;
+					font-family: "Mont";
+					font-size: 14px;
+					line-height: 14px;
+					font-weight: 600;
+					color: #959a9d;
+				}
+				&::-ms-input-placeholder {
+					padding-left: 39px;
+					font-family: "Mont";
+					font-size: 14px;
+					line-height: 14px;
+					font-weight: 600;
+					color: #959a9d;
+				}
+				&::placeholder {
+					padding-left: 39px;
+					font-family: "Mont";
+					font-size: 14px;
+					line-height: 14px;
+					font-weight: 600;
+					color: #959a9d;
+				}
+			}
+			input[type="submit"] {
+				font-family: "Mont";
+				font-weight: 600;
+				font-size: 13px;
+				line-height: 150%;
+				letter-spacing: 0.15em;
+				text-transform: uppercase;
+				text-align: center;
+				color: #ffffff;
+				background: #ffc24d;
+				box-shadow: inset 0px 4px 10px rgba(255, 255, 255, 0.3);
+				border-radius: 100px;
+				padding: 25px 15px;
+			}
+		}
+		.polici-wraper {
+			.polici-text,
+			a {
+				color: #fff;
+			}
+		}
 	}
 }
 .examples {
@@ -1139,12 +1277,54 @@ header {
 }
 .slider {
 	position: relative;
-	top: -5px;
+	top: -7px;
 	background-image: url(../img/green-bg-bt.svg);
 	background-position: center top;
 	background-size: 100%;
 	background-repeat: no-repeat;
 	padding: 130px 0;
+	.photo-wraper {
+		height: 100%;
+		width: 100%;
+		position: relative;
+		border-radius: 30px;
+		overflow: hidden;
+		.line {
+			position: absolute;
+			top: 0;
+			left: 49.5%;
+			height: 100%;
+			width: 3px;
+			background-color: #fff;
+			z-index: 4;
+			cursor: move;
+			&::after {
+				position: absolute;
+				content: "";
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				height: 63px;
+				width: 63px;
+				background-image: url(../img/slider-clip-btn.svg);
+				background-size: 100%;
+			}
+		}
+		.photo-before {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			z-index: 2;
+		}
+		.photo-after {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			z-index: 3;
+		}
+	}
 	.main-title {
 		text-align: center;
 		margin-bottom: 10px;
@@ -1155,11 +1335,13 @@ header {
 		margin-bottom: 54px;
 	}
 	.slider-wraper {
+		position: relative;
 		max-width: 1024px;
 		background: #ffffff;
 		box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
 		border-radius: 30px;
 		overflow: hidden;
+		padding: 10px;
 		.text-wraper {
 			padding: 60px 50px;
 			.slide-title {
@@ -1183,6 +1365,7 @@ header {
 				}
 			}
 			.slide-btn {
+				display: block;
 				font-family: "Mont";
 				font-size: 14px;
 				line-height: 21px;
@@ -1420,50 +1603,14 @@ header {
 }
 .sertificats {
 	padding: 50px 0 30px;
+	width: 100%;
+	overflow: hidden;
 	.main-title {
 		text-align: center;
 		margin-bottom: 10px;
 	}
 	.main-desc {
 		text-align: center;
-	}
-	.owl-carousel {
-		position: relative;
-		max-width: 898px;
-		.owl-nav {
-			position: absolute;
-			top: 50%;
-			transform: translateY(-50%);
-			width: 100%;
-			.owl-prev {
-				position: absolute;
-				left: -70px;
-				height: 63px;
-				width: 63px;
-				border-radius: 50%;
-				background-color: #43aaff;
-				background-image: url(../img/arrowDown.svg);
-				background-size: 40%;
-				background-position: center center;
-				background-repeat: no-repeat;
-				transform: rotate(90deg);
-				box-shadow: inset 0px 4px 10px rgba(255, 255, 255, 0.3);
-			}
-			.owl-next {
-				position: absolute;
-				right: -70px;
-				height: 63px;
-				width: 63px;
-				border-radius: 50%;
-				background-color: #43aaff;
-				background-image: url(../img/arrowDown.svg);
-				background-size: 40%;
-				background-position: center center;
-				background-repeat: no-repeat;
-				transform: rotate(-90deg);
-				box-shadow: inset 0px 4px 10px rgba(255, 255, 255, 0.3);
-			}
-		}
 	}
 }
 .order {
@@ -1604,12 +1751,22 @@ header {
 				color: #4b5258;
 				overflow: hidden;
 				height: 0;
-				margin: 0;
+				opacity: 0;
+				transition: 0.4s;
 			}
 		}
 		.show {
+			.question-desc {
+				height: auto;
+				opacity: 1;
+			}
+			&:hover {
+				&:after {
+					transform: rotate(-180deg) translateY(-50%) scale(1.05);
+				}
+			}
 			&:after {
-				transform: rotate(-180deg), translateY(-50%);
+				transform: rotate(-180deg) translateY(-50%);
 			}
 		}
 	}
@@ -1627,5 +1784,145 @@ footer {
 	}
 	img {
 		margin: 0 5px;
+	}
+}
+
+@media screen and (max-width: 995px) {
+	header {
+		.logo {
+			z-index: 5;
+		}
+		.responcive-btn {
+			display: block;
+			height: 50px;
+			width: 50px;
+			border: 3px solid #43aaff;
+			border-radius: 5px;
+			z-index: 5;
+			background: transparent;
+			padding: 10px 5px;
+			.btn-row {
+				height: 3px;
+				width: 100%;
+				background-color: #43aaff;
+				border-radius: 3px;
+				margin-bottom: 8px;
+			}
+		}
+		.responce-wraper {
+			padding: 80px 10px;
+			position: fixed;
+			top: 0;
+			left: 0;
+			transform: translateX(0);
+			min-height: 100vh;
+			width: 100vw;
+			transition: 0.4s;
+			flex-direction: column;
+			background-color: #fff;
+			z-index: 2;
+		}
+		.hide {
+			position: absolute;
+			transform: translateX(-300%);
+		}
+	}
+	.calculation {
+		.cat-list {
+			.cat-item {
+				width: 100%;
+				a {
+					width: 100%;
+					margin: 0 auto;
+					text-align: center;
+				}
+			}
+		}
+		.calc-container {
+			padding: 40px 0;
+			.phone-img,
+			.img-wraper {
+				display: none;
+			}
+		}
+	}
+	.services {
+		.block {
+			padding-top: 20px;
+			img {
+				height: 200px;
+				width: 200px;
+				border-radius: 50%;
+				border: 2px solid #43aaff;
+				margin: 0px auto 20px auto;
+				display: block;
+			}
+			.services-block-title,
+			.services-block-desc {
+				text-align: center;
+			}
+		}
+	}
+}
+@media screen and (max-width: 768px) {
+	.calculation .cat-list {
+		border-radius: 0;
+		.cat-item {
+			border-radius: 0;
+			a {
+				display: block;
+				border-radius: 0;
+				min-width: 100%;
+			}
+		}
+	}
+	.examples .example-list {
+		border-radius: 0;
+		.example-item {
+			border-radius: 0;
+			min-width: 100%;
+			text-align: center;
+		}
+	}
+}
+@media screen and (max-width: 560px) {
+	.cleaning {
+		.btn {
+			padding: 15px;
+		}
+	}
+	.calculation .calc-container {
+		border-radius: 30px;
+	}
+	.type .pricelist-baner {
+		padding: 20px 15px;
+		.form-title,
+		.form-desc {
+			text-align: center;
+		}
+	}
+}
+@media screen and(max-width: 440px) {
+	.services {
+		.our-work {
+			.consalting-container {
+				padding: 42px 20px;
+				.consalting-form {
+					width: 100%;
+					input[type="text"] {
+						margin: 0;
+						width: 60%;
+						border-top-right-radius: 0;
+						border-bottom-right-radius: 0;
+					}
+					input[type="submit"] {
+						margin: 0;
+						width: 40%;
+						border-top-left-radius: 0;
+						border-bottom-left-radius: 0;
+					}
+				}
+			}
+		}
 	}
 }

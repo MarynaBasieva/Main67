@@ -23,19 +23,26 @@
 						<div class="logo">
 							<a href="#"><img src="img/logo.svg" alt="logo icon" /></a>
 						</div>
-						<div class="contact-phones">
-							<a href="tel:+3808-800-700-60-50">8-800-700-60-50</a>
-							<p class="work-deays">Пн-Вс: 9:00 - 21:00</p>
-						</div>
-						<div class="messanger d-inline-flex">
-							<p class="contact-text">Быстрая связь с нами в мессенджерах:</p>
-
-							<div class="ico-wrap">
-								<a href="https://telegram.me/+3808-800-700-60-50"><img src="img/telegram.svg" alt="telegram icon" /></a
-								><a href="viber://add?number=8-800-700-60-50"><img src="img/viber.svg" alt="viber icon" /></a>
+						<button class="responcive-btn" id="toggle-btn">
+							<div class="btn-row"></div>
+							<div class="btn-row"></div>
+							<div class="btn-row"></div>
+						</button>
+						<div class="responce-wraper d-flex justify-content-between align-items-center hide" id="toggle-menu">
+							<div class="contact-phones">
+								<a href="tel:+3808-800-700-60-50">8-800-700-60-50</a>
+								<p class="work-deays">Пн-Вс: 9:00 - 21:00</p>
 							</div>
+							<div class="messanger d-inline-flex">
+								<p class="contact-text">Быстрая связь с нами в мессенджерах:</p>
+
+								<div class="ico-wrap">
+									<a href="https://telegram.me/+3808-800-700-60-50"><img src="img/telegram.svg" alt="telegram icon" /></a
+									><a href="viber://add?number=8-800-700-60-50"><img src="img/viber.svg" alt="viber icon" /></a>
+								</div>
+							</div>
+							<button class="order-consult">Заказать консультацию</button>
 						</div>
-						<button class="order-consult">Заказать консультацию</button>
 					</div>
 				</header>
 				<div class="row">
@@ -54,28 +61,28 @@
 		<section class="calculation">
 			<div class="container">
 				<div class="row">
-					<div class="col-12 col-sm-6 col-md-3">
+					<div class="col-12 col-md-6 col-lg-3">
 						<div class="block bl dev">
 							<p class="block-desc">Немецкое и Американское оборудование</p>
 						</div>
 					</div>
-					<div class="col-12 col-sm-6 col-md-3">
+					<div class="col-12 col-md-6 col-lg-3">
 						<div class="block rd cl">
 							<p class="block-desc">Гипоаллергенные безопасные моющие</p>
 						</div>
 					</div>
-					<div class="col-12 col-sm-6 col-md-3">
+					<div class="col-12 col-md-6 col-lg-3">
 						<div class="block bl hand">
 							<p class="block-desc">Соблюдаем санитарные нормы</p>
 						</div>
 					</div>
-					<div class="col-12 col-sm-6 col-md-3">
+					<div class="col-12 col-md-6 col-lg-3">
 						<div class="block rd pay">
 							<p class="block-desc">Оплата по результату после уборки</p>
 						</div>
 					</div>
 				</div>
-				<ul class="d-flex justify-content-between flex-wrap cat-list">
+				<ul class="d-flex justify-content-between flex-column flex-lg-row align-items-center flex-wrap cat-list">
 					<li class="cat-item"><a href="#">Услуги</a></li>
 					<li class="cat-item"><a href="#">Рассчитать стоимость</a></li>
 					<li class="cat-item"><a href="#">Почему мы</a></li>
@@ -87,7 +94,7 @@
 				<p class="main-desc">Это бесплатно и ни к чему не обязывает!</p>
 				<div class="calc-container">
 					<div class="row">
-						<div class="col-12 col-md-7 d-flex flex-column align-items-center">
+						<div class="col-12 col-lg-7 d-flex flex-column align-items-center">
 							<h3 class="form-title">Отлично! Ваши ответы получены, менеджер уже приступает к расчёту</h3>
 							<p class="form-desc">Где вам удобнее получить расчёт?</p>
 							<div class="d-flex justify-content-between btn-wraper">
@@ -96,13 +103,13 @@
 							</div>
 							<form action="#" class="reword-form">
 								<input type="text" placeholder="Введите ваш телефон" /><input type="submit" value="Получить расчёт и бонусы" />
-								<div class="d-flex align-items-center polici-wraper">
+								<div class="d-flex mx-auto align-items-center polici-wraper">
 									<input type="checkbox" id="chkPol" class="polici" />
 									<label for="chkPol" class="polici-text">Нажимая на кнопку вы соглашаетесь с условиями <a href="#">Политики конфиденциальности</a></label>
 								</div>
 							</form>
 						</div>
-						<div class="col-12 col-md-5"><img src="img/phone.png" alt="phone with hand" class="phone-img" /></div>
+						<div class="col-lg-5 img-wraper"></div>
 					</div>
 				</div>
 			</div>
@@ -113,7 +120,7 @@
 				<h2 class="main-title"><span class="main-sm-title"> 70% клининговых компаний в СПБ, зачастую </span> подвергают своих клиентов рискам и дискомфорту.</h2>
 				<p class="main-desc mx-auto">И вот некоторые факты, с которыми вы можете столкнуться, обращаясь в другие компании:</p>
 				<div class="row">
-					<div class="col-12 col-md-4">
+					<div class="col-12 col-lg-4">
 						<div class="block">
 							<img src="img/black-cacheDesc.png" alt="black cachedesc" />
 							<h3 class="services-block-title">Чёрная касса</h3>
@@ -123,7 +130,7 @@
 							</p>
 						</div>
 					</div>
-					<div class="col-12 col-md-4">
+					<div class="col-12 col-lg-4">
 						<div class="block">
 							<img src="img/damage.png" alt="damage things" />
 							<h3 class="services-block-title">Порча имущества</h3>
@@ -132,7 +139,7 @@
 							</p>
 						</div>
 					</div>
-					<div class="col-12 col-md-4">
+					<div class="col-12 col-lg-4">
 						<div class="block">
 							<img src="img/imitation.png" alt="imitation" />
 							<h3 class="services-block-title">Имитация деятельности</h3>
@@ -143,7 +150,7 @@
 					</div>
 					<div class="col-12 col-md-8">
 						<div class="personal-block d-flex">
-							<img src="img/timer.png" alt="timer image" />
+							<img src="img/timer.png" alt="timer image" class="d-none d-lg-block" />
 							<div class="text-wraper">
 								<h3 class="block-title">Безответственность персонала</h3>
 								<p class="block-desc">Клинеры приезжают раньше/позже назначенного времени, что доставляет дискомфорт хозяину. Не соблюдают инструктаж владельца квартиры и нарушают бытовой порядок.</p>
@@ -166,8 +173,8 @@
 					<a href="#" class="profesional-btn mx-auto">Обращаясь за помощью к нам, вы можете быть спокойны за качество и ваш комфорт</a>
 					<div class="row">
 						<div class="col-12 col-md-4">
-							<div class="block">
-								<img src="img/discontImg.png" alt="discount image" />
+							<div class="block d-flex flex-column">
+								<img src="img/colaboration.png" alt="discount image" />
 								<h3 class="main-block-title">Честное сотрудничество</h3>
 								<p class="main-block-desc">
 									Заранее рассчитаем стоимость услуг, и закрепляем наше сотрудничество договором. Оплата исключительно по факту выполнения. Вы проверяете результат и платите тогда, когда он вас удовлетворяет.
@@ -175,7 +182,7 @@
 							</div>
 						</div>
 						<div class="col-12 col-md-4">
-							<div class="block">
+							<div class="block d-flex flex-column">
 								<img src="img/care-clining.png" alt="care clining" />
 								<h3 class="main-block-title">Бережные моющие</h3>
 								<p class="main-block-desc">
@@ -184,8 +191,8 @@
 							</div>
 						</div>
 						<div class="col-12 col-md-4">
-							<div class="block">
-								<img src="img/waranty.png" alt="waranty image" />
+							<div class="block d-flex flex-column">
+								<img src="img/waranty.png" alt="waranty image" class="waranty-img" />
 								<h3 class="main-block-title">Гарантия качества</h3>
 								<p class="main-block-desc">На объектах работают от 2 и более опытных клинеров. Комплексная уборка делается в соответствии с нормами качества. Блеск от потолка до пола!</p>
 							</div>
@@ -195,7 +202,6 @@
 						<h3 class="consalting-title">Оставьте заявку на консультацию и расчёт стоимости БЕСПЛАТНО</h3>
 						<form action="#" class="consalting-form">
 							<div class="d-flex"><input type="text" placeholder="Введите ваш телефон" /><input type="submit" value="Жду звонка" /></div>
-
 							<div class="d-flex polici-wraper">
 								<input type="checkbox" id="consaltingChk" class="polici" /><label for="consaltingChk" class="polici-text"
 									>Нажимая на кнопку вы соглашаетесь с условиями <a href="#">Политики конфиденциальности</a>
@@ -211,7 +217,7 @@
 				<h2 class="main-sm-title"><span class="mark">6 видов уборки</span> под любую Вашу задачу</h2>
 				<p class="main-desc mx-auto">Наши услуги подойдут для семейных пар с детьми, владельцев животных, аллергиков, арендодателей</p>
 				<div class="row">
-					<div class="col-12 col-md-4">
+					<div class="col-12 col-md-6 col-lg-4">
 						<div class="block">
 							<img src="img/general.png" alt="general" class="mx-auto" />
 							<h3 class="block-title">Гнеральная уборка</h3>
@@ -221,7 +227,7 @@
 							<a href="#" class="more-link mx-auto">Подробнее</a>
 						</div>
 					</div>
-					<div class="col-12 col-md-4">
+					<div class="col-12 col-md-6 col-lg-4">
 						<div class="block">
 							<img src="img/after-repeair.png" alt="after repair" class="mx-auto" />
 							<h3 class="block-title">Уборка после ремонта</h3>
@@ -231,7 +237,7 @@
 							<a href="#" class="more-link mx-auto">Подробнее</a>
 						</div>
 					</div>
-					<div class="col-12 col-md-4">
+					<div class="col-12 col-md-6 col-lg-4">
 						<div class="block">
 							<img src="img/useful.png" alt="useful clianing" class="mx-auto" />
 							<h3 class="block-title">Поддерживающая уборка</h3>
@@ -241,7 +247,7 @@
 							<a href="#" class="more-link mx-auto">Подробнее</a>
 						</div>
 					</div>
-					<div class="col-12 col-md-4">
+					<div class="col-12 col-md-6 col-lg-4">
 						<div class="block">
 							<img src="img/window-cleaning.png" alt="window-cleaning" class="mx-auto" />
 							<h3 class="block-title">Мойка окон и понорам</h3>
@@ -250,7 +256,7 @@
 							<a href="#" class="btn mx-auto">от 500 ₽</a><a href="#" class="btn-active mx-auto">Рассчитать стоимость</a><a href="#" class="more-link mx-auto">Подробнее</a>
 						</div>
 					</div>
-					<div class="col-12 col-md-4">
+					<div class="col-12 col-md-6 col-lg-4">
 						<div class="block">
 							<img src="img/safe.png" alt="safe clining" class="mx-auto" />
 							<h3 class="block-title">Защитное покрытие</h3>
@@ -259,7 +265,7 @@
 							<a href="#" class="btn mx-auto">от 500 ₽</a><a href="#" class="btn-active mx-auto">Рассчитать стоимость</a><a href="#" class="more-link mx-auto">Подробнее</a>
 						</div>
 					</div>
-					<div class="col-12 col-md-4">
+					<div class="col-12 col-md-6 col-lg-4">
 						<div class="block">
 							<img src="img/expres-cleaning.png" alt="expres cleaning" class="mx-auto" />
 							<h3 class="block-title">Экспресс уборка</h3>
@@ -273,8 +279,8 @@
 				<h2 class="main-title mx-auto">Посмотрите дополнительные услуги</h2>
 				<p class="main-desc mx-auto">Устраним любой каприз в уборке</p>
 				<div class="row additional">
-					<div class="col-12 col-sm-6 col-md-4">
-						<div class="block d-flex justify-content-center align-items-center">
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="block d-flex justify-content-between align-items-center">
 							<img src="img/frige-clianing.png" alt="frige cleaning" class="additional-serv-img" />
 							<div class="text-wraper">
 								<p class="additional-serv-desc">Мойка холодильника</p>
@@ -282,8 +288,8 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-12 col-sm-6 col-md-4">
-						<div class="block d-flex justify-content-center align-items-center">
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="block d-flex justify-content-between align-items-center">
 							<img src="img/microwawe-clianing.png" alt="microwawe clining" class="additional-serv-img" />
 							<div class="text-wraper">
 								<p class="additional-serv-desc">Мойка микроволновки</p>
@@ -291,8 +297,8 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-12 col-sm-6 col-md-4">
-						<div class="block d-flex justify-content-center align-items-center">
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="block d-flex justify-content-between align-items-center">
 							<img src="img/citchen-claening.png" alt=" citchen cleaning" class="additional-serv-img" />
 							<div class="text-wraper">
 								<p class="additional-serv-desc">Мойка варочной плиты</p>
@@ -300,8 +306,8 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-12 col-sm-6 col-md-4">
-						<div class="block d-flex justify-content-center align-items-center">
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="block d-flex justify-content-between align-items-center">
 							<img src="img/oven-clianing.png" alt="oven cleaning" class="additional-serv-img" />
 							<div class="text-wraper">
 								<p class="additional-serv-desc">Мойка духовки</p>
@@ -309,8 +315,8 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-12 col-sm-6 col-md-4">
-						<div class="block d-flex justify-content-center align-items-center">
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="block d-flex justify-content-between align-items-center">
 							<img src="img/vintilation-cleaning.png" alt=" vintilation clening" class="additional-serv-img" />
 							<div class="text-wraper">
 								<p class="additional-serv-desc">Мойка вытяжки</p>
@@ -318,8 +324,8 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-12 col-sm-6 col-md-4">
-						<div class="block d-flex justify-content-center align-items-center">
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="block d-flex justify-content-between align-items-center">
 							<img src="img/balcony-cleaning.png" alt="balcony cleaning" class="additional-serv-img" />
 							<div class="text-wraper">
 								<p class="additional-serv-desc">Убраться на балконе</p>
@@ -327,8 +333,8 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-12 col-sm-6 col-md-4">
-						<div class="block d-flex justify-content-center align-items-center">
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="block d-flex justify-content-between align-items-center">
 							<img src="img/ceiling-clianing.png" alt="ceilenin cleaning" class="additional-serv-img" />
 							<div class="text-wraper">
 								<p class="additional-serv-desc">Мойка потолков</p>
@@ -336,8 +342,8 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-12 col-sm-6 col-md-4">
-						<div class="block d-flex justify-content-center align-items-center">
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="block d-flex justify-content-between align-items-center">
 							<img src="img/walll-clianing.png" alt="wall clianing" class="additional-serv-img" />
 							<div class="text-wraper">
 								<p class="additional-serv-desc">Мойка стен</p>
@@ -345,8 +351,8 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-12 col-sm-6 col-md-4">
-						<div class="block d-flex justify-content-center align-items-center">
+					<div class="col-12 col-md-6 col-lg-4">
+						<div class="block d-flex justify-content-between align-items-center">
 							<img src="img/change-bad.png" alt="change bad" class="additional-serv-img" />
 							<div class="text-wraper">
 								<p class="additional-serv-desc">Поменяем постельное</p>
@@ -363,13 +369,13 @@
 				</div>
 				<div class="pricelist-baner">
 					<div class="col-12 col-md-7 d-flex flex-column align-items-center">
-						<h3 class="form-title">Хотите приценится? Получите актуальный прайс-лист услуг всего в 1 клик</h3>
-						<p class="form-desc">Где вам удобнее получить расчёт?</p>
-						<div class="d-flex justify-content-between btn-wraper">
-							<a href="https://telegram.me/+3808-800-700-60-50"><img src="img/telegram.svg" alt="telegram icon" /></a
-							><a href="viber://add?number=8-800-700-60-50"><img src="img/viber.svg" alt="viber icon" /></a>
+						<h3 class="form-title mx-auto ml-md-0">Хотите приценится? Получите актуальный прайс-лист услуг всего в 1 клик</h3>
+						<p class="form-desc mx-auto ml-md-0">Где вам удобнее получить расчёт?</p>
+						<div class="d-flex justify-content-between custom-btn-wraper mx-auto ml-md-0">
+							<a href="https://telegram.me/+3808-800-700-60-50" class="btn"><img src="img/telegram.svg" alt="telegram icon" /></a
+							><a href="viber://add?number=8-800-700-60-50" class="btn"><img src="img/viber.svg" alt="viber icon" /></a>
 						</div>
-						<form action="#" class="custom-form">
+						<form action="#" class="price-form mx-auto ml-md-0">
 							<input type="text" placeholder="Введите ваш телефон" /><input type="submit" value="Получить расчёт и бонусы" />
 							<div class="d-flex align-items-center polici-wraper">
 								<input type="checkbox" id="chk" class="polici" />
@@ -383,8 +389,8 @@
 		<section class="examples">
 			<h2 class="main-title">Посмотрите наглядно как мы делаем уборку</h2>
 			<p class="main-desc mx-auto">Так выглядит уборка в глазах наших клинеров</p>
-			<ul class="example-list mx-auto d-flex justify-content-between">
-				<li class="example-item active-item"><a href="#">Cпальная комната</a></li>
+			<ul class="example-list mx-auto d-flex flex-column flex-md-row justify-content-between">
+				<li class="example-item"><a href="#">Cпальная комната</a></li>
 				<li class="example-item"><a href="#">Кухня</a></li>
 				<li class="example-item"><a href="#">Ванная</a></li>
 				<li class="example-item"><a href="#">Прихожая</a></li>
@@ -396,10 +402,16 @@
 		<section class="slider">
 			<h2 class="main-title">Исполним уборку любой сложности</h2>
 			<p class="main-desc mx-auto">Посмотрите как преображается квартира, даже в самых сложных ситуациях</p>
-			<div class="slider-wraper mx-auto owl-slider">
+			<div class="slider-wraper mx-auto owl-carousel" id="owl-carousel">
 				<div class="slide">
 					<div class="row">
-						<div class="col-12 col-md-6"><img src="" alt="" /><img src="" alt="" /></div>
+						<div class="col-12 col-md-6">
+							<div class="photo-wraper">
+								<img src="img/photo-before.png" alt="before cleaning" class="photo-before" />
+								<div class="line"></div>
+								<img src="img/photo-after.png" alt="after cleaning" class="photo-after" />
+							</div>
+						</div>
 						<div class="col-12 col-md-6 text-wraper">
 							<h3 class="slide-title">Объект: однокомнатная квартира</h3>
 							<p class="slide-desc">Пакет: <span class="desc"> Генеральная уборка</span></p>
@@ -413,42 +425,56 @@
 				</div>
 				<div class="slide">
 					<div class="row">
-						<div class="col-12 col-md-6"><img src="" alt="" /><img src="" alt="" /></div>
 						<div class="col-12 col-md-6">
+							<div class="photo-wraper">
+								<img src="img/photo-before.png" alt="before cleaning" class="photo-before" />
+								<div class="line"></div>
+								<img src="img/photo-after.png" alt="after cleaning" class="photo-after" />
+							</div>
+						</div>
+						<div class="col-12 col-md-6 text-wraper">
 							<h3 class="slide-title">Объект: однокомнатная квартира</h3>
-							<p class="slide-desc">Пакет: Генеральная уборка</p>
-							<p class="slide-desc">Площадь: 32 м2</p>
-							<p class="slide-desc">Сложные загрязнения: ржавчина, сильный налёт на ванне</p>
-							<p class="slide-desc">Время работы: 4 часа</p>
-							<p class="slide-desc">Бригада: 1 человека</p>
+							<p class="slide-desc">Пакет: <span class="desc"> Генеральная уборка</span></p>
+							<p class="slide-desc">Площадь: <span class="desc"> 32 м2</span></p>
+							<p class="slide-desc">Сложные загрязнения: <span class="desc"> ржавчина, сильный налёт на ванне</span></p>
+							<p class="slide-desc">Время работы: <span class="desc"> 4 часа</span></p>
+							<p class="slide-desc">Бригада: <span class="desc"> 1 человека</span></p>
 							<a href="" class="slide-btn">Стоимость: 3 456 ₽</a>
 						</div>
 					</div>
 				</div>
 				<div class="slide">
 					<div class="row">
-						<div class="col-12 col-md-6"><img src="" alt="" /><img src="" alt="" /></div>
 						<div class="col-12 col-md-6">
+							<div class="photo-wraper">
+								<img src="img/photo-before.png" alt="before cleaning" class="photo-before" />
+								<input class="line"></input>
+								<img src="img/photo-after.png" alt="after cleaning" class="photo-after" />
+							</div>
+						</div>
+						<div class="col-12 col-md-6 text-wraper">
 							<h3 class="slide-title">Объект: однокомнатная квартира</h3>
-							<p class="slide-desc">Пакет: Генеральная уборка</p>
-							<p class="slide-desc">Площадь: 32 м2</p>
-							<p class="slide-desc">Сложные загрязнения: ржавчина, сильный налёт на ванне</p>
-							<p class="slide-desc">Время работы: 4 часа</p>
-							<p class="slide-desc">Бригада: 1 человека</p>
+							<p class="slide-desc">Пакет: <span class="desc"> Генеральная уборка</span></p>
+							<p class="slide-desc">Площадь: <span class="desc"> 32 м2</span></p>
+							<p class="slide-desc">Сложные загрязнения: <span class="desc"> ржавчина, сильный налёт на ванне</span></p>
+							<p class="slide-desc">Время работы: <span class="desc"> 4 часа</span></p>
+							<p class="slide-desc">Бригада: <span class="desc"> 1 человека</span></p>
 							<a href="" class="slide-btn">Стоимость: 3 456 ₽</a>
 						</div>
 					</div>
 				</div>
 				<div class="slide">
 					<div class="row">
-						<div class="col-12 col-md-6"><img src="" alt="" /><img src="" alt="" /></div>
 						<div class="col-12 col-md-6">
+							<div class="photo-wraper"><img src="img/photo-before.png" alt="before cleaning" class="photo-before" /><img src="img/photo-after.png" alt="after cleaning" class="photo-after" /></div>
+						</div>
+						<div class="col-12 col-md-6 text-wraper">
 							<h3 class="slide-title">Объект: однокомнатная квартира</h3>
-							<p class="slide-desc">Пакет: Генеральная уборка</p>
-							<p class="slide-desc">Площадь: 32 м2</p>
-							<p class="slide-desc">Сложные загрязнения: ржавчина, сильный налёт на ванне</p>
-							<p class="slide-desc">Время работы: 4 часа</p>
-							<p class="slide-desc">Бригада: 1 человека</p>
+							<p class="slide-desc">Пакет: <span class="desc"> Генеральная уборка</span></p>
+							<p class="slide-desc">Площадь: <span class="desc"> 32 м2</span></p>
+							<p class="slide-desc">Сложные загрязнения: <span class="desc"> ржавчина, сильный налёт на ванне</span></p>
+							<p class="slide-desc">Время работы: <span class="desc"> 4 часа</span></p>
+							<p class="slide-desc">Бригада: <span class="desc"> 1 человека</span></p>
 							<a href="" class="slide-btn">Стоимость: 3 456 ₽</a>
 						</div>
 					</div>
@@ -485,12 +511,12 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-12 col-md-2">
-						<div class="inventar-item d-flex flex-column align-items-center">
+						<div class="inventar-item mx-auto d-flex flex-column align-items-center">
 							<img src="img/type.png" alt="teprw" />
 							<h3 class="inventar-title">5 видов моющих средств</h3>
 							<p class="inventar-desc">подходят для всех типов поверхностей, от паркета до кафеля</p>
 						</div>
-						<div class="inventar-item d-flex flex-column align-items-center">
+						<div class="inventar-item mx-auto d-flex flex-column align-items-center">
 							<img src="img/masks.png" alt="mask" />
 							<h3 class="inventar-title">Маски и перчатки</h3>
 							<p class="inventar-desc">Соблюдаем меры санитарной безопасности</p>
@@ -506,12 +532,12 @@
 						</form>
 					</div>
 					<div class="col-12 col-md-2">
-						<div class="inventar-item d-flex flex-column align-items-center">
+						<div class="inventar-item mx-auto d-flex flex-column align-items-center">
 							<img src="img/type-devices.png" alt="devices" />
 							<h3 class="inventar-title">8 видов оборудования</h3>
 							<p class="inventar-desc">Профессиональная техника для создания чистоты на уровне блеска</p>
 						</div>
-						<div class="inventar-item d-flex flex-column align-items-center">
+						<div class="inventar-item mx-auto d-flex flex-column align-items-center">
 							<img src="img/cleaning-inventar.png" alt="cleaning" />
 							<h3 class="inventar-title">Швабры и салфетки</h3>
 							<p class="inventar-desc">Из различной ткани, для эффективной уборки всех типов поверхностей</p>
@@ -560,7 +586,7 @@
 			<h2 class="main-title">Сертификаты</h2>
 			<p class="main-desc">Моющий средства от проверенных производителей</p>
 			<div class="container">
-				<ul class="owl-carousel owl-theme mx-auto">
+				<ul class="owl-carousel owl-theme mx-auto" id="owl-slider">
 					<li class="item"><img src="img/certificat-1.jpg" alt="certificat" /></li>
 					<li class="item"><img src="img/certificate-2.jpg" alt="second sertificat" /></li>
 					<li class="item"><img src="img/certificate-3.jpg" alt="third certificate" /></li>
@@ -598,7 +624,7 @@
 			<h2 class="main-title">Часто задаваемые вопросы</h2>
 			<div class="container">
 				<ul class="question-list">
-					<li class="question-item">
+					<li class="question-item show">
 						<h3 class="question-title">Что нужно, чтобы подготовиться к уборке?</h3>
 						<p class="question-desc">
 							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia nihil quibusdam corrupti perferendis quisquam quidem fuga numquam cumque voluptatibus vel, sapiente beatae quis dolorum
@@ -637,7 +663,7 @@
 			</div>
 		</section>
 		<footer>
-			<div class="container d-flex justify-content-between align-items-center">
+			<div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
 				<a href="index.html" class="logo"><img src="img/logo.svg" alt="logotype" /></a>
 				<a href="#">Реквизиты</a>
 				<a href="#">Политика конфиденциальности</a>

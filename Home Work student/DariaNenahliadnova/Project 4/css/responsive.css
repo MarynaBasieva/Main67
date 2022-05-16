@@ -1,0 +1,344 @@
+@media (min-width: 1440px){
+    .for_page .container {
+        max-width: 1232px;
+    }
+}
+
+@media (max-width: 1199px){
+    .responsive-menu{
+        display: block;
+    }
+    .register{
+        display: none;
+    }
+    .responsive-menu i{
+        font-size: 40px;
+        color: #656293;
+        padding-right: 20px; 
+    }
+    .responsive-menu i:hover{
+        color: rgb(101, 98, 147, 0.5);
+        transform: scale(1.1);
+        transition: 2s;
+    }
+    .details-menu{
+        display: flex;
+        justify-content: space-between;
+    }
+    .menu{
+        display: none;
+    }
+    .banner-text h1 {
+        padding-top: 15px;
+    }
+    .img-banner{
+        display: none;
+    }
+    .block1-img img {
+        max-width: 535px;
+    }
+    #exampleModal .modal-dialog {
+        max-width: 950px;  
+    }
+    .modal-box3 .pad3 {
+        padding: 15px 3px 15px 0px;
+    }
+    .modal-box3 .pad2 {
+        padding: 15px 15px 15px 20px;
+    }
+    .modal-body p {
+        font-size: 12px;
+    }
+}
+@media (max-width: 991px){
+    .responsive-menu i {
+        font-size: 35px;
+    }
+    .banner-text h1 {
+        font-size: 50px;
+        line-height: 65px;
+        padding-top: 0;
+        text-align: center;
+        padding-bottom: 0;
+    }
+    .banner {
+        padding-bottom: 70px;
+    }
+    .banner-text span {
+        font-size: 60px;
+    }
+    .btn-banner {
+        display: flex;
+        justify-content: center;
+        flex-wrap: nowrap;
+    }
+    .block1 {
+        padding: 50px 0 60px;
+    }
+    .block1::before {
+        top: 200px;
+        height: 33%;
+    }
+    .block1::after {
+        bottom: 75px;
+        width: 43%;
+        height: 33%;
+    }
+    .block1-img img {
+        max-width: 370px;
+    }
+    .block1-text h3 {
+        font-size: 20px;
+    }
+    .block1-text p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .block2 {
+        padding: 50px 0 0px;
+    }
+    .box1, .box2 {
+        padding: 25px 20px 5px;
+        margin-bottom: 20px;
+    }
+    .block2 p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .box-prise h3 {
+        font-size: 30px;
+        line-height: 40px;
+        padding-bottom: 10px;
+    }
+    .box-prise h4 {
+        font-size: 16px;
+        line-height: 25px;
+        padding-bottom: 10px;
+    }
+    .box-prise ul li {
+        font-size: 14px;
+        line-height: 25px;
+    }
+    .box-prise .prise {
+        font-size: 25px;
+        line-height: 15px;
+        
+    }
+    .box-prise p {
+        line-height: 40px;
+        padding-top: 10px;
+    }
+    .box-prise button {
+        font-size: 16px;
+    }
+    .box-prise:hover{
+        transform: translate(0,-30px);
+    }
+    .block3::after {
+        width: 82%;
+    }
+    .modal-body h4 {
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .modal-box3 {
+        display: flex;
+        justify-content: space-around;
+    }
+    .box p {
+        display: inline;
+        padding-right: 20px;
+    }
+    .modal-box {
+        padding: 15px 15px;
+    }
+    .modal-box form input {
+        font-size: 14px;
+    }
+    #exampleModal .modal-content .modal-header {
+        padding:0;
+    }
+    #exampleModal .modal-header button {
+        padding-top: 30px;
+    }
+    #exampleModal .modal-dialog {
+        max-width: 715px;
+    }
+    .modal-box3 .pad2 {
+        padding-left:10px;
+    }
+    .book-flights i {
+        padding-left: 10px;
+    }
+    .book-flights {
+        padding: 12px 10px 12px;
+        right: 42%;
+    }
+}
+@media (max-width: 767px){
+    .header-banner {
+        background-size: cover;
+    }
+    .header-menu {
+        padding: 35px 0 0px;
+    }
+    .banner-text {
+        padding-top: 30px;
+    }
+    .banner {
+        padding-bottom: 40px;
+    }
+    .banner-text h1 {
+        font-size: 30px;
+        line-height: 20px;
+    }
+    .banner-text span {
+        font-size: 35px;
+    }
+    .title h2 {
+        font-size: 25px;
+        line-height: 35px;
+    }
+    .ord_1{
+        order: 2;
+    }
+    .ord_2{
+        order: 1;
+    }
+    .block1::before {
+        top: 127px;
+        height: 28%;
+    }
+    .block1::after {
+        bottom: 238px;
+        height: 28%;
+    }
+    .block1-img.serve {
+        display: flex;
+        justify-content: center;
+    }
+    .block1 .serve2 {
+        display: flex;
+        justify-content: center;
+    }
+    .block1-img img {
+        max-width: 510px;
+        padding: 0 20px;
+    }
+    .block1 .serve {
+        padding: 0;
+    }
+    .block1-img{
+        padding-top: 35px;
+    }
+    .block1-text {
+        padding-top: 45px;
+    }
+    .block1 {
+        padding-bottom: 30px;
+    }
+    .box-prise h3 {
+        font-size: 22px;
+        line-height: 20px;
+    }
+    .center-img {
+        display: none;
+    }
+    .title h2 {
+        padding-bottom: 30px;
+    }
+    .box1:hover,
+    .box2:hover{
+        transform: none;
+    }
+    .block3::after {
+        top: 100px;
+    }
+    .box-prise:hover{
+        background: #656293;
+        border-radius: 20px;
+        transform: none;
+    }
+    .box-prise{
+        margin-bottom: 40px;
+    }
+    .last-block .text {
+        font-size: 12px;
+    }
+    .footer-menu li a {
+        font-size: 12px;
+    }
+    .footer-menu ul {
+        justify-content: space-evenly;
+    }
+    .last-block .text {
+        justify-content: center;
+    }
+    .last-block {
+        padding: 25px 0 0;
+    }
+    #exampleModal .modal-dialog {
+        max-width: 690px; 
+    }
+    .modal-box3 {
+        margin-top: 20px;
+    }
+    .last-text {
+        padding-top: 34px;
+    }
+    .book-flights a {
+        font-size: 16px;
+    }
+    
+}
+@media (max-width: 575px){
+    .pad {
+        margin-top: 20px;
+    }
+    .modal-box3 {
+        margin-top: 40px;
+    }
+    .pad::after{
+        display: none;
+    }
+    .pad::before{
+        display: none;
+    }
+    .modal-box3 .pad2 {
+        padding: 20px 0 0;
+    }
+    .modal-box3 .pad3 {
+        padding: 20px 0 0;
+    }
+    .modal-box {
+        padding-bottom: 0;
+    }
+    .last-text {
+        padding-top: 45px;
+    }
+}
+@media (max-width: 500px){
+    .banner-text h1 {
+        font-size: 30px;
+        line-height: 18px;
+    }
+    .banner-text span {
+        font-size: 30px;
+    }
+    .title h2 {
+        font-size: 22px;
+    }
+    .block2 {
+        padding-top: 10px;
+    }
+    .block1-img img {
+        max-width: 380px;
+        padding: 0;
+    }
+    .book-flights {
+            right: 36%;
+        }
+}
+@media (max-width: 467px){
+}
+    
