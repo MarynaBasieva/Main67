@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  button{
+    margin-left: 220px;
+  }
+  button:nth-child(2){
+    margin-left: 0;
+  }
+  button:nth-child(3){
+    margin-left: 0;
+  }
+</style>
+<body>
+  <button onClick="OpenW()">Відкрити</button>
+  <button onClick="MoveW()">Перетянути</button>
+  <button onClick="WinOpen()">Відкрити нове вікно</button>
+</body>
+<script>
+  let win;
+  function OpenW() {
+    win = window.open("", "win", "width=200, height=200, scrollbar=yes, menubar=yes");
+    win.document.write("Here you can find activities to practise your reading skills. Reading will help you to improve your understanding of the language and build your vocabulary. The self-study lessons in this section are written and organised according to the levels of the Common European Framework of Reference for languages (CEFR).");
+  }
+  function MoveW() {
+    win.moveBy(200, 200);
+    win.focus();
+  }
+
+  let nWin;
+  function WinOpen() {
+      nWin = window.open("", "nWin", "width=200, height=200, left=300, top=300");
+      nWin.document.write("нове вікно");
+      nWin.opener.document.write("нове вікно");
+    }
+</script>
+</html>
