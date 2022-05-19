@@ -57,7 +57,11 @@ jQuery(document).ready(function () {
 		}
 	});
 	jQuery('.btn-sing')	.click(function(){
+<<<<<<< HEAD
 		jQuery('.modal-window').show("slow");
+=======
+		jQuery('.modal-window').toggle();
+>>>>>>> 578ecbbfd9e36db93a725754a176cc6a399e1fbe
 	});
 	jQuery('.popun-close').click(function(){
 		jQuery(this).parents('.modal-window').fadeOut();
@@ -78,7 +82,10 @@ jQuery(document).ready(function () {
 
 	});
 	jQuery('.btn-callBack').click(function(){
-		jQuery('.call-Back .form-wrapper').toggle('slow');
+		jQuery('.modalCallBack').toggleClass('active');
 	});
-
+	jQuery('.input-label').click(function(){
+        jQuery('.input-text').toggleClass('active');
+    });
+	
 });

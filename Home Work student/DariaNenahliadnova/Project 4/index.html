@@ -65,17 +65,7 @@
                                         <div class="btn-header">
                                             <a class="btn-sing" href="#">Sign In</a>
                                         </div> 
-                                        <div class="modal-window">
-                                            <div class="sing-in">
-                                                <h3>Sing in</h3>
-                                                <a class="popun-close" href=""><i class="fa fa-times" aria-hidden="true"></i></a>
-                                                <form class="formIn">
-                                                    <input type="email" placeholder="Email">
-                                                    <input type="password" placeholder="Password"> 
-                                                    <button type="submit">Sign In</button>
-                                                </form>
-                                            </div>
-                                        </div>
+                                        
                                     </div>
                                 </div>
                             </div>
@@ -99,20 +89,7 @@
                                 <div class="img-banner" alt="banner"></div>
                             </div>
                         </div>
-                        <div class="call-Back">
-                            <button class="btn-callBack">Call Back</button>
-                            <div class="form-wrapper">
-                                <h3>Call back!</h3>
-                                <form class="form-input" action="index.html">
-                                    <input type="text" placeholder="Name">
-                                    <input type="email" placeholder="Email">
-                                    <input type="date" id="start" name="trip-start"
-                                    value="2018-07-22"
-                                    min="2022-05-13" max="2022-12-31">
-                                    <button type="submit">Send</button>
-                                </form>
-                            </div>
-                        </div>
+                        
                     </div>
                 </section>
             </div>
@@ -324,7 +301,35 @@
                 </div>
             </div>
         </footer>
-
+        <!--modal-window-->
+        <div class="modal-window">
+            <div class="sing-in">
+                <h3>Sing in</h3>
+                     <span class="popun-close"><a href="#">X</a></span>
+                        <form id="formIn" class="formIn ">
+                            <input type="email" name="email" placeholder="Email">
+                            <input type="password" name="password" placeholder="Password"> 
+                            <button id="button" type="submit">Sign In</button>
+                        </form>
+            </div>
+        </div>
+        <!---modalCallBack-->
+        <div class="modalCallBack ">
+            <div class="call-Back">
+                    <div class="btn-callBack"><span>Call Back</span></div>
+                    <div class="form-wrapper">
+                        <h3>Call back! </h3>
+                        <form class="form-input" action="index.html">
+                            <input type="text" placeholder="Name">
+                            <input type="email" placeholder="Email">
+                            <input type="date" id="start" name="trip-start" value="2018-07-22" min="2022-05-13" max="2022-12-31">
+                            <label class="input-label" >Clarify details </i></label>
+                            <textarea class="input-text" placeholder="Messenger"></textarea>
+                            <button type="submit">Send</button>
+                        </form>
+                    </div>
+            </div>
+        </div>
         <!-- Modal -->
         <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
