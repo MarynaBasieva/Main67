@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>preventDefault</title>
+</head>
+
+<body>
+	<a class="click-button" href="https://sinoptik.ua">Click</a>
+	
+	<div class="content">
+		lorem ipsum lorem ipsum  lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+	</div>
+</body>
+	<script>
+		const button = document.querySelector('.click-button');
+		const content = document.querySelector('.content');
+		
+		button.onclick = function(event){
+			event.preventDefault();
+			
+			button.classList.add('active');
+		}
+	</script>
+</html>

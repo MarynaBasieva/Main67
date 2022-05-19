@@ -57,7 +57,7 @@ jQuery(document).ready(function () {
 		}
 	});
 	jQuery('.btn-sing')	.click(function(){
-		jQuery('.modal-window').fadeToggle();
+		jQuery('.modal-window').show("slow");
 	});
 	jQuery('.popun-close').click(function(){
 		jQuery(this).parents('.modal-window').fadeOut();

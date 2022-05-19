@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Drag Events</title>
+</head>
+<style>
+	.elem{
+		width:150px;
+		height: 150px;
+		background: #680B7A;
+		margin: 40px auto;
+		text-align: center;
+		line-height: 150px;
+		cursor: pointer;
+	}
+	.block{
+		width: 200px;
+		height: 200px;
+		border: 10px solid #333;
+		padding: 10px;
+	}
+</style>
+<body>
+	<div class="elem" draggable="true">тяни</div>
+	<div class="block">кидай</div>
+</body>
+	<script>
+		let elem = document.querySelector('.elem');
+		let block = document.querySelector('.block');
+		
+		
+		let elem = document.querySelector('.elem');
+		let block = document.querySelector('.block');
+		
+		elem.addEventListener('dragstart',function(){
+			console.log('start');
+		});
+		elem.addEventListener('dragend',function(){
+			console.log('end');
+		});
+		elem.addEventListener('drag',function(){
+			console.log('drag');
+		});
+		elem.addEventListener('dragenter',function(){
+			console.log('Enter');
+		});
+		elem.addEventListener('dragleave',function(){
+			console.log('Leave');
+		});
+		elem.addEventListener('dragover',function(){
+			event.preventDefault();
+			console.log('Over');
+		});
+		block.addEventListener('drop',function(event){
+			console.log('Drop');
+			this.appendChild(elem)
+		});
+		
+	</script>
+</html>
