@@ -57,7 +57,7 @@ jQuery(document).ready(function () {
 		}
 	});
 	jQuery('.btn-sing')	.click(function(){
-		jQuery('.modal-window').fadeToggle();
+		jQuery('.modal-window').toggle();
 	});
 	jQuery('.popun-close').click(function(){
 		jQuery(this).parents('.modal-window').fadeOut();
@@ -78,7 +78,10 @@ jQuery(document).ready(function () {
 
 	});
 	jQuery('.btn-callBack').click(function(){
-		jQuery('.call-Back .form-wrapper').toggle('slow');
+		jQuery('.modalCallBack').toggleClass('active');
 	});
-
+	jQuery('.input-label').click(function(){
+        jQuery('.input-text').toggleClass('active');
+    });
+	
 });
