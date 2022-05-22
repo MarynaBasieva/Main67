@@ -1,3 +1,7 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 a {
   text-decoration: none;
 }
@@ -5,11 +9,14 @@ li {
   list-style: none;
 }
 body {
-  position: relative;
+  overflow-x: hidden;
 }
 .container {
   max-width: 1200px;
   margin: 0 auto;
+}
+nav {
+  padding: 30px 0;
 }
 .list {
   width: 100%;
@@ -26,29 +33,91 @@ body {
 .list a:hover {
   color: #205f9d;
 }
-.form-wraper {
-  position: fixed;
-  bottom: 40%;
-  left: 50%;
-  width: 300px;
-  background-color: #36aeaeae;
-  padding: 20px 30px;
+.dropdown-item {
+  position: relative;
 }
-.form-wraper .button {
+.dropdown-menu {
   position: absolute;
   left: 0;
-  bottom: 20px;
-  height: 20px;
-  width: 200px;
-  background-color: #d0c367;
+  bottom: -75px;
+  width: 100px;
   padding: 10px 20px;
+  display: none;
+  background-color: #66a1dc;
+}
+.form-wraper {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  display: flex;
+  flex-wrap: nowrap;
+  max-width: 300px;
+  transform: translateX(75%);
+  transition: 0.4s;
+}
+.form-wraper .button {
+  padding: 20px 30px;
+  text-align: center;
+  background-color: #9ec239;
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #000;
+  width: 300px;
+  transform: rotate(-90deg);
+  cursor: pointer;
+}
+.form-wraper form {
+  width: 100%;
+}
+.form-wraper form input {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.active {
+  transform: translateX(0);
+}
+.popup-wraper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 0%;
+  width: 0%;
+  background-color: rgba(45, 45, 45, 0.781);
+  transition: 0.4s;
+  overflow: hidden;
+}
+.popup-wraper .popup-window {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 40px 10px;
+  border-radius: 5px;
+  z-index: 999;
+}
+.popup-wraper .popup-window .close-btn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
   font-family: sans-serif;
   font-size: 20px;
   text-transform: uppercase;
-  text-align: center;
-  transform: translateX(42%) rotate(-90deg);
+  color: red;
+  font-weight: bold;
+  cursor: pointer;
 }
-.form-wraper input {
+.popup-wraper .popup-window input {
   width: 100%;
   margin-bottom: 20px;
+}
+.popup-btn {
+  display: block;
+  width: 300px;
+  margin: 20px auto;
+  background-color: #5a90bd;
+  color: red;
+  padding: 20px;
 }

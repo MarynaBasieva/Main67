@@ -15,15 +15,13 @@
 					<li><a href="#">ITEM 2</a></li>
 					<li><a href="#">ITEM 3</a></li>
 					<li><a href="#">ITEM 4</a></li>
-					<li>
-						<a href="#"
-							>ITEM 5
-							<ul class="dropdown-menu">
-								<li><a href="#">sub item 1</a></li>
-								<li><a href="#">sub item 2</a></li>
-								<li><a href="#">sub item 3</a></li>
-							</ul>
-						</a>
+					<li class="dropdown-item">
+						<a href="#" id="dropdown-item">ITEM 5 </a>
+						<ul class="dropdown-menu">
+							<li><a href="#">sub item 1</a></li>
+							<li><a href="#">sub item 2</a></li>
+							<li><a href="#">sub item 3</a></li>
+						</ul>
 					</li>
 				</ul>
 			</nav>
@@ -72,16 +70,18 @@
 				dignissimos expedita quae, nihil vero itaque delectus ex iure quia architecto ab illo.
 			</p>
 		</div>
-		
-		<div class="form-wraper"><div class="button">click me</div>
+
+		<div class="form-wraper">
+			<div class="button" id="show-menu">click me</div>
 			<form action="#"><input type="text" placeholder="enter your email" /><input type="text" placeholder="enter your name" /><input type="submit" value="send data" /></form>
 		</div>
-		<div class="popup-wraper">
+		<div class="popup-wraper" id="popupBg">
 			<div class="popup-window">
-				<span id="close" class="close-btn"></span>
+				<span id="close" class="close-btn">X</span>
 				<form action=""><input type="text" placeholder="email" /><input type="text" placeholder="name" /><input type="submit" value="send data" /></form>
 			</div>
 		</div>
+		<button id="popup-btn" class="popup-btn">click me to show modal window</button>
 		<script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
 		<script src="app.js"></script>
 	</body>

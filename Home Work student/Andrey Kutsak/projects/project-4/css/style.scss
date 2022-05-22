@@ -1888,7 +1888,8 @@ footer {
 @media screen and (max-width: 560px) {
 	.cleaning {
 		.btn {
-			padding: 15px;
+			padding: 10px;
+			font-size: 11px;
 		}
 	}
 	.calculation .calc-container {
@@ -1899,6 +1900,11 @@ footer {
 		.form-title,
 		.form-desc {
 			text-align: center;
+		}
+	}
+	footer {
+		a {
+			margin: 20px 0;
 		}
 	}
 }
