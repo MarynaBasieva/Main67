@@ -2106,7 +2106,8 @@ footer img {
 
 @media screen and (max-width: 560px) {
   .cleaning .btn {
-    padding: 15px;
+    padding: 10px;
+    font-size: 11px;
   }
   .calculation .calc-container {
     border-radius: 30px;
@@ -2117,6 +2118,9 @@ footer img {
   .type .pricelist-baner .form-title,
   .type .pricelist-baner .form-desc {
     text-align: center;
+  }
+  footer a {
+    margin: 20px 0;
   }
 }
 

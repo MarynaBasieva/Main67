@@ -119,126 +119,147 @@ body
   color: rgb(0, 231, 231) !important;
 }
 
-.popup-board {
-  display: none;
-  position: fixed;
-  z-index: 5;
-  transform: translate(-50%, -50%);
-  top: 50%;
-  left: 50%;
-  width: 400px;
-  padding: 10px;
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 200px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
 }
 
-.popup-board p {
+/* Modal Content */
+.modal-content {
+  background-color: #3f9bb8 !important;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 40% !important;
+  position: relative;
+}
+
+.modal-content h2 {
+  font-family: "ElMessiri";
+  text-align: center;
+  font-size: 25px;
+  color: rgb(224, 224, 224);
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid rgb(133, 133, 133);
+}
+
+.modal-content input {
+  outline: none;
+  border: none;
+  padding: 5px 10px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.modal-content a {
+  width: 30%;
+  margin: 0 auto;
+  border-radius: 15px;
+  display: block;
+  text-align: center;
+  padding: 8px 20px;
+  background-color: #190e75;
+  color: white;
+  transition: 0.5s ease-in-out;
+}
+
+.modal-content a:hover {
+  background-color: #7a45db;
+  text-decoration: none;
+  color: white;
+}
+
+.modal-content p {
   transform: rotate(45deg);
   font-size: 40px;
   color: azure;
   position: absolute;
-  top: -8px;
-  left: 90%;
+  top: 15px;
+  left: 95%;
   cursor: pointer;
 }
 
-.popup-board p:hover {
-  color: azure;
+.modal-content p:hover {
+  color: rgb(166, 175, 175);
 }
 
-.board-content {
-  width: 100%;
-  text-align: center;
-  position: relative;
-}
-
-.board-content h2 {
-  font-size: 25px;
-  color: azure;
-  padding-bottom: 20px;
-  margin-bottom: 20px;
-  border-bottom: 2px solid rgb(133, 133, 133);
-}
-
-.board-content input {
-  outline: none;
-  border: none;
-  padding: 5px 10px;
-  width: 100%;
-  margin-bottom: 15px;
-}
-
-.board-content a {
-  padding: 5px 10px;
-  background: #34547a;
-  color: azure;
-}
-
-.board-content a:hover {
-  text-decoration: none;
-  background-color: aqua;
-  color: 727272;
-}
-
-.popup-board-active {
-  display: block;
-}
-
-.page-dimmed::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.836);
-  pointer-events: none;
-}
-
-.pop-up-button {
-  display: flex;
-  align-items: center;
+.form_window {
+  padding: 20px;
+  width: 350px;
+  background: #3f9bb8;
+  border-radius: 5px;
   position: fixed;
-  right: 0px;
-  bottom: 50px
+  top: 315px;
+  right: -350px;
+  transition: 1s ease-in-out;
+  z-index: 2;
 }
 
-.pop-up-button .send {
-  font-size: 30px;
-  height: 75px;
-  text-align: center;
-  padding: 10px;
-  background-color: aqua;
-  color: azure;
-  transform: rotate(-90deg);
-  border-radius: 10px;
-}
-
-
-.form-container-button{
-  display: flex;
-  flex-direction: column;
-  visibility: hidden;;
-}
-
-
-.board-content {
-  width: 100%;
-  text-align: center;
-  position: relative;
-}
-
-.form-container-button h2 {
+.form_window h2 {
+  font-family: "ElMessiri";
+  text-align: left;
   font-size: 25px;
-  color: rgb(48, 48, 48);
-  padding-bottom: 20px;
+  color: rgb(224, 224, 224);
+  padding-bottom: 5px;
   margin-bottom: 20px;
   border-bottom: 2px solid rgb(133, 133, 133);
 }
 
-.form-container-button input {
+form input {
   outline: none;
   border: none;
   padding: 5px 10px;
   width: 100%;
   margin-bottom: 15px;
 }
+form a {
+  width: 40%;
+  margin: 0 auto;
+  border-radius: 15px;
+  display: block;
+  text-align: center;
+  padding: 8px 0px;
+  background-color: #190e75;
+  color: white;
+  transition: 0.5s ease-in-out;
+}
 
+form a:hover {
+  background-color: #7a45db;
+  text-decoration: none;
+  color: white;
+}
+
+form button:hover {
+  background: #4777d1;
+}
+
+.open {
+  content: "Open";
+  position: absolute;
+  top: 25%;
+  left: -95px;
+  padding: 8px 40px;
+  font-family: "ProximaNovaSemibold";
+  font-size: 16px;
+  text-align: left;
+  cursor: pointer;
+  transform: rotate(-90deg);
+  background: #018abe;
+  border-radius: 5px;
+  color: #ffffff;
+}
+
+.translate-modal {
+  right: 1px;
+}
