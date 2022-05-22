@@ -27,6 +27,7 @@
       href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
       rel="stylesheet"
     />
+    <script src="./js/modal.js"></script>
     <script type="text/javascript" src="./js/jquery-3.6.0.min.js"></script>
     <script type="text/javascript" src="./js/custom.js"></script>
     <script
@@ -35,6 +36,24 @@
     ></script>
   </head>
   <body>
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <h2>Ваша информация</h2>
+        <input type="text" placeholder="Имя" />
+        <input type="text" placeholder="Фамилия" />
+        <a href="#">Отправить</a>
+        <p class="close">+</p>
+      </div>
+    </div>
+    <div class="form_window">
+      <div class="open"><span>Записаться </span></div>
+      <form action="#" method="get">
+        <h2>Ваша информация</h2>
+        <input type="text" placeholder="Имя" />
+        <input type="text" placeholder="Фамилия" />
+        <a href="#">Отправить</a>
+      </form>
+    </div>
     <main class="for_page">
       <div class="page">
         <header class="header">
@@ -83,22 +102,14 @@
                     и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для
                     текстов на латинице с начала XVI века.
                   </p>
-                  <a href="#" class="btnBanner">НАПИСАТЬ МНЕ</a>
+                  <a href="#" class="btnBanner" id="myBtn">НАПИСАТЬ МНЕ</a>
                 </div>
               </div>
             </div>
           </div>
         </section>
-        <div class="popup-board">
-          <div class="board-content">
-            <h2>Ваша информация</h2>
-            <input type="text" placeholder="Имя" />
-            <input type="text" placeholder="Фамилия" />
-            <a href="#">Отправить</a>
-            <p class="close">+</p>
-          </div>
-        </div>
       </div>
     </main>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
