@@ -7,7 +7,7 @@
 </head>
 
 <body>
-    <p class="first">
+    <p class="item_text">
         Вочевидь, зараз не всі пригадають цю серпневу дату – вісімнадцяте святкування Дня Незалежності України 2021.
         Відлік десятилітньої історії Вишиванкового фестивалю розпочався саме тоді, коли сімдесят дев’ять людей, убраних
         у виши́ванки, утворили вздовж Потьомкінських сходів так званий «живий ланцюг». Амбітні плани організаторів
@@ -16,38 +16,40 @@
         міста рідний України. Зростало настільки, що в 2014 році, незважаючи на невпинну зливу, для участі в акції «Вишиванковий
         ланцюг» вишикувалася півторатисячна черга, утворивши нескінченне живе море виши́ванок.
     </p>
-    <p class="second">
+    <p class="item_text_2">
         Подальші два роки в України запам’яталися встановленням нових рекордів, адже́ кількість учасників збільшилася вдвічі. До
         речі, дюк де Рішельє також долучається до цієї події. Четвертий рік поспіль святковий гардероб герцога
         поповнюється найрізноманітнішими виши́ванками: блакитно-синій і яскраво-червоний, жовтогарячий і ніжно-зелений –
         ось палітра його ви́шитих візерунків.
     </p>
-    <p class="third">
+    <p class="item_text_3">
         Уже вдеся́те в України майорить Приморський бульвар синьо-жовтими барвами, і вже вкотре ми збираємось у самому серці
         Одеси, щоб помилуватися показом автентичного вбрання, написати диктант просто неба, концентруючи нашу енергію й
         демонструючи всім як свою єдність, так і свою любов до рідного міста та своєї країни України.
     </p>
 </body>
 <script>
-    let first = document.querySelector(".first");
-    let second = document.querySelector(".second")
-    let third = document.querySelector(".third")
 
-    let text1 = first.textContent;
-    let text2 = second.textContent;
-    let text3 = third.textContent;
+    let newText = document.querySelector(".item_text");
+    let newText2 = document.querySelector(".item_text_2");
+    let newText3 = document.querySelector(".item_text_3");
 
-    let main = text1 + text2 + text3;
+    let corentText = newText.textContent;
+    let corentText2 = newText2.textContent;
+    let corentText3 = newText3.textContent;
+
+    let resText = corentText + corentText2 + corentText3;
+
 
     // 1
-    console.log(main.match(/Зараз/ig));
+    console.log(resText.match(/України/ig));
 
     // 2
-    console.log(main.replace(/Зараз/ig, "Слава Україні"));
+    console.log(resText.replace(/України/gi, "Слава Україні"));
 
     // 3
 
-    console.log(main.match(/\d/g));
+    console.log(resText.match(/\d/g));
 </script>
 
 </html>
