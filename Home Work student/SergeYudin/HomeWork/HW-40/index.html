@@ -2,11 +2,11 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <title>Tewxt</title>
+    <title>Text</title>
   </head>
 
   <body>
-    <p class="paragraph1">
+    <p>
       Вочевидь, зараз не всі пригадають цю серпневу дату – вісімнадцяте
       святкування Дня Незалежності України 2021. Відлік десятилітньої історії
       Вишиванкового фестивалю розпочався саме тоді, коли сімдесят дев’ять людей,
@@ -17,9 +17,9 @@
       зростало й усвідомлення Одеси як українського міста. Зростало настільки,
       що в 2014 році, незважаючи на невпинну зливу, для участі в акції
       «Вишиванковий ланцюг» вишикувалася півторатисячна черга, утворивши
-      нескінченне живе море виши́ванок.
+      нескінченне живе море виши́ванок. Зараз все.
     </p>
-    <p class="paragraph2">
+    <p>
       Подальші два роки запам’яталися встановленням нових рекордів, адже́
       кількість учасників збільшилася вдвічі. До речі, дюк де Рішельє також
       долучається до цієї події. Четвертий рік поспіль святковий гардероб
@@ -27,7 +27,7 @@
       яскраво-червоний, жовтогарячий і ніжно-зелений – ось палітра його ви́шитих
       візерунків.
     </p>
-    <p class="paragraph3">
+    <p>
       Уже вдеся́те майорить Приморський бульвар синьо-жовтими барвами, і вже
       вкотре ми збираємось у самому серці Одеси, щоб помилуватися показом
       автентичного вбрання, написати диктант просто неба, концентруючи нашу
@@ -35,17 +35,12 @@
       міста та своєї країни.
     </p>
     <script>
-      let paragraph1 = document.querySelector(".paragraph1").textContent;
-      let paragraph2 = document.querySelector(".paragraph2").textContent;
-      let paragraph3 = document.querySelector(".paragraph3").textContent;
-
-      let maincontent = paragraph1 + paragraph2 + paragraph3;
-
-      console.log(maincontent.match(/Україна/g));
-
-      console.log(maincontent.replace(/Україна/g, "Слава Україні"));
-
-      console.log(maincontent.match(/\d+/g));
+      const ps = document.getElementsByTagName("p");
+      for (p of ps) {
+        console.log(p.textContent.match(/Україна/g));
+        console.log(p.textContent.replace(/і/g, " Слава Україні "));
+        console.log(p.textContent.match(/\d+/g));
+      }
     </script>
   </body>
 </html>
