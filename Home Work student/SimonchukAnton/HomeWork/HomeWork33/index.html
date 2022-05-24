@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework</title>
+</head>
+
+<body>
+    <div class="result">
+
+    </div>
+    <p>Введіть число від 2 до 10:</p>
+    <input class="res" type="text" />
+    <button type="button" onClick="myFunction()">Перевірка помилок</button>
+    <div class="message"></div>
+
+    <script>
+        let result = document.querySelector('.result');
+        let nowdays = new Date("2020-11-12");
+        result.innerHTML = nowdays;
+
+        let today = new Date().getFullYear();
+        let input = +prompt("Введіть рік");
+        if (today == input) {
+            alert("Правильний рік");
+        } else if (today > input) {
+            alert("Минуле")
+        } else if (today < input) {
+            alert("Майбутнє")
+        } else if (typeof (input) != Number) {
+            alert("Введіть цифрами");
+        };
+
+        function myFunction() {
+            let message, res, input;
+            message = document.querySelector(".message");
+            message.innerHTML = '';
+            res = document.querySelector(".res").value;
+            input = document.querySelector(".res");
+            try {
+                if (res == "") throw 'пусто';
+                if (isNaN(res)) throw 'не число';
+                res = Number(res);
+                if (res < 2) throw 'Замале число';
+
+                if (res > 10) throw 'Завелике число';
+            } catch (err) {
+                message.innerHTML = 'Ви ввели:' + ' ' + err;
+                message.style.color = "red";
+                input.style.borderColor = "red";
+            }
+            try {
+                if (res >= 2 && res <= 10) throw 'Те що потрібно';
+            } catch (green) {
+                message.innerHTML = 'Ви ввели:' + ' ' + green;
+                input.style.borderColor = "green";
+                message.style.color = "green";
+            }
+        };
+    </script>
+</body>
+
+</html>

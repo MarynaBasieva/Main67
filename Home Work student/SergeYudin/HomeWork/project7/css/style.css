@@ -1,0 +1,603 @@
+/*font-family: 'ElMessiri';
+font-family: "ProximaNovaLight";
+font-family: "ProximaNovaBold";
+font-family: "ProximaNovaRegular";
+font-family: "ProximaNovaSemibold";
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+.container {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
+body {
+  font-family: "ElMessiri";
+  background-color: #162831 !important;
+}
+
+img {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+}
+
+.title-set {
+  display: flex;
+  align-items: center;
+  column-gap: 45px;
+  margin-bottom: 100px;
+}
+
+.title-set .left-rect {
+  width: 28px;
+  height: 14px;
+  background: #018abe;
+  border-radius: 0px 50px;
+}
+
+.title-set h4 {
+  font-family: "ElMessiri";
+  font-size: 40px;
+  color: #ffffff;
+  line-height: 140%;
+  margin-bottom: 0px;
+}
+
+.title-set .right-rect {
+  width: 28px;
+  height: 14px;
+  background: #018abe;
+  border-radius: 0px 50px;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.responsive_menu {
+  display: none;
+}
+
+.sidenav {
+  display: none;
+}
+
+.introduction {
+  padding: 30px 0 150px;
+}
+
+.header {
+  margin-bottom: 50px;
+}
+
+.nav-content {
+  margin-bottom: 0px;
+}
+
+.nav-content :last-child a {
+  margin-right: 0px;
+}
+
+.nav-content-link {
+  font-family: "ProximaNovaLight";
+  font-size: 14px;
+  color: #ffffff;
+  margin-right: 50px;
+}
+
+.account .book-btn {
+  padding: 9px 15px;
+  background: #018abe;
+  border-radius: 3px;
+  font-family: "ProximaNovaSemibold";
+  color: #ffffff;
+  font-size: 13px;
+  transition: 0.5s ease-in-out;
+}
+
+.account .book-btn:hover {
+  background: #1a6388;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.introduction .nav-menu .nav-content-link:hover,
+.activated-li {
+  text-decoration: none;
+  color: #bbbbbb;
+}
+
+.introduction .banner {
+  padding: 136px 0px 210px;
+  background: url("../img/1/bck.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.introduction .banner h3,
+.introduction .banner h5 {
+  font-family: "ElMessiri";
+  font-style: normal;
+  font-size: 24px;
+  line-height: 140%;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 40px;
+}
+
+.introduction .banner h5 {
+  font-size: 64px;
+  max-width: 587px;
+}
+
+.session {
+  padding-bottom: 150px;
+}
+
+.session .main-set,
+.session .main-set .subfolder {
+  display: flex;
+  column-gap: 24px;
+}
+
+.session .main-set .first-subfolder {
+  margin-bottom: 24px;
+}
+
+.session .main-peace {
+  background: url("../img/2/bck-main.png");
+  padding: 414px 108px 92px 50px;
+}
+
+.session .peace {
+  background: url("../img/2/bck-side.png");
+}
+
+.session .main-peace,
+.session .peace {
+  position: relative;
+  background-repeat: no-repeat;
+}
+
+.session .main-peace h4,
+.session .first-subfolder .peace h4,
+.session .second-subfolder .peace h4 {
+  font-family: "ElMessiri";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 140%;
+  margin-bottom: 0px;
+  color: #ffffff;
+}
+
+.session .main-peace h4 {
+  width: 258px;
+}
+
+.session .main-peace .blue-line,
+.session .peace .blue-line {
+  display: none;
+  width: 100%;
+  height: 7px;
+  background: #018abe;
+  border-radius: 0px 0px 10px 10px;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}
+
+.session .main-peace .blue-line {
+  bottom: 24px;
+}
+
+.session .main-peace:hover .blue-line,
+.session .peace:hover .blue-line {
+  display: block;
+}
+
+.session .first-subfolder .peace {
+  padding: 194px 40px 30px;
+}
+
+.session .first-subfolder .peace h4,
+.session .second-subfolder .peace h4 {
+  width: 336px;
+}
+
+.session .first-subfolder :first-child,
+.session .second-subfolder :first-child {
+  margin-bottom: 24px;
+}
+
+.session .second-subfolder .peace {
+  padding: 160px 40px 30px;
+}
+
+.feedback {
+  padding-bottom: 150px;
+}
+
+.feedback .feedback-container {
+  column-gap: 50px;
+}
+
+.feedback .feedback-container .card {
+  padding: 50px 60px 56px;
+  background: #018abe;
+  border-radius: 10px;
+}
+
+.feedback .feedback-container .card :last-child {
+  margin-bottom: 0px;
+}
+
+.feedback .feedback-container .card h4 {
+  font-family: "ProximaNovaBold";
+  margin-bottom: 20px;
+}
+
+.feedback .feedback-container .card p {
+  font-size: 14px;
+  text-align: justify;
+  font-family: "ProximaNovaRegular";
+}
+
+.feedback .feedback-container .card h4,
+.feedback .feedback-container .card p {
+  line-height: 140%;
+  color: #ffffff;
+}
+
+.about {
+  padding-bottom: 150px;
+}
+
+.about .about-container {
+  column-gap: 84px;
+}
+
+.about-container-first {
+  margin-bottom: 100px;
+}
+
+.about .about-container .about-sub h4 {
+  font-family: "ProximaNovaBold";
+  margin-bottom: 30px;
+  font-size: 24px;
+}
+
+.about .about-container .about-sub p {
+  font-family: "ProximaNovaLight";
+  font-size: 16px;
+  text-align: justify;
+}
+
+.about .about-container .about-sub h4,
+.about .about-container .about-sub p,
+.price .picture-container p {
+  font-weight: 700;
+  line-height: 140%;
+  color: #ffffff;
+}
+
+.price {
+  padding-bottom: 150px;
+}
+
+.price .content-container {
+  column-gap: 134px;
+}
+
+.price .content-container .price-list-container {
+  row-gap: 31px;
+}
+
+.price .price-list .list-style {
+  list-style: none;
+  width: 18px;
+  height: 9px;
+  background: #018abe;
+  border-radius: 0px 50px;
+  margin-right: 20px;
+}
+
+.price .price-list .descrp,
+.price .price-list .abon-price {
+  list-style: none !important;
+  font-family: "ProximaNovaRegular";
+  font-size: 18px;
+  line-height: 140%;
+  color: #ffffff;
+  margin-bottom: 0px;
+}
+
+.price .price-list .descrp {
+  width: 268px;
+  margin-right: 23px;
+}
+
+.price .price-list .abon-price {
+  width: 87px;
+}
+
+.price .picture-container {
+  position: relative;
+}
+
+.price .picture-container p {
+  position: absolute;
+  font-family: "ElMessiri";
+  font-size: 21px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.footer {
+  padding-bottom: 30px;
+}
+
+.footer .inner-content {
+  column-gap: 48px;
+  margin-bottom: 90px;
+}
+
+.footer .inner-content .contact-main-container {
+  row-gap: 24px;
+}
+
+.footer .inner-content .contact-container {
+  padding: 35px 45px;
+  background: #018abe;
+  border-radius: 10px;
+}
+
+.footer .inner-content .contact-container h3 {
+  font-family: "ElMessiri";
+  font-size: 24px;
+  line-height: 140%;
+  color: #ffffff;
+  margin-bottom: 21px;
+  width: 302px;
+}
+
+.footer .inner-content .contact-container .sign-container img {
+  margin-right: 24px;
+  width: 22px;
+}
+
+.footer .inner-content .contact-container .sign-container p {
+  font-family: "ProximaNovaLight";
+  font-size: 14px;
+  line-height: 135%;
+  color: #ffffff;
+  margin-bottom: 0px;
+}
+
+.footer .sign-container {
+  margin-bottom: 21px;
+}
+
+.footer .sign-container-last {
+  margin-bottom: 30px;
+}
+
+.footer .contact-container a {
+  font-family: "ProximaNovaRegular";
+  padding: 9px 15px;
+  font-size: 13px;
+  line-height: 140%;
+  color: #018abe;
+  background: #ffffff;
+  border-radius: 3px;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.footer .contact-container a:hover {
+  text-decoration: none;
+  color: #018abe;
+  background: #c9dfff;
+}
+
+.footer .contact {
+  font-family: "ProximaNovaLight";
+  font-size: 14px;
+  line-height: 135%;
+  color: #ffffff;
+  margin-bottom: 0px;
+  width: 100%;
+}
+
+.owl-carousel .owl-stage-outer {
+  transform: rotate(90deg);
+}
+
+.owl-nav {
+  margin-top: 0px;
+  display: flex;
+  justify-content: end;
+}
+
+.owl-carousel .next-slide {
+  width: 60px;
+  height: 60px;
+  border: 2px solid #52503b;
+  border-radius: 30px;
+}
+.owl-carousel .prev-slide {
+  width: 60px;
+  height: 60px;
+  border: 2px solid #52503b;
+  border-radius: 30px;
+  margin-right: 10px;
+}
+
+.owl-next:focus,
+.owl-prev:focus {
+  outline: none;
+}
+
+.owl-carousel .owl-stage-outer {
+  padding: 5% 0;
+}
+
+.owl-item {
+  transition: 0.45s;
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 200px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #3f9bb8 !important;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 40% !important;
+  position: relative;
+}
+
+.modal-content h2 {
+  font-family: "ElMessiri";
+  text-align: center;
+  font-size: 25px;
+  color: rgb(224, 224, 224);
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid rgb(133, 133, 133);
+}
+
+.modal-content input {
+  outline: none;
+  border: none;
+  padding: 5px 10px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.modal-content a {
+ 
+  margin: 0 auto;
+  border-radius: 15px;
+  display: block;
+  text-align: center;
+  padding: 8px 20px;
+  background-color: #190e75;
+  color: white;
+  transition: 0.5s ease-in-out;
+}
+
+.modal-content a:hover {
+  background-color: #7a45db;
+  text-decoration: none;
+  color: white;
+}
+
+.modal-content p {
+  transform: rotate(45deg);
+  font-size: 40px;
+  color: azure;
+  position: absolute;
+  top: 15px;
+  left: 95%;
+  cursor: pointer;
+}
+
+.modal-content p:hover {
+  color: rgb(166, 175, 175);
+}
+
+.form_window {
+  padding: 20px;
+  width: 350px;
+  background: #3f9bb8;
+  border-radius: 5px;
+  position: fixed;
+  top: 315px;
+  right: -350px;
+  transition: 1s ease-in-out;
+  z-index: 2;
+}
+
+.form_window h2 {
+  font-family: "ElMessiri";
+  text-align: left;
+  font-size: 25px;
+  color: rgb(224, 224, 224);
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid rgb(133, 133, 133);
+}
+
+form input {
+  outline: none;
+  border: none;
+  padding: 5px 10px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+form a {
+  width: 40%;
+  margin: 0 auto;
+  border-radius: 15px;
+  display: block;
+  text-align: center;
+  padding: 8px 0px;
+  background-color: #190e75;
+  color: white;
+  transition: 0.5s ease-in-out;
+}
+
+form a:hover {
+  background-color: #7a45db;
+  text-decoration: none;
+  color: white;
+}
+
+form button:hover {
+  background: #4777d1;
+}
+
+.open {
+  content: "Open";
+  position: absolute;
+  top: 26%;
+  left: -103px;
+  padding: 8px 40px;
+  font-family: "ProximaNovaSemibold";
+  font-size: 16px;
+  text-align: left;
+  cursor: pointer;
+  transform: rotate(-90deg);
+  background: #018abe;
+  border-radius: 5px;
+  color: #ffffff;
+}
+
+.translate-modal {
+  right: 1px;
+}

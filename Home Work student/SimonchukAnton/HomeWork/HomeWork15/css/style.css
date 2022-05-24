@@ -1,0 +1,148 @@
+
+*{
+	margin: 0;
+	padding: 0;
+	}
+html,
+body{
+	position: relative;
+	height: 100%;
+}
+.for_page{
+	position: relative;
+	min-height: 100%;
+}
+.page{
+	padding-bottom: 158px;
+}
+p{
+	margin-bottom: 20px;
+}
+h2,
+h3{
+	
+}
+img{
+	max-width: 100%;
+	width: auto;
+	height: auto;
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.clear{
+	clear: both;
+}
+.header{
+	background: rgb(226,0,175);
+background: linear-gradient(90deg, rgba(226,0,175,1) 11%, rgba(250,173,255,1) 71%);
+	
+}
+.container{
+	width: 1170px;
+	margin: 0 auto;
+}
+.text{
+	background: url(https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg?w=2000);
+}
+.navigate{
+	background: #0C176E;
+}
+.navigate ul{
+	list-style: none;
+}
+.navigate ul.menu > li{
+	display: inline-block;
+	position: relative;
+}
+.navigate ul.menu > li > a{
+	color: #fff;
+	font-size: 15px;
+	padding: 10px 25px;
+	display: inline-block;
+	text-decoration: none;
+}
+.navigate ul.menu  li  a:hover{
+	background:#075D71;
+}
+.navigate ul.menu  li ul.sub-menu li a{
+	color: #fff;
+	font-size: 15px;
+	padding: 10px 25px;
+	display:block;
+	text-decoration: none;
+}
+ul.sub-menu{
+	display: none;
+	background: #63359E;
+	position: absolute;
+	left: 0;
+	top: 37px;
+	width: 200px;
+	
+}
+.navigate ul.menu li:nth-child(3):hover ul.sub-menu{
+	display: block;
+}
+/*header*/
+.slogon{
+	font-size: 40px;
+	text-align: center;
+	color:#001061;
+	padding-top: 15px;
+}
+.box_logo{
+	width: 200px;
+}
+.box_contact {
+padding-top: 15px;
+}
+.box_contact a{
+	font-size: 17px;
+	color: #037730;
+	text-decoration: none;
+}
+.box_contact a:hover{
+	text-decoration: none;
+	color: #63359E;
+}
+.adress{
+	font-size: 20px;
+	color: rgb(233, 2, 2);
+}
+.logo{
+	display: block;
+	width: 150px;
+}
+.box_slogon{
+	width: 800px;
+}
+.box_contact{
+	width: 170px;
+}
+
+/*header*/
+.footer{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background: #001061;
+	padding: 60px 0;
+	color: #fff;
+}
+/*
+font-family: 'open_sansbold_italic';
+font-family: 'open_sansbold';
+font-family: 'open_sansextrabold';
+font-family: 'open_sansextrabold_italic';
+font-family: 'open_sansitalic';
+font-family: 'open_sanslight';
+font-family: 'open_sanslight_italic';
+font-family: 'open_sansregular';
+font-family: 'open_sanssemibold';
+font-family: 'open_sanssemibold_italic';
+*/

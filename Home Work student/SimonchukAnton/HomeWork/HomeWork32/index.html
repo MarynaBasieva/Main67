@@ -22,35 +22,70 @@
 </style>
 <body>
     <div class="container">
-        <div class="test">
-        </div>
-        <button class="button">Move</button>
+        
+        
         <div class="blue">
 
         </div>
     </div>
 </body>
-<script>let num = 0;
-	function myFoo(){
-		num ++;
-		console.log(num);
-		if(num >= 10){
-			return num;
-		}
-		myFoo();
-	}
-	myFoo();
+<script>
+     let move = document.querySelector('.blue');
 
-	let offset = 0;
+     (run = () => {
 
-	function move(){
-		document.querySelector('.blue').style.left = offset + 'px';
-		offset = offset + 5;
-		if(offset >50){
-			return true;
-		}
-		setTimeout(move,200);
+    let l = parseFloat(getComputedStyle(move).left),
 
-	}
-	document.querySelector('.button').onclick = move;</script>
+        t = parseFloat(getComputedStyle(move).top);
+
+    if (l < 200 && t == 0) move.style.left = l + 1 + 'px';
+
+    else if (l == 200 && t < 200) move.style.top = t + 1 + 'px';
+
+    else if (l > 0 && t == 200) move.style.left = l - 1 + 'px';
+
+    else if (l == 0 && t > 0) move.style.top = t - 1 + 'px';
+
+    setTimeout(run, 4);
+
+})();
+
+class Workers {
+    constructor(options) {
+        this.name = options.name;
+        this.lastName = options.lastName;
+        this.age = options.age;
+        this.salary = options.salary;
+        this.experience = options.experience;
+    }
+}
+const workers = new Workers({
+    name: "Anton",
+    lastName: "Simonchuk",
+    age: 26,
+    salary: 20000,
+    experience:3,
+});
+console.log(workers);
+
+class pensionOff extends Workers {
+    constructor(options) {
+        super(options)
+        this.reason = options.reason;
+        this.pension = options.pension;
+    }
+}
+
+const PensionOff = new pensionOff({
+    name: "Oleg",
+    lastName: "Gnatuk",
+    age: 36,
+    salary: 20000,
+    experience: 6,
+    reason: "pension",
+    pension: 3000,
+})
+
+console.log(PensionOff);
+</script>
 </html>
