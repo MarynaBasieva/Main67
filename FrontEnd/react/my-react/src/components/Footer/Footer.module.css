@@ -1,0 +1,22 @@
+.menu{
+    background: #000;
+}
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.menu ul{
+    display: flex;
+    list-style: none;
+}
+.menu ul li a{
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 15px;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.3s;
+}
+.menu ul li a:hover{
+    color: antiquewhite;
+}
