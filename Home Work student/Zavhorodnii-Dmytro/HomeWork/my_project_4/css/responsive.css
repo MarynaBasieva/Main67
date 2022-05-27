@@ -1,0 +1,268 @@
+@media (min-width: 1440px) {
+.for_page .container {
+    max-width: 1152px;
+}
+}
+@media (max-width: 1286px) {
+    body .for_page .page .growing .img_contain::after {
+        top: 132px;
+        left: 321px;
+    }
+    body .for_page .page .growing .img_contain {
+        margin-left: -24px;
+    }
+}
+@media (max-width: 1199px) {
+    body .for_page .page .reviews .review .item {
+        background: #066F14;
+        width: 574px;
+        height: 175px;
+        padding: 21px;
+    }
+    body .for_page .page .slider-carousel .owl-carousel .item {
+        width: auto;
+    }
+    body .for_page .page .growing .main_content p {
+        font-size: 15px;
+        line-height: 151%;
+    }
+    body .for_page .page .growing .main_content h1 {
+        font-size: 65px;
+        line-height: 81px;
+    }
+    body .for_page .page .growing .leaf_cont .leaf {
+        position: absolute;
+        top: 366px;
+        right: -146px;
+    }
+    body .for_page .page .growing .img_contain::before {
+        top: 137px;
+        left: -65px;
+    }
+    body .for_page .page .growing .img_contain .hack::after {
+        top: 517px;
+        left: 294px;
+    }
+    body .for_page .page .growing .img_contain::after {
+        top: 116px;
+        left: 274px;
+    }
+    body .for_page .page .header .nav-menu .nav-list li {
+        margin-left: 31px;
+    }
+    body .for_page .page .header .nav-menu .nav-list {
+        margin-left: 80px;
+    }
+}
+@media (max-width: 1132px) {
+    body .for_page .page .growing .img_contain::after {
+        top: 123px;
+        left: 266px;
+    }
+  
+}
+@media (max-width: 1132px) {
+    body .for_page .page .growing .img_contain::before {
+        display: none;
+    }
+    body .for_page .page .growing .img_contain::after {
+       display: none;
+    }
+    body .for_page .page .growing .img_contain .hack::after {
+        display: none;
+    }
+   
+}
+@media (max-width: 1013px) {
+    
+}
+@media (max-width: 991px) {
+    body .for_page .page .reviews .review {
+       display: none;
+    }
+    body .for_page .footer ul li {
+        margin-bottom: 9px;
+    }
+    body .for_page .footer ul li a {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    body .for_page .footer h3 {
+        font-size: 21px;
+        line-height: 31px;
+        margin-bottom: 24px;
+    }
+    .soc_link {
+        margin-bottom: 38px;
+    }
+    body .for_page .instagram {
+        padding-bottom: 75px;
+    }
+    body .for_page .instagram p {
+        font-size: 15px;
+        line-height: 155%;
+    }
+    body .for_page .instagram h2 {
+        font-size: 44px;
+        line-height: 55px;
+    }
+    body .for_page .page .subscribe .sub-form {
+        padding: inherit;
+        
+    }
+    body .for_page .page .about_us .about_text .bold {
+        font-size: 17px;
+        line-height: 160%;
+        margin-bottom: 26px;
+    }
+    body .for_page .page .about_us .about_text p {
+        font-size: 15px;
+        line-height: 150%;
+    }
+    body .for_page .page .about_us .about_text h2 {
+        font-size: 36px;
+        line-height: 48px;
+        margin-bottom: 24px;
+    }
+    
+    body .for_page .page .collection p a {
+        font-size: 16px;
+        line-height: 23px;
+    }
+    body .for_page .page .collection h2 {
+        font-size: 26px;
+        line-height: 49px;
+        margin-bottom: 18px;
+    }
+    body .for_page .page .growing .numbers .numbers_one h2, body .for_page .page .growing .numbers .numbers_two h2, body .for_page .page .growing .numbers .numbers_three h2 {
+        font-family: 'Nunito', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 47px;
+        color: #001B04;
+    }
+    body .for_page .page .growing .img_contain {
+        margin-left: -51px;
+        margin-top: 20px;
+    }
+    body .for_page .page .growing .leaf_cont .leaf {
+        display: none;
+    }
+    .nav-menu {
+        display: none;
+    }
+    .sign-buttons {
+        display: none;
+    }
+    body .for_page .page .header .responsive_menu {
+        display: block;
+        color: #1A1A1A;
+        cursor: pointer;
+        transition: 0.5s;
+        font-size: 35px;
+        margin-bottom: 9px;
+    }
+    body .for_page .page .header .name {
+        margin-top: 1px;
+    }
+}
+@media (max-width: 767px) {
+    
+    body .for_page .instagram h2 {
+        font-size: 36px;
+        line-height: 55px;
+    }
+    body .for_page .page .subscribe .sub-form {
+        margin-bottom: 10px;
+    }
+    body .for_page .page .subscribe .container .sub {
+        padding-left: 1px;
+    }
+    body .for_page .page .subscribe .sub-form input {
+        padding: 8px 0px 8px 0px;
+    }
+    body .for_page .page .slider-carousel {
+        padding-bottom: 60px;
+    }
+    body .for_page .page .slider-carousel h2 {
+        margin-bottom: 36px;
+        font-size: 36px;
+    }
+    body .for_page .page .about_us {
+        padding-bottom: 60px;
+    }
+    body .for_page .page .collection p a {
+        font-size: 15px;
+        line-height: 23px;
+    }
+    body .for_page .page .collection h2 {
+        font-size: 19px;
+        line-height: 36px;
+        margin-bottom: 11px;
+    }
+    body .for_page .page .growing .main_content h1 {
+        font-size: 55px;
+        line-height: 73px;
+    }
+    body .for_page .page .growing .main_content p {
+        font-size: 14px;
+        line-height: 146%;
+        margin-bottom: 26px;
+    }
+    body .for_page .page .growing .numbers .numbers_one h2, body .for_page .page .growing .numbers .numbers_two h2, body .for_page .page .growing .numbers .numbers_three h2 {
+        font-size: 23px;
+        line-height: 47px;
+    }
+    body .for_page .page .growing .numbers .numbers_one p, body .for_page .page .growing .numbers .numbers_two p, body .for_page .page .growing .numbers .numbers_three p {
+        font-size: 15px;
+        line-height: 22px;
+    }
+    .green_img {
+        display: none;
+    }
+}
+@media (max-width: 576px) {
+    body .for_page .instagram .item_two {
+        width: 270px;
+        height: 240px;
+    }
+    body .for_page .page .subscribe .sub-form {
+        padding: 8px 8px 8px 20px;
+    }
+    
+    body .for_page .page .growing .img_contain {
+        margin-left: -35px;
+    }
+    .img_order {
+        order:1;
+    }
+    .leaf_cont {
+        order: 2;
+    }
+}
+@media (max-width: 500px) {
+    body .for_page .footer h3 {
+        font-size: 20px;
+        line-height: 31px;
+        margin-bottom: 20px;
+    }
+    body .for_page .instagram .item_two {
+        width: 209px;
+        height: 240px;
+    }
+    
+}
+@media (max-width: 470px) {
+    body .for_page .footer h3 {
+        font-size: 18px;
+        line-height: 31px;
+        margin-bottom: 20px;
+        white-space: nowrap;
+    }
+    body .for_page .footer ul li a {
+        font-size: 12px;
+        line-height: 20px;
+    }
+}
+    

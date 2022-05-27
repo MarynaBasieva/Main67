@@ -1,0 +1,92 @@
+@media (min-width: 1920px) {
+    .for_page .container {
+        max-width: 1563px;
+    }
+  
+    }
+    @media (max-width: 1199px) {
+        body .main-description {
+            padding-bottom: 170px;
+        }
+       
+    }
+    @media (max-width: 1919px) {
+        body .second-block .pictures .woman {
+            position: absolute;
+            bottom: -119px;
+            right: -24px;
+        }
+    }
+    @media (max-width: 1340px) {
+       .looking_for .booking_form {
+        flex-wrap:wrap;
+       }
+       body .looking_for .booking_form input {
+        padding: 14px 8px 15px 10px;
+    }
+    body .looking_for .booking_form div {
+        margin-bottom: 37px;
+        margin-right: 41px;
+    }
+    }
+    @media (max-width: 1091px) {
+       
+    }
+   
+    @media (max-width: 1013px) {
+       
+    }
+    @media (max-width: 991px) {
+        body .main-description {
+            padding-bottom: 143px;
+        }
+        body .header .nav-menu .nav-list {
+            display: none;
+        }
+        body .header .nav-menu .responsive_menu {
+           display: block;
+       }
+       body .header .sign-button {
+           display: none;
+       }
+       body .second-block .pictures .woman {
+        position: absolute;
+        bottom: -119px;
+        right: 76px;
+    }
+    }
+    @media (max-width: 767px) {
+        body .main-description {
+            padding-bottom: 88px;
+        }
+        body .second-block .pictures .woman {
+            position: absolute;
+            bottom: -118px;
+            right: -89px;
+        }
+    }
+    @media (max-width: 677px) {
+        body .second-block .pictures .woman {
+            display: none;
+        }
+    }
+    @media (max-width: 576px) {
+       
+    }
+    @media (max-width: 500px) {
+        body .second-block {
+            padding-top: 122px;
+        }
+        
+    }
+    @media (max-width: 470px) {
+        body .looking_for .booking_form .butt_contain .butt_book {
+            margin-right: 9px;
+        }
+        body .main-description .buttons-main .first_button {
+            padding: 10px 25px 10px 25px;
+        }
+        body .main-description .buttons-main .second_button {
+            padding: 10px 34px 10px 34px;
+        }
+    }
