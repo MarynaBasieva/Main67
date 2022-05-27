@@ -1,0 +1,51 @@
+@media (min-width: 1200px) {
+}
+@media (max-width: 1550px) {
+
+}
+@media (max-width: 1080px) {
+    .slider {
+        padding-top: 100px;
+        padding-bottom: 160px;
+    }
+}
+@media (min-width: 1024px) {
+}
+@media (max-width: 991px) {
+  .menu,.basket{
+    display: none;
+  }
+  .responsive_menu{
+    display: block;
+    text-align: left;
+    color: #1D1F2E;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.Start_Shopping_text{
+    padding-right: 0px;
+}
+}
+@media (max-width: 767px) {
+    .header_menu_parents {
+        justify-content: center;
+    }
+    .room_parents p {
+        font-size: 13px;
+    }
+    .room_parents h2 {
+        font-size: 13px;
+    }
+    .first_colum p:nth-child(2) {
+       font-size: 13px;
+    }
+    .first_colum p:nth-child(3) {
+        padding-top: 65px;
+    }
+    .sub_menu_footer {
+        font-size: 12px;
+    }
+}
+@media (max-width: 576px) {
+    
+}

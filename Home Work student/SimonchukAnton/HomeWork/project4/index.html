@@ -6,26 +6,20 @@
     <title>CoffeeStyle</title>
     <meta name="viewport" content="width=device-width, intial-scale=1">
     <link type="text/css" href="css/style.css" rel="stylesheet" />
-
-
+    <link type="text/css" href="css/responsive.css" rel="stylesheet" />
     <link type="text/css" href="vendor/bootstrap-4.0.0/css/bootstrap.min.css" rel="stylesheet" />
     <link type="text/css" href="vendor/bootstrap-4.0.0/css/bootstrap-grid.min.css" rel="stylesheet" />
-    <script type="text/javascript" src="vendor/bootstrap-4.0.0/js/bootstrap.min.js"></script>
-
     <link type="text/css" href="vendor/fontawesome/css/all.min.css" rel="stylesheet" />
-
     <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@1,200&family=Roboto&display=swap" rel="stylesheet">
-
-    
-    <link href="vendor/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css" rel="stylesheet" />
-    <script type="text/javascript" src="vendor/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
-
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="vendor/OwlCarousel/dist/assets/owl.carousel.min.css" rel="stylesheet" />
     <link type="text/css" href="vendor/fancybox/dist/jquery.fancybox.min.css" rel="stylesheet" />
-    
-    <script type="text/javascript" src="vendor/fancybox/dist/jquery.fancybox.min.js"></script>
 
-    <script type="text/javascript" src="js/custom.js"></script>
     <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="vendor/fancybox/dist/jquery.fancybox.min.js"></script>
+    <script type="text/javascript" src="vendor/OwlCarousel/dist/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+    <script type="text/javascript" src="vendor/bootstrap-4.0.0/js/bootstrap.min.js"></script>
     
 
 </head>
@@ -35,16 +29,16 @@
              <div class="header">
                   <div class="container">
                      <div class="row">
-                         <div class="col-xl-2 col-lg-12 col-md-12 col-sm-12">
+                         <div class="col-xl-2 col-lg-2 col-md-2 col-sm-12">
                                 <div class="header_logo">
                                     <a href="#" class="logo">
                                         <img src="img/logo.png" alt="logo" title="logo" />
                                     </a>
                                 </div>
                          </div>
-                         <div class="col-xl-10 col-lg-12 col-md-12 col-sm-12">
+                         <div class="col-xl-10 col-lg-10 col-md-10 col-sm-12">
                                 <div class="header_menu_parents">
-                                    <nav class="nav_menu">
+                                    <nav class="nav_menu menu">
                                         <ul class="sub_menu">
                                             <li class="item_menu">
                                                 <a class="link_item_menu" href="#">Home</a>
@@ -69,13 +63,13 @@
                                     </nav>
                                     <div class="basket">
                                         <a href="#" class="package">
-                                            <img src="img/package.png" alt="package" title="package" />
-                                            Cart
-                                            <i class="fa-solid fa-0"></i>
+                                            <img src="img/package.png" alt="package" title="package" />                                   
                                         </a>
-                                        
-                                        
-                    
+                                        <p>Cart</p>
+                                        <i class="fa-solid fa-0"></i>
+                                    </div>
+                                    <div class="responsive_menu">
+                                        <i class="fas fa-bars"></i>
                                     </div>
                                 </div>
                                 
@@ -112,6 +106,12 @@
                                 <p>It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful 
                                 Pointing has no control about the blind texts it is an almost unorthographiclife One day however 
                                 a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+                                <p class="full_story">It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful 
+                                    Pointing has no control about the blind texts it is an almost unorthographiclife One day however 
+                                    a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.
+                                    It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful 
+                                    Pointing has no control about the blind texts it is an almost unorthographiclife One day however 
+                                    a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar</p>
                                 <div class="Pointing_botton_parents">
                                 <button class="Pointing_botton">Read the full Story</button> <!-- зробити тогл -->
                                 </div>
@@ -124,14 +124,14 @@
             <section class="two_img">
                 <div class="container">
                     <div class="row text-center justify-content-center">
-                        <div class="col-xl-5 col-lg-6 col-md-12 col-sm-12">
+                        <div class="col-xl-5 col-lg-6 col-md-6 col-sm-12">
                             <div class="first_img">
                                 <img src="img/pink.png" alt="pink" title="pink">
                                 <h2>Pink Premium Ceramic</h2>
                                 <p>$ 99.00 USD</p>
                             </div>
                         </div>
-                        <div class="col-xl-5 col-lg-6 col-md-12 col-sm-12">
+                        <div class="col-xl-5 col-lg-6 col-md-6 col-sm-12">
                             <div class="second_img">
                                 <img src="img/golden.png" alt="golden" title="golden">
                                 <h2>Golden Designers Mug</h2>
@@ -155,7 +155,7 @@
             <section class="More_Products">
                 <div class="container">
                     <div class="row text-center justify-content-center">
-                        <div class="col-xl-3 col-lg-4 col-md-12 col-sm-12">
+                        <div class="col-xl-3 col-lg-4 col-md-4 col-sm-12">
                             <div class="More_Products_img_1">
                                 <img src="img/img_1.png" alt="img_1" title="img_1">
                                 <h2>Red Love Cup</h2>
@@ -165,7 +165,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xl-3 col-lg-4 col-md-12 col-sm-12">
+                        <div class="col-xl-3 col-lg-4 col-md-4 col-sm-12">
                             <div class="More_Products_img_2">
                                 <img src="img/img_2.png" alt="img_2" title="img_2">
                                 <h2>Black Tea Cup</h2>
@@ -175,7 +175,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xl-3 col-lg-4 col-md-12 col-sm-12">
+                        <div class="col-xl-3 col-lg-4 col-md-4 col-sm-12">
                             <div class="More_Products_img_3">
                                 <img src="img/img_3.png" alt="img_3" title="img_3">
                                 <h2>B&W Essentials Mug</h2>
@@ -184,21 +184,21 @@
                         </div>
                     </div>
                     <div class="row text-center justify-content-center ">
-                        <div class="col-xl-3 col-lg-4 col-md-12 col-sm-12">
+                        <div class="col-xl-3 col-lg-4 col-md-4 col-sm-12">
                             <div class="More_Products_img_4">
                                 <img src="img/img_4.png" alt="img_4" title="img_4">
                                 <h2>Winter Style Mug</h2>
                                 <p>$ 25.00 USD</p>
                             </div>
                         </div>
-                        <div class="col-xl-3 col-lg-4 col-md-12 col-sm-12">
+                        <div class="col-xl-3 col-lg-4 col-md-4 col-sm-12">
                             <div class="More_Products_img_5">
                                 <img src="img/img_5.png" alt="img_5" title="img_5">
                                 <h2>Ceramic Tea</h2>
                                 <p>$ 46.00 USD</p>
                             </div>
                         </div>
-                        <div class="col-xl-3 col-lg-4 col-md-12 col-sm-12">
+                        <div class="col-xl-3 col-lg-4 col-md-4 col-sm-12">
                             <div class="More_Products_img_6">
                                 <img src="img/img_6.png" alt="img_6" title="img_6">
                                 <h2>No Handle Bar Cup</h2>
@@ -207,21 +207,21 @@
                         </div>
                     </div>
                     <div class="row text-center  justify-content-center">
-                        <div class="col-xl-3 col-lg-4 col-md-12 col-sm-12">
+                        <div class="col-xl-3 col-lg-4 col-md-4 col-sm-12">
                             <div class="More_Products_img_7">
                                 <img src="img/img_7.png" alt="img_7" title="img_7">
                                 <h2>Espresso Cup by Mugs.co</h2>
                                 <p>$ 25.00 USD</p>
                             </div>
                         </div>
-                        <div class="col-xl-3 col-lg-4 col-md-12 col-sm-12">
+                        <div class="col-xl-3 col-lg-4 col-md-4 col-sm-12">
                             <div class="More_Products_img_8">
                                 <img src="img/img_8.png" alt="img_8" title="img_8">
                                 <h2>Pink Premium Ceramic</h2>
                                 <p>$ 99.00 USD</p>
                             </div>
                         </div>
-                        <div class="col-xl-3 col-lg-4 col-md-12 col-sm-12">
+                        <div class="col-xl-3 col-lg-4 col-md-4 col-sm-12">
                             <div class="More_Products_img_9">
                                 <img src="img/img_9.png" alt="img_9" title="img_9">
                                 <h2>Summer Designer Cup</h2>
@@ -242,8 +242,8 @@
                             
                         </div>
                     </div>
-                    <div class="row ">
-                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                    <div class="row  justify-content-center">
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                             <div class="tree_pictures_parents">
                                 <div class="tree_pictures_1">
                                     <img src="img/black.png" alt="black" />
@@ -256,12 +256,12 @@
                             </div>
                             
                         </div>
-                        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
                             <div class="Start_Shopping_text">
                                 <p>Premium Offer</p>
                                 <h2>Get our Coffee Magazine</h2>
                                 <p>The most versatile furniture system ever created. Designed to fit your life.</p>
-                                <a href="#" class="Start_Shopping_button">Start Shopping</a>
+                                <a href="#" class="Start_Shopping_button" data-toggle="modal" data-target="#exampleModal">Start Shopping</a>
                             </div>
                         </div>
                     </div>
@@ -272,28 +272,35 @@
                 <img src="img/cup_photo.png" alt="cup_photo" title="cup_photo"/>
             </section>
             <section class="slider">
-              <div class="conteiner">
-                        <div class="owl-carousel owl-theme " id="carousel-partners">
-                                <div class="item">
-                                    <img src="img/room.png" alt="room" title="room"/>
-                                    <!-- <h2>Health Check: why do I get a headache when I haven’t had my coffee?</h2>
-                                    <p>It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-                                    <br>October 9, 2018</br> -->
-                                </div>
-                                <div class="item">
-                                    <img src="img/room2.png" alt="room" title="room"/>
-                                    <!-- <h2>How long does a cup of coffee keep you awake?</h2>
-                                    <p>It is a paradisematic country, in which roasted parts. Vel qui et ad voluptatem.</p>
-                                    <br>October 9, 2018</br> -->
-                                </div>
-                                <div class="item">
-                                    <img src="img/room3.png" alt="room" title="room"/>
-                                    <!-- <h2>Recent research suggests that heavy coffee drinkers may reap health benefits.</h2>
-                                    <p>It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-                                    <br>October 9, 2018</br> -->
-                                </div>
+                <div class="container">
+                    <h1>Behind the mugs, lifestyle stories</h1>
+                    <div class="row">
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
+                            <div class="room_parents">
+                                <img src="img/room.png" alt="room" title="room"/>
+                                <h2>Health Check: why do I get a headache when I haven’t had my coffee?</h2>
+                                <p>It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                                <br>October 9, 2018</br>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
+                            <div class="room_parents">
+                                <img src="img/room2.png" alt="room" title="room"/>
+                                <h2>How long does a cup of coffee keep you awake?</h2>
+                                <p>It is a paradisematic country, in which roasted parts. Vel qui et ad voluptatem.</p>
+                                <br>October 9, 2018</br>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
+                            <div class="room_parents">
+                                <img src="img/room3.png" alt="room" title="room"/>
+                                <h2>Recent research suggests that heavy coffee drinkers may reap health benefits.</h2>
+                                <p>It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                                <br>October 9, 2018</br>
+                            </div>
                         </div>
                     </div>
+                </div>
                     
             </section>
             <section class="Coffee_Updates">
@@ -344,18 +351,20 @@
             </div>
         </div>
     </div>
+    <!--Modal-->
+    </div>
 </body>
     <footer class="footer">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-xl-4 col-lg-3 col-md-6 col-sm-6">
+                <div class="col-xl-4 col-lg-3 col-md-3 col-sm-3">
                     <div class="first_colum">
                         <img src="img/logo.png" alt="logo" title="logo"/>
                         <p>Delivering the best coffee life since 1996. From coffee geeks to the real ones.</p>
                         <p>CoffeeStyle Inc. © 1996</p>
                     </div>
                 </div>
-                <div class="col-xl-2 col-lg-3 col-md-6 col-sm-6">
+                <div class="col-xl-2 col-lg-3 col-md-3 col-sm-3">
                     <div class="footer_menu_parents">
                         <nav class="nav_menu">
                             <ul class="sub_menu_footer">
@@ -383,7 +392,7 @@
                         </nav>
                     </div>
                 </div>
-                <div class="col-xl-2 col-lg-3 col-md-6 col-sm-6">
+                <div class="col-xl-2 col-lg-3 col-md-3 col-sm-3">
                     <div class="footer_menu_parents">
                         <nav class="nav_menu">
                             <ul class="sub_menu_footer">
@@ -404,7 +413,7 @@
                         </nav>
                     </div>
                 </div>
-                <div class="col-xl-4 col-lg-3 col-md-6 col-sm-6">
+                <div class="col-xl-4 col-lg-3 col-md-3 col-sm-3">
                     <div class="fourth_colum">
                         <p>Contact Us</p>
                         <p>We’re Always Happy to Help</p>
