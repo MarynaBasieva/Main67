@@ -10,7 +10,7 @@ jQuery(document).ready(function () {
 	let carousel = jQuery('#carousel_partners');
 
 	carousel.owlCarousel({
-		items:4,
+		items:3,
 
 		autoplay: true,
 		autoplayTimeout: 3000,
@@ -50,14 +50,14 @@ jQuery(document).ready(function () {
 				smartSpeed: 1000
 			},
 			991: {
-				items: 4,
+				items: 3,
 				dots: true,
 				mouseDrag: true,
 				autoplay: true,
 				smartSpeed: 1000
 			},
 			1099: {
-				items: 4,
+				items: 3,
 				dots: true,
 				mouseDrag: true
 			}
