@@ -397,9 +397,13 @@ body {
     color: #1D1F2E;
     opacity: 70%;
 }
-.room_parents br{
+.room_parents span {
     font-size: 12px;
     color: #1D1F2E;
+}
+.room_parents{
+    display: flex;
+    flex-wrap: wrap;
 }
 
 /* slider */
