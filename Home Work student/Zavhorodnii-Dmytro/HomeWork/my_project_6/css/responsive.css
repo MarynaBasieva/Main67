@@ -1,0 +1,260 @@
+@media (min-width: 1600px) {
+    
+.for_page .container {
+    max-width: 1348px;
+    
+}
+}
+@media (max-width: 1599px) {
+    .for_page .page .contacts button {
+        padding: 20px 57px;
+    }
+    .for_page .page .contacts input {
+        padding: 25px 87px 22px 26px;
+    }
+}
+@media (max-width: 1199px) {
+    .for_page .page .contacts input {
+        margin-bottom: 6px;
+    }
+    .for_page .page .skills {
+        padding-bottom: 69px;
+    }
+    .for_page .page .skills .gr_el_four {
+        padding: 34px 15px 34px 25px;
+    }
+    .for_page .page .skills .gr_el_three {
+        padding: 17px 41px 34px 34px;
+    }
+    .for_page .page .skills .gr_el_two {
+        padding: 0px 11px 34px 31px;
+    }
+    .for_page .page .skills .gr_el_one {
+        padding: 25px 13px 80px 33px;
+    }
+    .for_page .page .skills .gr_el_one a {
+        padding: 17px 58px;
+    }
+   
+    .for_page .page .skills .adapt_grid h4 {
+        font-size: 20px;
+    }
+    .for_page .page .skills .adapt_grid p {
+        font-size: 14px;
+    }
+    .for_page .page .main_block p {
+        font-size: 22px;
+        line-height: 34px;
+        margin-bottom: 73px;
+    }
+    .for_page .page .skills .art_gr {
+        margin-bottom: 46px;
+    }
+    .for_page .page .main_block h2 {
+        font-size: 60px;
+        line-height: 72px;
+    }
+    .for_page .page .main_block .butt_block button {
+        font-size: 33px;
+        line-height: 54px;
+        padding: 28px 80px;
+    }
+    .for_page .page .header .nav-menu .nav-list li a {
+        font-size: 18px;
+    }
+    .for_page .page .header .main_btn a {
+        font-size: 21px;
+    }
+    .for_page .page .header .nav-menu .nav-list {
+        margin-left: 35px;
+    }
+}
+@media (max-width: 1013px) {
+    
+}
+@media (max-width: 991px) {
+
+    .for_page .page .Pricing {
+        padding-bottom: 155px;
+    }
+    .for_page .page .about {
+        padding-bottom: 82px;
+    }
+    .for_page .page .about .numbers .numb h2 {
+        font-size: 39px;
+        line-height: 69px;
+    }
+    .for_page .page .about .about_article p {
+        font-size: 17px;
+    }
+    .for_page .page .about .about_article h2 {
+        font-size: 44px;
+        margin-bottom: 10px;
+    }
+    .for_page .page .skills .gr_el_two {
+
+        margin-right: inherit;
+    }
+    .for_page .page .skills .gr-lattice {
+        grid-template-columns: 1fr 1fr ;
+    }
+    .for_page .page .skills .gr_el_one {
+        margin-bottom: 17px;
+    }
+    .for_page .page .skills .gr_el_one {
+        padding: 12px 22px 51px 25px;
+    }
+    .for_page .page .skills .adapt_grid h4 {
+        font-size: 18px;
+    }
+    .for_page .page .skills .adapt_grid p {
+        font-size: 11px;
+    }
+    .for_page .page .main_block {
+        padding-bottom: 98px;
+    }
+    .for_page .page .main_block button {
+        font-size: 32px;
+        line-height: 54px;
+        padding: 23px 61px;
+    }
+    .for_page .page .main_block h2 {
+        width: inherit;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 60px;
+        line-height: 80px;
+        margin-top: 10px;
+        margin-bottom: 40px;
+    }
+    .index_add_one {
+        order: 2;
+    }
+    .index_add_two {
+        order: 1;
+    }
+    .for_page .page .header .main_btn {
+        display: none;
+    }
+    .for_page .page .header .nav-menu  {
+        display: none;
+        
+    }
+    .for_page .page .header .responsive_menu {
+        display: block;
+        
+        
+    }
+}
+@media (max-width: 767px) {
+    .for_page .page .footer h3 {
+        font-size: 33px;
+    }
+    .for_page .page .footer ul li a {
+        font-size: 20px;
+    }
+    
+    .for_page .page .about .img_dollar img {
+        margin: 0 auto
+    }
+    .for_page .page .skills .gr-lattice {
+        justify-content: center;
+    }
+    .for_page .page .main_block {
+        padding-bottom: 60px;
+    }
+    .for_page .page .main_block .butt_block button {
+        padding: 23px 61px;
+        display: flex;
+        justify-content: center;
+    }
+    .for_page .page .main_block .butt_block  {
+        padding: 23px 61px;
+        display: flex;
+        justify-content: center;
+    }
+    .for_page .page .main_block p {
+        font-size: 20px;
+        line-height: 34px;
+        margin-bottom: 37px;
+        text-align: center;
+    }
+    .for_page .page .main_block h2 {
+        font-size: 55px;
+        line-height: 75px;
+        text-align: center;
+    }
+}
+@media (max-width: 598px) {
+    .for_page .page .skills .gr_el_one {
+        padding: 7px 17px 36px 16px;
+    }
+    .for_page .page .skills .gr_el_two {
+        padding: 0px 7px 23px 20px;
+    }
+    .for_page .page .skills .gr_el_three {
+        padding: 13px 34px 26px 28px;
+    }
+    .for_page .page .skills .gr_el_four {
+        padding: 22px 0px 25px 13px;
+    }
+}
+@media (max-width: 576px) {
+    .for_page .page .footer h3 {
+        text-align: center;
+    }
+    .for_page .page .contacts {
+        padding-bottom: 90px;
+    }
+    .for_page .page .contacts p {
+        font-size: 15px;
+        margin-bottom: 45px;
+    }
+    .for_page .page .contacts h2 {
+        font-size: 42px;
+        text-align: center;
+    }
+    .for_page .page .Pricing h2 {
+        font-size: 42px;
+        margin-bottom: 47px;
+    }
+    
+    .for_page .page .about .numbers .numb p {
+        font-size: 17px;
+        line-height: 30px;
+    }
+    .for_page .page .about .numbers .numb h2 {
+        font-size: 33px;
+        line-height: 58px;
+    }
+    .for_page .page .about .about_article p {
+        font-size: 15px;
+    }
+    .for_page .page .about .about_article h2 {
+        font-size: 42px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    .for_page .page .skills {
+        display: none;
+    }
+    .for_page .page .main_block .butt_block button {
+        padding: 20px 50px;
+        white-space: nowrap;
+        padding: 17px 46px;
+    }
+}
+@media (max-width: 500px) {
+    .for_page .page .about .numbers .numb p {
+        font-size: 15px;
+        line-height: 29px;
+    }
+    .for_page .page .about .numbers .numb h2 {
+        font-size: 26px;
+        line-height: 58px;
+    }
+}
+@media (max-width: 470px) {
+   
+}
+    
