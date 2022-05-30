@@ -1,0 +1,669 @@
+@media (min-width: 1440px){
+    .page .container {
+        max-width: 1380px;
+    }
+}
+@media (max-width: 1299px){
+    .teContent p:first-child {
+        font-size: 36px;
+        padding-top: 55px;
+    }
+    .teContent p:last-child {
+        font-size: 15px;
+        padding-bottom: 55px;
+    }
+}
+@media (max-width: 1199px){
+    .comentContent {
+        height: 80%;
+        top: 67px;
+    }
+    .subscribe_A a {
+        font-size: 15px;
+        padding: 28px 30px 33px 36px;
+    }
+    .subscribeTitle p {
+        padding-left: 0;
+    }
+    .lastBlockLogo {
+        padding: 0px 40px 65px;
+    }
+    .logo_resp{
+        display: flex;
+        justify-content: space-between;
+    }
+    header {
+        padding: 20px 0;
+    }
+    .cart{
+        display: none;
+    }
+    .menu{
+        display: none;
+    }
+    .responsive-menu{
+        display: inline-block;
+    }
+    .responsive-menu i {
+        font-size: 48px;
+        color: #274C5B;
+        padding: 0 20px  0 0;
+        transition: 2s;
+    }
+    .responsive-menu i:hover{
+        color: rgb(68, 68, 68,0.5);
+        transform: scale(1.1);
+    }
+    .contentText {
+        margin-bottom: 60px;
+    }
+    .banner {
+        padding: 90px 0 120px;
+    }
+    .block1 {
+        padding: 70px 0;
+    }
+    .teContent p:last-child {
+        padding-bottom: 30px;
+    }
+    .teContent p:first-child {
+        padding-top: 33px;
+    } 
+    .aboutUs {
+        padding: 60px 0px;
+    }   
+    .pictures p {
+        font-size: 16px; 
+        margin: 150px 60px;
+    }
+    
+}
+    
+@media (max-width: 991px){
+    .logo a img {
+        width: 80%;
+    }
+    .banner {
+        padding: 60px 0 60px;
+    }
+    .bannerContent h3 {
+        font-size: 25px;
+        line-height: 40px;
+    }
+    .bannerContent h1 {
+        font-size: 40px;
+        line-height: 45px;
+        padding-right: 122px
+    }
+    .bannerContent button {
+        font-size: 14px;
+        line-height: 0px;
+        padding: 16px 0px 24px 14px;
+    }
+    .bannerContent .fa {
+        padding-left: 10px;
+        font-size: 24px;
+    }
+    .contentText {
+        margin-bottom: 0;
+    }
+    .aboutUs-img{
+        position: relative;
+        opacity: 0.5;
+    }
+    .aboutUsContent {
+        position: absolute;
+        top: -718px;
+        left: 0;
+    }
+    .aboutUs {
+        padding: 30px 60px 75px;
+    }
+    .aboutUs-img {
+        position: relative;
+        opacity: 0.2;
+    }
+    .aboutUsContent {
+        position: absolute;
+        top: -523px;
+        left: 0;
+    }
+    .aboutUsContent a {
+        font-size: 14px;
+        line-height: 32px;
+        padding: 12px 10px 10px 15px;
+        border-radius: 20px;
+        margin-top: 0;
+    }
+    .page h3 {
+        font-size: 25px;
+        line-height: 20px;
+    }
+    .page h2 {
+        font-size: 35px;
+        line-height: 45px;
+    }
+    .organicText h4,
+    .qualityText h4 {
+        font-size: 20px;
+        line-height: 10px;
+    }
+    .organicText p, .qualityText p {
+        font-size: 15px;
+        line-height: 20px;
+    }
+    .aboutUsContent p {
+        font-size: 14px;
+        line-height: 24px;
+        padding-top: 10px;
+    }
+    .organicImg, 
+    .qualityImg {
+        padding-top: 0;
+    }
+    .products {
+        padding: 50px 0;
+    }
+    .productsTitle h2 {
+        padding-bottom: 0;
+    }
+    .testimonial {
+        padding: 50px 0 60px;
+    }
+    .testimonialContent .teParag {
+        font-size: 14px;
+        line-height: 28px;
+        padding: 0 90px;
+    }
+    .testimonialContent h2 {
+        padding-bottom: 0px;
+    }
+    .teContent p:first-child {
+        font-size: 25px;
+        padding-top: 10px;
+        margin: 0;
+    }
+    .teContent p:last-child {
+        font-size: 12px;
+        padding-bottom: 10px;
+    }
+    .testimonialContent .teParag2 {
+        font-size: 20px;
+        line-height: 20px;
+    }
+    .testimonialContent {
+        padding-bottom: 20px;
+    }
+    .teContent {
+        margin-top: 32px;
+    }
+    .Vcontent {
+        padding: 10px 15px;
+    }
+    .prise p:first-child {
+        font-size: 14px;
+        line-height: 0px;
+    }
+    .prise p:nth-child(2) {
+        font-size: 15px;
+        line-height: 20px;
+    }
+    .Vcontent a {
+        font-size: 18px;
+        line-height: 25px;
+    }    
+    body .page .prise .fa:first-child {
+        padding-left: 20px;
+    }
+    .offerProducts {
+        padding: 50px 0;
+    }
+    .view .viewFl {
+        margin-top: 14px;
+    }
+    .view .viewFl a {
+        font-size: 14px;
+        line-height: 0;
+        letter-spacing: 0;
+    }
+    .friendly {
+        padding: 30px 0px 30px 30px;
+    }
+    .friendly .friendlyText p {
+        font-size: 14px;
+        line-height: 25px;
+        letter-spacing: 0;
+    }
+    .friendly .friendlyText h3 {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .pictures {
+        padding: 40px 0;
+    }
+    .newsContent {
+        padding-bottom: 28px;
+    }
+    .moreNews {
+        padding-top: 80px;
+    }
+    body .page .comentContent h3 {
+        font-size: 16px;
+    }
+    .news {
+        padding: 40px 0 50px;
+    }
+     #carousel_partner_2.owl-theme .owl-nav {
+        position: absolute;
+        right: 30px;
+        top: -92px;
+    }
+    .comentContent {
+        height: 50%;
+        top: 224px;
+        left: 35px;
+    }
+    .moreNews a {
+        font-size: 14px;
+    }
+    .subscribeTitle p {
+        font-size: 30px;
+        line-height: 35px;
+    }
+    .subscribeForm input {
+        font-size: 14px;
+        line-height: 0px;
+        padding: 20px 70px 21px 30px;
+    }
+    .subscribe_A a {
+        font-size: 14px;
+        padding: 20px 0px 21px 12px;
+    }
+    .subscribe_A {
+        padding-top: 132px;
+    }
+    .subscribe {
+        padding: 30px 0;
+    }
+   
+    .lastBlock {
+        padding: 50px 0 0px;
+    }
+    .order{
+        order: 2;
+    }
+    .icon {
+        padding-top: 10px;
+    }
+    .lastBlockLogo {
+        padding: 0px 40px 20px;
+    }
+    .utility,
+    .contact{
+        padding-top: 30px;
+    }
+    .utility h4,
+    .email h4  {
+        font-size: 20px;
+        line-height: 10px;
+    }
+    
+    .utility p a,
+    .email a,
+    .phone a,
+    .lastBlock .addressRoad   {
+        font-size: 14px;
+        line-height: 0px;
+    }
+    .email p, 
+    .phone p, 
+    .address p {
+        font-family: 'Open Sans';
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 14px;
+    }
+    .copyright p {
+        font-size: 14px;
+        line-height: 0px;
+    }
+    .copyright a {
+        font-size: 14px;
+        line-height: 0px;
+    }
+    .lastBlockLogo img {
+        padding-bottom: 12px;
+    }
+}
+    
+@media (max-width: 767px){
+    .bannerContent h1 {
+        font-size: 34px;
+        line-height: 40px;
+    }
+    .block1Content1 h4,
+    .block1Content2 h4 {
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .block1Content1 p,
+    .block1Content2 p  {
+        font-size: 30px;
+        line-height: 26px;
+    }
+    .block1Content2,
+    .block1Content1 {
+        background-size: cover;
+        margin-top: 20px;
+    }
+    .aboutUs {
+        padding: 60px 0 0;
+    }
+    .page h2 {
+        font-size: 25px;
+    }
+    .page h3 {
+        font-size: 20px;
+        line-height: 10px;
+    }
+    .page .sylka {
+        font-size: 12px;
+        line-height: 30px;
+    }
+    .teContent p:last-child {
+        font-size: 10px;
+        line-height: 20px;
+    }
+    .teContent p:first-child {
+        font-size: 18px;
+        line-height: 28px;
+    }
+    .view .viewFl {
+        padding: 12px 56px 12px 10px;
+    }
+    #carousel_partner.owl-theme .owl-nav {
+        position: absolute;
+        right: 18px;
+        top: -77px;
+    }
+    .eco {
+        padding: 30px 0;
+    }
+    .picturesItem1,
+    .picturesItem2,
+    .picturesItem3 {
+        width: 100%;
+        margin-bottom: 20PX;
+    }
+    .pictures p {
+        margin: 150px 200px;
+    }
+    body .page h2 {
+        line-height: 35px;
+    }
+    .moreNews a {
+        padding: 20px 50px 20px 15px;
+    }
+    .moreNews {
+        padding-top: 35px;
+    }
+    #carousel_partner_2.owl-theme .owl-nav {
+        right: 19px;
+        top: -108px;
+    }
+    .comentContent {
+        top: 182px;
+        padding-top: 20px;
+    }
+    .comentContent a {
+        font-size: 14px;
+    }
+    .subscribe_A a {
+        font-size: 14px;
+        padding: 12px 0px 13px 12px;
+    }
+    .subscribeTitle p {
+        padding: 26px 0 25px;
+    }
+    .subscribe_A {
+        justify-content: center;
+        padding-top: 10px;
+        display: flex;
+        padding-bottom: 20px;
+    }
+    .subscribeForm {
+        flex-direction: column-reverse;
+        align-items: center; 
+        padding-top: 0px;
+    }
+    .subscribeTitle p {
+        text-align: center;
+    }
+}
+@media (max-width: 575px){
+    .responsive-menu i {
+        font-size: 40px;
+    }
+    .aboutUsContent {
+        padding: 0 30px;
+    }
+    .aboutUs {
+        padding-bottom: 148px;
+    }
+    .organic{
+        padding-left: 50px;
+    }
+    .organicImg, 
+    .qualityImg {
+        padding-bottom: 10px;
+    }
+    .item {
+        margin: 0 30px;
+    }
+    .pictures p {
+        margin: 120px 154px;
+        line-height: 10px;
+    }
+    .comentContent {
+        width: 87%;
+    }
+    .contact,
+    .email h4,
+    .email p,
+    .phone p,
+    .address p,
+    .page .addressRoad {
+        text-align: left;
+    }
+    .page h2 {
+        font-size: 22px;
+    }
+    .comentContent {
+        height: 58%;
+        top: 140px;
+        left: 40px;
+        width: 85%;
+    }
+    .subscribe {
+        padding: 30px 20px;
+    }
+    .copyright p {
+        font-size: 12px;
+    }
+}
+@media (max-width: 500px){
+    .bannerContent h1 {
+        font-size: 30px;
+    }
+    .bannerContent button {
+        padding: 7px 0px 14px 14px;
+        margin: 0;
+    }
+    .block1 {
+        padding: 20px 0;
+    }
+    .page h2 {
+        font-size: 20px;
+    }
+    .aboutUsContent {
+        position: absolute;
+        top: -456px;
+    }
+    .aboutUsContent p {
+        font-size: 13px;
+        line-height: 20px;
+    }
+    .organicText h4, 
+    .qualityText h4 {
+        font-size: 18px;
+        line-height: 0px;
+    }
+    .aboutUsContent a {
+        line-height: 0px;
+        padding: 7px 10px 13px 15px;
+    }
+    .comentContent {
+        height: 58%;
+        top: 124px;
+        left: 36px;
+    }
+    .comentContent p {
+        font-size: 14px;
+        line-height: 25px;
+    }
+    .comentContent h4 {
+        font-size: 13px;
+    }
+    .subscribeTitle p {
+        font-size: 25px;
+        line-height: 0px;
+    }
+}
+@media (max-width: 470px){
+    .bannerContent h1 {
+        font-size: 26px;
+        line-height: 34px;
+    }
+    .banner {
+        padding: 30px 0 35px;
+    }
+    .contentText {
+        padding: 50px 40px ;
+    }
+    .aboutUsContent {
+        position: absolute;
+        top: -387px;
+        padding-right: 63px;
+    }
+    .organic, 
+    .quality {
+        padding: 0px;
+    }
+    .aboutUs {
+        padding-bottom: 188px;
+    } 
+    .testimonialContent .teParag {
+        padding: 0 30px;
+    }
+    .view .viewFl {
+        padding: 12px 52px 12px 10px;
+    }
+    #carousel_partner.owl-theme .owl-nav {
+        right: 17px;
+        top: -66px;
+    }
+    .offerTitle {
+        padding-bottom: 0;
+    }
+    .pictures p {
+        margin: 120px 110px;
+    }
+    .comentContent {
+        height: 72%;
+        top: 66px;
+        left: 37px;
+        width: 82%;
+    }
+    .page h3 {
+        line-height: 18px;
+    }
+    .news {
+        padding: 15px 0 15px;
+    }
+    .lastBlock {
+        padding: 0;
+    }
+    .copyright p {
+        font-size: 10px;
+    }
+    .copyright a {
+        font-size: 12px;
+    }
+    .page h2 {
+        font-size: 17px;
+    }
+    .page h3 {
+        font-size: 15px;
+    }
+    #carousel_partner_2.owl-theme .owl-nav {
+        top: -117px;
+    }
+}
+@media (max-width: 360px){
+    .block1Content1 p, 
+    .block1Content2 p {
+        font-size: 25px;
+        line-height: 17px;
+    }
+    .block1Content1 h4, 
+    .block1Content2 h4 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .aboutUsContent {
+        position: absolute;
+        top: -360px;
+    }
+    .aboutUs {
+        padding-bottom: 260px;
+    }
+    body .page .prise .fa {
+        color: #FFA858;
+        font-size: 12px;
+    }
+    #carousel_partner.owl-theme .owl-nav {
+        right: 26px;
+        top: -91px;
+    }
+    .prise p:nth-child(2) {
+        font-size: 13px;
+    }
+    .prise p:first-child {
+        font-size: 12px;
+    }
+    .comentContent p {
+        font-size: 12px;
+        line-height: 19px;
+    }
+    body .page .comentContent h3 {
+        font-size: 14px;
+    }   
+    .comentContent {
+        height: 79%;
+        top: 32px;
+        left: 37px;
+        width: 80%;
+    } 
+    .comentContent {
+        padding: 15px 20px 15px;
+    }
+    .subscribeTitle p {
+        font-size: 18px;
+    }
+    .icon a img {
+        padding: 12px;
+    }
+    .copyright p {
+        line-height: 20px;
+    }
+}
