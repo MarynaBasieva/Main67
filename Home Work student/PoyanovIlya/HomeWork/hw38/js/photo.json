@@ -1,0 +1,44 @@
+[
+	{
+	  "title":"Sad Monkey",
+	  "url":"http://127.0.0.1:5500/img/monk.png",
+	  "price":"1000 USD",
+	  "buy":"#"
+		
+	},
+	{
+		"title":"Sad Monkey",
+		"url":"http://127.0.0.1:5500/img/monk1.png",
+		"price":"1000 USD",
+		"buy":"#"
+		  
+	  },
+	  {
+		"title":"Sad Monkey",
+		"url":"http://127.0.0.1:5500/img/monk2.png",
+		"price":"1000 USD",
+		"buy":"#"
+		  
+	  },
+	  {
+		"title":"Sad Monkey",
+		"url":"http://127.0.0.1:5500/img/monk3.jpg",
+		"price":"1000 USD",
+		"buy":"#"
+		  
+	  },
+	  {
+		"title":"Sad Monkey",
+		"url":"http://127.0.0.1:5500/img/monk4.jpg",
+		"price":"1000 USD",
+		"buy":"#"
+		  
+	  },
+	  {
+		"title":"Sad Monkey",
+		"url":"http://127.0.0.1:5500/img/monk.png",
+		"price":"1000 USD",
+		"buy":"#"
+		  
+	  }
+]
