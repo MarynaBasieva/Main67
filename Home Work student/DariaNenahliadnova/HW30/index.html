@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW30</title>
+</head>
+<body>
+    <!--1) Создать объект userJob 
+    - name
+    -last name
+    -age
+    Sullary{
+    - зарплата
+    - рабочий дни
+    отпускные{
+        - деньги
+        - сколько дней отпускных 
+    }
+    }
+    Через цикл for in получить все свойства всего объекта и вывести через class="Result"
+    Дублировать этот объект к другой переменной и поменять все значения и вывести в class="ResultFinish"
+    -->
+
+  <div class="result"></div>
+  <div class="resultFinish"></div>
+  <div class="resultFinishArr"></div>
+
+</body>
+<script>
+    //1
+    let result = document.querySelector('.result');
+    let userJob = {
+        name: "Ivan",
+        lastName: "Ivanov",
+        age: 25,
+        salary: {
+            jobSalary: 5000,
+            workDAy: "25",
+            holiday: {
+                money: 2000,
+                holidayDay: 20,
+            }
+        }
+    };
+    for (let key in  userJob){
+        console.log( userJob[key]);
+    }
+    let resultFinish = document.querySelector('.resultFinish');
+        let newJob = Object.assign({}, userJob);
+        newJob.name = 'Petro';
+        newJob.lastname = 'Petrov';
+        newJob.age = 30;
+        newJob.salary.jobSalary = 50000;
+        newJob.salary.workDAy = 25;
+        newJob.salary.holiday.money = 3000;
+        newJob.salary.holiday.holidayDay = 30;
+
+        console.log(newJob);
+
+        console.log('\n');
+    
+    //2
+    const userPeople = [{
+        name: "Olha",
+        lastName: "Petrova",
+        age: 25,
+        salary: {
+            jobSalary: 5000,
+            workDAy: "25",
+            holiday: {
+                money: 2000,
+                holidayDay: 20,
+            },
+        },
+    },
+    { 
+        name: "Sergey",
+        lastName: "Petrov",
+        age: 25,
+        salary: {
+            jobSalary: 5000,
+            workDAy: "25",
+            holiday: {
+                money: 2000,
+                holidayDay: 20,
+            },
+        },
+    },
+    {
+        name: "Marina",
+        lastName: "Marinova",
+        age: 25,
+        salary: {
+            jobSalary: 5000,
+            workDAy: "25",
+            holiday: {
+                money: 2000,
+                holidayDay: 20,
+            },
+        },
+    },
+    {
+        name: "Roman",
+        lastName: "Romanov",
+        age: 25,
+        salary: {
+            jobSalary: 5000,
+            workDAy: "25",
+            holiday: {
+                money: 2000,
+                holidayDay: 20,
+            },
+        },
+    },
+    {
+        name: "Alex",
+        lastName: "Alekseev",
+        age: 25,
+        salary: {
+            jobSalary: 5000,
+            workDAy: "25",
+            holiday: {
+                money: 2000,
+                holidayDay: 20,
+            },
+        },
+    }];
+    let resultFinishArr = document.querySelector('.resultFinishArr');
+    userPeople.map (userPeople => resultFinishArr.innerHTML += `${userPeople.name} ${userPeople.lastname} ${userPeople.salary.holiday.money}\n ua <br> \n`);
+    
+    
+    
+</script>
+
+</html>
