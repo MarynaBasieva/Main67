@@ -507,6 +507,9 @@ footer .social li {
     padding: 0;
     margin-bottom: 20px;
   }
+  .text .main-section-title:after {
+    display: none;
+  }
   footer .logo {
     margin-bottom: 40px;
   }

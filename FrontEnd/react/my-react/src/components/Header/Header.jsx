@@ -1,7 +1,7 @@
 import React from "react";
 //import mod from'./Header.module.css';
 import styled from 'styled-components';
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import {Link}  from "react-router-dom";
 
 
 
@@ -44,13 +44,11 @@ const Header = () => {
     return(
         <HeaderMain>
             <Container>
-                <Router>
                 <ul>
                     <li><Link to="/" activeClassName="activeNew">Home</Link></li>
                     <li><Link to="/about" activeClassName="activeNew">About</Link></li>
                     <li><Link to="/rewiews" activeClassName="activeNew">Rewiews</Link></li>
                 </ul>
-                </Router>
             </Container>
         </HeaderMain>
     );
