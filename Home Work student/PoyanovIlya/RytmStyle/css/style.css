@@ -139,11 +139,12 @@
 .reviews {
     padding: 100px 0;
   }
-  .title-set{
+  .title-car {
     display: flex;
     align-items: center;
-  }
-  .title-set h2{
+    justify-content: center;
+}
+  .title-car h2{
       padding: 0 20px;
       font-family: 'El Messiri', sans-serif;
     font-weight: 700;
