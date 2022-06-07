@@ -136,7 +136,7 @@
     left: 15%;
 }
 /* carousel */
-.feedback {
+.reviews {
     padding: 100px 0;
   }
   .title-set{
@@ -152,33 +152,33 @@
     text-align: center;
     color: #FFFFFF;
   }
-  .feedback .feedback-container {
+  .reviews .reviews-container {
     column-gap: 50px;
   }
   
-  .feedback .feedback-container .card {
+  .reviews .reviews-container .card {
     padding: 50px 60px 56px;
     background: #018abe;
     border-radius: 10px;
   }
   
-  .feedback .feedback-container .card :last-child {
+  .reviews .reviews-container .card :last-child {
     margin-bottom: 0px;
   }
   
-  .feedback .feedback-container .card h4 {
+  .reviews .reviews-container .card h4 {
     font-family: "ProximaNovaBold";
     margin-bottom: 20px;
   }
   
-  .feedback .feedback-container .card p {
+  .reviews .reviews-container .card p {
     font-size: 14px;
     text-align: justify;
     font-family: "ProximaNovaRegular";
   }
   
-  .feedback .feedback-container .card h4,
-  .feedback .feedback-container .card p {
+  .reviews .reviews-container .card h4,
+  .reviews .reviews-container .card p {
     line-height: 140%;
     color: #ffffff;
   }
